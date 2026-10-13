@@ -1,0 +1,12 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-13.tar.zst",
+  "bytes": 1357238357,
+  "sha256": "ed8cd1b4f3029c0510a0b7ddd9f3904dc3771c65e8a7d2f6eee9f7ee1ba488c4",
+  "sourceCommit": "5752ae7a1dd70480296072069369531763d7c700",
+  "sceneCommit": "c8e01344452d786ba466449468951f0a067a6c6a",
+  "worldSections": 484,
+  "stops": 47,
+  "routeMetres": 4750104.009039968,
+  "contents": "Complete viewer, components, art, terrain, mapped structures and roadside details, route, seven park drives and the Brian Head detour",
+  "storage": "Separate scene archive; restore world assets with scripts/restore-scene.mjs"
+}
