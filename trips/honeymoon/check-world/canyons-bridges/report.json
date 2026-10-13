@@ -1,0 +1,2896 @@
+{
+  "frames": [
+    {
+      "name": "Milpitas, California",
+      "at": 0,
+      "place": "Milpitas, California",
+      "area": "",
+      "road": "Heath Street",
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 747851,
+        "drawCalls": 59,
+        "geometries": 59,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 654,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "colors": 5738,
+      "skyLow": 0,
+      "file": "frame-00.png"
+    },
+    {
+      "name": "Stockton, California",
+      "at": 106933,
+      "place": "Stockton, California",
+      "area": "",
+      "road": "North El Dorado Street",
+      "stats": {
+        "source": "",
+        "draws": 2,
+        "triangles": 547895,
+        "drawCalls": 69,
+        "geometries": 69,
+        "textures": 8,
+        "buildings": 2105,
+        "observedWalls": 356,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 107943.98734543427,
+            "x": -679.1773419625823,
+            "y": 2570.76873049312,
+            "z": 32.49564391203134,
+            "phase": 3.0604953188059967,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      },
+      "colors": 5650,
+      "skyLow": 0,
+      "file": "frame-01.png"
+    },
+    {
+      "name": "Fresno, California",
+      "at": 306720.32795742975,
+      "place": "Fresno",
+      "area": "",
+      "road": "Golden State Highway",
+      "stats": {
+        "source": "",
+        "draws": 3,
+        "triangles": 831069,
+        "drawCalls": 170,
+        "geometries": 170,
+        "textures": 8,
+        "buildings": 1004,
+        "observedWalls": 42,
+        "trees": 1817,
+        "roadside": 332,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 306343.3466312058,
+            "x": 81.85053191500576,
+            "y": -1211.9113652483124,
+            "z": 120.71257081851672,
+            "phase": 4.335588952351082,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          68.4,
+          102.9
+        ],
+        "failures": []
+      },
+      "colors": 3762,
+      "skyLow": 0,
+      "file": "frame-02.png"
+    },
+    {
+      "name": "Grant Grove",
+      "at": 400309.6171441156,
+      "place": "Grant Grove",
+      "area": "",
+      "road": "Kings Canyon Scenic Byway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 4,
+        "triangles": 1496387,
+        "drawCalls": 166,
+        "geometries": 166,
+        "textures": 10,
+        "buildings": 96,
+        "observedWalls": 0,
+        "trees": 42475,
+        "roadside": 9,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 93430.8310870037,
+            "x": -881.2016621740074,
+            "y": -1749.933926474283,
+            "z": 2036.0808780985435,
+            "phase": 4.203475816668692,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1288.1,
+          2363.2
+        ],
+        "failures": []
+      },
+      "colors": 11726,
+      "skyLow": 0,
+      "file": "frame-03.png"
+    },
+    {
+      "name": "Kings Canyon · Junction View",
+      "at": 417027.4033068732,
+      "place": "Kings Canyon · Junction View",
+      "area": "",
+      "road": "Kings Canyon Scenic Byway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 5,
+        "triangles": 1794038,
+        "drawCalls": 237,
+        "geometries": 403,
+        "textures": 12,
+        "buildings": 14,
+        "observedWalls": 0,
+        "trees": 25720,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 114164.96407696145,
+            "x": -1568.1365830485277,
+            "y": 47.70571602593944,
+            "z": 1176.1269297492918,
+            "phase": 4.352140970723371,
+            "count": 2
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          631.4,
+          2142.9
+        ],
+        "failures": []
+      },
+      "colors": 8763,
+      "skyLow": 0,
+      "file": "frame-04.png"
+    },
+    {
+      "name": "Kings Canyon · Cedar Grove",
+      "at": 447243.1237263702,
+      "place": "Kings Canyon · Cedar Grove",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 6,
+        "triangles": 548841,
+        "drawCalls": 54,
+        "geometries": 54,
+        "textures": 10,
+        "buildings": 54,
+        "observedWalls": 0,
+        "trees": 48069,
+        "roadside": 12,
+        "ambient": [
+          {
+            "kind": "deer",
+            "s": 141642.5052849587,
+            "x": -2798.9596509636262,
+            "y": 69.44065874038618,
+            "z": 1464.9331096934156,
+            "phase": 5.267330026329591,
+            "angle": 0.25694184293205324
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1377.6,
+          2941.1
+        ],
+        "failures": []
+      },
+      "colors": 12177,
+      "skyLow": 0,
+      "file": "frame-05.png"
+    },
+    {
+      "name": "Kings Canyon · Roads End",
+      "at": 455590.4523574128,
+      "place": "Kings Canyon · Roads End",
+      "area": "",
+      "road": "Kings Canyon Scenic Byway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 7,
+        "triangles": 552219,
+        "drawCalls": 57,
+        "geometries": 99,
+        "textures": 10,
+        "buildings": 54,
+        "observedWalls": 0,
+        "trees": 48069,
+        "roadside": 12,
+        "ambient": [
+          {
+            "kind": "deer",
+            "s": 141642.5052849587,
+            "x": -2798.9596509636262,
+            "y": 69.44065874038618,
+            "z": 1464.9331096934156,
+            "phase": 5.267330026329591,
+            "angle": 0.25694184293205324
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1377.6,
+          2941.1
+        ],
+        "failures": []
+      },
+      "colors": 17383,
+      "skyLow": 0,
+      "file": "frame-06.png"
+    },
+    {
+      "name": "Bakersfield, California",
+      "at": 779413.3155256333,
+      "place": "Bakersfield, California",
+      "area": "",
+      "road": "Chester Avenue",
+      "stats": {
+        "source": "",
+        "draws": 8,
+        "triangles": 1112766,
+        "drawCalls": 163,
+        "geometries": 163,
+        "textures": 11,
+        "buildings": 3303,
+        "observedWalls": 494,
+        "trees": 876,
+        "roadside": 174,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          109.2,
+          254.4
+        ],
+        "failures": []
+      },
+      "colors": 7976,
+      "skyLow": 0,
+      "file": "frame-07.png"
+    },
+    {
+      "name": "Kern River Canyon",
+      "at": 805924.9854543784,
+      "place": "Kern River Canyon",
+      "area": "",
+      "road": "Kern Canyon Road",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 9,
+        "triangles": 853222,
+        "drawCalls": 90,
+        "geometries": 90,
+        "textures": 10,
+        "buildings": 1173,
+        "observedWalls": 0,
+        "trees": 7996,
+        "roadside": 3,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          152.9,
+          1085.8
+        ],
+        "failures": []
+      },
+      "colors": 9530,
+      "skyLow": 0,
+      "file": "frame-08.png"
+    },
+    {
+      "name": "Lake Isabella · Kern River Valley",
+      "at": 847238.931842885,
+      "place": "Lake Isabella · Kern River Valley",
+      "area": "",
+      "road": "Isabella Walker Pass Road",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 10,
+        "triangles": 903091,
+        "drawCalls": 95,
+        "geometries": 95,
+        "textures": 10,
+        "buildings": 161,
+        "observedWalls": 0,
+        "trees": 1057,
+        "roadside": 14,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          668.8,
+          1908.7
+        ],
+        "failures": []
+      },
+      "colors": 3997,
+      "skyLow": 0,
+      "file": "frame-09.png"
+    },
+    {
+      "name": "Walker Pass",
+      "at": 903933.606623997,
+      "place": "Walker Pass",
+      "area": "",
+      "road": "Isabella Walker Pass Road",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 11,
+        "triangles": 1127690,
+        "drawCalls": 142,
+        "geometries": 142,
+        "textures": 10,
+        "buildings": 31,
+        "observedWalls": 0,
+        "trees": 125,
+        "roadside": 2,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 122383.58483640454,
+            "x": -2386.985134230986,
+            "y": 1387.9547734938972,
+            "z": 1524.7965297381304,
+            "phase": 1.7239345094091705,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1189.9,
+          2415.3
+        ],
+        "failures": []
+      },
+      "colors": 1634,
+      "skyLow": 0,
+      "file": "frame-10.png"
+    },
+    {
+      "name": "Ridgecrest",
+      "at": 944669.7312414541,
+      "place": "Ridgecrest",
+      "area": "",
+      "road": "West Ridgecrest Boulevard",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 12,
+        "triangles": 2104066,
+        "drawCalls": 105,
+        "geometries": 105,
+        "textures": 10,
+        "buildings": 13139,
+        "observedWalls": 0,
+        "trees": 925,
+        "roadside": 655,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 167636.25030414888,
+            "x": 366.7777938078197,
+            "y": -1768.5275699542428,
+            "z": 717.0125529253855,
+            "phase": 4.08996670967877,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.6,
+          964.8
+        ],
+        "failures": []
+      },
+      "colors": 4470,
+      "skyLow": 0,
+      "file": "frame-11.png"
+    },
+    {
+      "name": "Death Valley · Furnace Creek, California",
+      "at": 1153505.33667502,
+      "place": "Death Valley · Furnace Creek, California",
+      "area": "",
+      "road": "Badwater Road",
+      "stats": {
+        "source": "",
+        "draws": 13,
+        "triangles": 422774,
+        "drawCalls": 58,
+        "geometries": 58,
+        "textures": 14,
+        "buildings": 158,
+        "observedWalls": 19,
+        "trees": 270,
+        "roadside": 66,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 870309.4966650119,
+            "x": -357.41604619339154,
+            "y": 3419.2562215985445,
+            "z": -9.16781890917315,
+            "phase": 6.113422400627401,
+            "count": 3
+          },
+          {
+            "kind": "birds",
+            "s": 878905.1951378894,
+            "x": 184.605463860902,
+            "y": -3348.163301007528,
+            "z": -21.670257402587367,
+            "phase": 1.9604270797254115,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -82.2,
+          362.2
+        ],
+        "failures": []
+      },
+      "colors": 2898,
+      "skyLow": 0,
+      "file": "frame-12.png"
+    },
+    {
+      "name": "Badwater Basin Trailhead",
+      "at": 1179177.6966847857,
+      "place": "Badwater Basin Trailhead",
+      "area": "",
+      "road": "Badwater Road",
+      "stats": {
+        "source": "parks/death-valley",
+        "draws": 14,
+        "triangles": 460340,
+        "drawCalls": 61,
+        "geometries": 61,
+        "textures": 14,
+        "buildings": 2,
+        "observedWalls": 0,
+        "trees": 103,
+        "roadside": 5,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 30382.012761802645,
+            "x": 55.01578860512702,
+            "y": 1255.6980981889078,
+            "z": -27.25750979094778,
+            "phase": 2.5226533787074876,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -85,
+          1084.7
+        ],
+        "failures": []
+      },
+      "colors": 3024,
+      "skyLow": 0,
+      "file": "frame-13.png"
+    },
+    {
+      "name": "Artists Palette",
+      "at": 1200244.2463301383,
+      "place": "Artists Palette",
+      "area": "",
+      "road": "Artists Palette Road",
+      "stats": {
+        "source": "parks/death-valley",
+        "draws": 15,
+        "triangles": 451891,
+        "drawCalls": 75,
+        "geometries": 75,
+        "textures": 14,
+        "buildings": 1,
+        "observedWalls": 0,
+        "trees": 294,
+        "roadside": 2,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 45916.8372453223,
+            "x": 1320.2481567982938,
+            "y": 158.62457881499918,
+            "z": 249.66829962920667,
+            "phase": 6.095946864015443,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -83.9,
+          1012.7
+        ],
+        "failures": []
+      },
+      "colors": 4765,
+      "skyLow": 0,
+      "file": "frame-14.png"
+    },
+    {
+      "name": "Zabriskie Point",
+      "at": 1221277.3282380102,
+      "place": "Zabriskie Point",
+      "area": "",
+      "road": "Zabriskie Point Parking",
+      "stats": {
+        "source": "parks/death-valley",
+        "draws": 16,
+        "triangles": 937247,
+        "drawCalls": 116,
+        "geometries": 116,
+        "textures": 14,
+        "buildings": 274,
+        "observedWalls": 0,
+        "trees": 1171,
+        "roadside": 27,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 63419.14089983073,
+            "x": -1299.136356230807,
+            "y": 2424.498790967238,
+            "z": 106.27335830524896,
+            "phase": 0.17140938866620192,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -82.9,
+          793.4
+        ],
+        "failures": []
+      },
+      "colors": 4380,
+      "skyLow": 0,
+      "file": "frame-15.png"
+    },
+    {
+      "name": "Dantes View",
+      "at": 1245064.98721082,
+      "place": "Dantes View",
+      "area": "",
+      "road": "Dantes View Road",
+      "stats": {
+        "source": "parks/death-valley",
+        "draws": 17,
+        "triangles": 354523,
+        "drawCalls": 41,
+        "geometries": 41,
+        "textures": 14,
+        "buildings": 27,
+        "observedWalls": 0,
+        "trees": 27,
+        "roadside": 1,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 91371.12467443338,
+            "x": 610.2845950064236,
+            "y": -4114.712642566602,
+            "z": 1013.7458553140839,
+            "phase": 5.247076937861449,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          617.3,
+          1286.5
+        ],
+        "failures": []
+      },
+      "colors": 1489,
+      "skyLow": 0,
+      "file": "frame-16.png"
+    },
+    {
+      "name": "Las Vegas, Nevada",
+      "at": 1475690.0102787921,
+      "place": "Las Vegas, Nevada",
+      "area": "",
+      "road": "Lewis Avenue",
+      "stats": {
+        "source": "",
+        "draws": 18,
+        "triangles": 1582898,
+        "drawCalls": 406,
+        "geometries": 406,
+        "textures": 15,
+        "buildings": 1739,
+        "observedWalls": 150,
+        "trees": 0,
+        "roadside": 577,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      },
+      "colors": 5287,
+      "skyLow": 0,
+      "file": "frame-17.png"
+    },
+    {
+      "name": "Kingman, Arizona",
+      "at": 1643171.0102787921,
+      "place": "Kingman, Arizona",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 19,
+        "triangles": 1016235,
+        "drawCalls": 226,
+        "geometries": 226,
+        "textures": 15,
+        "buildings": 464,
+        "observedWalls": 67,
+        "trees": 1442,
+        "roadside": 269,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1240702.8554824751,
+            "x": -2400.2368267416605,
+            "y": 223.86694296840113,
+            "z": 1101.1122594569947,
+            "phase": 2.6214497313207046,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 1249653.3475420985,
+            "x": 2144.6452527771826,
+            "y": 1333.7723384822511,
+            "z": 1047.6952083556532,
+            "phase": 3.0229275737529075,
+            "angle": 0.5414254815253485
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          943.6,
+          1322.1
+        ],
+        "failures": []
+      },
+      "colors": 7682,
+      "skyLow": 0,
+      "file": "frame-18.png"
+    },
+    {
+      "name": "Grand Canyon South Rim, Arizona",
+      "at": 1923370.0102787921,
+      "place": "Grand Canyon South Rim, Arizona",
+      "area": "",
+      "road": "South Entrance Road",
+      "stats": {
+        "source": "",
+        "draws": 20,
+        "triangles": 1066688,
+        "drawCalls": 176,
+        "geometries": 176,
+        "textures": 15,
+        "buildings": 323,
+        "observedWalls": 34,
+        "trees": 2909,
+        "roadside": 58,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1039.8,
+          2226.6
+        ],
+        "failures": []
+      },
+      "colors": 7964,
+      "skyLow": 0,
+      "file": "frame-19.png"
+    },
+    {
+      "name": "Hermits Rest",
+      "at": 1932095.0139144277,
+      "place": "Hermits Rest",
+      "area": "",
+      "road": "West Rim Drive",
+      "stats": {
+        "source": "parks/grand-canyon",
+        "draws": 21,
+        "triangles": 429127,
+        "drawCalls": 44,
+        "geometries": 44,
+        "textures": 14,
+        "buildings": 708,
+        "observedWalls": 0,
+        "trees": 2152,
+        "roadside": 52,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 6702.575813889271,
+            "x": -1643.5436873836793,
+            "y": 485.126083694601,
+            "z": 2108.783474504864,
+            "phase": 3.2178587848031404,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          906,
+          2170.7
+        ],
+        "failures": []
+      },
+      "colors": 7026,
+      "skyLow": 0,
+      "file": "frame-20.png"
+    },
+    {
+      "name": "Yavapai Point",
+      "at": 1943198.051019333,
+      "place": "Yavapai Point",
+      "area": "",
+      "road": "Yavapai Observation Station",
+      "stats": {
+        "source": "parks/grand-canyon",
+        "draws": 22,
+        "triangles": 554792,
+        "drawCalls": 62,
+        "geometries": 106,
+        "textures": 16,
+        "buildings": 710,
+        "observedWalls": 0,
+        "trees": 1884,
+        "roadside": 61,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 18379.389094317565,
+            "x": 2852.8658429244706,
+            "y": -1037.771561898042,
+            "z": 2168.0782463665714,
+            "phase": 5.852281781906724,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          811.6,
+          2191.1
+        ],
+        "failures": []
+      },
+      "colors": 2905,
+      "skyLow": 0,
+      "file": "frame-21.png"
+    },
+    {
+      "name": "Grandview Point",
+      "at": 1960925.7027215362,
+      "place": "Grandview Point",
+      "area": "",
+      "road": "Grandview Point access road",
+      "stats": {
+        "source": "parks/grand-canyon",
+        "draws": 23,
+        "triangles": 535036,
+        "drawCalls": 60,
+        "geometries": 60,
+        "textures": 14,
+        "buildings": 2,
+        "observedWalls": 0,
+        "trees": 31931,
+        "roadside": 3,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 30425.77819180768,
+            "x": -2406.0703635967784,
+            "y": 2160.3339423380085,
+            "z": 2246.573758370016,
+            "phase": 4.9512193201241255,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1074.7,
+          2289.1
+        ],
+        "failures": []
+      },
+      "colors": 15297,
+      "skyLow": 0,
+      "file": "frame-22.png"
+    },
+    {
+      "name": "Desert View Watchtower",
+      "at": 1983670.2881210234,
+      "place": "Desert View Watchtower",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/grand-canyon",
+        "draws": 24,
+        "triangles": 654452,
+        "drawCalls": 92,
+        "geometries": 92,
+        "textures": 14,
+        "buildings": 36,
+        "observedWalls": 0,
+        "trees": 5379,
+        "roadside": 25,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 68240.14484580886,
+            "x": -2038.1687622848842,
+            "y": -1419.0391083683912,
+            "z": 2240.046429397888,
+            "phase": 4.79404196363919,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          774.5,
+          2286.2
+        ],
+        "failures": []
+      },
+      "colors": 5621,
+      "skyLow": 0,
+      "file": "frame-23.png"
+    },
+    {
+      "name": "Kanab, Utah",
+      "at": 2360644.546774333,
+      "place": "Kanab, Utah",
+      "area": "",
+      "road": "Center Street",
+      "stats": {
+        "source": "",
+        "draws": 25,
+        "triangles": 595296,
+        "drawCalls": 96,
+        "geometries": 96,
+        "textures": 19,
+        "buildings": 763,
+        "observedWalls": 351,
+        "trees": 5178,
+        "roadside": 104,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1865602.7567742984,
+            "x": -248.65627616425604,
+            "y": -220.44657796513476,
+            "z": 1596.8376512907257,
+            "phase": 1.1262464968700991,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      },
+      "colors": 8395,
+      "skyLow": 0,
+      "file": "frame-24.png"
+    },
+    {
+      "name": "Brian Head Resort",
+      "at": 2479098.6843473692,
+      "place": "Brian Head Resort",
+      "area": "",
+      "road": "North Loop Road",
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 26,
+        "triangles": 541939,
+        "drawCalls": 80,
+        "geometries": 80,
+        "textures": 19,
+        "buildings": 321,
+        "observedWalls": 0,
+        "trees": 14990,
+        "roadside": 65,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 51652.53981839912,
+            "x": 94.4769395650886,
+            "y": 237.89774784236587,
+            "z": 3216.3519932515987,
+            "phase": 4.392274450261029,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2484,
+          3447.4
+        ],
+        "failures": []
+      },
+      "colors": 7956,
+      "skyLow": 0,
+      "file": "frame-25.png"
+    },
+    {
+      "name": "Panguitch, Utah",
+      "at": 2536246.7561364006,
+      "place": "Panguitch",
+      "area": "",
+      "road": "South Main Street",
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 27,
+        "triangles": 501553,
+        "drawCalls": 67,
+        "geometries": 67,
+        "textures": 18,
+        "buildings": 1579,
+        "observedWalls": 0,
+        "trees": 4785,
+        "roadside": 17,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1995.7,
+          2246
+        ],
+        "failures": []
+      },
+      "colors": 7314,
+      "skyLow": 0,
+      "file": "frame-26.png"
+    },
+    {
+      "name": "Bryce Canyon National Park, Utah",
+      "at": 2578184.7561364006,
+      "place": "Bryce Canyon National Park, Utah",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 28,
+        "triangles": 492692,
+        "drawCalls": 73,
+        "geometries": 73,
+        "textures": 20,
+        "buildings": 125,
+        "observedWalls": 26,
+        "trees": 5574,
+        "roadside": 250,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2016083.865492473,
+            "x": -58.305990357090714,
+            "y": -255.00559480450673,
+            "z": 2407.4909836282422,
+            "phase": 5.472214159570412,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2016.5,
+          2552.8
+        ],
+        "failures": []
+      },
+      "colors": 3584,
+      "skyLow": 0,
+      "file": "frame-27.png"
+    },
+    {
+      "name": "Bryce Point",
+      "at": 2582628.7226683833,
+      "place": "Bryce Point",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/bryce",
+        "draws": 29,
+        "triangles": 560292,
+        "drawCalls": 77,
+        "geometries": 77,
+        "textures": 20,
+        "buildings": 99,
+        "observedWalls": 0,
+        "trees": 3308,
+        "roadside": 89,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3855.258093133103,
+            "x": 1550.1790554378135,
+            "y": -1310.3782412377354,
+            "z": 2541.924915113336,
+            "phase": 0.05056868485727367,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2071.4,
+          2578.2
+        ],
+        "failures": []
+      },
+      "colors": 8726,
+      "skyLow": 0,
+      "file": "frame-28.png"
+    },
+    {
+      "name": "Rainbow Point",
+      "at": 2610268.956153606,
+      "place": "Rainbow Point",
+      "area": "",
+      "road": "Bryce Canyon Scenic Drive",
+      "stats": {
+        "source": "parks/bryce",
+        "draws": 30,
+        "triangles": 1025211,
+        "drawCalls": 147,
+        "geometries": 147,
+        "textures": 20,
+        "buildings": 8,
+        "observedWalls": 0,
+        "trees": 3250,
+        "roadside": 31,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 30601.553641784005,
+            "x": 135.70189079902877,
+            "y": -2323.9140078798087,
+            "z": 2748.5265770822175,
+            "phase": 6.13615061336012,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2199.8,
+          2779.8
+        ],
+        "failures": []
+      },
+      "colors": 2825,
+      "skyLow": 0,
+      "file": "frame-29.png"
+    },
+    {
+      "name": "Natural Bridge",
+      "at": 2619353.504483954,
+      "place": "Natural Bridge",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/bryce",
+        "draws": 31,
+        "triangles": 949812,
+        "drawCalls": 117,
+        "geometries": 264,
+        "textures": 22,
+        "buildings": 2,
+        "observedWalls": 0,
+        "trees": 4928,
+        "roadside": 18,
+        "ambient": [
+          {
+            "kind": "hare",
+            "s": 44410.458138432354,
+            "x": -611.2340163771127,
+            "y": -706.86677545247,
+            "z": 2682.2473518269203,
+            "phase": 2.253739092730937,
+            "angle": -1.1043347123623835
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2085,
+          2747.2
+        ],
+        "failures": []
+      },
+      "colors": 5050,
+      "skyLow": 0,
+      "file": "frame-30.png"
+    },
+    {
+      "name": "Inspiration Point",
+      "at": 2635505.725421452,
+      "place": "Inspiration Point",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/bryce",
+        "draws": 32,
+        "triangles": 588581,
+        "drawCalls": 77,
+        "geometries": 194,
+        "textures": 22,
+        "buildings": 102,
+        "observedWalls": 0,
+        "trees": 2747,
+        "roadside": 92,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 54437.10216719285,
+            "x": 451.3917151802182,
+            "y": 314.320018574059,
+            "z": 2452.260106024066,
+            "phase": 0.5445386568036399,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2061.5,
+          2650.4
+        ],
+        "failures": []
+      },
+      "colors": 3695,
+      "skyLow": 0,
+      "file": "frame-31.png"
+    },
+    {
+      "name": "Zion National Park, Utah",
+      "at": 2776389.7157912236,
+      "place": "Zion National Park, Utah",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 33,
+        "triangles": 322601,
+        "drawCalls": 58,
+        "geometries": 58,
+        "textures": 20,
+        "buildings": 58,
+        "observedWalls": 3,
+        "trees": 1894,
+        "roadside": 99,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2156185.8683091733,
+            "x": 627.141420477911,
+            "y": 271.2742973929802,
+            "z": 1399.102601524401,
+            "phase": 2.6952841971768575,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          1165,
+          2231.5
+        ],
+        "failures": []
+      },
+      "colors": 14330,
+      "skyLow": 0,
+      "file": "frame-32.png"
+    },
+    {
+      "name": "Zion Lodge",
+      "at": 2783194.4775340646,
+      "place": "Zion Lodge",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/zion",
+        "draws": 34,
+        "triangles": 858915,
+        "drawCalls": 133,
+        "geometries": 133,
+        "textures": 20,
+        "buildings": 734,
+        "observedWalls": 0,
+        "trees": 8372,
+        "roadside": 156,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1483.248995929025,
+            "x": -1899.6527710991631,
+            "y": -2815.4384739488455,
+            "z": 1265.0681284385155,
+            "phase": 1.5550351356037337,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          1165,
+          2273.9
+        ],
+        "failures": []
+      },
+      "colors": 15054,
+      "skyLow": 0,
+      "file": "frame-33.png"
+    },
+    {
+      "name": "The Grotto",
+      "at": 2784566.905008915,
+      "place": "The Grotto",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/zion",
+        "draws": 35,
+        "triangles": 718623,
+        "drawCalls": 96,
+        "geometries": 182,
+        "textures": 20,
+        "buildings": 734,
+        "observedWalls": 0,
+        "trees": 8372,
+        "roadside": 156,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1483.248995929025,
+            "x": -1899.6527710991631,
+            "y": -2815.4384739488455,
+            "z": 1265.0681284385155,
+            "phase": 1.5550351356037337,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          1165,
+          2273.9
+        ],
+        "failures": []
+      },
+      "colors": 18662,
+      "skyLow": 0,
+      "file": "frame-34.png"
+    },
+    {
+      "name": "Temple of Sinawava",
+      "at": 2789104.9417415014,
+      "place": "Temple of Sinawava",
+      "area": "",
+      "road": "Zion Canyon Scenic Drive",
+      "stats": {
+        "source": "parks/zion",
+        "draws": 36,
+        "triangles": 547131,
+        "drawCalls": 76,
+        "geometries": 258,
+        "textures": 22,
+        "buildings": 78,
+        "observedWalls": 0,
+        "trees": 10603,
+        "roadside": 85,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 17074.756863387767,
+            "x": 391.8215683061163,
+            "y": 100.23274453570359,
+            "z": 1376.5703250726078,
+            "phase": 4.979183379568018,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1215,
+          2246.4
+        ],
+        "failures": []
+      },
+      "colors": 17176,
+      "skyLow": 0,
+      "file": "frame-35.png"
+    },
+    {
+      "name": "Glen Canyon · Page, Arizona",
+      "at": 2983819.8662276138,
+      "place": "Glen Canyon · Page, Arizona",
+      "area": "",
+      "road": "Bitter Springs–Utah State Line Highway",
+      "stats": {
+        "source": "",
+        "draws": 37,
+        "triangles": 887068,
+        "drawCalls": 125,
+        "geometries": 125,
+        "textures": 21,
+        "buildings": 567,
+        "observedWalls": 54,
+        "trees": 990,
+        "roadside": 122,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          954.5,
+          1403
+        ],
+        "failures": []
+      },
+      "colors": 5520,
+      "skyLow": 0,
+      "file": "frame-36.png"
+    },
+    {
+      "name": "Wahweap Overlook",
+      "at": 2988610.6801204034,
+      "place": "Wahweap Overlook",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/glen-canyon",
+        "draws": 38,
+        "triangles": 559306,
+        "drawCalls": 62,
+        "geometries": 62,
+        "textures": 21,
+        "buildings": 726,
+        "observedWalls": 0,
+        "trees": 156,
+        "roadside": 102,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 4790.146564370953,
+            "x": 745.3588547903174,
+            "y": 587.8093266242388,
+            "z": 1341.7445564619825,
+            "phase": 1.6338339291126316,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          955.7,
+          1325.6
+        ],
+        "failures": []
+      },
+      "colors": 5382,
+      "skyLow": 0,
+      "file": "frame-37.png"
+    },
+    {
+      "name": "Wahweap Marina",
+      "at": 2996855.729912558,
+      "place": "Wahweap Marina",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/glen-canyon",
+        "draws": 39,
+        "triangles": 978258,
+        "drawCalls": 118,
+        "geometries": 180,
+        "textures": 23,
+        "buildings": 1394,
+        "observedWalls": 0,
+        "trees": 561,
+        "roadside": 89,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          956.1,
+          1302.9
+        ],
+        "failures": []
+      },
+      "colors": 5305,
+      "skyLow": 0,
+      "file": "frame-38.png"
+    },
+    {
+      "name": "Monument Valley, Arizona",
+      "at": 3210759.140611088,
+      "place": "Monument Valley, Arizona",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 40,
+        "triangles": 396982,
+        "drawCalls": 43,
+        "geometries": 43,
+        "textures": 21,
+        "buildings": 34,
+        "observedWalls": 0,
+        "trees": 0,
+        "roadside": 53,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2537446.1307381648,
+            "x": 2144.9907741530837,
+            "y": -825.9573830379611,
+            "z": 1691.230769024743,
+            "phase": 3.8871711363034227,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1554.6,
+          2007.2
+        ],
+        "failures": []
+      },
+      "colors": 8435,
+      "skyLow": 0,
+      "file": "frame-39.png"
+    },
+    {
+      "name": "John Ford Point",
+      "at": 3217124.202294586,
+      "place": "John Ford Point",
+      "area": "",
+      "road": "John Ford's Point Overlook access road",
+      "stats": {
+        "source": "parks/monument-valley",
+        "draws": 41,
+        "triangles": 974959,
+        "drawCalls": 150,
+        "geometries": 150,
+        "textures": 21,
+        "buildings": 80,
+        "observedWalls": 0,
+        "trees": 0,
+        "roadside": 35,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 7111.317530522589,
+            "x": 144.43729025297964,
+            "y": -1247.0611809779016,
+            "z": 1645.6683918304893,
+            "phase": 5.37619150402424,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          1510.9,
+          2007.2
+        ],
+        "failures": []
+      },
+      "colors": 4848,
+      "skyLow": 0,
+      "file": "frame-40.png"
+    },
+    {
+      "name": "Totem Pole",
+      "at": 3221391.510103086,
+      "place": "Totem Pole",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "parks/monument-valley",
+        "draws": 42,
+        "triangles": 327791,
+        "drawCalls": 51,
+        "geometries": 201,
+        "textures": 23,
+        "buildings": 80,
+        "observedWalls": 0,
+        "trees": 0,
+        "roadside": 86,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 17888.94174080016,
+            "x": -592.6082302464656,
+            "y": 530.8706345729474,
+            "z": 1611.6535578603934,
+            "phase": 5.190764912696712,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1507.7,
+          2007.2
+        ],
+        "failures": []
+      },
+      "colors": 3464,
+      "skyLow": 0,
+      "file": "frame-41.png"
+    },
+    {
+      "name": "Artists Point",
+      "at": 3223679.2968425057,
+      "place": "Artists Point",
+      "area": "",
+      "road": "Artists Point Viewoint access road",
+      "stats": {
+        "source": "parks/monument-valley",
+        "draws": 43,
+        "triangles": 443347,
+        "drawCalls": 73,
+        "geometries": 257,
+        "textures": 23,
+        "buildings": 80,
+        "observedWalls": 0,
+        "trees": 0,
+        "roadside": 86,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 17888.94174080016,
+            "x": -592.6082302464656,
+            "y": 530.8706345729474,
+            "z": 1611.6535578603934,
+            "phase": 5.190764912696712,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1507.7,
+          2007.2
+        ],
+        "failures": []
+      },
+      "colors": 7859,
+      "skyLow": 0,
+      "file": "frame-42.png"
+    },
+    {
+      "name": "North Window Overlook",
+      "at": 3225824.1005055094,
+      "place": "North Window Overlook",
+      "area": "",
+      "road": "North Window Viewpoint road",
+      "stats": {
+        "source": "parks/monument-valley",
+        "draws": 44,
+        "triangles": 614227,
+        "drawCalls": 96,
+        "geometries": 281,
+        "textures": 23,
+        "buildings": 80,
+        "observedWalls": 0,
+        "trees": 0,
+        "roadside": 86,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 17888.94174080016,
+            "x": -592.6082302464656,
+            "y": 530.8706345729474,
+            "z": 1611.6535578603934,
+            "phase": 5.190764912696712,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1507.7,
+          2007.2
+        ],
+        "failures": []
+      },
+      "colors": 6463,
+      "skyLow": 0,
+      "file": "frame-43.png"
+    },
+    {
+      "name": "Mesa Verde National Park, Colorado",
+      "at": 3485770.5044209734,
+      "place": "Mesa Verde National Park, Colorado",
+      "area": "",
+      "road": "Cliff Palace Loop",
+      "stats": {
+        "source": "",
+        "draws": 45,
+        "triangles": 531174,
+        "drawCalls": 83,
+        "geometries": 83,
+        "textures": 21,
+        "buildings": 47,
+        "observedWalls": 3,
+        "trees": 5592,
+        "roadside": 33,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2794010.924243137,
+            "x": 705.5146970195742,
+            "y": -2625.450211404405,
+            "z": 2106.25261646533,
+            "phase": 2.040000704869157,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          1788.1,
+          2318.8
+        ],
+        "failures": []
+      },
+      "colors": 5903,
+      "skyLow": 0,
+      "file": "frame-44.png"
+    },
+    {
+      "name": "Balcony House",
+      "at": 3488305.919863197,
+      "place": "Balcony House",
+      "area": "",
+      "road": "Cliff Palace Loop",
+      "stats": {
+        "source": "parks/mesa-verde",
+        "draws": 46,
+        "triangles": 779452,
+        "drawCalls": 99,
+        "geometries": 99,
+        "textures": 21,
+        "buildings": 85,
+        "observedWalls": 0,
+        "trees": 17652,
+        "roadside": 44,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          1788.1,
+          2212.5
+        ],
+        "failures": []
+      },
+      "colors": 8132,
+      "skyLow": 0,
+      "file": "frame-45.png"
+    },
+    {
+      "name": "Square Tower House",
+      "at": 3494293.2419691565,
+      "place": "Square Tower House",
+      "area": "",
+      "road": "Mesa Top Loop",
+      "stats": {
+        "source": "parks/mesa-verde",
+        "draws": 47,
+        "triangles": 447354,
+        "drawCalls": 51,
+        "geometries": 134,
+        "textures": 21,
+        "buildings": 85,
+        "observedWalls": 0,
+        "trees": 17652,
+        "roadside": 44,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          1788.1,
+          2212.5
+        ],
+        "failures": []
+      },
+      "colors": 18413,
+      "skyLow": 0,
+      "file": "frame-46.png"
+    },
+    {
+      "name": "Sun Temple",
+      "at": 3497593.082452798,
+      "place": "Sun Temple",
+      "area": "",
+      "road": "Mesa Top Loop",
+      "stats": {
+        "source": "parks/mesa-verde",
+        "draws": 48,
+        "triangles": 418835,
+        "drawCalls": 51,
+        "geometries": 185,
+        "textures": 23,
+        "buildings": 85,
+        "observedWalls": 0,
+        "trees": 10998,
+        "roadside": 39,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 11647.244053004775,
+            "x": -10.422999095197767,
+            "y": -820.436100580737,
+            "z": 2123.3675330968445,
+            "phase": 1.7540511138294868,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1801.7,
+          2198.8
+        ],
+        "failures": []
+      },
+      "colors": 8941,
+      "skyLow": 0,
+      "file": "frame-47.png"
+    },
+    {
+      "name": "Aztec, New Mexico",
+      "at": 3656898.345714988,
+      "place": "Aztec, New Mexico",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 49,
+        "triangles": 902504,
+        "drawCalls": 124,
+        "geometries": 124,
+        "textures": 27,
+        "buildings": 870,
+        "observedWalls": 315,
+        "trees": 6630,
+        "roadside": 35,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2946049.2172624604,
+            "x": -1872.4293335822522,
+            "y": 16.094463785653936,
+            "z": 1746.8883583300303,
+            "phase": 1.1365289867085024,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1694.1,
+          1948.7
+        ],
+        "failures": []
+      },
+      "colors": 6488,
+      "skyLow": 0,
+      "file": "frame-48.png"
+    },
+    {
+      "name": "Albuquerque, New Mexico",
+      "at": 3944872.345714988,
+      "place": "Albuquerque, New Mexico",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 50,
+        "triangles": 1405843,
+        "drawCalls": 392,
+        "geometries": 392,
+        "textures": 27,
+        "buildings": 1525,
+        "observedWalls": 221,
+        "trees": 1163,
+        "roadside": 785,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3236297.132239424,
+            "x": -908.0769555822751,
+            "y": 520.6929826644669,
+            "z": 1571.0758530078745,
+            "phase": 0.2525308191736821,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1504.4,
+          1627.5
+        ],
+        "failures": []
+      },
+      "colors": 23147,
+      "skyLow": 0,
+      "file": "frame-49.png"
+    },
+    {
+      "name": "Vaughn, New Mexico",
+      "at": 4112498.345714988,
+      "place": "Vaughn, New Mexico",
+      "area": "",
+      "road": "8th Street",
+      "stats": {
+        "source": "",
+        "draws": 51,
+        "triangles": 1181043,
+        "drawCalls": 199,
+        "geometries": 199,
+        "textures": 27,
+        "buildings": 78,
+        "observedWalls": 17,
+        "trees": 20,
+        "roadside": 17,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3408033.815129884,
+            "x": 2086.182825461563,
+            "y": -1411.5339024795899,
+            "z": 1849.5386908933128,
+            "phase": 1.4759288454920827,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1720.4,
+          1854.5
+        ],
+        "failures": []
+      },
+      "colors": 2838,
+      "skyLow": 0,
+      "file": "frame-50.png"
+    },
+    {
+      "name": "Roswell, New Mexico",
+      "at": 4268089.345714988,
+      "place": "Roswell, New Mexico",
+      "area": "",
+      "road": "North Richardson Avenue",
+      "stats": {
+        "source": "",
+        "draws": 52,
+        "triangles": 474591,
+        "drawCalls": 65,
+        "geometries": 65,
+        "textures": 27,
+        "buildings": 603,
+        "observedWalls": 259,
+        "trees": 1493,
+        "roadside": 178,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3556465.764665484,
+            "x": -2095.2072905625887,
+            "y": -3112.3461948149306,
+            "z": 1137.460137516819,
+            "phase": 3.631066738881577,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1066.1,
+          1108.9
+        ],
+        "failures": []
+      },
+      "colors": 7874,
+      "skyLow": 0,
+      "file": "frame-51.png"
+    },
+    {
+      "name": "Lubbock, Texas",
+      "at": 4549231.345714988,
+      "place": "Lubbock, Texas",
+      "area": "",
+      "road": "Avenue K",
+      "stats": {
+        "source": "",
+        "draws": 53,
+        "triangles": 868725,
+        "drawCalls": 95,
+        "geometries": 95,
+        "textures": 32,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3832322.6441316507,
+            "x": -2208.6947942033307,
+            "y": 160.4042724078754,
+            "z": 1031.0844563955143,
+            "phase": 3.3512974018000055,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "colors": 10555,
+      "skyLow": 0,
+      "file": "frame-52.png"
+    },
+    {
+      "name": "Jacksboro, Texas",
+      "at": 4919106.345714988,
+      "place": "Jacksboro, Texas",
+      "area": "",
+      "road": "East Archer Street",
+      "stats": {
+        "source": "",
+        "draws": 54,
+        "triangles": 605429,
+        "drawCalls": 80,
+        "geometries": 80,
+        "textures": 32,
+        "buildings": 81,
+        "observedWalls": 62,
+        "trees": 22878,
+        "roadside": 16,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 4200721.854756333,
+            "x": -2955.796685889021,
+            "y": 2412.004231112182,
+            "z": 343.80406001133474,
+            "phase": 4.751625759896906,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          290.9,
+          382.8
+        ],
+        "failures": []
+      },
+      "colors": 8382,
+      "skyLow": 0,
+      "file": "frame-53.png"
+    },
+    {
+      "name": "Denton, Texas",
+      "at": 5026730.345714988,
+      "place": "Denton, Texas",
+      "area": "",
+      "road": "Stuart Road",
+      "stats": {
+        "source": "",
+        "draws": 55,
+        "triangles": 369961,
+        "drawCalls": 48,
+        "geometries": 48,
+        "textures": 32,
+        "buildings": 785,
+        "observedWalls": 159,
+        "trees": 4917,
+        "roadside": 465,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          169.5,
+          238.9
+        ],
+        "failures": []
+      },
+      "colors": 8487,
+      "skyLow": 0,
+      "file": "frame-54.png"
+    },
+    {
+      "name": "detours/kings-canyon · canyon road",
+      "at": 431614.4604781957,
+      "place": "Kings Canyon Scenic Byway",
+      "area": "",
+      "road": "Kings Canyon Scenic Byway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 56,
+        "triangles": 675056,
+        "drawCalls": 70,
+        "geometries": 70,
+        "textures": 31,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 122326.69894367608,
+            "x": -2663.138822212839,
+            "y": 1429.4073751583417,
+            "z": 1031.1429853335069,
+            "phase": 2.3712035805697758,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "colors": 8810,
+      "skyLow": 0,
+      "file": "frame-55.png"
+    },
+    {
+      "name": "detours/kern-river · canyon road",
+      "at": 855588.6031290202,
+      "place": "Kern River Valley → Walker Pass",
+      "area": "",
+      "road": "Isabella Walker Pass Road",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 57,
+        "triangles": 916529,
+        "drawCalls": 117,
+        "geometries": 117,
+        "textures": 31,
+        "buildings": 259,
+        "observedWalls": 0,
+        "trees": 229,
+        "roadside": 45,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          744.8,
+          1646.3
+        ],
+        "failures": []
+      },
+      "colors": 3575,
+      "skyLow": 0,
+      "file": "frame-56.png"
+    },
+    {
+      "name": "parks/death-valley · canyon road",
+      "at": 1205181.0195886043,
+      "place": "Death Valley National Park",
+      "area": "",
+      "road": "Artists Drive Scenic Loop",
+      "stats": {
+        "source": "parks/death-valley",
+        "draws": 58,
+        "triangles": 599467,
+        "drawCalls": 74,
+        "geometries": 74,
+        "textures": 31,
+        "buildings": 205,
+        "observedWalls": 0,
+        "trees": 1211,
+        "roadside": 3,
+        "ambient": [
+          {
+            "kind": "deer",
+            "s": 54003.68021101644,
+            "x": -1120.196482605851,
+            "y": -2445.292896755198,
+            "z": -48.50648756715833,
+            "phase": 2.9212098995463487,
+            "angle": -2.327945044589028
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -83.3,
+          675.7
+        ],
+        "failures": []
+      },
+      "colors": 4876,
+      "skyLow": 0,
+      "file": "frame-57.png"
+    },
+    {
+      "name": "parks/grand-canyon · canyon road",
+      "at": 1965091.2156069195,
+      "place": "Grand Canyon National Park",
+      "area": "",
+      "road": "East Rim Drive",
+      "stats": {
+        "source": "parks/grand-canyon",
+        "draws": 59,
+        "triangles": 981151,
+        "drawCalls": 132,
+        "geometries": 132,
+        "textures": 31,
+        "buildings": 3,
+        "observedWalls": 0,
+        "trees": 28074,
+        "roadside": 38,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 41278.92489909683,
+            "x": -3473.6327046895162,
+            "y": -1500.0247650395338,
+            "z": 2315.2709144691025,
+            "phase": 5.786059178715204,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1011.6,
+          2296.5
+        ],
+        "failures": []
+      },
+      "colors": 4625,
+      "skyLow": 0,
+      "file": "frame-58.png"
+    },
+    {
+      "name": "detours/brian-head · canyon road",
+      "at": 2471400.305444063,
+      "place": "Brian Head, Utah",
+      "area": "",
+      "road": "State Route 148 (closed winters)",
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 60,
+        "triangles": 696099,
+        "drawCalls": 127,
+        "geometries": 127,
+        "textures": 31,
+        "buildings": 51,
+        "observedWalls": 0,
+        "trees": 19325,
+        "roadside": 120,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          2414.3,
+          3447.4
+        ],
+        "failures": []
+      },
+      "colors": 5579,
+      "skyLow": 0,
+      "file": "frame-59.png"
+    },
+    {
+      "name": "parks/bryce · canyon road",
+      "at": 2603109.499191426,
+      "place": "Bryce Canyon National Park",
+      "area": "",
+      "road": "Bryce Canyon Scenic Drive",
+      "stats": {
+        "source": "parks/bryce",
+        "draws": 61,
+        "triangles": 730849,
+        "drawCalls": 94,
+        "geometries": 94,
+        "textures": 31,
+        "buildings": 8,
+        "observedWalls": 0,
+        "trees": 5503,
+        "roadside": 21,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 30601.553641784005,
+            "x": -341.29810920097117,
+            "y": -3667.9140078798087,
+            "z": 2748.5265770822175,
+            "phase": 6.13615061336012,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2152.2,
+          2779.8
+        ],
+        "failures": []
+      },
+      "colors": 4010,
+      "skyLow": 0,
+      "file": "frame-60.png"
+    },
+    {
+      "name": "parks/zion · canyon road",
+      "at": 2787111.818974507,
+      "place": "Zion National Park",
+      "area": "",
+      "road": "Zion Canyon Scenic Drive",
+      "stats": {
+        "source": "parks/zion",
+        "draws": 62,
+        "triangles": 901859,
+        "drawCalls": 131,
+        "geometries": 131,
+        "textures": 31,
+        "buildings": 78,
+        "observedWalls": 0,
+        "trees": 10603,
+        "roadside": 85,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 17074.756863387767,
+            "x": 391.8215683061163,
+            "y": 100.23274453570359,
+            "z": 1376.5703250726078,
+            "phase": 4.979183379568018,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1215,
+          2246.4
+        ],
+        "failures": []
+      },
+      "colors": 10890,
+      "skyLow": 0,
+      "file": "frame-61.png"
+    },
+    {
+      "name": "parks/glen-canyon · canyon road",
+      "at": 2992737.2814686727,
+      "place": "Glen Canyon · Lake Powell",
+      "area": "",
+      "road": "Wahweap Boulevard",
+      "stats": {
+        "source": "parks/glen-canyon",
+        "draws": 63,
+        "triangles": 670690,
+        "drawCalls": 80,
+        "geometries": 80,
+        "textures": 31,
+        "buildings": 726,
+        "observedWalls": 0,
+        "trees": 156,
+        "roadside": 102,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 4790.146564370953,
+            "x": 745.3588547903174,
+            "y": 587.8093266242388,
+            "z": 1341.7445564619825,
+            "phase": 1.6338339291126316,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          955.7,
+          1325.6
+        ],
+        "failures": []
+      },
+      "colors": 2153,
+      "skyLow": 0,
+      "file": "frame-62.png"
+    },
+    {
+      "name": "parks/monument-valley · canyon road",
+      "at": 3220248.21341124,
+      "place": "Monument Valley Navajo Tribal Park",
+      "area": "",
+      "road": "17-Mile Drive",
+      "stats": {
+        "source": "parks/monument-valley",
+        "draws": 64,
+        "triangles": 359509,
+        "drawCalls": 50,
+        "geometries": 50,
+        "textures": 31,
+        "buildings": 80,
+        "observedWalls": 0,
+        "trees": 0,
+        "roadside": 35,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 7111.317530522589,
+            "x": 144.43729025297964,
+            "y": -1247.0611809779016,
+            "z": 1645.6683918304893,
+            "phase": 5.37619150402424,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          1510.9,
+          2007.2
+        ],
+        "failures": []
+      },
+      "colors": 3707,
+      "skyLow": 0,
+      "file": "frame-63.png"
+    },
+    {
+      "name": "parks/mesa-verde · canyon road",
+      "at": 3493090.4777644593,
+      "place": "Mesa Verde National Park",
+      "area": "",
+      "road": "Mesa Top Loop",
+      "stats": {
+        "source": "parks/mesa-verde",
+        "draws": 65,
+        "triangles": 770142,
+        "drawCalls": 104,
+        "geometries": 104,
+        "textures": 31,
+        "buildings": 85,
+        "observedWalls": 0,
+        "trees": 17652,
+        "roadside": 44,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          1788.1,
+          2212.5
+        ],
+        "failures": []
+      },
+      "colors": 8594,
+      "skyLow": 0,
+      "file": "frame-64.png"
+    },
+    {
+      "name": "Road profile 40.17",
+      "at": 40170,
+      "place": "Autumn Springs",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 66,
+        "triangles": 1521502,
+        "drawCalls": 332,
+        "geometries": 332,
+        "textures": 32,
+        "buildings": 611,
+        "observedWalls": 20,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      },
+      "colors": 4546,
+      "skyLow": 0,
+      "file": "frame-65.png"
+    },
+    {
+      "name": "Road profile 86.435",
+      "at": 86435,
+      "place": "Mossdale",
+      "area": "",
+      "road": "Westside Freeway",
+      "stats": {
+        "source": "",
+        "draws": 67,
+        "triangles": 835428,
+        "drawCalls": 177,
+        "geometries": 177,
+        "textures": 32,
+        "buildings": 279,
+        "observedWalls": 2,
+        "trees": 2101,
+        "roadside": 137,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 88015.18459230155,
+            "x": 2857.561958981888,
+            "y": 165.28724062520416,
+            "z": 41.06882488527417,
+            "phase": 1.3847802979777883,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -3,
+          20
+        ],
+        "failures": []
+      },
+      "colors": 1093,
+      "skyLow": 0,
+      "file": "frame-66.png"
+    },
+    {
+      "name": "Road profile 108.605",
+      "at": 108605,
+      "place": "Stockton, California",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 68,
+        "triangles": 859305,
+        "drawCalls": 133,
+        "geometries": 133,
+        "textures": 32,
+        "buildings": 2105,
+        "observedWalls": 356,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 107943.98734543427,
+            "x": -679.1773419625823,
+            "y": 2570.76873049312,
+            "z": 32.49564391203134,
+            "phase": 3.0604953188059967,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      },
+      "colors": 2300,
+      "skyLow": 0,
+      "file": "frame-67.png"
+    },
+    {
+      "name": "Road profile 474.9",
+      "at": 772100.3155256333,
+      "place": "Oil Junction",
+      "area": "",
+      "road": "Golden State Highway",
+      "stats": {
+        "source": "",
+        "draws": 69,
+        "triangles": 1309033,
+        "drawCalls": 255,
+        "geometries": 255,
+        "textures": 32,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "colors": 1571,
+      "skyLow": 0,
+      "file": "frame-68.png"
+    },
+    {
+      "name": "Road profile 477.95",
+      "at": 775150.3155256333,
+      "place": "Oil Junction",
+      "area": "",
+      "road": "Golden State Avenue",
+      "stats": {
+        "source": "",
+        "draws": 70,
+        "triangles": 690721,
+        "drawCalls": 131,
+        "geometries": 257,
+        "textures": 32,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "colors": 2690,
+      "skyLow": 0,
+      "file": "frame-69.png"
+    },
+    {
+      "name": "Road profile 480.02",
+      "at": 777220.3155256333,
+      "place": "Bakersfield, California",
+      "area": "",
+      "road": "Golden State Avenue",
+      "stats": {
+        "source": "",
+        "draws": 71,
+        "triangles": 1944218,
+        "drawCalls": 369,
+        "geometries": 626,
+        "textures": 35,
+        "buildings": 3303,
+        "observedWalls": 494,
+        "trees": 876,
+        "roadside": 174,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          109.2,
+          254.4
+        ],
+        "failures": []
+      },
+      "colors": 3323,
+      "skyLow": 0,
+      "file": "frame-70.png"
+    },
+    {
+      "name": "Road profile 3246.455",
+      "at": 3958137.345714988,
+      "place": "Buena Ventura",
+      "area": "",
+      "road": "Coronado Freeway",
+      "stats": {
+        "source": "",
+        "draws": 72,
+        "triangles": 1312494,
+        "drawCalls": 228,
+        "geometries": 228,
+        "textures": 32,
+        "buildings": 2929,
+        "observedWalls": 279,
+        "trees": 4667,
+        "roadside": 752,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3244416.5502187856,
+            "x": -577.8802179703414,
+            "y": 655.5804801054653,
+            "z": 1659.1795243775837,
+            "phase": 0.5670386938147801,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          1539.9,
+          2225
+        ],
+        "failures": []
+      },
+      "colors": 615,
+      "skyLow": 0,
+      "file": "frame-71.png"
+    },
+    {
+      "name": "Road profile 1131",
+      "at": 1530567.0102787921,
+      "place": "Las Vegas → Kingman",
+      "area": "",
+      "road": "Hoover Dam Bypass",
+      "stats": {
+        "source": "",
+        "draws": 73,
+        "triangles": 1828373,
+        "drawCalls": 302,
+        "geometries": 302,
+        "textures": 31,
+        "buildings": 8,
+        "observedWalls": 0,
+        "trees": 146,
+        "roadside": 138,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1133809.526001484,
+            "x": -1397.3450435459265,
+            "y": 773.1931425813912,
+            "z": 522.9758168769142,
+            "phase": 3.1776545965830394,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          196.4,
+          977
+        ],
+        "failures": []
+      },
+      "colors": 8622,
+      "skyLow": 0,
+      "file": "frame-72.png"
+    },
+    {
+      "name": "Road profile 2142.77",
+      "at": 2768336.7157912236,
+      "place": "Inspiration Point → Zion National Park",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 74,
+        "triangles": 1082224,
+        "drawCalls": 177,
+        "geometries": 177,
+        "textures": 32,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "colors": 9278,
+      "skyLow": 0,
+      "file": "frame-73.png"
+    },
+    {
+      "name": "Road profile 2147.61",
+      "at": 2773176.7157912236,
+      "place": "Zion National Park, Utah",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 75,
+        "triangles": 861248,
+        "drawCalls": 164,
+        "geometries": 228,
+        "textures": 32,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "colors": 11253,
+      "skyLow": 0,
+      "file": "frame-74.png"
+    },
+    {
+      "name": "Road profile 2154.15",
+      "at": 2805078.8662276138,
+      "place": "Zion National Park, Utah",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 76,
+        "triangles": 787007,
+        "drawCalls": 132,
+        "geometries": 360,
+        "textures": 35,
+        "buildings": 58,
+        "observedWalls": 3,
+        "trees": 1894,
+        "roadside": 99,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2156185.8683091733,
+            "x": 627.141420477911,
+            "y": 271.2742973929802,
+            "z": 1399.102601524401,
+            "phase": 2.6952841971768575,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          1165,
+          2231.5
+        ],
+        "failures": []
+      },
+      "colors": 11856,
+      "skyLow": 0,
+      "file": "frame-75.png"
+    },
+    {
+      "name": "Road profile 2158.99",
+      "at": 2809918.8662276138,
+      "place": "Temple of Sinawava → Glen Canyon · Page",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 77,
+        "triangles": 471573,
+        "drawCalls": 72,
+        "geometries": 370,
+        "textures": 35,
+        "buildings": 58,
+        "observedWalls": 3,
+        "trees": 1894,
+        "roadside": 99,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2156185.8683091733,
+            "x": 627.141420477911,
+            "y": 271.2742973929802,
+            "z": 1399.102601524401,
+            "phase": 2.6952841971768575,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          1165,
+          2231.5
+        ],
+        "failures": []
+      },
+      "colors": 8777,
+      "skyLow": 0,
+      "file": "frame-76.png"
+    },
+    {
+      "name": "Road profile 2160",
+      "at": 2810928.8662276138,
+      "place": "Temple of Sinawava → Glen Canyon · Page",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 78,
+        "triangles": 1418484,
+        "drawCalls": 219,
+        "geometries": 589,
+        "textures": 38,
+        "buildings": 23,
+        "observedWalls": 1,
+        "trees": 1327,
+        "roadside": 24,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2170215.256317572,
+            "x": 3702.324267031625,
+            "y": 713.5012779731769,
+            "z": 1803.1367444300886,
+            "phase": 0.16960311639914039,
+            "count": 2
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1222.1,
+          2168.5
+        ],
+        "failures": []
+      },
+      "colors": 883,
+      "skyLow": 0,
+      "file": "frame-77.png"
+    },
+    {
+      "name": "Road profile 3831.63",
+      "at": 4543312.345714988,
+      "place": "Lubbock, Texas",
+      "area": "",
+      "road": "Marsha Sharp Freeway",
+      "stats": {
+        "source": "",
+        "draws": 79,
+        "triangles": 1532659,
+        "drawCalls": 327,
+        "geometries": 327,
+        "textures": 32,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3832322.6441316507,
+            "x": -2208.6947942033307,
+            "y": 160.4042724078754,
+            "z": 1031.0844563955143,
+            "phase": 3.3512974018000055,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "colors": 3733,
+      "skyLow": 0,
+      "file": "frame-78.png"
+    }
+  ],
+  "errors": [],
+  "checked": "2026-10-13T17:24:45.021Z",
+  "coverage": "Named stops, park interiors, selected road-profile corrections"
+}

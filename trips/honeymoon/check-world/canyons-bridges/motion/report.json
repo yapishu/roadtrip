@@ -1,0 +1,1441 @@
+{
+  "frames": [
+    {
+      "name": "bakers-ramp",
+      "frame": 0,
+      "pos": 772000.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 122,
+        "triangles": 1281018,
+        "drawCalls": 252,
+        "geometries": 252,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Highway",
+        "elev": 136.37
+      }
+    },
+    {
+      "name": "bakers-ramp",
+      "frame": 1,
+      "pos": 772030.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 152,
+        "triangles": 1272826,
+        "drawCalls": 251,
+        "geometries": 252,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Highway",
+        "elev": 137.03
+      }
+    },
+    {
+      "name": "bakers-ramp",
+      "frame": 2,
+      "pos": 772060.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 182,
+        "triangles": 1325562,
+        "drawCalls": 257,
+        "geometries": 261,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Highway",
+        "elev": 137.85
+      }
+    },
+    {
+      "name": "bakers-ramp",
+      "frame": 3,
+      "pos": 772090.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 212,
+        "triangles": 1317370,
+        "drawCalls": 256,
+        "geometries": 261,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Highway",
+        "elev": 138.73
+      }
+    },
+    {
+      "name": "bakers-ramp",
+      "frame": 4,
+      "pos": 772120.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 242,
+        "triangles": 1309154,
+        "drawCalls": 254,
+        "geometries": 261,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Highway",
+        "elev": 139.59
+      }
+    },
+    {
+      "name": "bakers-crossing",
+      "frame": 0,
+      "pos": 775070.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 243,
+        "triangles": 702934,
+        "drawCalls": 144,
+        "geometries": 264,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Avenue",
+        "elev": 127.74
+      }
+    },
+    {
+      "name": "bakers-crossing",
+      "frame": 1,
+      "pos": 775100.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 273,
+        "triangles": 691226,
+        "drawCalls": 137,
+        "geometries": 264,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Avenue",
+        "elev": 128.21
+      }
+    },
+    {
+      "name": "bakers-crossing",
+      "frame": 2,
+      "pos": 775130.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 303,
+        "triangles": 691106,
+        "drawCalls": 132,
+        "geometries": 264,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Avenue",
+        "elev": 128.85
+      }
+    },
+    {
+      "name": "bakers-crossing",
+      "frame": 3,
+      "pos": 775160.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 333,
+        "triangles": 690866,
+        "drawCalls": 130,
+        "geometries": 264,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Avenue",
+        "elev": 129.09
+      }
+    },
+    {
+      "name": "bakers-crossing",
+      "frame": 4,
+      "pos": 775190.3155256333,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 363,
+        "triangles": 690866,
+        "drawCalls": 130,
+        "geometries": 264,
+        "textures": 15,
+        "buildings": 608,
+        "observedWalls": 37,
+        "trees": 1181,
+        "roadside": 426,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          110.3,
+          279.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Golden State Avenue",
+        "elev": 128.79
+      }
+    },
+    {
+      "name": "kings-river",
+      "frame": 0,
+      "pos": 433310.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 364,
+        "triangles": 604526,
+        "drawCalls": 64,
+        "geometries": 64,
+        "textures": 16,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1023.43
+      }
+    },
+    {
+      "name": "kings-river",
+      "frame": 1,
+      "pos": 433340.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 394,
+        "triangles": 614434,
+        "drawCalls": 66,
+        "geometries": 70,
+        "textures": 16,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1024.23
+      }
+    },
+    {
+      "name": "kings-river",
+      "frame": 2,
+      "pos": 433370.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 424,
+        "triangles": 637474,
+        "drawCalls": 69,
+        "geometries": 74,
+        "textures": 16,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1025.08
+      }
+    },
+    {
+      "name": "kings-river",
+      "frame": 3,
+      "pos": 433400.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 454,
+        "triangles": 637474,
+        "drawCalls": 69,
+        "geometries": 74,
+        "textures": 16,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1026.08
+      }
+    },
+    {
+      "name": "kings-river",
+      "frame": 4,
+      "pos": 433430.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 484,
+        "triangles": 579950,
+        "drawCalls": 61,
+        "geometries": 74,
+        "textures": 16,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1027.25
+      }
+    },
+    {
+      "name": "kern-river",
+      "frame": 0,
+      "pos": 816203.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 485,
+        "triangles": 800603,
+        "drawCalls": 98,
+        "geometries": 98,
+        "textures": 16,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 477.84
+      }
+    },
+    {
+      "name": "kern-river",
+      "frame": 1,
+      "pos": 816233.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 515,
+        "triangles": 766667,
+        "drawCalls": 92,
+        "geometries": 99,
+        "textures": 16,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 477.79
+      }
+    },
+    {
+      "name": "kern-river",
+      "frame": 2,
+      "pos": 816263.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 545,
+        "triangles": 751563,
+        "drawCalls": 90,
+        "geometries": 99,
+        "textures": 16,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 477.79
+      }
+    },
+    {
+      "name": "kern-river",
+      "frame": 3,
+      "pos": 816293.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 575,
+        "triangles": 747467,
+        "drawCalls": 90,
+        "geometries": 110,
+        "textures": 16,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 478.12
+      }
+    },
+    {
+      "name": "kern-river",
+      "frame": 4,
+      "pos": 816323.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 605,
+        "triangles": 731083,
+        "drawCalls": 88,
+        "geometries": 110,
+        "textures": 16,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 478.27
+      }
+    },
+    {
+      "name": "zion-tunnel",
+      "frame": 0,
+      "pos": 2768256.7157912236,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 606,
+        "triangles": 1106669,
+        "drawCalls": 183,
+        "geometries": 183,
+        "textures": 21,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2144576.8957191347,
+            "x": -25.186243801616133,
+            "y": 178.82397154871467,
+            "z": 1431.607084469827,
+            "phase": 4.033756627960388,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Zion\u2013Mount Carmel Highway",
+        "elev": 1479.1999999999769
+      }
+    },
+    {
+      "name": "zion-tunnel",
+      "frame": 1,
+      "pos": 2768286.7157912236,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 636,
+        "triangles": 1075053,
+        "drawCalls": 179,
+        "geometries": 183,
+        "textures": 21,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2144576.8957191347,
+            "x": -25.186243801616133,
+            "y": 178.82397154871467,
+            "z": 1431.607084469827,
+            "phase": 4.033756627960388,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Zion\u2013Mount Carmel Highway",
+        "elev": 1477.6799999999769
+      }
+    },
+    {
+      "name": "zion-tunnel",
+      "frame": 2,
+      "pos": 2768316.7157912236,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 666,
+        "triangles": 1070821,
+        "drawCalls": 177,
+        "geometries": 183,
+        "textures": 21,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2144576.8957191347,
+            "x": -25.186243801616133,
+            "y": 178.82397154871467,
+            "z": 1431.607084469827,
+            "phase": 4.033756627960388,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Zion\u2013Mount Carmel Highway",
+        "elev": 1476.169999999976
+      }
+    },
+    {
+      "name": "zion-tunnel",
+      "frame": 3,
+      "pos": 2768346.7157912236,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 696,
+        "triangles": 1090453,
+        "drawCalls": 180,
+        "geometries": 189,
+        "textures": 21,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2144576.8957191347,
+            "x": -25.186243801616133,
+            "y": 178.82397154871467,
+            "z": 1431.607084469827,
+            "phase": 4.033756627960388,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Zion\u2013Mount Carmel Highway",
+        "elev": 1474.6099999999776
+      }
+    },
+    {
+      "name": "zion-tunnel",
+      "frame": 4,
+      "pos": 2768376.7157912236,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 726,
+        "triangles": 1174669,
+        "drawCalls": 210,
+        "geometries": 236,
+        "textures": 21,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2144576.8957191347,
+            "x": -25.186243801616133,
+            "y": 178.82397154871467,
+            "z": 1431.607084469827,
+            "phase": 4.033756627960388,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Zion\u2013Mount Carmel Highway",
+        "elev": 1473.0399999999759
+      }
+    },
+    {
+      "name": "kings-boundary",
+      "frame": 0,
+      "pos": 426730.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 727,
+        "triangles": 584230,
+        "drawCalls": 68,
+        "geometries": 68,
+        "textures": 20,
+        "buildings": 14,
+        "observedWalls": 0,
+        "trees": 25720,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 110326.83973781677,
+            "x": -1623.7718069649134,
+            "y": 1383.400262183228,
+            "z": 1426.5366607052297,
+            "phase": 6.045510143146427,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          631.4,
+          2142.9
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1021.81
+      }
+    },
+    {
+      "name": "kings-boundary",
+      "frame": 1,
+      "pos": 426760.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 757,
+        "triangles": 576166,
+        "drawCalls": 65,
+        "geometries": 72,
+        "textures": 20,
+        "buildings": 14,
+        "observedWalls": 0,
+        "trees": 25720,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 110326.83973781677,
+            "x": -1623.7718069649134,
+            "y": 1383.400262183228,
+            "z": 1426.5366607052297,
+            "phase": 6.045510143146427,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          631.4,
+          2142.9
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1022.47
+      }
+    },
+    {
+      "name": "kings-boundary",
+      "frame": 2,
+      "pos": 426790.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 787,
+        "triangles": 1014168,
+        "drawCalls": 118,
+        "geometries": 198,
+        "textures": 22,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1023.21
+      }
+    },
+    {
+      "name": "kings-boundary",
+      "frame": 3,
+      "pos": 426820.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 817,
+        "triangles": 1411012,
+        "drawCalls": 175,
+        "geometries": 263,
+        "textures": 22,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1023.91
+      }
+    },
+    {
+      "name": "kings-boundary",
+      "frame": 4,
+      "pos": 426850.32795742975,
+      "source": "detours/kings-canyon",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 847,
+        "triangles": 1584292,
+        "drawCalls": 200,
+        "geometries": 294,
+        "textures": 22,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 126049.06379001186,
+            "x": -337.2246678111999,
+            "y": -258.338356567875,
+            "z": 1090.7618907001977,
+            "phase": 2.6568898770764573,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 1024.7
+      }
+    },
+    {
+      "name": "kern-boundary",
+      "frame": 0,
+      "pos": 819423.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 848,
+        "triangles": 452703,
+        "drawCalls": 52,
+        "geometries": 52,
+        "textures": 20,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 546.5
+      }
+    },
+    {
+      "name": "kern-boundary",
+      "frame": 1,
+      "pos": 819453.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 878,
+        "triangles": 452683,
+        "drawCalls": 52,
+        "geometries": 53,
+        "textures": 20,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 547.53
+      }
+    },
+    {
+      "name": "kern-boundary",
+      "frame": 2,
+      "pos": 819483.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 908,
+        "triangles": 1284373,
+        "drawCalls": 155,
+        "geometries": 208,
+        "textures": 22,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 16983,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 41649.43322368525,
+            "x": -2910.389616446581,
+            "y": -880.0418052624761,
+            "z": 697.5742678042704,
+            "phase": 4.47879890390611,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          486.7,
+          1828.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 547.67
+      }
+    },
+    {
+      "name": "kern-boundary",
+      "frame": 3,
+      "pos": 819513.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 938,
+        "triangles": 1383701,
+        "drawCalls": 168,
+        "geometries": 223,
+        "textures": 22,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 16983,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 41649.43322368525,
+            "x": -2910.389616446581,
+            "y": -880.0418052624761,
+            "z": 697.5742678042704,
+            "phase": 4.47879890390611,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          486.7,
+          1828.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 547.93
+      }
+    },
+    {
+      "name": "kern-boundary",
+      "frame": 4,
+      "pos": 819543.3155256333,
+      "source": "detours/kern-river",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 968,
+        "triangles": 1483675,
+        "drawCalls": 182,
+        "geometries": 240,
+        "textures": 22,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 16983,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 41649.43322368525,
+            "x": -2910.389616446581,
+            "y": -880.0418052624761,
+            "z": 697.5742678042704,
+            "phase": 4.47879890390611,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          486.7,
+          1828.1
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Kern Canyon Road",
+        "elev": 548.76
+      }
+    },
+    {
+      "name": "lubbock",
+      "frame": 0,
+      "pos": 4543262.345714988,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 1563123,
+        "drawCalls": 331,
+        "geometries": 331,
+        "textures": 10,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3829970.6903791283,
+            "x": -4165.349746840003,
+            "y": -1132.3133876881377,
+            "z": 1020.1624735315601,
+            "phase": 1.5419134801884025,
+            "count": 4
+          },
+          {
+            "kind": "birds",
+            "s": 3839201.7394293393,
+            "x": 2910.2194155896927,
+            "y": 861.2360020676385,
+            "z": 1025.4601148401298,
+            "phase": 3.5378280983636627,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.65
+      }
+    },
+    {
+      "name": "lubbock",
+      "frame": 1,
+      "pos": 4543292.345714988,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 31,
+        "triangles": 1547635,
+        "drawCalls": 329,
+        "geometries": 331,
+        "textures": 10,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3829970.6903791283,
+            "x": -4165.349746840003,
+            "y": -1132.3133876881377,
+            "z": 1020.1624735315601,
+            "phase": 1.5419134801884025,
+            "count": 4
+          },
+          {
+            "kind": "birds",
+            "s": 3839201.7394293393,
+            "x": 2910.2194155896927,
+            "y": 861.2360020676385,
+            "z": 1025.4601148401298,
+            "phase": 3.5378280983636627,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.8600000000038
+      }
+    },
+    {
+      "name": "lubbock",
+      "frame": 2,
+      "pos": 4543322.345714988,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 61,
+        "triangles": 1524467,
+        "drawCalls": 326,
+        "geometries": 331,
+        "textures": 10,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3829970.6903791283,
+            "x": -4165.349746840003,
+            "y": -1132.3133876881377,
+            "z": 1020.1624735315601,
+            "phase": 1.5419134801884025,
+            "count": 4
+          },
+          {
+            "kind": "birds",
+            "s": 3839201.7394293393,
+            "x": 2910.2194155896927,
+            "y": 861.2360020676385,
+            "z": 1025.4601148401298,
+            "phase": 3.5378280983636627,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.9099999999981
+      }
+    },
+    {
+      "name": "lubbock",
+      "frame": 3,
+      "pos": 4543352.345714988,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 91,
+        "triangles": 1524467,
+        "drawCalls": 326,
+        "geometries": 331,
+        "textures": 10,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3829970.6903791283,
+            "x": -4165.349746840003,
+            "y": -1132.3133876881377,
+            "z": 1020.1624735315601,
+            "phase": 1.5419134801884025,
+            "count": 4
+          },
+          {
+            "kind": "birds",
+            "s": 3839201.7394293393,
+            "x": 2910.2194155896927,
+            "y": 861.2360020676385,
+            "z": 1025.4601148401298,
+            "phase": 3.5378280983636627,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.72
+      }
+    },
+    {
+      "name": "lubbock",
+      "frame": 4,
+      "pos": 4543382.345714988,
+      "source": "",
+      "stats": {
+        "source": "",
+        "draws": 121,
+        "triangles": 1524467,
+        "drawCalls": 326,
+        "geometries": 331,
+        "textures": 10,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3829970.6903791283,
+            "x": -4165.349746840003,
+            "y": -1132.3133876881377,
+            "z": 1020.1624735315601,
+            "phase": 1.5419134801884025,
+            "count": 4
+          },
+          {
+            "kind": "birds",
+            "s": 3839201.7394293393,
+            "x": 2910.2194155896927,
+            "y": 861.2360020676385,
+            "z": 1025.4601148401298,
+            "phase": 3.5378280983636627,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.8100000000046
+      }
+    }
+  ],
+  "errors": [],
+  "method": "Eight moving sequences, 120 one-metre steps each, including bridges, tunnels, rivers, and streamed chunk boundaries"
+}

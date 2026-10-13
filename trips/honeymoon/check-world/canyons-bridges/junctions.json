@@ -1,0 +1,344 @@
+{
+  "sections": 533,
+  "structureJunctions": 4642,
+  "fixedJunctions": 286,
+  "unresolvedJunctions": [],
+  "largestRepairs": [
+    {
+      "node": 9607698872,
+      "file": "world/c0008.json",
+      "at": 86435.0,
+      "before": 11.27,
+      "after": 0.0,
+      "roads": [
+        "way24914233",
+        "way1044081766"
+      ]
+    },
+    {
+      "node": 6983983384,
+      "file": "world/c0324.json",
+      "at": 3246455.0,
+      "before": 9.21,
+      "after": 0.0,
+      "roads": [
+        "way41375147",
+        "way746273491"
+      ]
+    },
+    {
+      "node": 2850353888,
+      "file": "world/c0289.json",
+      "at": 2894125.0,
+      "before": 8.98,
+      "after": 0.0,
+      "roads": [
+        "way281013505",
+        "way281013513"
+      ]
+    },
+    {
+      "node": 1089694278,
+      "file": "world/c0004.json",
+      "at": 40175.0,
+      "before": 8.18,
+      "after": 0.0,
+      "roads": [
+        "way93808892",
+        "way162934416"
+      ]
+    },
+    {
+      "node": 9766061338,
+      "file": "world/c0004.json",
+      "at": 40165.0,
+      "before": 8.03,
+      "after": 0.0,
+      "roads": [
+        "way1063129501",
+        "way1063129503"
+      ]
+    },
+    {
+      "node": 6983983406,
+      "file": "world/c0324.json",
+      "at": 3246485.0,
+      "before": 7.74,
+      "after": 0.0,
+      "roads": [
+        "way48489627",
+        "way746273492"
+      ]
+    },
+    {
+      "node": 1747281436,
+      "file": "world/c0004.json",
+      "at": 40190.0,
+      "before": 7.24,
+      "after": 0.0,
+      "roads": [
+        "way163050444",
+        "way163050446"
+      ]
+    },
+    {
+      "node": 263769207,
+      "file": "world/c0030.json",
+      "at": 305800.0,
+      "before": 6.73,
+      "after": 0.0,
+      "roads": [
+        "way48975501",
+        "way53057953"
+      ]
+    },
+    {
+      "node": 12426517713,
+      "file": "parks/zion/world/c0001.json",
+      "at": 18480.0,
+      "before": 5.14,
+      "after": 0.0,
+      "roads": [
+        "way14326840",
+        "way1394211844"
+      ]
+    },
+    {
+      "node": 11931824873,
+      "file": "world/c0015.json",
+      "at": 159190.0,
+      "before": 5.08,
+      "after": 0.0,
+      "roads": [
+        "way34401923",
+        "way1286426875"
+      ]
+    },
+    {
+      "node": 394498769,
+      "file": "world/c0016.json",
+      "at": 161115.0,
+      "before": 4.43,
+      "after": 0.0,
+      "roads": [
+        "way34401903",
+        "way34401905"
+      ]
+    },
+    {
+      "node": 12587719084,
+      "file": "world/c0014.json",
+      "at": 147600.0,
+      "before": 4.05,
+      "after": 0.0,
+      "roads": [
+        "way855488669",
+        "way1359864741"
+      ]
+    },
+    {
+      "node": 90778399,
+      "file": "world/c0010.json",
+      "at": 108605.46,
+      "before": 4.03,
+      "after": 0.0,
+      "roads": [
+        "way48014862",
+        "way876154244"
+      ]
+    },
+    {
+      "node": 11746003366,
+      "file": "world/c0006.json",
+      "at": 65130.0,
+      "before": 3.95,
+      "after": 0.0,
+      "roads": [
+        "way1046459428",
+        "way1264222319"
+      ]
+    },
+    {
+      "node": 12157142696,
+      "file": "world/c0106.json",
+      "at": 1068215.0,
+      "before": 3.63,
+      "after": 0.0,
+      "roads": [
+        "way174448878",
+        "way1313420537"
+      ]
+    },
+    {
+      "node": 726058881,
+      "file": "world/c0383.json",
+      "at": 3836260.0,
+      "before": 3.17,
+      "after": 0.0,
+      "roads": [
+        "way58603362",
+        "way161505818"
+      ]
+    },
+    {
+      "node": 5669316337,
+      "file": "world/c0109.json",
+      "at": 1097655.0,
+      "before": 2.62,
+      "after": 0.0,
+      "roads": [
+        "way544433552",
+        "way594576174",
+        "way598836508"
+      ]
+    },
+    {
+      "node": 8542963799,
+      "file": "world/c0321.json",
+      "at": 3219480.0,
+      "before": 2.59,
+      "after": 0.0,
+      "roads": [
+        "way919972496",
+        "way919972497"
+      ]
+    },
+    {
+      "node": 83427484,
+      "file": "world/c0210.json",
+      "at": 2103570.0,
+      "before": 2.44,
+      "after": 0.0,
+      "roads": [
+        "way1102653104",
+        "way1102653105"
+      ]
+    },
+    {
+      "node": 974344842,
+      "file": "world/c0049.json",
+      "at": 494033.71,
+      "before": 2.38,
+      "after": 0.0,
+      "roads": [
+        "way10380946",
+        "way83673231",
+        "way83673232"
+      ]
+    },
+    {
+      "node": 13458868299,
+      "file": "world/c0106.json",
+      "at": 1067425.0,
+      "before": 2.3,
+      "after": 0.0,
+      "roads": [
+        "way501588278",
+        "way1471868503"
+      ]
+    },
+    {
+      "node": 13458868300,
+      "file": "world/c0106.json",
+      "at": 1067415.0,
+      "before": 2.27,
+      "after": 0.0,
+      "roads": [
+        "way435072210",
+        "way1467377394"
+      ]
+    },
+    {
+      "node": 1463133056,
+      "file": "world/c0214.json",
+      "at": 2148890.0,
+      "before": 2.15,
+      "after": 0.0,
+      "roads": [
+        "way132975313",
+        "way132975315"
+      ]
+    },
+    {
+      "node": 12157150901,
+      "file": "world/c0106.json",
+      "at": 1068215.0,
+      "before": 2.13,
+      "after": 0.0,
+      "roads": [
+        "way174448878",
+        "way1450400128"
+      ]
+    },
+    {
+      "node": 615956369,
+      "file": "world/c0324.json",
+      "at": 3246500.0,
+      "before": 2.09,
+      "after": 0.0,
+      "roads": [
+        "way48474981",
+        "way48474983"
+      ]
+    },
+    {
+      "node": 10266409656,
+      "file": "world/c0047.json",
+      "at": 477995.0,
+      "before": 2.07,
+      "after": 0.0,
+      "roads": [
+        "way31705704",
+        "way1122511274"
+      ]
+    },
+    {
+      "node": 2101240403,
+      "file": "world/c0113.json",
+      "at": 1135600.0,
+      "before": 1.92,
+      "after": 0.0,
+      "roads": [
+        "way200137374",
+        "way879781601"
+      ]
+    },
+    {
+      "node": 1055732479,
+      "file": "world/c0025.json",
+      "at": 256955.0,
+      "before": 1.9,
+      "after": 0.0,
+      "roads": [
+        "way90949489",
+        "way1188791762"
+      ]
+    },
+    {
+      "node": 3181081143,
+      "file": "world/c0055.json",
+      "at": 558055.0,
+      "before": 1.75,
+      "after": 0.0,
+      "roads": [
+        "way82258814",
+        "way312253978"
+      ]
+    },
+    {
+      "node": 11990882490,
+      "file": "world/c0320.json",
+      "at": 3202858.11,
+      "before": 1.72,
+      "after": 0.0,
+      "roads": [
+        "way1306967397",
+        "way1306967398"
+      ]
+    }
+  ],
+  "unbuiltRoads": [],
+  "steepGrades": [],
+  "chunkSeams": [],
+  "scope": "Shared original OSM nodes within 180 m of the driving path; five-metre grade samples; chunk boundaries"
+}

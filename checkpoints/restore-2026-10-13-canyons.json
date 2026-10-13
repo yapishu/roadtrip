@@ -1,0 +1,14 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-13-canyons.tar.zst",
+  "worldSections": 533,
+  "restoredFiles": 5082,
+  "allRestoredFilesMatchLive": true,
+  "currentViewerComponentRetained": true,
+  "kingsCanyonSections": 30,
+  "kernRiverSections": 19,
+  "restoredViewerChecks": [
+    "Kings Canyon",
+    "Kern River Canyon"
+  ],
+  "restoredViewerRuntimeErrors": 0
+}

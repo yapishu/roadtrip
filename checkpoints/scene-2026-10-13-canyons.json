@@ -1,0 +1,12 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-13-canyons.tar.zst",
+  "bytes": 1539713817,
+  "sha256": "ba78b3bb30870af791f41439d16741819bac995c21b9c911696ef1fd93bd7f33",
+  "sourceCommit": "ba9fdefb9fb88c102e7f0e194fbeb7e1f5754c26",
+  "sceneCommit": "3150027b6149a64a2dec0b788e0b29a9973919f2",
+  "worldSections": 533,
+  "stops": 55,
+  "routeMetres": 5026800.345714988,
+  "contents": "Complete viewer, components, art, terrain, mapped structures, roadside details, seven park drives, Brian Head, Kings Canyon, and Kern River Canyon over Walker Pass",
+  "storage": "Separate scene archive; restore world assets with scripts/restore-scene.mjs"
+}

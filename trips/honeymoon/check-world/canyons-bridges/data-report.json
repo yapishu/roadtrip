@@ -1,0 +1,92 @@
+{
+  "worldSections": 533,
+  "sources": [
+    {
+      "source": "main",
+      "sections": 432,
+      "metres": 4315111.93695856
+    },
+    {
+      "source": "detours/kings-canyon",
+      "sections": 30,
+      "metres": 297200.31552563317
+    },
+    {
+      "source": "detours/kern-river",
+      "sections": 19,
+      "metres": 181203.06572234977
+    },
+    {
+      "source": "parks/death-valley",
+      "sections": 13,
+      "metres": 122870.67360377237
+    },
+    {
+      "source": "parks/grand-canyon",
+      "sections": 10,
+      "metres": 99169.53649554064
+    },
+    {
+      "source": "detours/brian-head",
+      "sections": 12,
+      "metres": 111924.91498678942
+    },
+    {
+      "source": "parks/bryce",
+      "sections": 6,
+      "metres": 59177.95965482248
+    },
+    {
+      "source": "parks/zion",
+      "sections": 3,
+      "metres": 25362.150436390275
+    },
+    {
+      "source": "parks/glen-canyon",
+      "sections": 3,
+      "metres": 21065.27438347503
+    },
+    {
+      "source": "parks/monument-valley",
+      "sections": 3,
+      "metres": 22426.363809884613
+    },
+    {
+      "source": "parks/mesa-verde",
+      "sections": 2,
+      "metres": 17261.841294015005
+    }
+  ],
+  "terrainGrids": 1168,
+  "roadInstances": 189331,
+  "waterwayInstances": 2196,
+  "roadsideInstances": {
+    "stop": 1605,
+    "signal": 1742,
+    "give_way": 125,
+    "tower": 4872,
+    "bus_stop": 364,
+    "pole": 12428,
+    "rail": 1098,
+    "line": 1918,
+    "fence": 2677,
+    "minor_line": 1147,
+    "guard_rail": 196,
+    "picnic_table": 317,
+    "bin": 140,
+    "lamp": 2200,
+    "hydrant": 195,
+    "wall": 508,
+    "bench": 394,
+    "hedge": 25,
+    "information": 202,
+    "boulder": 104,
+    "chair_lift": 10
+  },
+  "missingFiles": 0,
+  "invalidGridSizes": 0,
+  "unbuiltRouteTypes": {
+    "detours/kings-canyon": [],
+    "detours/kern-river": []
+  }
+}

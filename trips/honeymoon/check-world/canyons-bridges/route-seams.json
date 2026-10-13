@@ -1,0 +1,148 @@
+{
+  "routeMetres": 5026800.345714988,
+  "stops": 55,
+  "seams": [
+    {
+      "fromSource": "",
+      "toSource": "detours/kings-canyon",
+      "at": 306790.32795742975,
+      "horizontalMetres": 0.002,
+      "verticalMetres": 0.0
+    },
+    {
+      "fromSource": "detours/kings-canyon",
+      "toSource": "",
+      "at": 603990.643483063,
+      "horizontalMetres": 0.006,
+      "verticalMetres": 0.0
+    },
+    {
+      "fromSource": "",
+      "toSource": "detours/kern-river",
+      "at": 779483.3155256333,
+      "horizontalMetres": 0.007,
+      "verticalMetres": 0.053
+    },
+    {
+      "fromSource": "detours/kern-river",
+      "toSource": "",
+      "at": 960686.3812479831,
+      "horizontalMetres": 0.004,
+      "verticalMetres": 0.03
+    },
+    {
+      "fromSource": "",
+      "toSource": "parks/death-valley",
+      "at": 1153575.33667502,
+      "horizontalMetres": 1.212,
+      "verticalMetres": 0.0
+    },
+    {
+      "fromSource": "parks/death-valley",
+      "toSource": "",
+      "at": 1276446.0102787924,
+      "horizontalMetres": 1.212,
+      "verticalMetres": 0.0
+    },
+    {
+      "fromSource": "",
+      "toSource": "parks/grand-canyon",
+      "at": 1923440.0102787924,
+      "horizontalMetres": 2.09,
+      "verticalMetres": 0.07
+    },
+    {
+      "fromSource": "parks/grand-canyon",
+      "toSource": "",
+      "at": 2022609.5467743329,
+      "horizontalMetres": 2.087,
+      "verticalMetres": 0.01
+    },
+    {
+      "fromSource": "",
+      "toSource": "detours/brian-head",
+      "at": 2424391.8411496114,
+      "horizontalMetres": 0.004,
+      "verticalMetres": 0.04
+    },
+    {
+      "fromSource": "detours/brian-head",
+      "toSource": "",
+      "at": 2536316.7561364006,
+      "horizontalMetres": 0.004,
+      "verticalMetres": 0.017
+    },
+    {
+      "fromSource": "",
+      "toSource": "parks/bryce",
+      "at": 2578254.7561364006,
+      "horizontalMetres": 2.781,
+      "verticalMetres": 0.01
+    },
+    {
+      "fromSource": "parks/bryce",
+      "toSource": "",
+      "at": 2637432.715791223,
+      "horizontalMetres": 2.782,
+      "verticalMetres": 0.09
+    },
+    {
+      "fromSource": "",
+      "toSource": "parks/zion",
+      "at": 2776459.715791223,
+      "horizontalMetres": 2.523,
+      "verticalMetres": 0.15
+    },
+    {
+      "fromSource": "parks/zion",
+      "toSource": "",
+      "at": 2801821.8662276133,
+      "horizontalMetres": 2.523,
+      "verticalMetres": 0.17
+    },
+    {
+      "fromSource": "",
+      "toSource": "parks/glen-canyon",
+      "at": 2983889.8662276133,
+      "horizontalMetres": 3.211,
+      "verticalMetres": 0.026
+    },
+    {
+      "fromSource": "parks/glen-canyon",
+      "toSource": "",
+      "at": 3004955.1406110884,
+      "horizontalMetres": 3.211,
+      "verticalMetres": 0.026
+    },
+    {
+      "fromSource": "",
+      "toSource": "parks/monument-valley",
+      "at": 3210829.1406110884,
+      "horizontalMetres": 3.305,
+      "verticalMetres": 0.51
+    },
+    {
+      "fromSource": "parks/monument-valley",
+      "toSource": "",
+      "at": 3233255.504420973,
+      "horizontalMetres": 3.305,
+      "verticalMetres": 0.52
+    },
+    {
+      "fromSource": "",
+      "toSource": "parks/mesa-verde",
+      "at": 3485840.504420973,
+      "horizontalMetres": 3.884,
+      "verticalMetres": 0.01
+    },
+    {
+      "fromSource": "parks/mesa-verde",
+      "toSource": "",
+      "at": 3503102.3457149877,
+      "horizontalMetres": 3.884,
+      "verticalMetres": 0.07
+    }
+  ],
+  "maximumHorizontalMetres": 3.884,
+  "maximumVerticalMetres": 0.52
+}

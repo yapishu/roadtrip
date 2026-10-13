@@ -1,0 +1,65 @@
+{
+  "frames": [
+    {
+      "km": 433.390328,
+      "place": "Kings Canyon Scenic Byway",
+      "area": "",
+      "road": "Kings Canyon Scenic Byway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 1,
+        "triangles": 637600,
+        "drawCalls": 69,
+        "geometries": 69,
+        "textures": 5,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 128716.25376229134,
+            "x": 1650.7761795209274,
+            "y": -1236.029307738394,
+            "z": 1205.590368534029,
+            "phase": 3.5184552155196167,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      }
+    },
+    {
+      "km": 816.268316,
+      "place": "Kern River Canyon",
+      "area": "",
+      "road": "Kern Canyon Road",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 2,
+        "triangles": 760915,
+        "drawCalls": 91,
+        "geometries": 91,
+        "textures": 7,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}
