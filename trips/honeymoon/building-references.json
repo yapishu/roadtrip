@@ -1,0 +1,44 @@
+{
+  "way184266423": {
+    "name": "Historic Stockton City Hall",
+    "kind": "civic",
+    "levels": 3,
+    "height": 14.2,
+    "heightSource": "Estimated metres from the documented three-storey form; not a surveyed height",
+    "roof": "flat",
+    "color": "#c1bca8",
+    "material": "stone",
+    "referenceStyle": "civic-stone",
+    "references": [
+      "https://pcad.lib.washington.edu/building/17183/",
+      "https://www.downtownstockton.org/tour/city-hall/"
+    ]
+  },
+  "way616651647": {
+    "kind": "civic",
+    "levels": 7,
+    "height": 29,
+    "heightSource": "Estimated metres from the documented seven-storey form; not a surveyed height",
+    "roof": "flat",
+    "color": "#b7beb6",
+    "material": "metal",
+    "referenceStyle": "curtain-wall",
+    "references": [
+      "https://www.nv5.com/projects/energy/las-vegas-city-hall/",
+      "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/City-Hall"
+    ]
+  },
+  "way256700044": {
+    "kind": "civic",
+    "levels": 3,
+    "height": 13.5,
+    "heightSource": "Estimated metres from the documented three-storey form; not a surveyed height",
+    "roof": "flat",
+    "color": "#c5bfac",
+    "material": "stone",
+    "referenceStyle": "civic-stone",
+    "references": [
+      "https://www.thc.texas.gov/public/upload/publications/Recent%20Listing%20-%20Jack%20County%20Courthouse%20NR.pdf"
+    ]
+  }
+}

@@ -8,6 +8,20 @@ Estimate missing heights conservatively for the building class and region, and
 record that they are estimates. Do not fill an extraction gap with invented
 buildings.
 
+Run `scripts/refine-buildings.py --trip "$TRIP"` after assembling the journey.
+It refreshes only structures, retaining a building baseline in the source cache.
+Mapped use and land-use polygons distinguish small commercial footprints from
+houses. Building parts replace their portion of an enclosing shell; courtyards
+and minimum heights remain open. Optional `building-references.json` entries are
+keyed by OSM object ID and retain source URLs and height-estimate labels.
+
+The renderer distinguishes gabled, hipped, pyramidal, skillion, and flat roofs.
+Regional storefront artwork belongs on a street-facing ground floor. Upper
+floors and side walls use coherent window bays, while open canopies use posts.
+Trim, glazing, masonry variation, and rooftop equipment are representative,
+not surveyed details. Nearby architecture is detailed; distant structures keep
+their mapped silhouettes. Spatial batches allow buildings outside the view to cull.
+
 The scene's character comes from four complementary layers:
 
 | Layer | Source and treatment |
@@ -155,6 +169,10 @@ and incidence, and rejects faces whose expected distance disagrees with depth.
 Accepted patches form atlases with per-face provenance. A random street photo is
 not a building texture. Unobserved walls remain regional surfaces. If maps or
 elevations change, regenerate the affected façade projections.
+
+The viewer accepts observed walls only with at least 80% depth agreement and
+three texture pixels per metre of height. It excludes canopies, elevated parts,
+and reference forms whose dimensions differ from the projected imagery.
 
 ## Landmarks
 

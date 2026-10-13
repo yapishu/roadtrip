@@ -17,6 +17,7 @@ import re
 import threading
 import time
 from road_topology import physical, attach
+from building_metadata import attributes
 
 os.environ.setdefault('GDAL_DISABLE_READDIR_ON_OPEN', 'EMPTY_DIR')
 os.environ.setdefault('CPL_VSIL_CURL_ALLOWED_EXTENSIONS', '.tif')
@@ -181,19 +182,6 @@ def polygons(element):
     return result
 
 
-def building_kind(t, area):
-    text = ' '.join(str(t.get(k,'')) for k in ['building','amenity','shop','tourism'])
-    if re.search('church|cathedral|place_of_worship', text): return 'church'
-    if re.search('school|civic|public|library|museum|townhall|station', text): return 'civic'
-    if re.search('industrial|warehouse|hangar|manufact', text): return 'industrial'
-    if re.search('barn|farm|stable|greenhouse', text): return 'farm'
-    if re.search('garage|shed|carport', text): return 'shed'
-    if re.search('hotel|motel', text): return 'motel'
-    if t.get('shop') or re.search('retail|commercial|office|restaurant|fuel', text): return 'shop'
-    if re.search('apartments|dormitory', text): return 'apartment'
-    return 'house' if area < 500 else 'commercial'
-
-
 def road_width(t):
     explicit = number(t.get('width'))
     if explicit > 0: return min(40, explicit)
@@ -217,21 +205,10 @@ def features(extract, origin, g, dem):
             for polygon in polygons(e):
                 if polygon.area < 5: continue
                 p = np.asarray(polygon.exterior.coords)
-                kind = building_kind(t, polygon.area)
-                height = number(t.get('height'))
-                levels = number(t.get('building:levels'))
-                mapped = bool(height or levels)
-                if not height:
-                    height = levels*3.1+number(t.get('roof:height'),.6) if levels else {
-                        'house':4.5,'shed':2.8,'shop':4.8,'commercial':5.5,'industrial':7,
-                        'farm':6,'motel':4.2,'apartment':7,'church':10,'civic':6}.get(kind,4.5)
                 base = float(np.median(sample(g,dem,p)))
                 buildings.append(dict(id=key, points=np.round(p-origin,2).tolist(),
                     holes=[np.round(np.asarray(r.coords)-origin,2).tolist() for r in polygon.interiors],
-                    base=round(base,2), height=round(height,2), heightSource='mapped' if mapped else 'estimated',
-                    kind=kind, name=t.get('name'), roof=t.get('roof:shape') or ('gabled' if kind in ['house','farm'] else 'flat'),
-                    roofHeight=number(t.get('roof:height')), material=t.get('building:material'),
-                    roofMaterial=t.get('roof:material'), color=t.get('building:colour'), roofColor=t.get('roof:colour')))
+                    base=round(base,2), name=t.get('name'), **attributes(t, polygon.area)))
         if e['type']=='way' and physical(t):
             p = projected_geometry(e.get('geometry'))
             if p is None: continue

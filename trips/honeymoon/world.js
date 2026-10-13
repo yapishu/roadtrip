@@ -5,6 +5,8 @@ import { gradeTerrain, normalAt, groundHeight, minorRoadSurfaces } from './road-
 import { addAmbient } from './ambient.js';
 import { scheduleAmbient } from './ambient-plan.js';
 import { roadSupports } from './road-supports.js';
+import { buildingPlans, addBuildings } from './buildings.js';
+import { roofProfile, facadeFloors } from './building-shapes.js';
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const hash=s=>{let v=2166136261;for(const c of String(s))v=Math.imul(v^c.charCodeAt(0),16777619);return v>>>0;};
 export async function createRoad(canvas,opts={}) {
@@ -121,29 +123,6 @@ export async function createRoad(canvas,opts={}) {
     for(const road of roads)for(const polygon of surfaces.get(road)||[])for(let i=1;i<polygon.length-1;i++)for(const p of [polygon[0],polygon[i+1],polygon[i]])vertices.push(p[0],p[2],-p[1]);
     if(vertices.length)group.add(mesh(vertices,material('#719698',{side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1})));
   }
-  function roofProfile(b) {
-    const p=b.points.slice(0,-1);let longest=0,ux=1,uy=0;
-    for(let i=0;i<p.length;i++){const q=p[(i+1)%p.length],dx=q[0]-p[i][0],dy=q[1]-p[i][1],len=Math.hypot(dx,dy);if(len>longest){longest=len;ux=dx/len;uy=dy/len;}}
-    const across=p.map(v=>-uy*v[0]+ux*v[1]),min=Math.min(...across),max=Math.max(...across),center=(min+max)/2;
-    const rise=/gabled|hipped/.test(b.roof)&&!b.holes.length?Math.min(b.height*.35,b.roofHeight||Math.max(.8,(max-min)*.18)):0;
-    return {rise,eaves:b.base+b.height-rise,axis:v=>-uy*v[0]+ux*v[1]-center,top:v=>b.base+b.height-rise*Math.min(1,Math.abs(-uy*v[0]+ux*v[1]-center)/Math.max(.1,(max-min)/2))};
-  }
-  function buildingMeshes(d,group,groundAt){
-    const walls=[],roofs=[],foundations=[],wallColors=[],roofColors=[],roofUV=[];
-    for(const b of d.buildings){const p=b.points.slice(0,-1);if(p.length<3)continue;const profile=roofProfile(b),seed=hash(b.id),c=new THREE.Color(b.color||['#b8a68b','#c4b8a1','#ae8c75','#b6aca0','#a79c8b'][seed%5]),rc=new THREE.Color(b.roofColor||['#756b5d','#786955','#9b8f7d','#705f50'][seed%4]);const base=b.base-.25,top=profile.eaves;
-      for(let i=0;i<p.length;i++){const a=p[i],z=p[(i+1)%p.length];const start=walls.length;quad(walls,[a[0],base,-a[1]],[z[0],base,-z[1]],[z[0],top,-z[1]],[a[0],top,-a[1]]);
-        const length=Math.hypot(z[0]-a[0],z[1]-a[1]),parts=Math.max(1,Math.ceil(length/5));
-        for(let j=0;j<parts;j++){const u=j/parts,v=(j+1)/parts,x=a[0]+(z[0]-a[0])*u,y=a[1]+(z[1]-a[1])*u,xx=a[0]+(z[0]-a[0])*v,yy=a[1]+(z[1]-a[1])*v,low=Math.min(base,groundAt(x,y)-.5),end=Math.min(base,groundAt(xx,yy)-.5);if(low<base-.1||end<base-.1)quad(foundations,[x,low,-y],[xx,end,-yy],[xx,base,-yy],[x,base,-y]);}
-        if(profile.rise){const aa=profile.axis(a),zz=profile.axis(z),poly=[a];if(aa*zz<0){const t=aa/(aa-zz);poly.push([a[0]+(z[0]-a[0])*t,a[1]+(z[1]-a[1])*t]);}poly.push(z);for(let j=0;j<poly.length-1;j++){const v=poly[j],w=poly[j+1];quad(walls,[v[0],top,-v[1]],[w[0],top,-w[1]],[w[0],profile.top(w),-w[1]],[v[0],profile.top(v),-v[1]]);}}
-        for(let j=start;j<walls.length;j+=3)wallColors.push(c.r,c.g,c.b);
-      }
-      const clip=sign=>{const result=[];for(let i=0;i<p.length;i++){const a=p[i],b=p[(i+1)%p.length],va=profile.axis(a)*sign,vb=profile.axis(b)*sign;if(va>=0)result.push(a);if(va*vb<0){const t=va/(va-vb);result.push([a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t]);}}return result;};
-      for(const ring of profile.rise?[clip(1),clip(-1)]:[p]){if(ring.length<3)continue;const contour=ring.map(v=>new THREE.Vector2(...v)),holes=(b.holes||[]).map(h=>h.slice(0,-1).map(v=>new THREE.Vector2(...v))),flat=[...contour,...holes.flat()];
-        for(const face of THREE.ShapeUtils.triangulateShape(contour,holes))for(const j of face){const v=flat[j];roofs.push(v.x,profile.rise?profile.top([v.x,v.y]):top,-v.y);roofColors.push(rc.r,rc.g,rc.b);roofUV.push((v.x-d.near.x0)/((d.near.w-1)*d.near.cell),(v.y-d.near.y0)/((d.near.h-1)*d.near.cell));}}
-    }
-    for(const [v,c] of [[walls,wallColors],[roofs,roofColors]])if(v.length){const m=mesh(v,material('#ffffff',{vertexColors:true,side:THREE.DoubleSide}));m.geometry.setAttribute('color',new THREE.Float32BufferAttribute(c,3));group.add(m);}
-    if(foundations.length)group.add(mesh(foundations,material('#797767',{side:THREE.DoubleSide})));
-  }
   function lodgeDetails(d,group) {
     for(const b of d.buildings){if(b.landmark!=='giant-steps-lodge')continue;
       const a=b.points[b.facadeEdge],q=b.points[b.facadeEdge+1],dx=q[0]-a[0],dy=q[1]-a[1],len=Math.hypot(dx,dy),sign=Math.sign(b.points.slice(0,-1).reduce((sum,p,i)=>sum+p[0]*b.points[i+1][1]-p[1]*b.points[i+1][0],0)),nx=dy/len*sign,ny=-dx/len*sign;
@@ -158,19 +137,26 @@ export async function createRoad(canvas,opts={}) {
   }
   function landmarkMeshes(d,group){for(const l of d.landmarks||[]){if(l.kind!=='watchtower')continue;const geometry=new THREE.CylinderGeometry(l.radius*.93,l.radius,l.height,32,8),uv=geometry.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*5,uv.getY(i)*5);const tower=new THREE.Mesh(geometry,material('#a58b66',{map:rocks.get('limestone')}));tower.position.set(l.center[0],l.base+l.height/2,-l.center[1]);group.add(tower);const windows=[];for(const height of [6,11,16,19])for(let i=0;i<8;i++){const angle=i*Math.PI/4+(height%3)*.11,nx=Math.sin(angle),ny=Math.cos(angle),radius=l.radius*(1-.07*height/l.height)+.025,x=l.center[0]+nx*radius,y=l.center[1]+ny*radius,tangent=[ny*.4,-nx*.4];quad(windows,[x-tangent[0],l.base+height,-y+tangent[1]],[x+tangent[0],l.base+height,-y-tangent[1]],[x+tangent[0],l.base+height+1,-y-tangent[1]],[x-tangent[0],l.base+height+1,-y+tangent[1]]);}group.add(mesh(windows,material('#302b25',{side:THREE.DoubleSide})));}}
   function themeAt(s){let theme=regional?.themes[0]?.id;for(const t of regional?.themes||[])if(t.from<=s)theme=t.id;return theme;}
-  function regionalFacades(d,group,source){if(!regional)return;const theme=themeAt(sources[source].themeAt??(d.s0+d.len/2)),surfaces=Object.entries(regional.surfaces).filter(([,p])=>p.theme===theme),batches=new Map();
-    for(const b of d.buildings){if(b.landmark)continue;let role=/house|apartment/.test(b.kind)?'house':/industrial|farm|shed/.test(b.kind)?'industrial':b.kind==='motel'?'motel':/church|civic/.test(b.kind)?'civic':'shop';let choices=surfaces.filter(([,p])=>p.role===role);if(!choices.length)choices=surfaces;if(!choices.length)continue;
-      const profile=roofProfile(b),base=b.base-.2,top=profile.eaves;
-      for(let edge=0;edge<b.points.length-1;edge++){const a=b.points[edge],z=b.points[edge+1],len=Math.hypot(z[0]-a[0],z[1]-a[1]);if(len<.2)continue;const seed=hash(b.id+':'+edge),skin=choices[seed%choices.length][1];if(!regionalTextures.has(skin.file))continue;let batch=batches.get(skin.file);if(!batch){batch={vertices:[],uv:[]};batches.set(skin.file,batch);}
-        const count=Math.max(1,Math.round(len/skin.width)),stories=Math.max(1,Math.round((top-base)/4));
-        for(let j=0;j<count;j++)for(let floor=0;floor<stories;floor++){const t0=j/count,t1=(j+1)/count,p=[a[0]+(z[0]-a[0])*t0,a[1]+(z[1]-a[1])*t0],q=[a[0]+(z[0]-a[0])*t1,a[1]+(z[1]-a[1])*t1],h0=base+(top-base)*floor/stories,h1=base+(top-base)*(floor+1)/stories;
-          quad(batch.vertices,[p[0],h0,-p[1]],[q[0],h0,-q[1]],[q[0],h1,-q[1]],[p[0],h1,-p[1]]);
-          const [ax,ay,aw,ah]=skin.rect,[tw,th]=skin.size,u0=(ax+.5)/tw,u1=(ax+aw-.5)/tw,v0=1-(ay+ah*(floor>0?.6:1)-.5)/th,v1=1-(ay+.5)/th;
+  function regionalFacades(d,group,plans,observed){
+    const batches=new Map();
+    for(const b of d.buildings){
+      const {profile,fronts,skin}=plans.get(b);
+      for(const front of fronts){
+        if(b.landmark||b.referenceStyle||front<0||!skin||!regionalTextures.has(skin.file)||['canopy','office','apartment'].includes(b.kind)||observed.has(b.id+':'+front))continue;
+        const a=b.points[front],z=b.points[front+1],length=Math.hypot(z[0]-a[0],z[1]-a[1]);
+        const base=b.base+(b.minHeight||0),levels=facadeFloors(b,profile),top=base+(profile.eaves-base)/levels;
+        const count=b.kind==='house'?1:Math.max(1,Math.round(length/skin.width));
+        const key=skin.file+':'+Math.floor(a[0]/256)+':'+Math.floor(a[1]/256);
+        if(!batches.has(key))batches.set(key,{file:skin.file,vertices:[],uv:[]});const batch=batches.get(key);
+        for(let j=0;j<count;j++){
+          const t0=j/count,t1=(j+1)/count,p=[a[0]+(z[0]-a[0])*t0,a[1]+(z[1]-a[1])*t0],q=[a[0]+(z[0]-a[0])*t1,a[1]+(z[1]-a[1])*t1];
+          quad(batch.vertices,[p[0],base,-p[1]],[q[0],base,-q[1]],[q[0],top,-q[1]],[p[0],top,-p[1]]);
+          const [ax,ay,aw,ah]=skin.rect,[tw,th]=skin.size,u0=(ax+.5)/tw,u1=(ax+aw-.5)/tw,v0=1-(ay+ah-.5)/th,v1=1-(ay+.5)/th;
           batch.uv.push(u0,v0,u1,v1,u1,v0,u0,v0,u0,v1,u1,v1);
         }
       }
     }
-    for(const [file,b]of batches)group.add(mesh(b.vertices,material('#ffffff',{map:regionalTextures.get(file),side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1}),b.uv));
+    for(const b of batches.values())group.add(mesh(b.vertices,material('#ffffff',{map:regionalTextures.get(b.file),side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1}),b.uv));
   }
   async function vegetation(d,group,source,groundAt){if(!regional)return;const response=await fetch(worldURL(source,`v${String(d.c).padStart(4,'0')}.json`));if(!response.ok)return;const data=await response.json();let theme=themeAt(sources[source].themeAt??(d.s0+d.len/2));if((d.near.min+d.near.max)/2>1750&&d.s0>900000&&d.s0<2900000)theme='redrock';
     let choices=Object.entries(regional.trees).filter(([,p])=>(p.regions||[p.theme]).includes(theme)&&regionalTextures.has(p.file));if(!choices.length)return;const batches=new Map(),dummy=new THREE.Object3D();
@@ -179,9 +165,8 @@ export async function createRoad(canvas,opts={}) {
       for(const t of trees){const h=asset.height*t[3],w=h*asset.aspect;for(let side=0;side<2;side++){dummy.position.set(t[0],groundAt(t[0],t[1])-.2,-t[1]);dummy.rotation.set(0,t[4]/65536*Math.PI+side*Math.PI/2,0);dummy.scale.set(w,h,1);dummy.updateMatrix();instances.setMatrixAt(i++,dummy.matrix);}}instances.computeBoundingSphere();group.add(instances);
     }group.userData.trees=data.trees.length;
   }
-  async function appearance(d,group,source) {
-    const response=await fetch(worldURL(source,`a${String(d.c).padStart(4,'0')}.json`));if(!response.ok)return;
-    const a=await response.json();if(!a.faces.length)return;const byId=new Map(d.buildings.map(b=>[b.id,b]));
+  async function appearance(d,group,source,a) {
+    if(!a.faces.length)return;const byId=new Map(d.buildings.map(b=>[b.id,b]));
     const textures=await Promise.all(a.atlases.map(name=>textureLoader.loadAsync(worldURL(source,name))));
     for(let page=0;page<textures.length;page++) {const vertices=[],uv=[];for(const f of a.faces){if(f.page!==page)continue;const b=byId.get(f.building);if(!b||b.landmark)continue;const p=b.points[f.edge],q=b.points[f.edge+1];if(!q)continue;const dx=q[0]-p[0],dy=q[1]-p[1],len=Math.hypot(dx,dy)||1;
       const x=p[0],y=p[1],z=q[0],w=q[1],base=b.base-.01,top=roofProfile(b).eaves;
@@ -189,7 +174,7 @@ export async function createRoad(canvas,opts={}) {
       const [ax,ay,aw,ah]=f.rect,u0=(ax+.5)/a.size,u1=(ax+aw-.5)/a.size,v0=1-(ay+ah-.5)/a.size,v1=1-(ay+ah*(1-(top-b.base)/b.height)+.5)/a.size;
       uv.push(u0,v0,u1,v1,u1,v0,u0,v0,u0,v1,u1,v1);
     }const tex=textures[page];tex.colorSpace=THREE.SRGBColorSpace;tex.minFilter=THREE.LinearFilter;tex.generateMipmaps=false;
-      const m=mesh(vertices,new THREE.MeshBasicMaterial({map:tex,side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3}),uv);m.material.userData.ownedMap=true;group.add(m);
+      const m=mesh(vertices,new THREE.MeshBasicMaterial({color:'#d2cfc4',map:tex,side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3}),uv);m.material.userData.ownedMap=true;group.add(m);
     }group.userData.observedWalls=a.faces.length;
   }
   async function load(source,c){const key=source+':'+c;if(c<0||c>=Math.ceil(sources[source].total/10000)||chunks.has(key)||pending.has(key)||(failures.get(key)||0)>Date.now()-15000)return;
@@ -203,9 +188,13 @@ export async function createRoad(canvas,opts={}) {
         group.add(terrain(g,a,values[0].texture,null,d,source));
       }
       const groundAt=(x,y)=>{for(const {g,a}of patches){const h=groundHeight(g,a,x,y);if(Number.isFinite(h))return h;}const h=groundHeight(d.near,graded,x,y);return Number.isFinite(h)?h:elevation(d.near,graded,x,y);};
-      roadMeshes(d,group,groundAt);buildingMeshes(d,group,groundAt);landmarkMeshes(d,group);lodgeDetails(d,group);regionalFacades(d,group,source);
+      const appearanceData=await fetch(worldURL(source,`a${String(d.c).padStart(4,'0')}.json`)).then(r=>r.ok?r.json():{faces:[],atlases:[]}).catch(()=>({faces:[],atlases:[]}));
+      const buildingsById=new Map(d.buildings.map(b=>[b.id,b]));
+      appearanceData.faces=appearanceData.faces.filter(f=>{const b=buildingsById.get(f.building);return b&&!b.referenceStyle&&b.kind!=='canopy'&&!b.minHeight&&f.source.agreement>=.8&&f.rect[3]/b.height>=3;});
+      const observed=new Set(appearanceData.faces.map(f=>f.building+':'+f.edge)),theme=themeAt(sources[source].themeAt??(d.s0+d.len/2)),plans=buildingPlans(d,regional,theme);
+      roadMeshes(d,group,groundAt);addBuildings(d,group,groundAt,plans,theme,observed);landmarkMeshes(d,group);lodgeDetails(d,group);regionalFacades(d,group,plans,observed);
       group.visible=false;scene.add(group);
-      await Promise.all([waterways(d,group,source),appearance(d,group,source),vegetation(d,group,source,groundAt),addRoadside(d,group,worldURL(source,`r${String(d.c).padStart(4,'0')}.json`),groundAt)].map(p=>p.catch(e=>console.warn(e.message))));
+      await Promise.all([waterways(d,group,source),appearance(d,group,source,appearanceData),vegetation(d,group,source,groundAt),addRoadside(d,group,worldURL(source,`r${String(d.c).padStart(4,'0')}.json`),groundAt)].map(p=>p.catch(e=>console.warn(e.message))));
       const animateAmbient=addAmbient(d,group,groundAt,ambientEvents.get(source)||[]);chunks.set(key,{d,group,values,source,animateAmbient});failures.delete(key);
     }catch(e){failures.set(key,Date.now());console.warn(e.message);}finally{pending.delete(key);}})();pending.set(key,work);
   }
