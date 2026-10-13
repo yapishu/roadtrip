@@ -23,7 +23,7 @@
   "touchChecks": "viewer-interactions.json",
   "restoreChecks": "restore-audit.json",
   "detailDescription": "Mapped building uses and parts, roof geometry, street-facing ground floors, floor-aligned windows, open canopies, and representative architectural details",
-  "referenceForms": "../../../building-references.json",
+  "referenceForms": "../../building-references.json",
   "measuredOrMapped": "Footprints, explicit building heights and floor counts, roof tags, part extents and clearances",
   "representative": "Missing heights, windows, doors, cornices, supports, roof equipment, and material variation"
 }
