@@ -1,0 +1,55 @@
+{
+  "id": "grand-canyon",
+  "stop": 7,
+  "name": "Grand Canyon National Park",
+  "region": "arizona",
+  "via": [
+    "Hermits Rest, Grand Canyon National Park",
+    "Yavapai Point, Grand Canyon National Park",
+    "Grandview Point, Grand Canyon National Park",
+    "Desert View Watchtower, Grand Canyon National Park"
+  ],
+  "source": "https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm",
+  "snapWarnings": [
+    {
+      "name": "Hermits Rest, Grand Canyon National Park",
+      "distance": 2496.626234
+    }
+  ],
+  "anchor": [
+    -112.12951180266789,
+    36.05587031288404
+  ],
+  "stops": [
+    {
+      "name": "Grand Canyon National Park · start",
+      "lon": -112.12951180266789,
+      "lat": 36.05587031288404
+    },
+    {
+      "name": "Hermits Rest, Grand Canyon National Park",
+      "lon": -112.2101621,
+      "lat": 36.0625111
+    },
+    {
+      "name": "Yavapai Point, Grand Canyon National Park",
+      "lon": -112.1182244,
+      "lat": 36.0666496
+    },
+    {
+      "name": "Grandview Point, Grand Canyon National Park",
+      "lon": -111.9859972,
+      "lat": 35.996095
+    },
+    {
+      "name": "Desert View Watchtower, Grand Canyon National Park",
+      "lon": -111.8262067,
+      "lat": 36.0440087
+    },
+    {
+      "name": "Grand Canyon National Park · return",
+      "lon": -112.12951180266789,
+      "lat": 36.05587031288404
+    }
+  ]
+}

@@ -1,0 +1,2182 @@
+[
+  {
+    "name": "Allegiant Stadium",
+    "qid": "Q27768421",
+    "kind": "stadium",
+    "s": 1066275,
+    "side": -249,
+    "h": 69,
+    "w": 160,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 30,
+    "desc": "domed football stadium in Paradise, Nevada, USA",
+    "score": 15.53
+  },
+  {
+    "name": "Mike O'Callaghan–Pat Tillman Memorial Bridge",
+    "qid": "Q1293993",
+    "kind": "bridge",
+    "s": 1129834,
+    "side": -6,
+    "h": 30,
+    "w": 120,
+    "tags": {
+      "man_made": "bridge"
+    },
+    "links": 13,
+    "desc": "arch bridge over the Colorado River at Hoover Dam, United States",
+    "score": 13.67
+  },
+  {
+    "name": "Las Vegas Strip",
+    "qid": "Q745608",
+    "kind": "attraction",
+    "s": 1069459,
+    "side": 573,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 37,
+    "desc": "approximately 4 mile stretch of Las Vegas Boulevard in Paradise, Winchester, and Las Vegas in Nevada, United States, with many resorts, shows, and casinos",
+    "score": 11.54
+  },
+  {
+    "name": "Cliff Palace",
+    "qid": "Q2979068",
+    "kind": "attraction",
+    "s": 2791426,
+    "side": 60,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "historic": "archaeological_site",
+      "tourism": "attraction"
+    },
+    "links": 13,
+    "desc": "human settlement in Mesa Verde National Park, Colorado, United States of America",
+    "score": 11.29
+  },
+  {
+    "name": "Michelob Ultra Arena",
+    "qid": "Q1888848",
+    "kind": "stadium",
+    "s": 1066262,
+    "side": 142,
+    "h": 30,
+    "w": 160,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 15,
+    "desc": "indoor arena in Las Vegas, Nevada, United States",
+    "score": 10.2
+  },
+  {
+    "name": "Glen Canyon Dam Bridge",
+    "qid": "Q1530700",
+    "kind": "bridge",
+    "s": 1746549,
+    "side": -1,
+    "h": 30,
+    "w": 120,
+    "tags": {
+      "man_made": "bridge"
+    },
+    "links": 8,
+    "desc": "bridge in Arizona, United States",
+    "score": 8.96
+  },
+  {
+    "name": "International UFO Museum & Research Center",
+    "qid": "Q3799756",
+    "kind": "museum",
+    "s": 3556586,
+    "side": 61,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 10,
+    "desc": "museum in Roswell, New Mexico, U.S.",
+    "score": 8.84
+  },
+  {
+    "name": "Zabriskie Point",
+    "qid": "Q139066",
+    "kind": "attraction",
+    "s": 887278,
+    "side": 318,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "viewpoint"
+    },
+    "links": 19,
+    "desc": "landform in Death Valley National Park, California, United States of America",
+    "score": 8.8
+  },
+  {
+    "name": "Grand Canyon",
+    "qid": "Q5594348",
+    "kind": "station",
+    "s": 1523210,
+    "side": -77,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 6,
+    "desc": "NRHP site in Coconino County, Arizona",
+    "score": 5.35
+  },
+  {
+    "name": "Moqui Cave",
+    "qid": "Q2880871",
+    "kind": "museum",
+    "s": 2208079,
+    "side": -35,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 5,
+    "desc": "museum in Kanab, Utah, United States",
+    "score": 5.26
+  },
+  {
+    "name": "KOBR-TV Tower",
+    "qid": "Q753669",
+    "kind": "tower",
+    "s": 3632573,
+    "side": 73,
+    "h": 60,
+    "w": 15,
+    "tags": {
+      "man_made": "mast"
+    },
+    "links": 5,
+    "desc": "architectural structure",
+    "score": 4.64
+  },
+  {
+    "name": "Welcome to Fabulous Las Vegas Sign",
+    "qid": "Q175665",
+    "kind": "attraction",
+    "s": 1065312,
+    "side": 703,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 16,
+    "desc": "historic neon sign in Paradise, Nevada, United States",
+    "score": 4.46
+  },
+  {
+    "name": "Cathedral Church of Saint John",
+    "qid": "Q16850642",
+    "kind": "church",
+    "s": 3232952,
+    "side": 37,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "church"
+    },
+    "links": 4,
+    "desc": "episcopal church in New Mexico, United States",
+    "score": 4.36
+  },
+  {
+    "name": "First United Methodist Church",
+    "qid": "Q5453297",
+    "kind": "church",
+    "s": 3232832,
+    "side": -45,
+    "h": 35,
+    "w": 30,
+    "tags": {},
+    "links": 4,
+    "desc": "methodist church building in New Mexico, United States of America",
+    "score": 4.24
+  },
+  {
+    "name": "MGM Grand Garden Arena",
+    "qid": "Q717472",
+    "kind": "stadium",
+    "s": 1067850,
+    "side": 1073,
+    "h": 30,
+    "w": 160,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 21,
+    "desc": "arena on the Las Vegas Strip in Nevada, United States",
+    "score": 4.16
+  },
+  {
+    "name": "Galaxy Stadium",
+    "qid": "Q3183551",
+    "kind": "stadium",
+    "s": 3834659,
+    "side": 156,
+    "h": 30,
+    "w": 160,
+    "tags": {},
+    "links": 5,
+    "desc": "stadium in Lubbock, Texas",
+    "score": 3.69
+  },
+  {
+    "name": "High Roller",
+    "qid": "Q892103",
+    "kind": "attraction",
+    "s": 1069259,
+    "side": 1111,
+    "h": 167,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 19,
+    "desc": "ferris wheel in Las Vegas, Nevada",
+    "score": 3.67
+  },
+  {
+    "name": "Burnt Wagons",
+    "qid": "Q3647430",
+    "kind": "attraction",
+    "s": 833712,
+    "side": 25,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "historic": "firetruck",
+      "tourism": "attraction"
+    },
+    "links": 3,
+    "desc": "human settlement in Inyo County, California, United States of America",
+    "score": 3.64
+  },
+  {
+    "name": "Kingman Railroad Museum",
+    "qid": "Q6412806",
+    "kind": "station",
+    "s": 1243517,
+    "side": -106,
+    "h": 15,
+    "w": 70,
+    "tags": {
+      "tourism": "museum",
+      "building": "train_station"
+    },
+    "links": 4,
+    "desc": "train station in Kingman, Arizona, United States",
+    "score": 3.51
+  },
+  {
+    "name": "Stockton Arena",
+    "qid": "Q1142830",
+    "kind": "stadium",
+    "s": 107434,
+    "side": 325,
+    "h": 30,
+    "w": 160,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 7,
+    "desc": "indoor arena in Stockton, California",
+    "score": 3.48
+  },
+  {
+    "name": "Stockton–San Joaquin Street",
+    "qid": "Q3097663",
+    "kind": "station",
+    "s": 105541,
+    "side": 190,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 5,
+    "desc": "railway station in Stockton, California, US",
+    "score": 3.41
+  },
+  {
+    "name": "The Mob Museum",
+    "qid": "Q6886561",
+    "kind": "museum",
+    "s": 1077483,
+    "side": -238,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "commercial"
+    },
+    "links": 5,
+    "desc": "organized crime and law enforcement museum in Las Vegas, Nevada",
+    "score": 3.07
+  },
+  {
+    "name": "Buckey O'Neill Cabin",
+    "qid": "Q4983043",
+    "kind": "attraction",
+    "s": 1523300,
+    "side": -170,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction",
+      "building": "yes"
+    },
+    "links": 4,
+    "desc": "building in Arizona, United States",
+    "score": 2.98
+  },
+  {
+    "name": "San Joaquin River Viaduct",
+    "qid": "Q25006985",
+    "kind": "bridge",
+    "s": 291079,
+    "side": -91,
+    "h": 30,
+    "w": 120,
+    "tags": {
+      "man_made": "bridge"
+    },
+    "links": 3,
+    "desc": "California High-Speed Rail crossing of the San Joaquin River",
+    "score": 2.93
+  },
+  {
+    "name": "Kimo Theater Historic Site",
+    "qid": "Q6403585",
+    "kind": "attraction",
+    "s": 3233077,
+    "side": -91,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 3,
+    "desc": "theater and movie theater in Albuquerque, New Mexico, United States",
+    "score": 2.93
+  },
+  {
+    "name": "Hidden Springs Bible Church",
+    "qid": "Q28166407",
+    "kind": "church",
+    "s": 1649266,
+    "side": -95,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 3,
+    "desc": "populated place situated in Coconino County, Arizona",
+    "score": 2.9
+  },
+  {
+    "name": "Desert View Watchtower",
+    "qid": "Q2062022",
+    "kind": "attraction",
+    "s": 1561688,
+    "side": -616,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "historic": "yes",
+      "tourism": "viewpoint",
+      "building": "yes"
+    },
+    "links": 9,
+    "desc": "70-foot (21 m)-high stone building located on the South Rim of the Grand Canyon",
+    "score": 2.89
+  },
+  {
+    "name": "Sandoval County/US 550",
+    "qid": "Q7416479",
+    "kind": "station",
+    "s": 3202499,
+    "side": 102,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 3,
+    "desc": "commuter train station in Bernalillo, New Mexico, United States",
+    "score": 2.84
+  },
+  {
+    "name": "Albuquerque",
+    "qid": "Q4737884",
+    "kind": "station",
+    "s": 3233660,
+    "side": 197,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 4,
+    "desc": "multimodal transit hub in Albuquerque, New Mexico, United States",
+    "score": 2.8
+  },
+  {
+    "name": "Shark Reef Aquarium",
+    "qid": "Q2390343",
+    "kind": "attraction",
+    "s": 1066035,
+    "side": 379,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 6,
+    "desc": "aquarium in Nevada, United States",
+    "score": 2.78
+  },
+  {
+    "name": "Rosenwald Bros Building",
+    "qid": "Q7368615",
+    "kind": "historic",
+    "s": 3233175,
+    "side": -21,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "Albuquerque, New Mexico, on the National Register of Historic Places",
+    "score": 2.77
+  },
+  {
+    "name": "Old Post Office",
+    "qid": "Q7084760",
+    "kind": "historic",
+    "s": 3233125,
+    "side": -27,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "post_office"
+    },
+    "links": 2,
+    "desc": "historic building in Albuquerque, New Mexico, USA",
+    "score": 2.71
+  },
+  {
+    "name": "Sunshine Building",
+    "qid": "Q7641442",
+    "kind": "historic",
+    "s": 3233284,
+    "side": 129,
+    "h": 24,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 3,
+    "desc": "commercial building, music venue and former movie theater in Albuquerque, New Mexico, Uniter States",
+    "score": 2.64
+  },
+  {
+    "name": "Tusayan Ruin and Museum",
+    "qid": "Q4466574",
+    "kind": "historic",
+    "s": 1556986,
+    "side": 234,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "archaeological_site"
+    },
+    "links": 4,
+    "desc": "archaeological site in Arizona, United States",
+    "score": 2.58
+  },
+  {
+    "name": "Kolb Studio Museum",
+    "qid": "Q6427106",
+    "kind": "museum",
+    "s": 1523417,
+    "side": -241,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 4,
+    "desc": "art gallery",
+    "score": 2.55
+  },
+  {
+    "name": "Mohave Museum of History and Arts",
+    "qid": "Q38245548",
+    "kind": "museum",
+    "s": 1244397,
+    "side": -50,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "museum in Kingman, Arizona, US, operated by Mohave County Historical Society",
+    "score": 2.5
+  },
+  {
+    "name": "Forestiere Underground Gardens",
+    "qid": "Q5469244",
+    "kind": "attraction",
+    "s": 296636,
+    "side": -256,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "historic": "yes",
+      "tourism": "attraction"
+    },
+    "links": 4,
+    "desc": "tourist attraction in California, United States",
+    "score": 2.47
+  },
+  {
+    "name": "Neon Museum",
+    "qid": "Q6993430",
+    "kind": "museum",
+    "s": 1077733,
+    "side": -459,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 6,
+    "desc": "art museum in Las Vegas, Nevada",
+    "score": 2.47
+  },
+  {
+    "name": "Chukchansi Park",
+    "qid": "Q2967628",
+    "kind": "stadium",
+    "s": 308549,
+    "side": -667,
+    "h": 30,
+    "w": 160,
+    "tags": {},
+    "links": 8,
+    "desc": "baseball stadium in Fresno, California; home of the Fresno Grizzlies",
+    "score": 2.45
+  },
+  {
+    "name": "Nevada State Railroad Museum Boulder City",
+    "qid": "Q7003491",
+    "kind": "museum",
+    "s": 1117142,
+    "side": -173,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 3,
+    "desc": "railroad museum in Nevada, USA",
+    "score": 2.36
+  },
+  {
+    "name": "S. H. Kress Building",
+    "qid": "Q21016148",
+    "kind": "historic",
+    "s": 3233174,
+    "side": -70,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "former five and dime store in New Mexico",
+    "score": 2.34
+  },
+  {
+    "name": "Roswell Museum and Art Center",
+    "qid": "Q7370118",
+    "kind": "museum",
+    "s": 3555221,
+    "side": 78,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "public"
+    },
+    "links": 2,
+    "desc": "Museum and planetarium in New Mexico, US",
+    "score": 2.29
+  },
+  {
+    "name": "Zion Human History Museum",
+    "qid": "Q64221019",
+    "kind": "museum",
+    "s": 2149437,
+    "side": 112,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "museum"
+    },
+    "links": 2,
+    "desc": "museum in Zion National Park in Washington County, Utah, United States",
+    "score": 2.07
+  },
+  {
+    "name": "Borax Museum",
+    "qid": "Q100251164",
+    "kind": "museum",
+    "s": 873302,
+    "side": 132,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "mining museum in Death Valley National Park, California, USA",
+    "score": 1.96
+  },
+  {
+    "name": "Death Valley Junction Historic District",
+    "qid": "Q109464647",
+    "kind": "historic",
+    "s": 928432,
+    "side": 7,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "district"
+    },
+    "links": 1,
+    "desc": "park in Inyo County, California, United States of America",
+    "score": 1.95
+  },
+  {
+    "name": "Fremont East Gateway",
+    "qid": "Q61864085",
+    "kind": "attraction",
+    "s": 1077159,
+    "side": 12,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction",
+      "man_made": "gantry"
+    },
+    "links": 1,
+    "desc": "arch in Las Vegas, Nevada",
+    "score": 1.91
+  },
+  {
+    "name": "United Supermarkets Arena",
+    "qid": "Q378655",
+    "kind": "stadium",
+    "s": 3832864,
+    "side": 415,
+    "h": 30,
+    "w": 160,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 4,
+    "desc": "arena",
+    "score": 1.88
+  },
+  {
+    "name": "Cashman Field",
+    "qid": "Q2941022",
+    "kind": "stadium",
+    "s": 1078054,
+    "side": -969,
+    "h": 30,
+    "w": 160,
+    "tags": {},
+    "links": 8,
+    "desc": "stadium in Las Vegas, Nevada",
+    "score": 1.85
+  },
+  {
+    "name": "Stockton–Downtown",
+    "qid": "Q7345848",
+    "kind": "station",
+    "s": 109398,
+    "side": -566,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 5,
+    "desc": "railway station in Stockton, the United States of America",
+    "score": 1.84
+  },
+  {
+    "name": "Mather Point",
+    "qid": "Q49469591",
+    "kind": "attraction",
+    "s": 1525643,
+    "side": -299,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "viewpoint"
+    },
+    "links": 3,
+    "desc": "cliff in Coconino County, Arizona, United States",
+    "score": 1.82
+  },
+  {
+    "name": "Harmony Borax Works",
+    "qid": "Q129335",
+    "kind": "castle",
+    "s": 870440,
+    "side": 449,
+    "h": 25,
+    "w": 60,
+    "tags": {
+      "historic": "ruins",
+      "man_made": "works"
+    },
+    "links": 4,
+    "desc": "former industrial facility in Death Valley, California, United States",
+    "score": 1.79
+  },
+  {
+    "name": "Vasquez de Coronados Route Historical Marker",
+    "qid": "Q49574237",
+    "kind": "monument",
+    "s": 3170862,
+    "side": -29,
+    "h": 12,
+    "w": 8,
+    "tags": {
+      "historic": "memorial"
+    },
+    "links": 1,
+    "desc": "plaque in Sandoval County, New Mexico, United States of America",
+    "score": 1.79
+  },
+  {
+    "name": "Vaughn Train Depot",
+    "qid": "Q134546772",
+    "kind": "station",
+    "s": 3402321,
+    "side": -29,
+    "h": 15,
+    "w": 70,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 1,
+    "desc": "1908 building in Vaughn, Guadalupe County, New Mexico",
+    "score": 1.79
+  },
+  {
+    "name": "Chapin Mesa Archaeological Museum",
+    "qid": "Q65612115",
+    "kind": "museum",
+    "s": 2797647,
+    "side": -320,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 3,
+    "desc": "archaeological museum in Mesa Verde National Park",
+    "score": 1.75
+  },
+  {
+    "name": "The Church of Jesus Christ of Latter-day Saints",
+    "qid": "Q138854333",
+    "kind": "church",
+    "s": 2337557,
+    "side": -39,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "church"
+    },
+    "links": 1,
+    "desc": "",
+    "score": 1.73
+  },
+  {
+    "name": "Cathedral of the Annunciation",
+    "qid": "Q5052426",
+    "kind": "church",
+    "s": 106245,
+    "side": -620,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "cathedral"
+    },
+    "links": 5,
+    "desc": "church in California, United States",
+    "score": 1.72
+  },
+  {
+    "name": "Shepherd of the Desert Lutheran Church",
+    "qid": "Q138854368",
+    "kind": "church",
+    "s": 2337656,
+    "side": -44,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "church"
+    },
+    "links": 1,
+    "desc": "",
+    "score": 1.7
+  },
+  {
+    "name": "Springer Square",
+    "qid": "Q7580864",
+    "kind": "historic",
+    "s": 3233837,
+    "side": -46,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "commercial"
+    },
+    "links": 1,
+    "desc": "",
+    "score": 1.69
+  },
+  {
+    "name": "Page Community United Methodist Church",
+    "qid": "Q138854390",
+    "kind": "church",
+    "s": 2337472,
+    "side": -48,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "church"
+    },
+    "links": 1,
+    "desc": "",
+    "score": 1.68
+  },
+  {
+    "name": "Las Vegas High School Neighborhood Historic District",
+    "qid": "Q6492586",
+    "kind": "historic",
+    "s": 1076613,
+    "side": 350,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "district"
+    },
+    "links": 3,
+    "desc": "historic district in Nevada, United States",
+    "score": 1.67
+  },
+  {
+    "name": "Bedrock City",
+    "qid": "Q20714544",
+    "kind": "attraction",
+    "s": 1477198,
+    "side": -204,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 2,
+    "desc": "theme park",
+    "score": 1.65
+  },
+  {
+    "name": "Bonelli House",
+    "qid": "Q4941722",
+    "kind": "attraction",
+    "s": 1243647,
+    "side": -207,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction",
+      "building": "house"
+    },
+    "links": 2,
+    "desc": "museum",
+    "score": 1.64
+  },
+  {
+    "name": "Santa Fe Freight House",
+    "qid": "Q54933325",
+    "kind": "historic",
+    "s": 3232525,
+    "side": 57,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 1,
+    "desc": "building in New Mexico, United States of America",
+    "score": 1.63
+  },
+  {
+    "name": "Historic Fifth Street School",
+    "qid": "Q17016334",
+    "kind": "historic",
+    "s": 1076815,
+    "side": 216,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "school"
+    },
+    "links": 2,
+    "desc": "school building in Las Vegas, United States of America",
+    "score": 1.61
+  },
+  {
+    "name": "The New Mexico Rattler",
+    "qid": "Q19332764",
+    "kind": "attraction",
+    "s": 3222848,
+    "side": -376,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 3,
+    "desc": "roller coaster at Cliff's Amusement Park",
+    "score": 1.6
+  },
+  {
+    "name": "Fresno Buddhist Temple",
+    "qid": "Q5503161",
+    "kind": "church",
+    "s": 308504,
+    "side": -64,
+    "h": 35,
+    "w": 30,
+    "tags": {},
+    "links": 1,
+    "desc": "Buddhist temple in California",
+    "score": 1.59
+  },
+  {
+    "name": "Bakersfield",
+    "qid": "Q3095899",
+    "kind": "station",
+    "s": 482305,
+    "side": -1005,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 7,
+    "desc": "Amtrak train station in Bakersfield, California",
+    "score": 1.59
+  },
+  {
+    "name": "Albuquerque on the Camino Real Historical Marker",
+    "qid": "Q49472096",
+    "kind": "monument",
+    "s": 3233322,
+    "side": -68,
+    "h": 12,
+    "w": 8,
+    "tags": {
+      "historic": "memorial"
+    },
+    "links": 1,
+    "desc": "park in Bernalillo County, New Mexico, United States",
+    "score": 1.57
+  },
+  {
+    "name": "Hope Building",
+    "qid": "Q20714435",
+    "kind": "historic",
+    "s": 3233290,
+    "side": 69,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "yes"
+    },
+    "links": 1,
+    "desc": "building in New Mexico, United States of America",
+    "score": 1.57
+  },
+  {
+    "name": "Fountains of Bellagio",
+    "qid": "Q2735117",
+    "kind": "attraction",
+    "s": 1068727,
+    "side": 576,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 4,
+    "desc": "fountain in Las Vegas, Nevada",
+    "score": 1.51
+  },
+  {
+    "name": "Tusayan Museum",
+    "qid": "Q96239354",
+    "kind": "museum",
+    "s": 1556938,
+    "side": 246,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "museum in Arizona",
+    "score": 1.51
+  },
+  {
+    "name": "Modern Woodmen Field",
+    "qid": "Q6260793",
+    "kind": "stadium",
+    "s": 158679,
+    "side": 417,
+    "h": 30,
+    "w": 160,
+    "tags": {},
+    "links": 3,
+    "desc": "stadium in Modesto, California",
+    "score": 1.5
+  },
+  {
+    "name": "Skinner Building",
+    "qid": "Q7535503",
+    "kind": "historic",
+    "s": 3233333,
+    "side": -252,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "listed on the National Register of Historic Places in Bernalillo County, New Mexico",
+    "score": 1.49
+  },
+  {
+    "name": "Warm Springs/South Fremont",
+    "qid": "Q7969570",
+    "kind": "station",
+    "s": 11199,
+    "side": -598,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 4,
+    "desc": "BART station in Fremont, California",
+    "score": 1.47
+  },
+  {
+    "name": "H. B. & Lucille Horn Preservation Station",
+    "qid": "Q55614070",
+    "kind": "museum",
+    "s": 3231876,
+    "side": -89,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "historic": "building",
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 1,
+    "desc": "filling station in New Mexico, United States of America",
+    "score": 1.47
+  },
+  {
+    "name": "Saint Mary Catholic Church",
+    "qid": "Q7401807",
+    "kind": "church",
+    "s": 1243723,
+    "side": 265,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "church building in Arizona, United States of America",
+    "score": 1.46
+  },
+  {
+    "name": "YDI Wool Warehouse",
+    "qid": "Q8033755",
+    "kind": "historic",
+    "s": 3233864,
+    "side": -274,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "historic building in Albuquerque, New Mexico",
+    "score": 1.43
+  },
+  {
+    "name": "Holy Trinity Armenian Apostolic Church",
+    "qid": "Q5886493",
+    "kind": "church",
+    "s": 309041,
+    "side": -1160,
+    "h": 35,
+    "w": 30,
+    "tags": {},
+    "links": 7,
+    "desc": "church building in Fresno, United States of America",
+    "score": 1.42
+  },
+  {
+    "name": "New Mexico Holocaust Museum and Gellert Center for Education",
+    "qid": "Q14706076",
+    "kind": "museum",
+    "s": 3233193,
+    "side": -285,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 2,
+    "desc": "",
+    "score": 1.4
+  },
+  {
+    "name": "National Ranching Heritage Center",
+    "qid": "Q6975200",
+    "kind": "museum",
+    "s": 3833665,
+    "side": -291,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "agriculture museum about ranching in Texas, USA",
+    "score": 1.39
+  },
+  {
+    "name": "First Baptist Church",
+    "qid": "Q5452360",
+    "kind": "church",
+    "s": 482128,
+    "side": -296,
+    "h": 35,
+    "w": 30,
+    "tags": {},
+    "links": 2,
+    "desc": "historic church complex in Bakersfield, California, United States",
+    "score": 1.37
+  },
+  {
+    "name": "KYET-AM (Golden Valley)",
+    "qid": "Q6341821",
+    "kind": "tower",
+    "s": 1237238,
+    "side": 114,
+    "h": 60,
+    "w": 15,
+    "tags": {
+      "man_made": "mast"
+    },
+    "links": 1,
+    "desc": "Radio station in Golden Valley, Arizona",
+    "score": 1.37
+  },
+  {
+    "name": "Cedar Viaduct",
+    "qid": "Q112161751",
+    "kind": "bridge",
+    "s": 313970,
+    "side": -135,
+    "h": 30,
+    "w": 120,
+    "tags": {
+      "man_made": "bridge"
+    },
+    "links": 1,
+    "desc": "",
+    "score": 1.3
+  },
+  {
+    "name": "Sunset Point",
+    "qid": "Q105105619",
+    "kind": "attraction",
+    "s": 2011830,
+    "side": 139,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "viewpoint"
+    },
+    "links": 1,
+    "desc": "scenic overlook in Bryce Canyon National Park in Garfield County, Utah, United States",
+    "score": 1.29
+  },
+  {
+    "name": "Nippon Hospital",
+    "qid": "Q14683498",
+    "kind": "historic",
+    "s": 107971,
+    "side": 148,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "yes",
+      "building": "yes"
+    },
+    "links": 1,
+    "desc": "hospital in California, United States",
+    "score": 1.26
+  },
+  {
+    "name": "Las Vegas High School Historic District",
+    "qid": "Q6492584",
+    "kind": "historic",
+    "s": 1076750,
+    "side": 356,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "district"
+    },
+    "links": 2,
+    "desc": "high school in Nevada, United States",
+    "score": 1.24
+  },
+  {
+    "name": "US Southwest Soaring Museum",
+    "qid": "Q7875934",
+    "kind": "museum",
+    "s": 3298212,
+    "side": 363,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "aviation museum in New Mexico, United States",
+    "score": 1.22
+  },
+  {
+    "name": "Southwestern Brewery and Ice Company - Home of Glorieta Beer",
+    "qid": "Q7571396",
+    "kind": "historic",
+    "s": 3233970,
+    "side": -370,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "historic brewery in Albuquerque, New Mexico",
+    "score": 1.21
+  },
+  {
+    "name": "Whittlesey House",
+    "qid": "Q97179200",
+    "kind": "historic",
+    "s": 3231385,
+    "side": 182,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 1,
+    "desc": "house in Albuquerque, New Mexico",
+    "score": 1.16
+  },
+  {
+    "name": "Sahara",
+    "qid": "Q6122522",
+    "kind": "bridge",
+    "s": 1073209,
+    "side": 1289,
+    "h": 30,
+    "w": 120,
+    "tags": {},
+    "links": 6,
+    "desc": "station on the Las Vegas Monorail, in Las Vegas, Nevada, United States",
+    "score": 1.14
+  },
+  {
+    "name": "Pinball Hall of Fame",
+    "qid": "Q14705256",
+    "kind": "museum",
+    "s": 1065618,
+    "side": 879,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "office"
+    },
+    "links": 4,
+    "desc": "pinball museum in Paradise, Nevada",
+    "score": 1.11
+  },
+  {
+    "name": "San Ignacio Catholic Church",
+    "qid": "Q7414283",
+    "kind": "church",
+    "s": 3229913,
+    "side": 425,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "church"
+    },
+    "links": 2,
+    "desc": "church building in New Mexico, United States of America",
+    "score": 1.11
+  },
+  {
+    "name": "Holy Child Catholic Church",
+    "qid": "Q14705990",
+    "kind": "church",
+    "s": 3261507,
+    "side": 218,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "church"
+    },
+    "links": 1,
+    "desc": "church building in New Mexico, United States of America",
+    "score": 1.07
+  },
+  {
+    "name": "San Antonio Mission Church",
+    "qid": "Q135242237",
+    "kind": "church",
+    "s": 3210486,
+    "side": 461,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "church at Sandia Pueblo",
+    "score": 1.05
+  },
+  {
+    "name": "Altamont Speedway",
+    "qid": "Q434307",
+    "kind": "attraction",
+    "s": 62288,
+    "side": 472,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 2,
+    "desc": "sports venue",
+    "score": 1.04
+  },
+  {
+    "name": "Immaculate Heart of Mary Catholic Church",
+    "qid": "Q138854340",
+    "kind": "church",
+    "s": 2337927,
+    "side": 241,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "church"
+    },
+    "links": 1,
+    "desc": "",
+    "score": 1.02
+  },
+  {
+    "name": "Banner Island Ballpark",
+    "qid": "Q4856919",
+    "kind": "stadium",
+    "s": 107509,
+    "side": 493,
+    "h": 30,
+    "w": 160,
+    "tags": {},
+    "links": 2,
+    "desc": "baseball stadium in Stockton, California",
+    "score": 1.01
+  },
+  {
+    "name": "Kern County Museum and Pioneer Village",
+    "qid": "Q6394119",
+    "kind": "museum",
+    "s": 480231,
+    "side": -512,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 2,
+    "desc": "history museum in Bakersfield, California",
+    "score": 0.98
+  },
+  {
+    "name": "Merced",
+    "qid": "Q3097022",
+    "kind": "station",
+    "s": 219525,
+    "side": -1307,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 5,
+    "desc": "Railroad station in Merced, California",
+    "score": 0.96
+  },
+  {
+    "name": "Palm and Pine",
+    "qid": "Q126919815",
+    "kind": "attraction",
+    "s": 281428,
+    "side": -11,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 0,
+    "desc": "twin landmark trees near Madera, California, symbolizing the dividing line between Northern and Southern California",
+    "score": 0.96
+  },
+  {
+    "name": "Erotic Heritage Museum",
+    "qid": "Q5395415",
+    "kind": "museum",
+    "s": 1070817,
+    "side": 532,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "commercial"
+    },
+    "links": 2,
+    "desc": "erotic museum in Nevada, United States",
+    "score": 0.96
+  },
+  {
+    "name": "Harrah's & The LINQ",
+    "qid": "Q5663806",
+    "kind": "station",
+    "s": 1069398,
+    "side": 1078,
+    "h": 15,
+    "w": 70,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 4,
+    "desc": "Las Vegas Monorail station",
+    "score": 0.94
+  },
+  {
+    "name": "Caesar's Palace/Flamingo",
+    "qid": "Q5457274",
+    "kind": "station",
+    "s": 1069090,
+    "side": 1074,
+    "h": 15,
+    "w": 70,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 4,
+    "desc": "Las Vegas Monorail station",
+    "score": 0.94
+  },
+  {
+    "name": "Anderson Museum of Contemporary Art",
+    "qid": "Q18342584",
+    "kind": "museum",
+    "s": 3554682,
+    "side": -551,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "art museum in Roswell, New Mexico",
+    "score": 0.94
+  },
+  {
+    "name": "Williams",
+    "qid": "Q8021102",
+    "kind": "station",
+    "s": 1427812,
+    "side": 822,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 3,
+    "desc": "train station in Williams, Arizona, United States",
+    "score": 0.93
+  },
+  {
+    "name": "Yavapai Geology Museum",
+    "qid": "Q96252771",
+    "kind": "museum",
+    "s": 1525485,
+    "side": -837,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 3,
+    "desc": "",
+    "score": 0.92
+  },
+  {
+    "name": "MGM Grand",
+    "qid": "Q6123194",
+    "kind": "station",
+    "s": 1067611,
+    "side": 1146,
+    "h": 15,
+    "w": 70,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 4,
+    "desc": "monorail station, Paradise, Las Vegas, USA",
+    "score": 0.9
+  },
+  {
+    "name": "X-Scream",
+    "qid": "Q8041524",
+    "kind": "attraction",
+    "s": 1073593,
+    "side": 869,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 3,
+    "desc": "amusement ride at the top of The Strat",
+    "score": 0.89
+  },
+  {
+    "name": "Guardian Angel Cathedral",
+    "qid": "Q5614039",
+    "kind": "church",
+    "s": 1071624,
+    "side": 1428,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "cathedral"
+    },
+    "links": 5,
+    "desc": "Catholic cathedral in Las Vegas, Nevada, United States",
+    "score": 0.89
+  },
+  {
+    "name": "Graceland Wedding Chapel",
+    "qid": "Q5591463",
+    "kind": "church",
+    "s": 1075717,
+    "side": 595,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "Las Vegas wedding chapel",
+    "score": 0.89
+  },
+  {
+    "name": "Dan Law Field at Rip Griffin Park",
+    "qid": "Q14710445",
+    "kind": "stadium",
+    "s": 3834053,
+    "side": 312,
+    "h": 30,
+    "w": 160,
+    "tags": {},
+    "links": 1,
+    "desc": "baseball stadium at Texas Tech University in Lubbock, TX",
+    "score": 0.89
+  },
+  {
+    "name": "Big Shot",
+    "qid": "Q4906330",
+    "kind": "attraction",
+    "s": 1073580,
+    "side": 888,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 3,
+    "desc": "amusement ride, opened 1996, on top of the Stratosphere Las Vegas tower",
+    "score": 0.88
+  },
+  {
+    "name": "Discovery Children's Museum",
+    "qid": "Q6544071",
+    "kind": "museum",
+    "s": 1075985,
+    "side": -338,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "commercial"
+    },
+    "links": 1,
+    "desc": "non-profit organization in the USA",
+    "score": 0.85
+  },
+  {
+    "name": "Selland Arena",
+    "qid": "Q2268406",
+    "kind": "stadium",
+    "s": 308927,
+    "side": -1250,
+    "h": 30,
+    "w": 160,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 4,
+    "desc": "multi-purpose arena in Fresno, California",
+    "score": 0.83
+  },
+  {
+    "name": "Swedish Coffee Pot Tower",
+    "qid": "Q99961942",
+    "kind": "tower",
+    "s": 340782,
+    "side": -382,
+    "h": 60,
+    "w": 15,
+    "tags": {
+      "tourism": "attraction",
+      "building": "yes",
+      "man_made": "water_tower"
+    },
+    "links": 1,
+    "desc": "water tower in Kingsburg resembling a coffee pot",
+    "score": 0.79
+  },
+  {
+    "name": "Sunol Water Temple",
+    "qid": "Q7640959",
+    "kind": "monument",
+    "s": 22578,
+    "side": -1075,
+    "h": 12,
+    "w": 8,
+    "tags": {
+      "historic": "monument",
+      "building": "temple"
+    },
+    "links": 3,
+    "desc": "ornamental structure in Sunol, California",
+    "score": 0.75
+  },
+  {
+    "name": "Downtown Bernalillo",
+    "qid": "Q5303371",
+    "kind": "station",
+    "s": 3204724,
+    "side": 761,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 2,
+    "desc": "commuter train station in Bernalillo, New Mexico, United States",
+    "score": 0.74
+  },
+  {
+    "name": "Mon Bel Ami Wedding Chapel",
+    "qid": "Q20714769",
+    "kind": "church",
+    "s": 1076902,
+    "side": 472,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "chapel"
+    },
+    "links": 1,
+    "desc": "chapel in Las Vegas, NV",
+    "score": 0.69
+  },
+  {
+    "name": "Saint Joachims Roman Catholic Church",
+    "qid": "Q112687766",
+    "kind": "church",
+    "s": 272904,
+    "side": 116,
+    "h": 35,
+    "w": 30,
+    "tags": {},
+    "links": 0,
+    "desc": "Catholic religious building in Madera, United States",
+    "score": 0.68
+  },
+  {
+    "name": "Waggoner Mansion",
+    "qid": "Q24260709",
+    "kind": "castle",
+    "s": 4268686,
+    "side": 858,
+    "h": 25,
+    "w": 60,
+    "tags": {
+      "historic": "manor",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "building in Decatur, Wise County, Texas",
+    "score": 0.68
+  },
+  {
+    "name": "Merced County Courthouse Museum",
+    "qid": "Q14683330",
+    "kind": "museum",
+    "s": 218973,
+    "side": -964,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "county courthouse in Merced, United States of America",
+    "score": 0.62
+  },
+  {
+    "name": "Little White Chapel",
+    "qid": "Q7747750",
+    "kind": "church",
+    "s": 1074868,
+    "side": 561,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "chapel"
+    },
+    "links": 1,
+    "desc": "wedding chapel in Las Vegas, Nevada",
+    "score": 0.62
+  },
+  {
+    "name": "Enchanted Mesa Trading Post (closed)",
+    "qid": "Q5375379",
+    "kind": "historic",
+    "s": 3246297,
+    "side": 1362,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "vacant"
+    },
+    "links": 3,
+    "desc": "",
+    "score": 0.62
+  },
+  {
+    "name": "Vasco Road",
+    "qid": "Q7916423",
+    "kind": "station",
+    "s": 47104,
+    "side": 1395,
+    "h": 15,
+    "w": 70,
+    "tags": {},
+    "links": 3,
+    "desc": "railway station in Livermore, the United States of America",
+    "score": 0.61
+  },
+  {
+    "name": "Old Fresno Water Tower",
+    "qid": "Q15263783",
+    "kind": "tower",
+    "s": 308124,
+    "side": -1408,
+    "h": 60,
+    "w": 15,
+    "tags": {
+      "tourism": "information",
+      "building": "yes",
+      "man_made": "water_tower"
+    },
+    "links": 3,
+    "desc": "water tower in Fresno, California",
+    "score": 0.6
+  },
+  {
+    "name": "Shrine of the Most Holy Redeemer",
+    "qid": "Q61455343",
+    "kind": "church",
+    "s": 1066895,
+    "side": 1005,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "no"
+    },
+    "links": 2,
+    "desc": "church in Las Vegas, Nevada",
+    "score": 0.6
+  },
+  {
+    "name": "West San Jose School",
+    "qid": "Q29641672",
+    "kind": "historic",
+    "s": 3232960,
+    "side": -1410,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "school"
+    },
+    "links": 3,
+    "desc": "school building in Albuquerque, United States of America",
+    "score": 0.6
+  },
+  {
+    "name": "McClellan Park",
+    "qid": "Q49523297",
+    "kind": "historic",
+    "s": 3233675,
+    "side": -673,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "park"
+    },
+    "links": 1,
+    "desc": "park in Bernalillo County, New Mexico, United States",
+    "score": 0.54
+  },
+  {
+    "name": "Hagemann Ranch Historic District",
+    "qid": "Q122391517",
+    "kind": "historic",
+    "s": 37993,
+    "side": 703,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "farm"
+    },
+    "links": 1,
+    "desc": "Historic district in Livermore, California, U.S.",
+    "score": 0.52
+  },
+  {
+    "name": "Clark Avenue Railroad Underpass",
+    "qid": "Q5127143",
+    "kind": "historic",
+    "s": 1077815,
+    "side": -710,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "yes",
+      "man_made": "tunnel"
+    },
+    "links": 1,
+    "desc": "historic underpass in Las Vegas, Nevada, United States",
+    "score": 0.52
+  },
+  {
+    "name": "First Methodist Episcopal Church and Parsonage",
+    "qid": "Q5453316",
+    "kind": "church",
+    "s": 1427977,
+    "side": 1264,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 2,
+    "desc": "church building in Williams, Arizona, United States",
+    "score": 0.5
+  },
+  {
+    "name": "Museum of Southwestern Biology",
+    "qid": "Q22060898",
+    "kind": "museum",
+    "s": 3235022,
+    "side": 1358,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 2,
+    "desc": "science museum in University of New Mexico",
+    "score": 0.47
+  },
+  {
+    "name": "West Texas Walk of Fame",
+    "qid": "Q16878770",
+    "kind": "attraction",
+    "s": 3838023,
+    "side": 813,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 1,
+    "desc": "monument in Lubbock, Texas",
+    "score": 0.47
+  },
+  {
+    "name": "Las Vegas Natural History Museum",
+    "qid": "Q6492605",
+    "kind": "museum",
+    "s": 1077715,
+    "side": -840,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 1,
+    "desc": "American nonprofit museum",
+    "score": 0.46
+  },
+  {
+    "name": "Boulder City Historic District",
+    "qid": "Q4949541",
+    "kind": "historic",
+    "s": 1119230,
+    "side": 860,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "district"
+    },
+    "links": 1,
+    "desc": "historic district in Nevada, USA",
+    "score": 0.45
+  },
+  {
+    "name": "Puccini Building",
+    "qid": "Q56251816",
+    "kind": "historic",
+    "s": 3233174,
+    "side": -311,
+    "h": 12,
+    "w": 25,
+    "tags": {
+      "historic": "building",
+      "building": "yes"
+    },
+    "links": 0,
+    "desc": "historic theater building in Albuquerque, New Mexico",
+    "score": 0.45
+  },
+  {
+    "name": "Fresno Metropolitan Museum",
+    "qid": "Q5503186",
+    "kind": "museum",
+    "s": 307530,
+    "side": -912,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 1,
+    "desc": "Museum in California, United States",
+    "score": 0.43
+  },
+  {
+    "name": "Yaki Point",
+    "qid": "Q49471657",
+    "kind": "attraction",
+    "s": 1528676,
+    "side": -1477,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "viewpoint"
+    },
+    "links": 2,
+    "desc": "cliff in Coconino County, Arizona, United States of America",
+    "score": 0.43
+  },
+  {
+    "name": "Kern Veterans Memorial",
+    "qid": "Q6394164",
+    "kind": "monument",
+    "s": 482206,
+    "side": -992,
+    "h": 12,
+    "w": 8,
+    "tags": {
+      "historic": "memorial"
+    },
+    "links": 1,
+    "desc": "monument in Kern County, California, U.S",
+    "score": 0.4
+  },
+  {
+    "name": "Maxwell Museum of Anthropology",
+    "qid": "Q6796138",
+    "kind": "museum",
+    "s": 3235142,
+    "side": 1016,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 1,
+    "desc": "museum part of the University of New Mexico",
+    "score": 0.39
+  },
+  {
+    "name": "Errea House Museum",
+    "qid": "Q14681938",
+    "kind": "museum",
+    "s": 546103,
+    "side": 1119,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum",
+      "building": "yes"
+    },
+    "links": 1,
+    "desc": "historic house in California, United States",
+    "score": 0.37
+  },
+  {
+    "name": "The Church of Jesus Christ of Latter-day Saints",
+    "qid": "Q104575599",
+    "kind": "church",
+    "s": 2545327,
+    "side": -453,
+    "h": 35,
+    "w": 30,
+    "tags": {
+      "building": "yes"
+    },
+    "links": 0,
+    "desc": "church in Monument Valley",
+    "score": 0.36
+  },
+  {
+    "name": "Rip Griffin Center",
+    "qid": "Q22096383",
+    "kind": "stadium",
+    "s": 3828792,
+    "side": -1185,
+    "h": 30,
+    "w": 160,
+    "tags": {
+      "building": "stadium"
+    },
+    "links": 1,
+    "desc": "arena at Lubbock Christian University in Texas",
+    "score": 0.35
+  },
+  {
+    "name": "Tulare County Fairgrounds",
+    "qid": "Q49572390",
+    "kind": "attraction",
+    "s": 381899,
+    "side": 1224,
+    "h": 15,
+    "w": 30,
+    "tags": {
+      "tourism": "attraction"
+    },
+    "links": 1,
+    "desc": "park in the United States of America",
+    "score": 0.34
+  },
+  {
+    "name": "McHenry Museum",
+    "qid": "Q123550795",
+    "kind": "museum",
+    "s": 157050,
+    "side": -1022,
+    "h": 20,
+    "w": 50,
+    "tags": {
+      "tourism": "museum"
+    },
+    "links": 0,
+    "desc": "museum and historical society in Modesto, California, United States",
+    "score": 0.2
+  }
+]

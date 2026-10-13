@@ -1,0 +1,50 @@
+{
+  "id": "bryce",
+  "stop": 10,
+  "name": "Bryce Canyon National Park",
+  "region": "utah",
+  "via": [
+    "Bryce Point, Bryce Canyon National Park",
+    "Rainbow Point, Bryce Canyon National Park",
+    "Natural Bridge, Bryce Canyon National Park",
+    "Inspiration Point, Bryce Canyon National Park"
+  ],
+  "source": "https://www.nps.gov/thingstodo/drive-the-southern-scenic-drive.htm",
+  "snapWarnings": [],
+  "anchor": [
+    -112.16726969191681,
+    37.623470220877635
+  ],
+  "stops": [
+    {
+      "name": "Bryce Canyon National Park · start",
+      "lon": -112.16726969191681,
+      "lat": 37.623470220877635
+    },
+    {
+      "name": "Bryce Point, Bryce Canyon National Park",
+      "lon": -112.1574562,
+      "lat": 37.6052592
+    },
+    {
+      "name": "Rainbow Point, Bryce Canyon National Park",
+      "lon": -112.2404138,
+      "lat": 37.4750945
+    },
+    {
+      "name": "Natural Bridge, Bryce Canyon National Park",
+      "lon": -112.2597453,
+      "lat": 37.5314889
+    },
+    {
+      "name": "Inspiration Point, Bryce Canyon National Park",
+      "lon": -112.1688058,
+      "lat": 37.6133163
+    },
+    {
+      "name": "Bryce Canyon National Park · return",
+      "lon": -112.16726969191681,
+      "lat": 37.623470220877635
+    }
+  ]
+}

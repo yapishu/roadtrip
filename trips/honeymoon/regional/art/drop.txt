@@ -1,0 +1,16 @@
+california-tree-1
+california-tree-2
+california-tree-3
+mojave-tree-1
+mojave-tree-3
+mojave-tree-5
+mojave-tree-6
+newmexico-tree-4
+newmexico-tree-5
+redrock-tree-1
+redrock-tree-3
+redrock-tree-6
+texas-tree-1
+texas-tree-3
+utah-tree-1
+utah-tree-6

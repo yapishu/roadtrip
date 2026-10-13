@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scoggin Roadtrip</title>
+<!--
+  Pixel Path: a low-resolution drive through measured terrain and mapped roads.
+  world.js renders the terrain, road network, structures and regional vegetation.
+  journey.json assembles the route and scenic park drives; world/ contains the
+  terrain meshes and imagery. Serve this folder with a static web server.
+  Scroll or use arrow keys to change speed; Space pauses, I shows information,
+  and M expands the terrain map. Move the pointer to reveal the seek controls.
+-->
+<style>
+  :root { --ink: #f4efe2; }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; overscroll-behavior: none; touch-action: none; }
+  #c { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; display: block; }
+  #info { position: fixed; left: 10px; top: 8px; font: 11px/1.35 ui-monospace, Menlo, Consolas, monospace; color: var(--ink); text-shadow: 0 1px 2px #000, 0 0 3px #000; pointer-events: none; display: none; white-space: pre; }
+  #credits { position: fixed; left: 8px; right: 8px; bottom: 5px; font: 9px/1.3 ui-monospace, Menlo, Consolas, monospace; color: rgba(255, 255, 255, .62); text-shadow: 0 1px 1px rgba(0, 0, 0, .7); pointer-events: none; }
+  #credits a { color: inherit; pointer-events: auto; }
+  #location { position: fixed; left: 18px; bottom: 40px; width: calc(100% - 36px); height: 63px; image-rendering: pixelated; pointer-events: none; }
+  #journey { position: fixed; top: 18px; left: 20px; right: 20px; display: flex; align-items: start; justify-content: flex-end; gap: 14px; color: var(--ink); font: 12px/1.5 ui-monospace, Menlo, Consolas, monospace; text-shadow: 0 2px 4px #181521; }
+  #journey strong { display: block; font-weight: 500; font-size: 16px; }
+  #journey small { color: #efe3cc; font-size: 10px; letter-spacing: .12em; }
+  #controls { display: flex; gap: 6px; }
+  button, select { color: var(--ink); background: #171821b8; border: 1px solid #eee1bf60; border-radius: 3px; padding: 7px 9px; font: 12px ui-monospace, Menlo, Consolas, monospace; }
+  select { max-width: min(38vw, 270px); }
+  button { cursor: pointer; }
+  #progress { position: fixed; left: 20px; bottom: 32px; width: calc(100% - 40px); margin: 0; height: 8px; accent-color: #eed3a2; cursor: pointer; }
+  #info { top: 76px; }
+  #credits { font-size: 8px; }
+  #journey, #progress, #credits { transition: opacity .5s; }
+  body[data-ui="off"] #journey, body[data-ui="off"] #progress { opacity: 0; pointer-events: none; }
+  body[data-ui="off"] #credits { opacity: 0; visibility: hidden; }
+  @media (max-width: 620px) { #journey { top: 12px; left: 12px; right: 12px; } #journey strong { font-size: 13px; } #journey small { font-size: 8px; letter-spacing: .03em; } #controls { flex-wrap: wrap; justify-content: end; } select { max-width: 40vw; } #location { bottom: 72px; } #progress { bottom: 49px; } }
+</style>
+<link rel="stylesheet" href="minimap.css">
+</head>
+<body data-ui="off">
+<canvas id="c" aria-label="A pixel-art fly-through of the route. Scroll to change speed."></canvas>
+<div id="info"></div>
+<aside id="atlas" aria-label="Scoggin Roadtrip terrain map"></aside>
+<div id="journey"><div id="controls"><select id="stops" aria-label="Jump to a honeymoon stop"></select><button id="pace" aria-label="Change driving speed">1×</button><button id="play" aria-label="Pause drive">Pause</button></div></div>
+<canvas id="location" role="img" aria-label="Current place"></canvas>
+<input id="progress" type="range" min="0" max="1000" step="0.01" value="0" aria-label="Position along the honeymoon route">
+<!-- Map and model credits accompany the interactive controls. -->
+<div id="credits"></div>
+
+<script type="module">
+import { createRoad } from './world.js';
+import { drawCaption } from './caption.js';
+import { createMiniMap } from './minimap.js';
+const $ = id => document.getElementById(id), params = new URLSearchParams(location.search), CHECK = params.get('check') === '1';
+const W = 320, heightFor = () => Math.max(140, Math.min(260, Math.round(W * innerHeight / Math.max(1, innerWidth))));
+let road = await createRoad($('c'), { width: W, height: params.has('h') ? +params.get('h') : heightFor(), check: CHECK });
+const { IDX, LEN } = road;
+const loop = params.get('loop') !== '0';
+const wrapPosition = value => loop ? ((value % LEN) + LEN) % LEN : Math.max(0, Math.min(LEN - 1, value));
+let uiTimer;
+function hideControls() { clearTimeout(uiTimer); document.body.dataset.ui = 'off'; }
+function showControls() {
+  clearTimeout(uiTimer); document.body.dataset.ui = 'on';
+  uiTimer = setTimeout(() => {
+    if (document.querySelector('#controls:hover, #progress:hover, #controls :focus-visible, #progress:focus-visible')) showControls();
+    else hideControls();
+  }, 3500);
+}
+for (const event of ['pointermove', 'pointerdown', 'keydown', 'focusin']) addEventListener(event, showControls);
+document.documentElement.addEventListener('pointerenter', showControls);
+document.documentElement.addEventListener('pointerleave', hideControls);
+const locations = await fetch('./data/locations.json').then(r => r.ok ? r.json() : []).catch(() => []);
+
+// ------------------------------------------------------------ speed: one throttle, scrolled up and down
+// speed (m/s) = sign(throttle) * 3 * (e^|throttle| - 1): a crawl near zero, very fast at the top (throttle 6.5 is
+// about 7,000 km/h). Scrolling one way opens the throttle, the other way closes it, through zero into reverse.
+const TOP = 6.5, toSpeed = t => Math.sign(t) * 3 * (Math.exp(Math.abs(t)) - 1), toThrottle = v => Math.sign(v) * Math.log(1 + Math.abs(v) / 3);
+let pos = Math.max(0, Math.min(LEN - 1, +(params.get('km') || 0) * 1000)), throttle = toThrottle(+(params.get('speed') ?? 96.56) / 3.6), speed = 0, paused = params.has('paused');
+const nudge = d => { throttle = Math.max(-TOP, Math.min(TOP, throttle + d)); if (Math.abs(throttle) < 0.02) throttle = 0; paused = false; };
+addEventListener('wheel', e => { e.preventDefault(); nudge(e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1) * 0.0025); }, { passive: false });
+let touchY = null; addEventListener('touchstart', e => { touchY = e.touches[0].clientY; }, { passive: true });
+addEventListener('touchmove', e => { if (touchY == null) return; const y = e.touches[0].clientY; nudge((touchY - y) * 0.012); touchY = y; e.preventDefault(); }, { passive: false });
+addEventListener('touchend', () => { touchY = null; });
+const miniMap = createMiniMap({root:$('atlas'),getRoad:()=>road,getPosition:()=>pos,getCaption:()=>locationAt(pos)});
+const shown = { info: params.get('info') === '1' };
+const toggle = k => { shown[k] = !shown[k]; $(k).style.display = shown[k] ? 'block' : 'none'; };
+for (const k of ['info']) $(k).style.display = shown[k] ? 'block' : 'none';
+addEventListener('keydown', e => {
+  if (e.key === 'Escape') { miniMap.collapse(); return; }
+  if ((e.key === 'm' || e.key === 'M') && !/^(INPUT|SELECT)$/.test(e.target.tagName)) { miniMap.toggle(); e.preventDefault(); return; }
+  if (/^(INPUT|SELECT|BUTTON)$/.test(e.target.tagName)) return;
+  if (e.key === 'ArrowUp' || e.key === 'ArrowRight') { nudge(0.35); e.preventDefault(); }
+  else if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') { nudge(-0.35); e.preventDefault(); }
+  else if (e.key === ' ') { paused = !paused; e.preventDefault(); }
+  else if (e.key === 'i' || e.key === 'I') toggle('info');
+});
+
+// ------------------------------------------------------------ credits (required) and the optional readouts
+$('credits').innerHTML = `Map © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · Terrain & aerial imagery: <a href="https://www.usgs.gov/3d-elevation-program" target="_blank" rel="noopener">USGS</a> · Map terrain: <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">Mapzen/AWS</a> · Borders: <a href="https://www.census.gov/geographies/mapping-files/2025/geo/carto-boundary-file.html" target="_blank" rel="noopener">US Census</a> · Reference façades: <a href="https://www.google.com/streetview/" target="_blank" rel="noopener">Google Street View</a> · Regional materials: SDXL`;
+
+document.title = 'Scoggin Roadtrip';
+const imperial = IDX.units === 'miles', fmt = m => imperial ? `${(m / 1609.34).toFixed(1)} mi` : `${(m / 1000).toFixed(1)} km`;
+const stopList = IDX.stops;
+const prompt = document.createElement('option'); prompt.value = ''; prompt.textContent = 'Visit a stop…'; $('stops').append(prompt);
+stopList.forEach((stop, i) => { const option = document.createElement('option'); option.value = i; option.textContent = stop.name; $('stops').append(option); });
+function seek(m) { pos = Math.max(0, Math.min(LEN - 1, m)); speed = 0; road.streamAround(pos); readouts(); }
+$('stops').addEventListener('change', e => { if (e.target.value !== '') seek(stopList[+e.target.value].at); });
+$('progress').addEventListener('input', e => seek(+e.target.value / 1000 * LEN));
+$('play').addEventListener('click', () => { paused = !paused; readouts(); });
+let pace = 0; const paces = [1, 5, 20, 60];
+$('pace').addEventListener('click', () => { pace = (pace + 1) % paces.length; throttle = toThrottle(96.56 / 3.6 * paces[pace]); paused = false; });
+function locationAt(s) {
+  if(road.captionAt)return road.captionAt(s);
+  let closest = stopList[0]; for (const stop of stopList) if (Math.abs(stop.at - s) < Math.abs(closest.at - s)) closest = stop;
+  const radius = /Death Valley|Grand Canyon|Bryce Canyon|Mesa Verde/.test(closest.name) ? 14000 : /Zion|Glen Canyon|Monument Valley/.test(closest.name) ? 6500 : /Las Vegas|Albuquerque|Lubbock/.test(closest.name) ? 10000 : 4000;
+  if (Math.abs(closest.at - s) <= radius) return closest.name;
+  let local = null, distance = 4500;
+  for (const place of locations) { const d = Math.abs(place[0] - s); if (d < distance) { distance = d; local = place[1]; } }
+  if (local) return local;
+  const next = stopList.find(stop => stop.at > s) || stopList.at(-1);
+  const previous = stopList[Math.max(0, stopList.indexOf(next) - 1)];
+  return `${previous.name.split(',')[0]} → ${next.name.split(',')[0]}`;
+}
+function readouts() {
+  drawCaption($('location'), locationAt(pos));
+  $('progress').value = pos / LEN * 1000;
+  $('progress').setAttribute('aria-valuetext', `${fmt(pos)} of ${fmt(LEN)} · ${locationAt(pos)}`);
+  $('play').textContent = paused ? 'Play' : 'Pause'; $('play').setAttribute('aria-label', paused ? 'Play drive' : 'Pause drive');
+  $('pace').textContent = `${Math.max(0, Math.round(Math.abs(toSpeed(throttle)) * 3.6 / 96.56))}×`;
+  if (shown.info) { const { here, area } = road.placeAt(pos), q = road.roadAt(pos), kmh = Math.abs(speed) * 3.6;
+    $('info').textContent = `${[here, area].filter(Boolean).join(', ')}${q.road ? ' · ' + q.road : ''}\n${fmt(pos)} of ${fmt(LEN)} · ${Math.round(imperial ? kmh / 1.609 : kmh)} ${imperial ? 'mph' : 'km/h'}${speed < -0.1 ? ' reversing' : ''}${paused ? ' · paused' : ''}`; }
+  miniMap.update();
+}
+
+// ------------------------------------------------------------ the loop
+let last = performance.now(), hudT = 0, frozen = false;
+function frame(now) {
+  const dt = Math.min(0.1, (now - last) / 1000); last = now; if (frozen) return requestAnimationFrame(frame);
+  road.streamAround(pos);
+  if (!road.ready(pos)) return requestAnimationFrame(frame);   // the first chunk is still on its way
+  const target = paused ? 0 : toSpeed(throttle); speed += (target - speed) * (1 - Math.exp(-dt * 2.5));   // eased: no jolts
+  const ahead = Math.max(0, Math.min(LEN - 1, pos + Math.sign(speed) * 900));
+  if (road.ready(ahead)) pos = wrapPosition(pos + speed * dt); else speed *= 0.8;   // wait for the road ahead to load
+  if (!loop && ((pos >= LEN - 1 && speed > 0) || (pos <= 0 && speed < 0))) { speed = 0; throttle = 0; }
+  if (!road.ready(pos)) { road.streamAround(pos); return requestAnimationFrame(frame); }
+  road.T.now += dt; road.render(pos, speed);
+  drawCaption($('location'), locationAt(pos));
+  if (now - hudT > 200) { hudT = now; readouts(); }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+let rs = null; addEventListener('resize', () => { clearTimeout(rs); rs = setTimeout(async () => { if (params.has('h')) return; const previous=road; road = await createRoad($('c'), { width: W, height: heightFor(), check: CHECK }); previous.dispose?.(); window.__trip.road = road; }, 250); });
+
+// For the self-check and recordings: jump, freeze the clock, render one exact frame.
+window.__trip = {
+  road, miniMap, get pos() { return pos; },
+  async goto(km, o = {}) { frozen = true; pos = Math.max(0, Math.min(LEN - 1, km * 1000)); road.T.now = o.t ?? 10;
+    road.streamAround(pos); for (let i = 0; i < 400 && !(road.ready(pos) && road.ready(Math.min(LEN - 1, pos + 900))); i++) await new Promise(r => setTimeout(r, 50));
+    if (!road.ready(pos)) throw Error('The map for this part of the route is still loading.');
+    for (let i = 0; i < (road.settleFrames ?? 60); i++) road.render(pos, 0);   // the lane settles
+    readouts();
+    const { here, area } = road.placeAt(pos); return { place: here, area, road: road.roadAt(pos).road || '', stats: road.stats() }; },
+  async step(m, seconds = 1 / 30) { pos = Math.max(0, Math.min(LEN - 1, pos + m)); road.T.now += seconds; road.streamAround(pos);
+    for (let i = 0; i < 200 && !road.ready(Math.min(LEN - 1, pos + 900)); i++) await new Promise(r => setTimeout(r, 50)); road.render(pos, m / seconds); readouts(); },
+  resume() { frozen = false; last = performance.now(); },
+};
+</script>
+</body>
+</html>

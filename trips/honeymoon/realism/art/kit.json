@@ -1,0 +1,94 @@
+{
+  "themes": [
+    {
+      "id": "utah",
+      "from": 0
+    },
+    {
+      "id": "mojave",
+      "from": 1000000
+    },
+    {
+      "id": "adobe",
+      "from": 2900000
+    }
+  ],
+  "pictures": {
+    "utah-shop-1": {
+      "file": "art/utah-shop-1.png",
+      "role": "shop",
+      "theme": "utah",
+      "kind": "facade",
+      "w": 256,
+      "h": 192,
+      "hm": 5,
+      "avg": [
+        146,
+        131,
+        125
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    },
+    "mojave-shop-1": {
+      "file": "art/mojave-shop-1.png",
+      "role": "shop",
+      "theme": "mojave",
+      "kind": "facade",
+      "w": 256,
+      "h": 175,
+      "hm": 3.8,
+      "avg": [
+        139,
+        125,
+        116
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "adobe-house-1": {
+      "file": "art/adobe-house-1.png",
+      "role": "house",
+      "theme": "adobe",
+      "kind": "facade",
+      "w": 256,
+      "h": 192,
+      "hm": 3.8,
+      "avg": [
+        127,
+        117,
+        116
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    },
+    "mojave-tree-1": {
+      "file": "art/mojave-tree-1.png",
+      "role": "tree",
+      "theme": "mojave",
+      "kind": "sprite",
+      "w": 256,
+      "h": 256,
+      "hm": 5,
+      "avg": [
+        164,
+        160,
+        158
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    }
+  },
+  "landmarks": {},
+  "detail": "detailed"
+}

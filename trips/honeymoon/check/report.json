@@ -1,0 +1,439 @@
+{
+  "trip": "/home/reid/gits/pixel-path/trips/honeymoon",
+  "detail": "detailed",
+  "at": "2026-10-12T21:42:13.380Z",
+  "problems": [
+    "the sweep found 6 of 1149 frames with sky through or between buildings (worst: km 3838.658 look 30: 0 px, 5 columns; km 105.994 look 0: 0 px, 4 columns; km 105.994 look 30: 0 px, 4 columns; km 473.33 look -30: 0 px, 4 columns); see check/worst-frames.png"
+  ],
+  "warnings": [
+    "38 gaps in built-up frontage (1370 m, 0.5% of 253702 m), worst at km 341.21 (120 m right, pave), km 245.49 (102 m right, pave), km 4305.54 (102 m right, pave), km 1054.57 (101 m right, pave)",
+    "14 pictures left out by hand (art/drop.txt): california-bush-1, california-house-5, california-bush-2, canyons-bush-1, canyons-bush-2, newmexico-bush-1, newmexico-bush-2, texas-bush-1, texas-bush-2, canyons-tower-3, newmexico-tower-1, newmexico-tower-3, texas-tower-3, lm-Q27768421; their roles use the other pictures",
+    "1 landmarks have no usable picture, so only their brown sign shows: Allegiant Stadium",
+    "california-street-1 may stand on its own painted ground: look at it in art/contact.png",
+    "california-street-2 may stand on its own painted ground: look at it in art/contact.png",
+    "california-street-3 may stand on its own painted ground: look at it in art/contact.png",
+    "canyons-street-2 may stand on its own painted ground: look at it in art/contact.png",
+    "canyons-street-3 may stand on its own painted ground: look at it in art/contact.png",
+    "newmexico-street-2 may stand on its own painted ground: look at it in art/contact.png",
+    "km 0.08: california-house-4 x36, california-house-1 x33, california-house-6 x32, california-house-2 x26, california-house-3 x28 in one frame",
+    "km 106.9: california-shop-2 x3, california-house-3 x4, california-house-2 x3, california-house-4 x3, california-house-6 x3 in one frame",
+    "km 482.1: california-shop-2 x36, california-terrace-6 x5, california-shop-6 x33, california-terrace-3 x5, california-shop-4 x33, california-terrace-5 x4, california-shop-1 x33, california-terrace-2 x5, california-terrace-4 x4, california-shop-5 x34, california-shop-3 x28, california-terrace-1 x3, california-house-4 x3, california-house-1 x3, california-house-6 x4, california-house-2 x3, california-house-3 x3 in one frame",
+    "km 1067.2: canyons-shop-3 x14, canyons-shop-4 x12, canyons-shop-5 x12, canyons-shop-2 x12, canyons-shop-6 x13, canyons-shop-1 x12, canyons-house-1 x5, canyons-house-6 x4, canyons-house-3 x4, canyons-house-5 x3 in one frame",
+    "km 1243.5: canyons-shop-3 x7, canyons-shop-4 x4, canyons-shop-5 x3, canyons-shop-1 x5, canyons-shop-2 x5, canyons-shop-6 x5 in one frame",
+    "km 1861.8: canyons-house-6 x19, canyons-house-5 x22, canyons-house-4 x21, canyons-house-2 x22, canyons-house-3 x24, canyons-house-1 x19, canyons-shop-1 x18, canyons-shop-3 x15, canyons-shop-6 x16, canyons-shop-4 x19, canyons-shop-5 x21, canyons-shop-2 x14 in one frame",
+    "km 1969.8: canyons-shop-6 x21, canyons-shop-3 x20, canyons-shop-5 x22, canyons-shop-4 x18, canyons-shop-2 x19, canyons-shop-1 x18, canyons-house-1 x11, canyons-house-4 x16, canyons-house-3 x17, canyons-house-6 x16, canyons-house-2 x14, canyons-house-5 x12 in one frame",
+    "km 2011.3: canyons-house-6 x3 in one frame",
+    "km 2149: canyons-shop-6 x4, canyons-shop-3 x4, canyons-shop-5 x4, canyons-shop-4 x4, canyons-shop-2 x5, canyons-shop-1 x4 in one frame",
+    "km 2945.1: newmexico-house-4 x23, newmexico-house-5 x23, newmexico-shop-3 x29, newmexico-house-1 x27, newmexico-house-3 x24, newmexico-shop-5 x28, newmexico-shop-2 x24, newmexico-house-6 x23, newmexico-terrace-3 x4, newmexico-terrace-2 x3, newmexico-terrace-1 x3, newmexico-terrace-6 x3, newmexico-house-2 x21, newmexico-shop-6 x22, newmexico-shop-4 x27, newmexico-shop-1 x24, newmexico-terrace-4 x3 in one frame",
+    "km 3233.1: newmexico-house-5 x11, newmexico-shop-5 x13, newmexico-shop-3 x10, newmexico-shop-4 x13, newmexico-shop-2 x14, newmexico-shop-1 x11, newmexico-shop-6 x11, newmexico-apartment-6 x7, newmexico-apartment-4 x8, newmexico-apartment-2 x9, newmexico-apartment-5 x9, newmexico-apartment-1 x8, newmexico-apartment-3 x9, newmexico-house-3 x10, newmexico-house-2 x9, newmexico-house-4 x9, newmexico-house-6 x9, newmexico-house-1 x6 in one frame",
+    "km 3400.7: newmexico-house-6 x3, newmexico-house-3 x3, newmexico-house-5 x3 in one frame",
+    "km 3556.3: newmexico-house-4 x9, newmexico-shop-6 x20, newmexico-shop-4 x18, newmexico-house-1 x6, newmexico-shop-5 x15, newmexico-shop-1 x17, newmexico-shop-3 x17, newmexico-shop-2 x11, newmexico-house-2 x5, newmexico-house-6 x9, newmexico-house-5 x5, newmexico-house-3 x5 in one frame",
+    "km 3837.4: texas-shop-6 x9, texas-shop-2 x7, texas-house-2 x6, texas-house-3 x5, texas-shop-1 x7, texas-shop-5 x10, texas-house-6 x4, texas-house-5 x6, texas-shop-3 x8, texas-shop-4 x7, texas-house-1 x8, texas-house-4 x5 in one frame",
+    "km 4207.3: texas-shop-6 x9, texas-shop-4 x9, texas-shop-3 x7, texas-shop-2 x8, texas-shop-1 x8, texas-shop-5 x11, texas-house-6 x6, texas-house-5 x6, texas-house-1 x6, texas-house-3 x3, texas-house-2 x5, texas-house-4 x4 in one frame"
+  ],
+  "layout": {
+    "planes": 24573,
+    "frontage_m": 253702,
+    "gaps": 38,
+    "repeats": 0,
+    "distinctFacades": 92,
+    "gap_m": 1370
+  },
+  "art": {
+    "pictures": 132,
+    "real": 132,
+    "placeholders": 0,
+    "dropped": []
+  },
+  "sweep": {
+    "frames": 1149,
+    "bad": 6,
+    "holes": 0,
+    "gapCols": 62,
+    "positions": 383,
+    "eligiblePositions": 4972,
+    "stride": 13,
+    "worst": [
+      {
+        "km": 3838.658,
+        "look": 30,
+        "holes": 0,
+        "gaps": 5,
+        "place": "Lubbock"
+      },
+      {
+        "km": 105.994,
+        "look": 0,
+        "holes": 0,
+        "gaps": 4,
+        "place": "Milpitas"
+      },
+      {
+        "km": 105.994,
+        "look": 30,
+        "holes": 0,
+        "gaps": 4,
+        "place": "Milpitas"
+      },
+      {
+        "km": 473.33,
+        "look": -30,
+        "holes": 0,
+        "gaps": 4,
+        "place": "Delano"
+      },
+      {
+        "km": 2097.622,
+        "look": -30,
+        "holes": 0,
+        "gaps": 4,
+        "place": "Hatch"
+      },
+      {
+        "km": 2616.364,
+        "look": -30,
+        "holes": 0,
+        "gaps": 3,
+        "place": "Halchita / Halchíítah"
+      }
+    ]
+  },
+  "frames": [
+    {
+      "km": 0.08,
+      "tag": "day",
+      "place": "517 Heath Street",
+      "road": "Heath Street",
+      "mean": 124,
+      "std": 48,
+      "visible": 9,
+      "facades": 5,
+      "holes": {
+        "px": 0,
+        "inside": 9039,
+        "png": null
+      },
+      "shot": "shot-0_08.png"
+    },
+    {
+      "km": 106.9,
+      "tag": "day",
+      "place": "Stockton",
+      "road": "North El Dorado Street",
+      "mean": 121,
+      "std": 47,
+      "visible": 15,
+      "facades": 11,
+      "holes": {
+        "px": 0,
+        "inside": 7533,
+        "png": null
+      },
+      "shot": "shot-106_9.png"
+    },
+    {
+      "km": 482.1,
+      "tag": "day",
+      "place": "Delano",
+      "road": "Chester Avenue",
+      "mean": 117,
+      "std": 49,
+      "visible": 26,
+      "facades": 20,
+      "holes": {
+        "px": 0,
+        "inside": 27595,
+        "png": null
+      },
+      "shot": "shot-482_1.png"
+    },
+    {
+      "km": 875.5,
+      "tag": "day",
+      "place": "Emigrant Junction",
+      "road": "Badwater Road",
+      "mean": 142,
+      "std": 49,
+      "visible": 0,
+      "facades": 0,
+      "holes": {
+        "px": 0,
+        "inside": 0,
+        "png": null
+      },
+      "shot": "shot-875_5.png"
+    },
+    {
+      "km": 1067.2,
+      "tag": "day",
+      "place": "Pahrump",
+      "road": "Las Vegas Freeway",
+      "mean": 130,
+      "std": 52,
+      "visible": 15,
+      "facades": 12,
+      "holes": {
+        "px": 0,
+        "inside": 1161,
+        "png": null
+      },
+      "shot": "shot-1067_2.png"
+    },
+    {
+      "km": 1243.5,
+      "tag": "day",
+      "place": "Kingman",
+      "road": "East Beale Street",
+      "mean": 116,
+      "std": 44,
+      "visible": 9,
+      "facades": 6,
+      "holes": {
+        "px": 0,
+        "inside": 24021,
+        "png": null
+      },
+      "shot": "shot-1243_5.png"
+    },
+    {
+      "km": 1523.6,
+      "tag": "day",
+      "place": "Tusayan",
+      "road": "South Entrance Road",
+      "mean": 123,
+      "std": 50,
+      "visible": 3,
+      "facades": 0,
+      "holes": {
+        "px": 0,
+        "inside": 0,
+        "png": null
+      },
+      "shot": "shot-1523_6.png"
+    },
+    {
+      "km": 1861.8,
+      "tag": "day",
+      "place": "Kanab",
+      "road": "100 East",
+      "mean": 112,
+      "std": 42,
+      "visible": 17,
+      "facades": 12,
+      "holes": {
+        "px": 0,
+        "inside": 18242,
+        "png": null
+      },
+      "shot": "shot-1861_8.png"
+    },
+    {
+      "km": 1969.8,
+      "tag": "day",
+      "place": "Panguitch",
+      "road": "Center Street",
+      "mean": 112,
+      "std": 45,
+      "visible": 18,
+      "facades": 13,
+      "holes": {
+        "px": 0,
+        "inside": 15222,
+        "png": null
+      },
+      "shot": "shot-1969_8.png"
+    },
+    {
+      "km": 2011.3,
+      "tag": "day",
+      "place": "Panguitch",
+      "road": "Bryce Canyon Scenic Drive",
+      "mean": 101,
+      "std": 43,
+      "visible": 12,
+      "facades": 9,
+      "holes": {
+        "px": 0,
+        "inside": 202,
+        "png": null
+      },
+      "shot": "shot-2011_3.png"
+    },
+    {
+      "km": 2149,
+      "tag": "day",
+      "place": "Hatch",
+      "road": "Zion Park Boulevard",
+      "mean": 128,
+      "std": 48,
+      "visible": 10,
+      "facades": 10,
+      "holes": {
+        "px": 0,
+        "inside": 180,
+        "png": null
+      },
+      "shot": "shot-2149.png"
+    },
+    {
+      "km": 2332.8,
+      "tag": "day",
+      "place": "Big Water",
+      "road": "Bitter Springs–Utah State Line Highway",
+      "mean": 144,
+      "std": 46,
+      "visible": 0,
+      "facades": 0,
+      "holes": {
+        "px": 0,
+        "inside": 0,
+        "png": null
+      },
+      "shot": "shot-2332_8.png"
+    },
+    {
+      "km": 2536.9,
+      "tag": "day",
+      "place": "Kayenta",
+      "road": "Monument Valley Tribal Park Road",
+      "mean": 134,
+      "std": 47,
+      "visible": 0,
+      "facades": 0,
+      "holes": {
+        "px": 0,
+        "inside": 0,
+        "png": null
+      },
+      "shot": "shot-2536_9.png"
+    },
+    {
+      "km": 2791.3,
+      "tag": "day",
+      "place": "Cortez",
+      "road": "Cliff Palace Loop",
+      "mean": 122,
+      "std": 52,
+      "visible": 9,
+      "facades": 5,
+      "holes": {
+        "px": 0,
+        "inside": 2515,
+        "png": null
+      },
+      "shot": "shot-2791_3.png"
+    },
+    {
+      "km": 2945.1,
+      "tag": "day",
+      "place": "Durango",
+      "road": "East Blanco Street",
+      "mean": 126,
+      "std": 49,
+      "visible": 22,
+      "facades": 18,
+      "holes": {
+        "px": 0,
+        "inside": 4117,
+        "png": null
+      },
+      "shot": "shot-2945_1.png"
+    },
+    {
+      "km": 3233.1,
+      "tag": "day",
+      "place": "Albuquerque",
+      "road": "4th Street Southwest",
+      "mean": 120,
+      "std": 53,
+      "visible": 25,
+      "facades": 19,
+      "holes": {
+        "px": 0,
+        "inside": 25009,
+        "png": null
+      },
+      "shot": "shot-3233_1.png"
+    },
+    {
+      "km": 3400.7,
+      "tag": "day",
+      "place": "Wagon Wheel",
+      "road": "8th Street",
+      "mean": 136,
+      "std": 54,
+      "visible": 12,
+      "facades": 8,
+      "holes": {
+        "px": 0,
+        "inside": 284,
+        "png": null
+      },
+      "shot": "shot-3400_7.png"
+    },
+    {
+      "km": 3556.3,
+      "tag": "day",
+      "place": "Vaughn",
+      "road": "North Richardson Avenue",
+      "mean": 119,
+      "std": 47,
+      "visible": 19,
+      "facades": 13,
+      "holes": {
+        "px": 0,
+        "inside": 14318,
+        "png": null
+      },
+      "shot": "shot-3556_3.png"
+    },
+    {
+      "km": 3837.4,
+      "tag": "day",
+      "place": "Plains",
+      "road": "Avenue K",
+      "mean": 118,
+      "std": 46,
+      "visible": 20,
+      "facades": 14,
+      "holes": {
+        "px": 0,
+        "inside": 5902,
+        "png": null
+      },
+      "shot": "shot-3837_4.png"
+    },
+    {
+      "km": 4207.3,
+      "tag": "day",
+      "place": "Jacksboro",
+      "road": "North Main Street",
+      "mean": 125,
+      "std": 53,
+      "visible": 16,
+      "facades": 12,
+      "holes": {
+        "px": 0,
+        "inside": 4096,
+        "png": null
+      },
+      "shot": "shot-4207_3.png"
+    },
+    {
+      "km": 4315.02,
+      "tag": "day",
+      "place": "717 Sun Valley Drive",
+      "road": "Stuart Road",
+      "mean": 134,
+      "std": 52,
+      "visible": 12,
+      "facades": 10,
+      "holes": {
+        "px": 0,
+        "inside": 7023,
+        "png": null
+      },
+      "shot": "shot-4315_02.png"
+    }
+  ]
+}

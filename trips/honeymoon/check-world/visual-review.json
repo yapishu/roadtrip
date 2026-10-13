@@ -1,0 +1,21 @@
+{
+  "status": "Reviewed",
+  "routeKm": 4682.4518,
+  "parkDrives": 7,
+  "sceneChecks": 60,
+  "sceneFailures": 0,
+  "runtimeErrors": 0,
+  "roadBoundaryJumpsOverOneMetre": 0,
+  "unitTests": 10,
+  "playbackLoop": "Verified returning to start and advancing",
+  "mobile": "390 by 844; stop selection and no horizontal overflow",
+  "framedView": "Only the location caption remains visible",
+  "landmarks": "Glen Canyon Dam and Desert View Watchtower reviewed in the live renderer",
+  "limitations": [
+    "Building details and vegetation are representative where observations or measurements are absent.",
+    "Road elevations interpolate bridge and tunnel decks and isolated terrain mismatches.",
+    "Terrain is a surface model; overhangs and fine architectural details are simplified."
+  ],
+  "remote": "swps@10.10.8.50:/home/swps/pixel-path/roadtrip/trips/honeymoon",
+  "url": "http://127.0.0.1:8088/?display=1"
+}

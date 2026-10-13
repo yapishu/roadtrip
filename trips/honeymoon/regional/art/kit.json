@@ -1,0 +1,68 @@
+{
+  "themes": [
+    {
+      "id": "california",
+      "from": 0
+    },
+    {
+      "id": "mojave",
+      "from": 570000
+    },
+    {
+      "id": "utah",
+      "from": 1840000
+    },
+    {
+      "id": "redrock",
+      "from": 2310000
+    },
+    {
+      "id": "newmexico",
+      "from": 2900000
+    },
+    {
+      "id": "texas",
+      "from": 3700000
+    }
+  ],
+  "pictures": {
+    "mojave-tree-1": {
+      "file": "art/mojave-tree-1.png",
+      "role": "tree",
+      "theme": "mojave",
+      "kind": "sprite",
+      "w": 255,
+      "h": 246,
+      "hm": 9,
+      "avg": [
+        189,
+        187,
+        184
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "utah-tree-1": {
+      "file": "art/utah-tree-1.png",
+      "role": "tree",
+      "theme": "utah",
+      "kind": "sprite",
+      "w": 254,
+      "h": 244,
+      "hm": 9,
+      "avg": [
+        122,
+        121,
+        99
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    }
+  },
+  "landmarks": {},
+  "detail": "regional"
+}

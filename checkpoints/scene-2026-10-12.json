@@ -1,0 +1,9 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-12.tar.zst",
+  "bytes": 1370304246,
+  "sha256": "33545318f1d6ca25e2acbfc1ddc49199b0352b193c08c70fb1943c81b13ee54e",
+  "sourceCommit": "2ec8edf",
+  "sceneCommit": "2399523",
+  "contents": "Complete viewer, components, art, terrain, mapped structures, route and park drives",
+  "storage": "Separate scene archive; restore world assets with scripts/restore-scene.mjs"
+}

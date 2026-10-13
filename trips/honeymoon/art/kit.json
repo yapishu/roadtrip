@@ -1,0 +1,2345 @@
+{
+  "themes": [
+    {
+      "id": "california",
+      "from": 0,
+      "name": "California Bay Area and San Joaquin Valley: light stucco ranch houses, tile roofs, modest downtown brick shops, farm buildings"
+    },
+    {
+      "id": "canyons",
+      "from": 570000,
+      "name": "Mojave Desert and Colorado Plateau: low sand-colored stucco buildings, roadside motels, flat-roofed shops, pine-covered highlands and desert towns"
+    },
+    {
+      "id": "newmexico",
+      "from": 2940000,
+      "name": "New Mexico: warm adobe and pale stucco houses, flat parapets, wooden lintels, brick railroad-town storefronts"
+    },
+    {
+      "id": "texas",
+      "from": 3770000,
+      "name": "West and North Texas: low red-brick ranch houses, limestone and red-brick main-street shops, corrugated farm and industrial buildings"
+    }
+  ],
+  "pictures": {
+    "california-house-1": {
+      "file": "art/california-house-1.png",
+      "role": "house",
+      "theme": "california",
+      "kind": "facade",
+      "w": 192,
+      "h": 100,
+      "hm": 4.5,
+      "avg": [
+        130,
+        121,
+        128
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-tree-1": {
+      "file": "art/california-tree-1.png",
+      "role": "tree",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 102,
+      "h": 154,
+      "hm": 9,
+      "avg": [
+        74,
+        84,
+        57
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-house-1": {
+      "file": "art/canyons-house-1.png",
+      "role": "house",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 169,
+      "h": 106,
+      "hm": 4.5,
+      "avg": [
+        164,
+        142,
+        130
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-tree-1": {
+      "file": "art/canyons-tree-1.png",
+      "role": "tree",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 84,
+      "h": 141,
+      "hm": 9,
+      "avg": [
+        81,
+        87,
+        70
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-house-1": {
+      "file": "art/newmexico-house-1.png",
+      "role": "house",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 192,
+      "h": 111,
+      "hm": 4.5,
+      "avg": [
+        197,
+        175,
+        165
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-tree-1": {
+      "file": "art/newmexico-tree-1.png",
+      "role": "tree",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 122,
+      "h": 157,
+      "hm": 9,
+      "avg": [
+        80,
+        96,
+        66
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-house-1": {
+      "file": "art/texas-house-1.png",
+      "role": "house",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 140,
+      "h": 110,
+      "hm": 4.5,
+      "avg": [
+        128,
+        107,
+        104
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (526 px)"
+      ]
+    },
+    "texas-tree-1": {
+      "file": "art/texas-tree-1.png",
+      "role": "tree",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 122,
+      "h": 156,
+      "hm": 9,
+      "avg": [
+        75,
+        87,
+        62
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-shop-1": {
+      "file": "art/california-shop-1.png",
+      "role": "shop",
+      "theme": "california",
+      "kind": "facade",
+      "w": 160,
+      "h": 129,
+      "hm": 10,
+      "avg": [
+        151,
+        107,
+        93
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (6586 px)"
+      ]
+    },
+    "california-shop-2": {
+      "file": "art/california-shop-2.png",
+      "role": "shop",
+      "theme": "california",
+      "kind": "facade",
+      "w": 154,
+      "h": 154,
+      "hm": 10,
+      "avg": [
+        152,
+        147,
+        147
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-shop-3": {
+      "file": "art/california-shop-3.png",
+      "role": "shop",
+      "theme": "california",
+      "kind": "facade",
+      "w": 107,
+      "h": 129,
+      "hm": 10,
+      "avg": [
+        165,
+        141,
+        123
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-shop-4": {
+      "file": "art/california-shop-4.png",
+      "role": "shop",
+      "theme": "california",
+      "kind": "facade",
+      "w": 78,
+      "h": 85,
+      "hm": 10,
+      "avg": [
+        154,
+        155,
+        155
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-shop-5": {
+      "file": "art/california-shop-5.png",
+      "role": "shop",
+      "theme": "california",
+      "kind": "facade",
+      "w": 152,
+      "h": 153,
+      "hm": 10,
+      "avg": [
+        147,
+        119,
+        109
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-house-2": {
+      "file": "art/california-house-2.png",
+      "role": "house",
+      "theme": "california",
+      "kind": "facade",
+      "w": 184,
+      "h": 100,
+      "hm": 4.5,
+      "avg": [
+        125,
+        139,
+        151
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-house-3": {
+      "file": "art/california-house-3.png",
+      "role": "house",
+      "theme": "california",
+      "kind": "facade",
+      "w": 150,
+      "h": 63,
+      "hm": 4.5,
+      "avg": [
+        175,
+        152,
+        141
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-terrace-1": {
+      "file": "art/california-terrace-1.png",
+      "role": "terrace",
+      "theme": "california",
+      "kind": "facade",
+      "w": 70,
+      "h": 134,
+      "hm": 10,
+      "avg": [
+        191,
+        178,
+        177
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-terrace-2": {
+      "file": "art/california-terrace-2.png",
+      "role": "terrace",
+      "theme": "california",
+      "kind": "facade",
+      "w": 116,
+      "h": 152,
+      "hm": 10,
+      "avg": [
+        151,
+        110,
+        107
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-tree-2": {
+      "file": "art/california-tree-2.png",
+      "role": "tree",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 59,
+      "h": 142,
+      "hm": 9,
+      "avg": [
+        103,
+        101,
+        65
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-bush-1": {
+      "file": "art/california-bush-1.png",
+      "role": "bush",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 105,
+      "h": 65,
+      "hm": 1.1,
+      "avg": [
+        109,
+        103,
+        109
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": []
+    },
+    "california-street-1": {
+      "file": "art/california-street-1.png",
+      "role": "street",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 30,
+      "h": 74,
+      "hm": 1.4,
+      "avg": [
+        128,
+        101,
+        103
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "ground?"
+      ]
+    },
+    "california-shop-6": {
+      "file": "art/california-shop-6.png",
+      "role": "shop",
+      "theme": "california",
+      "kind": "facade",
+      "w": 128,
+      "h": 150,
+      "hm": 10,
+      "avg": [
+        174,
+        148,
+        136
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-house-4": {
+      "file": "art/california-house-4.png",
+      "role": "house",
+      "theme": "california",
+      "kind": "facade",
+      "w": 192,
+      "h": 111,
+      "hm": 4.5,
+      "avg": [
+        151,
+        151,
+        155
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-house-5": {
+      "file": "art/california-house-5.png",
+      "role": "house",
+      "theme": "california",
+      "kind": "facade",
+      "w": 192,
+      "h": 110,
+      "hm": 4.5,
+      "avg": [
+        136,
+        141,
+        143
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "holes filled (521 px)"
+      ]
+    },
+    "california-house-6": {
+      "file": "art/california-house-6.png",
+      "role": "house",
+      "theme": "california",
+      "kind": "facade",
+      "w": 152,
+      "h": 78,
+      "hm": 4.5,
+      "avg": [
+        153,
+        111,
+        105
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-terrace-3": {
+      "file": "art/california-terrace-3.png",
+      "role": "terrace",
+      "theme": "california",
+      "kind": "facade",
+      "w": 120,
+      "h": 157,
+      "hm": 10,
+      "avg": [
+        159,
+        137,
+        137
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-terrace-4": {
+      "file": "art/california-terrace-4.png",
+      "role": "terrace",
+      "theme": "california",
+      "kind": "facade",
+      "w": 126,
+      "h": 159,
+      "hm": 10,
+      "avg": [
+        145,
+        104,
+        106
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-terrace-5": {
+      "file": "art/california-terrace-5.png",
+      "role": "terrace",
+      "theme": "california",
+      "kind": "facade",
+      "w": 122,
+      "h": 158,
+      "hm": 10,
+      "avg": [
+        164,
+        134,
+        130
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-terrace-6": {
+      "file": "art/california-terrace-6.png",
+      "role": "terrace",
+      "theme": "california",
+      "kind": "facade",
+      "w": 128,
+      "h": 154,
+      "hm": 10,
+      "avg": [
+        165,
+        134,
+        131
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-tree-3": {
+      "file": "art/california-tree-3.png",
+      "role": "tree",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 93,
+      "h": 141,
+      "hm": 9,
+      "avg": [
+        70,
+        80,
+        51
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-bush-2": {
+      "file": "art/california-bush-2.png",
+      "role": "bush",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 77,
+      "h": 79,
+      "hm": 1.1,
+      "avg": [
+        100,
+        69,
+        51
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": []
+    },
+    "california-street-2": {
+      "file": "art/california-street-2.png",
+      "role": "street",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 28,
+      "h": 74,
+      "hm": 1.4,
+      "avg": [
+        158,
+        139,
+        138
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "ground?"
+      ]
+    },
+    "california-street-3": {
+      "file": "art/california-street-3.png",
+      "role": "street",
+      "theme": "california",
+      "kind": "sprite",
+      "w": 33,
+      "h": 79,
+      "hm": 1.4,
+      "avg": [
+        107,
+        70,
+        66
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "ground?"
+      ]
+    },
+    "canyons-house-2": {
+      "file": "art/canyons-house-2.png",
+      "role": "house",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 188,
+      "h": 100,
+      "hm": 4.5,
+      "avg": [
+        189,
+        183,
+        160
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-house-3": {
+      "file": "art/canyons-house-3.png",
+      "role": "house",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 192,
+      "h": 105,
+      "hm": 4.5,
+      "avg": [
+        176,
+        159,
+        147
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (441 px)"
+      ]
+    },
+    "canyons-house-4": {
+      "file": "art/canyons-house-4.png",
+      "role": "house",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 192,
+      "h": 110,
+      "hm": 4.5,
+      "avg": [
+        178,
+        157,
+        144
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (823 px)"
+      ]
+    },
+    "canyons-house-5": {
+      "file": "art/canyons-house-5.png",
+      "role": "house",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 191,
+      "h": 110,
+      "hm": 4.5,
+      "avg": [
+        179,
+        162,
+        143
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-house-6": {
+      "file": "art/canyons-house-6.png",
+      "role": "house",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 189,
+      "h": 107,
+      "hm": 4.5,
+      "avg": [
+        171,
+        146,
+        132
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (1866 px)"
+      ]
+    },
+    "canyons-terrace-1": {
+      "file": "art/canyons-terrace-1.png",
+      "role": "terrace",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 99,
+      "h": 135,
+      "hm": 10,
+      "avg": [
+        174,
+        166,
+        156
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-terrace-2": {
+      "file": "art/canyons-terrace-2.png",
+      "role": "terrace",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 112,
+      "h": 138,
+      "hm": 10,
+      "avg": [
+        179,
+        147,
+        114
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-terrace-3": {
+      "file": "art/canyons-terrace-3.png",
+      "role": "terrace",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 87,
+      "h": 116,
+      "hm": 10,
+      "avg": [
+        162,
+        142,
+        122
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-terrace-4": {
+      "file": "art/canyons-terrace-4.png",
+      "role": "terrace",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 83,
+      "h": 142,
+      "hm": 10,
+      "avg": [
+        184,
+        145,
+        121
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-terrace-5": {
+      "file": "art/canyons-terrace-5.png",
+      "role": "terrace",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 126,
+      "h": 141,
+      "hm": 10,
+      "avg": [
+        167,
+        153,
+        136
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-terrace-6": {
+      "file": "art/canyons-terrace-6.png",
+      "role": "terrace",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 102,
+      "h": 150,
+      "hm": 10,
+      "avg": [
+        172,
+        163,
+        152
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-shop-1": {
+      "file": "art/canyons-shop-1.png",
+      "role": "shop",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 127,
+      "h": 120,
+      "hm": 10,
+      "avg": [
+        127,
+        124,
+        135
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (2853 px)"
+      ]
+    },
+    "canyons-shop-2": {
+      "file": "art/canyons-shop-2.png",
+      "role": "shop",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 75,
+      "h": 111,
+      "hm": 10,
+      "avg": [
+        180,
+        151,
+        131
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-shop-3": {
+      "file": "art/canyons-shop-3.png",
+      "role": "shop",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 111,
+      "h": 116,
+      "hm": 10,
+      "avg": [
+        129,
+        133,
+        143
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (2961 px)"
+      ]
+    },
+    "canyons-shop-4": {
+      "file": "art/canyons-shop-4.png",
+      "role": "shop",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 73,
+      "h": 88,
+      "hm": 10,
+      "avg": [
+        182,
+        140,
+        123
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-shop-5": {
+      "file": "art/canyons-shop-5.png",
+      "role": "shop",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 150,
+      "h": 149,
+      "hm": 10,
+      "avg": [
+        126,
+        132,
+        146
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (8929 px)"
+      ]
+    },
+    "canyons-shop-6": {
+      "file": "art/canyons-shop-6.png",
+      "role": "shop",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 129,
+      "h": 83,
+      "hm": 10,
+      "avg": [
+        166,
+        142,
+        142
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-tree-2": {
+      "file": "art/canyons-tree-2.png",
+      "role": "tree",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 66,
+      "h": 47,
+      "hm": 9,
+      "avg": [
+        67,
+        89,
+        59
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-tree-3": {
+      "file": "art/canyons-tree-3.png",
+      "role": "tree",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 84,
+      "h": 145,
+      "hm": 9,
+      "avg": [
+        68,
+        63,
+        47
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-bush-1": {
+      "file": "art/canyons-bush-1.png",
+      "role": "bush",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 35,
+      "h": 24,
+      "hm": 1.1,
+      "avg": [
+        104,
+        77,
+        66
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": []
+    },
+    "canyons-bush-2": {
+      "file": "art/canyons-bush-2.png",
+      "role": "bush",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 128,
+      "h": 80,
+      "hm": 1.1,
+      "avg": [
+        168,
+        165,
+        163
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    },
+    "canyons-street-1": {
+      "file": "art/canyons-street-1.png",
+      "role": "street",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 29,
+      "h": 83,
+      "hm": 1.4,
+      "avg": [
+        129,
+        114,
+        116
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-street-2": {
+      "file": "art/canyons-street-2.png",
+      "role": "street",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 28,
+      "h": 63,
+      "hm": 1.4,
+      "avg": [
+        115,
+        82,
+        78
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "ground?"
+      ]
+    },
+    "canyons-street-3": {
+      "file": "art/canyons-street-3.png",
+      "role": "street",
+      "theme": "canyons",
+      "kind": "sprite",
+      "w": 33,
+      "h": 69,
+      "hm": 1.4,
+      "avg": [
+        116,
+        87,
+        89
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "ground?"
+      ]
+    },
+    "newmexico-house-2": {
+      "file": "art/newmexico-house-2.png",
+      "role": "house",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 178,
+      "h": 111,
+      "hm": 4.5,
+      "avg": [
+        153,
+        104,
+        80
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (1242 px)"
+      ]
+    },
+    "newmexico-house-3": {
+      "file": "art/newmexico-house-3.png",
+      "role": "house",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 190,
+      "h": 98,
+      "hm": 4.5,
+      "avg": [
+        197,
+        171,
+        163
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-house-4": {
+      "file": "art/newmexico-house-4.png",
+      "role": "house",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 192,
+      "h": 102,
+      "hm": 4.5,
+      "avg": [
+        196,
+        177,
+        163
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-house-5": {
+      "file": "art/newmexico-house-5.png",
+      "role": "house",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 107,
+      "h": 99,
+      "hm": 4.5,
+      "avg": [
+        180,
+        127,
+        118
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-house-6": {
+      "file": "art/newmexico-house-6.png",
+      "role": "house",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 131,
+      "h": 48,
+      "hm": 4.5,
+      "avg": [
+        179,
+        135,
+        145
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-terrace-1": {
+      "file": "art/newmexico-terrace-1.png",
+      "role": "terrace",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 128,
+      "h": 136,
+      "hm": 10,
+      "avg": [
+        160,
+        152,
+        145
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-terrace-2": {
+      "file": "art/newmexico-terrace-2.png",
+      "role": "terrace",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 122,
+      "h": 157,
+      "hm": 10,
+      "avg": [
+        147,
+        121,
+        99
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-terrace-3": {
+      "file": "art/newmexico-terrace-3.png",
+      "role": "terrace",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 124,
+      "h": 156,
+      "hm": 10,
+      "avg": [
+        163,
+        151,
+        136
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-terrace-4": {
+      "file": "art/newmexico-terrace-4.png",
+      "role": "terrace",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 123,
+      "h": 156,
+      "hm": 10,
+      "avg": [
+        152,
+        130,
+        116
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-terrace-5": {
+      "file": "art/newmexico-terrace-5.png",
+      "role": "terrace",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 118,
+      "h": 159,
+      "hm": 10,
+      "avg": [
+        135,
+        115,
+        99
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-terrace-6": {
+      "file": "art/newmexico-terrace-6.png",
+      "role": "terrace",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 97,
+      "h": 134,
+      "hm": 10,
+      "avg": [
+        149,
+        138,
+        130
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-shop-1": {
+      "file": "art/newmexico-shop-1.png",
+      "role": "shop",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 149,
+      "h": 147,
+      "hm": 10,
+      "avg": [
+        154,
+        141,
+        130
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (3876 px)"
+      ]
+    },
+    "newmexico-shop-2": {
+      "file": "art/newmexico-shop-2.png",
+      "role": "shop",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 92,
+      "h": 144,
+      "hm": 10,
+      "avg": [
+        142,
+        108,
+        105
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-shop-3": {
+      "file": "art/newmexico-shop-3.png",
+      "role": "shop",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 148,
+      "h": 137,
+      "hm": 10,
+      "avg": [
+        169,
+        161,
+        155
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-shop-4": {
+      "file": "art/newmexico-shop-4.png",
+      "role": "shop",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 128,
+      "h": 88,
+      "hm": 10,
+      "avg": [
+        100,
+        85,
+        93
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (4485 px)"
+      ]
+    },
+    "newmexico-shop-5": {
+      "file": "art/newmexico-shop-5.png",
+      "role": "shop",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 115,
+      "h": 139,
+      "hm": 10,
+      "avg": [
+        151,
+        135,
+        120
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (2890 px)"
+      ]
+    },
+    "newmexico-shop-6": {
+      "file": "art/newmexico-shop-6.png",
+      "role": "shop",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 111,
+      "h": 129,
+      "hm": 10,
+      "avg": [
+        155,
+        116,
+        113
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-tree-2": {
+      "file": "art/newmexico-tree-2.png",
+      "role": "tree",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 96,
+      "h": 153,
+      "hm": 9,
+      "avg": [
+        59,
+        71,
+        49
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-tree-3": {
+      "file": "art/newmexico-tree-3.png",
+      "role": "tree",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 92,
+      "h": 126,
+      "hm": 9,
+      "avg": [
+        84,
+        91,
+        59
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-bush-1": {
+      "file": "art/newmexico-bush-1.png",
+      "role": "bush",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 66,
+      "h": 50,
+      "hm": 1.1,
+      "avg": [
+        94,
+        64,
+        49
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": []
+    },
+    "newmexico-bush-2": {
+      "file": "art/newmexico-bush-2.png",
+      "role": "bush",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 122,
+      "h": 75,
+      "hm": 1.1,
+      "avg": [
+        97,
+        69,
+        53
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": []
+    },
+    "newmexico-street-1": {
+      "file": "art/newmexico-street-1.png",
+      "role": "street",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 40,
+      "h": 90,
+      "hm": 1.4,
+      "avg": [
+        153,
+        128,
+        129
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-street-2": {
+      "file": "art/newmexico-street-2.png",
+      "role": "street",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 27,
+      "h": 73,
+      "hm": 1.4,
+      "avg": [
+        135,
+        95,
+        91
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "ground?"
+      ]
+    },
+    "newmexico-street-3": {
+      "file": "art/newmexico-street-3.png",
+      "role": "street",
+      "theme": "newmexico",
+      "kind": "sprite",
+      "w": 36,
+      "h": 82,
+      "hm": 1.4,
+      "avg": [
+        133,
+        118,
+        121
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-house-2": {
+      "file": "art/texas-house-2.png",
+      "role": "house",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 178,
+      "h": 100,
+      "hm": 4.5,
+      "avg": [
+        158,
+        149,
+        139
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-house-3": {
+      "file": "art/texas-house-3.png",
+      "role": "house",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 172,
+      "h": 104,
+      "hm": 4.5,
+      "avg": [
+        179,
+        135,
+        115
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-house-4": {
+      "file": "art/texas-house-4.png",
+      "role": "house",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 172,
+      "h": 79,
+      "hm": 4.5,
+      "avg": [
+        140,
+        119,
+        112
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (1787 px)"
+      ]
+    },
+    "texas-house-5": {
+      "file": "art/texas-house-5.png",
+      "role": "house",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 190,
+      "h": 105,
+      "hm": 4.5,
+      "avg": [
+        153,
+        144,
+        130
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-house-6": {
+      "file": "art/texas-house-6.png",
+      "role": "house",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 190,
+      "h": 110,
+      "hm": 4.5,
+      "avg": [
+        138,
+        135,
+        140
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-terrace-1": {
+      "file": "art/texas-terrace-1.png",
+      "role": "terrace",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 110,
+      "h": 150,
+      "hm": 10,
+      "avg": [
+        144,
+        134,
+        138
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-terrace-2": {
+      "file": "art/texas-terrace-2.png",
+      "role": "terrace",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 124,
+      "h": 160,
+      "hm": 10,
+      "avg": [
+        144,
+        127,
+        131
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-terrace-3": {
+      "file": "art/texas-terrace-3.png",
+      "role": "terrace",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 76,
+      "h": 152,
+      "hm": 10,
+      "avg": [
+        152,
+        135,
+        138
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-terrace-4": {
+      "file": "art/texas-terrace-4.png",
+      "role": "terrace",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 98,
+      "h": 149,
+      "hm": 10,
+      "avg": [
+        132,
+        117,
+        122
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-terrace-5": {
+      "file": "art/texas-terrace-5.png",
+      "role": "terrace",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 116,
+      "h": 155,
+      "hm": 10,
+      "avg": [
+        124,
+        102,
+        107
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-terrace-6": {
+      "file": "art/texas-terrace-6.png",
+      "role": "terrace",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 125,
+      "h": 157,
+      "hm": 10,
+      "avg": [
+        153,
+        118,
+        113
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-shop-1": {
+      "file": "art/texas-shop-1.png",
+      "role": "shop",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 88,
+      "h": 117,
+      "hm": 10,
+      "avg": [
+        175,
+        139,
+        135
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-shop-2": {
+      "file": "art/texas-shop-2.png",
+      "role": "shop",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 158,
+      "h": 153,
+      "hm": 10,
+      "avg": [
+        152,
+        134,
+        139
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-shop-3": {
+      "file": "art/texas-shop-3.png",
+      "role": "shop",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 158,
+      "h": 158,
+      "hm": 10,
+      "avg": [
+        183,
+        148,
+        138
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-shop-4": {
+      "file": "art/texas-shop-4.png",
+      "role": "shop",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 132,
+      "h": 153,
+      "hm": 10,
+      "avg": [
+        150,
+        143,
+        145
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-shop-5": {
+      "file": "art/texas-shop-5.png",
+      "role": "shop",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 141,
+      "h": 142,
+      "hm": 10,
+      "avg": [
+        155,
+        137,
+        128
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (740 px)"
+      ]
+    },
+    "texas-shop-6": {
+      "file": "art/texas-shop-6.png",
+      "role": "shop",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 152,
+      "h": 130,
+      "hm": 10,
+      "avg": [
+        157,
+        159,
+        157
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-tree-2": {
+      "file": "art/texas-tree-2.png",
+      "role": "tree",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 125,
+      "h": 150,
+      "hm": 9,
+      "avg": [
+        91,
+        119,
+        85
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-tree-3": {
+      "file": "art/texas-tree-3.png",
+      "role": "tree",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 48,
+      "h": 56,
+      "hm": 9,
+      "avg": [
+        69,
+        85,
+        66
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-bush-1": {
+      "file": "art/texas-bush-1.png",
+      "role": "bush",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 42,
+      "h": 42,
+      "hm": 1.1,
+      "avg": [
+        88,
+        61,
+        49
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": []
+    },
+    "texas-bush-2": {
+      "file": "art/texas-bush-2.png",
+      "role": "bush",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 123,
+      "h": 72,
+      "hm": 1.1,
+      "avg": [
+        87,
+        77,
+        80
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": []
+    },
+    "texas-street-1": {
+      "file": "art/texas-street-1.png",
+      "role": "street",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 45,
+      "h": 82,
+      "hm": 1.4,
+      "avg": [
+        168,
+        155,
+        158
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-street-2": {
+      "file": "art/texas-street-2.png",
+      "role": "street",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 35,
+      "h": 66,
+      "hm": 1.4,
+      "avg": [
+        126,
+        121,
+        131
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-street-3": {
+      "file": "art/texas-street-3.png",
+      "role": "street",
+      "theme": "texas",
+      "kind": "sprite",
+      "w": 39,
+      "h": 87,
+      "hm": 1.4,
+      "avg": [
+        131,
+        123,
+        130
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-farm-1": {
+      "file": "art/california-farm-1.png",
+      "role": "farm",
+      "theme": "california",
+      "kind": "facade",
+      "w": 187,
+      "h": 120,
+      "hm": 8,
+      "avg": [
+        156,
+        156,
+        162
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-farm-2": {
+      "file": "art/california-farm-2.png",
+      "role": "farm",
+      "theme": "california",
+      "kind": "facade",
+      "w": 184,
+      "h": 116,
+      "hm": 8,
+      "avg": [
+        137,
+        134,
+        136
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-farm-3": {
+      "file": "art/california-farm-3.png",
+      "role": "farm",
+      "theme": "california",
+      "kind": "facade",
+      "w": 127,
+      "h": 93,
+      "hm": 8,
+      "avg": [
+        133,
+        143,
+        150
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-farm-4": {
+      "file": "art/california-farm-4.png",
+      "role": "farm",
+      "theme": "california",
+      "kind": "facade",
+      "w": 186,
+      "h": 127,
+      "hm": 8,
+      "avg": [
+        151,
+        152,
+        156
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-farm-5": {
+      "file": "art/california-farm-5.png",
+      "role": "farm",
+      "theme": "california",
+      "kind": "facade",
+      "w": 182,
+      "h": 117,
+      "hm": 8,
+      "avg": [
+        149,
+        148,
+        148
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (2448 px)"
+      ]
+    },
+    "california-farm-6": {
+      "file": "art/california-farm-6.png",
+      "role": "farm",
+      "theme": "california",
+      "kind": "facade",
+      "w": 180,
+      "h": 116,
+      "hm": 8,
+      "avg": [
+        121,
+        117,
+        120
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (1879 px)"
+      ]
+    },
+    "newmexico-apartment-1": {
+      "file": "art/newmexico-apartment-1.png",
+      "role": "apartment",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 105,
+      "h": 180,
+      "hm": 18,
+      "avg": [
+        132,
+        114,
+        113
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-apartment-2": {
+      "file": "art/newmexico-apartment-2.png",
+      "role": "apartment",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 106,
+      "h": 191,
+      "hm": 18,
+      "avg": [
+        161,
+        137,
+        130
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-apartment-3": {
+      "file": "art/newmexico-apartment-3.png",
+      "role": "apartment",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 120,
+      "h": 182,
+      "hm": 18,
+      "avg": [
+        141,
+        119,
+        112
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-apartment-4": {
+      "file": "art/newmexico-apartment-4.png",
+      "role": "apartment",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 112,
+      "h": 191,
+      "hm": 18,
+      "avg": [
+        139,
+        114,
+        105
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": [
+        "holes filled (6067 px)"
+      ]
+    },
+    "newmexico-apartment-5": {
+      "file": "art/newmexico-apartment-5.png",
+      "role": "apartment",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 128,
+      "h": 188,
+      "hm": 18,
+      "avg": [
+        159,
+        133,
+        111
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-apartment-6": {
+      "file": "art/newmexico-apartment-6.png",
+      "role": "apartment",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 116,
+      "h": 189,
+      "hm": 18,
+      "avg": [
+        161,
+        142,
+        137
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-tower-1": {
+      "file": "art/california-tower-1.png",
+      "role": "tower",
+      "theme": "california",
+      "kind": "facade",
+      "w": 118,
+      "h": 255,
+      "hm": 60,
+      "avg": [
+        115,
+        123,
+        132
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-tower-2": {
+      "file": "art/california-tower-2.png",
+      "role": "tower",
+      "theme": "california",
+      "kind": "facade",
+      "w": 128,
+      "h": 249,
+      "hm": 60,
+      "avg": [
+        153,
+        139,
+        126
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "california-tower-3": {
+      "file": "art/california-tower-3.png",
+      "role": "tower",
+      "theme": "california",
+      "kind": "facade",
+      "w": 65,
+      "h": 236,
+      "hm": 60,
+      "avg": [
+        135,
+        127,
+        124
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-tower-1": {
+      "file": "art/canyons-tower-1.png",
+      "role": "tower",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 122,
+      "h": 255,
+      "hm": 60,
+      "avg": [
+        101,
+        104,
+        113
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-tower-2": {
+      "file": "art/canyons-tower-2.png",
+      "role": "tower",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 126,
+      "h": 253,
+      "hm": 60,
+      "avg": [
+        133,
+        134,
+        136
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "canyons-tower-3": {
+      "file": "art/canyons-tower-3.png",
+      "role": "tower",
+      "theme": "canyons",
+      "kind": "facade",
+      "w": 126,
+      "h": 256,
+      "hm": 60,
+      "avg": [
+        133,
+        114,
+        97
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    },
+    "newmexico-tower-1": {
+      "file": "art/newmexico-tower-1.png",
+      "role": "tower",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 128,
+      "h": 256,
+      "hm": 60,
+      "avg": [
+        134,
+        134,
+        138
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    },
+    "newmexico-tower-2": {
+      "file": "art/newmexico-tower-2.png",
+      "role": "tower",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 95,
+      "h": 248,
+      "hm": 60,
+      "avg": [
+        106,
+        108,
+        113
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "newmexico-tower-3": {
+      "file": "art/newmexico-tower-3.png",
+      "role": "tower",
+      "theme": "newmexico",
+      "kind": "facade",
+      "w": 120,
+      "h": 256,
+      "hm": 60,
+      "avg": [
+        141,
+        121,
+        107
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    },
+    "texas-tower-1": {
+      "file": "art/texas-tower-1.png",
+      "role": "tower",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 78,
+      "h": 250,
+      "hm": 60,
+      "avg": [
+        117,
+        127,
+        143
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-tower-2": {
+      "file": "art/texas-tower-2.png",
+      "role": "tower",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 80,
+      "h": 229,
+      "hm": 60,
+      "avg": [
+        125,
+        132,
+        141
+      ],
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "texas-tower-3": {
+      "file": "art/texas-tower-3.png",
+      "role": "tower",
+      "theme": "texas",
+      "kind": "facade",
+      "w": 126,
+      "h": 256,
+      "hm": 60,
+      "avg": [
+        157,
+        129,
+        104
+      ],
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "cut"
+      ]
+    },
+    "lm-Q27768421": {
+      "file": "art/lm-Q27768421.png",
+      "role": "landmark",
+      "theme": "canyons",
+      "kind": "landmark",
+      "w": 320,
+      "h": 108,
+      "hm": 69,
+      "avg": [
+        131,
+        131,
+        136
+      ],
+      "label": "Allegiant Stadium",
+      "qid": "Q27768421",
+      "placeholder": false,
+      "drop": true,
+      "flags": [
+        "sky"
+      ]
+    },
+    "lm-Q5594348": {
+      "file": "art/lm-Q5594348.png",
+      "role": "landmark",
+      "theme": "canyons",
+      "kind": "landmark",
+      "w": 254,
+      "h": 158,
+      "hm": 15,
+      "avg": [
+        57,
+        44,
+        42
+      ],
+      "label": "Grand Canyon",
+      "qid": "Q5594348",
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "lm-Q3799756": {
+      "file": "art/lm-Q3799756.png",
+      "role": "landmark",
+      "theme": "newmexico",
+      "kind": "landmark",
+      "w": 253,
+      "h": 140,
+      "hm": 20,
+      "avg": [
+        129,
+        114,
+        104
+      ],
+      "label": "International UFO Museum & Research Center",
+      "qid": "Q3799756",
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    },
+    "lm-Q16850642": {
+      "file": "art/lm-Q16850642.png",
+      "role": "landmark",
+      "theme": "newmexico",
+      "kind": "landmark",
+      "w": 102,
+      "h": 134,
+      "hm": 35,
+      "avg": [
+        125,
+        90,
+        76
+      ],
+      "label": "Cathedral Church of Saint John",
+      "qid": "Q16850642",
+      "placeholder": false,
+      "drop": false,
+      "flags": []
+    }
+  },
+  "landmarks": {
+    "Q27768421": "lm-Q27768421",
+    "Q5594348": "lm-Q5594348",
+    "Q3799756": "lm-Q3799756",
+    "Q16850642": "lm-Q16850642"
+  },
+  "detail": "detailed"
+}

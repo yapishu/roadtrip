@@ -1,0 +1,50 @@
+{
+  "id": "monument-valley",
+  "stop": 13,
+  "name": "Monument Valley Navajo Tribal Park",
+  "region": "arizona",
+  "via": [
+    "John Ford Point, Monument Valley",
+    "Totem Pole, Monument Valley",
+    "Artists Point, Monument Valley",
+    "North Window Overlook, Monument Valley"
+  ],
+  "source": "https://navajonationparks.org/visit/monument-valley/",
+  "snapWarnings": [],
+  "anchor": [
+    -110.11207479509133,
+    36.982150337423896
+  ],
+  "stops": [
+    {
+      "name": "Monument Valley Navajo Tribal Park · start",
+      "lon": -110.11207479509133,
+      "lat": 36.982150337423896
+    },
+    {
+      "name": "John Ford Point, Monument Valley",
+      "lon": -110.087684,
+      "lat": 36.9534055
+    },
+    {
+      "name": "Totem Pole, Monument Valley",
+      "lon": -110.0594017,
+      "lat": 36.9385632
+    },
+    {
+      "name": "Artists Point, Monument Valley",
+      "lon": -110.0596548,
+      "lat": 36.9563656
+    },
+    {
+      "name": "North Window Overlook, Monument Valley",
+      "lon": -110.0727938,
+      "lat": 36.957133
+    },
+    {
+      "name": "Monument Valley Navajo Tribal Park · return",
+      "lon": -110.11207479509133,
+      "lat": 36.982150337423896
+    }
+  ]
+}

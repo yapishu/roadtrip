@@ -1,0 +1,44 @@
+{
+  "id": "mesa-verde",
+  "stop": 14,
+  "name": "Mesa Verde National Park",
+  "region": "colorado",
+  "via": [
+    "Balcony House, Mesa Verde National Park",
+    "Square Tower House, Mesa Verde National Park",
+    "Sun Temple, Mesa Verde National Park"
+  ],
+  "source": "https://www.nps.gov/meve/planyourvisit/self_guided_activities.htm",
+  "snapWarnings": [],
+  "anchor": [
+    -108.47233690905315,
+    37.16673218905731
+  ],
+  "stops": [
+    {
+      "name": "Mesa Verde National Park · start",
+      "lon": -108.47233690905315,
+      "lat": 37.16673218905731
+    },
+    {
+      "name": "Balcony House, Mesa Verde National Park",
+      "lon": -108.4642327,
+      "lat": 37.1615475
+    },
+    {
+      "name": "Square Tower House, Mesa Verde National Park",
+      "lon": -108.4913415,
+      "lat": 37.1659641
+    },
+    {
+      "name": "Sun Temple, Mesa Verde National Park",
+      "lon": -108.475669,
+      "lat": 37.1646849
+    },
+    {
+      "name": "Mesa Verde National Park · return",
+      "lon": -108.47233690905315,
+      "lat": 37.16673218905731
+    }
+  ]
+}

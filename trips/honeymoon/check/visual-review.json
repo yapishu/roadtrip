@@ -1,0 +1,34 @@
+{
+  "reviewed": [
+    "montage.png",
+    "worst-frames.png",
+    "shot-0_08.png",
+    "shot-2149.png",
+    "../art/contact.png",
+    "../previews/framed-final.png",
+    "../previews/denton-final.png"
+  ],
+  "sweep": {
+    "positions": 383,
+    "frames": 1149,
+    "holes": 0,
+    "flaggedFrames": 6
+  },
+  "visualLimitations": [
+    "Six oblique or distant views flag narrow gaps between buildings. Some small facade seams remain.",
+    "Fourteen rejected generated assets are excluded, including all shrub sprites and the stadium illustration.",
+    "Buildings and terrain are stylized representations of mapped geometry, not exact reproductions."
+  ],
+  "endpointVerification": {
+    "road": "Sun Valley Drive",
+    "coordinateErrorMeters": 0.6,
+    "loopVerified": true,
+    "browserErrors": []
+  },
+  "frameVerification": {
+    "creditsHiddenInDisplayMode": true,
+    "creditsVisibleWithInteractiveControls": true,
+    "creditsHiddenWhenIdle": true,
+    "locationCaptionVisible": true
+  }
+}

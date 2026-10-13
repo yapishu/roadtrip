@@ -1,0 +1,47 @@
+{
+  "id": "zion",
+  "stop": 11,
+  "name": "Zion National Park",
+  "region": "utah",
+  "via": [
+    "Court of the Patriarchs Viewpoint, Zion National Park",
+    "Zion Lodge, Zion National Park",
+    "The Grotto, Zion National Park",
+    "Temple of Sinawava, Zion National Park"
+  ],
+  "source": "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm",
+  "failed": [
+    "Court of the Patriarchs Viewpoint, Zion National Park"
+  ],
+  "anchor": [
+    -112.98671070092892,
+    37.20025577823663
+  ],
+  "stops": [
+    {
+      "name": "Zion National Park · start",
+      "lon": -112.98671070092892,
+      "lat": 37.20025577823663
+    },
+    {
+      "name": "Zion Lodge, Zion National Park",
+      "lon": -112.9570894,
+      "lat": 37.2498536
+    },
+    {
+      "name": "The Grotto, Zion National Park",
+      "lon": -112.9497287,
+      "lat": 37.258953
+    },
+    {
+      "name": "Temple of Sinawava, Zion National Park",
+      "lon": -112.947501,
+      "lat": 37.2852753
+    },
+    {
+      "name": "Zion National Park · return",
+      "lon": -112.98671070092892,
+      "lat": 37.20025577823663
+    }
+  ]
+}

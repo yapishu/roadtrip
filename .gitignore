@@ -12,3 +12,8 @@ bin/
 trips/honeymoon/*-complete
 trips/honeymoon/art-finished
 trips/honeymoon/remote-data.json
+trips/honeymoon/world/
+trips/honeymoon/parks/*/world/
+trips/honeymoon/parks/*/map.json
+trips/honeymoon/detours/*/world/
+trips/honeymoon/detours/*/map.json

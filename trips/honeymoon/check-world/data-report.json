@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "main": 432,
+    "parks/death-valley": 13,
+    "parks/grand-canyon": 10,
+    "parks/bryce": 6,
+    "parks/zion": 3,
+    "parks/glen-canyon": 3,
+    "parks/monument-valley": 3,
+    "parks/mesa-verde": 2
+  },
+  "steepGrades": [],
+  "seams": [],
+  "badGrids": [],
+  "nativeRoadSections": 69,
+  "detailPatches": 83,
+  "observedWalls": 8915,
+  "buildingInstances": 86351
+}

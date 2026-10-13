@@ -1,0 +1,55 @@
+{
+  "id": "death-valley",
+  "stop": 4,
+  "name": "Death Valley National Park",
+  "region": "california",
+  "via": [
+    "Badwater Basin Trailhead, Death Valley National Park",
+    "Artists Palette, Death Valley National Park",
+    "Zabriskie Point, Death Valley National Park",
+    "Dantes View, Death Valley National Park"
+  ],
+  "source": "https://www.nps.gov/deva/learn/publications.htm",
+  "snapWarnings": [
+    {
+      "name": "Badwater Basin Trailhead, Death Valley National Park",
+      "distance": 876.0372826
+    }
+  ],
+  "anchor": [
+    -116.8521310965568,
+    36.43145936422517
+  ],
+  "stops": [
+    {
+      "name": "Death Valley National Park · start",
+      "lon": -116.8521310965568,
+      "lat": 36.43145936422517
+    },
+    {
+      "name": "Badwater Basin Trailhead, Death Valley National Park",
+      "lon": -116.7847055,
+      "lat": 36.2309121
+    },
+    {
+      "name": "Artists Palette, Death Valley National Park",
+      "lon": -116.8005238,
+      "lat": 36.3666898
+    },
+    {
+      "name": "Zabriskie Point, Death Valley National Park",
+      "lon": -116.81229,
+      "lat": 36.4200468
+    },
+    {
+      "name": "Dantes View, Death Valley National Park",
+      "lon": -116.6637791,
+      "lat": 36.2686519
+    },
+    {
+      "name": "Death Valley National Park · return",
+      "lon": -116.8521310965568,
+      "lat": 36.43145936422517
+    }
+  ]
+}

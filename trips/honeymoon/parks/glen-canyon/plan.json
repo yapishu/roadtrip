@@ -1,0 +1,38 @@
+{
+  "id": "glen-canyon",
+  "stop": 12,
+  "name": "Glen Canyon · Lake Powell",
+  "region": "arizona",
+  "via": [
+    "Wahweap Overlook, Arizona",
+    "Wahweap Marina, Arizona"
+  ],
+  "source": "https://parkplanning.nps.gov/projectHome.cfm?projectID=41174",
+  "snapWarnings": [],
+  "anchor": [
+    -111.4839478324793,
+    36.935363354802114
+  ],
+  "stops": [
+    {
+      "name": "Glen Canyon · Lake Powell · start",
+      "lon": -111.4839478324793,
+      "lat": 36.935363354802114
+    },
+    {
+      "name": "Wahweap Overlook, Arizona",
+      "lon": -111.4989584,
+      "lat": 36.9689708
+    },
+    {
+      "name": "Wahweap Marina, Arizona",
+      "lon": -111.482082,
+      "lat": 36.9903743
+    },
+    {
+      "name": "Glen Canyon · Lake Powell · return",
+      "lon": -111.4839478324793,
+      "lat": 36.935363354802114
+    }
+  ]
+}

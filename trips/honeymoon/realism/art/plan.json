@@ -1,0 +1,76 @@
+{
+  "detail": "detailed",
+  "themes": [
+    {
+      "id": "utah",
+      "from": 0
+    },
+    {
+      "id": "mojave",
+      "from": 1000000
+    },
+    {
+      "id": "adobe",
+      "from": 2900000
+    }
+  ],
+  "landmarks": {},
+  "jobs": [
+    {
+      "name": "utah-shop-1",
+      "role": "shop",
+      "theme": "utah",
+      "style": "natural",
+      "kind": "facade",
+      "width": 256,
+      "height": 192,
+      "hm": 5,
+      "seed": 521931,
+      "palette": null,
+      "prompt": "a single-story red brick southern Utah main street storefront, a broad flat parapet with restrained cream stone trim, one recessed wooden entrance between two wide display windows, blank faded sign panel, weathered masonry, seen straight on, flat front elevation, entire subject visible with white margins on all sides, nothing cropped",
+      "negative": "ornate, skyscraper, european, medieval, tall building"
+    },
+    {
+      "name": "mojave-shop-1",
+      "role": "shop",
+      "theme": "mojave",
+      "style": "natural",
+      "kind": "facade",
+      "width": 256,
+      "height": 192,
+      "hm": 3.8,
+      "seed": 531804,
+      "palette": null,
+      "prompt": "one long single-story 1950s Mojave Desert roadside motel, dusty cream stucco, a low corrugated metal canopy, four dark wooden room doors alternating with rectangular windows, blank signage, weathered and ordinary, seen straight on, flat front elevation, entire subject visible with white margins on all sides, nothing cropped",
+      "negative": "ornate, skyscraper, european, medieval, tall building"
+    },
+    {
+      "name": "adobe-house-1",
+      "role": "house",
+      "theme": "adobe",
+      "style": "natural",
+      "kind": "facade",
+      "width": 256,
+      "height": 192,
+      "hm": 3.8,
+      "seed": 541677,
+      "palette": null,
+      "prompt": "one single-story northern New Mexico adobe home, rounded earthen parapet, exposed dark timber vigas, recessed turquoise door, two small deep-set windows, subtle worn stucco texture, seen straight on, flat front elevation, entire subject visible with white margins on all sides, nothing cropped",
+      "negative": "ornate, skyscraper, european, medieval, tall building"
+    },
+    {
+      "name": "mojave-tree-1",
+      "role": "tree",
+      "theme": "mojave",
+      "style": "natural",
+      "kind": "sprite",
+      "width": 256,
+      "height": 256,
+      "hm": 5,
+      "seed": 551550,
+      "palette": null,
+      "prompt": "one mature Joshua tree with three crooked woody branches and spiky olive green leaf crowns, entire trunk ending cleanly, no roots or soil, seen straight on, flat front elevation, entire subject visible with white margins on all sides, nothing cropped",
+      "negative": "ornate, skyscraper, european, medieval, tall building"
+    }
+  ]
+}

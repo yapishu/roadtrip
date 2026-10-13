@@ -4,13 +4,14 @@ A looping, low-resolution drive from Milpitas, California to Denton, Texas, with
 
 ## Run the drive
 
-The complete scene is included. Git LFS holds the image and terrain assets; install Git LFS before cloning.
+The repository contains the viewer, generated art, route, and build tools. Git LFS holds image assets. The complete terrain scene is checkpointed as a separate archive; restore that archive into the checkout before running the viewer.
 
 ```sh
 git lfs install
 git clone https://github.com/yapishu/roadtrip.git
 cd roadtrip
 git lfs pull
+node scripts/restore-scene.mjs /path/to/scoggin-roadtrip-scene.tar.zst
 node scripts/viewer.mjs --trip trips/honeymoon --serve 8088 --host 0.0.0.0
 ```
 
@@ -27,7 +28,7 @@ URL options include `?km=2442.611&paused=1` for a fixed position and `?speed=96.
 - `scripts/` contains routing, scenery generation, geospatial baking, and visual checks.
 - `tests/` contains focused checks for road profiles and generation workflows.
 
-Source downloads and generation caches stay outside Git. Public assets carry their source metadata; build scripts retain the generation and projection steps. [Pixel Path tooling](references/pixel-path.md) describes the art pipeline and its local model setup.
+The scene archive includes the rendered world assets and all components required to restore the drive. Checkpoint records live in `checkpoints/`. Source downloads and generation caches stay outside Git. Public assets carry their source metadata; build scripts retain the generation and projection steps. [Pixel Path tooling](references/pixel-path.md) describes the art pipeline and its local model setup.
 
 ## Credits and licenses
 
