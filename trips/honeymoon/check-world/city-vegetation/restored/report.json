@@ -1,0 +1,185 @@
+{
+  "frames": [
+    {
+      "name": "HeathStreet",
+      "at": 0.12,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.9210526804429362,
+          "sun": 1.1559807168731429,
+          "ambient": 2.187081373029275,
+          "seed": 1184776549
+        },
+        "draws": 1,
+        "triangles": 520041,
+        "drawCalls": 73,
+        "geometries": 73,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Marylinn",
+      "at": 0.7,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.9227623006403481,
+          "sun": 1.1509295662898804,
+          "ambient": 2.188247023163874,
+          "seed": 1184776549
+        },
+        "draws": 2,
+        "triangles": 1234492,
+        "drawCalls": 246,
+        "geometries": 294,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Calaveras",
+      "at": 1.55,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.9251425947546079,
+          "sun": 1.1438968791341129,
+          "ambient": 2.189869950969051,
+          "seed": 1184776549
+        },
+        "draws": 3,
+        "triangles": 1912171,
+        "drawCalls": 420,
+        "geometries": 526,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "MilpitasNorth",
+      "at": 2.8,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.9283614084161813,
+          "sun": 1.1343867478612824,
+          "ambient": 2.1920645966473966,
+          "seed": 1184776549
+        },
+        "draws": 4,
+        "triangles": 659756,
+        "drawCalls": 107,
+        "geometries": 526,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "LasVegas",
+      "at": 1437.1240372522577,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.9272555597656386,
+          "sun": 1.1136547573939586,
+          "ambient": 2.1969656094680095,
+          "seed": 1184776549
+        },
+        "draws": 5,
+        "triangles": 1712795,
+        "drawCalls": 374,
+        "geometries": 374,
+        "textures": 16,
+        "buildings": 1742,
+        "observedWalls": 8,
+        "trees": 500,
+        "shrubs": 202,
+        "urbanPlants": 702,
+        "roadside": 577,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1073857.9245984487,
+            "x": -1407.4499479510816,
+            "y": 802.2111793544083,
+            "z": 667.065283055021,
+            "phase": 4.531346129874706,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    }
+  ],
+  "errors": []
+}

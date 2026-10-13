@@ -1,0 +1,17 @@
+{
+  "worldFiles": 5205,
+  "allWorldFilesMatch": true,
+  "currentComponentsRetained": true,
+  "mismatches": [],
+  "archive": "scoggin-roadtrip-2026-10-13-vegetation.tar.zst",
+  "viewerChecked": true,
+  "viewerScenes": [
+    "HeathStreet",
+    "Marylinn",
+    "Calaveras",
+    "MilpitasNorth",
+    "LasVegas"
+  ],
+  "runtimeErrors": [],
+  "checked": "2026-10-13T23:44:55.631098+00:00"
+}

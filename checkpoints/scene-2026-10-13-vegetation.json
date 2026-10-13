@@ -1,0 +1,15 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-13-vegetation.tar.zst",
+  "bytes": 1659792787,
+  "sha256": "5b8aa5828c9ad98be7f025ba51cc599bc307d7545108cc19d25e5a98c0d7995c",
+  "sourceCommit": "1e364deb106b2c2ecf709aaad9dd812df4c4ef56",
+  "sceneCommit": "92146e0832c5118384225b9022629ce6fd90e3d6",
+  "worldSections": 547,
+  "stops": 60,
+  "routeMetres": 4988204.372688454,
+  "contents": "Complete viewer and world with aerially inferred city planting, broadleaf street trees, low garden shrubs, and spatial vegetation batches",
+  "storage": "Separate scene archive; restore world assets with scripts/restore-scene.mjs",
+  "changedVegetationSections": 174,
+  "newPlantAssets": 3,
+  "sceneFiles": 7483
+}
