@@ -1,0 +1,13 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-13-daylight.tar.zst",
+  "bytes": 1635200439,
+  "sha256": "d6652df8396d5c64615edd508dc7c879000a9ee83a03b062381e6a85a2ac332c",
+  "sourceCommit": "67b947f3d6970f8d29fc2421897762d0e2c2f748",
+  "sceneCommit": "22d55bd0f3edb7f3bddf0975e18834668dc3d672",
+  "worldSections": 547,
+  "changedWorldSections": 133,
+  "stops": 60,
+  "routeMetres": 4988204.372688454,
+  "contents": "Complete viewer and world with changing daytime skies, supported utility spans, tapered guardrail terminals, connected approach banks, bridge clearance profiles, and native Kings Canyon road elevations",
+  "storage": "Separate scene archive; restore world assets with scripts/restore-scene.mjs"
+}

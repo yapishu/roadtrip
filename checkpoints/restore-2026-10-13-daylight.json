@@ -1,0 +1,17 @@
+{
+  "worldFiles": 5205,
+  "allWorldFilesMatch": true,
+  "currentComponentsRetained": true,
+  "mismatches": [],
+  "archive": "scoggin-roadtrip-2026-10-13-daylight.tar.zst",
+  "viewerChecked": true,
+  "viewerScenes": [
+    "LathropCables",
+    "LathropGuardrails",
+    "ConnectedOverpass",
+    "KingsCanyon",
+    "LubbockBridges"
+  ],
+  "runtimeErrors": [],
+  "checked": "2026-10-13T22:46:15.357852+00:00"
+}
