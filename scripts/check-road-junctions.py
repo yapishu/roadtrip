@@ -25,7 +25,7 @@ def main():
    if len({r['id']for r in roads})<2 or not any(r['structure']for r in roads):continue
    after=max(r['height']for r in roads)-min(r['height']for r in roads);before=max(r['before']for r in roads)-min(r['before']for r in roads);record=dict(node=key,file=str(path.relative_to(root)),at=roads[0]['at'],before=round(before,2),after=round(after,2),roads=[r['id']for r in roads]);old_record=junctions.get(key)
    if old_record is None or max(after,before)>max(old_record['after'],old_record['before']):junctions[key]=record
-  ss=np.arange(route[0,0],route[-1,0],5);z=np.interp(ss,route[:,0],route[:,3]);grade=float(np.max(abs(np.diff(z)/5)))if len(z)>1 else 0
+  ss=np.arange(max(route[0,0],d['s0']),min(route[-1,0],d['s0']+d['len']),5);z=np.interp(ss,route[:,0],route[:,3]);grade=float(np.max(abs(np.diff(z)/5)))if len(z)>1 else 0
   if grade>.25:grades.append(dict(file=str(path.relative_to(root)),maxGrade=round(grade,4)))
   source=str(path.parent.relative_to(root))
   if source in last:
@@ -34,7 +34,7 @@ def main():
     jump=abs(float(np.interp(at,prior[:,0],prior[:,3])-np.interp(at,route[:,0],route[:,3])))
     if jump>1:seams.append(dict(file=str(path.relative_to(root)),jump=round(jump,2)))
   last[source]=route
- records=list(junctions.values());unresolved=[r for r in records if r['after']>.1];fixed=[r for r in records if r['before']>.5 and r['after']<=.1];report=dict(sections=len(paths),structureJunctions=len(records),fixedJunctions=len(fixed),unresolvedJunctions=unresolved,largestRepairs=sorted(fixed,key=lambda r:r['before'],reverse=True)[:30],unbuiltRoads=unbuilt,steepGrades=grades,chunkSeams=seams,scope='Shared original OSM nodes within 180 m of the driving path; five-metre grade samples; chunk boundaries')
+ records=list(junctions.values());unresolved=[r for r in records if r['after']>.1];fixed=[r for r in records if r['before']>.5 and r['after']<=.1];report=dict(sections=len(paths),structureJunctions=len(records),fixedJunctions=len(fixed),unresolvedJunctions=unresolved,largestRepairs=sorted(fixed,key=lambda r:r['before'],reverse=True)[:30],unbuiltRoads=unbuilt,steepGrades=grades,chunkSeams=seams,scope='Shared original OSM nodes within 180 m of the driving path; five-metre grade samples within active sections; chunk boundaries')
  a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(report,indent=2));print(json.dumps({k:len(v)if isinstance(v,list)else v for k,v in report.items()},indent=2))
  if unresolved or unbuilt or grades or seams:raise SystemExit(1)
 if __name__=='__main__':main()

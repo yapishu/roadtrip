@@ -4,6 +4,11 @@ A looping, low-resolution drive from Milpitas, California to Denton, Texas, with
 
 To build a different route, use the reusable [Low-poly Roadtrip skill](skill/SKILL.md). It includes the geographic and art workflows, a generic viewer, an OSM extraction helper, and verification guidance.
 
+Daytime skies vary between clear, scattered clouds, haze, and soft overcast, with
+gentle lighting changes. Power spans meet their mapped supports, exposed guardrail
+ends taper into the shoulder, and approach banks meet bridge decks around road
+junctions.
+
 ## Run the drive
 
 The repository contains the viewer, generated art, route, and build tools. Git LFS holds image assets. The complete terrain scene is checkpointed as a separate archive; restore that archive into the checkout before running the viewer.

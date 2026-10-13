@@ -1,0 +1,195 @@
+{
+  "frames": [
+    {
+      "name": "LathropCables",
+      "at": 92.5,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.35611301814643254,
+          "sun": 1.620040363623726,
+          "ambient": 2.075991927275255,
+          "seed": 3715893998
+        },
+        "draws": 1,
+        "triangles": 1507510,
+        "drawCalls": 349,
+        "geometries": 349,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "LathropGuardrails",
+      "at": 86.435,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.32118396075746397,
+          "sun": 1.607565700270523,
+          "ambient": 2.0784868599458957,
+          "seed": 3715893998
+        },
+        "draws": 2,
+        "triangles": 910912,
+        "drawCalls": 222,
+        "geometries": 570,
+        "textures": 11,
+        "buildings": 279,
+        "observedWalls": 0,
+        "trees": 2101,
+        "roadside": 137,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89636.071916053,
+            "x": 3680.551684011771,
+            "y": 1574.619703973473,
+            "z": 51.73678721949458,
+            "phase": 6.112186079781105,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -3,
+          20
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "ConnectedOverpass",
+      "at": 12.33,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 3715893998
+        },
+        "draws": 3,
+        "triangles": 1283952,
+        "drawCalls": 258,
+        "geometries": 258,
+        "textures": 9,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 18458.6464902699,
+            "x": 802.8494536635052,
+            "y": 2872.533976558674,
+            "z": 226.97567365895839,
+            "phase": 5.263631023336984,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "KingsCanyon",
+      "at": 378.56532795742976,
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 3715893998
+        },
+        "draws": 4,
+        "triangles": 1237292,
+        "drawCalls": 152,
+        "geometries": 152,
+        "textures": 11,
+        "buildings": 110,
+        "observedWalls": 0,
+        "trees": 23805,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 80328.16937711614,
+            "x": 2810.524962261514,
+            "y": -1647.0390518622007,
+            "z": 1557.1595238431282,
+            "phase": 5.463573410528531,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          599.9,
+          1792
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "LubbockBridges",
+      "at": 4504.746372688454,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.72,
+          "sun": 1.75,
+          "ambient": 2.05,
+          "seed": 3715893998
+        },
+        "draws": 5,
+        "triangles": 1803380,
+        "drawCalls": 479,
+        "geometries": 479,
+        "textures": 18,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    }
+  ],
+  "errors": []
+}

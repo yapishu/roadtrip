@@ -78,7 +78,16 @@ export function joinTerrainEdge(g,values,parent,parentValues){
 const minorRoad=road=>/footway|path|steps|cycleway|track/.test(road.kind);
 const bounds=polygon=>({x0:Math.min(...polygon.map(p=>p[0])),x1:Math.max(...polygon.map(p=>p[0])),y0:Math.min(...polygon.map(p=>p[1])),y1:Math.max(...polygon.map(p=>p[1]))});
 const area=polygon=>polygon.reduce((sum,p,i)=>{const q=polygon[(i+1)%polygon.length];return sum+p[0]*q[1]-p[1]*q[0];},0)/2;
-function subtractTriangle(polygon,triangle){
+export function subtractTriangle(polygon,triangle){
+  const pBounds=bounds(polygon),tBounds=bounds(triangle);
+  if(pBounds.x1<=tBounds.x0||tBounds.x1<=pBounds.x0||pBounds.y1<=tBounds.y0||tBounds.y1<=pBounds.y0)return [polygon];
+  // Keep a disjoint face whole instead of partitioning it along distant edges.
+  for(const outline of [polygon,triangle])for(let i=0;i<outline.length;i++){
+    const a=outline[i],b=outline[(i+1)%outline.length],nx=b[1]-a[1],ny=a[0]-b[0];
+    if(nx*nx+ny*ny<1e-12)continue;
+    const p=polygon.map(v=>v[0]*nx+v[1]*ny),t=triangle.map(v=>v[0]*nx+v[1]*ny);
+    if(Math.max(...p)<=Math.min(...t)+1e-8||Math.max(...t)<=Math.min(...p)+1e-8)return [polygon];
+  }
   const pieces=[],sign=Math.sign(area(triangle));let inside=polygon;
   for(let edge=0;edge<3&&inside.length>=3;edge++){
     const a=triangle[edge],b=triangle[(edge+1)%3],next=[],outside=[];

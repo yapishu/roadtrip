@@ -1,0 +1,20 @@
+{
+  "road": "way10337936",
+  "source": "USGS best-available native elevation, two-metre sampling",
+  "nativeSections": [
+    6,
+    7,
+    8
+  ],
+  "changedSections": [
+    "detours/kings-canyon/world/c0006.json",
+    "detours/kings-canyon/world/c0007.json",
+    "detours/kings-canyon/world/c0008.json",
+    "detours/kings-canyon/world/c0009.json",
+    "detours/kings-canyon/world/c0020.json"
+  ],
+  "coveredPoints": 2129,
+  "allPointsHaveNativeSamples": true,
+  "minimumHeight": 1061.22,
+  "maximumHeight": 1765.98
+}

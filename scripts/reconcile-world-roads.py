@@ -4,7 +4,7 @@ import argparse,importlib.util,json
 from pathlib import Path
 import numpy as np
 from scipy.spatial import cKDTree
-from road_topology import attach,UNBUILT
+from road_topology import attach,UNBUILT,merge_samples
 spec=importlib.util.spec_from_file_location('profiles',Path(__file__).with_name('refine-road-profiles.py'));profiles=importlib.util.module_from_spec(spec);spec.loader.exec_module(profiles)
 
 def main():
@@ -18,9 +18,9 @@ def main():
   for r in roads:
    e=geometry[r['id']];attach(r,e['geometry'],origin,e['nodes'])
    ps=np.array(r['points']);dist,_=route.query(ps[:,:2]);quality=10+1/(dist+1)+1000*((dist<90)&(d.get('roadResolution')==2));ps[:,:2]+=origin;key=r['id']
-   if key not in canonical or len(ps)>len(canonical[key]['points']):canonical[key]={**r,'points':ps};weights[key]=quality
-   elif ps.shape==canonical[key]['points'].shape and np.max(abs(ps[:,:2]-canonical[key]['points'][:,:2]))<.1:
-    select=quality>weights[key];canonical[key]['points'][select,2]=ps[select,2];weights[key][select]=quality[select]
+   candidate={**r,'points':ps}
+   if key not in canonical:canonical[key]=candidate;weights[key]=quality
+   else:canonical[key],weights[key]=merge_samples(canonical[key],weights[key],candidate,quality)
  print(len(canonical),'shared road geometries',flush=True);profiles.connect_decks(list(canonical.values()));print('Shared bridge, ramp and tunnel junctions ready',flush=True)
  for i,path in enumerate(paths):
   d=json.loads(path.read_text());origin=np.array(d['origin']);d['roads']=[r for r in d['roads']if r['kind']not in UNBUILT]

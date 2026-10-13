@@ -1,0 +1,1115 @@
+{
+  "frames": [
+    {
+      "at": 3.45,
+      "file": "3.450.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.12665874035528973,
+          "sun": 1.9466825192894206,
+          "ambient": 2.010663496142116,
+          "seed": 3135931
+        },
+        "draws": 1,
+        "triangles": 422365,
+        "drawCalls": 57,
+        "geometries": 57,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 3.48,
+      "file": "3.480.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.12656102635552266,
+          "sun": 1.9468779472889546,
+          "ambient": 2.010624410542209,
+          "seed": 3135931
+        },
+        "draws": 2,
+        "triangles": 422305,
+        "drawCalls": 56,
+        "geometries": 57,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 12.33,
+      "file": "12.330.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1048044771001328,
+          "sun": 1.9903910457997345,
+          "ambient": 2.0019217908400533,
+          "seed": 3135931
+        },
+        "draws": 3,
+        "triangles": 1283952,
+        "drawCalls": 258,
+        "geometries": 314,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 15619.391343478113,
+            "x": -1230.1782236957922,
+            "y": 1020.8549684173464,
+            "z": 102.01584245745528,
+            "phase": 2.999525377106054,
+            "count": 4
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 12.315,
+      "file": "12.315.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.10482772064863019,
+          "sun": 1.9903445587027395,
+          "ambient": 2.001931088259452,
+          "seed": 3135931
+        },
+        "draws": 4,
+        "triangles": 1292144,
+        "drawCalls": 259,
+        "geometries": 315,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 15619.391343478113,
+            "x": -1230.1782236957922,
+            "y": 1020.8549684173464,
+            "z": 102.01584245745528,
+            "phase": 2.999525377106054,
+            "count": 4
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 15.27,
+      "file": "15.270.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.10129157667580266,
+          "sun": 1.9974168466483948,
+          "ambient": 2.000516630670321,
+          "seed": 3135931
+        },
+        "draws": 5,
+        "triangles": 1422622,
+        "drawCalls": 295,
+        "geometries": 511,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 15619.391343478113,
+            "x": -1230.1782236957922,
+            "y": 1020.8549684173464,
+            "z": 102.01584245745528,
+            "phase": 2.999525377106054,
+            "count": 4
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 19.36,
+      "file": "19.360.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.10062089335200144,
+          "sun": 1.9993347571228557,
+          "ambient": 2.0001478317504766,
+          "seed": 3135931
+        },
+        "draws": 6,
+        "triangles": 479027,
+        "drawCalls": 88,
+        "geometries": 511,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 15619.391343478113,
+            "x": -1230.1782236957922,
+            "y": 1020.8549684173464,
+            "z": 102.01584245745528,
+            "phase": 2.999525377106054,
+            "count": 4
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 14.895,
+      "file": "14.895.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.10162057668406058,
+          "sun": 1.9967588466318789,
+          "ambient": 2.000648230673624,
+          "seed": 3135931
+        },
+        "draws": 7,
+        "triangles": 1529278,
+        "drawCalls": 302,
+        "geometries": 516,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 15619.391343478113,
+            "x": -1230.1782236957922,
+            "y": 1020.8549684173464,
+            "z": 102.01584245745528,
+            "phase": 2.999525377106054,
+            "count": 4
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 14.91,
+      "file": "14.910.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1016067279055746,
+          "sun": 1.9967865441888508,
+          "ambient": 2.0006426911622297,
+          "seed": 3135931
+        },
+        "draws": 8,
+        "triangles": 1529278,
+        "drawCalls": 302,
+        "geometries": 516,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 15619.391343478113,
+            "x": -1230.1782236957922,
+            "y": 1020.8549684173464,
+            "z": 102.01584245745528,
+            "phase": 2.999525377106054,
+            "count": 4
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 21.585,
+      "file": "21.585.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.10609255852182702,
+          "sun": 1.9934722587266138,
+          "ambient": 2.001450609171864,
+          "seed": 3135931
+        },
+        "draws": 9,
+        "triangles": 2104803,
+        "drawCalls": 376,
+        "geometries": 835,
+        "textures": 11,
+        "buildings": 18,
+        "observedWalls": 0,
+        "trees": 6411,
+        "roadside": 145,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 26254.260537404716,
+            "x": 709.2777939909596,
+            "y": 643.4024525802166,
+            "z": 153.78105081929903,
+            "phase": 5.174068475051637,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          13.9,
+          608.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 37.24,
+      "file": "37.240.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.2718484296976041,
+          "sun": 1.8158766824668529,
+          "ambient": 2.040916292785144,
+          "seed": 3135931
+        },
+        "draws": 10,
+        "triangles": 887475,
+        "drawCalls": 194,
+        "geometries": 569,
+        "textures": 11,
+        "buildings": 866,
+        "observedWalls": 0,
+        "trees": 7576,
+        "roadside": 119,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38832.336334619526,
+            "x": 979.8992065170493,
+            "y": 3421.6187731884415,
+            "z": 170.84289860803642,
+            "phase": 5.417421140764102,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          83.4,
+          432
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 37.26,
+      "file": "37.260.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.27216838976910385,
+          "sun": 1.8155338681045317,
+          "ambient": 2.0409924737545486,
+          "seed": 3135931
+        },
+        "draws": 11,
+        "triangles": 887295,
+        "drawCalls": 189,
+        "geometries": 569,
+        "textures": 11,
+        "buildings": 866,
+        "observedWalls": 0,
+        "trees": 7576,
+        "roadside": 119,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38832.336334619526,
+            "x": 979.8992065170493,
+            "y": 3421.6187731884415,
+            "z": 170.84289860803642,
+            "phase": 5.417421140764102,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          83.4,
+          432
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 47.145,
+      "file": "47.145.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.44879142091489543,
+          "sun": 1.6262949061626122,
+          "ambient": 2.0830455764083085,
+          "seed": 3135931
+        },
+        "draws": 12,
+        "triangles": 818839,
+        "drawCalls": 203,
+        "geometries": 396,
+        "textures": 11,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 45.53,
+      "file": "45.530.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.4180910462849021,
+          "sun": 1.6591881646947477,
+          "ambient": 2.075735963401167,
+          "seed": 3135931
+        },
+        "draws": 13,
+        "triangles": 1043582,
+        "drawCalls": 290,
+        "geometries": 487,
+        "textures": 11,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 44.175,
+      "file": "44.175.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.39271850113385864,
+          "sun": 1.6863730344994372,
+          "ambient": 2.0696948812223472,
+          "seed": 3135931
+        },
+        "draws": 14,
+        "triangles": 1163143,
+        "drawCalls": 332,
+        "geometries": 531,
+        "textures": 11,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 41.53,
+      "file": "41.530.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.34456705541772226,
+          "sun": 1.7379638691952977,
+          "ambient": 2.0582302512899338,
+          "seed": 3135931
+        },
+        "draws": 15,
+        "triangles": 1499601,
+        "drawCalls": 410,
+        "geometries": 605,
+        "textures": 11,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 45.52,
+      "file": "45.520.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.41790237341135184,
+          "sun": 1.6593903142021231,
+          "ambient": 2.075691041288417,
+          "seed": 3135931
+        },
+        "draws": 16,
+        "triangles": 1043582,
+        "drawCalls": 290,
+        "geometries": 605,
+        "textures": 11,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 47.155,
+      "file": "47.155.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.44898277590669544,
+          "sun": 1.6260898829571122,
+          "ambient": 2.083091137120642,
+          "seed": 3135931
+        },
+        "draws": 17,
+        "triangles": 810647,
+        "drawCalls": 202,
+        "geometries": 605,
+        "textures": 11,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 53.145,
+      "file": "53.145.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.5647164521679658,
+          "sun": 1.5020895155343224,
+          "ambient": 2.1106467743257062,
+          "seed": 3135931
+        },
+        "draws": 18,
+        "triangles": 1043064,
+        "drawCalls": 220,
+        "geometries": 631,
+        "textures": 11,
+        "buildings": 12,
+        "observedWalls": 0,
+        "trees": 138,
+        "roadside": 155,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 52502.049345586005,
+            "x": -2716.2124771931435,
+            "y": -331.9045015872183,
+            "z": 353.7309138552123,
+            "phase": 1.0926008439650337,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          42.7,
+          477
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 66.695,
+      "file": "66.695.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8030452607811069,
+          "sun": 1.2467372205916711,
+          "ambient": 2.1673917287574067,
+          "seed": 3135931
+        },
+        "draws": 19,
+        "triangles": 826804,
+        "drawCalls": 193,
+        "geometries": 412,
+        "textures": 11,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 65.075,
+      "file": "65.075.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.7783833908230513,
+          "sun": 1.273160652689588,
+          "ambient": 2.1615198549578696,
+          "seed": 3135931
+        },
+        "draws": 20,
+        "triangles": 1075724,
+        "drawCalls": 255,
+        "geometries": 474,
+        "textures": 11,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 65.065,
+      "file": "65.065.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.7782267365215735,
+          "sun": 1.2733284965840284,
+          "ambient": 2.1614825563146605,
+          "seed": 3135931
+        },
+        "draws": 21,
+        "triangles": 1075772,
+        "drawCalls": 259,
+        "geometries": 478,
+        "textures": 11,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 74.945,
+      "file": "74.945.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.9016336000464429,
+          "sun": 1.1411068570930971,
+          "ambient": 2.190865142868201,
+          "seed": 3135931
+        },
+        "draws": 22,
+        "triangles": 1100740,
+        "drawCalls": 200,
+        "geometries": 458,
+        "textures": 11,
+        "buildings": 1305,
+        "observedWalls": 0,
+        "trees": 1931,
+        "roadside": 149,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 76700.69820804031,
+            "x": 1491.8388833026174,
+            "y": 244.6284659095193,
+            "z": 38.50026979554445,
+            "phase": 1.7624415297925615,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          0.3,
+          41.1
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 78.295,
+      "file": "78.295.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.9256362538409855,
+          "sun": 1.1153897280275156,
+          "ambient": 2.19658006043833,
+          "seed": 3135931
+        },
+        "draws": 23,
+        "triangles": 583845,
+        "drawCalls": 82,
+        "geometries": 458,
+        "textures": 11,
+        "buildings": 1305,
+        "observedWalls": 0,
+        "trees": 1931,
+        "roadside": 149,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 76700.69820804031,
+            "x": 1491.8388833026174,
+            "y": 244.6284659095193,
+            "z": 38.50026979554445,
+            "phase": 1.7624415297925615,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          0.3,
+          41.1
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 108.145,
+      "file": "108.145.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8683096053242864,
+          "sun": 1.3118125297236993,
+          "ambient": 2.1511201854483772,
+          "seed": 3135931
+        },
+        "draws": 24,
+        "triangles": 1628047,
+        "drawCalls": 347,
+        "geometries": 347,
+        "textures": 9,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 108.135,
+      "file": "108.135.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8683575289621929,
+          "sun": 1.3116709371571575,
+          "ambient": 2.151152860656041,
+          "seed": 3135931
+        },
+        "draws": 25,
+        "triangles": 1628299,
+        "drawCalls": 352,
+        "geometries": 352,
+        "textures": 9,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 115.715,
+      "file": "115.715.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8306057016209832,
+          "sun": 1.423210427028913,
+          "ambient": 2.125412978377943,
+          "seed": 3135931
+        },
+        "draws": 26,
+        "triangles": 1184271,
+        "drawCalls": 207,
+        "geometries": 558,
+        "textures": 11,
+        "buildings": 1315,
+        "observedWalls": 0,
+        "trees": 2066,
+        "roadside": 63,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 115421.88965315046,
+            "x": 1361.128758964422,
+            "y": 1192.4954640747458,
+            "z": 44.270178791281765,
+            "phase": 4.871170893214409,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -2,
+          52.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 114.89,
+      "file": "114.890.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.834792816761941,
+          "sun": 1.4108394050215383,
+          "ambient": 2.1282678296104143,
+          "seed": 3135931
+        },
+        "draws": 27,
+        "triangles": 1331848,
+        "drawCalls": 240,
+        "geometries": 591,
+        "textures": 11,
+        "buildings": 1315,
+        "observedWalls": 0,
+        "trees": 2066,
+        "roadside": 63,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 115421.88965315046,
+            "x": 1361.128758964422,
+            "y": 1192.4954640747458,
+            "z": 44.270178791281765,
+            "phase": 4.871170893214409,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -2,
+          52.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 113.39,
+      "file": "113.390.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8423861524809557,
+          "sun": 1.3884045494880852,
+          "ambient": 2.133445103964288,
+          "seed": 3135931
+        },
+        "draws": 28,
+        "triangles": 1509134,
+        "drawCalls": 302,
+        "geometries": 654,
+        "textures": 11,
+        "buildings": 1315,
+        "observedWalls": 0,
+        "trees": 2066,
+        "roadside": 63,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 115421.88965315046,
+            "x": 1361.128758964422,
+            "y": 1192.4954640747458,
+            "z": 44.270178791281765,
+            "phase": 4.871170893214409,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -2,
+          52.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 113.585,
+      "file": "113.585.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8414013175059926,
+          "sun": 1.3913142891868402,
+          "ambient": 2.1327736255722676,
+          "seed": 3135931
+        },
+        "draws": 29,
+        "triangles": 1484823,
+        "drawCalls": 292,
+        "geometries": 654,
+        "textures": 11,
+        "buildings": 1315,
+        "observedWalls": 0,
+        "trees": 2066,
+        "roadside": 63,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 115421.88965315046,
+            "x": 1361.128758964422,
+            "y": 1192.4954640747458,
+            "z": 44.270178791281765,
+            "phase": 4.871170893214409,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -2,
+          52.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 111.21,
+      "file": "111.210.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8533188074373502,
+          "sun": 1.356103523480556,
+          "ambient": 2.1408991868891025,
+          "seed": 3135931
+        },
+        "draws": 30,
+        "triangles": 585209,
+        "drawCalls": 126,
+        "geometries": 742,
+        "textures": 11,
+        "buildings": 1315,
+        "observedWalls": 0,
+        "trees": 2066,
+        "roadside": 63,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 115421.88965315046,
+            "x": 1361.128758964422,
+            "y": 1192.4954640747458,
+            "z": 44.270178791281765,
+            "phase": 4.871170893214409,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -2,
+          52.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 111.62,
+      "file": "111.620.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.8512757846176627,
+          "sun": 1.3621397272659963,
+          "ambient": 2.13950621678477,
+          "seed": 3135931
+        },
+        "draws": 31,
+        "triangles": 500180,
+        "drawCalls": 105,
+        "geometries": 742,
+        "textures": 11,
+        "buildings": 1315,
+        "observedWalls": 0,
+        "trees": 2066,
+        "roadside": 63,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 115421.88965315046,
+            "x": 1361.128758964422,
+            "y": 1192.4954640747458,
+            "z": 44.270178791281765,
+            "phase": 4.871170893214409,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -2,
+          52.5
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

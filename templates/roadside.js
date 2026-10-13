@@ -1,5 +1,6 @@
 // Simple forms at mapped positions: roadside furniture and off-season ski lifts.
 import * as THREE from './vendor/three.module.js';
+import {featureHeight, supportHeight, utilitySpans, guardrailRun} from './roadside-geometry.js';
 
 function wireMaterial(color){
   const material=new THREE.LineBasicMaterial({color,transparent:true,depthWrite:false}),pixelScale={value:1},size=new THREE.Vector2();
@@ -39,18 +40,18 @@ export async function addRoadside(d,group,url,groundAt) {
   const above=(p,h)=>[p[0],p[1],p[2]+h];
   const offset=(p,x,y,z)=>[p[0]+x,p[1]+y,p[2]+z];
   function across(p,angle,width,height,thick,color,depth=thick){const x=Math.cos(angle)*width/2,y=-Math.sin(angle)*width/2;beam(offset(p,-x,-y,height),offset(p,x,y,height),thick,color,depth);}
-  function dimension(f,defaultHeight){const raw=f.tags.height,n=parseFloat(raw);return Number.isFinite(n)?Math.max(.3,Math.min(45,n*(/ft|feet|'/.test(raw)?.3048:1))):defaultHeight;}
   function posts(points,spacing,callback){let carry=0;for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],length=Math.hypot(b[0]-a[0],b[1]-a[1]);if(length<.01)continue;for(let at=carry;at<=length;at+=spacing){const t=at/length;callback(a.map((v,k)=>v+(b[k]-v)*t),Math.atan2(b[0]-a[0],b[1]-a[1]));}carry=(carry-length)%spacing;if(carry<0)carry+=spacing;}}
+  for(const f of features)f.points=f.points.map(p=>[p[0],p[1],groundAt(p[0],p[1])]);
+  for(const span of utilitySpans(features))for(let i=1;i<span.points.length;i++)line(span.points[i-1],span.points[i],metal);
   for(const f of features){
-    f.points=f.points.map(p=>[p[0],p[1],groundAt(p[0],p[1])]);
     const p=f.points[0],angle=f.facingRoad||0,kind=f.kind;
     if(kind==='pole'||kind==='tower'){
-      const height=dimension(f,kind==='tower'?22:8.5);
+      const height=supportHeight(f);
       if(kind==='tower'){for(const sign of [-1,1])beam(offset(p,sign*2,0,0),offset(p,sign*.6,0,height),.22,steel);for(let h=2;h<height;h+=4)beam(offset(p,-1.8,0,h),offset(p,1.5,0,h+3),.12,steel);}
       else beam(p,above(p,height),.2,wood);
       across(p,angle,kind==='tower'?8:2.5,height-.5,.15,kind==='tower'?steel:wood);
     }else if(kind==='lamp'){
-      const height=dimension(f,7),head=offset(p,Math.sin(angle)*1.4,Math.cos(angle)*1.4,height);
+      const height=featureHeight(f,7),head=offset(p,Math.sin(angle)*1.4,Math.cos(angle)*1.4,height);
       beam(p,above(p,height-.3),.12,metal);beam(above(p,height-.3),head,.12,metal);beam(offset(head,-.3,0,0),offset(head,.3,0,0),.24,pale);
     }else if(kind==='signal'){
       beam(p,above(p,3.5),.12,metal);beam(above(p,2.65),above(p,3.45),.3,dark,.22);
@@ -79,13 +80,17 @@ export async function addRoadside(d,group,url,groundAt) {
       beam(p,above(p,.8),.48,metal);
     }else if(kind==='boulder'){
       const v=batch('#958d77',p),a=position(offset(p,-.8,-.6,0)),b=position(offset(p,.8,-.5,0)),c=position(offset(p,.5,.7,0)),e=position(offset(p,-.6,.7,0)),top=position(offset(p,.1,.1,1));for(const [u,w]of [[a,b],[b,c],[c,e],[e,a]])triangle(v,u,w,top);
-    }else if(['fence','wall','hedge','guard_rail'].includes(kind)){
-      const height=dimension(f,kind==='guard_rail'?.8:kind==='hedge'?1.6:1.25),color=kind==='hedge'?'#778068':kind==='wall'?'#a09980':kind==='guard_rail'?steel:wood;
-      if(kind==='fence'||kind==='guard_rail')posts(f.points,kind==='fence'?6:4,q=>beam(q,above(q,height),.12,color));
+    }else if(kind==='guard_rail'){
+      const run=guardrailRun(f.points,{height:featureHeight(f,.8)});
+      for(let i=1;i<run.length;i++)beam(above(run[i-1].point,run[i-1].height),above(run[i].point,run[i].height),.18,steel);
+      for(const q of run)if(q.height>.12&&Math.abs(q.at/4-Math.round(q.at/4))<1e-6)beam(q.point,above(q.point,q.height),.12,steel);
+    }else if(['fence','wall','hedge'].includes(kind)){
+      const height=featureHeight(f,kind==='hedge'?1.6:1.25),color=kind==='hedge'?'#778068':kind==='wall'?'#a09980':wood;
+      if(kind==='fence')posts(f.points,6,q=>beam(q,above(q,height),.12,color));
       for(let i=1;i<f.points.length;i++){
         const a=f.points[i-1],b=f.points[i];
         if(kind==='wall'||kind==='hedge')beam(above(a,height/2),above(b,height/2),kind==='wall'?.35:.9,color,height);
-        else for(const h of kind==='guard_rail'?[height]:[height*.45,height*.9])beam(above(a,h),above(b,h),kind==='guard_rail'?.18:.08,color);
+        else for(const h of [height*.45,height*.9])beam(above(a,h),above(b,h),.08,color);
       }
     }else if(kind==='rail'){
       for(let i=1;i<f.points.length;i++){
@@ -93,16 +98,14 @@ export async function addRoadside(d,group,url,groundAt) {
         for(const sign of [-1,1])beam(offset(a,dy/length*.72*sign,-dx/length*.72*sign,.1),offset(b,dy/length*.72*sign,-dx/length*.72*sign,.1),.08,steel);
       }posts(f.points,2.5,(q,a)=>across(q,a,2.1,.03,.12,wood));
     }else if(kind==='chair_lift'){
-      const height=dimension(f,10);
+      const height=featureHeight(f,10);
       posts(f.points,100,(q,a)=>{beam(q,above(q,height),.4,metal);across(q,a,6,height,.25,metal);});
       for(let i=1;i<f.points.length;i++){
         const a=f.points[i-1],b=f.points[i],dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy)||1;
         for(const sign of [-1,1])line(offset(a,dy/len*2.5*sign,-dx/len*2.5*sign,height-.15),offset(b,dy/len*2.5*sign,-dx/len*2.5*sign,height-.15),dark);
       }
       posts(f.points,42,(q,a)=>{for(const side of [-1,1]){const chair=offset(q,Math.cos(a)*2.5*side,-Math.sin(a)*2.5*side,0);beam(above(chair,height-.15),above(chair,height-2.5),.055,metal);across(chair,a,2,height-2.5,.14,dark);across(chair,a,2,height-1.8,.08,metal);}});
-    }else if(kind==='line'||kind==='minor_line'){
-      const height=dimension(f,kind==='line'?21:8);
-      for(let i=1;i<f.points.length;i++){const a=f.points[i-1],b=f.points[i],mid=a.map((v,k)=>(v+b[k])/2);mid[2]-=Math.min(2,Math.hypot(b[0]-a[0],b[1]-a[1])*.015);line(above(a,height),above(mid,height),metal);line(above(mid,height),above(b,height),metal);}
+
     }
   }
   const materials=new Map();

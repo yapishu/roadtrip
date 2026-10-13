@@ -1,0 +1,260 @@
+{
+  "sections": 547,
+  "initialInsufficientSamples": 7844,
+  "initialBridges": 923,
+  "changedSections": [
+    "world/c0000.json",
+    "world/c0001.json",
+    "world/c0002.json",
+    "world/c0003.json",
+    "world/c0004.json",
+    "world/c0005.json",
+    "world/c0006.json",
+    "world/c0007.json",
+    "world/c0008.json",
+    "world/c0009.json",
+    "world/c0010.json",
+    "world/c0011.json",
+    "world/c0012.json",
+    "world/c0013.json",
+    "world/c0014.json",
+    "world/c0015.json",
+    "world/c0016.json",
+    "world/c0017.json",
+    "world/c0018.json",
+    "world/c0019.json",
+    "world/c0020.json",
+    "world/c0021.json",
+    "world/c0022.json",
+    "world/c0023.json",
+    "world/c0024.json",
+    "world/c0025.json",
+    "world/c0026.json",
+    "world/c0027.json",
+    "world/c0028.json",
+    "world/c0029.json",
+    "world/c0030.json",
+    "world/c0031.json",
+    "world/c0032.json",
+    "world/c0033.json",
+    "world/c0034.json",
+    "world/c0035.json",
+    "world/c0036.json",
+    "world/c0037.json",
+    "world/c0038.json",
+    "world/c0039.json",
+    "world/c0040.json",
+    "world/c0041.json",
+    "world/c0042.json",
+    "world/c0043.json",
+    "world/c0044.json",
+    "world/c0045.json",
+    "world/c0046.json",
+    "world/c0047.json",
+    "world/c0048.json",
+    "world/c0049.json",
+    "world/c0050.json",
+    "world/c0051.json",
+    "world/c0052.json",
+    "world/c0053.json",
+    "world/c0054.json",
+    "world/c0055.json",
+    "world/c0056.json",
+    "world/c0057.json",
+    "world/c0058.json",
+    "world/c0059.json",
+    "world/c0060.json",
+    "world/c0106.json",
+    "world/c0107.json",
+    "world/c0108.json",
+    "world/c0109.json",
+    "world/c0110.json",
+    "world/c0111.json",
+    "world/c0113.json",
+    "world/c0114.json",
+    "world/c0124.json",
+    "world/c0125.json",
+    "world/c0126.json",
+    "world/c0127.json",
+    "world/c0128.json",
+    "world/c0129.json",
+    "world/c0130.json",
+    "world/c0131.json",
+    "world/c0132.json",
+    "world/c0133.json",
+    "world/c0134.json",
+    "world/c0135.json",
+    "world/c0136.json",
+    "world/c0138.json",
+    "world/c0139.json",
+    "world/c0140.json",
+    "world/c0141.json",
+    "world/c0142.json",
+    "world/c0214.json",
+    "world/c0215.json",
+    "world/c0275.json",
+    "world/c0283.json",
+    "world/c0320.json",
+    "world/c0321.json",
+    "world/c0322.json",
+    "world/c0323.json",
+    "world/c0324.json",
+    "world/c0326.json",
+    "world/c0327.json",
+    "world/c0328.json",
+    "world/c0329.json",
+    "world/c0330.json",
+    "world/c0333.json",
+    "world/c0354.json",
+    "world/c0355.json",
+    "world/c0381.json",
+    "world/c0382.json",
+    "world/c0383.json",
+    "world/c0384.json",
+    "world/c0398.json",
+    "world/c0426.json",
+    "world/c0429.json",
+    "world/c0430.json",
+    "world/c0431.json",
+    "parks/zion/world/c0000.json",
+    "parks/zion/world/c0002.json",
+    "detours/brian-head/world/c0005.json",
+    "detours/kern-river/world/c0000.json",
+    "detours/kern-river/world/c0001.json",
+    "detours/kern-river/world/c0006.json",
+    "detours/kern-river/world/c0007.json",
+    "detours/kern-river/world/c0014.json",
+    "detours/kern-river/world/c0015.json",
+    "detours/kings-canyon/world/c0000.json",
+    "detours/kings-canyon/world/c0001.json",
+    "detours/kings-canyon/world/c0034.json",
+    "detours/kings-canyon/world/c0035.json",
+    "detours/kings-canyon/world/c0042.json",
+    "detours/kings-canyon/world/c0043.json"
+  ],
+  "changedRoads": 3071,
+  "largestRises": [
+    {
+      "id": "way27696139",
+      "rise": 13.93
+    },
+    {
+      "id": "way34401923",
+      "rise": 13.31
+    },
+    {
+      "id": "way185564763",
+      "rise": 13.31
+    },
+    {
+      "id": "way651364905",
+      "rise": 12.86
+    },
+    {
+      "id": "way1366112145",
+      "rise": 12.85
+    },
+    {
+      "id": "way651364906",
+      "rise": 12.79
+    },
+    {
+      "id": "way92230044",
+      "rise": 12.29
+    },
+    {
+      "id": "way82874981",
+      "rise": 12.15
+    },
+    {
+      "id": "way27831314",
+      "rise": 12.13
+    },
+    {
+      "id": "way92230147",
+      "rise": 11.99
+    },
+    {
+      "id": "way41013867",
+      "rise": 11.38
+    },
+    {
+      "id": "way1154020332",
+      "rise": 11.17
+    },
+    {
+      "id": "way10391764",
+      "rise": 11.09
+    },
+    {
+      "id": "way92230174",
+      "rise": 11.09
+    },
+    {
+      "id": "way599245113",
+      "rise": 11.05
+    },
+    {
+      "id": "way1368959595",
+      "rise": 10.75
+    },
+    {
+      "id": "way599237892",
+      "rise": 10.67
+    },
+    {
+      "id": "way346948696",
+      "rise": 10.64
+    },
+    {
+      "id": "way1286426875",
+      "rise": 10.52
+    },
+    {
+      "id": "way177381197",
+      "rise": 10.49
+    },
+    {
+      "id": "way1137798563",
+      "rise": 10.43
+    },
+    {
+      "id": "way41169504",
+      "rise": 10.39
+    },
+    {
+      "id": "way140641276",
+      "rise": 10.22
+    },
+    {
+      "id": "way1415731105",
+      "rise": 10.14
+    },
+    {
+      "id": "way41169505",
+      "rise": 10.01
+    },
+    {
+      "id": "way1101343156",
+      "rise": 9.59
+    },
+    {
+      "id": "way88954151",
+      "rise": 9.47
+    },
+    {
+      "id": "way10337201",
+      "rise": 9.37
+    },
+    {
+      "id": "way107137414",
+      "rise": 9.21
+    },
+    {
+      "id": "way1450383242",
+      "rise": 9.09
+    }
+  ],
+  "unresolved": [],
+  "clearance": "Representative 5.5-metre surface separation; mapped road layers and connected junctions determine crossings"
+}

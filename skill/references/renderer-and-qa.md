@@ -58,12 +58,22 @@ objects, and foundations so road cuts do not leave them floating.
 Road paint needs a depth bias above the asphalt's own bias. If markings only
 appear immediately ahead, inspect depth fighting at grazing angles before
 increasing draw distance. Overpasses need solid deck undersides and supports;
-thin road strips and floating railings are visible from below. Place supports so
+thin road strips and floating railings are visible from below. Trim approach banks against the other road ribbons instead of removing a whole
+section at a junction. Place supports so
 they do not obstruct another mapped road. Tunnels need interior surfaces and
 portal clearance. Buildings on slopes need foundations down to ground.
 Vehicle tunnels receive interior shells. Small path underpasses retain their
 pavement without a guessed vehicle-sized vault. Check the road above them in
 motion; a short obstruction can fall between stop-based screenshot samples.
+
+Power spans attach to the same crossarm heights as their mapped poles and towers.
+Apply sag between supported endpoints; do not assign an independent cable height.
+Exposed guardrail ends descend gradually into the shoulder, while connected runs
+retain their height across road boundaries.
+
+The sky uses a session seed for daytime weather, cloud forms and subtle light
+changes. Blend states continuously along the global itinerary and freeze cloud
+drift while paused. Keep all states within daylight.
 
 Sparse birds and wildlife provide invented ambient detail. Keep encounters stable
 while chunks stream, vary them between sessions, and place animals outside roads

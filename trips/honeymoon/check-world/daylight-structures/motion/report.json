@@ -1,0 +1,1785 @@
+{
+  "frames": [
+    {
+      "name": "milpitas-overpass",
+      "file": "milpitas-overpass-0.png",
+      "pos": 3450,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 8.22
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 1,
+        "triangles": 422365,
+        "drawCalls": 57,
+        "geometries": 57,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "milpitas-overpass",
+      "file": "milpitas-overpass-1.png",
+      "pos": 3480,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 8.37
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 31,
+        "triangles": 422305,
+        "drawCalls": 56,
+        "geometries": 57,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "milpitas-overpass",
+      "file": "milpitas-overpass-2.png",
+      "pos": 3510,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 9.18
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 61,
+        "triangles": 400051,
+        "drawCalls": 53,
+        "geometries": 57,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "milpitas-overpass",
+      "file": "milpitas-overpass-3.png",
+      "pos": 3540,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 9.44
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 91,
+        "triangles": 384089,
+        "drawCalls": 51,
+        "geometries": 57,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "milpitas-overpass",
+      "file": "milpitas-overpass-4.png",
+      "pos": 3570,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 9.1
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 121,
+        "triangles": 384089,
+        "drawCalls": 51,
+        "geometries": 57,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "auto-mall-approach",
+      "file": "auto-mall-approach-0.png",
+      "pos": 12320,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 15.88
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 122,
+        "triangles": 1292144,
+        "drawCalls": 259,
+        "geometries": 315,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13645.550332883746,
+            "x": -2859.380658056648,
+            "y": 102.7703328837458,
+            "z": 77.83322322005608,
+            "phase": 4.434968662566342,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "auto-mall-approach",
+      "file": "auto-mall-approach-1.png",
+      "pos": 12350,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 15.8
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 152,
+        "triangles": 1275664,
+        "drawCalls": 256,
+        "geometries": 315,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13645.550332883746,
+            "x": -2859.380658056648,
+            "y": 102.7703328837458,
+            "z": 77.83322322005608,
+            "phase": 4.434968662566342,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "auto-mall-approach",
+      "file": "auto-mall-approach-2.png",
+      "pos": 12380,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 15.74
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 182,
+        "triangles": 1274768,
+        "drawCalls": 255,
+        "geometries": 315,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13645.550332883746,
+            "x": -2859.380658056648,
+            "y": 102.7703328837458,
+            "z": 77.83322322005608,
+            "phase": 4.434968662566342,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "auto-mall-approach",
+      "file": "auto-mall-approach-3.png",
+      "pos": 12410,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 15.64
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 212,
+        "triangles": 1243680,
+        "drawCalls": 245,
+        "geometries": 315,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13645.550332883746,
+            "x": -2859.380658056648,
+            "y": 102.7703328837458,
+            "z": 77.83322322005608,
+            "phase": 4.434968662566342,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "auto-mall-approach",
+      "file": "auto-mall-approach-4.png",
+      "pos": 12440,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 15.54
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 242,
+        "triangles": 1235096,
+        "drawCalls": 241,
+        "geometries": 315,
+        "textures": 11,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13645.550332883746,
+            "x": -2859.380658056648,
+            "y": 102.7703328837458,
+            "z": 77.83322322005608,
+            "phase": 4.434968662566342,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "livermore-overpass",
+      "file": "livermore-overpass-0.png",
+      "pos": 45520,
+      "source": "",
+      "road": {
+        "road": "Arthur H. Breed Junior Freeway",
+        "elev": 161.85
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 243,
+        "triangles": 1043582,
+        "drawCalls": 290,
+        "geometries": 290,
+        "textures": 9,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 45396.48737675428,
+            "x": 103.24167971217854,
+            "y": -569.2707025692791,
+            "z": 194.04980251768927,
+            "phase": 0.25280318379876193,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "livermore-overpass",
+      "file": "livermore-overpass-1.png",
+      "pos": 45550,
+      "source": "",
+      "road": {
+        "road": "Arthur H. Breed Junior Freeway",
+        "elev": 161.63
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 273,
+        "triangles": 1043582,
+        "drawCalls": 290,
+        "geometries": 290,
+        "textures": 9,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 45396.48737675428,
+            "x": 103.24167971217854,
+            "y": -569.2707025692791,
+            "z": 194.04980251768927,
+            "phase": 0.25280318379876193,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "livermore-overpass",
+      "file": "livermore-overpass-2.png",
+      "pos": 45580,
+      "source": "",
+      "road": {
+        "road": "Arthur H. Breed Junior Freeway",
+        "elev": 161.39
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 303,
+        "triangles": 1032237,
+        "drawCalls": 288,
+        "geometries": 290,
+        "textures": 9,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 45396.48737675428,
+            "x": 103.24167971217854,
+            "y": -569.2707025692791,
+            "z": 194.04980251768927,
+            "phase": 0.25280318379876193,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "livermore-overpass",
+      "file": "livermore-overpass-3.png",
+      "pos": 45610,
+      "source": "",
+      "road": {
+        "road": "Arthur H. Breed Junior Freeway",
+        "elev": 161.16
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 333,
+        "triangles": 1056557,
+        "drawCalls": 292,
+        "geometries": 296,
+        "textures": 9,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 45396.48737675428,
+            "x": 103.24167971217854,
+            "y": -569.2707025692791,
+            "z": 194.04980251768927,
+            "phase": 0.25280318379876193,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "livermore-overpass",
+      "file": "livermore-overpass-4.png",
+      "pos": 45640,
+      "source": "",
+      "road": {
+        "road": "Arthur H. Breed Junior Freeway",
+        "elev": 160.92
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 363,
+        "triangles": 1053793,
+        "drawCalls": 290,
+        "geometries": 296,
+        "textures": 9,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 45396.48737675428,
+            "x": 103.24167971217854,
+            "y": -569.2707025692791,
+            "z": 194.04980251768927,
+            "phase": 0.25280318379876193,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "mountain-house-approach",
+      "file": "mountain-house-approach-0.png",
+      "pos": 65060,
+      "source": "",
+      "road": {
+        "road": "Robert T. Monagan Freeway",
+        "elev": 48.68
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 364,
+        "triangles": 1075772,
+        "drawCalls": 259,
+        "geometries": 259,
+        "textures": 9,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "mountain-house-approach",
+      "file": "mountain-house-approach-1.png",
+      "pos": 65090,
+      "source": "",
+      "road": {
+        "road": "Robert T. Monagan Freeway",
+        "elev": 48.42
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 394,
+        "triangles": 1075688,
+        "drawCalls": 254,
+        "geometries": 259,
+        "textures": 9,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "mountain-house-approach",
+      "file": "mountain-house-approach-2.png",
+      "pos": 65120,
+      "source": "",
+      "road": {
+        "road": "Robert T. Monagan Freeway",
+        "elev": 48.1
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 424,
+        "triangles": 1075688,
+        "drawCalls": 254,
+        "geometries": 259,
+        "textures": 9,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "mountain-house-approach",
+      "file": "mountain-house-approach-3.png",
+      "pos": 65150,
+      "source": "",
+      "road": {
+        "road": "Robert T. Monagan Freeway",
+        "elev": 47.63
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 454,
+        "triangles": 1070456,
+        "drawCalls": 243,
+        "geometries": 259,
+        "textures": 9,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "mountain-house-approach",
+      "file": "mountain-house-approach-4.png",
+      "pos": 65180,
+      "source": "",
+      "road": {
+        "road": "Robert T. Monagan Freeway",
+        "elev": 47.31
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 484,
+        "triangles": 1070456,
+        "drawCalls": 243,
+        "geometries": 259,
+        "textures": 9,
+        "buildings": 784,
+        "observedWalls": 0,
+        "trees": 841,
+        "roadside": 152,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          -0.8,
+          288.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-cables",
+      "file": "lathrop-cables-0.png",
+      "pos": 92470,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 5.06
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2944576660081508,
+          "sun": 1.6110846679836983,
+          "ambient": 2.0777830664032604,
+          "seed": 73124
+        },
+        "draws": 485,
+        "triangles": 1515702,
+        "drawCalls": 350,
+        "geometries": 350,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-cables",
+      "file": "lathrop-cables-1.png",
+      "pos": 92500,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 5.03
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.29434031158485635,
+          "sun": 1.6113193768302874,
+          "ambient": 2.0777361246339425,
+          "seed": 73124
+        },
+        "draws": 515,
+        "triangles": 1507510,
+        "drawCalls": 349,
+        "geometries": 350,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-cables",
+      "file": "lathrop-cables-2.png",
+      "pos": 92530,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 5.01
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2942218253804541,
+          "sun": 1.6115563492390919,
+          "ambient": 2.0776887301521816,
+          "seed": 73124
+        },
+        "draws": 545,
+        "triangles": 1506622,
+        "drawCalls": 347,
+        "geometries": 350,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-cables",
+      "file": "lathrop-cables-3.png",
+      "pos": 92560,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 4.98
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.29410221047349666,
+          "sun": 1.6117955790530067,
+          "ambient": 2.0776408841893987,
+          "seed": 73124
+        },
+        "draws": 575,
+        "triangles": 1498422,
+        "drawCalls": 345,
+        "geometries": 350,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-cables",
+      "file": "lathrop-cables-4.png",
+      "pos": 92590,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 4.96
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2939814699425363,
+          "sun": 1.6120370601149274,
+          "ambient": 2.0775925879770147,
+          "seed": 73124
+        },
+        "draws": 605,
+        "triangles": 1486788,
+        "drawCalls": 343,
+        "geometries": 350,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-guardrails",
+      "file": "lathrop-guardrails-0.png",
+      "pos": 91200,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 11.83
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.29637130466153216,
+          "sun": 1.6072573906769356,
+          "ambient": 2.078548521864613,
+          "seed": 73124
+        },
+        "draws": 606,
+        "triangles": 1786092,
+        "drawCalls": 412,
+        "geometries": 413,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-guardrails",
+      "file": "lathrop-guardrails-1.png",
+      "pos": 91230,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 11.66
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.29627482769157837,
+          "sun": 1.6074503446168433,
+          "ambient": 2.0785099310766313,
+          "seed": 73124
+        },
+        "draws": 636,
+        "triangles": 1754128,
+        "drawCalls": 407,
+        "geometries": 413,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-guardrails",
+      "file": "lathrop-guardrails-2.png",
+      "pos": 91260,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 11.55
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2961771635810607,
+          "sun": 1.6076456728378785,
+          "ambient": 2.078470865432424,
+          "seed": 73124
+        },
+        "draws": 666,
+        "triangles": 1745756,
+        "drawCalls": 401,
+        "geometries": 413,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-guardrails",
+      "file": "lathrop-guardrails-3.png",
+      "pos": 91290,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 11.53
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.29607831540853174,
+          "sun": 1.6078433691829366,
+          "ambient": 2.078431326163413,
+          "seed": 73124
+        },
+        "draws": 696,
+        "triangles": 1721180,
+        "drawCalls": 398,
+        "geometries": 413,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lathrop-guardrails",
+      "file": "lathrop-guardrails-4.png",
+      "pos": 91320,
+      "source": "",
+      "road": {
+        "road": "Westside Freeway",
+        "elev": 11.75
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.29597828625254385,
+          "sun": 1.6080434274949122,
+          "ambient": 2.0783913145010176,
+          "seed": 73124
+        },
+        "draws": 726,
+        "triangles": 1721180,
+        "drawCalls": 398,
+        "geometries": 413,
+        "textures": 9,
+        "buildings": 702,
+        "observedWalls": 0,
+        "trees": 1579,
+        "roadside": 144,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89714.9494037622,
+            "x": -1720.0766136210796,
+            "y": -5105.603512764503,
+            "z": 56.2742534637415,
+            "phase": 4.63877995898206,
+            "count": 4
+          },
+          {
+            "kind": "deer",
+            "s": 98538.20116216554,
+            "x": 1743.6034664657261,
+            "y": 2942.5210024811304,
+            "z": 5.519826676713649,
+            "phase": 3.8301773532778776,
+            "angle": -1.2128442081374033
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -1.5,
+          17.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "stockton-overpass",
+      "file": "stockton-overpass-0.png",
+      "pos": 108130,
+      "source": "",
+      "road": {
+        "road": "South Center Street",
+        "elev": 4.41
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.24625712855293344,
+          "sun": 1.7074857428941332,
+          "ambient": 2.0585028514211734,
+          "seed": 73124
+        },
+        "draws": 727,
+        "triangles": 1628299,
+        "drawCalls": 352,
+        "geometries": 764,
+        "textures": 11,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "stockton-overpass",
+      "file": "stockton-overpass-1.png",
+      "pos": 108160,
+      "source": "",
+      "road": {
+        "road": "South Center Street",
+        "elev": 4.09
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.24596415823949994,
+          "sun": 1.7080716835210001,
+          "ambient": 2.0583856632958,
+          "seed": 73124
+        },
+        "draws": 757,
+        "triangles": 1621391,
+        "drawCalls": 346,
+        "geometries": 764,
+        "textures": 11,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "stockton-overpass",
+      "file": "stockton-overpass-2.png",
+      "pos": 108190,
+      "source": "",
+      "road": {
+        "road": "South Center Street",
+        "elev": 4.01
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.24567073876628326,
+          "sun": 1.7086585224674335,
+          "ambient": 2.0582682955065135,
+          "seed": 73124
+        },
+        "draws": 787,
+        "triangles": 1621309,
+        "drawCalls": 345,
+        "geometries": 764,
+        "textures": 11,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "stockton-overpass",
+      "file": "stockton-overpass-3.png",
+      "pos": 108220,
+      "source": "",
+      "road": {
+        "road": "South Center Street",
+        "elev": 4.03
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.24537687321183563,
+          "sun": 1.7092462535763289,
+          "ambient": 2.058150749284734,
+          "seed": 73124
+        },
+        "draws": 817,
+        "triangles": 1583691,
+        "drawCalls": 342,
+        "geometries": 767,
+        "textures": 11,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "stockton-overpass",
+      "file": "stockton-overpass-4.png",
+      "pos": 108250,
+      "source": "",
+      "road": {
+        "road": "East Lafayette Street",
+        "elev": 4.11
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.24508256465471012,
+          "sun": 1.7098348706905797,
+          "ambient": 2.058033025861884,
+          "seed": 73124
+        },
+        "draws": 847,
+        "triangles": 982381,
+        "drawCalls": 198,
+        "geometries": 910,
+        "textures": 11,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lubbock-underpass",
+      "file": "lubbock-underpass-0.png",
+      "pos": 4504656.372688454,
+      "source": "",
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.65
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.29974536125996953,
+          "sun": 1.6005092774800609,
+          "ambient": 2.079898144503988,
+          "seed": 73124
+        },
+        "draws": 848,
+        "triangles": 1871359,
+        "drawCalls": 489,
+        "geometries": 489,
+        "textures": 16,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3838008.8445036965,
+            "x": 2372.078359229186,
+            "y": 399.96219270393533,
+            "z": 1014.3548161957326,
+            "phase": 2.3042255455000573,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lubbock-underpass",
+      "file": "lubbock-underpass-1.png",
+      "pos": 4504686.372688454,
+      "source": "",
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.7000000000075
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2997711688044306,
+          "sun": 1.6004576623911388,
+          "ambient": 2.0799084675217725,
+          "seed": 73124
+        },
+        "draws": 878,
+        "triangles": 1826548,
+        "drawCalls": 482,
+        "geometries": 489,
+        "textures": 16,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3838008.8445036965,
+            "x": 2372.078359229186,
+            "y": 399.96219270393533,
+            "z": 1014.3548161957326,
+            "phase": 2.3042255455000573,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lubbock-underpass",
+      "file": "lubbock-underpass-2.png",
+      "pos": 4504716.372688454,
+      "source": "",
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.91
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.299795615368986,
+          "sun": 1.6004087692620281,
+          "ambient": 2.0799182461475945,
+          "seed": 73124
+        },
+        "draws": 908,
+        "triangles": 1811572,
+        "drawCalls": 480,
+        "geometries": 489,
+        "textures": 16,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3838008.8445036965,
+            "x": 2372.078359229186,
+            "y": 399.96219270393533,
+            "z": 1014.3548161957326,
+            "phase": 2.3042255455000573,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lubbock-underpass",
+      "file": "lubbock-underpass-3.png",
+      "pos": 4504746.372688454,
+      "source": "",
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.7399999999991
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2998186978750833,
+          "sun": 1.6003626042498333,
+          "ambient": 2.0799274791500335,
+          "seed": 73124
+        },
+        "draws": 938,
+        "triangles": 1803380,
+        "drawCalls": 479,
+        "geometries": 489,
+        "textures": 16,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3838008.8445036965,
+            "x": 2372.078359229186,
+            "y": 399.96219270393533,
+            "z": 1014.3548161957326,
+            "phase": 2.3042255455000573,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "lubbock-underpass",
+      "file": "lubbock-underpass-4.png",
+      "pos": 4504776.372688454,
+      "source": "",
+      "road": {
+        "road": "Marsha Sharp Freeway",
+        "elev": 978.7300000000029
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2998404132441701,
+          "sun": 1.60031917351166,
+          "ambient": 2.079936165297668,
+          "seed": 73124
+        },
+        "draws": 968,
+        "triangles": 1781382,
+        "drawCalls": 476,
+        "geometries": 489,
+        "textures": 16,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3838008.8445036965,
+            "x": 2372.078359229186,
+            "y": 399.96219270393533,
+            "z": 1014.3548161957326,
+            "phase": 2.3042255455000573,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,708 @@
+{
+  "changedWorldSections": 133,
+  "runtimeModules": [
+    "daylight.js",
+    "roadside-geometry.js",
+    "road-grade.js",
+    "road-supports.js",
+    "roadside.js",
+    "world.js"
+  ],
+  "files": [
+    {
+      "file": "world/c0000.json",
+      "before": "54f8a819d0a065f5240918b085d427988725725352acf1a7fadf0334002f61da",
+      "after": "32b0efe95c6f3c40ab5983337e6a0274ee8dfa99c323364df170f7c931e4cc60"
+    },
+    {
+      "file": "world/c0001.json",
+      "before": "c6403becea974edbc13ea8db2a9ab30df8954b8a2648463a97c7bb2751d742a9",
+      "after": "590d347ee3a460416b4df079927daf52b7616cfc58d5173d9308c5571df92e41"
+    },
+    {
+      "file": "world/c0002.json",
+      "before": "ecd574935dcb9d8850ab9bb280b02413f847eaaeeddcbea7ee88c3d1255a2aea",
+      "after": "9888ca0523e97ac4b1d9af2971ce0f00cd9b616a64e515dd4752b43bcee574ba"
+    },
+    {
+      "file": "world/c0003.json",
+      "before": "0ce5e4a82ff8ecb3aac7d92caa58631d9a8e44c18ec5bb2d5a03f3712ae20576",
+      "after": "bfef567bb9c994aef8dcad4dbe47d35c5236f49006f789578aa3083f8332c9ab"
+    },
+    {
+      "file": "world/c0004.json",
+      "before": "7320f5b97f6f982c6c08fe9f9996eb5b4950249a92f55aad54c4da5198f875fe",
+      "after": "d965d55277b8befa2f16d4abddcf500f99d42a5389d0bafc730bf33e17848d1a"
+    },
+    {
+      "file": "world/c0005.json",
+      "before": "f481103d415ed13ebd68d76f997783c01f8935f59df90b4697170745c49f8883",
+      "after": "e6eae547a93928b0e22efdb09d1549c887dc59ef6795aa581d701ef647624caa"
+    },
+    {
+      "file": "world/c0006.json",
+      "before": "f44011346a3dd7876bce85a7695309e2b39b3cc0b26dd8a6d4984b485ee59a27",
+      "after": "7939c9333df05418440dfc66deccf84d03b92bbb57cf1b3943939848fe14bb31"
+    },
+    {
+      "file": "world/c0007.json",
+      "before": "a075fb0dd2896302d6bc7adae140d61cd0f2b5c667ca4cb62f11ffd104c3170c",
+      "after": "2814fe47f50b4dfd80be56755aed99d5fb87cd9ea8d8a818fced20624e979e34"
+    },
+    {
+      "file": "world/c0008.json",
+      "before": "f52d9b6423263ead67c49799f508b735c6fe97ab31dd61fbaf35edd66044898f",
+      "after": "baae3e0b19a9a3ef393e8bc089a1f245e8278f73997f4e152a7136f43341b043"
+    },
+    {
+      "file": "world/c0009.json",
+      "before": "367c9768e9d9e789ebf4a591cf481fc4d7362356ba1ff9955fa30678e9d21211",
+      "after": "bcbcadfd318b95a4eecbb22781e9040ee0fc611acf38d604c07b13692b7b0b3b"
+    },
+    {
+      "file": "world/c0010.json",
+      "before": "4d964d46e826457a6625e842d0ad44708e9eee3c1f7e33991e15851b12080380",
+      "after": "04c33f5d2d339032de1728e86e21d18992c3dbb1363f396b49c1af0106ea47be"
+    },
+    {
+      "file": "world/c0011.json",
+      "before": "adb5efd906d6fc597dc67eb1f150a59ba1b306824fb0b7668f3a0c66f1cc9b94",
+      "after": "b82dcdfac164ea57486543a19efd64b4141dd4e1e2b76c3afc858d05cae14c81"
+    },
+    {
+      "file": "world/c0012.json",
+      "before": "cb500df1c9f10714f97db219bbfd494ca0c5c7e60375a9fd457b4eeba407902c",
+      "after": "12858051d46b958e927270d4e0138a9255f81e6ffff289c3a272fe95489eb133"
+    },
+    {
+      "file": "world/c0013.json",
+      "before": "6a876078840549a14e103f5655841b4712c357eb31afecf075ba4f931d10dbf7",
+      "after": "30c6491eb5b1a1071fdc5336036ce23443917ae07cd7e3551368efe9078b542f"
+    },
+    {
+      "file": "world/c0014.json",
+      "before": "95892ae8358bf274241c161271aca9f6108a067da5da3dcd2b8a631c4fd51184",
+      "after": "d1ba9a0c1863ffff78893af8d13f88492de6df6d9a3c7ec45551555629956907"
+    },
+    {
+      "file": "world/c0015.json",
+      "before": "4b583c9126130dbf8d0cf559f904bd1a9d4a3a85b6124ca7f2bbb6022f217c26",
+      "after": "67539f69e1846c3230ba47848cd10131fd7b434cbaf882da9ad9b6f72c172163"
+    },
+    {
+      "file": "world/c0016.json",
+      "before": "f356fcf6d506282982798563c3ccb0377ecc0cfcf3c916ed9756b02277e94fb0",
+      "after": "2c340968a8a2207f12bb271dbe76ddf638745ad9a336b8c8a04c014b6f7d468c"
+    },
+    {
+      "file": "world/c0017.json",
+      "before": "491be32402eafc5766103336b3a4bc5445ded1673f06c0890323c970b3340781",
+      "after": "bd1415a85cf34c07a224fc7c3fc36497e3d7842ed87320225a549dee0dffa792"
+    },
+    {
+      "file": "world/c0018.json",
+      "before": "c77c7864f24ab3bafbc8db0653799c3b49b1d0d1b90c3ad85fb5507e86637475",
+      "after": "f3cdfd31c45218011b20c2a928dd93284cb96756c6679f989407f796a9a05efa"
+    },
+    {
+      "file": "world/c0019.json",
+      "before": "d208dcc7bd97872dbeccf04efdc537699e16bf7a9fc189498b6b7e7c094fc6da",
+      "after": "04ee5b352ef73a66a71fedf83ad12a285e356e6804303666fbef965fed37ec9b"
+    },
+    {
+      "file": "world/c0020.json",
+      "before": "9cbe7c27080601352f22832832c32904fc2a6ccbd4222f4c5493f0eb67747e46",
+      "after": "072922cacccf42053341c80ddff78d88c44e2b0047634a8429ccdadb83fd87ea"
+    },
+    {
+      "file": "world/c0021.json",
+      "before": "cf6fd550e7a295689f7b54c52925e23932ecf9cc7171031511c4338da823b995",
+      "after": "4444b6c6832b5a98c001b18fe191879ab97cca2f63aa70598b2e5bea1be35196"
+    },
+    {
+      "file": "world/c0022.json",
+      "before": "7cddb0bb885365db477d9a390da865fdae768e41e513a91082b6cd03d91fbc04",
+      "after": "1cf14a3f16c10f9e7445cee16f0b4a3ec75b87b542a7bdfaaf2068eb9c6b34dd"
+    },
+    {
+      "file": "world/c0023.json",
+      "before": "611d8075cbacfdf3b92e8b43ff559b68f242f529b32b1d011367eed29d73efbd",
+      "after": "4775488befd7db730d26606d9c009b8a8b42348403c7dbaeea5981e3c5be0fa6"
+    },
+    {
+      "file": "world/c0024.json",
+      "before": "c98797073264c4261abd1cf15b3574f048d0a8df19113af06b066af1bb1b344f",
+      "after": "0393609c8146703302ef7fda8c703bf00df2c05dee9ba8320d5debe9c16565b2"
+    },
+    {
+      "file": "world/c0025.json",
+      "before": "f49532705b5bc5707b8c4d7c380cc8b222b2e3ed46b2195938c91ea8792f9bc2",
+      "after": "372a9120b386554e16f8ef50fe0b6be94d16f2da04c269fcebc2f59708bd9026"
+    },
+    {
+      "file": "world/c0026.json",
+      "before": "954b8e5586f6cc88647e2c148908b80893b58b2e8c9e4d0e9f4e38f08288b50d",
+      "after": "4455d7f6c3a721238c4b9f9689f97ca300e88a298811b8fcd255bcac981dbe5b"
+    },
+    {
+      "file": "world/c0027.json",
+      "before": "0fdb06c0edde24a274c22930e6d32029916f54984a8d669f53e82989c8c9d3b5",
+      "after": "594d9f7c35c1b8f8dc802622ee4ddc57c77e06b9e025b84b2e74bd44d5f768c6"
+    },
+    {
+      "file": "world/c0028.json",
+      "before": "b4971283b410cb7643408c6e572a80072f4ad90aa9cde593ccd1521ebd27376f",
+      "after": "2382119e701308217b00e1ad04f2648034f06bafdbdd18f940e67dc38ff0665e"
+    },
+    {
+      "file": "world/c0029.json",
+      "before": "df0b1f80c06805da20d91e6884e90fd3dab091aec3d5c133f317545f0ca637af",
+      "after": "ef9cfdff9b8bafa5eafeaa305d06a59307cf358e6d82c2b19609cfd356e23426"
+    },
+    {
+      "file": "world/c0030.json",
+      "before": "6da3d3f8b05d517bd47d1cff1dff3c8c38b6e8f3892a2e7e537fecac18f116e5",
+      "after": "0969274c2e22fa3104509f88e77e7b51af626df1e9af3a35cf0150cb6921baae"
+    },
+    {
+      "file": "world/c0031.json",
+      "before": "78ec0a8aaac84f4aa9bc510a80c0d412c8ba5c59b907c40635d436747f2d8ec2",
+      "after": "1ec07218d072f0ad180523d33a1879e6092f2adf80f600a1bd1fb594c7044735"
+    },
+    {
+      "file": "world/c0032.json",
+      "before": "d4eedc6f57705f0f1881e2c58f6e7a138bbd6a161aaabc1ce93f652c1dafda59",
+      "after": "c692f069cadb27502f73fa30f79f1b1621ab100f2bf0427dabc00d7498b5ca26"
+    },
+    {
+      "file": "world/c0033.json",
+      "before": "df81e16897de3c054f307dd06fb9cd33c34502fc23f02809d87d038bdceca167",
+      "after": "e0d70efb28771c8728a36f23721a823d66c95ecb06719bc4a73305b59b1c06e9"
+    },
+    {
+      "file": "world/c0034.json",
+      "before": "f71feb347dce32822fe1f38123e5b4f1b3e8cb98c037dc4d6b3befe06577502b",
+      "after": "077307b160fceed4b57239a2c3170c3008ced3ceff6e3fecb524da3db68a02b8"
+    },
+    {
+      "file": "world/c0035.json",
+      "before": "c50d77e2e614ddbb935ecdfdcd3d6ec4dcb0e02996763849c8d9404cde15d568",
+      "after": "7f9bdbbb1638563daa71a7a52c8807449861e76c134e97f2ee1469735132e932"
+    },
+    {
+      "file": "world/c0036.json",
+      "before": "ac701ff21b5f72728d849ccfcb4a0b87e5a87a9dfe062fdf60dfecccd1563701",
+      "after": "99c62af432398f79ffb6f6e4268385adbe326a2f27858e6abcaac680c04124f1"
+    },
+    {
+      "file": "world/c0037.json",
+      "before": "0403380f82c1b043c82669a3c8fe6e5a48064eb8619c97a0085cc4a3d9cf6724",
+      "after": "2fee30f0104e24673a066a52000c1feaa81a3a6329c9464bffc410adcb3f9c23"
+    },
+    {
+      "file": "world/c0038.json",
+      "before": "3ed29fb197faef6d333baec2e4ad3ffb811d5800bb506911b7f93f21d5caef8c",
+      "after": "01073fa265bbbe7bcca700e9b19cf19527e06348bd03312040d8e31a7d174314"
+    },
+    {
+      "file": "world/c0039.json",
+      "before": "2e4de224724c1e7c6ad5b9dc3ae12acfc66793fa1eb4e6216e90323e8abf071d",
+      "after": "180c50bb58f7fd28d4aadee2c4ac5e89ec33464423335cd8d493b7459ee2de7e"
+    },
+    {
+      "file": "world/c0040.json",
+      "before": "0554de33e0d6a676d27537d5b8e68e34d40364ceeabfb8519d08e48350090856",
+      "after": "ef93d2a7f5a60db874f82a836430e2fc11e0e834d54aca2054c9dea19358815f"
+    },
+    {
+      "file": "world/c0041.json",
+      "before": "0fc4ec6e6e1c0cee99b46d19b5afef4a26266b974befed6c127c40154190c183",
+      "after": "f4df43625e7ea2e3fbf3a5eed1264b93a5f275be629d163560caf84b9d6335dc"
+    },
+    {
+      "file": "world/c0042.json",
+      "before": "44edaa74eed68ff503a23f10082be2bd978e9e18c16f1966b446bae7b358df12",
+      "after": "48c6d87dc9a4ae720bd3b7f622f5da81203f8abf17db3661b9a94454cf195951"
+    },
+    {
+      "file": "world/c0043.json",
+      "before": "3763f7397f47ff204ace139ac373f3323d73e1774e1501862213d6fcf374b283",
+      "after": "0b379bebe5f2a9ea30c004f988f4c0021a21f94296c92c96321736da08f2643b"
+    },
+    {
+      "file": "world/c0044.json",
+      "before": "e3032ad1b8f1d38e06cc7fce66c82b9ab04e8ff2b193736d96a7e1b9c9dc821f",
+      "after": "94ab089aeda8540109820dc128b3a7021681f230461b3a8b6ea5e0b4bda87269"
+    },
+    {
+      "file": "world/c0045.json",
+      "before": "1b49ab71264fcb779d07bfe7914fc77915792e63f8182780229e43f683044928",
+      "after": "48020b56d93d40a61f3e5e314f4d1961c9df40b47cb3a685fb53cb1d4d4f0323"
+    },
+    {
+      "file": "world/c0046.json",
+      "before": "8320b6f71eedf235a3df4625881ea4de99695d1512a0a5fac8064aa9544fa6a4",
+      "after": "af0cdeb043624633c5e8eb26250f083a4ea383eb6a8ada93f4842fec665b4877"
+    },
+    {
+      "file": "world/c0047.json",
+      "before": "dfee596920c818b5ca8b2c357d6a4f1945d953e639803417d587b8a50cb2476a",
+      "after": "fa205376c258c651eae214643505b2ae235316c48dd46db0e45ac591a5db094f"
+    },
+    {
+      "file": "world/c0048.json",
+      "before": "93090eac2de9f573e3ea30c28087d7995398c6181ed5714ce52a3aecdfe9d1d4",
+      "after": "a8f5d11077717ad8e01015c96d9f39ac6b695bafbaf9889ee1924c50b31c3199"
+    },
+    {
+      "file": "world/c0049.json",
+      "before": "cb18dc275502cc3183151a02677544c6baa234a3f4fe7a862dcb1aed6182daf6",
+      "after": "3971bc82ec574aba2f49fbe26128e79fe1dab41ea805d33bed49fec08f36278f"
+    },
+    {
+      "file": "world/c0050.json",
+      "before": "3e69becc802259bfc15233c5a3532803fe6fe7c5bd44d59e94e005c87a7d1a86",
+      "after": "9fde92c006b6cd7a9677fc4b22daccd5950fb1932bedf379ec884c3fc61abadb"
+    },
+    {
+      "file": "world/c0051.json",
+      "before": "610be141c9ceb22854e33efb75a430cab41bf28cc792d984c96c46414a135d1b",
+      "after": "11bffc8da96b353d31877e41779526ba0347dd944f8973e02d63efdd726aa167"
+    },
+    {
+      "file": "world/c0052.json",
+      "before": "4d0c59374b27c3da5c6810817ff5afd7178c8a2673eafa7a2032971dccba016e",
+      "after": "54181456c52918b23496bf655a72bc92c1f3f762db2209a26243a1af6e595c08"
+    },
+    {
+      "file": "world/c0053.json",
+      "before": "2be902dd13262073042c7f68ecd7dad828874eb7f402d7b4d1f3369cda6cba1b",
+      "after": "093f6ecc0b69bf6c1854545ebf5e04d3214f22a30547315a282c2d102d8e6782"
+    },
+    {
+      "file": "world/c0054.json",
+      "before": "015048c4712278ea19b2900f83640c1f05a5f6c71298d01eebe3652346c3d204",
+      "after": "5067366c1dcb382e2ad4d93b24d2203d6bba2dd7c10088a8ccc3a897ab95e53f"
+    },
+    {
+      "file": "world/c0055.json",
+      "before": "0d5c2ec257cc42d01ccd13ea73b4d23edef11f284a7073c3aef859f103ff1d5f",
+      "after": "9a1777543eab4dedf4407af9efd067325aeeb5ea0a82427f6378320a1b27975b"
+    },
+    {
+      "file": "world/c0056.json",
+      "before": "0a704b3701bed736170a0160d7e8929ddb6686b1ce2f1cc4b47e993a638724cf",
+      "after": "bbfb91a87b2e82a040bb25ae6b7a94e1567d47d40aed2eabe2c2d19f27b080bd"
+    },
+    {
+      "file": "world/c0057.json",
+      "before": "35b2786a7b9a1cc2b534d1b6a1cbe9783cbfcd307ce1356fe1f262f7d194d947",
+      "after": "661492f6700a5591c26817fd1d063104b9d827227ac9489127339a550f34490e"
+    },
+    {
+      "file": "world/c0058.json",
+      "before": "1eb62264171ff3a7e369f045124f5836ea052c90148cf220a6fc99a5754aee9f",
+      "after": "078a0443cdbbbd6b141d4a14e41a75abcda94ab92ebcb5a7bacfa2cd90097325"
+    },
+    {
+      "file": "world/c0059.json",
+      "before": "abe2fb8f0240dd5895cb89e5fc078fd7c55cf4bf806a2f0bc1241b749279417c",
+      "after": "0635f7e0a99ba56b9578f9ce09fc39cfc1f4c7f59cf005d66737d0d71548bf81"
+    },
+    {
+      "file": "world/c0060.json",
+      "before": "c327c357886a2c87b1c6cfd36e5f21ca959f680f126554ff8de2f90322a8873a",
+      "after": "19406619713e1b0fc4e8717573fad4e054d2ab272238e690b2ce09cf1934ee97"
+    },
+    {
+      "file": "world/c0106.json",
+      "before": "5a2ef1bdb4aa51933d3f1800106352f242b835f5494150c329864552af17d512",
+      "after": "5ddb46b9868f582aa4f2b1fbc7f99845574c1d4e3f1fbbb8ba8d32a3766bf323"
+    },
+    {
+      "file": "world/c0107.json",
+      "before": "1f833f581219464451587852add439e3a185f24c52ef132e3424e7e97dce260d",
+      "after": "e03f05369a6d23ac6f4762cb92f6b3e675d95a7e506301ee715b54fa03be64b6"
+    },
+    {
+      "file": "world/c0108.json",
+      "before": "c5710e5faa6df54ec0beebdd500f228164f4a83948653bbaac480bf2593fedb2",
+      "after": "7b1e3e36d372707bdd4a576674b466a3bad5de30c18c65a7b855556bf1a0c75a"
+    },
+    {
+      "file": "world/c0109.json",
+      "before": "10b257aa7cb77df2015505e17ea4e4e4f391e55cda6501b89a8e904d6bea93fe",
+      "after": "06cc4383bc17567b524aae10c2d002140b42a9cd4f373a5b992d6ecd40df3b8e"
+    },
+    {
+      "file": "world/c0110.json",
+      "before": "7e0c10597904a304d1b894dc1c01d0c2fd957428e66989be5f957755217f12e9",
+      "after": "447a848874f2d0aca6622c87192e50f3fb6e50f833e02415c9f8ee3e429c8aea"
+    },
+    {
+      "file": "world/c0111.json",
+      "before": "524d910c5d28d0ea828b249a944c3b4b479b841dadf05586acafccd9b180266a",
+      "after": "d3334cd2c7f0f6f757a612b713efe0e29d2c08a75cd077acedcc9f46d4270fd6"
+    },
+    {
+      "file": "world/c0113.json",
+      "before": "45a8beab6c02116590761a214cc4b1349e0ea027f422dc7cba68d30e67207be0",
+      "after": "d502bd8b8ca2da664d055310ff1a18f470d24d403041def083f96190b3287c5c"
+    },
+    {
+      "file": "world/c0114.json",
+      "before": "2f8a756c13a31cccdc310a291a562e3a63d0ad0dfa1c3f2153c4e730a8dac96f",
+      "after": "8aa95e93048cfdc5dde27d2663c96cc723af165cb2eba7b7f92d2ba645523d8f"
+    },
+    {
+      "file": "world/c0124.json",
+      "before": "52ffc59967af82387e5a088906cbd04d15073926aec15a8fef96aafc8d6b6170",
+      "after": "97cd39a07cea0e6d16d5e87f506e926cd2e01226fc13a45c3c1830f3af7ba802"
+    },
+    {
+      "file": "world/c0125.json",
+      "before": "92412f137e2659a78928b0f13a411823279483be74bc88ef6b45b4f5499d8561",
+      "after": "2fdc115abd6bb7dd856a3f3e821d53b7a4077a6ce90aad3cb40a0895f2027b4a"
+    },
+    {
+      "file": "world/c0126.json",
+      "before": "53191697733fde8b325b95962b912fe02419bb228c8bfbad3f478d01a19622c7",
+      "after": "9fea1d93319ee60da7695d260da22755bbcb43022c42494ebb592a4d385eea6c"
+    },
+    {
+      "file": "world/c0127.json",
+      "before": "4259ae1bd51fb4e5796e781a84def8b38d672cd4f4be5df1a2ff08b5d246d03f",
+      "after": "48d7ea384ed3497a5b9ff761400cf8090497f306c84b7b9ccf90a883ef75eadf"
+    },
+    {
+      "file": "world/c0128.json",
+      "before": "298ea08deba8bbd55fddcc95ebd70f1e4d695fcf4dac567c0a725085f51352ea",
+      "after": "3e1947783e23a9622f7bf8faf3d60dd4620f17249da7e59ff205be200b7113be"
+    },
+    {
+      "file": "world/c0129.json",
+      "before": "c7702ce5e577b0686bb17a629b94b49dc135e93a8f018ec025d44994aaa4aa11",
+      "after": "35aa4d0262065c7cac77a11c4c3bfe45a79b33d40b43c1e836748fe9cafce58e"
+    },
+    {
+      "file": "world/c0130.json",
+      "before": "7e630f85a4e8bffa1eeae5dfb64b4cae91845e2751cfd343bfaca8d8ade29172",
+      "after": "cdea2a3e4c114321f7957e7bd2715932cd26a74cd05d0b88224510a2cd28b0d5"
+    },
+    {
+      "file": "world/c0131.json",
+      "before": "1c7bd4d663616fa39d7e360ad11a96aa2a5e67730e3e878383b9b6a266d543b0",
+      "after": "5d2a8c20c62b5709efc650b527d02f2dc8b9de6d8d21dfb31b3324ac52a58926"
+    },
+    {
+      "file": "world/c0132.json",
+      "before": "46a3f1a07de60ccb6b9a8e00e9c619530199c5549082938ebfa7d69b8d1b647e",
+      "after": "07c63a4fa46903132febf88951a9847c3ba4f9e2542f8d378820f22d6d00507f"
+    },
+    {
+      "file": "world/c0133.json",
+      "before": "2959b6f84a73346806daa35e160ab6c0a5c98dbe74d0beacbe5a1c1f83b00d62",
+      "after": "8b90006ab98606573a221d83fb86f50ba5ff4a8dfd80e3e4082fa97415b59dcf"
+    },
+    {
+      "file": "world/c0134.json",
+      "before": "8a4ee9ad849809a7ea3c6283b883ad2ed922916cea04e07761d12ef7137799ab",
+      "after": "c70a5c87e2fea942a30116e29af5bc8dc7d5e1134dd0bb8e4fbabfe56ce49db1"
+    },
+    {
+      "file": "world/c0135.json",
+      "before": "8d58127ba94c07388536f4168a5c1355d952c84110ab7ab0827a58e05d113c11",
+      "after": "fb91deed656d0e602001571482644a9f75c698f64b84f7020bd633b4a2ecba23"
+    },
+    {
+      "file": "world/c0136.json",
+      "before": "d6e4731f731e3560fb40cda06af362c69e0814349d888312c81c69e02641f7b3",
+      "after": "7944c6f46525b7cc25adb144b288ff3c47541fb83daabea2acd23955540a84c1"
+    },
+    {
+      "file": "world/c0138.json",
+      "before": "415f1969d78b6e172c0fb8c921ad31c72c95bc575b485d85c1d43b89c0eec80c",
+      "after": "7ea6dc58fcdd7c579c365cc40d595bb2a793821dd797bab637cf63b5ac49fa64"
+    },
+    {
+      "file": "world/c0139.json",
+      "before": "ad457c1613d2c8fef4094295ac0f2a447097e29ce9b19cb42d4236bd806252e4",
+      "after": "5d9695b681796ca4233a759a768908088842a1e49d4bb2ca6d789a5885508a30"
+    },
+    {
+      "file": "world/c0140.json",
+      "before": "a00181e8552ac80436fc79896065afcc4acb8d7872b98e1c5aa1c386ffee39ff",
+      "after": "d8b878d3f475f5e0c6bd048440b68444b2de70653b2bde9438ec56cc0febf377"
+    },
+    {
+      "file": "world/c0141.json",
+      "before": "cadbb5f52e74bcf8043f76b0473f05fbc9ba70d445bcfa84f83a3e470ff8883f",
+      "after": "d8ba2db39dafb8ee2285051b87ab467cd685b9741d84ed657e0386072767cd32"
+    },
+    {
+      "file": "world/c0142.json",
+      "before": "434243a4ebf6cc1337628df3075d1779c77ac9f052cd17dc5a87d420672daaf9",
+      "after": "4755f3a7744ff0b992e8bf41216fc67e2c0b851b62be1a19989ef10ab19efeba"
+    },
+    {
+      "file": "world/c0214.json",
+      "before": "63e60b72493c016b6413a07e4d202ae1b588f70c01781c8d3b3cbe5ae434aa2d",
+      "after": "79872411a465f3a7c179097da694b4123c8ba1c93c8d97cafc1f0695a8604755"
+    },
+    {
+      "file": "world/c0215.json",
+      "before": "b81831c23d24a9083d69a55e9e873ed3a2c9938cc6bd2af057a4b2933ed6fbba",
+      "after": "42eef040e3b5daea78187d0fa7e83be65498cdedd65adebff562e615e4831ae1"
+    },
+    {
+      "file": "world/c0275.json",
+      "before": "94a541076e50b88044d771871bf322fd642bbe002f2dc42f5405df43244e2718",
+      "after": "6c5382fa851a6f2b660b18a5c29f2eca4d24015df1d149df1ae1eaab5a68ba4c"
+    },
+    {
+      "file": "world/c0283.json",
+      "before": "7cead11b8310f9763cad767195e414acea66175dccbace0e5627ae47c2fa001f",
+      "after": "9a8e40a6fe0428e594459b1227613c453eb7a97872995245f7c187d704be1827"
+    },
+    {
+      "file": "world/c0320.json",
+      "before": "f52ee011b40334980d48efeb3aa0203ccb7771ed84e8dfbc6b635b252a8e593d",
+      "after": "7ccb4c27a407ac43eadc0665c42a07093292a972d9785e42648ca4619bf2d2a7"
+    },
+    {
+      "file": "world/c0321.json",
+      "before": "8b10c9f4696b6cfc049b9a311785cd5801a6119f6ff0739ee951ca668b58fb5e",
+      "after": "457dd0148a75423315a4aa9503bb160d59f79bb366ba5d46911946a46f689546"
+    },
+    {
+      "file": "world/c0322.json",
+      "before": "1165b018b735e425133648f4f4766ed98d19ef613f5b9b577c790aac3e5448a7",
+      "after": "1fa7abb76a8e90f9d5a91819efefd016e0464fcf834769bf120e6f642ee4b08d"
+    },
+    {
+      "file": "world/c0323.json",
+      "before": "facd0d77885251c2bb838dbfb2a7e699fa4d28502169ec7cf39e03e03578cb0c",
+      "after": "446f81a2465f2225dfa848bb429d02afd10b949411e77ad207847e4482ff96f6"
+    },
+    {
+      "file": "world/c0324.json",
+      "before": "c4a28e1760852bd1e278356a0fab93bb3e5e1e3b75362ab0f68e32f4881854d5",
+      "after": "bb7520b12316c415ef36aa7bd1f54cd6aa69196c9ad8295862b380ddbf501fbc"
+    },
+    {
+      "file": "world/c0326.json",
+      "before": "f9c482f44c120b2cd8dd8a56069a6d21c4087eb69556e742615120ce415dab4d",
+      "after": "e283bcf02b12ffe38c4f2181b7d0f9f2bf63c1606ef4d07dc73c3116b3289520"
+    },
+    {
+      "file": "world/c0327.json",
+      "before": "0230664a4fd07ec270cc5c13807d4687ac39f8bb9bd6d310b97b5fdaef2d4ff7",
+      "after": "3fb19471818df9e31bea6f0a4610b7201b4af7f8d06445722238ef1d249523ab"
+    },
+    {
+      "file": "world/c0328.json",
+      "before": "6562c7f30f98e1cbde063a5596f07e8cd5ad012003f9c3da63708a6f63e6b8cb",
+      "after": "fe56a1ffb91fb5a961f55e58ab12fa2c4295a2c6a49b7889c11c3fc83c2e0dda"
+    },
+    {
+      "file": "world/c0329.json",
+      "before": "fb10d9cdc973430406421ceb2c33701ec53dc7d997cb0d5fe76d38ecedc5eded",
+      "after": "7a8791c4920a2e635ef1288e2603dbe8f5a366f415db6012234ab9de6625a65d"
+    },
+    {
+      "file": "world/c0330.json",
+      "before": "7d52d90361f288e3774ca22e371306f2bf2e8a445d47f66a25f32b9b3375b5e3",
+      "after": "477704a01300b88988699ac6b751960b478e5d450312ddba51cc68a14cc798da"
+    },
+    {
+      "file": "world/c0333.json",
+      "before": "3e86c4a3d91ddef30a17da5a06d132dedd2ea00e1674b07d5180403acf4cf136",
+      "after": "a345dfb76cff67b385334ca9067197e9658e594cabe8aad1c4a7bdbc9ada8016"
+    },
+    {
+      "file": "world/c0354.json",
+      "before": "bcfc69e500e8001e5c22cd74c8a5da4cc9766637253479059983092f26e6189f",
+      "after": "53a213c9a59636702448f4bf6542b914c90238236865a06d5e274eb3d113d7e4"
+    },
+    {
+      "file": "world/c0355.json",
+      "before": "70214ee4b7fca3563198ba7c18e72f932d800915e59e4eb885cd4667d6230d24",
+      "after": "c8ca4d449cfe64500a00609f5393fddf87e0f0c13498316556304871b2142a63"
+    },
+    {
+      "file": "world/c0381.json",
+      "before": "82070629ec6dc53a0899f8cd0774f1ed02775925a8987f2bf7a5a13774cb78aa",
+      "after": "eb3bfe65f6e8c3c610e2f4da097678c1b6673446ba0e9b57ed661f695102188d"
+    },
+    {
+      "file": "world/c0382.json",
+      "before": "f5c9d232a3529d6faa11dbbcf1af1971ad1ae492d29172037b59bc36a458fe02",
+      "after": "c2cd578c49d2cfe56701c87d0b2dbff23f6c6859ebf58f087b44ccc894704cbf"
+    },
+    {
+      "file": "world/c0383.json",
+      "before": "df9ed5ab965199a23cc47aea0c995ca7b85ecc5ab3c8cbce7ce279d598e5a5bd",
+      "after": "26b630e0a5802bb5fac3bfdceba5ac550f3605c49ea25b45a4307050106c14d2"
+    },
+    {
+      "file": "world/c0384.json",
+      "before": "c5c2482558ece93fa79a7a0f436e25a521574357e4afdabeb8a6051df8cf1563",
+      "after": "a3297eef1bebb5a2578c6aee54d6238e461eda9e9299f033665e906e84a1a39b"
+    },
+    {
+      "file": "world/c0398.json",
+      "before": "6052901cab9eea111b9fd6cd2d09aef082343b7a1e79e0bfb6ed5974920b18d6",
+      "after": "70fe778cb8254d54c10c0e25936f1aab942950f0d0eebf0a4c05843fcd97727c"
+    },
+    {
+      "file": "world/c0426.json",
+      "before": "f9b899778237ce1bc43d19ed4a6acd65ccd63cf09c5160889a9d4959fcd32376",
+      "after": "b0b847629aa27f081ac0d1a449fd4b6f35906148f228c25bef2394d34e970642"
+    },
+    {
+      "file": "world/c0429.json",
+      "before": "d98642afd1c354f45e5343135dda4697932f086ee7f457ccc9a086f5cdd2455f",
+      "after": "0bbf0c5f95aea907e9b2a85e8786f8d60c4fe6debb61363c09762122b56de6c0"
+    },
+    {
+      "file": "world/c0430.json",
+      "before": "bdf2b75723d4fe985ba6b9b867c05b6405e2658b672ec6cdb24dfdf4058a0aae",
+      "after": "dea75572ba3b0f062162b756367de5c216330bf1549aa9ef9a6fe873b5162ddb"
+    },
+    {
+      "file": "world/c0431.json",
+      "before": "6b761c11e7d789ba6c9022ddf4e721eff4d5335914f414e33cfb5e75c90834d6",
+      "after": "d5b97fdb0ae72f49d5193b4a5bb416dee605a5331c719bc0edab76617083e2ba"
+    },
+    {
+      "file": "parks/zion/world/c0000.json",
+      "before": "c2cfac3b5dbe4dbf17341acf9ef50c33a753884009f9d732d0926aac899bfbf7",
+      "after": "944d8a84ee96604f9a221bf840b1d73ab1d6d8ecece36beca751b9b25587638c"
+    },
+    {
+      "file": "parks/zion/world/c0002.json",
+      "before": "854121a3da26c9819ea0cc87125db0287e31dc03729333cc1e82ac8bcbf1d361",
+      "after": "1176bb8baeaaaeba021cd7087aec87a892f5f5d69755bd59521c3c706eef1db1"
+    },
+    {
+      "file": "detours/brian-head/world/c0005.json",
+      "before": "ba60821364a559a48e6faae0bacfcc59239bef5174087745267ab00d04cab217",
+      "after": "42e4ec2712fe500553c083a9e0d205a910cd252b4f3ec6eafe513e798aae9f50"
+    },
+    {
+      "file": "detours/kern-river/world/c0000.json",
+      "before": "bc9682890c6cc83474c5fd630788f2f07aaa37b4cc99c09dee7ee9daa83c2bc5",
+      "after": "ea939928848bcc9197d5bee8404e56a04fc88d0ed765a3a4f030f16b94646d6c"
+    },
+    {
+      "file": "detours/kern-river/world/c0001.json",
+      "before": "79969759821ff3e5a67271c2bdc093208dc8d04bb631a4b73fca0323520e685b",
+      "after": "897674a3b399c6cdd0b3ed6e7ced60c680420c2bb2aa59606343f288d659a255"
+    },
+    {
+      "file": "detours/kern-river/world/c0006.json",
+      "before": "bc972df2194ee0633764a5c0645411a7183332d9d80eab1c9a36a0e5dcf3b848",
+      "after": "07730d54fd955db05364d05799f670ffcc4580baeade4b2140170c365f34c0cf"
+    },
+    {
+      "file": "detours/kern-river/world/c0007.json",
+      "before": "56132a8461062940762cec0876fc860bfefcce9741a311d34c8c294b04f44cc8",
+      "after": "d442d7528147d7b1ff380d65347a0c09b748b1a3f818d8d6e0788d92680c621f"
+    },
+    {
+      "file": "detours/kern-river/world/c0014.json",
+      "before": "bbd2963d9e7aa612830234e7bff49a6832b49412be9dd6efa8984b0b8a753b91",
+      "after": "f360d7ff6f84f12ddb2d0e9988c7b36013336de8a7da03492bae718a62caead7"
+    },
+    {
+      "file": "detours/kern-river/world/c0015.json",
+      "before": "1c4730a3e9f2943a85f8bc3d54bd9c755cb00858a6f9a142f0edeebbd6354b0b",
+      "after": "d756fa39dca174aefcd09acc9157d2fb3584ed87c405be6367ac83eb2b50ec1f"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0000.json",
+      "before": "6de21a4541f76e30b7f9b138fd6f1aba08de45b54f22d0dd9bf53d92b99ae618",
+      "after": "88886aaab991f07aa7726fe87e911ce068fbf75ec9737d3f3d82ebac105cac6d"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0001.json",
+      "before": "ddf22e1d5fa14a9180382a64830aadc6c15dfb0086fbb8476ea2b6236190d7ef",
+      "after": "a7faa7960a4c23f2d351aa26789b36fda1602980ff42b7e86a87aadd0e0c0341"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0006.json",
+      "before": "f9cbc7e8169ab522662c680994d80ef509fe46063dc726d0d595b5bf5efb7f6c",
+      "after": "3df0c0256e18bc51df56513b3fb4c1f4f08d51033883284dfdb2601f44c83222"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0007.json",
+      "before": "07358e651c031efe2e2f800e91b0c2b364183e99dd595bbd185fcab8bc08be3c",
+      "after": "32d527a881178a067d96d23c10777657e2acfcde98a908a3b5e9238d5b034dca"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0008.json",
+      "before": "1ef1fdc24d6ed24408f89fbc6262a3fb773d87c4d49bbf22512a7db2e5e3db2c",
+      "after": "d54e2e858233913661c098058b56de0600484ec600717ab5fafb31f7278406f7"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0009.json",
+      "before": "9ed9eb17a2d5d3a06c04eb45785c55e2eeecd63e026d61e1ef9f20cff5b57d88",
+      "after": "c8900dc3e614df1c49fb014715492279923a8fdbe4bdfe3c8eff6b81dedbb722"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0020.json",
+      "before": "074f8d6d3353668ed8542ddfc08bf059a485bac25577569ba64db29cdb5d4ee4",
+      "after": "7fa332c8aaeee0364aafda6a27c64750e5cb065b68979fbdaf41c7f5159a35db"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0034.json",
+      "before": "665ba05e7468e6550a652d433adbcf2fe2a9119ec99f4223ba8dfb8b55708d23",
+      "after": "b7aa8ee288fc37cdf79c6424fa90b101a55b9c87c7d34006a67c1380b51e66b0"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0035.json",
+      "before": "90ddbf9114c770a4a6df49488fa036325c9d6abe5e6f7d9bbe711ea26e433383",
+      "after": "bf8816635df0e615da2f0bd161d1344846a1b75338d504a0a0f7fb6c1f6fd7eb"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0042.json",
+      "before": "28c5b6beb9226d08572d0ee95a7be41134e8166dd7735fa080de2708c9222efb",
+      "after": "9f4668b97b3557fcdb9ab27677d926246406be0a8b24c79159c0a291f198f35c"
+    },
+    {
+      "file": "detours/kings-canyon/world/c0043.json",
+      "before": "69cb3c659c5c13655b17f0988dfc8f892b7a8eee1951a68cf845aac096ad832f",
+      "after": "4a396828563ee90197fddbbb13da38bb9b4d945508f378d915e44c6d23185efd"
+    },
+    {
+      "file": "daylight.js",
+      "before": null,
+      "after": "64e6241830e550784fd810d64ff5be503e19448d66c1cab061ec21b101361cbb"
+    },
+    {
+      "file": "roadside-geometry.js",
+      "before": null,
+      "after": "733443a8eca1243f7e89e344c2aae5e80f547c37e50ae8e76e6236f362c5d685"
+    },
+    {
+      "file": "road-grade.js",
+      "before": "7204078d3002d89f3e2e3ebaba262a181d3ebfb0ddd8bc2127305332f9f136a2",
+      "after": "4fd35f86328c30181c20d1dfafa6a09bedca8a8c9f7fa9e24aeb0f9c5c1dd004"
+    },
+    {
+      "file": "road-supports.js",
+      "before": "ce41dcf4a27d27aec733c507a8aa9c3467f847cd8fea7f376113898a743665b2",
+      "after": "089bd36c1c100b911d037fecc16371d51241cf84b0698ae2a76abd016edbe0fa"
+    },
+    {
+      "file": "roadside.js",
+      "before": "f0c274ee902bfb76630a4fafd88bf0820eec9ef007af468e04c8310e0af104a1",
+      "after": "bd14d6be4e7ca232b410f6d8c37f98e78c9e6b0bfac6f68a1287825d7e4b933e"
+    },
+    {
+      "file": "world.js",
+      "before": "70f8ca65bffbeabfd99f7ae84120aa2dd1afbec464ba127e79373b2f3aea3ade",
+      "after": "ee9b3194a207cee17853c02b49f90c0a0e5c057671cc19bc2f003ac763cd5eca"
+    }
+  ]
+}

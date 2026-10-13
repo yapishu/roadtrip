@@ -1,0 +1,165 @@
+{
+  "frames": [
+    {
+      "at": 378.52,
+      "file": "378.520.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21538102115553281,
+          "sun": 1.8763774773333575,
+          "ambient": 2.0274716717036982,
+          "seed": 2752988172
+        },
+        "draws": 1,
+        "triangles": 1341562,
+        "drawCalls": 169,
+        "geometries": 169,
+        "textures": 9,
+        "buildings": 110,
+        "observedWalls": 0,
+        "trees": 23805,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 77399.11450635066,
+            "x": 1122.974719918811,
+            "y": -247.9107031465216,
+            "z": 1388.3148245561295,
+            "phase": 4.296239662735226,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          599.9,
+          1792
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 378.56,
+      "file": "378.560.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21482757701715227,
+          "sun": 1.8769704531959084,
+          "ambient": 2.027339899289798,
+          "seed": 2752988172
+        },
+        "draws": 2,
+        "triangles": 1237292,
+        "drawCalls": 152,
+        "geometries": 174,
+        "textures": 9,
+        "buildings": 110,
+        "observedWalls": 0,
+        "trees": 23805,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 77399.11450635066,
+            "x": 1122.974719918811,
+            "y": -247.9107031465216,
+            "z": 1388.3148245561295,
+            "phase": 4.296239662735226,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          599.9,
+          1792
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 378.6,
+      "file": "378.600.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21427515518882567,
+          "sun": 1.8775623337262581,
+          "ambient": 2.027208370283054,
+          "seed": 2752988172
+        },
+        "draws": 3,
+        "triangles": 1210850,
+        "drawCalls": 148,
+        "geometries": 174,
+        "textures": 9,
+        "buildings": 110,
+        "observedWalls": 0,
+        "trees": 23805,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 77399.11450635066,
+            "x": 1122.974719918811,
+            "y": -247.9107031465216,
+            "z": 1388.3148245561295,
+            "phase": 4.296239662735226,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          599.9,
+          1792
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 378.64,
+      "file": "378.640.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21372375801964727,
+          "sun": 1.8781531164075207,
+          "ambient": 2.027077085242773,
+          "seed": 2752988172
+        },
+        "draws": 4,
+        "triangles": 1202658,
+        "drawCalls": 147,
+        "geometries": 174,
+        "textures": 9,
+        "buildings": 110,
+        "observedWalls": 0,
+        "trees": 23805,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 77399.11450635066,
+            "x": 1122.974719918811,
+            "y": -247.9107031465216,
+            "z": 1388.3148245561295,
+            "phase": 4.296239662735226,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          599.9,
+          1792
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

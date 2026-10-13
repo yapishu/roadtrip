@@ -1,0 +1,110 @@
+{
+  "scope": "Forward six-metre rays through the driven lane at 0.6, 1.2, and 1.8 metres above the road; affected sections retested after barrier clipping",
+  "sections": [
+    {
+      "chunk": 0,
+      "source": "",
+      "probes": 6177,
+      "triangles": 26518,
+      "hits": []
+    },
+    {
+      "chunk": 1,
+      "source": "",
+      "probes": 6180,
+      "triangles": 42614,
+      "hits": []
+    },
+    {
+      "chunk": 2,
+      "source": "",
+      "probes": 6183,
+      "triangles": 45654,
+      "hits": []
+    },
+    {
+      "chunk": 3,
+      "source": "",
+      "probes": 6234,
+      "triangles": 46710,
+      "hits": []
+    },
+    {
+      "chunk": 4,
+      "source": "",
+      "probes": 6147,
+      "triangles": 51794,
+      "hits": []
+    },
+    {
+      "chunk": 5,
+      "source": "",
+      "probes": 6156,
+      "triangles": 14122,
+      "hits": []
+    },
+    {
+      "chunk": 6,
+      "source": "",
+      "probes": 6063,
+      "triangles": 34984,
+      "hits": []
+    },
+    {
+      "chunk": 7,
+      "source": "",
+      "probes": 6042,
+      "triangles": 20432,
+      "hits": []
+    },
+    {
+      "chunk": 8,
+      "source": "",
+      "probes": 6120,
+      "triangles": 100702,
+      "hits": []
+    },
+    {
+      "chunk": 9,
+      "source": "",
+      "probes": 6078,
+      "triangles": 14498,
+      "hits": []
+    },
+    {
+      "chunk": 10,
+      "source": "",
+      "probes": 6129,
+      "triangles": 53094,
+      "hits": []
+    },
+    {
+      "chunk": 11,
+      "source": "",
+      "probes": 6135,
+      "triangles": 25118,
+      "hits": []
+    },
+    {
+      "chunk": 25,
+      "source": "detours/kings-canyon",
+      "probes": 7620,
+      "triangles": 95642,
+      "hits": []
+    },
+    {
+      "chunk": 28,
+      "source": "detours/kings-canyon",
+      "probes": 6915,
+      "triangles": 284872,
+      "hits": []
+    },
+    {
+      "chunk": 383,
+      "source": "",
+      "probes": 6183,
+      "triangles": 61870,
+      "hits": []
+    }
+  ]
+}

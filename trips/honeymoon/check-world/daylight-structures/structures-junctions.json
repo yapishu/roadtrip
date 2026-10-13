@@ -1,0 +1,11 @@
+{
+  "sections": 547,
+  "structureJunctions": 4671,
+  "fixedJunctions": 0,
+  "unresolvedJunctions": [],
+  "largestRepairs": [],
+  "unbuiltRoads": [],
+  "steepGrades": [],
+  "chunkSeams": [],
+  "scope": "Shared original OSM nodes within 180 m of the driving path; five-metre grade samples; chunk boundaries"
+}

@@ -3,6 +3,7 @@ import * as THREE from './vendor/three.module.js';
 import { addRoadside } from './roadside.js';
 import { gradeTerrain, normalAt, groundHeight, joinTerrainEdge, minorRoadSurfaces, vehicleTunnel } from './road-grade.js';
 import { addAmbient } from './ambient.js';
+import { addDaylight } from './daylight.js';
 import { scheduleAmbient } from './ambient-plan.js';
 import { roadSupports } from './road-supports.js';
 import { buildingPlans, addBuildings } from './buildings.js';
@@ -16,9 +17,10 @@ export async function createRoad(canvas,opts={}) {
   const renderer=new THREE.WebGLRenderer({antialias:false,alpha:false,preserveDrawingBuffer:true});
   renderer.setSize(W,H);renderer.setPixelRatio(1);renderer.outputColorSpace=THREE.SRGBColorSpace;
   const scene=new THREE.Scene();scene.background=new THREE.Color('#aac8dc');scene.fog=new THREE.FogExp2('#b7c6cb',.000045);
-  scene.add(new THREE.HemisphereLight(0xe7f0ff,0x71664f,2.0));
+  const hemisphere=new THREE.HemisphereLight(0xe7f0ff,0x71664f,2.0);scene.add(hemisphere);
   const sun=new THREE.DirectionalLight(0xfff0d7,2.0);sun.position.set(-6000,10000,4000);scene.add(sun);
   const camera=new THREE.PerspectiveCamera(64,W/H,.25,45000);
+  const daylight=addDaylight(scene,sun,hemisphere,opts.skySeed??Math.floor(Math.random()*4294967296));
   const baseIDX=await fetch('data/index.json').then(r=>r.json());
   const journey=await fetch('journey.json').then(r=>r.ok?r.json():null);
   const IDX=journey?{...baseIDX,total:journey.total,stops:journey.stops}:baseIDX,LEN=IDX.total;
@@ -88,7 +90,7 @@ export async function createRoad(canvas,opts={}) {
   function quad(out,a,b,c,d){out.push(...a,...c,...b,...a,...d,...c);}
   function strip(out,points,width,offset=0,lift=0){for(let i=0;i<points.length-1;i++){const a=points[i],b=points[i+1],na=normalAt(points,i),nb=normalAt(points,i+1),l=offset-width/2,r=offset+width/2;quad(out,[a[0]+na[0]*l,a[2]+lift,-a[1]-na[1]*l],[b[0]+nb[0]*l,b[2]+lift,-b[1]-nb[1]*l],[b[0]+nb[0]*r,b[2]+lift,-b[1]-nb[1]*r],[a[0]+na[0]*r,a[2]+lift,-a[1]-na[1]*r]);}}
   function roadMeshes(d,group,groundAt){const minorSurfaces=minorRoadSurfaces(d.roads),paved=[],unpaved=[],lines=[],edges=[],tunnelWalls=[],tunnelFloor=[],rails=[],bridges=[],banks=[];
-    const supports=roadSupports(d.roads,groundAt);
+    const supports=roadSupports(d.roads,groundAt,d.route);
     for(const [faces,out]of [[supports.earth,banks],[supports.concrete,bridges],[supports.rails,rails]])for(const face of faces)quad(out,...face.map(p=>[p[0],p[2],-p[1]]));
     for(const r of d.roads){const small=/footway|path|steps|cycleway|track/.test(r.kind),enclosed=vehicleTunnel(r);
       if(minorSurfaces.has(r)){for(const polygon of minorSurfaces.get(r))for(let i=1;i<polygon.length-1;i++)for(const p of [polygon[0],polygon[i+1],polygon[i]])unpaved.push(p[0],p[2]+.13,-p[1]);}
@@ -100,7 +102,7 @@ export async function createRoad(canvas,opts={}) {
         if(r.bridge){
           const na=normalAt(r.points,i),nb=normalAt(r.points,i+1),corner=(p,n,side,z)=>[p[0]+n[0]*side*r.width/2,p[2]+z,-p[1]-n[1]*side*r.width/2];
           quad(bridges,corner(a,na,-1,-.8),corner(b,nb,-1,-.8),corner(b,nb,1,-.8),corner(a,na,1,-.8));
-          for(const sign of [-1,1]){quad(bridges,corner(a,na,sign,-.8),corner(b,nb,sign,-.8),corner(b,nb,sign,.1),corner(a,na,sign,.1));quad(rails,corner(a,na,sign,.5),corner(b,nb,sign,.5),corner(b,nb,sign,.9),corner(a,na,sign,.9));}
+          if(small)for(const sign of [-1,1]){quad(bridges,corner(a,na,sign,-.8),corner(b,nb,sign,-.8),corner(b,nb,sign,.1),corner(a,na,sign,.1));quad(rails,corner(a,na,sign,.5),corner(b,nb,sign,.5),corner(b,nb,sign,.9),corner(a,na,sign,.9));}
         }
       }
       if(r.bridge){let distance=0,next=16;
@@ -109,7 +111,7 @@ export async function createRoad(canvas,opts={}) {
             if(top-base<2||d.roads.some(other=>other!==r&&other.points.some(p=>p[2]<top-1&&Math.hypot(p[0]-x,p[1]-y)<other.width/2+5)))continue;
             // Representative piers leave the mapped roads below unobstructed.
             const half=Math.min(1.2,r.width*.1),corners=[[x-half,y-half],[x+half,y-half],[x+half,y+half],[x-half,y+half]];
-            for(let j=0;j<4;j++){const p=corners[j],q=corners[(j+1)%4];quad(bridges,[p[0],base,-p[1]],[q[0],base,-q[1]],[q[0],top,-q[1]],[p[0],top,-p[1]]);}
+            for(let j=0;j<4;j++){const p=corners[j],q=corners[(j+1)%4];const foot=Math.min(base,...corners.map(c=>groundAt(c[0],c[1])-.4));quad(bridges,[p[0],foot,-p[1]],[q[0],foot,-q[1]],[q[0],top,-q[1]],[p[0],top,-p[1]]);}
           }distance+=length;
         }
       }
@@ -201,7 +203,7 @@ export async function createRoad(canvas,opts={}) {
   }
   function dataAt(s){const loc=locate(s);return chunks.get(loc.source+':'+Math.floor(loc.distance/10000));}
   function routeAt(d,s){const ps=d.route;let lo=0,hi=ps.length-1;while(lo<hi-1){const m=(lo+hi)>>1;if(ps[m][0]>s)hi=m;else lo=m;}const a=ps[lo],b=ps[hi],t=clamp((s-a[0])/(b[0]-a[0]||1),0,1);return [s,...[1,2,3,4].map(i=>a[i]+(b[i]-a[i])*t),a[5],a[6]];}
-  function render(s){const ch=dataAt(s);if(!ch)return;const key=s+':'+look+':'+ch.source+':'+ch.d.c;if(key===lastRender&&active===ch)return;lastRender=key;s=locate(s).distance;const d=ch.d;if(active!==ch){if(active)active.group.visible=false;ch.group.visible=true;active=ch;}
+  function render(s){const journeyDistance=s,ch=dataAt(s);if(!ch)return;const key=s+':'+look+':'+ch.source+':'+ch.d.c;if(key===lastRender&&active===ch)return;lastRender=key;s=locate(s).distance;const d=ch.d;if(active!==ch){if(active)active.group.visible=false;ch.group.visible=true;active=ch;}
     const p=routeAt(d,s),before=routeAt(d,Math.max(0,s-3)),after=routeAt(d,Math.min(sources[ch.source].total,s+9));let dx=after[1]-before[1],dy=after[2]-before[2],n=Math.hypot(dx,dy)||1;dx/=n;dy/=n;
     const lane=Math.min(p[4]/4,2.6),x=p[1]+dy*lane,y=p[2]-dx*lane;
     let gaze=look;
@@ -216,11 +218,12 @@ export async function createRoad(canvas,opts={}) {
     }}
     camera.position.set(x,p[3]+1.8,-y);const angle=gaze*Math.PI/180,fx=dx*Math.cos(angle)+dy*Math.sin(angle),fy=dy*Math.cos(angle)-dx*Math.sin(angle);const slope=clamp((after[3]-before[3])/Math.max(1,after[0]-before[0]),-.5,.5);camera.lookAt(x+fx*80,p[3]+1.8+slope*80*Math.cos(angle)-1.5,-y-fy*80);
     ch.animateAmbient(s,T.now);
+    daylight.update(journeyDistance,T.now,camera);
     renderer.render(scene,camera);ctx.drawImage(renderer.domElement,0,0);draws++;
   }
   const ready=s=>!!dataAt(s),placeAt=s=>({here:captionAt(s),area:''});
   function resize(width,height){if(width===W&&height===H)return;W=width;H=height;canvas.width=W;canvas.height=H;ctx.imageSmoothingEnabled=false;renderer.setSize(W,H);camera.aspect=W/H;camera.updateProjectionMatrix();lastRender='';}
   function drawLocalMap(g,s,size){g.fillStyle='#ded5bc';g.fillRect(0,0,size,size);const ch=dataAt(s);if(!ch)return;const p=routeAt(ch.d,locate(s).distance);g.strokeStyle='#777';for(const r of ch.d.roads){g.beginPath();r.points.forEach((v,i)=>g[i?'lineTo':'moveTo'](size/2+(v[0]-p[1])/15,size/2-(v[1]-p[2])/15));g.stroke();}g.fillStyle='#b34f32';g.fillRect(size/2-2,size/2-2,4,4);}
   function mapState(s){const chunk=dataAt(s);if(!chunk)return null;const d=chunk.d,at=locate(s).distance,p=routeAt(d,at),a=routeAt(d,Math.max(0,at-3)),b=routeAt(d,Math.min(sources[chunk.source].total,at+9));return {position:[d.origin[0]+p[1],d.origin[1]+p[2]],direction:[b[1]-a[1],b[2]-a[2]],chunk};}
-  return {get W(){return W;},get H(){return H;},resize,IDX,LEN,settleFrames:1,KITJ:{pictures:{}},T,chunks,locate,captionAt,streamAround,ready,render,placeAt,drawLocalMap,mapState,roadAt:s=>{const ch=dataAt(s),p=ch&&routeAt(ch.d,locate(s).distance);return {road:p?.[6]||'',elev:p?.[3]};},setLook:deg=>look=deg,stats:()=>({source:active?.source,draws,triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,buildings:active?.d.buildings.length||0,observedWalls:active?.group.userData.observedWalls||0,trees:active?.group.userData.trees||0,roadside:active?.group.userData.roadside||0,ambient:active?.group.userData.ambient||[],detailPatches:active?.d.details?.length||0,relief:active?[active.d.near.min,active.d.near.max]:[],failures:[...failures.keys()]}),dispose:()=>renderer.dispose()};
+  return {get W(){return W;},get H(){return H;},resize,IDX,LEN,settleFrames:1,KITJ:{pictures:{}},T,chunks,locate,captionAt,streamAround,ready,render,placeAt,drawLocalMap,mapState,roadAt:s=>{const ch=dataAt(s),p=ch&&routeAt(ch.d,locate(s).distance);return {road:p?.[6]||'',elev:p?.[3]};},setLook:deg=>look=deg,stats:()=>({source:active?.source,sky:daylight.stats(),draws,triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,buildings:active?.d.buildings.length||0,observedWalls:active?.group.userData.observedWalls||0,trees:active?.group.userData.trees||0,roadside:active?.group.userData.roadside||0,ambient:active?.group.userData.ambient||[],detailPatches:active?.d.details?.length||0,relief:active?[active.d.near.min,active.d.near.max]:[],failures:[...failures.keys()]}),dispose:()=>renderer.dispose()};
 }

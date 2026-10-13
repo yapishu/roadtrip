@@ -224,7 +224,7 @@ def features(extract, origin, g, dem):
                 heights = gaussian_filter1d(heights,.8)
             roads.append(dict(id=key, points=np.round(np.column_stack([dense-origin,heights+.12]),2).tolist(),
                 kind=t['highway'], width=road_width(t), lanes=number(t.get('lanes')),
-                name=t.get('name',''), bridge=bridge, tunnel=tunnel, surface=t.get('surface'),
+                name=t.get('name',''), bridge=bridge, tunnel=tunnel, layer=number(t.get('layer'),1 if bridge else 0), surface=t.get('surface'),
                 oneway=t.get('oneway') in ('yes','1')))
             attach(roads[-1], e['geometry'], origin, e['nodes'])
         if e['type']=='node' and t.get('natural')=='tree' and 'lon' in e:

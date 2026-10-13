@@ -84,6 +84,7 @@ not produce the 3D world.
 .terrain-venv/bin/python scripts/refine-road-terrain.py --trip "$TRIP" --workers 2
 .terrain-venv/bin/python scripts/sample-road-elevation.py --trip "$TRIP" --workers 2
 .terrain-venv/bin/python scripts/reconcile-world-roads.py --trip "$TRIP"
+.terrain-venv/bin/python scripts/repair-bridge-clearance.py --trip "$TRIP" --output "$TRIP/check-world/bridge-clearance.json" --apply
 ```
 
 Choose valid representative preview chunks; `0,1` is illustrative. Each chunk
@@ -104,6 +105,7 @@ Do not smooth away real relief to hide a bad road profile. Inspect the mechanism
 
 - Retain original OSM node IDs. Connect bridge and tunnel fragments at shared nodes, including ramps that meet the middle of a deck. Crossing coordinates alone do not establish a junction.
 - Include the roads attached to bridge endpoints beyond a narrow extraction corridor. `cache-road-nodes.py` enriches cached extracts from source PBFs; `complete-bridge-approaches.py` adds mapped connecting roads.
+- Retain OSM layers and check clearance above crossing traffic. Carry deck-height corrections through the connected approaches; nearby ramp junctions stay at grade. Clearance dimensions are representative where unmeasured.
 - Exclude proposed, construction, and removed roads from physical geometry.
 - Match the camera to an aligned road segment, not merely the closest point at
   an interchange.
@@ -152,6 +154,7 @@ interpolation when calculating chunk bounds.
 .terrain-venv/bin/python scripts/bake-waterways.py --trip "$TRIP/parks/$ID"
 node scripts/build-journey.mjs "$TRIP"
 .terrain-venv/bin/python scripts/reconcile-world-roads.py --trip "$TRIP"
+.terrain-venv/bin/python scripts/repair-bridge-clearance.py --trip "$TRIP" --output "$TRIP/check-world/bridge-clearance.json" --apply
 .terrain-venv/bin/python scripts/bake-map.py --trip "$TRIP"
 ```
 
@@ -172,7 +175,7 @@ camera looks toward a landmark.
 ## New-route viewer configuration
 
 Copy `skill/assets/viewer.html` and `caption.js` into the trip. Copy
-`templates/{world.js,buildings.js,building-shapes.js,road-grade.js,roadside.js,ambient.js,ambient-plan.js,road-supports.js,pixel-viewport.js,minimap.js,minimap.css}` and `templates/vendor/`
+`templates/{world.js,buildings.js,building-shapes.js,road-grade.js,roadside.js,roadside-geometry.js,daylight.js,ambient.js,ambient-plan.js,road-supports.js,pixel-viewport.js,minimap.js,minimap.css}` and `templates/vendor/`
 alongside them, and copy the trip's `viewer.html` to `index.html`.
 
 Add `title` and a `credits` array of `{name,url}` entries to `data/index.json`.

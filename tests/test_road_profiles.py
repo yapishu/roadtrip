@@ -5,13 +5,20 @@ import unittest
 from pathlib import Path
 import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from road_topology import physical,attach,PROJECT
+from road_topology import physical,attach,PROJECT,merge_samples
 spec=importlib.util.spec_from_file_location('profiles',Path(__file__).resolve().parents[1]/'scripts/refine-road-profiles.py');profiles=importlib.util.module_from_spec(spec);spec.loader.exec_module(profiles)
 
 def road(points,nodes,bridge=False,tunnel=False):
  return dict(points=points,nodes=nodes,bridge=bridge,tunnel=tunnel,kind='primary',width=7,name='')
 
 class Junctions(unittest.TestCase):
+ def test_denser_remote_samples_do_not_replace_nearby_measured_elevations(self):
+  near=dict(points=np.array([[0,0,10],[50,0,15],[100,0,20]]),nodes=[[0,1],[2,2]])
+  far=dict(points=np.array([[0,0,500],[25,0,500],[50,0,500],[75,0,500],[100,0,500]]),nodes=[[0,1],[4,2]])
+  result,quality=merge_samples(near,np.array([1000.,1000.,1000.]),far,np.ones(5))
+  self.assertEqual(result['points'][:,2].tolist(),[10,12.5,15,17.5,20]);self.assertEqual(result['nodes'][-1][0],4)
+  result,_=merge_samples(result,quality,near,np.full(3,2000.))
+  self.assertEqual(result['points'][:,2].tolist(),[10,12.5,15,17.5,20])
  def test_ramp_meets_interior_bridge_node(self):
   roads=[road([[0,0,10],[50,0,5],[100,0,10]],[[0,'west'],[1,'merge'],[2,'east']],bridge=True),road([[50,-80,0],[50,0,0]],[[0,'ground'],[1,'merge']],bridge=True),road([[-80,0,10],[0,0,10]],[[0,'approach'],[1,'west']]),road([[100,0,10],[180,0,10]],[[0,'east'],[1,'depart']])]
   profiles.connect_decks(roads)

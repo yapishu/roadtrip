@@ -10,9 +10,25 @@ for(const part of journey.segments)if(part.source)targets.push({name:part.source
 for(const km of [40.17,86.435,108.605,474.9,477.95,480.02,482.37,3246.455,1131,2142.77,2147.61,2154.15,2158.99,2160,3831.63]){const at=toGlobal(km*1000);if(at!==null)targets.push({name:'Road profile '+km,at});}
 const browser=await chromium.launch({headless:true,args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const page=await browser.newPage({viewport:{width:1280,height:720}}),errors=[],frames=[];page.on('pageerror',e=>errors.push(e.message));
+// Mark the actual sky only during the pixel audit; screenshots retain daylight.
+await page.route('**/world.js',async route=>{
+ const response=await route.fetch(),source=await response.text(),anchor='return {get W(){return W;}';
+ if(!source.includes(anchor))throw Error('World inspection entry point is missing');
+ const body=source.replace(anchor,`return {skyPixels(){
+   const u=scene.children.find(o=>o.material?.uniforms?.cloudMap).material.uniforms,names=['top','horizon','cloud','shade'],saved=names.map(k=>u[k].value.clone()),cover=u.cover.value;
+   for(const k of names)u[k].value.set('#ff00ff');u.cover.value=0;
+   renderer.render(scene,camera);ctx.drawImage(renderer.domElement,0,0);
+   const p=ctx.getImageData(0,0,W,H),colors=new Set();let skyLow=0;
+   for(let y=0;y<H;y++)for(let x=0;x<W;x++){const i=(y*W+x)*4,r=p.data[i],g=p.data[i+1],b=p.data[i+2];colors.add((r<<16)|(g<<8)|b);if(y>H*.75&&r===255&&g===0&&b===255)skyLow++;}
+   names.forEach((k,i)=>u[k].value.copy(saved[i]));u.cover.value=cover;renderer.render(scene,camera);ctx.drawImage(renderer.domElement,0,0);
+   return {colors:colors.size,skyLow};
+ },get W(){return W;}`);
+ await route.fulfill({response,body});
+});
+page.on('console',message=>{if(/Shader Error|INVALID_OPERATION/.test(message.text()))errors.push(message.text());});
 await page.goto(new URL('?world=1&paused=1&display=1',url).href);await page.waitForFunction(()=>window.__trip,{timeout:60000});
 for(const [i,target]of targets.entries()){
- try{const info=await page.evaluate(km=>window.__trip.goto(km),target.at/1000);const pixels=await page.evaluate(()=>{const c=document.querySelector('#c'),p=c.getContext('2d').getImageData(0,0,c.width,c.height),colors=new Set();let skyLow=0;for(let y=0;y<c.height;y++)for(let x=0;x<c.width;x++){const i=(y*c.width+x)*4,r=p.data[i],g=p.data[i+1],b=p.data[i+2];colors.add((r<<16)|(g<<8)|b);if(y>c.height*.75&&r===170&&g===200&&b===220)skyLow++;}return {colors:colors.size,skyLow};});
+ try{const info=await page.evaluate(km=>window.__trip.goto(km),target.at/1000);const pixels=await page.evaluate(()=>__trip.road.skyPixels());
  const name=`frame-${String(i).padStart(2,'0')}.png`;await page.screenshot({path:join(out,name)});frames.push({...target,...info,...pixels,file:name});console.log(i,target.name,JSON.stringify({triangles:info.stats.triangles,skyLow:pixels.skyLow,failures:info.stats.failures}));}
  catch(e){errors.push(target.name+': '+e.message);console.log('FAILED',target.name,e.message);}
 }
