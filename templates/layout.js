@@ -81,7 +81,7 @@ export function buildChunk(d, env) {
   const { idx, kit } = env, TOTAL = idx.total, DRIVE = idx.drive === 'left' ? -1 : 1, n = Math.round(d.len / SEG) + 1, segs = new Array(n), smp = d.samples, nm = i => (i >= 0 ? d.names[i] : null), step = d.step || 10;
   // 1. slices
   for (let k = 0; k < n; k++) {
-    const t = k * SEG / step, a = Math.min(smp.length - 1, Math.floor(t)), b = Math.min(smp.length - 1, a + 1), f = t - a, A = smp[a], B = smp[b];
+    const at = Math.min(k * SEG, d.len), t = at / step, a = Math.min(smp.length - 1, Math.floor(t)), b = Math.min(smp.length - 1, a + 1), span = Math.min(step, d.len - a * step), f = b === a || span <= 0 ? 0 : (at - a * step) / span, A = smp[a], B = smp[b];
     let ha = A[0] / 1000, dh = wrapA(B[0] / 1000 - ha); const X = f < 0.5 ? A : B, cls = CLASSW[X[2]] ? X[2] : 'mi', P0 = d.xy[a], P1 = d.xy[b];
     segs[k] = { s: d.s0 + k * SEG, x: P0[0] + (P1[0] - P0[0]) * f, y: P0[1] + (P1[1] - P0[1]) * f, hd0: ha + dh * f, h: (A[1] + (B[1] - A[1]) * f) / 10, cls, L: X[3], R: X[4], bridge: !!X[5], road: nm(X[6]), bill: [], ch: d, c: d.c };
   }
@@ -112,7 +112,8 @@ export function buildChunk(d, env) {
   // 2. buildings on their footprints
   const planes = [], recent = { [-1]: [], [1]: [] }, remember = (sg, k) => { const r = recent[sg]; r.push(k); if (r.length > 6) r.shift(); };
   const choose = (type, h, s, sg, salt, dense) => {
-    const roles = rolesFor(type, h, dense), pool = kit.pool(roles, s), pic = pickFrom(pool, hash(Math.round(s), salt + d.c * 31), recent[sg]); if (!pic) return null;
+    const roles = rolesFor(type, h, dense), homes = idx.residentialLawns && type === 'house' ? kit.pool(['house'], s) : [];
+    const pool = homes.length ? homes : kit.pool(roles, s), pic = pickFrom(pool, hash(Math.round(s), salt + d.c * 31), recent[sg]); if (!pic) return null;
     const look = lookFor(pic, s, sg, pool.length); remember(sg, pic); return { pic, role: kit.info(pic)?.role, pool, ...look };
   };
   // a look: a mirrored and/or tinted copy, only needed when the kit is small (with 8+ pictures per pool: plain)
@@ -129,7 +130,8 @@ export function buildChunk(d, env) {
     // (the row behind still shows what really stands further back)
     const setback = denseAt(d.s0 + s) && Math.abs(side) > edge + 6 && Math.abs(side) < 40 ? edge + 3 : Math.max(edge, Math.abs(side));
     const p0 = { at: d.s0 + s, len: len + 0.4, side: sg * setback, hgt: h, ...first, depth: depth || 0, name, type, real: true };
-    planes.push(...splitFront(p0, ATTACHED.has(role) ? 'row' : 'detached', i => choose(type, hgt, d.s0 + s + i * 37, sg, 13 + i, dense), heightFor, natural));
+    if (idx.residentialLawns && type === 'house') planes.push(p0);
+    else planes.push(...splitFront(p0, ATTACHED.has(role) ? 'row' : 'detached', i => choose(type, hgt, d.s0 + s + i * 37, sg, 13 + i, dense), heightFor, natural));
   }
   // tall buildings further back, seen over the street wall. Towers are seen from far off, so the same picture is never
   // used twice within 600 m of skyline (the street's own memory of six is far too short for them).
@@ -147,7 +149,7 @@ export function buildChunk(d, env) {
       for (const sg of [-1, 1]) { const land = sg > 0 ? q.R : q.L, r = hrnd(q.s, sg * 31), edge = q.rw + q.sw + 0.4;
         if (land === 'water' || land === 'grass' || land === 'forest' || land === 'marsh' || land === 'sand' || land === 'lot' || hasFront(q.s, sg, 14)) continue;
         if (q.dense && land === 'pave') { const h = 12 + r * 14, c = choose('commercial', h, q.s, sg, 41, true); wall(q, sg, c, 20, edge + 0.5, heightFor(c?.pic, 0, q.s) * (h > 18 ? 1.3 : 1)); }
-        else if (land === 'lawn' && r < 0.8) { const c = choose('house', 0, q.s, sg, 43, false); wall(q, sg, c, 12 + r * 4, edge + 6 + r * 8, heightFor(c?.pic, 0, q.s)); }
+        else if (land === 'lawn' && r < 0.8 && !idx.residentialLawns) { const c = choose('house', 0, q.s, sg, 43, false); wall(q, sg, c, 12 + r * 4, edge + 6 + r * 8, heightFor(c?.pic, 0, q.s)); }
         else if (land === 'farm' && k % 55 === 6 && r < 0.45) { const c = choose('farm', 0, q.s, sg, 47, false); wall(q, sg, c, 22, edge + 25 + r * 40, heightFor(c?.pic, 0, q.s)); }
         else if (land === 'pave' && r < 0.5) { const c = choose('commercial', 0, q.s, sg, 49, false); wall(q, sg, c, 16, edge + 3 + r * 5, heightFor(c?.pic, 0, q.s)); } } }
     finishPlanes(planes, cross, segs, d, (type, h, s, sg) => choose(type, h, s, sg, 53, true), heightFor, natural);
@@ -158,7 +160,7 @@ export function buildChunk(d, env) {
     // shows the side walls of its two neighbours and a building behind, never open sky down to the ground
     for (const sg of [-1, 1]) { const row = planes.filter(p => Math.sign(p.side) === sg && !p.back).sort((a, b) => a.at - b.at);
       for (let i = 0; i + 1 < row.length; i++) { const p = row[i], q = row[i + 1], end = p.at + p.len, gap = q.at - end; if (gap < 0.3 || gap > 60) continue;
-        const mid = segs[clamp(Math.round((end + gap / 2 - d.s0) / SEG), 0, n - 1)]; if (!mid.town || mid.bridge) continue; const land = sg > 0 ? mid.R : mid.L; if (land === 'water' || land === 'forest') continue;
+        const mid = segs[clamp(Math.round((end + gap / 2 - d.s0) / SEG), 0, n - 1)]; if (!mid.town || mid.bridge || (idx.residentialLawns && !mid.dense)) continue; const land = sg > 0 ? mid.R : mid.L; if (land === 'water' || land === 'forest') continue;
         const back = Math.max(Math.abs(p.side) + (p.capD || 10), Math.abs(q.side) + (q.capD || 10)) + 2;
         if (planes.some(b => b.back && Math.sign(b.side) === sg && Math.abs(b.side) < back + 40 && b.at < end + gap * 0.3 && b.at + b.len > q.at - gap * 0.3 && b.hgt >= 0.9 * Math.min(p.hgt, q.hgt))) continue;   // a lower building behind still leaves sky between two tall ones
         const c = choose('commercial', Math.min(p.hgt, q.hgt), end + 333, sg, 73, true); if (!c) continue;
@@ -188,7 +190,7 @@ export function buildChunk(d, env) {
       else if ((g === 'farm' || g === 'grass') && hrnd(s, s2 * 3 + 1) < (g === 'grass' ? 0.06 : 0.025)) { const t = treePick(kit, s + s2, s2); if (t) q.bill.push({ pic: t, side: s2 * (off + hrnd(s, s2 * 3) * 30), scale: 0.7 + hrnd(s, 8) * 0.6 }); }
       else if ((g === 'farm' || g === 'grass') && !q.town && k % 3 === 0) q.bill.push({ code: 'fence', side: s2 * (off - 0.6) });
       else if (g === 'lawn' && hrnd(s, s2 * 13) < 0.04) { const t = kit.pool(['bush', 'tree'], s), b = pickFrom(t, hash(s, s2 * 17)); if (b) q.bill.push({ pic: b, side: s2 * (off + 1 + hrnd(s, 12) * 4), scale: 0.8 + hrnd(s, 3) * 0.4 }); }
-      else if (g === 'desert' && k % 4 === 0 && hrnd(s, s2 * 11) < 0.5) { const t = kit.pool(['bush', 'tree'], s), b = pickFrom(t, hash(s, s2 * 19)); if (b) q.bill.push({ pic: b, side: s2 * (off + hrnd(s, s2 * 11) * 40), scale: 0.6 + hrnd(s, 10) * 0.7 }); } }
+      else if (g === 'desert' && k % 4 === 0 && hrnd(s, s2 * 11) < 0.18) { const t = kit.pool(['bush'], s), b = pickFrom(t, hash(s, s2 * 19)); if (b) q.bill.push({ pic: b, side: s2 * (off + hrnd(s, s2 * 11) * 40), scale: 0.6 + hrnd(s, 10) * 0.7 }); } }
   }
   for (const c of cross) for (const sg of [-1, 1]) { const k = Math.round((c.at - c.w / 2 - 1 - d.s0) / SEG); if (segs[k] && segs[k].town) segs[k].bill.push({ code: 'signal', side: sg * (segs[k].rw + 0.4) }); }
   // landmarks with a picture stand at their real place; close to the road a building landmark replaces the frontage

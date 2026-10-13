@@ -2,6 +2,8 @@
 //   node bake.mjs --trip TRIP [--step 10] [--corridor 220] [--zoom 12] [--default-land farm|grass|desert]
 //                 [--drive left|right] [--units miles|km] [--centre-line white|yellow]
 //                 [--from-chunk N --to-chunk M] [--no-osm] [--no-landmarks] [--overpass URL]
+//                 [--osm-dir DIR] (local OpenStreetMap extracts grouped by route chunk)
+//                 [--residential-lawns] (preserve mapped residential yards and identify small homes)
 // Reads TRIP/route.json, writes TRIP/data/index.json, TRIP/data/cNNNN.json (one per 10 km) and
 // TRIP/data/landmarks.json. Resumable: finished chunks are skipped; every download is cached in TRIP/.cache.
 //
@@ -111,29 +113,38 @@ for (let c = fromC; c <= Math.min(toC, NCH - 1); c++) {
   const s0 = c * CH, s1 = Math.min(TOTAL, s0 + CH), mid = locate(line, cum, (s0 + s1) / 2), lon0 = mid.lon, lat0 = mid.lat;
   const KX = Math.cos(lat0 * Math.PI / 180) * 111320, KY = 110540;            // local metres around the chunk's middle (x east, y north)
   const toXY = (lon, lat) => [(lon - lon0) * KX, (lat - lat0) * KY], toLL = (x, y) => [lon0 + x / KX, lat0 + y / KY];
-  const S = [];
-  for (let d = s0; d <= s1 + 0.01; d += STEP) { const p = locate(line, cum, Math.min(d, TOTAL)); S.push({ d, xy: toXY(p.lon, p.lat), ll: [p.lon, p.lat] }); }
+  const S = [], sampleEnd = s0 + Math.ceil((s1 - s0) / STEP) * STEP;
+  // Include the endpoint when the last interval is shorter than one sample.
+  for (let d = s0; d <= sampleEnd + 0.01; d += STEP) { const at = Math.min(d, s1), p = locate(line, cum, at); S.push({ d: at, xy: toXY(p.lon, p.lat), ll: [p.lon, p.lat] }); }
   for (const p of S) { const a = locate(line, cum, Math.max(0, p.d - 15)), b = locate(line, cum, Math.min(TOTAL, p.d + 15)), [ax, ay] = toXY(a.lon, a.lat), [bx, by] = toXY(b.lon, b.lat); p.hd = Math.atan2(by - ay, bx - ax); p.h = Math.round((await height(...p.ll)) * 10) / 10; }
 
   let osm = { elements: [] }, lmOsm = { elements: [] }, tallOsm = { elements: [] };
   const corridor = w => { const poly = S.filter((_, k) => k % Math.max(1, Math.round(100 / STEP)) === 0).concat([S.at(-1)]); const side = sg => poly.map(p => toLL(p.xy[0] + sg * Math.sin(p.hd) * w, p.xy[1] - sg * Math.cos(p.hd) * w)).map(([lo, la]) => `${la.toFixed(5)} ${lo.toFixed(5)}`); return [...side(1), ...side(-1).reverse()].join(' '); };
-  if (!A['no-osm']) {
+  if (A['osm-dir']) {
+    const source = readJSON(join(A['osm-dir'], `c${String(c).padStart(4, '0')}.json`));
+    if (!source?.osm?.elements || !source?.landmarks?.elements || !source?.skyline?.elements) throw Error(`missing local OpenStreetMap data for chunk ${c}`);
+    osm = source.osm; lmOsm = source.landmarks; tallOsm = source.skyline;
+  } else if (!A['no-osm']) {
     const P = corridor(CORR);
-    osm = await overpass(`[out:json][timeout:180];(way[highway](poly:"${P}");way[building](poly:"${P}");way[landuse](poly:"${P}");way[natural](poly:"${P}");way[leisure](poly:"${P}");way[waterway](poly:"${P}");way[railway=rail](poly:"${P}");way[amenity=parking](poly:"${P}");relation[natural=water](poly:"${P}");relation[waterway=riverbank](poly:"${P}");relation[landuse](poly:"${P}");relation[building](poly:"${P}");node[place](poly:"${corridor(2500)}"););out geom;`);
+    osm = await overpass(`[out:json][timeout:180];(way[highway](poly:"${P}");way[building](poly:"${P}");way[landuse](poly:"${P}");way[natural](poly:"${P}");way[leisure](poly:"${P}");way[waterway](poly:"${P}");way[railway=rail](poly:"${P}");way[amenity=parking](poly:"${P}");relation[natural](poly:"${P}");relation[waterway=riverbank](poly:"${P}");relation[leisure](poly:"${P}");relation[landuse](poly:"${P}");relation[building](poly:"${P}");node[place](poly:"${corridor(2500)}"););out geom;`);
     if (osm.elements.some(e => e.tags?.natural === 'coastline')) {   // the whole coastline in a box (a corridor cuts it into pieces and the sea fill leaks)
       let a0 = 1e9, b0 = 1e9, a1 = -1e9, b1 = -1e9; for (const p of S) { a0 = Math.min(a0, p.ll[0]); b0 = Math.min(b0, p.ll[1]); a1 = Math.max(a1, p.ll[0]); b1 = Math.max(b1, p.ll[1]); }
       const co = await overpass(`[out:json][timeout:120][bbox:${(b0 - 0.03).toFixed(4)},${(a0 - 0.03).toFixed(4)},${(b1 + 0.03).toFixed(4)},${(a1 + 0.03).toFixed(4)}];way[natural=coastline];out geom;`);
       const seen = new Set(osm.elements.map(e => e.id)); for (const e of co.elements) if (!seen.has(e.id)) osm.elements.push(e); }
     if (!A['no-landmarks']) lmOsm = await overpass(`[out:json][timeout:120];nwr[wikidata][name](poly:"${corridor(1200)}");out center tags;`);
     // tall buildings up to 1.2 km away: the skyline that tells you you are in a city even from a freeway (centres only: light)
-    if (!A['no-skyline']) { const P2 = corridor(1200); tallOsm = await overpass(`[out:json][timeout:120];(way["building:levels"~"^([1-9][0-9]+)$"](poly:"${P2}");way[building]["height"~"^([3-9][0-9]|[1-9][0-9][0-9])"](poly:"${P2}"););out center tags;`); }
+    if (!A['no-skyline']) {
+      const box = [Math.min(...S.map(p => p.ll[1])) - 1200 / KY, Math.min(...S.map(p => p.ll[0])) - 1200 / KX, Math.max(...S.map(p => p.ll[1])) + 1200 / KY, Math.max(...S.map(p => p.ll[0])) + 1200 / KX].map(v => v.toFixed(5)).join(',');
+      tallOsm = await overpass(`[out:json][timeout:60];way[building](${box});out center tags;`);
+    }
   }
   const roads = [], areas = [], bds = [], lines = [], placesN = [];
   for (const e of osm.elements) { const t = e.tags || {};
     if (e.type === 'node') { if (t.place && t.name) placesN.push({ name: t.name, xy: toXY(e.lon, e.lat), rank: /city/.test(t.place) ? 3 : /town/.test(t.place) ? 2 : /village|suburb|borough|quarter|neighbourhood/.test(t.place) ? 1 : /hamlet|locality/.test(t.place) ? 0.5 : 0 }); continue; }
-    if (e.type === 'relation') { const k = t.natural === 'water' || t.waterway === 'riverbank' ? 'water' : t.landuse ? 'l:' + t.landuse : null;
+    if (e.type === 'relation') { const k = t.natural === 'water' || t.waterway === 'riverbank' ? 'water' : t.natural ? 'n:' + t.natural : t.landuse ? 'l:' + t.landuse : t.leisure ? 'p:' + t.leisure : null;
+      const holes = rings((e.members || []).filter(m => m.role === 'inner').map(m => ({ ...m, role: 'outer' }))).map(r => r.map(([lo, la]) => toXY(lo, la)));
       if (t.building) for (const r of rings(e.members || [])) bds.push({ pts: r.map(([lo, la]) => toXY(lo, la)), type: TYPE(`${t.building} ${t.amenity || ''}`), lv: +t['building:levels'] || (parseFloat(t.height) ? parseFloat(t.height) / 3.4 : 0), name: t.name || null });
-      else if (k) for (const r of rings(e.members || [])) areas.push([k, r.map(([lo, la]) => toXY(lo, la))]); continue; }
+      else if (k) for (const r of rings(e.members || [])) areas.push([k, r.map(([lo, la]) => toXY(lo, la)), holes]); continue; }
     if (!e.geometry) continue; const pts = e.geometry.map(g => toXY(g.lon, g.lat));
     if (t.building && t.building !== 'no') bds.push({ pts, type: TYPE(`${t.building} ${t.amenity || ''} ${t.shop ? 'shop' : ''}`), lv: +t['building:levels'] || (parseFloat(t.height) ? parseFloat(t.height) / 3.4 : 0), name: t.name || null });
     else if (t.highway && ROAD[t.highway] && !(t.tunnel && t.tunnel !== 'no') && !(+t.layer < 0) && t.covered !== 'yes') roads.push({ cls: ROAD[t.highway], pts, name: t.name || t.ref || null, bridge: !!t.bridge && t.bridge !== 'no' });
@@ -149,14 +160,20 @@ for (let c = fromC; c <= Math.min(toC, NCH - 1); c++) {
   const RG = grid(roads.map(r => r.pts)), CG = grid(lines.filter(l => l[0] === 'co').map(l => l[1]), 100), WG = grid(lines.filter(l => l[0] === 'rv').map(l => l[1]));
   const bbox = pts => { let a = 1e9, b = 1e9, c2 = -1e9, d = -1e9; for (const [x, y] of pts) { a = Math.min(a, x); b = Math.min(b, y); c2 = Math.max(c2, x); d = Math.max(d, y); } return [a, b, c2, d]; };
   const inPoly = (pts, x, y) => { let r = false; for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) { const [xi, yi] = pts[i], [xj, yj] = pts[j]; if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) r = !r; } return r; };
-  const AR = areas.filter(a => a[1].length > 3 && GROUND(a[0])).map(a => ({ g: GROUND(a[0]), pts: a[1], bb: bbox(a[1]) }));
+  const AR = areas.filter(a => a[1].length > 3 && GROUND(a[0])).map(a => ({ g: GROUND(a[0]), pts: a[1], bb: bbox(a[1]), holes: a[2] || [] }));
+  if (A['residential-lawns']) for (const b of bds) {
+    if (b.type !== 'yes' || b.lv > 2) continue;
+    const x = b.pts.reduce((sum, p) => sum + p[0], 0) / b.pts.length, y = b.pts.reduce((sum, p) => sum + p[1], 0) / b.pts.length;
+    const area = Math.abs(b.pts.reduce((sum, p, i) => { const next = b.pts[(i + 1) % b.pts.length]; return sum + p[0] * next[1] - next[0] * p[1]; }, 0)) / 2;
+    if (area <= 450 && AR.some(a => a.g === 'lawn' && x >= a.bb[0] && x <= a.bb[2] && y >= a.bb[1] && y <= a.bb[3] && inPoly(a.pts, x, y) && !a.holes.some(h => inPoly(h, x, y)))) b.type = 'house';
+  }
   // buildings per 50 m cell: where no land use is mapped, a built-up place is paving or lawn, not farmland
   const BD = new Map(); for (const b of bds) { const [x, y] = b.pts[0], k = Math.floor(x / 50) + ',' + Math.floor(y / 50); BD.set(k, (BD.get(k) || 0) + 1); }
   const builtUp = (x, y) => { let n = 0; for (let i = -1; i <= 1; i++) for (let j = -1; j <= 1; j++) n += BD.get((Math.floor(x / 50) + i) + ',' + (Math.floor(y / 50) + j)) || 0; return n; };
   const groundAt = (x, y) => {
     const co = near(CG, x, y, 150); if (co && co.dx * (y - co.ay) - co.dy * (x - co.ax) < 0) return 'water';   // OSM coastlines run with the sea on their right
-    let best = null, bo = 0; for (const a of AR) { if (x < a.bb[0] || x > a.bb[2] || y < a.bb[1] || y > a.bb[3] || ORDER[a.g] <= bo) continue; if (inPoly(a.pts, x, y)) { best = a.g; bo = ORDER[a.g]; } }
-    if (best === 'lawn' && builtUp(x, y) >= 14) return 'pave';   // residential land packed with buildings is a street of row houses, not lawns
+    let best = null, bo = 0; for (const a of AR) { if (x < a.bb[0] || x > a.bb[2] || y < a.bb[1] || y > a.bb[3] || ORDER[a.g] <= bo) continue; if (inPoly(a.pts, x, y) && !a.holes.some(h => inPoly(h, x, y))) { best = a.g; bo = ORDER[a.g]; } }
+    if (best === 'lawn' && builtUp(x, y) >= 14 && !A['residential-lawns']) return 'pave';   // dense residential land can form a continuous paved street wall
     if (best) return best; const n = builtUp(x, y); return n >= 12 ? 'pave' : n >= 4 ? 'lawn' : DEFAULT_LAND; };
 
   const NAMES = [], nameIdx = n => { if (!n) return -1; let i = NAMES.indexOf(n); if (i < 0) { i = NAMES.length; NAMES.push(n); } return i; };
@@ -183,7 +200,7 @@ for (let c = fromC; c <= Math.min(toC, NCH - 1); c++) {
     for (let k = Math.max(0, Math.floor(a0 / 2)); k <= Math.min(NB - 1, Math.ceil(a1 / 2)); k++) if (d < dist[sg][k]) { dist[sg][k] = d; bins[sg][k] = bi; }
   });
   for (const e of tallOsm.elements) { if (!e.center) continue; const t = e.tags || {}, hgt = parseFloat(t.height) || (+t['building:levels'] || 0) * 3.4; if (hgt < 28) continue;
-    const l = local(...toXY(e.center.lon, e.center.lat), 40); if (!l || Math.abs(l.side) < 60 || l.s < 0 || l.s > s1 - s0) continue;
+    const l = local(...toXY(e.center.lon, e.center.lat), 40); if (!l || Math.abs(l.side) < 60 || Math.abs(l.side) > 1200 || l.s < 0 || l.s > s1 - s0) continue;
     const key = Math.round(l.s / 16) + ':' + Math.sign(l.side) + ':' + Math.round(Math.abs(l.side) / 40); if (taken.has(key)) continue; taken.add(key);
     skyline.push([Math.round(l.s), Math.round(l.side), TYPE(`${t.building} ${t.amenity || ''} ${t.tourism || ''}`), Math.round(hgt), Math.round(Math.min(80, Math.max(20, hgt * 0.5)))]); }
   // the row behind: for every 2 m, the nearest building at least 10 m behind the front one (up to 150 m from the road).
@@ -237,7 +254,10 @@ for (let c = fromC; c <= Math.min(toC, NCH - 1); c++) {
 }
 
 // ---------------------------------------------------------------- landmarks: rank by fame (Wikidata sitelinks) and nearness
-const byQ = new Map(); for (const l of lmAll) { const o = byQ.get(l.qid); if (!o || Math.abs(l.side) < Math.abs(o.side)) byQ.set(l.qid, l); }
+const byQ = new Map();
+for (let c = 0; c < NCH; c++) for (const l of readJSON(join(OUT, `c${String(c).padStart(4, '0')}.json`), {}).lm || []) {
+  const o = byQ.get(l.qid); if (!o || Math.abs(l.side) < Math.abs(o.side)) byQ.set(l.qid, l);
+}
 const qids = [...byQ.keys()], wd = {};
 for (let i = 0; i < qids.length; i += 50) {
   try { const j = JSON.parse(await politeFetch(`https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=sitelinks|descriptions&languages=en&ids=${qids.slice(i, i + 50).join('|')}`, { cacheDir: join(CACHE, 'wikidata'), gapMs: 1000, accept: s => s.startsWith('{') }));
@@ -254,7 +274,7 @@ const along = []; for (const p of allPlaces.sort((a, b) => a[0] - b[0])) { const
 const all = []; for (let c = 0; c < NCH; c++) { const f = join(OUT, `c${String(c).padStart(4, '0')}.json`); if (existsSync(f)) all.push(JSON.parse(readFileSync(f, 'utf8')).summary); }
 writeJSON(join(OUT, 'index.json'), {
   title: `${R.from} to ${R.to}`, from: R.from, to: R.to, stops: R.stops, total: Math.round(TOTAL), chunk: CH, step: STEP, count: NCH, country: R.country || null,
-  drive: A.drive || R.drive || 'right', units: A.units || R.units || 'km', centre: A['centre-line'] || R.centre || 'white', dry: DRY,
+  drive: A.drive || R.drive || 'right', units: A.units || R.units || 'km', centre: A['centre-line'] || R.centre || 'white', dry: DRY, residentialLawns: !!A['residential-lawns'],
   line: encodeLine(simplify(line, Math.max(20, TOTAL / 4000))), places: along.map(p => [Math.round(p[0]), p[1], p[2]]), chunks: all,
   credits: ['Map data © OpenStreetMap contributors (ODbL), openstreetmap.org/copyright', R.source.split(';')[0], 'Elevation: Terrain Tiles (Mapzen/Tilezen on AWS Open Data; SRTM, GMTED, ETOPO1 and others)', 'Landmarks: Wikidata (CC0)'],
 }, true);

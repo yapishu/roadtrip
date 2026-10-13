@@ -62,9 +62,8 @@ addEventListener('keydown', e => {
 });
 
 // ------------------------------------------------------------ credits (required) and the optional readouts
-const RD_LINK = 'https://www.retrodiffusion.ai?ref=YBQJM823';   // affiliate link
 const real = Object.values(road.KITJ.pictures).some(p => !p.placeholder);
-$('credits').innerHTML = `Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> (ODbL) · Route: OSRM · Elevation: Terrain Tiles (Mapzen, AWS) · Landmarks: Wikidata · ${real ? `Art: <a href="${RD_LINK}" target="_blank" rel="noopener sponsored" title="Affiliate link">RetroDiffusion</a> (affiliate link)` : 'Placeholder art'}`;
+$('credits').innerHTML = `Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> (ODbL) · Route: OSRM · Elevation: Terrain Tiles (Mapzen, AWS) · Landmarks: Wikidata · ${real ? `Art: <a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0" target="_blank" rel="noopener">SDXL</a> + <a href="https://huggingface.co/nerijs/pixel-art-xl" target="_blank" rel="noopener">Pixel Art XL</a>` : 'Placeholder art'}`;
 document.title = `${IDX.from.split(',')[0]} to ${IDX.to.split(',')[0]}`;
 const imperial = IDX.units === 'miles', fmt = m => imperial ? `${(m / 1609.34).toFixed(1)} mi` : `${(m / 1000).toFixed(1)} km`;
 function readouts() {

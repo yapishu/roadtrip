@@ -1,0 +1,14 @@
+node_modules/
+trips/*
+!trips/honeymoon/
+**/.cache/
+**/.comfy/
+**/__pycache__/
+*.pyc
+*.log
+.terrain-venv/
+osm-venv/
+bin/
+trips/honeymoon/*-complete
+trips/honeymoon/art-finished
+trips/honeymoon/remote-data.json

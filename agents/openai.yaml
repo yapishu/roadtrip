@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel Path"
+  short_description: "Pixel-art road trips with local GPU scenery"
+  default_prompt: "Use $pixel-path to build a pixel-art road trip between two real places."

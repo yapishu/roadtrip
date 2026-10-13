@@ -2,7 +2,7 @@
 //   node clean.mjs --trip TRIP [--only NAME,NAME]
 // Reads TRIP/art/raw/<name>.png, writes TRIP/art/<name>.png, TRIP/art/kit.json and TRIP/art/contact.png (a contact
 // sheet of every picture with its warnings: LOOK AT IT). Names listed in TRIP/art/drop.txt (one per line) are never
-// used; add a picture there when it looks wrong, then re-roll it with rd.mjs run --regen NAME.
+// used; add a picture there when it looks wrong, then re-roll it with comfy.mjs run --regen NAME.
 //
 // Every kind of picture has its own steps (generated art comes back nearly right; the last bit is here):
 //   facade     flood away the white (or flat) backdrop from the edges, defringe, then no see-through anywhere below the
@@ -19,6 +19,7 @@
 //   narrow a facade that came out as a sliver (under 40% of the picture's width)
 //   ground a tree or prop standing on its own painted patch of ground (warning)
 // boxed, sky, cut, narrow and empty pictures are dropped automatically; the viewer never shows them.
+import { remapPalette } from './comfy-workflow.mjs';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { args, readJSON, writeJSON, readPNG, writePNG, newImage, fillRect, drawText, blit } from './lib.mjs';
@@ -106,6 +107,7 @@ for (const j of plan.jobs) {
   if (out && j.kind === 'facade' && out.width < j.width * 0.4) flags.push('narrow');   // a sliver of a building (a fire escape, a doorway), not a facade
   if (out && j.kind === 'sprite' && groundPatch(out)) flags.push('ground?');
   const drop = dropList.has(j.name) || flags.some(f => ['empty', 'tiny', 'cut', 'boxed', 'sky', 'narrow'].includes(f));
+  if (out && j.palette) remapPalette(out, readPNG(j.palette));
   if (out) writePNG(join(ART, j.name + '.png'), out);
   kit.pictures[j.name] = { file: `art/${j.name}.png`, role: j.role, theme: j.theme, kind: j.kind, w: out?.width || 0, h: out?.height || 0, hm: j.hm, avg: out ? avgColour(out) : null,
     ...(j.label ? { label: j.label } : {}), ...(j.qid ? { qid: j.qid } : {}), placeholder: false, drop, flags };

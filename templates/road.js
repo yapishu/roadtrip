@@ -72,12 +72,14 @@ export async function createRoad(canvas, opts = {}) {
   // ============================================================ STREAMING
   const CHUNKS = new Map(), env = { idx: IDX, kit: KIT, landmarks: LMS };
   async function loadChunk(c) {
-    if (c < 0 || c >= IDX.count || CHUNKS.has(c)) return; CHUNKS.set(c, { loading: true });
-    try { const d = await (await fetch(`data/c${String(c).padStart(4, '0')}.json`)).json(); CHUNKS.set(c, buildChunk(d, env)); }
-    catch (e) { console.warn('chunk', c, e); CHUNKS.set(c, { failed: true }); }
+    if (c < 0 || c >= IDX.count) return;
+    const cached = CHUNKS.get(c); if (cached && (!cached.failed || Date.now() < cached.retryAt)) return;
+    CHUNKS.set(c, { loading: true });
+    try { const response = await fetch(`data/c${String(c).padStart(4, '0')}.json`); if (!response.ok) throw Error(`HTTP ${response.status}`); const d = await response.json(); CHUNKS.set(c, buildChunk(d, env)); }
+    catch (e) { console.warn('chunk', c, e); CHUNKS.set(c, { failed: true, retryAt: Date.now() + 10000 }); }
   }
   function streamAround(s) { const c = Math.floor(s / IDX.chunk); for (let k = c - 1; k <= c + 2; k++) loadChunk(k); for (const k of [...CHUNKS.keys()]) if (k < c - 2 || k > c + 3) CHUNKS.delete(k); }
-  const ready = s => { const c = CHUNKS.get(clamp(Math.floor(s / IDX.chunk), 0, IDX.count - 1)); return !!(c && (c.segs || c.failed)); };
+  const ready = s => { const c = CHUNKS.get(clamp(Math.floor(s / IDX.chunk), 0, IDX.count - 1)); return !!c?.segs; };
   let lastGood = null;
   const flat = i => ({ s: i * SEG, x: 0, y: 0, hd: 0, h: 0, hs: 0, cls: 'pr', L: 'farm', R: 'farm', rw: 6, sw: 2, bill: [], town: false });
   function S(i) { i = clamp(i | 0, 0, N - 1); const c = Math.floor(i / CHS), ch = CHUNKS.get(c); if (!ch || !ch.segs) return lastGood || flat(i); return (lastGood = ch.segs[Math.min(ch.segs.length - 1, i - c * CHS)]); }
@@ -145,14 +147,16 @@ export async function createRoad(canvas, opts = {}) {
   }
   // The real horizon: for each screen column, march outwards over the chunk's 61 x 61 km height grid and keep the
   // steepest angle seen in three distance bands, minus the Earth's curvature (70 m at 30 km). Far bands are hazier.
-  const BANDS = [[12000, 30000, [158, 168, 186]], [4000, 12000, [134, 146, 150]], [900, 4000, [112, 124, 118]]];
+  const BANDS = [[12000, 30000, [158, 168, 186]], [4000, 12000, [134, 146, 150]], [300, 4000, [112, 124, 118]]];
   function farHorizon(hzY, camY, b) {
     const F = b.ch && b.ch.far; if (!F || CHECK) return;
-    const farH = (x, y) => { const gx = (x - F.x0) / F.cell, gy = (y - F.y0) / F.cell; if (gx < 0 || gy < 0 || gx > F.w - 2 || gy > F.h - 2) return null; const i = Math.floor(gx), j = Math.floor(gy), fx = gx - i, fy = gy - j, Hh = F.heights; return (Hh[j * F.w + i] * (1 - fx) + Hh[j * F.w + i + 1] * fx) * (1 - fy) + (Hh[(j + 1) * F.w + i] * (1 - fx) + Hh[(j + 1) * F.w + i + 1] * fx) * fy; };
+    const farH = (x, y) => { const near = b.ch.nearTerrain, N = near && x >= near.x0 && y >= near.y0 && x <= near.x0 + (near.w - 2) * near.cell && y <= near.y0 + (near.h - 2) * near.cell ? near : F;
+      const gx = (x - N.x0) / N.cell, gy = (y - N.y0) / N.cell; if (gx < 0 || gy < 0 || gx > N.w - 2 || gy > N.h - 2) return null; const i = Math.floor(gx), j = Math.floor(gy), fx = gx - i, fy = gy - j, Hh = N.heights; return (Hh[j * N.w + i] * (1 - fx) + Hh[j * N.w + i + 1] * fx) * (1 - fy) + (Hh[(j + 1) * N.w + i] * (1 - fx) + Hh[(j + 1) * N.w + i + 1] * fx) * fy; };
     const tops = BANDS.map(() => new Float32Array(W).fill(hzY + 1));
     for (let x = 0; x < W; x++) { const ang = b.hd + Math.atan2(-(x - VIEW.cx), FOCAL), cx = Math.cos(ang), cy = Math.sin(ang);
       BANDS.forEach(([d0, d1], k) => { let best = -1e9; for (let d = d0; d < d1; d *= 1.06) { const h = farH(b.x + cx * d, b.y + cy * d); if (h == null) break; const e = (h - d * d / (2 * 6371000) - camY) / d; if (e > best) best = e; } tops[k][x] = Math.min(hzY + 1, hzY - best * FOCAL); }); }
-    BANDS.forEach(([, , col], k) => { const c = col.map((v, i) => v + fogCol[i] * 0.15); for (const [dy, lift] of [[0, 0], [1, 22]]) { g.fillStyle = `rgb(${c.map(v => Math.min(255, v + lift) | 0).join(',')})`;
+    BANDS.forEach(([, , col], k) => { const arid = b.L === 'desert' || b.R === 'desert', tone = arid && k > 0 ? (k === 1 ? [153, 144, 144] : [164, 132, 111]) : col;
+      const c = tone.map((v, i) => v + fogCol[i] * 0.15); for (const [dy, lift] of [[0, 0], [1, 22]]) { g.fillStyle = `rgb(${c.map(v => Math.min(255, v + lift) | 0).join(',')})`;
       for (let x = 0; x < W; x++) { const t = Math.round(tops[k][x]), h = hzY + 1 - t; if (h < 2 || (dy && h < 4)) continue; g.globalAlpha = Math.min(1, (h - 1) / 6); g.fillRect(x, t, 1, dy ? 1 : h); } } g.globalAlpha = 1; });   // a ridge a pixel or two above the horizon fades into the haze
   }
 
@@ -177,7 +181,7 @@ export async function createRoad(canvas, opts = {}) {
     }
   }
   function groundCol(q, lat, along, cell, hh, xw) {
-    const rw = q.rw, sw = q.sw, al = Math.abs(lat), cr = q.cross && al < rw + sw + 60; let c;
+    const rw = q.rw, sw = q.sw, al = Math.abs(lat), cr = q.cross && along < LEN && al < rw + sw + 60; let c;
     if (al < rw || cr) {   // asphalt: patches, the centre line, lane lines and edge lines, a crosswalk at junctions
       const patch = (hash(Math.floor(lat / 3), Math.floor(along / 5)) & 255) / 255, v0 = 70 + patch * 10 + ((hh & 15) - 8) * 0.8; c = [v0, v0, v0 + 5];
       if (q.cls === 'tr') c = [150 + patch * 12, 128 + patch * 10, 96];

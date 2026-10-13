@@ -15,7 +15,7 @@
 //     your own (Docker image ghcr.io/project-osrm/osrm-backend) and pass --osrm http://127.0.0.1:5000.
 import { join } from 'node:path';
 import { args, multi, politeFetch, writeJSON, cumulative, simplify, haversine } from './lib.mjs';
-import { suggestRegions, estimate, PRICE } from './kit.mjs';
+import { suggestRegions, estimate } from './kit.mjs';
 
 const A = args();
 const out = A.out, cache = join(out || '.', '.cache');
@@ -58,17 +58,15 @@ writeJSON(join(out, 'route.json'), { from: stops[0].name, to: stops.at(-1).name,
   source: `Route: OSRM (${used}, ${PROFILE}); geocoding: Nominatim; data © OpenStreetMap contributors (ODbL)` });
 console.log(`route.json: ${(cum.at(-1) / 1000).toFixed(1)} km on the road, ${line.length} points; country ${cc || '?'}: drive ${LEFT.has(cc) ? 'left' : 'right'}, ${MILES.has(cc) ? 'miles' : 'km'}, ${YELLOW.has(cc) ? 'yellow' : 'white'} centre line`);
 
-// The upfront estimate: show it to the user and let them pick a level before the bake (which is slow) or any spending.
+// The upfront estimate: asset counts and bake time for choosing a detail level.
 const km = cum.at(-1) / 1000, countries = new Set(stops.map(s => s.cc).filter(Boolean)).size || 1, R = suggestRegions(km, countries);
-const row = (name, e, note) => `  ${name.padEnd(13)} ${String(e.pictures).padStart(4)} pictures   ${('$' + e.usd.toFixed(2)).padStart(7)}   ${note}`;
+const row = (name, e, note) => `  ${name.padEnd(13)} ${String(e.pictures).padStart(4)} pictures   ${note}`;
 console.log(`
 ESTIMATE for ${A.from} to ${A.to}: ${km.toFixed(1)} km (${(km / 1.609344).toFixed(1)} miles), about ${R} region${R > 1 ? 's' : ''} (looks) of scenery
-${row('placeholders', { pictures: 0, usd: 0 }, 'free code-drawn stand-ins')}
+${row('placeholders', { pictures: 0 }, 'free code-drawn stand-ins')}
 ${row('sparse', estimate('sparse', R), 'three kinds of building and a tree per region')}
 ${row('moderate', estimate('moderate', R), 'about ten buildings per region, trees, props, 4 landmarks')}
 ${row('detailed', estimate('detailed', R), 'about eighteen buildings per region, more props, 10 landmarks')}
-  At $${PRICE} a picture (RetroDiffusion rd_pro__default). This is an estimate: the exact quote is free and comes after
-  the bake, once the art is planned (rd.mjs quote). Cost depends on regions, not distance: each extra region adds
-  ${estimate('sparse', R + 1).pictures - estimate('sparse', R).pictures} / ${estimate('moderate', R + 1).pictures - estimate('moderate', R).pictures} / ${estimate('detailed', R + 1).pictures - estimate('detailed', R).pictures} pictures (sparse / moderate / detailed).
-  Bake time grows with distance: roughly ${Math.max(1, Math.round(km / 10 * 40 / 60))} minute${km > 15 ? 's' : ''} for this route${km > 500 ? '. For a route this long, consider a stretch of it (--via points closer together) or at most 3 to 4 regions' : ''}.
-  Need a RetroDiffusion account? https://www.retrodiffusion.ai?ref=YBQJM823 (affiliate link)`);
+  Art runs on your ComfyUI GPU; no per-image API charge. Generation time depends on the number of pictures.
+  Each extra region adds ${estimate('sparse', R + 1).pictures - estimate('sparse', R).pictures} / ${estimate('moderate', R + 1).pictures - estimate('moderate', R).pictures} / ${estimate('detailed', R + 1).pictures - estimate('detailed', R).pictures} pictures (sparse / moderate / detailed).
+  Bake time grows with distance: roughly ${Math.max(1, Math.round(km / 10 * 40 / 60))} minute${km > 15 ? 's' : ''} for this route${km > 500 ? '. For a route this long, consider a stretch of it (--via points closer together) or at most 3 to 4 regions' : ''}.`);

@@ -2,12 +2,11 @@
 //   - geometry on the sphere (distances, cumulative length, locate, Douglas-Peucker, line encoding)
 //   - polite HTTP (a User-Agent, a minimum gap between requests per host, retries, a disk cache)
 //   - a small PNG decoder/encoder (8-bit and palette PNGs, which is what Terrarium tiles and
-//     RetroDiffusion return), so nobody has to npm install anything.
+//     ComfyUI returns), so nobody has to npm install anything.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { inflateSync, deflateSync } from 'node:zlib';
-import { spawnSync } from 'node:child_process';
 
 // ------------------------------------------------------------------ arguments
 export function args(argv = process.argv.slice(2)) {
@@ -159,23 +158,6 @@ export function encodePNG({ width, height, data }) {
 }
 export const readPNG = f => decodePNG(readFileSync(f));
 export const writePNG = (f, img) => { mkdirSync(dirname(f), { recursive: true }); writeFileSync(f, encodePNG(img)); };
-
-// ------------------------------------------------------------------ the RetroDiffusion key
-// Read at request time and never printed, logged or written anywhere. Two places, in order:
-//   1. the RETRODIFFUSION_API_KEY environment variable (set it in your own terminal, not in a chat);
-//   2. on macOS, the login Keychain item with service "pixel-path" (or RD_KEYCHAIN_SERVICE / RD_KEYCHAIN_ACCOUNT):
-//        security add-generic-password -s pixel-path -a retrodiffusion -w      (it prompts for the key)
-let cachedKey = null;
-export function rdKey() {
-  if (cachedKey) return cachedKey;
-  if (process.env.RETRODIFFUSION_API_KEY) return (cachedKey = process.env.RETRODIFFUSION_API_KEY.trim());
-  if (process.platform === 'darwin') {
-    const a = ['find-generic-password', '-s', process.env.RD_KEYCHAIN_SERVICE || 'pixel-path', '-w']; if (process.env.RD_KEYCHAIN_ACCOUNT) a.splice(1, 0, '-a', process.env.RD_KEYCHAIN_ACCOUNT);
-    const r = spawnSync('security', a, { encoding: 'utf8' });
-    if (r.status === 0 && r.stdout.trim()) return (cachedKey = r.stdout.trim());
-  }
-  return null;
-}
 
 // ------------------------------------------------------------------ tiny raster helpers (contact sheets, montages)
 // a 3 x 5 pixel font for labels; unknown characters print as a dot

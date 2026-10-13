@@ -1,5 +1,5 @@
 // Step 5: the self-check. Run it after every build and look at what it writes before calling the trip done.
-//   node check.mjs --trip TRIP [--points 8 | --at 1.2,5,9.8] [--fix --budget USD] [--no-browser]
+//   node check.mjs --trip TRIP [--points 8 | --at 1.2,5,9.8] [--fix] [--no-browser]
 // Writes TRIP/check/report.json, TRIP/check/montage.png (every sample frame, labelled: LOOK AT IT) and
 // TRIP/check/shot-*.png (each frame as the page shows it, with the HUD and maps).
 //
@@ -17,7 +17,7 @@
 //   6. place     every frame has a place name in the HUD; frames with no building, sign or landmark in a town
 // Frames need a headless Chromium through Playwright (npx playwright install chromium, or PLAYWRIGHT_MODULE=path).
 // Without it the layout and art checks still run and say the frame checks were skipped.
-// --fix: re-rolls dropped pictures within --budget (rd.mjs run --regen), cleans them and checks again (twice at most).
+// --fix: re-rolls dropped pictures locally (comfy.mjs run --regen), cleans them and checks again (twice at most).
 import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync, unlinkSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -25,7 +25,7 @@ import { spawnSync, execSync } from 'node:child_process';
 import { args, readJSON, writeJSON, decodePNG, writePNG, newImage, fillRect, drawText, blit } from './lib.mjs';
 import { install, serve } from './viewer.mjs';
 
-const A = args(), TRIP = A.trip; if (!TRIP) { console.error('usage: node check.mjs --trip TRIP [--points 8] [--fix --budget USD]'); process.exit(1); }
+const A = args(), TRIP = A.trip; if (!TRIP) { console.error('usage: node check.mjs --trip TRIP [--points 8] [--fix]'); process.exit(1); }
 const HERE = dirname(fileURLToPath(import.meta.url)), OUT = join(TRIP, 'check'); mkdirSync(OUT, { recursive: true });
 const { makeKit, buildChunk, audit } = await import(pathToFileURL(join(HERE, '../templates/layout.js')).href);
 
@@ -47,9 +47,10 @@ async function run() {
   // 3: the art
   const P = KITJ.pictures, real = Object.values(P).filter(p => !p.placeholder), dropped = Object.entries(P).filter(([, p]) => p.drop).map(([n, p]) => `${n} (${p.flags.join(', ') || 'drop.txt'})`);
   R.art = { pictures: Object.keys(P).length, real: real.length, placeholders: Object.keys(P).length - real.length, dropped };
-  const byHand = Object.entries(P).filter(([, p]) => p.drop && !(p.flags || []).length).map(([n]) => n); if (byHand.length) R.warnings.push(`${byHand.length} pictures left out by hand (art/drop.txt): ${byHand.join(', ')}; their roles use the other pictures`);
+  const dropFile = join(TRIP, 'art/drop.txt'), manualDrops = new Set(existsSync(dropFile) ? readFileSync(dropFile, 'utf8').split(/\r?\n/).map(s => s.trim()).filter(Boolean) : []);
+  const byHand = Object.entries(P).filter(([n, p]) => p.drop && manualDrops.has(n)).map(([n]) => n); if (byHand.length) R.warnings.push(`${byHand.length} pictures left out by hand (art/drop.txt): ${byHand.join(', ')}; their roles use the other pictures`);
   dropped.splice(0, dropped.length, ...dropped.filter(x => !byHand.some(n => x.startsWith(n + ' '))));
-  if (dropped.length) R.problems.push(`${dropped.length} pictures dropped by the cleanup: ${dropped.join('; ')}. Re-roll them: node rd.mjs run --trip ${TRIP} --budget <USD> --regen ${Object.entries(P).filter(([, p]) => p.drop).map(([n]) => n).join(',')}`);
+  if (dropped.length) R.problems.push(`${dropped.length} pictures dropped by the cleanup: ${dropped.join('; ')}. Re-roll them: node comfy.mjs run --trip ${TRIP} --regen ${Object.entries(P).filter(([, p]) => p.drop).map(([n]) => n).join(',')}`);
   const ph = Object.entries(P).filter(([, p]) => p.placeholder && p.role !== 'landmark').map(([n]) => n), lmNo = Object.entries(P).filter(([, p]) => p.role === 'landmark' && (p.placeholder || p.drop)).map(([, p]) => p.label || p.qid);
   if (real.length && ph.length) R.warnings.push(`${ph.length} placeholders still stand in for real art: ${ph.slice(0, 12).join(', ')}`);
   if (lmNo.length) R.warnings.push(`${lmNo.length} landmarks have no usable picture, so only their brown sign shows: ${lmNo.join(', ')}`);
@@ -110,7 +111,7 @@ async function run() {
     // the worst frames, each shown as it really looks (normal render, same place, same look) above its marked check frame
     found.sort((a, b) => (b.holes + 8 * b.gaps) - (a.holes + 8 * a.gaps));
     for (const f of found.slice(0, 20)) { f.view = await page.evaluate(async o => { const T = window.__trip; await T.goto(Math.max(0, o.s - 24) / 1000); T.road.setLook(o.look); for (let i = 0; i < 4; i++) await T.step(6, 1 / 30); const u = document.getElementById('c').toDataURL('image/png'); T.road.setLook(0); return u; }, { s: f.km * 1000, look: f.look }); }
-    R.sweep = { ...sweepStats, worst: found.slice(0, 20).map(({ png, view, ...f }) => f) };
+    R.sweep = { ...sweepStats, positions: at.length, eligiblePositions: sweep.length, stride: step, worst: found.slice(0, 20).map(({ png, view, ...f }) => f) };
     if (found.length) R.problems.push(`the sweep found ${found.length} of ${sweepStats.frames} frames with sky through or between buildings (worst: ${found.slice(0, 4).map(f => `km ${f.km} look ${f.look}: ${f.holes} px, ${f.gaps} columns`).join('; ')}); see check/worst-frames.png`);
     if (found.length) { const ims = found.slice(0, 20).flatMap(f => [decodePNG(Buffer.from(f.view.split(',')[1], 'base64')), decodePNG(Buffer.from(f.png.split(',')[1], 'base64'))]), fw = 320, fh = Math.round(fw * ims[0].height / ims[0].width), WS = newImage(4 * (fw + 6) + 6, Math.ceil(ims.length / 4) * (fh + 18) + 6, [18, 16, 22]);
       ims.forEach((im, i) => { const f = found[i >> 1], x = 6 + (i % 4) * (fw + 6), y = 6 + Math.floor(i / 4) * (fh + 18); blit(WS, im, x, y, fw, fh); drawText(WS, x, y + fh + 4, i & 1 ? `CHECK: ${f.holes} PX, ${f.gaps} COLS` : `KM ${f.km} LOOK ${f.look}`, i & 1 ? [240, 120, 110] : [220, 214, 200]); });
@@ -135,17 +136,19 @@ async function findPlaywright() {
 let R = await run();
 for (let round = 0; A.fix && round < 2 && R.art?.dropped.length; round++) {
   const names = Object.entries(readJSON(join(TRIP, 'art/kit.json')).pictures).filter(([, p]) => p.drop && !p.placeholder).map(([n]) => n);
-  if (!A.budget) { console.log('--fix needs --budget USD (the trip total, as for rd.mjs run)'); break; }
+  if (!names.length) break;
   console.log(`re-rolling ${names.length} dropped pictures: ${names.join(', ')}`);
-  const r = spawnSync(process.execPath, [join(HERE, 'rd.mjs'), 'run', '--trip', TRIP, '--budget', String(A.budget), '--regen', names.join(',')], { stdio: 'inherit' });
-  spawnSync(process.execPath, [join(HERE, 'clean.mjs'), '--trip', TRIP, '--only', names.join(',')], { stdio: 'inherit' });
-  R = await run(); if (r.status === 2) { R.warnings.push('the budget stopped the re-rolls: some pictures are still dropped (their roles use other pictures)'); break; }
+  const r = spawnSync(process.execPath, [join(HERE, 'comfy.mjs'), 'run', '--trip', TRIP, '--regen', names.join(','), ...['url', 'config'].flatMap(k => A[k] ? ['--' + k, String(A[k])] : [])], { stdio: 'inherit' });
+  if (r.status !== 0) { R.problems.push('local generation failed; see the error above'); break; }
+  const cleaned = spawnSync(process.execPath, [join(HERE, 'clean.mjs'), '--trip', TRIP, '--only', names.join(',')], { stdio: 'inherit' });
+  if (cleaned.status !== 0) { R.problems.push('cleanup failed; see the error above'); break; }
+  R = await run();
 }
 writeJSON(join(OUT, 'report.json'), R, true);
 console.log(`\nSELF-CHECK ${R.problems.length ? 'FOUND PROBLEMS' : 'PASSED'}: ${TRIP}`);
 console.log(`layout: ${R.layout.planes} buildings over ${R.layout.frontage_m} m of frontage, ${R.layout.distinctFacades} different facade pictures, ${R.layout.gaps} gaps (${R.layout.gap_m} m), ${R.layout.repeats} repeats`);
 console.log(`art: ${R.art.real} real pictures, ${R.art.placeholders} placeholders, ${R.art.dropped.length} dropped`);
-if (R.sweep) console.log(`sweep: ${R.sweep.frames} moving frames (every 75 m of built-up road, looking ahead and 30 degrees to each side), ${R.sweep.bad} with sky through or between buildings`);
+if (R.sweep) console.log(`sweep: ${R.sweep.frames} moving frames at ${R.sweep.positions} of ${R.sweep.eligiblePositions} built-up positions (ahead and 30 degrees to each side), ${R.sweep.bad} with sky through or between buildings`);
 if (R.frames) console.log(`frames: ${R.frames.length} (${R.frames.map(f => `${f.km}${f.tag !== 'day' ? f.tag[0] : ''}:${f.place || '?'}`).join(', ')})`);
 for (const p of R.problems) console.log('PROBLEM ' + p); for (const w of R.warnings) console.log('warning ' + w);
 console.log(R.frames ? `Now look at ${join(OUT, 'montage.png')} and ${join(TRIP, 'art/contact.png')}: can you tell where you are? any gaps, sky through walls, repeats or broken pictures?` : `No frames were rendered, so nothing has been looked at yet: look at ${join(TRIP, 'art/contact.png')}, then open the page (viewer.mjs --serve) and check it by eye, or install Playwright and run this again.`);

@@ -3,18 +3,18 @@
 //     --theme "bath|0|Georgian Bath in Somerset, England: honey-coloured Bath stone terraces" \
 //     --theme "bristol|14|Bristol, England: brick and painted Victorian terraces, harbourside warehouses" \
 //     [--subject "bath:terrace=a Georgian Bath stone townhouse with sash windows|..."]
-//     [--landmarks N] [--no-landmarks] [--style rd_pro__default] [--palette PATH|none]
+//     [--landmarks N] [--no-landmarks] [--palette PATH|none]
 // A theme is "id|starts at km|description of the region". One kit is drawn per theme; the viewer switches kit at
 // that km. Subjects: "theme:role=first|second|third" gives each variant its own subject (better than reseeding).
 // The levels are nested: the sparse kit is the first pictures of the moderate kit, which is the start of the
-// detailed kit, with the same names, prompts and seeds. Moving up a level only pays for the new pictures.
-// Writes TRIP/art/plan.json. Read it, improve the subjects if they are generic, then quote it with rd.mjs.
+// detailed kit, with the same names, prompts and seeds. Moving up a level only generates the new pictures.
+// Writes TRIP/art/plan.json. Read it, improve the subjects if they are generic, then generate it with comfy.mjs.
 import { existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { args, multi, readJSON, writeJSON } from './lib.mjs';
-import { STYLE, PRICE, RECIPE, FACADES, SPRITES, LANDMARK, LEVELS } from './kit.mjs';
+import { RECIPE, FACADES, SPRITES, LANDMARK, LEVELS } from './kit.mjs';
 import { rolesFor } from '../templates/layout.js';
 
 const A = args(), TRIP = A.trip, detail = A.detail || 'moderate';
@@ -27,9 +27,9 @@ themes.sort((a, b) => a.from - b.from); themes[0].from = 0;
 const subjects = {}; for (const s of multi('--subject')) { const [k, ...v] = s.split('='); subjects[k.trim()] = v.join('=').split('|').map(x => x.trim()).filter(Boolean); }
 const subj = (theme, role, i, fallback) => { const l = subjects[`${theme.id}:${role}`] || subjects[role]; return (l && l[i % l.length]) || fallback; };
 const here = dirname(fileURLToPath(import.meta.url)), defPal = join(here, '../templates/palette.png'), palette = A.palette === 'none' ? null : A.palette || (existsSync(defPal) ? defPal : null);
-const L = LEVELS[detail], style = A.style || STYLE;
+const L = LEVELS[detail];
 const seedOf = name => parseInt(createHash('sha1').update(name).digest('hex').slice(0, 7), 16);
-const job = (name, o) => ({ name, style, remove_bg: true, seed: seedOf(name), ...(palette ? { palette } : {}), ...o });
+const job = (name, o) => ({ name, seed: seedOf(name), ...(palette ? { palette } : {}), ...o });
 
 // what each theme's stretch is made of: frontage metres by facade role (from the bake), plus what the land use will fill
 function roleShare(t, next) {
@@ -68,7 +68,7 @@ for (const lm of picked) {   // not the bridge you are driving over
 const old = readJSON(join(TRIP, 'art/plan.json'));
 writeJSON(join(TRIP, 'art/plan.json'), { detail, themes, landmarks: lmMap, jobs }, true);
 const byKind = {}; for (const j of jobs) byKind[j.kind] = (byKind[j.kind] || 0) + 1;
-console.log(`art/plan.json: ${detail} kit, ${jobs.length} pictures for ${themes.length} region${themes.length > 1 ? 's' : ''} (${Object.entries(byKind).map(([k, v]) => `${v} ${k}`).join(', ')}), about $${(jobs.length * PRICE).toFixed(2)} at $${PRICE} each${old ? ' (replaced the previous plan; finished pictures are kept)' : ''}`);
+console.log(`art/plan.json: ${detail} kit, ${jobs.length} pictures for ${themes.length} region${themes.length > 1 ? 's' : ''} (${Object.entries(byKind).map(([k, v]) => `${v} ${k}`).join(', ')}); local generation${old ? ' (replaced the previous plan; finished pictures are kept)' : ''}`);
 for (const j of jobs) console.log(`  ${j.name.padEnd(22)} ${String(j.width).padStart(3)}x${j.height}  ${j.prompt.slice(0, 96)}...`);
 if (!LMS.length && L.landmarks) console.log('No landmarks found near the road (none with a Wikidata id within 1.2 km).');
-console.log(`Next: node placeholder-art.mjs --trip ${TRIP}   (free stand-ins), then node rd.mjs quote --trip ${TRIP}   (free)`);
+console.log(`Next: node placeholder-art.mjs --trip ${TRIP}   (free stand-ins), then node comfy.mjs run --trip ${TRIP}`);

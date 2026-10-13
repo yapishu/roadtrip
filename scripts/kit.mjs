@@ -4,9 +4,6 @@
 // whole subject is inside the picture ("nothing cut off"). Without each of those the model paints scenery, angles
 // and cropped edges, and the picture can't stand in the world.
 
-export const STYLE = 'rd_pro__default';      // the default style ($0.18 a picture, October 2026)
-export const PRICE = 0.18;                   // for estimates only; rd.mjs quote asks the API for the real price
-
 const ISO = 'pixel art game asset, isolated on a plain white background, no ground, no shadow, 16-bit style, afternoon light';
 const WHOLE = 'the whole subject inside the picture with a margin on every side, nothing cut off';
 export const RECIPE = {
@@ -35,21 +32,19 @@ export const SPRITES = {
 export const LANDMARK = { w: 192, h: 192, tall: { w: 128, h: 256 }, wide: { w: 256, h: 160 } };
 
 // How much of each, per region (theme), by level. Facade roles are ranked by how much of the region's frontage
-// they cover (from the bake), so a sparse kit spends its few pictures where they show most.
+// they cover (from the bake), so a sparse kit uses its few pictures where they show most.
 export const LEVELS = {
   sparse:   { facades: [1, 1, 1],                                           maxFacadeRoles: 3, sprites: { tree: 1 },                     landmarks: 0 },
   moderate: { facades: [2, 2, 2, 1, 1, 1, 1],                               maxFacadeRoles: 6, sprites: { tree: 2, bush: 1, street: 1 }, landmarks: 4 },
   detailed: { facades: [4, 4, 3, 3, 3, 2, 2, 2, 1],                         maxFacadeRoles: 9, sprites: { tree: 3, bush: 2, street: 3 }, landmarks: 10 },
 };
 
-// The upfront estimate, before anything slow happens (route.mjs prints it). Cost depends on the number of regions
-// (looks), not on distance: a 20 km trip and a 2,000 km trip through one kind of place cost the same. A region
-// usually gets three to five kinds of building, so this uses the typical facade count, not the maximum.
+// Estimate asset counts by the number of distinct regions along the route.
 const TYPICAL_FACADES = { sparse: 3, moderate: 10, detailed: 18 };
 export function suggestRegions(km, countries = 1) {
   return Math.min(5, Math.max(countries, km < 15 ? 1 : km < 300 ? 2 : km < 1500 ? 3 : 4));
 }
 export function estimate(level, regions) {
   const L = LEVELS[level], s = Object.values(L.sprites).reduce((a, b) => a + b, 0), n = regions * (TYPICAL_FACADES[level] + s) + L.landmarks;
-  return { pictures: n, usd: +(n * PRICE).toFixed(2) };
+  return { pictures: n };
 }

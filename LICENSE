@@ -23,5 +23,5 @@ SOFTWARE.
 This licence covers the code in this repository. It does not cover the data and
 pictures a trip is built from, which keep their own terms: map data from
 OpenStreetMap (ODbL), elevation from Terrain Tiles, routing by OSRM, landmark data
-from Wikidata (CC0), and art you generate with RetroDiffusion under RetroDiffusion's
-terms. See README.md, "Credits and licences".
+from Wikidata (CC0), and art you generate with SDXL and Pixel Art XL under their
+model licenses. See README.md, "Credits and licenses".
