@@ -64,6 +64,17 @@ export function groundHeight(g,a,x,y){
   return (u+v<=1?a[k]*(1-u-v)+a[k+1]*u+a[k+g.w]*v:a[k+g.w+1]*(u+v-1)+a[k+1]*(1-v)+a[k+g.w]*(1-u))*g.scale+g.offset;
 }
 
+// Refined patches share their perimeter with the rendered, road-graded parent.
+export function joinTerrainEdge(g,values,parent,parentValues){
+  const match=(col,row)=>{
+    const height=groundHeight(parent,parentValues,g.x0+col*g.cell,g.y0+row*g.cell);
+    if(Number.isFinite(height))values[row*g.w+col]=(height-g.offset)/g.scale;
+  };
+  for(let col=0;col<g.w;col++){match(col,0);match(col,g.h-1);}
+  for(let row=1;row<g.h-1;row++){match(0,row);match(g.w-1,row);}
+  return values;
+}
+
 const minorRoad=road=>/footway|path|steps|cycleway|track/.test(road.kind);
 const bounds=polygon=>({x0:Math.min(...polygon.map(p=>p[0])),x1:Math.max(...polygon.map(p=>p[0])),y0:Math.min(...polygon.map(p=>p[1])),y1:Math.max(...polygon.map(p=>p[1]))});
 const area=polygon=>polygon.reduce((sum,p,i)=>{const q=polygon[(i+1)%polygon.length];return sum+p[0]*q[1]-p[1]*q[0];},0)/2;

@@ -1,0 +1,910 @@
+{
+  "frames": [
+    {
+      "name": "generals-junction",
+      "file": "generals-junction-0.png",
+      "pos": 513190.32795742975,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 2004.14
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 1,
+        "triangles": 783729,
+        "drawCalls": 57,
+        "geometries": 57,
+        "textures": 5,
+        "buildings": 108,
+        "observedWalls": 0,
+        "trees": 39711,
+        "roadside": 9,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1335.8,
+          2363.2
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "generals-junction",
+      "file": "generals-junction-1.png",
+      "pos": 513220.32795742975,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Kings Canyon Scenic Byway",
+        "elev": 2004.87
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 31,
+        "triangles": 750961,
+        "drawCalls": 53,
+        "geometries": 60,
+        "textures": 5,
+        "buildings": 108,
+        "observedWalls": 0,
+        "trees": 39711,
+        "roadside": 9,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1335.8,
+          2363.2
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "generals-junction",
+      "file": "generals-junction-2.png",
+      "pos": 513250.32795742975,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 2004.84
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 61,
+        "triangles": 911175,
+        "drawCalls": 73,
+        "geometries": 94,
+        "textures": 5,
+        "buildings": 108,
+        "observedWalls": 0,
+        "trees": 39711,
+        "roadside": 9,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1335.8,
+          2363.2
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "generals-junction",
+      "file": "generals-junction-3.png",
+      "pos": 513280.32795742975,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 2003.83
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 91,
+        "triangles": 885007,
+        "drawCalls": 68,
+        "geometries": 94,
+        "textures": 5,
+        "buildings": 108,
+        "observedWalls": 0,
+        "trees": 39711,
+        "roadside": 9,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1335.8,
+          2363.2
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "generals-junction",
+      "file": "generals-junction-4.png",
+      "pos": 513310.32795742975,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 2001.52
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 121,
+        "triangles": 876815,
+        "drawCalls": 67,
+        "geometries": 94,
+        "textures": 5,
+        "buildings": 108,
+        "observedWalls": 0,
+        "trees": 39711,
+        "roadside": 9,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1335.8,
+          2363.2
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "giant-forest",
+      "file": "giant-forest-0.png",
+      "pos": 559070.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1959.7200000000028
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 122,
+        "triangles": 763984,
+        "drawCalls": 82,
+        "geometries": 82,
+        "textures": 6,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 252584.4135939108,
+            "x": 157.19738145320872,
+            "y": 466.4223653478191,
+            "z": 1981.783266930643,
+            "phase": 1.8889120748726906,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "giant-forest",
+      "file": "giant-forest-1.png",
+      "pos": 559100.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1958.5000000000023
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 152,
+        "triangles": 748312,
+        "drawCalls": 83,
+        "geometries": 87,
+        "textures": 6,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 252584.4135939108,
+            "x": 157.19738145320872,
+            "y": 466.4223653478191,
+            "z": 1981.783266930643,
+            "phase": 1.8889120748726906,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "giant-forest",
+      "file": "giant-forest-2.png",
+      "pos": 559130.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1956.8400000000038
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 182,
+        "triangles": 715478,
+        "drawCalls": 80,
+        "geometries": 95,
+        "textures": 7,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 252584.4135939108,
+            "x": 157.19738145320872,
+            "y": 466.4223653478191,
+            "z": 1981.783266930643,
+            "phase": 1.8889120748726906,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "giant-forest",
+      "file": "giant-forest-3.png",
+      "pos": 559160.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1954.8800000000044
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 212,
+        "triangles": 757330,
+        "drawCalls": 100,
+        "geometries": 115,
+        "textures": 7,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 252584.4135939108,
+            "x": 157.19738145320872,
+            "y": 466.4223653478191,
+            "z": 1981.783266930643,
+            "phase": 1.8889120748726906,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "giant-forest",
+      "file": "giant-forest-4.png",
+      "pos": 559190.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1952.790000000004
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 242,
+        "triangles": 757330,
+        "drawCalls": 100,
+        "geometries": 120,
+        "textures": 7,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 252584.4135939108,
+            "x": 157.19738145320872,
+            "y": 466.4223653478191,
+            "z": 1981.783266930643,
+            "phase": 1.8889120748726906,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "sequoia-descent",
+      "file": "sequoia-descent-0.png",
+      "pos": 572750.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1063.3900000000035
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 243,
+        "triangles": 430847,
+        "drawCalls": 50,
+        "geometries": 170,
+        "textures": 9,
+        "buildings": 6,
+        "observedWalls": 0,
+        "trees": 6467,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 263934.4912814296,
+            "x": 154.95860028304182,
+            "y": 740.9743554809303,
+            "z": 1244.7234130818208,
+            "phase": 5.249800067702165,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          629.7,
+          2136.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "sequoia-descent",
+      "file": "sequoia-descent-1.png",
+      "pos": 572780.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1061.600000000004
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 273,
+        "triangles": 620607,
+        "drawCalls": 81,
+        "geometries": 233,
+        "textures": 11,
+        "buildings": 6,
+        "observedWalls": 0,
+        "trees": 6467,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 263934.4912814296,
+            "x": 154.95860028304182,
+            "y": 740.9743554809303,
+            "z": 1244.7234130818208,
+            "phase": 5.249800067702165,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          629.7,
+          2136.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "sequoia-descent",
+      "file": "sequoia-descent-2.png",
+      "pos": 572810.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1059.550000000004
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 303,
+        "triangles": 596543,
+        "drawCalls": 80,
+        "geometries": 243,
+        "textures": 11,
+        "buildings": 6,
+        "observedWalls": 0,
+        "trees": 6467,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 263934.4912814296,
+            "x": 154.95860028304182,
+            "y": 740.9743554809303,
+            "z": 1244.7234130818208,
+            "phase": 5.249800067702165,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          629.7,
+          2136.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "sequoia-descent",
+      "file": "sequoia-descent-3.png",
+      "pos": 572840.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1057.4000000000044
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 333,
+        "triangles": 593983,
+        "drawCalls": 79,
+        "geometries": 243,
+        "textures": 11,
+        "buildings": 6,
+        "observedWalls": 0,
+        "trees": 6467,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 263934.4912814296,
+            "x": 154.95860028304182,
+            "y": 740.9743554809303,
+            "z": 1244.7234130818208,
+            "phase": 5.249800067702165,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          629.7,
+          2136.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "sequoia-descent",
+      "file": "sequoia-descent-4.png",
+      "pos": 572870.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 1055.4200000000037
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 363,
+        "triangles": 593983,
+        "drawCalls": 79,
+        "geometries": 243,
+        "textures": 11,
+        "buildings": 6,
+        "observedWalls": 0,
+        "trees": 6467,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 263934.4912814296,
+            "x": 154.95860028304182,
+            "y": 740.9743554809303,
+            "z": 1244.7234130818208,
+            "phase": 5.249800067702165,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          629.7,
+          2136.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "three-rivers",
+      "file": "three-rivers-0.png",
+      "pos": 595570.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Sierra Drive",
+        "elev": 250.04
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 364,
+        "triangles": 813992,
+        "drawCalls": 175,
+        "geometries": 175,
+        "textures": 9,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 29210,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 288759.06952994625,
+            "x": -2764.4196524939866,
+            "y": -983.7093254125953,
+            "z": 308.08957091344405,
+            "phase": 5.453467108691923,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "three-rivers",
+      "file": "three-rivers-1.png",
+      "pos": 595600.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Sierra Drive",
+        "elev": 250.11999999999966
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 394,
+        "triangles": 805019,
+        "drawCalls": 173,
+        "geometries": 175,
+        "textures": 9,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 29210,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 288759.06952994625,
+            "x": -2764.4196524939866,
+            "y": -983.7093254125953,
+            "z": 308.08957091344405,
+            "phase": 5.453467108691923,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "three-rivers",
+      "file": "three-rivers-2.png",
+      "pos": 595630.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Sierra Drive",
+        "elev": 250.30999999999963
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 424,
+        "triangles": 791341,
+        "drawCalls": 170,
+        "geometries": 175,
+        "textures": 9,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 29210,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 288759.06952994625,
+            "x": -2764.4196524939866,
+            "y": -983.7093254125953,
+            "z": 308.08957091344405,
+            "phase": 5.453467108691923,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "three-rivers",
+      "file": "three-rivers-3.png",
+      "pos": 595660.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Sierra Drive",
+        "elev": 250.58999999999943
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 454,
+        "triangles": 783149,
+        "drawCalls": 169,
+        "geometries": 175,
+        "textures": 9,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 29210,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 288759.06952994625,
+            "x": -2764.4196524939866,
+            "y": -983.7093254125953,
+            "z": 308.08957091344405,
+            "phase": 5.453467108691923,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "three-rivers",
+      "file": "three-rivers-4.png",
+      "pos": 595690.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Sierra Drive",
+        "elev": 250.9399999999993
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 484,
+        "triangles": 783149,
+        "drawCalls": 169,
+        "geometries": 175,
+        "textures": 9,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 29210,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 288759.06952994625,
+            "x": -2764.4196524939866,
+            "y": -983.7093254125953,
+            "z": 308.08957091344405,
+            "phase": 5.453467108691923,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "bakersfield-handoff",
+      "file": "bakersfield-handoff-0.png",
+      "pos": 740827.3424990987,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Chester Avenue",
+        "elev": 123.06194183332403
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 485,
+        "triangles": 1309314,
+        "drawCalls": 182,
+        "geometries": 182,
+        "textures": 9,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1226,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "bakersfield-handoff",
+      "file": "bakersfield-handoff-1.png",
+      "pos": 740857.3424990987,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Chester Avenue",
+        "elev": 122.74776733329612
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 515,
+        "triangles": 1292827,
+        "drawCalls": 176,
+        "geometries": 182,
+        "textures": 9,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1226,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "bakersfield-handoff",
+      "file": "bakersfield-handoff-2.png",
+      "pos": 740887.3424990987,
+      "source": "detours/kern-river",
+      "road": {
+        "road": "Chester Avenue",
+        "elev": 121.47
+      },
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 545,
+        "triangles": 1534566,
+        "drawCalls": 179,
+        "geometries": 361,
+        "textures": 11,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 7263.646235562279,
+            "x": 1277.7660183799087,
+            "y": 801.6836775987898,
+            "z": 245.440939934379,
+            "phase": 1.584240457631195,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "bakersfield-handoff",
+      "file": "bakersfield-handoff-3.png",
+      "pos": 740917.3424990987,
+      "source": "detours/kern-river",
+      "road": {
+        "road": "Chester Avenue",
+        "elev": 120.08
+      },
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 575,
+        "triangles": 1522275,
+        "drawCalls": 175,
+        "geometries": 361,
+        "textures": 11,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 7263.646235562279,
+            "x": 1277.7660183799087,
+            "y": 801.6836775987898,
+            "z": 245.440939934379,
+            "phase": 1.584240457631195,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "bakersfield-handoff",
+      "file": "bakersfield-handoff-4.png",
+      "pos": 740947.3424990987,
+      "source": "detours/kern-river",
+      "road": {
+        "road": "Chester Avenue",
+        "elev": 118.23
+      },
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 605,
+        "triangles": 1500421,
+        "drawCalls": 173,
+        "geometries": 361,
+        "textures": 11,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 7263.646235562279,
+            "x": 1277.7660183799087,
+            "y": 801.6836775987898,
+            "z": 245.440939934379,
+            "phase": 1.584240457631195,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

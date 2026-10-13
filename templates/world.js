@@ -1,7 +1,7 @@
 // A metre-scale world: measured terrain, aerial surfaces and mapped structures.
 import * as THREE from './vendor/three.module.js';
 import { addRoadside } from './roadside.js';
-import { gradeTerrain, normalAt, groundHeight, minorRoadSurfaces, vehicleTunnel } from './road-grade.js';
+import { gradeTerrain, normalAt, groundHeight, joinTerrainEdge, minorRoadSurfaces, vehicleTunnel } from './road-grade.js';
 import { addAmbient } from './ambient.js';
 import { scheduleAmbient } from './ambient-plan.js';
 import { roadSupports } from './road-supports.js';
@@ -182,7 +182,7 @@ export async function createRoad(canvas,opts={}) {
       group.add(terrain(d.far,values[1].a,values[1].texture,d.near,d,source),terrain(d.near,graded,values[0].texture,d.details,d,source));
       for(const g of d.details||[]){
         const response=await fetch(worldURL(source,g.file));if(!response.ok)throw Error(g.file);
-        const a=gradeTerrain(d.roads,new Uint16Array(await response.arrayBuffer()),g);patches.push({g,a});
+        const a=joinTerrainEdge(g,gradeTerrain(d.roads,new Uint16Array(await response.arrayBuffer()),g),d.near,graded);patches.push({g,a});
         group.add(terrain(g,a,values[0].texture,null,d,source));
       }
       const groundAt=(x,y)=>{for(const {g,a}of patches){const h=groundHeight(g,a,x,y);if(Number.isFinite(h))return h;}const h=groundHeight(d.near,graded,x,y);return Number.isFinite(h)?h:elevation(d.near,graded,x,y);};

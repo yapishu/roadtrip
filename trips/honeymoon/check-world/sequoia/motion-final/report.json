@@ -1,0 +1,200 @@
+{
+  "frames": [
+    {
+      "name": "terrain-edge",
+      "file": "terrain-edge-0.png",
+      "pos": 581740.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 620.6399999999987
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 1,
+        "triangles": 1007524,
+        "drawCalls": 115,
+        "geometries": 115,
+        "textures": 6,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 279162.847516657,
+            "x": -2814.298417626027,
+            "y": -603.6522758936962,
+            "z": 493.7745102172314,
+            "phase": 2.3893481988573866,
+            "count": 3
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "terrain-edge",
+      "file": "terrain-edge-1.png",
+      "pos": 581770.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 621.1999999999998
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 31,
+        "triangles": 1052971,
+        "drawCalls": 139,
+        "geometries": 150,
+        "textures": 6,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 279162.847516657,
+            "x": -2814.298417626027,
+            "y": -603.6522758936962,
+            "z": 493.7745102172314,
+            "phase": 2.3893481988573866,
+            "count": 3
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "terrain-edge",
+      "file": "terrain-edge-2.png",
+      "pos": 581800.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 621.1000000000012
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 61,
+        "triangles": 1211799,
+        "drawCalls": 245,
+        "geometries": 287,
+        "textures": 6,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 279162.847516657,
+            "x": -2814.298417626027,
+            "y": -603.6522758936962,
+            "z": 493.7745102172314,
+            "phase": 2.3893481988573866,
+            "count": 3
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "terrain-edge",
+      "file": "terrain-edge-3.png",
+      "pos": 581830.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 619.5800000000039
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 91,
+        "triangles": 1142242,
+        "drawCalls": 234,
+        "geometries": 309,
+        "textures": 6,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 279162.847516657,
+            "x": -2814.298417626027,
+            "y": -603.6522758936962,
+            "z": 493.7745102172314,
+            "phase": 2.3893481988573866,
+            "count": 3
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "terrain-edge",
+      "file": "terrain-edge-4.png",
+      "pos": 581860.3279574297,
+      "source": "detours/kings-canyon",
+      "road": {
+        "road": "Generals Highway",
+        "elev": 618.110000000003
+      },
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 121,
+        "triangles": 1192855,
+        "drawCalls": 242,
+        "geometries": 309,
+        "textures": 6,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 279162.847516657,
+            "x": -2814.298417626027,
+            "y": -603.6522758936962,
+            "z": 493.7745102172314,
+            "phase": 2.3893481988573866,
+            "count": 3
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

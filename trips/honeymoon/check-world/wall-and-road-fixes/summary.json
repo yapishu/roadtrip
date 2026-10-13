@@ -11,5 +11,10 @@
   "openingObstructionBefore": 9,
   "openingObstructionAfter": 0,
   "wireFrames": 10,
-  "sourceGeometry": "Mapped footprints and roof forms; generated skins and trim are representative decoration"
+  "sourceGeometry": "Mapped footprints and roof forms; generated skins and trim are representative decoration",
+  "fullRouteFrames": 79,
+  "flaggedFrames": 0,
+  "runtimeErrors": 0,
+  "visualReview": "All five route montages inspected",
+  "checkedItineraryMetres": 5026800.345714988
 }

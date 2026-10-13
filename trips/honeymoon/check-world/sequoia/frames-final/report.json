@@ -1,0 +1,2071 @@
+{
+  "frames": [
+    {
+      "name": "Section 20",
+      "at": 511790.32795742975,
+      "place": "Kings Canyon Scenic Byway",
+      "area": "",
+      "road": "Kings Canyon Scenic Byway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 1,
+        "triangles": 1087213,
+        "drawCalls": 101,
+        "geometries": 101,
+        "textures": 5,
+        "buildings": 108,
+        "observedWalls": 0,
+        "trees": 39711,
+        "roadside": 9,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 206885.48172296368,
+            "x": -1132.9573732388583,
+            "y": -2416.9077699917502,
+            "z": 2043.7309717620856,
+            "phase": 2.696797863884295,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1335.8,
+          2363.2
+        ],
+        "failures": []
+      },
+      "file": "frame-00.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 21",
+      "at": 521790.32795742975,
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 2,
+        "triangles": 1056181,
+        "drawCalls": 120,
+        "geometries": 221,
+        "textures": 8,
+        "buildings": 72,
+        "observedWalls": 0,
+        "trees": 25856,
+        "roadside": 2,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 219205.29804808315,
+            "x": 2094.9062687459545,
+            "y": -1583.7783048316903,
+            "z": 2277.384449661588,
+            "phase": 3.471508891376778,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1453.9,
+          2585.7
+        ],
+        "failures": []
+      },
+      "file": "frame-01.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 22",
+      "at": 531790.3279574297,
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 3,
+        "triangles": 827728,
+        "drawCalls": 78,
+        "geometries": 198,
+        "textures": 8,
+        "buildings": 66,
+        "observedWalls": 0,
+        "trees": 38528,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 230157.429446447,
+            "x": 1527.2799496241344,
+            "y": -3055.561669243034,
+            "z": 2121.1668018343807,
+            "phase": 4.335476812365716,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1270.7,
+          2647.3
+        ],
+        "failures": []
+      },
+      "file": "frame-02.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 23",
+      "at": 541790.3279574297,
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 4,
+        "triangles": 612367,
+        "drawCalls": 59,
+        "geometries": 137,
+        "textures": 8,
+        "buildings": 12,
+        "observedWalls": 0,
+        "trees": 20771,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 230157.429446447,
+            "x": -889.7200503758656,
+            "y": 2174.438330756966,
+            "z": 2121.166801834381,
+            "phase": 4.335476812365716,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1378.2,
+          2636.5
+        ],
+        "failures": []
+      },
+      "file": "frame-03.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 24",
+      "at": 551790.3279574297,
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 5,
+        "triangles": 626613,
+        "drawCalls": 85,
+        "geometries": 144,
+        "textures": 8,
+        "buildings": 88,
+        "observedWalls": 0,
+        "trees": 12411,
+        "roadside": 11,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1361.2,
+          2810.7
+        ],
+        "failures": []
+      },
+      "file": "frame-04.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 25",
+      "at": 561790.3279574297,
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 6,
+        "triangles": 613744,
+        "drawCalls": 66,
+        "geometries": 151,
+        "textures": 8,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      },
+      "file": "frame-05.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 26",
+      "at": 571790.3279574297,
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 7,
+        "triangles": 595007,
+        "drawCalls": 78,
+        "geometries": 144,
+        "textures": 10,
+        "buildings": 6,
+        "observedWalls": 0,
+        "trees": 6467,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 268325.7398954833,
+            "x": 312.8400456439016,
+            "y": -875.6043348562041,
+            "z": 978.2484911491001,
+            "phase": 3.948121360793493,
+            "count": 4
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          629.7,
+          2136.8
+        ],
+        "failures": []
+      },
+      "file": "frame-06.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 27",
+      "at": 581790.3279574297,
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 8,
+        "triangles": 1170119,
+        "drawCalls": 240,
+        "geometries": 318,
+        "textures": 10,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      },
+      "file": "frame-07.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 28",
+      "at": 591790.3279574297,
+      "place": "Three Rivers · CA-198",
+      "area": "",
+      "road": "Sierra Drive",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 9,
+        "triangles": 1474326,
+        "drawCalls": 417,
+        "geometries": 657,
+        "textures": 10,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 29210,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 281874.45597635576,
+            "x": 2432.161589799987,
+            "y": 1513.888905079387,
+            "z": 410.78889153625266,
+            "phase": 0.028890557647690003,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      },
+      "file": "frame-08.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 29",
+      "at": 601790.3279574297,
+      "place": "Three Rivers · CA-198",
+      "area": "",
+      "road": "Sierra Drive",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 10,
+        "triangles": 891634,
+        "drawCalls": 119,
+        "geometries": 536,
+        "textures": 10,
+        "buildings": 802,
+        "observedWalls": 0,
+        "trees": 4765,
+        "roadside": 102,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          152.6,
+          914.3
+        ],
+        "failures": []
+      },
+      "file": "frame-09.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 30",
+      "at": 611790.3279574297,
+      "place": "Three Rivers · CA-198",
+      "area": "",
+      "road": "Sierra Drive",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 11,
+        "triangles": 1075600,
+        "drawCalls": 162,
+        "geometries": 281,
+        "textures": 10,
+        "buildings": 35,
+        "observedWalls": 0,
+        "trees": 4714,
+        "roadside": 98,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 306829.57504036214,
+            "x": -1196.5378829891579,
+            "y": 802.3223012656773,
+            "z": 189.0089503953086,
+            "phase": 5.660302375273851,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          119,
+          789.2
+        ],
+        "failures": []
+      },
+      "file": "frame-10.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 31",
+      "at": 621790.3279574297,
+      "place": "Three Rivers · CA-198",
+      "area": "",
+      "road": "Sierra Drive",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 12,
+        "triangles": 952894,
+        "drawCalls": 144,
+        "geometries": 306,
+        "textures": 10,
+        "buildings": 439,
+        "observedWalls": 0,
+        "trees": 3090,
+        "roadside": 108,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 317485.66833838896,
+            "x": -1726.2416048534028,
+            "y": -1312.2915787259817,
+            "z": 184.0382134985822,
+            "phase": 0.02778191590259705,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          113.9,
+          489.5
+        ],
+        "failures": []
+      },
+      "file": "frame-11.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 32",
+      "at": 631790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "South Kaweah Avenue",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 13,
+        "triangles": 1385405,
+        "drawCalls": 154,
+        "geometries": 298,
+        "textures": 10,
+        "buildings": 658,
+        "observedWalls": 0,
+        "trees": 2554,
+        "roadside": 222,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          95,
+          460.9
+        ],
+        "failures": []
+      },
+      "file": "frame-12.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 33",
+      "at": 641790.3279574297,
+      "place": "Lindsay · CA-65",
+      "area": "",
+      "road": "Avenue 232",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 14,
+        "triangles": 1202757,
+        "drawCalls": 290,
+        "geometries": 444,
+        "textures": 11,
+        "buildings": 2624,
+        "observedWalls": 0,
+        "trees": 3050,
+        "roadside": 310,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 332187.97053085273,
+            "x": -1314.6310452812452,
+            "y": 2087.338879764321,
+            "z": 147.1480205179006,
+            "phase": 4.6142855974364405,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          95,
+          167.2
+        ],
+        "failures": []
+      },
+      "file": "frame-13.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 34",
+      "at": 651790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 15,
+        "triangles": 1958908,
+        "drawCalls": 474,
+        "geometries": 764,
+        "textures": 11,
+        "buildings": 9564,
+        "observedWalls": 0,
+        "trees": 591,
+        "roadside": 16,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 348208.2397923186,
+            "x": 692.3751522332797,
+            "y": -2940.448516887598,
+            "z": 163.25581780791282,
+            "phase": 1.547201778364391,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          109.3,
+          348.2
+        ],
+        "failures": []
+      },
+      "file": "frame-14.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 35",
+      "at": 661790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 16,
+        "triangles": 1550573,
+        "drawCalls": 201,
+        "geometries": 675,
+        "textures": 11,
+        "buildings": 17344,
+        "observedWalls": 0,
+        "trees": 1610,
+        "roadside": 90,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          115.9,
+          348.2
+        ],
+        "failures": []
+      },
+      "file": "frame-15.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 36",
+      "at": 671790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 17,
+        "triangles": 1227199,
+        "drawCalls": 149,
+        "geometries": 350,
+        "textures": 11,
+        "buildings": 79,
+        "observedWalls": 0,
+        "trees": 311,
+        "roadside": 1,
+        "ambient": [
+          {
+            "kind": "hare",
+            "s": 363172.9944744121,
+            "x": 37.715653020042645,
+            "y": 2212.6623984260027,
+            "z": 135.64320234415106,
+            "phase": 4.053873787932278,
+            "angle": 1.8181702105769668
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          120.9,
+          198.2
+        ],
+        "failures": []
+      },
+      "file": "frame-16.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 37",
+      "at": 681790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 18,
+        "triangles": 1150340,
+        "drawCalls": 140,
+        "geometries": 289,
+        "textures": 11,
+        "buildings": 265,
+        "observedWalls": 0,
+        "trees": 2896,
+        "roadside": 5,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 375860.6819092596,
+            "x": -65.4177256333275,
+            "y": -675.1760007151408,
+            "z": 196.1777761692822,
+            "phase": 2.6643406592943006,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          129.8,
+          220.3
+        ],
+        "failures": []
+      },
+      "file": "frame-17.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 38",
+      "at": 691790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "Porterville Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 19,
+        "triangles": 1239027,
+        "drawCalls": 144,
+        "geometries": 284,
+        "textures": 11,
+        "buildings": 279,
+        "observedWalls": 0,
+        "trees": 2773,
+        "roadside": 20,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 386789.1543374395,
+            "x": -129.3204236357247,
+            "y": -1674.0212506907212,
+            "z": 237.58033022663346,
+            "phase": 1.5442747806489017,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          137.3,
+          267.2
+        ],
+        "failures": []
+      },
+      "file": "frame-18.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 39",
+      "at": 701790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "Porterville Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 20,
+        "triangles": 1245471,
+        "drawCalls": 126,
+        "geometries": 270,
+        "textures": 11,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 3715,
+        "roadside": 21,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 398487.77764755004,
+            "x": -1400.9943696937248,
+            "y": -2910.1187815812355,
+            "z": 270.0693349393416,
+            "phase": 6.011088085969579,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          142.8,
+          343.2
+        ],
+        "failures": []
+      },
+      "file": "frame-19.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 40",
+      "at": 711790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "Porterville Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 21,
+        "triangles": 1281558,
+        "drawCalls": 143,
+        "geometries": 269,
+        "textures": 11,
+        "buildings": 10,
+        "observedWalls": 0,
+        "trees": 37,
+        "roadside": 1,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 409756.37205415225,
+            "x": -1520.0330135380623,
+            "y": -4271.369124852595,
+            "z": 235.21177097911516,
+            "phase": 1.4925782093592024,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          153.9,
+          308.3
+        ],
+        "failures": []
+      },
+      "file": "frame-20.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 41",
+      "at": 721790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "Porterville Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 22,
+        "triangles": 1100250,
+        "drawCalls": 148,
+        "geometries": 291,
+        "textures": 11,
+        "buildings": 153,
+        "observedWalls": 0,
+        "trees": 20,
+        "roadside": 17,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 409756.37205415225,
+            "x": 724.9669864619377,
+            "y": 5413.630875147405,
+            "z": 235.21177097911516,
+            "phase": 1.4925782093592024,
+            "count": 4
+          },
+          {
+            "kind": "birds",
+            "s": 418234.90473515884,
+            "x": -272.68323338795545,
+            "y": -3032.6556878072497,
+            "z": 244.03991507901867,
+            "phase": 3.853177888211051,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          149.1,
+          281.5
+        ],
+        "failures": []
+      },
+      "file": "frame-21.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 42",
+      "at": 731790.3279574297,
+      "place": "CA-65 · Lindsay → Porterville → Bakersfield",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 23,
+        "triangles": 2899360,
+        "drawCalls": 771,
+        "geometries": 919,
+        "textures": 11,
+        "buildings": 26148,
+        "observedWalls": 0,
+        "trees": 1060,
+        "roadside": 259,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          114.3,
+          274
+        ],
+        "failures": []
+      },
+      "file": "frame-22.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Section 43",
+      "at": 740787.3424990987,
+      "place": "Bakersfield",
+      "area": "",
+      "road": "Chester Avenue",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 24,
+        "triangles": 1327599,
+        "drawCalls": 196,
+        "geometries": 967,
+        "textures": 11,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1226,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      },
+      "file": "frame-23.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Sequoia · Giant Forest",
+      "at": 559053.8232456258,
+      "place": "Sequoia · Giant Forest",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 25,
+        "triangles": 747540,
+        "drawCalls": 80,
+        "geometries": 80,
+        "textures": 9,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      },
+      "file": "frame-24.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Three Rivers · CA-198",
+      "at": 595555.5058529844,
+      "place": "Three Rivers · CA-198",
+      "area": "",
+      "road": "Sierra Drive",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 26,
+        "triangles": 813211,
+        "drawCalls": 174,
+        "geometries": 174,
+        "textures": 9,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 29210,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 281874.45597635576,
+            "x": 2432.161589799987,
+            "y": 1513.888905079387,
+            "z": 410.78889153625266,
+            "phase": 0.028890557647690003,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      },
+      "file": "frame-25.png",
+      "skyLow": 0
+    },
+    {
+      "name": "CA-198 → CA-65",
+      "at": 627556.0218366999,
+      "place": "CA-198 → CA-65",
+      "area": "",
+      "road": "Avenue 296",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 27,
+        "triangles": 878711,
+        "drawCalls": 113,
+        "geometries": 113,
+        "textures": 9,
+        "buildings": 658,
+        "observedWalls": 0,
+        "trees": 2554,
+        "roadside": 222,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          95,
+          460.9
+        ],
+        "failures": []
+      },
+      "file": "frame-26.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Lindsay · CA-65",
+      "at": 642329.2606492019,
+      "place": "Lindsay · CA-65",
+      "area": "",
+      "road": "Avenue 232",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 28,
+        "triangles": 1104199,
+        "drawCalls": 255,
+        "geometries": 368,
+        "textures": 11,
+        "buildings": 2624,
+        "observedWalls": 0,
+        "trees": 3050,
+        "roadside": 310,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 332187.97053085273,
+            "x": -1314.6310452812452,
+            "y": 2087.338879764321,
+            "z": 147.1480205179006,
+            "phase": 4.6142855974364405,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          95,
+          167.2
+        ],
+        "failures": []
+      },
+      "file": "frame-27.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Porterville · CA-65",
+      "at": 660397.843859212,
+      "place": "Porterville · CA-65",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 29,
+        "triangles": 1934452,
+        "drawCalls": 305,
+        "geometries": 305,
+        "textures": 9,
+        "buildings": 17344,
+        "observedWalls": 0,
+        "trees": 1610,
+        "roadside": 90,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          115.9,
+          348.2
+        ],
+        "failures": []
+      },
+      "file": "frame-28.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Bakersfield, California",
+      "at": 740817.3424990987,
+      "place": "Bakersfield",
+      "area": "",
+      "road": "Chester Avenue",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 30,
+        "triangles": 1317506,
+        "drawCalls": 183,
+        "geometries": 183,
+        "textures": 9,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1226,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      },
+      "file": "frame-29.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Bakersfield source join -90 m",
+      "at": 740797.3424990987,
+      "place": "Bakersfield",
+      "area": "",
+      "road": "Chester Avenue",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 31,
+        "triangles": 1325161,
+        "drawCalls": 195,
+        "geometries": 195,
+        "textures": 9,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1226,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      },
+      "file": "frame-30.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Bakersfield source join -10 m",
+      "at": 740877.3424990987,
+      "place": "Bakersfield",
+      "area": "",
+      "road": "Chester Avenue",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 32,
+        "triangles": 1281483,
+        "drawCalls": 173,
+        "geometries": 195,
+        "textures": 9,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1226,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      },
+      "file": "frame-31.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Bakersfield source join 10 m",
+      "at": 740897.3424990987,
+      "place": "Bakersfield → Kern River Canyon",
+      "area": "",
+      "road": "Chester Avenue",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 33,
+        "triangles": 1524103,
+        "drawCalls": 177,
+        "geometries": 372,
+        "textures": 11,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      },
+      "file": "frame-32.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Bakersfield source join 90 m",
+      "at": 740977.3424990987,
+      "place": "Bakersfield → Kern River Canyon",
+      "area": "",
+      "road": "Chester Avenue",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 34,
+        "triangles": 1491219,
+        "drawCalls": 169,
+        "geometries": 372,
+        "textures": 11,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      },
+      "file": "frame-33.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.1800000000000182,
+      "at": 564240.3279574297,
+      "section": 25,
+      "name": "Steep grade section 25",
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 35,
+        "triangles": 567280,
+        "drawCalls": 56,
+        "geometries": 56,
+        "textures": 9,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      },
+      "file": "frame-34.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.1767241379306357,
+      "at": 519402.64795742976,
+      "section": 21,
+      "name": "Steep grade section 21",
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 36,
+        "triangles": 1259445,
+        "drawCalls": 145,
+        "geometries": 145,
+        "textures": 9,
+        "buildings": 72,
+        "observedWalls": 0,
+        "trees": 25856,
+        "roadside": 2,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 219205.29804808315,
+            "x": 2094.9062687459545,
+            "y": -1583.7783048316903,
+            "z": 2277.384449661588,
+            "phase": 3.471508891376778,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1453.9,
+          2585.7
+        ],
+        "failures": []
+      },
+      "file": "frame-35.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.15399999999999636,
+      "at": 516150.32795742975,
+      "section": 20,
+      "name": "Steep grade section 20",
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 37,
+        "triangles": 756769,
+        "drawCalls": 56,
+        "geometries": 201,
+        "textures": 11,
+        "buildings": 108,
+        "observedWalls": 0,
+        "trees": 39711,
+        "roadside": 9,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 206885.48172296368,
+            "x": -1132.9573732388583,
+            "y": -2416.9077699917502,
+            "z": 2043.7309717620856,
+            "phase": 2.696797863884295,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1335.8,
+          2363.2
+        ],
+        "failures": []
+      },
+      "file": "frame-36.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.15200000000004366,
+      "at": 547150.3279574297,
+      "section": 23,
+      "name": "Steep grade section 23",
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 38,
+        "triangles": 1286004,
+        "drawCalls": 197,
+        "geometries": 197,
+        "textures": 9,
+        "buildings": 88,
+        "observedWalls": 0,
+        "trees": 12411,
+        "roadside": 11,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1361.2,
+          2810.7
+        ],
+        "failures": []
+      },
+      "file": "frame-37.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.15200000000004366,
+      "at": 547150.3279574297,
+      "section": 24,
+      "name": "Steep grade section 24",
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 38,
+        "triangles": 1286004,
+        "drawCalls": 197,
+        "geometries": 197,
+        "textures": 9,
+        "buildings": 88,
+        "observedWalls": 0,
+        "trees": 12411,
+        "roadside": 11,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1361.2,
+          2810.7
+        ],
+        "failures": []
+      },
+      "file": "frame-38.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.13200000000001638,
+      "at": 535610.3279574297,
+      "section": 22,
+      "name": "Steep grade section 22",
+      "place": "Sequoia · Generals Highway",
+      "area": "",
+      "road": "Generals Highway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 39,
+        "triangles": 774246,
+        "drawCalls": 63,
+        "geometries": 260,
+        "textures": 11,
+        "buildings": 66,
+        "observedWalls": 0,
+        "trees": 38528,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 230157.429446447,
+            "x": 1527.2799496241344,
+            "y": -3055.561669243034,
+            "z": 2121.1668018343807,
+            "phase": 4.335476812365716,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1270.7,
+          2647.3
+        ],
+        "failures": []
+      },
+      "file": "frame-39.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.1319999999999993,
+      "at": 610760.3279574297,
+      "section": 30,
+      "name": "Steep grade section 30",
+      "place": "Three Rivers · CA-198",
+      "area": "",
+      "road": "Sierra Drive",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 40,
+        "triangles": 1208105,
+        "drawCalls": 192,
+        "geometries": 192,
+        "textures": 9,
+        "buildings": 35,
+        "observedWalls": 0,
+        "trees": 4714,
+        "roadside": 98,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 306829.57504036214,
+            "x": -1196.5378829891579,
+            "y": 802.3223012656773,
+            "z": 189.0089503953086,
+            "phase": 5.660302375273851,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          119,
+          789.2
+        ],
+        "failures": []
+      },
+      "file": "frame-40.png",
+      "skyLow": 0
+    },
+    {
+      "grade": 0.12400000000000092,
+      "at": 603755.3279574297,
+      "section": 29,
+      "name": "Steep grade section 29",
+      "place": "Three Rivers · CA-198",
+      "area": "",
+      "road": "Sierra Drive",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 41,
+        "triangles": 470989,
+        "drawCalls": 47,
+        "geometries": 239,
+        "textures": 11,
+        "buildings": 802,
+        "observedWalls": 0,
+        "trees": 4765,
+        "roadside": 102,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          152.6,
+          914.3
+        ],
+        "failures": []
+      },
+      "file": "frame-41.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 40.17",
+      "at": 40170,
+      "place": "Autumn Springs",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 42,
+        "triangles": 1636537,
+        "drawCalls": 457,
+        "geometries": 457,
+        "textures": 10,
+        "buildings": 611,
+        "observedWalls": 0,
+        "trees": 2090,
+        "roadside": 214,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 41270.48821045697,
+            "x": -3892.104516272383,
+            "y": 224.19518739893334,
+            "z": 177.92019290686875,
+            "phase": 1.3628961143679856,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          93.6,
+          448.8
+        ],
+        "failures": []
+      },
+      "file": "frame-42.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 86.435",
+      "at": 86435,
+      "place": "Mossdale",
+      "area": "",
+      "road": "Westside Freeway",
+      "stats": {
+        "source": "",
+        "draws": 43,
+        "triangles": 837434,
+        "drawCalls": 218,
+        "geometries": 218,
+        "textures": 10,
+        "buildings": 279,
+        "observedWalls": 0,
+        "trees": 2101,
+        "roadside": 137,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 89901.5752992426,
+            "x": 3819.808607401607,
+            "y": 1802.764757348635,
+            "z": 52.183285449059895,
+            "phase": 5.503545282968891,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          -3,
+          20
+        ],
+        "failures": []
+      },
+      "file": "frame-43.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 108.605",
+      "at": 108605,
+      "place": "Stockton, California",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "",
+        "draws": 44,
+        "triangles": 778447,
+        "drawCalls": 165,
+        "geometries": 165,
+        "textures": 10,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 104735.02734268428,
+            "x": -770.8829307425668,
+            "y": 1027.5784688096805,
+            "z": 44.921884041806834,
+            "phase": 2.0343122766547177,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      },
+      "file": "frame-44.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 3246.455",
+      "at": 3919541.3726884536,
+      "place": "Buena Ventura",
+      "area": "",
+      "road": "Coronado Freeway",
+      "stats": {
+        "source": "",
+        "draws": 45,
+        "triangles": 1475716,
+        "drawCalls": 330,
+        "geometries": 330,
+        "textures": 16,
+        "buildings": 2929,
+        "observedWalls": 0,
+        "trees": 4667,
+        "roadside": 752,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3249687.9276196375,
+            "x": 3888.5984766918377,
+            "y": -2103.486506972202,
+            "z": 1761.588914583132,
+            "phase": 4.3555423474215065,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          1539.9,
+          2225
+        ],
+        "failures": []
+      },
+      "file": "frame-45.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 1131",
+      "at": 1491971.0372522576,
+      "place": "Las Vegas → Kingman",
+      "area": "",
+      "road": "Hoover Dam Bypass",
+      "stats": {
+        "source": "",
+        "draws": 46,
+        "triangles": 1750643,
+        "drawCalls": 291,
+        "geometries": 291,
+        "textures": 18,
+        "buildings": 8,
+        "observedWalls": 0,
+        "trees": 146,
+        "roadside": 138,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1136646.917688952,
+            "x": 491.47280252818155,
+            "y": -1270.605797382607,
+            "z": 566.0992657358902,
+            "phase": 0.5657589989103508,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          196.4,
+          977
+        ],
+        "failures": []
+      },
+      "file": "frame-46.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 2142.77",
+      "at": 2729740.742764689,
+      "place": "Inspiration Point → Zion National Park",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 47,
+        "triangles": 1057201,
+        "drawCalls": 173,
+        "geometries": 173,
+        "textures": 22,
+        "buildings": 24,
+        "observedWalls": 0,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2145164.1541582826,
+            "x": -46.250657143259424,
+            "y": 258.9747626427645,
+            "z": 1430.23811739339,
+            "phase": 0.21218442507584984,
+            "count": 3
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "file": "frame-47.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 2147.61",
+      "at": 2734580.742764689,
+      "place": "Zion National Park, Utah",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 48,
+        "triangles": 856016,
+        "drawCalls": 167,
+        "geometries": 232,
+        "textures": 22,
+        "buildings": 24,
+        "observedWalls": 0,
+        "trees": 2165,
+        "roadside": 83,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2145164.1541582826,
+            "x": -46.250657143259424,
+            "y": 258.9747626427645,
+            "z": 1430.23811739339,
+            "phase": 0.21218442507584984,
+            "count": 3
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "file": "frame-48.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 2154.15",
+      "at": 2766482.893201079,
+      "place": "Zion National Park, Utah",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 49,
+        "triangles": 758142,
+        "drawCalls": 125,
+        "geometries": 357,
+        "textures": 24,
+        "buildings": 58,
+        "observedWalls": 0,
+        "trees": 1894,
+        "roadside": 99,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2152142.2148654903,
+            "x": -1345.709645409298,
+            "y": -146.98155913797115,
+            "z": 1248.1858118420428,
+            "phase": 5.405007022751972,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          1165,
+          2231.5
+        ],
+        "failures": []
+      },
+      "file": "frame-49.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 2158.99",
+      "at": 2771322.893201079,
+      "place": "Temple of Sinawava → Glen Canyon · Page",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 50,
+        "triangles": 443354,
+        "drawCalls": 66,
+        "geometries": 367,
+        "textures": 24,
+        "buildings": 58,
+        "observedWalls": 0,
+        "trees": 1894,
+        "roadside": 99,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2152142.2148654903,
+            "x": -1345.709645409298,
+            "y": -146.98155913797115,
+            "z": 1248.1858118420428,
+            "phase": 5.405007022751972,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          1165,
+          2231.5
+        ],
+        "failures": []
+      },
+      "file": "frame-50.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 2160",
+      "at": 2772332.893201079,
+      "place": "Temple of Sinawava → Glen Canyon · Page",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 51,
+        "triangles": 1403124,
+        "drawCalls": 222,
+        "geometries": 589,
+        "textures": 26,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 1327,
+        "roadside": 24,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2169469.7750844103,
+            "x": 2965.079582722122,
+            "y": 715.0708646873971,
+            "z": 1777.0316167935125,
+            "phase": 6.244995204591379,
+            "count": 4
+          }
+        ],
+        "detailPatches": 3,
+        "relief": [
+          1222.1,
+          2168.5
+        ],
+        "failures": []
+      },
+      "file": "frame-51.png",
+      "skyLow": 0
+    },
+    {
+      "name": "Road profile 3831.63",
+      "at": 4504716.372688454,
+      "place": "Lubbock, Texas",
+      "area": "",
+      "road": "Marsha Sharp Freeway",
+      "stats": {
+        "source": "",
+        "draws": 52,
+        "triangles": 1774243,
+        "drawCalls": 481,
+        "geometries": 481,
+        "textures": 28,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "file": "frame-52.png",
+      "skyLow": 0
+    },
+    {
+      "name": "detours/kings-canyon terrain join",
+      "at": 433310.32795742975,
+      "place": "Kings Canyon Scenic Byway",
+      "area": "",
+      "road": "Kings Canyon Scenic Byway",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 53,
+        "triangles": 580034,
+        "drawCalls": 61,
+        "geometries": 61,
+        "textures": 27,
+        "buildings": 4,
+        "observedWalls": 0,
+        "trees": 30033,
+        "roadside": 6,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 130509.95070679131,
+            "x": 3385.1317630743506,
+            "y": -1501.5892718178254,
+            "z": 1289.883374191545,
+            "phase": 5.1472130763707735,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          710.2,
+          2985.1
+        ],
+        "failures": []
+      },
+      "file": "frame-53.png",
+      "skyLow": 0
+    },
+    {
+      "name": "detours/kern-river terrain join",
+      "at": 777607.3424990987,
+      "place": "Kern River Canyon",
+      "area": "",
+      "road": "Kern Canyon Road",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 54,
+        "triangles": 751607,
+        "drawCalls": 89,
+        "geometries": 89,
+        "textures": 27,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 31298.02556651272,
+            "x": -2393.5970470835864,
+            "y": -271.64880650439113,
+            "z": 505.3312600100089,
+            "phase": 2.7511786148208506,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "file": "frame-54.png",
+      "skyLow": 0
+    },
+    {
+      "name": "detours/brian-head terrain join",
+      "at": 2420455.868123077,
+      "place": "Brian Head, Utah",
+      "area": "",
+      "road": "Cedar Canyon Road",
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 55,
+        "triangles": 915192,
+        "drawCalls": 121,
+        "geometries": 121,
+        "textures": 27,
+        "buildings": 57,
+        "observedWalls": 0,
+        "trees": 17951,
+        "roadside": 2,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 40166.25550742261,
+            "x": -2214.492114480417,
+            "y": 3492.083040467147,
+            "z": 3180.779088735433,
+            "phase": 4.391005817943115,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          2489.8,
+          3258.8
+        ],
+        "failures": []
+      },
+      "file": "frame-55.png",
+      "skyLow": 0
+    }
+  ],
+  "errors": [],
+  "gradients": [
+    {
+      "grade": 0.1800000000000182,
+      "at": 564240.3279574297,
+      "section": 25
+    },
+    {
+      "grade": 0.1767241379306357,
+      "at": 519402.64795742976,
+      "section": 21
+    },
+    {
+      "grade": 0.15399999999999636,
+      "at": 516150.32795742975,
+      "section": 20
+    },
+    {
+      "grade": 0.15200000000004366,
+      "at": 547150.3279574297,
+      "section": 23
+    },
+    {
+      "grade": 0.15200000000004366,
+      "at": 547150.3279574297,
+      "section": 24
+    },
+    {
+      "grade": 0.13200000000001638,
+      "at": 535610.3279574297,
+      "section": 22
+    },
+    {
+      "grade": 0.1319999999999993,
+      "at": 610760.3279574297,
+      "section": 30
+    },
+    {
+      "grade": 0.12400000000000092,
+      "at": 603755.3279574297,
+      "section": 29
+    },
+    {
+      "grade": 0.11258278145625726,
+      "at": 579750.3279574297,
+      "section": 27
+    },
+    {
+      "grade": 0.1113689095128188,
+      "at": 736265.3279574297,
+      "section": 42
+    },
+    {
+      "grade": 0.10599999999999454,
+      "at": 576785.3279574297,
+      "section": 26
+    },
+    {
+      "grade": 0.1,
+      "at": 736665.3279574297,
+      "section": 43
+    },
+    {
+      "grade": 0.08199999999999932,
+      "at": 718495.3279574297,
+      "section": 41
+    },
+    {
+      "grade": 0.08000000000000682,
+      "at": 586755.3279574297,
+      "section": 28
+    },
+    {
+      "grade": 0.07400000000000091,
+      "at": 694065.3279574297,
+      "section": 38
+    },
+    {
+      "grade": 0.06999999999999887,
+      "at": 708820.3279574297,
+      "section": 40
+    },
+    {
+      "grade": 0.06593406593423089,
+      "at": 627175.3279574297,
+      "section": 31
+    },
+    {
+      "grade": 0.06593406593423089,
+      "at": 627175.3279574297,
+      "section": 32
+    },
+    {
+      "grade": 0.054000000000002046,
+      "at": 706520.3279574297,
+      "section": 39
+    },
+    {
+      "grade": 0.0539999999999992,
+      "at": 653590.3279574297,
+      "section": 34
+    },
+    {
+      "grade": 0.04000000000000341,
+      "at": 683680.3279574297,
+      "section": 37
+    },
+    {
+      "grade": 0.03921568627381374,
+      "at": 658586.3479574297,
+      "section": 35
+    },
+    {
+      "grade": 0.030000000000001137,
+      "at": 670300.3279574297,
+      "section": 36
+    },
+    {
+      "grade": 0.012048192771129857,
+      "at": 642687.8179574297,
+      "section": 33
+    }
+  ],
+  "checked": "2026-10-13T21:36:58.246Z"
+}

@@ -1,6 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {gradeTerrain,roadTriangles,minorRoadSurfaces,vehicleTunnel} from '../templates/road-grade.js';
+import {gradeTerrain,roadTriangles,groundHeight,joinTerrainEdge,minorRoadSurfaces,vehicleTunnel} from '../templates/road-grade.js';
+
+test('detail borders meet the graded parent triangles while retaining interior relief',()=>{
+  const parent={x0:0,y0:0,w:2,h:2,cell:10,scale:.1,offset:-500},coarse=new Float32Array([5000,5000,5000,6000]);
+  const grid={x0:2,y0:2,w:4,h:4,cell:2,scale:.1,offset:-500},fine=new Float32Array(16).fill(5800);
+  joinTerrainEdge(grid,fine,parent,coarse);
+  for(let row=0;row<4;row++)for(let col=0;col<4;col++){
+    if(row===0||row===3||col===0||col===3)assert.ok(Math.abs(fine[row*4+col]*.1-500-groundHeight(parent,coarse,2+col*2,2+row*2))<.0001);
+    else assert.equal(fine[row*4+col],5800);
+  }
+  assert.equal(fine[0],5000,'The lower triangle is level, even though bilinear sampling rises here');
+});
 
 test('small path underpasses do not receive vehicle-sized tunnel shells',()=>{
   for(const kind of ['cycleway','footway','path','steps','track'])assert.equal(vehicleTunnel({kind,tunnel:true}),false);

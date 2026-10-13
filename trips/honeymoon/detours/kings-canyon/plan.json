@@ -1,19 +1,26 @@
 {
   "id": "kings-canyon",
-  "name": "Kings Canyon Scenic Byway, California",
+  "name": "Kings Canyon \u2192 Sequoia \u2192 Bakersfield, California",
   "region": "california",
   "stop": 1,
   "replace": [
     306790.32795742975,
-    306790.32795742975
+    482283
   ],
   "via": [
     "Fresno",
     "CA-180",
     "Grant Grove",
     "Kings Canyon",
-    "Cedar Grove",
-    "Roads End"
+    "Roads End",
+    "Generals Highway",
+    "Giant Forest",
+    "Three Rivers",
+    "CA-198",
+    "CA-65",
+    "Lindsay",
+    "Porterville",
+    "Bakersfield"
   ],
   "source": "https://www.nps.gov/seki/planyourvisit/byways.htm",
   "anchor": [
@@ -22,7 +29,7 @@
   ],
   "stops": [
     {
-      "name": "Fresno · CA-180 approach",
+      "name": "Fresno \u00b7 CA-180 approach",
       "lon": -119.809625,
       "lat": 36.739094
     },
@@ -33,25 +40,54 @@
       "roadRef": "CA 180"
     },
     {
-      "name": "Kings Canyon · Junction View",
+      "name": "Kings Canyon \u00b7 Junction View",
       "lon": -118.8899333,
       "lat": 36.8315167,
       "roadRef": "CA 180"
     },
     {
-      "name": "Kings Canyon · Cedar Grove",
+      "name": "Kings Canyon \u00b7 Cedar Grove",
       "lon": -118.6663,
       "lat": 36.7888
     },
     {
-      "name": "Kings Canyon · Roads End",
+      "name": "Kings Canyon \u00b7 Roads End",
       "lon": -118.582,
       "lat": 36.7954
     },
     {
-      "name": "Fresno · return",
-      "lon": -119.809625,
-      "lat": 36.739094
+      "name": "Sequoia \u00b7 Giant Forest",
+      "lon": -118.7660091,
+      "lat": 36.5655741
+    },
+    {
+      "name": "Three Rivers \u00b7 CA-198",
+      "lon": -118.904523,
+      "lat": 36.4397677,
+      "roadRef": "CA 198"
+    },
+    {
+      "name": "CA-198 \u2192 CA-65",
+      "lon": -119.1349081,
+      "lat": 36.3262776,
+      "roadRef": "CA 65"
+    },
+    {
+      "name": "Lindsay \u00b7 CA-65",
+      "lon": -119.1146931,
+      "lat": 36.2107098,
+      "roadRef": "CA 65"
+    },
+    {
+      "name": "Porterville \u00b7 CA-65",
+      "lon": -119.0394625,
+      "lat": 36.0656808,
+      "roadRef": "CA 65"
+    },
+    {
+      "name": "Bakersfield",
+      "lon": -119.01893398172909,
+      "lat": 35.37236686089045
     }
   ],
   "vegetation": [
@@ -76,23 +112,39 @@
     "track"
   ],
   "preferRoadRefs": [
-    "CA 180"
+    "CA 180",
+    "CA 198",
+    "CA 65"
+  ],
+  "endAnchor": [
+    -119.01893398172909,
+    35.37236686089045
   ],
   "captions": [
     {
+      "name": "Fresno \u2192 Kings Canyon",
       "from": 0,
-      "to": 93589.2891866859,
-      "name": "Fresno → Kings Canyon"
+      "to": 93589.2891866859
     },
     {
+      "name": "Kings Canyon Scenic Byway",
       "from": 93589.2891866859,
-      "to": 203611.02633894727,
-      "name": "Kings Canyon Scenic Byway"
+      "to": 206440.9647216686
     },
     {
-      "from": 203611.02633894727,
-      "to": 297200.31552563317,
-      "name": "Kings Canyon → Fresno"
+      "name": "Sequoia \u00b7 Generals Highway",
+      "from": 206440.9647216686,
+      "to": 279000
+    },
+    {
+      "name": "Three Rivers \u00b7 CA-198",
+      "from": 279000,
+      "to": 320835.6938792702
+    },
+    {
+      "name": "CA-65 \u00b7 Lindsay \u2192 Porterville \u2192 Bakersfield",
+      "from": 320835.6938792702,
+      "to": 434097.014541669
     }
   ]
 }

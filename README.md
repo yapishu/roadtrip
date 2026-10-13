@@ -19,7 +19,7 @@ node scripts/viewer.mjs --trip trips/honeymoon --serve 8088 --host 0.0.0.0
 
 Open `http://localhost:8088/`, or use the serving computer’s address from another device on the same network. Node 18+ serves the viewer. The browser needs WebGL 2. The trip folder also works on a static web server.
 
-The drive loops by default. Move the pointer or tap to reveal the seek bar, stop picker, playback button, and speed control. The stop picker scrolls with a finger. The itinerary includes Fresno, Kings Canyon, Bakersfield, Kern River Canyon, Walker Pass, and Brian Head Resort before Panguitch. Scroll over the scenery to change speed; Space pauses. The map stays visible: click it or press M to expand, scroll over it to zoom, and drag to pan. Its follow button recenters on the car; Esc folds it away.
+The drive loops by default. Move the pointer or tap to reveal the seek bar, stop picker, playback button, and speed control. The stop picker scrolls with a finger. The itinerary runs from Fresno into Kings Canyon, through Sequoia and Three Rivers on CA-198, then along CA-65 through Lindsay and Porterville to Bakersfield. It continues through Kern River Canyon and Walker Pass, with Brian Head Resort before Panguitch. Scroll over the scenery to change speed; Space pauses. The map stays visible: click it or press M to expand, scroll over it to zoom, and drag to pan. Its follow button recenters on the car; Esc folds it away.
 
 URL options include `?km=2442.611&paused=1` for a fixed position and `?speed=96.56` for the starting speed in km/h. The caption names the current place. Controls fade when idle.
 

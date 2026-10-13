@@ -46,6 +46,7 @@ truncate the destination.
 Near terrain provides canyon walls, slopes beside the road, and local occlusion.
 Far terrain provides ridgelines. Cut holes in the coarse mesh where detail patches
 replace it, and align boundaries so one grid does not cover or tear the other.
+Sample patch perimeter heights from the parent triangles after road grading.
 Use shared normals and UVs across rendering tiles to avoid visible seams.
 
 Grade every terrain cell intersecting the road ribbon below the road surface.

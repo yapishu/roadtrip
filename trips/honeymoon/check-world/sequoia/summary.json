@@ -1,0 +1,13 @@
+{
+  "routeMetres": 4988204.372688454,
+  "stops": 60,
+  "worldSections": 547,
+  "routeViews": 56,
+  "motionSequences": 6,
+  "motionFrames": 30,
+  "allMontagesReviewed": true,
+  "runtimeErrors": 0,
+  "unitTests": 22,
+  "sourcePosition": "Same mapped road at the Bakersfield handoff",
+  "terrainEdges": "Refined patch perimeters match the rendered parent triangles after road grading"
+}
