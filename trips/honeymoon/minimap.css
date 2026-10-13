@@ -21,5 +21,5 @@
   #atlas { top: 12px; right: 12px; width: 170px; }
   #atlas[data-expanded="true"] { width: calc(100vw - 28px); }
   #journey { right: 200px; }
-  #journey select { max-width: calc(100vw - 220px); }
+  #journey #stops { max-width: calc(100vw - 220px); }
 }

@@ -1,0 +1,25 @@
+{
+  "method": "Compare the same three driving positions before and after terrain tiling; the left 580-pixel scenery region is pixel-identical in each screenshot. Counts isolate terrain tiling before roadside additions.",
+  "measurements": [
+    {
+      "km": 0.8,
+      "trianglesBefore": 2120369,
+      "trianglesAfter": 1357523,
+      "reductionPercent": 36.0
+    },
+    {
+      "km": 580,
+      "trianglesBefore": 1682260,
+      "trianglesAfter": 1076220,
+      "reductionPercent": 36.0
+    },
+    {
+      "km": 2442.611,
+      "trianglesBefore": 1643508,
+      "trianglesAfter": 706012,
+      "reductionPercent": 57.0
+    }
+  ],
+  "device": "Desktop Chromium with SwiftShader; target Android frame is untested",
+  "timing": "Triangle counts are GPU-work indicators, not measurements of device frame rate."
+}

@@ -1,0 +1,111 @@
+{
+  "routeMetres": 4750104.009039968,
+  "stops": 47,
+  "scenicDrives": 8,
+  "brianBeforePanguitch": true,
+  "lodgeDistanceMetres": 34.35752845522828,
+  "seams": [
+    {
+      "source": "parks/death-valley",
+      "horizontalMetres": 1.2121733363435552,
+      "verticalMetres": 0.004444444444587248
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 1.2121733363435552,
+      "verticalMetres": 0.004444444444587248
+    },
+    {
+      "source": "parks/grand-canyon",
+      "horizontalMetres": 2.0899261386898904,
+      "verticalMetres": 0.06512437810943084
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 2.086992002215413,
+      "verticalMetres": 0.004875621890278126
+    },
+    {
+      "source": "detours/brian-head",
+      "horizontalMetres": 0.004397223877133378,
+      "verticalMetres": 0.040065025367312046
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 0.004396186817023474,
+      "verticalMetres": 0.012448132779809384
+    },
+    {
+      "source": "parks/bryce",
+      "horizontalMetres": 2.7813104824372235,
+      "verticalMetres": 0.018000000000029104
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 2.781661840886615,
+      "verticalMetres": 0.09799999999995634
+    },
+    {
+      "source": "parks/zion",
+      "horizontalMetres": 2.5227036660537365,
+      "verticalMetres": 0.19000000000005457
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 2.5227036660537365,
+      "verticalMetres": 0.22000000000002728
+    },
+    {
+      "source": "parks/glen-canyon",
+      "horizontalMetres": 3.2108939563755245,
+      "verticalMetres": 0.026000000000067303
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 3.2108939563755245,
+      "verticalMetres": 0.026000000000067303
+    },
+    {
+      "source": "parks/monument-valley",
+      "horizontalMetres": 3.304784410430665,
+      "verticalMetres": 0.5700000000001637
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 3.304784410430665,
+      "verticalMetres": 0.5800000000001546
+    },
+    {
+      "source": "parks/mesa-verde",
+      "horizontalMetres": 3.883722441281584,
+      "verticalMetres": 0.02999999999974534
+    },
+    {
+      "source": "main",
+      "horizontalMetres": 3.883722441281584,
+      "verticalMetres": 0.07000000000016371
+    }
+  ],
+  "uniqueRoadsideFeatures": 15660,
+  "roadsideKinds": {
+    "stop": 1122,
+    "signal": 1324,
+    "give_way": 97,
+    "tower": 1743,
+    "bus_stop": 259,
+    "pole": 4555,
+    "rail": 797,
+    "line": 659,
+    "fence": 1885,
+    "guard_rail": 163,
+    "bin": 89,
+    "lamp": 1780,
+    "hydrant": 134,
+    "wall": 352,
+    "minor_line": 355,
+    "bench": 228,
+    "hedge": 19,
+    "boulder": 90,
+    "chair_lift": 9
+  }
+}

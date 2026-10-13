@@ -1,0 +1,105 @@
+{
+  "frames": [
+    {
+      "name": "overpass",
+      "km": 4266.616009039968,
+      "place": "Lubbock, Texas",
+      "area": "",
+      "road": "Marsha Sharp Freeway",
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 1482974,
+        "drawCalls": 315,
+        "geometries": 315,
+        "textures": 10,
+        "buildings": 1243,
+        "observedWalls": 171,
+        "trees": 7626,
+        "roadside": 166,
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "hoover",
+      "km": 1253.8706736037723,
+      "place": "Las Vegas → Kingman",
+      "area": "",
+      "road": "Hoover Dam Bypass",
+      "stats": {
+        "source": "",
+        "draws": 2,
+        "triangles": 1813252,
+        "drawCalls": 289,
+        "geometries": 289,
+        "textures": 12,
+        "buildings": 8,
+        "observedWalls": 0,
+        "trees": 146,
+        "roadside": 37,
+        "detailPatches": 2,
+        "relief": [
+          196.4,
+          977
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "dam",
+      "km": 2728.357803936068,
+      "place": "Glen Canyon · Page, Arizona",
+      "area": "",
+      "road": "Bitter Springs–Utah State Line Highway",
+      "stats": {
+        "source": "",
+        "draws": 3,
+        "triangles": 708238,
+        "drawCalls": 97,
+        "geometries": 97,
+        "textures": 16,
+        "buildings": 567,
+        "observedWalls": 54,
+        "trees": 990,
+        "roadside": 52,
+        "detailPatches": 1,
+        "relief": [
+          954.5,
+          1403
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "brian",
+      "km": 2202.4723476723493,
+      "place": "Brian Head Resort",
+      "area": "",
+      "road": "",
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 4,
+        "triangles": 553356,
+        "drawCalls": 108,
+        "geometries": 108,
+        "textures": 22,
+        "buildings": 321,
+        "observedWalls": 0,
+        "trees": 14990,
+        "roadside": 36,
+        "detailPatches": 0,
+        "relief": [
+          2484,
+          3447.4
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

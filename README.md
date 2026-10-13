@@ -17,9 +17,11 @@ node scripts/viewer.mjs --trip trips/honeymoon --serve 8088 --host 0.0.0.0
 
 Open `http://localhost:8088/`, or use the serving computer’s address from another device on the same network. Node 18+ serves the viewer. The browser needs WebGL 2. The trip folder also works on a static web server.
 
-The drive loops by default. Move the pointer or tap to reveal the seek bar, stop selector, playback button, and speed control. Scroll over the scenery to change speed; Space pauses. The map stays visible: click it or press M to expand, scroll over it to zoom, and drag to pan. Its follow button recenters on the car; Esc folds it away.
+The drive loops by default. Move the pointer or tap to reveal the seek bar, stop picker, playback button, and speed control. The stop picker scrolls with a finger and includes Brian Head Resort before Panguitch. Scroll over the scenery to change speed; Space pauses. The map stays visible: click it or press M to expand, scroll over it to zoom, and drag to pan. Its follow button recenters on the car; Esc folds it away.
 
 URL options include `?km=2442.611&paused=1` for a fixed position and `?speed=96.56` for the starting speed in km/h. The caption names the current place. Controls fade when idle.
+
+For a modest Android picture frame, start with `?fps=30`. This caps rendering at 30 frames per second while preserving the same pixel resolution, models, and driving speed. Terrain outside the camera view is culled, and a paused scene performs no WebGL redraws. Performance on the target frame needs an on-device check; reducing the cap further with `?fps=20` is available.
 
 ## Scene and tools
 
@@ -29,6 +31,8 @@ URL options include `?km=2442.611&paused=1` for a fixed position and `?speed=96.
 - `tests/` contains focused checks for road profiles and generation workflows.
 
 The scene archive includes the rendered world assets and all components required to restore the drive. Checkpoint records live in `checkpoints/`. Source downloads and generation caches stay outside Git. Public assets carry their source metadata; build scripts retain the generation and projection steps. [Pixel Path tooling](references/pixel-path.md) describes the art pipeline and its local model setup.
+
+Mapped roadside details include signs, lamps, utility lines, fences, railways, and off-season ski lifts. Structures have foundations and bridge decks; unmeasured dimensions and small architectural details use representative forms. `node scripts/check-viewer.mjs http://localhost:8088/` exercises finger scrolling, stop selection, the frame cap, idle rendering, and looping. `scripts/check-world.mjs` records views at named stops, scenic interiors, and selected road profiles.
 
 ## Credits and licenses
 

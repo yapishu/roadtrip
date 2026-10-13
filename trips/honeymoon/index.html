@@ -14,8 +14,8 @@
 -->
 <style>
   :root { --ink: #f4efe2; }
-  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; overscroll-behavior: none; touch-action: none; }
-  #c { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; display: block; }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; overscroll-behavior: none; }
+  #c { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; display: block; touch-action: none; }
   #info { position: fixed; left: 10px; top: 8px; font: 11px/1.35 ui-monospace, Menlo, Consolas, monospace; color: var(--ink); text-shadow: 0 1px 2px #000, 0 0 3px #000; pointer-events: none; display: none; white-space: pre; }
   #credits { position: fixed; left: 8px; right: 8px; bottom: 5px; font: 9px/1.3 ui-monospace, Menlo, Consolas, monospace; color: rgba(255, 255, 255, .62); text-shadow: 0 1px 1px rgba(0, 0, 0, .7); pointer-events: none; }
   #credits a { color: inherit; pointer-events: auto; }
@@ -27,6 +27,14 @@
   button, select { color: var(--ink); background: #171821b8; border: 1px solid #eee1bf60; border-radius: 3px; padding: 7px 9px; font: 12px ui-monospace, Menlo, Consolas, monospace; }
   select { max-width: min(38vw, 270px); }
   button { cursor: pointer; }
+  #stops { max-width: min(38vw, 270px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #stop-picker { width: min(420px, calc(100vw - 40px)); padding: 0; color: #f4efe2; background: #292e29; border: 1px solid #b7b69a; box-shadow: 5px 5px 0 #0005; }
+  #stop-picker::backdrop { background: #11160f88; }
+  #stop-picker header { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid #717662; font: 13px ui-monospace, monospace; }
+  #stop-picker h2 { margin: 0; font: inherit; }
+  #stop-list { max-height: min(65dvh, 500px); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; padding: 6px; }
+  #stop-list button { display: block; width: 100%; min-height: 44px; text-align: left; border: 0; border-radius: 0; background: transparent; padding: 10px; }
+  #stop-list button:hover, #stop-list button:focus-visible { background: #555e48; }
   #progress { position: fixed; left: 20px; bottom: 32px; width: calc(100% - 40px); margin: 0; height: 8px; accent-color: #eed3a2; cursor: pointer; }
   #info { top: 76px; }
   #credits { font-size: 8px; }
@@ -41,7 +49,8 @@
 <canvas id="c" aria-label="A pixel-art fly-through of the route. Scroll to change speed."></canvas>
 <div id="info"></div>
 <aside id="atlas" aria-label="Scoggin Roadtrip terrain map"></aside>
-<div id="journey"><div id="controls"><select id="stops" aria-label="Jump to a honeymoon stop"></select><button id="pace" aria-label="Change driving speed">1×</button><button id="play" aria-label="Pause drive">Pause</button></div></div>
+<div id="journey"><div id="controls"><button id="stops" aria-haspopup="dialog" aria-controls="stop-picker">Visit a stop…</button><button id="pace" aria-label="Change driving speed">1×</button><button id="play" aria-label="Pause drive">Pause</button></div></div>
+<dialog id="stop-picker" aria-labelledby="stop-heading"><header><h2 id="stop-heading">Visit a stop</h2><button id="stop-close" aria-label="Close stop picker">×</button></header><div id="stop-list"></div></dialog>
 <canvas id="location" role="img" aria-label="Current place"></canvas>
 <input id="progress" type="range" min="0" max="1000" step="0.01" value="0" aria-label="Position along the honeymoon route">
 <!-- Map and model credits accompany the interactive controls. -->
@@ -62,13 +71,13 @@ function hideControls() { clearTimeout(uiTimer); document.body.dataset.ui = 'off
 function showControls() {
   clearTimeout(uiTimer); document.body.dataset.ui = 'on';
   uiTimer = setTimeout(() => {
-    if (document.querySelector('#controls:hover, #progress:hover, #controls :focus-visible, #progress:focus-visible')) showControls();
+    if ($('stop-picker').open || document.querySelector('#controls:hover, #progress:hover, #controls :focus-visible, #progress:focus-visible')) showControls();
     else hideControls();
   }, 3500);
 }
 for (const event of ['pointermove', 'pointerdown', 'keydown', 'focusin']) addEventListener(event, showControls);
 document.documentElement.addEventListener('pointerenter', showControls);
-document.documentElement.addEventListener('pointerleave', hideControls);
+document.documentElement.addEventListener('pointerleave', e => {if(e.pointerType==='mouse' && !$('stop-picker').open)hideControls();});
 const locations = await fetch('./data/locations.json').then(r => r.ok ? r.json() : []).catch(() => []);
 
 // ------------------------------------------------------------ speed: one throttle, scrolled up and down
@@ -77,15 +86,16 @@ const locations = await fetch('./data/locations.json').then(r => r.ok ? r.json()
 const TOP = 6.5, toSpeed = t => Math.sign(t) * 3 * (Math.exp(Math.abs(t)) - 1), toThrottle = v => Math.sign(v) * Math.log(1 + Math.abs(v) / 3);
 let pos = Math.max(0, Math.min(LEN - 1, +(params.get('km') || 0) * 1000)), throttle = toThrottle(+(params.get('speed') ?? 96.56) / 3.6), speed = 0, paused = params.has('paused');
 const nudge = d => { throttle = Math.max(-TOP, Math.min(TOP, throttle + d)); if (Math.abs(throttle) < 0.02) throttle = 0; paused = false; };
-addEventListener('wheel', e => { e.preventDefault(); nudge(e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1) * 0.0025); }, { passive: false });
-let touchY = null; addEventListener('touchstart', e => { touchY = e.touches[0].clientY; }, { passive: true });
-addEventListener('touchmove', e => { if (touchY == null) return; const y = e.touches[0].clientY; nudge((touchY - y) * 0.012); touchY = y; e.preventDefault(); }, { passive: false });
+addEventListener('wheel', e => { if(e.target!==$('c'))return; e.preventDefault(); nudge(e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1) * 0.0025); }, { passive: false });
+let touchY = null; addEventListener('touchstart', e => { touchY = e.target===$('c') ? e.touches[0].clientY : null; }, { passive: true });
+addEventListener('touchmove', e => { if (touchY == null || e.target!==$('c')) return; const y = e.touches[0].clientY; nudge((touchY - y) * 0.012); touchY = y; e.preventDefault(); }, { passive: false });
 addEventListener('touchend', () => { touchY = null; });
 const miniMap = createMiniMap({root:$('atlas'),getRoad:()=>road,getPosition:()=>pos,getCaption:()=>locationAt(pos)});
 const shown = { info: params.get('info') === '1' };
 const toggle = k => { shown[k] = !shown[k]; $(k).style.display = shown[k] ? 'block' : 'none'; };
 for (const k of ['info']) $(k).style.display = shown[k] ? 'block' : 'none';
 addEventListener('keydown', e => {
+  if ($('stop-picker').open) return;
   if (e.key === 'Escape') { miniMap.collapse(); return; }
   if ((e.key === 'm' || e.key === 'M') && !/^(INPUT|SELECT)$/.test(e.target.tagName)) { miniMap.toggle(); e.preventDefault(); return; }
   if (/^(INPUT|SELECT|BUTTON)$/.test(e.target.tagName)) return;
@@ -101,10 +111,11 @@ $('credits').innerHTML = `Map © <a href="https://www.openstreetmap.org/copyrigh
 document.title = 'Scoggin Roadtrip';
 const imperial = IDX.units === 'miles', fmt = m => imperial ? `${(m / 1609.34).toFixed(1)} mi` : `${(m / 1000).toFixed(1)} km`;
 const stopList = IDX.stops;
-const prompt = document.createElement('option'); prompt.value = ''; prompt.textContent = 'Visit a stop…'; $('stops').append(prompt);
-stopList.forEach((stop, i) => { const option = document.createElement('option'); option.value = i; option.textContent = stop.name; $('stops').append(option); });
+stopList.forEach((stop, i) => { const button = document.createElement('button'); button.dataset.stop=i; button.textContent=stop.name; button.addEventListener('click',()=>{seek(stop.at);$('stop-picker').close();});$('stop-list').append(button); });
 function seek(m) { pos = Math.max(0, Math.min(LEN - 1, m)); speed = 0; road.streamAround(pos); readouts(); }
-$('stops').addEventListener('change', e => { if (e.target.value !== '') seek(stopList[+e.target.value].at); });
+$('stops').addEventListener('click', () => $('stop-picker').showModal());
+$('stop-close').addEventListener('click', () => $('stop-picker').close());
+$('stop-picker').addEventListener('close', showControls);
 $('progress').addEventListener('input', e => seek(+e.target.value / 1000 * LEN));
 $('play').addEventListener('click', () => { paused = !paused; readouts(); });
 let pace = 0; const paces = [1, 5, 20, 60];
@@ -133,7 +144,8 @@ function readouts() {
 }
 
 // ------------------------------------------------------------ the loop
-let last = performance.now(), hudT = 0, frozen = false;
+const frameInterval = 1000 / Math.max(10, Math.min(60, Number(params.get('fps')) || 60));
+let last = performance.now(), hudT = 0, renderedAt = 0, frozen = false;
 function frame(now) {
   const dt = Math.min(0.1, (now - last) / 1000); last = now; if (frozen) return requestAnimationFrame(frame);
   road.streamAround(pos);
@@ -143,8 +155,11 @@ function frame(now) {
   if (road.ready(ahead)) pos = wrapPosition(pos + speed * dt); else speed *= 0.8;   // wait for the road ahead to load
   if (!loop && ((pos >= LEN - 1 && speed > 0) || (pos <= 0 && speed < 0))) { speed = 0; throttle = 0; }
   if (!road.ready(pos)) { road.streamAround(pos); return requestAnimationFrame(frame); }
-  road.T.now += dt; road.render(pos, speed);
-  drawCaption($('location'), locationAt(pos));
+  road.T.now += dt;
+  if (now - renderedAt >= frameInterval - .5) {
+    renderedAt = now - (now - renderedAt) % frameInterval;
+    road.render(pos, speed); drawCaption($('location'), locationAt(pos));
+  }
   if (now - hudT > 200) { hudT = now; readouts(); }
   requestAnimationFrame(frame);
 }

@@ -14,10 +14,10 @@ def cum(line):
  q=np.radians(line);d=np.diff(q,axis=0);h=np.sin(d[:,1]/2)**2+np.cos(q[:-1,1])*np.cos(q[1:,1])*np.sin(d[:,0]/2)**2
  return np.r_[0,np.cumsum(6371000*2*np.arctan2(np.sqrt(h),np.sqrt(1-h)))]
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--trip',type=Path,required=True);ap.add_argument('--region',required=True);a=ap.parse_args();trip=a.trip.resolve();base=json.loads((trip/'route.json').read_text());parks=[]
- for path in sorted((trip/'parks').glob('*/plan.json')):
+ ap=argparse.ArgumentParser();ap.add_argument('--trip',type=Path,required=True);ap.add_argument('--region',required=True);ap.add_argument('--only');a=ap.parse_args();trip=a.trip.resolve();base=json.loads((trip/'route.json').read_text());parks=[]
+ for path in sorted((trip/'parks').glob('*/plan.json'))+sorted((trip/'detours').glob('*/plan.json')):
   p=json.loads(path.read_text())
-  if p['region']!=a.region:continue
+  if p['region']!=a.region or (a.only and p['id']!=a.only):continue
   p['dir']=path.parent;ll=np.array([[s['lon'],s['lat']]for s in p['stops']]);p['box']=[ll[:,0].min()-.15,ll[:,1].min()-.15,ll[:,0].max()+.15,ll[:,1].max()+.15];p['elements']=[];parks.append(p)
  if not parks:return
  if all((p['dir']/'map.json').exists()for p in parks):
@@ -25,7 +25,7 @@ def main():
  else:
   source=trip/'.cache/regions'/(a.region+'-latest.osm.pbf')
   if not source.exists():source=next((trip/'.cache').rglob(a.region+'*.osm.pbf'))
-  fp=osmium.FileProcessor(str(source)).with_locations('flex_mem').with_filter(osmium.filter.EntityFilter(osmium.osm.WAY)).with_filter(osmium.filter.KeyFilter('highway','building','building:part','natural','landuse','waterway','tourism','amenity'))
+  fp=osmium.FileProcessor(str(source)).with_locations('flex_mem').with_filter(osmium.filter.EntityFilter(osmium.osm.WAY)).with_filter(osmium.filter.KeyFilter('highway','building','building:part','natural','landuse','waterway','tourism','amenity','aerialway','piste:type','barrier','man_made'))
   for way in fp:
    if not way.nodes or not way.nodes[0].location.valid():continue
    ll=[(n.lon,n.lat)for n in way.nodes if n.location.valid()]
@@ -60,7 +60,7 @@ def main():
   line=[p['anchor']];marks=[dict(name=p['name']+' · start',at=0)]
   for i in range(len(nodes)-1):
    path=nx.shortest_path(graph,nodes[i],nodes[i+1],weight='weight');line.extend(coords[n]for n in path if coords[n]!=line[-1]);marks.append(dict(name=stops[i+1]['name'].split(',')[0],at=float(cum(line)[-1])))
-  line.append(p['anchor']);dist=cum(line);marks[-1]['at']=float(dist[-1]);total=float(dist[-1]);root=p['dir'];route=dict(from_=p['name'],to=p['name'],via=p['via'],stops=marks,total=total,line=line,country='us',drive='right',units='miles',centre='yellow',themeAt=base['stops'][p['stop']]['at'],source='OpenStreetMap mapped scenic roads · '+p['source']);route['from']=route.pop('from_');write(root/'route.json',route);write(root/'data/index.json',{k:v for k,v in route.items()if k!='line'})
+  line.append(p.get('endAnchor',p['anchor']));dist=cum(line);marks[-1]['at']=float(dist[-1]);total=float(dist[-1]);root=p['dir'];route=dict(from_=p['name'],to=p['name'],via=p['via'],stops=marks,total=total,line=line,country='us',drive='right',units='miles',centre='yellow',themeAt=base['stops'][p['stop']]['at'],source='OpenStreetMap mapped scenic roads · '+p['source']);route['from']=route.pop('from_');write(root/'route.json',route);write(root/'data/index.json',{k:v for k,v in route.items()if k!='line'})
   projected=np.column_stack(PROJECT.transform(*np.array(line).T));count=math.ceil(total/10000)
   for c in range(count):
    subset=projected[(dist>=max(0,c*10000-500))&(dist<=min(total,(c+1)*10000+1000))];lo=subset.min(axis=0)-2200;hi=subset.max(axis=0)+2200;elements=[]

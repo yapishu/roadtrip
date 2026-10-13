@@ -1,0 +1,40 @@
+{
+  "id": "brian-head",
+  "name": "Brian Head, Utah",
+  "region": "utah",
+  "stop": 9,
+  "replace": [
+    1925655.2943752783,
+    1969928
+  ],
+  "via": [
+    "Brian Head Resort, 329 UT-143, Brian Head, UT 84719"
+  ],
+  "source": "https://www.brianhead.com/contact-us/",
+  "anchor": [
+    -112.512529,
+    37.488902
+  ],
+  "endAnchor": [
+    -112.4356565717684,
+    37.82272466845333
+  ],
+  "stops": [
+    {
+      "name": "UT-14 approach",
+      "lon": -112.512529,
+      "lat": 37.488902
+    },
+    {
+      "name": "Brian Head Resort",
+      "lon": -112.8476294,
+      "lat": 37.6926546
+    },
+    {
+      "name": "Panguitch, Utah",
+      "lon": -112.4356565717684,
+      "lat": 37.82272466845333
+    }
+  ],
+  "season": "Off-season: exposed ski runs and stationary lifts, no added snow"
+}

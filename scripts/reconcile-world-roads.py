@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 from scipy.spatial import cKDTree
 spec=importlib.util.spec_from_file_location('profiles',Path(__file__).with_name('refine-road-profiles.py'));profiles=importlib.util.module_from_spec(spec);spec.loader.exec_module(profiles)
-a=argparse.ArgumentParser();a.add_argument('--trip',type=Path,required=True);trip=a.parse_args().trip;paths=sorted((trip/'world').glob('c[0-9][0-9][0-9][0-9].json'))+sorted((trip/'parks').glob('*/world/c[0-9][0-9][0-9][0-9].json'));canonical={};weights={}
+a=argparse.ArgumentParser();a.add_argument('--trip',type=Path,required=True);trip=a.parse_args().trip;paths=sorted((trip/'world').glob('c[0-9][0-9][0-9][0-9].json'))+sorted((trip/'parks').glob('*/world/c[0-9][0-9][0-9][0-9].json'))+sorted((trip/'detours').glob('*/world/c[0-9][0-9][0-9][0-9].json'));canonical={};weights={}
 for path in paths:
  d=json.loads(path.read_text());origin=np.array(d['origin']);route=cKDTree([p[1:3]for p in d['route']])
  for r in d['roads']:

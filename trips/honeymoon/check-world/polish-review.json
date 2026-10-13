@@ -1,0 +1,18 @@
+{
+  "visualCoverage": "62 named-stop, scenic-interior and road-profile frames; four additional views of the bridge decks and Brian Head lodge",
+  "reviewed": true,
+  "changes": [
+    "15,660 unique mapped roadside features",
+    "Off-season Brian Head detour before Panguitch",
+    "Giant Steps Lodge form and foundation",
+    "Building foundations, bridge decks and representative supports",
+    "Touch stop picker with native finger scrolling",
+    "Terrain culling at the same pixel and geometry resolution",
+    "Configurable frame cap and no WebGL redraw while paused"
+  ],
+  "limits": [
+    "Small structures and unmeasured dimensions use representative forms",
+    "Terrain and vegetation retain their existing low-resolution appearance",
+    "Target Android picture-frame performance requires device testing"
+  ]
+}

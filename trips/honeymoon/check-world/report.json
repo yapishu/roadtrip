@@ -9,10 +9,14 @@
       "stats": {
         "source": "",
         "draws": 1,
-        "triangles": 2120225,
+        "triangles": 714503,
+        "drawCalls": 53,
+        "geometries": 53,
+        "textures": 8,
         "buildings": 3912,
         "observedWalls": 654,
         "trees": 2475,
+        "roadside": 36,
         "detailPatches": 0,
         "relief": [
           0,
@@ -20,7 +24,7 @@
         ],
         "failures": []
       },
-      "colors": 5626,
+      "colors": 5628,
       "skyLow": 0,
       "file": "frame-00.png"
     },
@@ -33,10 +37,14 @@
       "stats": {
         "source": "",
         "draws": 2,
-        "triangles": 1981943,
+        "triangles": 530189,
+        "drawCalls": 67,
+        "geometries": 67,
+        "textures": 8,
         "buildings": 2105,
         "observedWalls": 356,
         "trees": 3553,
+        "roadside": 140,
         "detailPatches": 1,
         "relief": [
           -2,
@@ -44,7 +52,7 @@
         ],
         "failures": []
       },
-      "colors": 5612,
+      "colors": 5604,
       "skyLow": 0,
       "file": "frame-01.png"
     },
@@ -57,10 +65,14 @@
       "stats": {
         "source": "",
         "draws": 3,
-        "triangles": 2580159,
+        "triangles": 1088071,
+        "drawCalls": 159,
+        "geometries": 159,
+        "textures": 8,
         "buildings": 3303,
         "observedWalls": 494,
         "trees": 876,
+        "roadside": 145,
         "detailPatches": 1,
         "relief": [
           109.2,
@@ -68,7 +80,7 @@
         ],
         "failures": []
       },
-      "colors": 7989,
+      "colors": 7946,
       "skyLow": 0,
       "file": "frame-02.png"
     },
@@ -81,10 +93,14 @@
       "stats": {
         "source": "",
         "draws": 4,
-        "triangles": 2234064,
+        "triangles": 1668866,
+        "drawCalls": 299,
+        "geometries": 299,
+        "textures": 11,
         "buildings": 375,
         "observedWalls": 25,
         "trees": 2,
+        "roadside": 81,
         "detailPatches": 0,
         "relief": [
           787.1,
@@ -92,7 +108,7 @@
         ],
         "failures": []
       },
-      "colors": 1068,
+      "colors": 1053,
       "skyLow": 0,
       "file": "frame-03.png"
     },
@@ -105,10 +121,14 @@
       "stats": {
         "source": "",
         "draws": 5,
-        "triangles": 1458055,
+        "triangles": 396533,
+        "drawCalls": 56,
+        "geometries": 56,
+        "textures": 11,
         "buildings": 158,
         "observedWalls": 19,
         "trees": 270,
+        "roadside": 42,
         "detailPatches": 0,
         "relief": [
           -82.2,
@@ -129,10 +149,14 @@
       "stats": {
         "source": "parks/death-valley",
         "draws": 6,
-        "triangles": 1217602,
+        "triangles": 428848,
+        "drawCalls": 59,
+        "geometries": 59,
+        "textures": 11,
         "buildings": 2,
         "observedWalls": 0,
         "trees": 103,
+        "roadside": 2,
         "detailPatches": 0,
         "relief": [
           -85,
@@ -153,10 +177,14 @@
       "stats": {
         "source": "parks/death-valley",
         "draws": 7,
-        "triangles": 1766774,
+        "triangles": 437934,
+        "drawCalls": 71,
+        "geometries": 71,
+        "textures": 11,
         "buildings": 1,
         "observedWalls": 0,
         "trees": 294,
+        "roadside": 1,
         "detailPatches": 1,
         "relief": [
           -83.9,
@@ -164,7 +192,7 @@
         ],
         "failures": []
       },
-      "colors": 4329,
+      "colors": 4348,
       "skyLow": 0,
       "file": "frame-06.png"
     },
@@ -177,10 +205,14 @@
       "stats": {
         "source": "parks/death-valley",
         "draws": 8,
-        "triangles": 2216479,
+        "triangles": 901753,
+        "drawCalls": 113,
+        "geometries": 113,
+        "textures": 11,
         "buildings": 274,
         "observedWalls": 0,
         "trees": 1171,
+        "roadside": 10,
         "detailPatches": 0,
         "relief": [
           -82.9,
@@ -188,7 +220,7 @@
         ],
         "failures": []
       },
-      "colors": 4356,
+      "colors": 4398,
       "skyLow": 0,
       "file": "frame-07.png"
     },
@@ -201,10 +233,14 @@
       "stats": {
         "source": "parks/death-valley",
         "draws": 9,
-        "triangles": 1629272,
+        "triangles": 338592,
+        "drawCalls": 39,
+        "geometries": 39,
+        "textures": 11,
         "buildings": 27,
         "observedWalls": 0,
         "trees": 27,
+        "roadside": 1,
         "detailPatches": 0,
         "relief": [
           617.3,
@@ -212,7 +248,7 @@
         ],
         "failures": []
       },
-      "colors": 1482,
+      "colors": 1514,
       "skyLow": 0,
       "file": "frame-08.png"
     },
@@ -225,10 +261,14 @@
       "stats": {
         "source": "",
         "draws": 10,
-        "triangles": 2577954,
+        "triangles": 1460716,
+        "drawCalls": 383,
+        "geometries": 383,
+        "textures": 13,
         "buildings": 1739,
         "observedWalls": 150,
         "trees": 0,
+        "roadside": 488,
         "detailPatches": 0,
         "relief": [
           530.7,
@@ -236,23 +276,27 @@
         ],
         "failures": []
       },
-      "colors": 5610,
+      "colors": 5065,
       "skyLow": 0,
       "file": "frame-09.png"
     },
     {
       "name": "Kingman, Arizona",
-      "at": 1366474.6736037724,
+      "at": 1366474.6736037722,
       "place": "Kingman, Arizona",
       "area": "",
       "road": "",
       "stats": {
         "source": "",
         "draws": 11,
-        "triangles": 1954933,
+        "triangles": 999089,
+        "drawCalls": 200,
+        "geometries": 200,
+        "textures": 13,
         "buildings": 464,
         "observedWalls": 67,
         "trees": 1442,
+        "roadside": 144,
         "detailPatches": 1,
         "relief": [
           943.6,
@@ -260,23 +304,27 @@
         ],
         "failures": []
       },
-      "colors": 7414,
+      "colors": 7355,
       "skyLow": 0,
       "file": "frame-10.png"
     },
     {
       "name": "Grand Canyon South Rim, Arizona",
-      "at": 1646673.6736037724,
+      "at": 1646673.6736037722,
       "place": "Grand Canyon South Rim, Arizona",
       "area": "",
       "road": "South Entrance Road",
       "stats": {
         "source": "",
         "draws": 12,
-        "triangles": 1656964,
+        "triangles": 1022917,
+        "drawCalls": 173,
+        "geometries": 173,
+        "textures": 13,
         "buildings": 323,
         "observedWalls": 34,
         "trees": 2909,
+        "roadside": 56,
         "detailPatches": 0,
         "relief": [
           1039.8,
@@ -297,10 +345,14 @@
       "stats": {
         "source": "parks/grand-canyon",
         "draws": 13,
-        "triangles": 1778626,
+        "triangles": 359192,
+        "drawCalls": 42,
+        "geometries": 42,
+        "textures": 12,
         "buildings": 708,
         "observedWalls": 0,
         "trees": 2152,
+        "roadside": 46,
         "detailPatches": 1,
         "relief": [
           906,
@@ -308,7 +360,7 @@
         ],
         "failures": []
       },
-      "colors": 6982,
+      "colors": 7001,
       "skyLow": 0,
       "file": "frame-12.png"
     },
@@ -321,10 +373,14 @@
       "stats": {
         "source": "parks/grand-canyon",
         "draws": 14,
-        "triangles": 1833686,
+        "triangles": 456780,
+        "drawCalls": 60,
+        "geometries": 102,
+        "textures": 14,
         "buildings": 710,
         "observedWalls": 0,
         "trees": 1884,
+        "roadside": 55,
         "detailPatches": 1,
         "relief": [
           811.6,
@@ -332,7 +388,7 @@
         ],
         "failures": []
       },
-      "colors": 2600,
+      "colors": 2608,
       "skyLow": 0,
       "file": "frame-13.png"
     },
@@ -345,10 +401,14 @@
       "stats": {
         "source": "parks/grand-canyon",
         "draws": 15,
-        "triangles": 2280022,
+        "triangles": 473498,
+        "drawCalls": 58,
+        "geometries": 58,
+        "textures": 12,
         "buildings": 2,
         "observedWalls": 0,
         "trees": 31931,
+        "roadside": 0,
         "detailPatches": 0,
         "relief": [
           1074.7,
@@ -356,7 +416,7 @@
         ],
         "failures": []
       },
-      "colors": 15309,
+      "colors": 15298,
       "skyLow": 0,
       "file": "frame-14.png"
     },
@@ -369,10 +429,14 @@
       "stats": {
         "source": "parks/grand-canyon",
         "draws": 16,
-        "triangles": 2024170,
+        "triangles": 590084,
+        "drawCalls": 90,
+        "geometries": 90,
+        "textures": 12,
         "buildings": 36,
         "observedWalls": 0,
         "trees": 5379,
+        "roadside": 11,
         "detailPatches": 0,
         "relief": [
           774.5,
@@ -380,7 +444,7 @@
         ],
         "failures": []
       },
-      "colors": 5547,
+      "colors": 5591,
       "skyLow": 0,
       "file": "frame-15.png"
     },
@@ -393,10 +457,14 @@
       "stats": {
         "source": "",
         "draws": 17,
-        "triangles": 2098238,
+        "triangles": 586878,
+        "drawCalls": 86,
+        "geometries": 86,
+        "textures": 19,
         "buildings": 763,
         "observedWalls": 351,
         "trees": 5178,
+        "roadside": 50,
         "detailPatches": 0,
         "relief": [
           1466.8,
@@ -404,47 +472,83 @@
         ],
         "failures": []
       },
-      "colors": 8193,
+      "colors": 8195,
       "skyLow": 0,
       "file": "frame-16.png"
     },
     {
-      "name": "Panguitch, Utah",
-      "at": 2191898.210099313,
-      "place": "Panguitch, Utah",
+      "name": "Brian Head Resort",
+      "at": 2202402.3476723493,
+      "place": "Brian Head Resort",
       "area": "",
-      "road": "Center Street",
+      "road": "North Loop Road",
       "stats": {
-        "source": "",
+        "source": "detours/brian-head",
         "draws": 18,
-        "triangles": 2186573,
-        "buildings": 426,
-        "observedWalls": 222,
-        "trees": 6487,
+        "triangles": 471298,
+        "drawCalls": 78,
+        "geometries": 78,
+        "textures": 19,
+        "buildings": 321,
+        "observedWalls": 0,
+        "trees": 14990,
+        "roadside": 36,
         "detailPatches": 0,
         "relief": [
-          1995.5,
-          2299
+          2484,
+          3447.4
         ],
         "failures": []
       },
-      "colors": 6234,
+      "colors": 7846,
       "skyLow": 0,
       "file": "frame-17.png"
     },
     {
+      "name": "Panguitch, Utah",
+      "at": 2259550.4194613807,
+      "place": "Panguitch",
+      "area": "",
+      "road": "South Main Street",
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 19,
+        "triangles": 461355,
+        "drawCalls": 62,
+        "geometries": 62,
+        "textures": 18,
+        "buildings": 1579,
+        "observedWalls": 0,
+        "trees": 4785,
+        "roadside": 7,
+        "detailPatches": 0,
+        "relief": [
+          1995.7,
+          2246
+        ],
+        "failures": []
+      },
+      "colors": 7252,
+      "skyLow": 0,
+      "file": "frame-18.png"
+    },
+    {
       "name": "Bryce Canyon National Park, Utah",
-      "at": 2233836.210099313,
+      "at": 2301488.4194613807,
       "place": "Bryce Canyon National Park, Utah",
       "area": "",
       "road": "",
       "stats": {
         "source": "",
-        "draws": 19,
-        "triangles": 1940433,
+        "draws": 20,
+        "triangles": 470621,
+        "drawCalls": 70,
+        "geometries": 70,
+        "textures": 20,
         "buildings": 125,
         "observedWalls": 26,
         "trees": 5574,
+        "roadside": 168,
         "detailPatches": 0,
         "relief": [
           2016.5,
@@ -452,23 +556,27 @@
         ],
         "failures": []
       },
-      "colors": 3614,
+      "colors": 3421,
       "skyLow": 0,
-      "file": "frame-18.png"
+      "file": "frame-19.png"
     },
     {
       "name": "Bryce Point",
-      "at": 2238280.1766312956,
+      "at": 2305932.3859933633,
       "place": "Bryce Point",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/bryce",
-        "draws": 20,
-        "triangles": 1412326,
+        "draws": 21,
+        "triangles": 473314,
+        "drawCalls": 73,
+        "geometries": 73,
+        "textures": 20,
         "buildings": 99,
         "observedWalls": 0,
         "trees": 3308,
+        "roadside": 73,
         "detailPatches": 0,
         "relief": [
           2071.4,
@@ -476,23 +584,27 @@
         ],
         "failures": []
       },
-      "colors": 8923,
+      "colors": 8725,
       "skyLow": 0,
-      "file": "frame-19.png"
+      "file": "frame-20.png"
     },
     {
       "name": "Rainbow Point",
-      "at": 2265920.4101165184,
+      "at": 2333572.619478586,
       "place": "Rainbow Point",
       "area": "",
       "road": "Bryce Canyon Scenic Drive",
       "stats": {
         "source": "parks/bryce",
-        "draws": 21,
-        "triangles": 1535438,
+        "draws": 22,
+        "triangles": 951626,
+        "drawCalls": 144,
+        "geometries": 144,
+        "textures": 20,
         "buildings": 8,
         "observedWalls": 0,
         "trees": 3250,
+        "roadside": 29,
         "detailPatches": 0,
         "relief": [
           2199.8,
@@ -500,23 +612,27 @@
         ],
         "failures": []
       },
-      "colors": 2769,
+      "colors": 2724,
       "skyLow": 0,
-      "file": "frame-20.png"
+      "file": "frame-21.png"
     },
     {
       "name": "Natural Bridge",
-      "at": 2275004.9584468664,
+      "at": 2342657.167808934,
       "place": "Natural Bridge",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/bryce",
-        "draws": 22,
-        "triangles": 2242536,
+        "draws": 23,
+        "triangles": 835040,
+        "drawCalls": 115,
+        "geometries": 259,
+        "textures": 22,
         "buildings": 2,
         "observedWalls": 0,
         "trees": 4928,
+        "roadside": 16,
         "detailPatches": 0,
         "relief": [
           2085,
@@ -524,23 +640,27 @@
         ],
         "failures": []
       },
-      "colors": 4332,
+      "colors": 4283,
       "skyLow": 0,
-      "file": "frame-21.png"
+      "file": "frame-22.png"
     },
     {
       "name": "Inspiration Point",
-      "at": 2291157.1793843643,
+      "at": 2358809.388746432,
       "place": "Inspiration Point",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/bryce",
-        "draws": 23,
-        "triangles": 1913477,
+        "draws": 24,
+        "triangles": 436393,
+        "drawCalls": 73,
+        "geometries": 188,
+        "textures": 22,
         "buildings": 102,
         "observedWalls": 0,
         "trees": 2747,
+        "roadside": 76,
         "detailPatches": 0,
         "relief": [
           2061.5,
@@ -548,23 +668,27 @@
         ],
         "failures": []
       },
-      "colors": 3484,
+      "colors": 3466,
       "skyLow": 0,
-      "file": "frame-22.png"
+      "file": "frame-23.png"
     },
     {
       "name": "Zion National Park, Utah",
-      "at": 2432041.1697541354,
+      "at": 2499693.3791162036,
       "place": "Zion National Park, Utah",
       "area": "",
       "road": "",
       "stats": {
         "source": "",
-        "draws": 24,
-        "triangles": 1207183,
+        "draws": 25,
+        "triangles": 301387,
+        "drawCalls": 55,
+        "geometries": 55,
+        "textures": 20,
         "buildings": 58,
         "observedWalls": 3,
         "trees": 1894,
+        "roadside": 92,
         "detailPatches": 2,
         "relief": [
           1165,
@@ -572,23 +696,27 @@
         ],
         "failures": []
       },
-      "colors": 13706,
+      "colors": 13689,
       "skyLow": 0,
-      "file": "frame-23.png"
+      "file": "frame-24.png"
     },
     {
       "name": "Zion Lodge",
-      "at": 2438845.931496977,
+      "at": 2506498.1408590446,
       "place": "Zion Lodge",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/zion",
-        "draws": 25,
-        "triangles": 2570619,
+        "draws": 26,
+        "triangles": 776977,
+        "drawCalls": 126,
+        "geometries": 126,
+        "textures": 20,
         "buildings": 734,
         "observedWalls": 0,
         "trees": 8372,
+        "roadside": 133,
         "detailPatches": 1,
         "relief": [
           1165,
@@ -596,23 +724,27 @@
         ],
         "failures": []
       },
-      "colors": 15058,
+      "colors": 15088,
       "skyLow": 0,
-      "file": "frame-24.png"
+      "file": "frame-25.png"
     },
     {
       "name": "The Grotto",
-      "at": 2440218.358971827,
+      "at": 2507870.568333895,
       "place": "The Grotto",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/zion",
-        "draws": 26,
-        "triangles": 2570619,
+        "draws": 27,
+        "triangles": 636793,
+        "drawCalls": 94,
+        "geometries": 175,
+        "textures": 20,
         "buildings": 734,
         "observedWalls": 0,
         "trees": 8372,
+        "roadside": 133,
         "detailPatches": 1,
         "relief": [
           1165,
@@ -620,23 +752,27 @@
         ],
         "failures": []
       },
-      "colors": 18640,
+      "colors": 18565,
       "skyLow": 0,
-      "file": "frame-25.png"
+      "file": "frame-26.png"
     },
     {
       "name": "Temple of Sinawava",
-      "at": 2444756.3957044138,
+      "at": 2512408.6050664815,
       "place": "Temple of Sinawava",
       "area": "",
       "road": "Zion Canyon Scenic Drive",
       "stats": {
         "source": "parks/zion",
-        "draws": 27,
-        "triangles": 1643508,
+        "draws": 28,
+        "triangles": 493246,
+        "drawCalls": 74,
+        "geometries": 249,
+        "textures": 22,
         "buildings": 78,
         "observedWalls": 0,
         "trees": 10603,
+        "roadside": 68,
         "detailPatches": 0,
         "relief": [
           1215,
@@ -644,23 +780,27 @@
         ],
         "failures": []
       },
-      "colors": 17270,
+      "colors": 17027,
       "skyLow": 0,
-      "file": "frame-26.png"
+      "file": "frame-27.png"
     },
     {
       "name": "Glen Canyon · Page, Arizona",
-      "at": 2639471.3201905256,
+      "at": 2707123.529552594,
       "place": "Glen Canyon · Page, Arizona",
       "area": "",
       "road": "Bitter Springs–Utah State Line Highway",
       "stats": {
         "source": "",
-        "draws": 28,
-        "triangles": 2399430,
-        "buildings": 566,
+        "draws": 29,
+        "triangles": 863244,
+        "drawCalls": 124,
+        "geometries": 124,
+        "textures": 21,
+        "buildings": 567,
         "observedWalls": 54,
         "trees": 990,
+        "roadside": 52,
         "detailPatches": 1,
         "relief": [
           954.5,
@@ -668,23 +808,27 @@
         ],
         "failures": []
       },
-      "colors": 8812,
+      "colors": 5530,
       "skyLow": 0,
-      "file": "frame-27.png"
+      "file": "frame-28.png"
     },
     {
       "name": "Wahweap Overlook",
-      "at": 2644262.1340833157,
+      "at": 2711914.3434453835,
       "place": "Wahweap Overlook",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/glen-canyon",
-        "draws": 29,
-        "triangles": 1859333,
-        "buildings": 725,
+        "draws": 30,
+        "triangles": 475697,
+        "drawCalls": 60,
+        "geometries": 60,
+        "textures": 21,
+        "buildings": 726,
         "observedWalls": 0,
         "trees": 156,
+        "roadside": 36,
         "detailPatches": 0,
         "relief": [
           955.7,
@@ -692,23 +836,27 @@
         ],
         "failures": []
       },
-      "colors": 5364,
+      "colors": 5380,
       "skyLow": 0,
-      "file": "frame-28.png"
+      "file": "frame-29.png"
     },
     {
       "name": "Wahweap Marina",
-      "at": 2652507.1838754704,
+      "at": 2720159.393237538,
       "place": "Wahweap Marina",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/glen-canyon",
-        "draws": 30,
-        "triangles": 1923990,
-        "buildings": 1393,
+        "draws": 31,
+        "triangles": 883604,
+        "drawCalls": 103,
+        "geometries": 163,
+        "textures": 23,
+        "buildings": 1394,
         "observedWalls": 0,
         "trees": 561,
+        "roadside": 10,
         "detailPatches": 1,
         "relief": [
           956.1,
@@ -716,23 +864,27 @@
         ],
         "failures": []
       },
-      "colors": 5285,
+      "colors": 5296,
       "skyLow": 0,
-      "file": "frame-29.png"
+      "file": "frame-30.png"
     },
     {
       "name": "Monument Valley, Arizona",
-      "at": 2866410.5945740007,
+      "at": 2934062.803936068,
       "place": "Monument Valley, Arizona",
       "area": "",
       "road": "",
       "stats": {
         "source": "",
-        "draws": 31,
-        "triangles": 1844709,
+        "draws": 32,
+        "triangles": 314181,
+        "drawCalls": 41,
+        "geometries": 41,
+        "textures": 21,
         "buildings": 34,
         "observedWalls": 0,
         "trees": 0,
+        "roadside": 37,
         "detailPatches": 0,
         "relief": [
           1554.6,
@@ -740,23 +892,27 @@
         ],
         "failures": []
       },
-      "colors": 8498,
+      "colors": 8512,
       "skyLow": 0,
-      "file": "frame-30.png"
+      "file": "frame-31.png"
     },
     {
       "name": "John Ford Point",
-      "at": 2872775.6562574985,
+      "at": 2940427.8656195663,
       "place": "John Ford Point",
       "area": "",
       "road": "John Ford's Point Overlook access road",
       "stats": {
         "source": "parks/monument-valley",
-        "draws": 32,
-        "triangles": 1998701,
+        "draws": 33,
+        "triangles": 962485,
+        "drawCalls": 148,
+        "geometries": 148,
+        "textures": 21,
         "buildings": 80,
         "observedWalls": 0,
         "trees": 0,
+        "roadside": 35,
         "detailPatches": 1,
         "relief": [
           1510.9,
@@ -764,23 +920,27 @@
         ],
         "failures": []
       },
-      "colors": 4830,
+      "colors": 4841,
       "skyLow": 0,
-      "file": "frame-31.png"
+      "file": "frame-32.png"
     },
     {
       "name": "Totem Pole",
-      "at": 2877042.9640659983,
+      "at": 2944695.173428066,
       "place": "Totem Pole",
       "area": "",
       "road": "",
       "stats": {
         "source": "parks/monument-valley",
-        "draws": 33,
-        "triangles": 1723979,
+        "draws": 34,
+        "triangles": 315143,
+        "drawCalls": 49,
+        "geometries": 197,
+        "textures": 23,
         "buildings": 80,
         "observedWalls": 0,
         "trees": 0,
+        "roadside": 86,
         "detailPatches": 0,
         "relief": [
           1507.7,
@@ -788,23 +948,27 @@
         ],
         "failures": []
       },
-      "colors": 3473,
+      "colors": 3474,
       "skyLow": 0,
-      "file": "frame-32.png"
+      "file": "frame-33.png"
     },
     {
       "name": "Artists Point",
-      "at": 2879330.750805418,
+      "at": 2946982.9601674858,
       "place": "Artists Point",
       "area": "",
       "road": "Artists Point Viewoint access road",
       "stats": {
         "source": "parks/monument-valley",
-        "draws": 34,
-        "triangles": 1723979,
+        "draws": 35,
+        "triangles": 430699,
+        "drawCalls": 71,
+        "geometries": 253,
+        "textures": 23,
         "buildings": 80,
         "observedWalls": 0,
         "trees": 0,
+        "roadside": 86,
         "detailPatches": 0,
         "relief": [
           1507.7,
@@ -812,23 +976,27 @@
         ],
         "failures": []
       },
-      "colors": 7823,
+      "colors": 7811,
       "skyLow": 0,
-      "file": "frame-33.png"
+      "file": "frame-34.png"
     },
     {
       "name": "North Window Overlook",
-      "at": 2881475.5544684217,
+      "at": 2949127.7638304895,
       "place": "North Window Overlook",
       "area": "",
       "road": "North Window Viewpoint road",
       "stats": {
         "source": "parks/monument-valley",
-        "draws": 35,
-        "triangles": 1723979,
+        "draws": 36,
+        "triangles": 601579,
+        "drawCalls": 94,
+        "geometries": 277,
+        "textures": 23,
         "buildings": 80,
         "observedWalls": 0,
         "trees": 0,
+        "roadside": 86,
         "detailPatches": 0,
         "relief": [
           1507.7,
@@ -836,23 +1004,27 @@
         ],
         "failures": []
       },
-      "colors": 6398,
+      "colors": 6450,
       "skyLow": 0,
-      "file": "frame-34.png"
+      "file": "frame-35.png"
     },
     {
       "name": "Mesa Verde National Park, Colorado",
-      "at": 3141421.958383885,
+      "at": 3209074.1677459534,
       "place": "Mesa Verde National Park, Colorado",
       "area": "",
       "road": "Cliff Palace Loop",
       "stats": {
         "source": "",
-        "draws": 36,
-        "triangles": 1600763,
+        "draws": 37,
+        "triangles": 525185,
+        "drawCalls": 81,
+        "geometries": 81,
+        "textures": 21,
         "buildings": 47,
         "observedWalls": 3,
         "trees": 5592,
+        "roadside": 29,
         "detailPatches": 1,
         "relief": [
           1788.1,
@@ -860,23 +1032,27 @@
         ],
         "failures": []
       },
-      "colors": 5909,
+      "colors": 5907,
       "skyLow": 0,
-      "file": "frame-35.png"
+      "file": "frame-36.png"
     },
     {
       "name": "Balcony House",
-      "at": 3143957.3738261093,
+      "at": 3211609.583188177,
       "place": "Balcony House",
       "area": "",
       "road": "Cliff Palace Loop",
       "stats": {
         "source": "parks/mesa-verde",
-        "draws": 37,
-        "triangles": 1332527,
+        "draws": 38,
+        "triangles": 755887,
+        "drawCalls": 97,
+        "geometries": 97,
+        "textures": 21,
         "buildings": 85,
         "observedWalls": 0,
         "trees": 17652,
+        "roadside": 40,
         "detailPatches": 1,
         "relief": [
           1788.1,
@@ -884,23 +1060,27 @@
         ],
         "failures": []
       },
-      "colors": 8062,
+      "colors": 7988,
       "skyLow": 0,
-      "file": "frame-36.png"
+      "file": "frame-37.png"
     },
     {
       "name": "Square Tower House",
-      "at": 3149944.695932069,
+      "at": 3217596.9052941366,
       "place": "Square Tower House",
       "area": "",
       "road": "Mesa Top Loop",
       "stats": {
         "source": "parks/mesa-verde",
-        "draws": 38,
-        "triangles": 1327891,
+        "draws": 39,
+        "triangles": 424665,
+        "drawCalls": 49,
+        "geometries": 132,
+        "textures": 21,
         "buildings": 85,
         "observedWalls": 0,
         "trees": 17652,
+        "roadside": 40,
         "detailPatches": 1,
         "relief": [
           1788.1,
@@ -908,23 +1088,27 @@
         ],
         "failures": []
       },
-      "colors": 18391,
+      "colors": 18489,
       "skyLow": 0,
-      "file": "frame-37.png"
+      "file": "frame-38.png"
     },
     {
       "name": "Sun Temple",
-      "at": 3153244.53641571,
+      "at": 3220896.745777778,
       "place": "Sun Temple",
       "area": "",
       "road": "Mesa Top Loop",
       "stats": {
         "source": "parks/mesa-verde",
-        "draws": 39,
-        "triangles": 1037746,
+        "draws": 40,
+        "triangles": 360986,
+        "drawCalls": 49,
+        "geometries": 181,
+        "textures": 23,
         "buildings": 85,
         "observedWalls": 0,
         "trees": 10998,
+        "roadside": 35,
         "detailPatches": 0,
         "relief": [
           1801.7,
@@ -932,23 +1116,27 @@
         ],
         "failures": []
       },
-      "colors": 8796,
+      "colors": 8779,
       "skyLow": 0,
-      "file": "frame-38.png"
+      "file": "frame-39.png"
     },
     {
       "name": "Aztec, New Mexico",
-      "at": 3312549.7996779005,
+      "at": 3380202.0090399683,
       "place": "Aztec, New Mexico",
       "area": "",
       "road": "",
       "stats": {
         "source": "",
-        "draws": 40,
-        "triangles": 2494132,
+        "draws": 41,
+        "triangles": 888896,
+        "drawCalls": 122,
+        "geometries": 122,
+        "textures": 27,
         "buildings": 870,
         "observedWalls": 315,
         "trees": 6630,
+        "roadside": 35,
         "detailPatches": 0,
         "relief": [
           1694.1,
@@ -956,23 +1144,27 @@
         ],
         "failures": []
       },
-      "colors": 6345,
+      "colors": 6392,
       "skyLow": 0,
-      "file": "frame-39.png"
+      "file": "frame-40.png"
     },
     {
       "name": "Albuquerque, New Mexico",
-      "at": 3600523.7996779005,
+      "at": 3668176.0090399683,
       "place": "Albuquerque, New Mexico",
       "area": "",
       "road": "",
       "stats": {
         "source": "",
-        "draws": 41,
-        "triangles": 1853090,
+        "draws": 42,
+        "triangles": 1299676,
+        "drawCalls": 334,
+        "geometries": 334,
+        "textures": 27,
         "buildings": 1525,
         "observedWalls": 221,
         "trees": 1163,
+        "roadside": 442,
         "detailPatches": 0,
         "relief": [
           1504.4,
@@ -980,23 +1172,27 @@
         ],
         "failures": []
       },
-      "colors": 23141,
+      "colors": 23137,
       "skyLow": 0,
-      "file": "frame-40.png"
+      "file": "frame-41.png"
     },
     {
       "name": "Vaughn, New Mexico",
-      "at": 3768149.7996779005,
+      "at": 3835802.0090399683,
       "place": "Vaughn, New Mexico",
       "area": "",
       "road": "8th Street",
       "stats": {
         "source": "",
-        "draws": 42,
-        "triangles": 2761184,
+        "draws": 43,
+        "triangles": 1177860,
+        "drawCalls": 197,
+        "geometries": 197,
+        "textures": 27,
         "buildings": 78,
         "observedWalls": 17,
         "trees": 20,
+        "roadside": 17,
         "detailPatches": 0,
         "relief": [
           1720.4,
@@ -1004,23 +1200,27 @@
         ],
         "failures": []
       },
-      "colors": 2801,
+      "colors": 2796,
       "skyLow": 0,
-      "file": "frame-41.png"
+      "file": "frame-42.png"
     },
     {
       "name": "Roswell, New Mexico",
-      "at": 3923740.7996779005,
+      "at": 3991393.0090399683,
       "place": "Roswell, New Mexico",
       "area": "",
       "road": "North Richardson Avenue",
       "stats": {
         "source": "",
-        "draws": 43,
-        "triangles": 2179531,
+        "draws": 44,
+        "triangles": 458505,
+        "drawCalls": 60,
+        "geometries": 60,
+        "textures": 27,
         "buildings": 603,
         "observedWalls": 259,
         "trees": 1493,
+        "roadside": 129,
         "detailPatches": 0,
         "relief": [
           1066.1,
@@ -1030,21 +1230,25 @@
       },
       "colors": 7714,
       "skyLow": 0,
-      "file": "frame-42.png"
+      "file": "frame-43.png"
     },
     {
       "name": "Lubbock, Texas",
-      "at": 4204882.7996779,
+      "at": 4272535.009039968,
       "place": "Lubbock, Texas",
       "area": "",
       "road": "Avenue K",
       "stats": {
         "source": "",
-        "draws": 44,
-        "triangles": 2165206,
+        "draws": 45,
+        "triangles": 812944,
+        "drawCalls": 93,
+        "geometries": 93,
+        "textures": 32,
         "buildings": 1243,
         "observedWalls": 171,
         "trees": 7626,
+        "roadside": 166,
         "detailPatches": 1,
         "relief": [
           950.3,
@@ -1054,21 +1258,25 @@
       },
       "colors": 10383,
       "skyLow": 0,
-      "file": "frame-43.png"
+      "file": "frame-44.png"
     },
     {
       "name": "Jacksboro, Texas",
-      "at": 4574757.7996779,
+      "at": 4642410.009039968,
       "place": "Jacksboro, Texas",
       "area": "",
       "road": "East Archer Street",
       "stats": {
         "source": "",
-        "draws": 45,
-        "triangles": 2684414,
+        "draws": 46,
+        "triangles": 598600,
+        "drawCalls": 78,
+        "geometries": 78,
+        "textures": 32,
         "buildings": 81,
         "observedWalls": 62,
         "trees": 22878,
+        "roadside": 7,
         "detailPatches": 0,
         "relief": [
           290.9,
@@ -1076,23 +1284,27 @@
         ],
         "failures": []
       },
-      "colors": 8316,
+      "colors": 8302,
       "skyLow": 0,
-      "file": "frame-44.png"
+      "file": "frame-45.png"
     },
     {
       "name": "Denton, Texas",
-      "at": 4682381.7996779,
+      "at": 4750034.009039968,
       "place": "Denton, Texas",
       "area": "",
       "road": "Stuart Road",
       "stats": {
         "source": "",
-        "draws": 46,
-        "triangles": 1165878,
+        "draws": 47,
+        "triangles": 361104,
+        "drawCalls": 46,
+        "geometries": 46,
+        "textures": 32,
         "buildings": 785,
         "observedWalls": 159,
         "trees": 4917,
+        "roadside": 374,
         "detailPatches": 0,
         "relief": [
           169.5,
@@ -1100,9 +1312,9 @@
         ],
         "failures": []
       },
-      "colors": 8336,
+      "colors": 8314,
       "skyLow": 0,
-      "file": "frame-45.png"
+      "file": "frame-46.png"
     },
     {
       "name": "parks/death-valley · canyon road",
@@ -1112,11 +1324,15 @@
       "road": "Artists Drive Scenic Loop",
       "stats": {
         "source": "parks/death-valley",
-        "draws": 47,
-        "triangles": 1877799,
+        "draws": 48,
+        "triangles": 561069,
+        "drawCalls": 72,
+        "geometries": 72,
+        "textures": 31,
         "buildings": 205,
         "observedWalls": 0,
         "trees": 1211,
+        "roadside": 2,
         "detailPatches": 0,
         "relief": [
           -83.3,
@@ -1124,9 +1340,9 @@
         ],
         "failures": []
       },
-      "colors": 4497,
+      "colors": 4562,
       "skyLow": 0,
-      "file": "frame-46.png"
+      "file": "frame-47.png"
     },
     {
       "name": "parks/grand-canyon · canyon road",
@@ -1136,11 +1352,15 @@
       "road": "East Rim Drive",
       "stats": {
         "source": "parks/grand-canyon",
-        "draws": 48,
-        "triangles": 2361906,
+        "draws": 49,
+        "triangles": 925842,
+        "drawCalls": 111,
+        "geometries": 111,
+        "textures": 31,
         "buildings": 3,
         "observedWalls": 0,
         "trees": 28074,
+        "roadside": 11,
         "detailPatches": 0,
         "relief": [
           1011.6,
@@ -1150,21 +1370,53 @@
       },
       "colors": 4642,
       "skyLow": 0,
-      "file": "frame-47.png"
+      "file": "frame-48.png"
+    },
+    {
+      "name": "detours/brian-head · canyon road",
+      "at": 2194703.968769043,
+      "place": "Brian Head, Utah",
+      "area": "",
+      "road": "State Route 148 (closed winters)",
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 50,
+        "triangles": 633183,
+        "drawCalls": 95,
+        "geometries": 95,
+        "textures": 31,
+        "buildings": 51,
+        "observedWalls": 0,
+        "trees": 19325,
+        "roadside": 45,
+        "detailPatches": 0,
+        "relief": [
+          2414.3,
+          3447.4
+        ],
+        "failures": []
+      },
+      "colors": 5384,
+      "skyLow": 0,
+      "file": "frame-49.png"
     },
     {
       "name": "parks/bryce · canyon road",
-      "at": 2258760.9531543385,
+      "at": 2326413.1625164063,
       "place": "Bryce Canyon National Park",
       "area": "",
       "road": "Bryce Canyon Scenic Drive",
       "stats": {
         "source": "parks/bryce",
-        "draws": 49,
-        "triangles": 1842982,
+        "draws": 51,
+        "triangles": 697880,
+        "drawCalls": 92,
+        "geometries": 92,
+        "textures": 31,
         "buildings": 8,
         "observedWalls": 0,
         "trees": 5503,
+        "roadside": 21,
         "detailPatches": 0,
         "relief": [
           2152.2,
@@ -1172,23 +1424,27 @@
         ],
         "failures": []
       },
-      "colors": 4052,
+      "colors": 4003,
       "skyLow": 0,
-      "file": "frame-48.png"
+      "file": "frame-50.png"
     },
     {
       "name": "parks/zion · canyon road",
-      "at": 2442763.2729374194,
+      "at": 2510415.482299487,
       "place": "Zion National Park",
       "area": "",
       "road": "Zion Canyon Scenic Drive",
       "stats": {
         "source": "parks/zion",
-        "draws": 50,
-        "triangles": 1649412,
+        "draws": 52,
+        "triangles": 845982,
+        "drawCalls": 127,
+        "geometries": 127,
+        "textures": 31,
         "buildings": 78,
         "observedWalls": 0,
         "trees": 10603,
+        "roadside": 68,
         "detailPatches": 0,
         "relief": [
           1215,
@@ -1196,23 +1452,27 @@
         ],
         "failures": []
       },
-      "colors": 10779,
+      "colors": 10763,
       "skyLow": 0,
-      "file": "frame-49.png"
+      "file": "frame-51.png"
     },
     {
       "name": "parks/glen-canyon · canyon road",
-      "at": 2648388.735431585,
+      "at": 2716040.9447936527,
       "place": "Glen Canyon · Lake Powell",
       "area": "",
       "road": "Wahweap Boulevard",
       "stats": {
         "source": "parks/glen-canyon",
-        "draws": 51,
-        "triangles": 1859333,
-        "buildings": 725,
+        "draws": 53,
+        "triangles": 587081,
+        "drawCalls": 78,
+        "geometries": 78,
+        "textures": 31,
+        "buildings": 726,
         "observedWalls": 0,
         "trees": 156,
+        "roadside": 36,
         "detailPatches": 0,
         "relief": [
           955.7,
@@ -1220,23 +1480,27 @@
         ],
         "failures": []
       },
-      "colors": 2132,
+      "colors": 2155,
       "skyLow": 0,
-      "file": "frame-50.png"
+      "file": "frame-52.png"
     },
     {
       "name": "parks/monument-valley · canyon road",
-      "at": 2875899.667374152,
+      "at": 2943551.87673622,
       "place": "Monument Valley Navajo Tribal Park",
       "area": "",
       "road": "17-Mile Drive",
       "stats": {
         "source": "parks/monument-valley",
-        "draws": 52,
-        "triangles": 1923431,
+        "draws": 54,
+        "triangles": 347051,
+        "drawCalls": 48,
+        "geometries": 48,
+        "textures": 31,
         "buildings": 80,
         "observedWalls": 0,
         "trees": 0,
+        "roadside": 35,
         "detailPatches": 1,
         "relief": [
           1510.9,
@@ -1244,23 +1508,27 @@
         ],
         "failures": []
       },
-      "colors": 3685,
+      "colors": 3693,
       "skyLow": 0,
-      "file": "frame-51.png"
+      "file": "frame-53.png"
     },
     {
       "name": "parks/mesa-verde · canyon road",
-      "at": 3148741.9317273716,
+      "at": 3216394.1410894394,
       "place": "Mesa Verde National Park",
       "area": "",
       "road": "Mesa Top Loop",
       "stats": {
         "source": "parks/mesa-verde",
-        "draws": 53,
-        "triangles": 1427127,
+        "draws": 55,
+        "triangles": 746577,
+        "drawCalls": 102,
+        "geometries": 102,
+        "textures": 31,
         "buildings": 85,
         "observedWalls": 0,
         "trees": 17652,
+        "roadside": 40,
         "detailPatches": 1,
         "relief": [
           1788.1,
@@ -1268,9 +1536,9 @@
         ],
         "failures": []
       },
-      "colors": 8505,
+      "colors": 8516,
       "skyLow": 0,
-      "file": "frame-52.png"
+      "file": "frame-54.png"
     },
     {
       "name": "Road profile 1131",
@@ -1280,11 +1548,15 @@
       "road": "Hoover Dam Bypass",
       "stats": {
         "source": "",
-        "draws": 54,
-        "triangles": 2969500,
+        "draws": 56,
+        "triangles": 1810518,
+        "drawCalls": 288,
+        "geometries": 288,
+        "textures": 31,
         "buildings": 8,
         "observedWalls": 0,
         "trees": 146,
+        "roadside": 37,
         "detailPatches": 2,
         "relief": [
           196.4,
@@ -1292,95 +1564,83 @@
         ],
         "failures": []
       },
-      "colors": 8618,
+      "colors": 8594,
       "skyLow": 0,
-      "file": "frame-53.png"
+      "file": "frame-55.png"
     },
     {
       "name": "Road profile 2142.77",
-      "at": 2423988.1697541354,
+      "at": 2491640.3791162036,
       "place": "Bryce Canyon National Park → Zion National Park",
       "area": "",
       "road": "Zion–Mount Carmel Highway",
       "stats": {
         "source": "",
-        "draws": 55,
-        "triangles": 1940236,
-        "buildings": 24,
-        "observedWalls": 4,
-        "trees": 2165,
-        "detailPatches": 3,
-        "relief": [
-          1170.4,
-          2231.5
-        ],
-        "failures": []
-      },
-      "colors": 9367,
-      "skyLow": 0,
-      "file": "frame-54.png"
-    },
-    {
-      "name": "Road profile 2147.61",
-      "at": 2428828.1697541354,
-      "place": "Zion National Park, Utah",
-      "area": "",
-      "road": "Zion–Mount Carmel Highway",
-      "stats": {
-        "source": "",
-        "draws": 56,
-        "triangles": 1840204,
-        "buildings": 24,
-        "observedWalls": 4,
-        "trees": 2165,
-        "detailPatches": 3,
-        "relief": [
-          1170.4,
-          2231.5
-        ],
-        "failures": []
-      },
-      "colors": 11539,
-      "skyLow": 0,
-      "file": "frame-55.png"
-    },
-    {
-      "name": "Road profile 2154.15",
-      "at": 2460730.3201905256,
-      "place": "Zion National Park, Utah",
-      "area": "",
-      "road": "Zion–Mount Carmel Highway",
-      "stats": {
-        "source": "",
         "draws": 57,
-        "triangles": 1866113,
-        "buildings": 58,
-        "observedWalls": 3,
-        "trees": 1894,
-        "detailPatches": 2,
+        "triangles": 1064556,
+        "drawCalls": 174,
+        "geometries": 174,
+        "textures": 32,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 78,
+        "detailPatches": 3,
         "relief": [
-          1165,
+          1170.4,
           2231.5
         ],
         "failures": []
       },
-      "colors": 12372,
+      "colors": 9369,
       "skyLow": 0,
       "file": "frame-56.png"
     },
     {
-      "name": "Road profile 2158.99",
-      "at": 2465570.3201905256,
-      "place": "Zion National Park → Glen Canyon · Page",
+      "name": "Road profile 2147.61",
+      "at": 2496480.3791162036,
+      "place": "Zion National Park, Utah",
       "area": "",
       "road": "Zion–Mount Carmel Highway",
       "stats": {
         "source": "",
         "draws": 58,
-        "triangles": 1306895,
+        "triangles": 844204,
+        "drawCalls": 159,
+        "geometries": 223,
+        "textures": 32,
+        "buildings": 24,
+        "observedWalls": 4,
+        "trees": 2165,
+        "roadside": 78,
+        "detailPatches": 3,
+        "relief": [
+          1170.4,
+          2231.5
+        ],
+        "failures": []
+      },
+      "colors": 11521,
+      "skyLow": 0,
+      "file": "frame-57.png"
+    },
+    {
+      "name": "Road profile 2154.15",
+      "at": 2528382.529552594,
+      "place": "Zion National Park, Utah",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 59,
+        "triangles": 766625,
+        "drawCalls": 130,
+        "geometries": 353,
+        "textures": 35,
         "buildings": 58,
         "observedWalls": 3,
         "trees": 1894,
+        "roadside": 92,
         "detailPatches": 2,
         "relief": [
           1165,
@@ -1388,23 +1648,55 @@
         ],
         "failures": []
       },
-      "colors": 7062,
+      "colors": 12358,
       "skyLow": 0,
-      "file": "frame-57.png"
+      "file": "frame-58.png"
     },
     {
-      "name": "Road profile 2160",
-      "at": 2466580.3201905256,
+      "name": "Road profile 2158.99",
+      "at": 2533222.529552594,
       "place": "Zion National Park → Glen Canyon · Page",
       "area": "",
       "road": "Zion–Mount Carmel Highway",
       "stats": {
         "source": "",
-        "draws": 59,
-        "triangles": 1945615,
+        "draws": 60,
+        "triangles": 459687,
+        "drawCalls": 72,
+        "geometries": 363,
+        "textures": 35,
+        "buildings": 58,
+        "observedWalls": 3,
+        "trees": 1894,
+        "roadside": 92,
+        "detailPatches": 2,
+        "relief": [
+          1165,
+          2231.5
+        ],
+        "failures": []
+      },
+      "colors": 7010,
+      "skyLow": 0,
+      "file": "frame-59.png"
+    },
+    {
+      "name": "Road profile 2160",
+      "at": 2534232.529552594,
+      "place": "Zion National Park → Glen Canyon · Page",
+      "area": "",
+      "road": "Zion–Mount Carmel Highway",
+      "stats": {
+        "source": "",
+        "draws": 61,
+        "triangles": 1408005,
+        "drawCalls": 214,
+        "geometries": 577,
+        "textures": 38,
         "buildings": 23,
         "observedWalls": 1,
         "trees": 1327,
+        "roadside": 22,
         "detailPatches": 3,
         "relief": [
           1222.1,
@@ -1412,23 +1704,27 @@
         ],
         "failures": []
       },
-      "colors": 865,
+      "colors": 873,
       "skyLow": 0,
-      "file": "frame-58.png"
+      "file": "frame-60.png"
     },
     {
       "name": "Road profile 3831.63",
-      "at": 4198963.7996779,
+      "at": 4266616.009039968,
       "place": "Lubbock, Texas",
       "area": "",
       "road": "Marsha Sharp Freeway",
       "stats": {
         "source": "",
-        "draws": 60,
-        "triangles": 2255856,
+        "draws": 62,
+        "triangles": 1476350,
+        "drawCalls": 314,
+        "geometries": 314,
+        "textures": 32,
         "buildings": 1243,
         "observedWalls": 171,
         "trees": 7626,
+        "roadside": 166,
         "detailPatches": 1,
         "relief": [
           950.3,
@@ -1436,12 +1732,12 @@
         ],
         "failures": []
       },
-      "colors": 3847,
+      "colors": 3834,
       "skyLow": 0,
-      "file": "frame-59.png"
+      "file": "frame-61.png"
     }
   ],
   "errors": [],
-  "checked": "2026-10-12T23:39:27.345Z",
+  "checked": "2026-10-13T05:03:10.356Z",
   "coverage": "Named stops, park interiors, selected road-profile corrections"
 }

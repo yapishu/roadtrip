@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Apply measured geometry to named structures visible from the scenic route."""
+"""Apply sourced landmark forms to mapped structures along the scenic route."""
 import argparse,json
 from pathlib import Path
 import numpy as np
 from pyproj import Transformer
 PROJECT=Transformer.from_crs(4326,5070,always_xy=True)
 a=argparse.ArgumentParser();a.add_argument('--trip',type=Path,required=True);root=a.parse_args().trip
-paths=list((root/'world').glob('c[0-9][0-9][0-9][0-9].json'))+list((root/'parks').glob('*/world/c[0-9][0-9][0-9][0-9].json'))
+paths=list((root/'world').glob('c[0-9][0-9][0-9][0-9].json'))+list((root/'parks').glob('*/world/c[0-9][0-9][0-9][0-9].json'))+list((root/'detours').glob('*/world/c[0-9][0-9][0-9][0-9].json'))
 for path in paths:
  d=json.loads(path.read_text());changed=False;landmarks=[];extract=path.parent.parent/'.cache/extracts/merged'/path.name
  elements=json.loads(extract.read_text())['osm']['elements']if extract.exists()else[]
@@ -18,6 +18,11 @@ for path in paths:
    b=dict(id=e['type']+str(e['id']),points=np.round(xy,2).tolist(),holes=[],base=3715*.3048-710*.3048,height=710*.3048,heightSource='Bureau of Reclamation published dimensions',kind='dam',name='Glen Canyon Dam',roof='flat',roofHeight=0,color='#c8c3b7',roofColor='#e0d9c9',material='concrete',landmark=True,source='https://www.usbr.gov/projects/index.php?id=144')
    d['buildings']=[v for v in d['buildings']if v['id']!=b['id']]+[b];changed=True
  for b in d['buildings']:
+  if b.get('name')=='Giant Steps Lodge':
+   points=np.array(b['points']);road=np.array([p[1:3]for p in d['route']]);edges=[]
+   for i,(p,q)in enumerate(zip(points[:-1],points[1:])):
+    if np.linalg.norm(q-p)>5:edges.append((np.linalg.norm(road-(p+q)/2,axis=1).min(),i))
+   b.update(landmark='giant-steps-lodge',height=10.5,roof='gabled',roofHeight=2.8,color='#a0997b',roofColor='#58634f',facadeEdge=min(edges)[1],heightSource='Representative two-storey form and gabled roof from exterior reference; height estimated',source='https://www.teresco.org/pics/utah-20151001-05/03/brianheadvillage.html');changed=True
   if b.get('name')!='Desert View Watchtower':continue
   e=next((e for e in elements if e['type']+str(e['id'])==b['id']),None)
   if not e:continue
