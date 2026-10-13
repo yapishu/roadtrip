@@ -1,0 +1,458 @@
+{
+  "california-shop-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "california-shop-5": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "california-shop-6": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "california-motel-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "mojave-shop-4": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "mojave-industrial-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "mojave-motel-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "mojave-civic-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-shop-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-shop-3": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-shop-4": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-shop-6": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-industrial-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-industrial-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-motel-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-motel-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "utah-civic-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "redrock-shop-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "redrock-shop-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "redrock-shop-3": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "redrock-shop-5": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "redrock-civic-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "redrock-civic-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "newmexico-shop-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "newmexico-shop-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "newmexico-shop-4": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "newmexico-shop-6": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "newmexico-industrial-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "newmexico-motel-1": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "newmexico-civic-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "texas-shop-2": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "texas-shop-3": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "texas-shop-4": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "texas-shop-5": {
+    "crop": [
+      0.045,
+      0.22,
+      0.955,
+      0.83
+    ],
+    "width": 10,
+    "height": 3.2
+  },
+  "california-house-clapboard": {
+    "crop": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "width": 9,
+    "height": 3,
+    "openings": [
+      [
+        0.178,
+        0.183,
+        0.312,
+        0.67
+      ],
+      [
+        0.761,
+        0.183,
+        0.885,
+        0.67
+      ]
+    ],
+    "door": 0.62,
+    "wallColor": "#b5af9e",
+    "entryHood": true
+  },
+  "texas-house-brick": {
+    "crop": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "width": 9,
+    "height": 3,
+    "openings": [
+      [
+        0.11,
+        0.12,
+        0.23,
+        0.74
+      ],
+      [
+        0.66,
+        0.12,
+        0.878,
+        0.74
+      ]
+    ],
+    "door": 0.406,
+    "wallColor": "#ac836a",
+    "entryHood": true
+  },
+  "newmexico-house-adobe": {
+    "crop": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "width": 9,
+    "height": 3,
+    "regions": [
+      "mojave",
+      "redrock",
+      "newmexico"
+    ],
+    "openings": [
+      [
+        0.135,
+        0.225,
+        0.284,
+        0.566
+      ],
+      [
+        0.756,
+        0.226,
+        0.904,
+        0.566
+      ]
+    ],
+    "door": 0.594,
+    "wallColor": "#bdab8b",
+    "entryHood": false
+  },
+  "utah-house-clapboard": {
+    "crop": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "width": 9,
+    "height": 3,
+    "regions": [
+      "utah"
+    ],
+    "openings": [
+      [
+        0.179,
+        0.21,
+        0.286,
+        0.73
+      ],
+      [
+        0.758,
+        0.21,
+        0.866,
+        0.73
+      ]
+    ],
+    "door": 0.587,
+    "wallColor": "#865950",
+    "entryHood": true
+  }
+}

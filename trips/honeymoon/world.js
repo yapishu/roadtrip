@@ -1,12 +1,12 @@
 // A metre-scale world: measured terrain, aerial surfaces and mapped structures.
 import * as THREE from './vendor/three.module.js';
 import { addRoadside } from './roadside.js';
-import { gradeTerrain, normalAt, groundHeight, minorRoadSurfaces } from './road-grade.js';
+import { gradeTerrain, normalAt, groundHeight, minorRoadSurfaces, vehicleTunnel } from './road-grade.js';
 import { addAmbient } from './ambient.js';
 import { scheduleAmbient } from './ambient-plan.js';
 import { roadSupports } from './road-supports.js';
 import { buildingPlans, addBuildings } from './buildings.js';
-import { roofProfile, facadeFloors } from './building-shapes.js';
+import { roofProfile, observedWallFits } from './building-shapes.js';
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const hash=s=>{let v=2166136261;for(const c of String(s))v=Math.imul(v^c.charCodeAt(0),16777619);return v>>>0;};
 export async function createRoad(canvas,opts={}) {
@@ -90,12 +90,12 @@ export async function createRoad(canvas,opts={}) {
   function roadMeshes(d,group,groundAt){const minorSurfaces=minorRoadSurfaces(d.roads),paved=[],unpaved=[],lines=[],edges=[],tunnelWalls=[],tunnelFloor=[],rails=[],bridges=[],banks=[];
     const supports=roadSupports(d.roads,groundAt);
     for(const [faces,out]of [[supports.earth,banks],[supports.concrete,bridges],[supports.rails,rails]])for(const face of faces)quad(out,...face.map(p=>[p[0],p[2],-p[1]]));
-    for(const r of d.roads){const small=/footway|path|steps|cycleway|track/.test(r.kind);
+    for(const r of d.roads){const small=/footway|path|steps|cycleway|track/.test(r.kind),enclosed=vehicleTunnel(r);
       if(minorSurfaces.has(r)){for(const polygon of minorSurfaces.get(r))for(let i=1;i<polygon.length-1;i++)for(const p of [polygon[0],polygon[i+1],polygon[i]])unpaved.push(p[0],p[2]+.13,-p[1]);}
-      else strip(r.tunnel?tunnelFloor:small?unpaved:paved,r.points,r.width+(r.tunnel?1.5:0),0,.13);
+      else strip(enclosed?tunnelFloor:small?unpaved:paved,r.points,r.width+(enclosed?1.5:0),0,.13);
       if(!small&&r.width>6&&!/service|residential/.test(r.kind)){if(!r.oneway){strip(lines,r.points,.11,-.1,.19);strip(lines,r.points,.11,.1,.19);}if(r.width>8){strip(edges,r.points,.13,r.width/2-.25,.19);strip(edges,r.points,.13,-r.width/2+.25,.19);}}
-      if(r.tunnel||r.bridge)for(let i=0;i<r.points.length-1;i++){const a=r.points[i],b=r.points[i+1],dx=b[0]-a[0],dy=b[1]-a[1],n=Math.hypot(dx,dy)||1,nx=dy/n,ny=-dx/n;
-        if(r.tunnel){const ring=[[-1,0],[-1,2],...Array.from({length:9},(_,j)=>[-Math.cos(j*Math.PI/8),2+Math.sin(j*Math.PI/8)*3.7]),[1,0]],radius=r.width/2+.6,na=normalAt(r.points,i),nb=normalAt(r.points,i+1);
+      if(enclosed||r.bridge)for(let i=0;i<r.points.length-1;i++){const a=r.points[i],b=r.points[i+1],dx=b[0]-a[0],dy=b[1]-a[1],n=Math.hypot(dx,dy)||1,nx=dy/n,ny=-dx/n;
+        if(enclosed){const ring=[[-1,0],[-1,2],...Array.from({length:9},(_,j)=>[-Math.cos(j*Math.PI/8),2+Math.sin(j*Math.PI/8)*3.7]),[1,0]],radius=r.width/2+.6,na=normalAt(r.points,i),nb=normalAt(r.points,i+1);
           for(let j=0;j<ring.length-1;j++){const [u,h]=ring[j],[v,k]=ring[j+1];quad(tunnelWalls,[a[0]+na[0]*u*radius,a[2]+h,-a[1]-na[1]*u*radius],[b[0]+nb[0]*u*radius,b[2]+h,-b[1]-nb[1]*u*radius],[b[0]+nb[0]*v*radius,b[2]+k,-b[1]-nb[1]*v*radius],[a[0]+na[0]*v*radius,a[2]+k,-a[1]-na[1]*v*radius]);}}
         if(r.bridge){
           const na=normalAt(r.points,i),nb=normalAt(r.points,i+1),corner=(p,n,side,z)=>[p[0]+n[0]*side*r.width/2,p[2]+z,-p[1]-n[1]*side*r.width/2];
@@ -140,12 +140,10 @@ export async function createRoad(canvas,opts={}) {
   function regionalFacades(d,group,plans,observed){
     const batches=new Map();
     for(const b of d.buildings){
-      const {profile,fronts,skin}=plans.get(b);
-      for(const front of fronts){
+      const {skins}=plans.get(b);
+      for(const [front,{skin,count,base,top}] of skins){
         if(b.landmark||b.referenceStyle||front<0||!skin||!regionalTextures.has(skin.file)||['canopy','office','apartment'].includes(b.kind)||observed.has(b.id+':'+front))continue;
-        const a=b.points[front],z=b.points[front+1],length=Math.hypot(z[0]-a[0],z[1]-a[1]);
-        const base=b.base+(b.minHeight||0),levels=facadeFloors(b,profile),top=base+(profile.eaves-base)/levels;
-        const count=b.kind==='house'?1:Math.max(1,Math.round(length/skin.width));
+        const a=b.points[front],z=b.points[front+1];
         const key=skin.file+':'+Math.floor(a[0]/256)+':'+Math.floor(a[1]/256);
         if(!batches.has(key))batches.set(key,{file:skin.file,vertices:[],uv:[]});const batch=batches.get(key);
         for(let j=0;j<count;j++){
@@ -190,7 +188,7 @@ export async function createRoad(canvas,opts={}) {
       const groundAt=(x,y)=>{for(const {g,a}of patches){const h=groundHeight(g,a,x,y);if(Number.isFinite(h))return h;}const h=groundHeight(d.near,graded,x,y);return Number.isFinite(h)?h:elevation(d.near,graded,x,y);};
       const appearanceData=await fetch(worldURL(source,`a${String(d.c).padStart(4,'0')}.json`)).then(r=>r.ok?r.json():{faces:[],atlases:[]}).catch(()=>({faces:[],atlases:[]}));
       const buildingsById=new Map(d.buildings.map(b=>[b.id,b]));
-      appearanceData.faces=appearanceData.faces.filter(f=>{const b=buildingsById.get(f.building);return b&&!b.referenceStyle&&b.kind!=='canopy'&&!b.minHeight&&f.source.agreement>=.8&&f.rect[3]/b.height>=3;});
+      appearanceData.faces=appearanceData.faces.filter(f=>observedWallFits(buildingsById.get(f.building),f));
       const observed=new Set(appearanceData.faces.map(f=>f.building+':'+f.edge)),theme=themeAt(sources[source].themeAt??(d.s0+d.len/2)),plans=buildingPlans(d,regional,theme);
       roadMeshes(d,group,groundAt);addBuildings(d,group,groundAt,plans,theme,observed);landmarkMeshes(d,group);lodgeDetails(d,group);regionalFacades(d,group,plans,observed);
       group.visible=false;scene.add(group);

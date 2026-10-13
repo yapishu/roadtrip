@@ -1,0 +1,15 @@
+{
+  "changes": [
+    "Reviewed wall-only surfaces fit by physical proportions",
+    "Four generated house skins with projecting window trim and entry hoods",
+    "Measured flat-wall filtering for observed projections",
+    "Vehicle tunnel shells exclude small path underpasses",
+    "Road banks avoid intersecting roads",
+    "Power wire coverage scales by depth and fades out by 180 metres"
+  ],
+  "townFrames": 18,
+  "openingObstructionBefore": 9,
+  "openingObstructionAfter": 0,
+  "wireFrames": 10,
+  "sourceGeometry": "Mapped footprints and roof forms; generated skins and trim are representative decoration"
+}

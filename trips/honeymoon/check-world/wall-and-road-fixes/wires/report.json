@@ -1,0 +1,305 @@
+{
+  "frames": [
+    {
+      "at": 0,
+      "file": "0.0.png",
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 540613,
+        "drawCalls": 74,
+        "geometries": 74,
+        "textures": 7,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 0.1,
+      "file": "0.1.png",
+      "stats": {
+        "source": "",
+        "draws": 2,
+        "triangles": 506037,
+        "drawCalls": 70,
+        "geometries": 74,
+        "textures": 7,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 1.4,
+      "file": "1.4.png",
+      "stats": {
+        "source": "",
+        "draws": 3,
+        "triangles": 2119422,
+        "drawCalls": 380,
+        "geometries": 441,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 12,
+      "file": "12.0.png",
+      "stats": {
+        "source": "",
+        "draws": 4,
+        "triangles": 1479913,
+        "drawCalls": 328,
+        "geometries": 769,
+        "textures": 10,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13808.361918767989,
+            "x": -2822.651098767301,
+            "y": 262.0360699164057,
+            "z": 73.61395367959528,
+            "phase": 5.274014347729836,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 12.2,
+      "file": "12.2.png",
+      "stats": {
+        "source": "",
+        "draws": 5,
+        "triangles": 1327598,
+        "drawCalls": 287,
+        "geometries": 769,
+        "textures": 10,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13808.361918767989,
+            "x": -2822.651098767301,
+            "y": 262.0360699164057,
+            "z": 73.61395367959528,
+            "phase": 5.274014347729836,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 12.4,
+      "file": "12.4.png",
+      "stats": {
+        "source": "",
+        "draws": 6,
+        "triangles": 1211132,
+        "drawCalls": 246,
+        "geometries": 769,
+        "textures": 10,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13808.361918767989,
+            "x": -2822.651098767301,
+            "y": 262.0360699164057,
+            "z": 73.61395367959528,
+            "phase": 5.274014347729836,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 12.6,
+      "file": "12.6.png",
+      "stats": {
+        "source": "",
+        "draws": 7,
+        "triangles": 1126518,
+        "drawCalls": 216,
+        "geometries": 769,
+        "textures": 10,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13808.361918767989,
+            "x": -2822.651098767301,
+            "y": 262.0360699164057,
+            "z": 73.61395367959528,
+            "phase": 5.274014347729836,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 18.4,
+      "file": "18.4.png",
+      "stats": {
+        "source": "",
+        "draws": 8,
+        "triangles": 510455,
+        "drawCalls": 111,
+        "geometries": 839,
+        "textures": 10,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13808.361918767989,
+            "x": -2822.651098767301,
+            "y": 262.0360699164057,
+            "z": 73.61395367959528,
+            "phase": 5.274014347729836,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 18.6,
+      "file": "18.6.png",
+      "stats": {
+        "source": "",
+        "draws": 9,
+        "triangles": 496559,
+        "drawCalls": 105,
+        "geometries": 839,
+        "textures": 10,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13808.361918767989,
+            "x": -2822.651098767301,
+            "y": 262.0360699164057,
+            "z": 73.61395367959528,
+            "phase": 5.274014347729836,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "at": 19,
+      "file": "19.0.png",
+      "stats": {
+        "source": "",
+        "draws": 10,
+        "triangles": 506991,
+        "drawCalls": 102,
+        "geometries": 854,
+        "textures": 10,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 4566,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13808.361918767989,
+            "x": -2822.651098767301,
+            "y": 262.0360699164057,
+            "z": 73.61395367959528,
+            "phase": 5.274014347729836,
+            "count": 2
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

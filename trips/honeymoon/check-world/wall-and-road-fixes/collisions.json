@@ -1,0 +1,119 @@
+[
+  {
+    "at": 1555,
+    "height": 0.6,
+    "distance": 2.246236163030306,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -550.2379466091515,
+      6.68,
+      3180.4094148084628
+    ],
+    "faceIndex": 23
+  },
+  {
+    "at": 1555,
+    "height": 0.6,
+    "distance": 5.640267155721951,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -547.6874533878586,
+      6.68,
+      3178.1701223515715
+    ],
+    "faceIndex": 42
+  },
+  {
+    "at": 1555,
+    "height": 1.2,
+    "distance": 2.2938154831691002,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -550.2021924472864,
+      7.28,
+      3180.378023223377
+    ],
+    "faceIndex": 27
+  },
+  {
+    "at": 1555,
+    "height": 1.2,
+    "distance": 5.593270052743408,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -547.7227700342961,
+      7.28,
+      3178.201129805075
+    ],
+    "faceIndex": 41
+  },
+  {
+    "at": 1555,
+    "height": 1.8,
+    "distance": 2.348556620861761,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -550.1610564350015,
+      7.88,
+      3180.3419064592754
+    ],
+    "faceIndex": 27
+  },
+  {
+    "at": 1555,
+    "height": 1.8,
+    "distance": 5.538542968202791,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -547.7638954861387,
+      7.88,
+      3178.2372372972764
+    ],
+    "faceIndex": 40
+  },
+  {
+    "at": 1560,
+    "height": 0.6,
+    "distance": 0.6131706608989282,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -547.6958621479023,
+      6.89,
+      3178.1781159375832
+    ],
+    "faceIndex": 41
+  },
+  {
+    "at": 1560,
+    "height": 1.2,
+    "distance": 0.5584670841431274,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -547.7369969713449,
+      7.49,
+      3178.2141771024317
+    ],
+    "faceIndex": 41
+  },
+  {
+    "at": 1560,
+    "height": 1.8,
+    "distance": 0.5037456375140204,
+    "color": "796b58",
+    "map": "http://127.0.0.1:8088/materials/art/limestone.png",
+    "point": [
+      -547.7781452321921,
+      8.09,
+      3178.2502500472856
+    ],
+    "faceIndex": 40
+  }
+]

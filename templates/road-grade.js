@@ -1,4 +1,5 @@
 // Grade complete terrain cells against the same ribbon used by the road mesh.
+export const vehicleTunnel=road=>!!road.tunnel&&!/footway|path|steps|cycleway|track/.test(road.kind);
 export function normalAt(points,i){
   const a=points[Math.max(0,i-1)],b=points[Math.min(points.length-1,i+1)];
   const dx=b[0]-a[0],dy=b[1]-a[1],length=Math.hypot(dx,dy)||1;

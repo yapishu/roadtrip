@@ -6,14 +6,17 @@ from PIL import Image,ImageDraw,ImageStat
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--trip',type=Path,required=True);args=ap.parse_args();art=args.trip/'regional/art';plan=json.loads((art/'plan.json').read_text());clean=json.loads((art/'kit.json').read_text())if(art/'kit.json').exists()else{'pictures':{}};out=art/'world';out.mkdir(exist_ok=True)
-    drops=set((art/'drop.txt').read_text().split())if(art/'drop.txt').exists()else set();kit=dict(themes=plan['themes'],surfaces={},trees={},sources={'surfaces':'Locally generated SDXL regional architecture','vegetation':'Locally generated SDXL vegetation'})
+    drops=set((art/'drop.txt').read_text().split())if(art/'drop.txt').exists()else set();kit=dict(themes=plan['themes'],surfaces={},trees={},sources={'surfaces':'Reviewed generated wall surfaces; provenance accompanies each surface','vegetation':'Locally generated SDXL vegetation'})
+    walls=json.loads((art/'wall-surfaces.json').read_text()) if (art/'wall-surfaces.json').exists() else {}
     plants=json.loads((art/'plants.json').read_text())if(art/'plants.json').exists()else {};tiles={};review=[]
     for job in plan['jobs']:
         if job['name']in drops:continue
         if job['kind']=='texture':
+            if job['name'] not in walls:continue
+            surface=walls[job['name']]
             path=art/'raw'/(job['name']+'.png')
             if not path.exists():continue
-            im=Image.open(path).convert('RGB');w,h=im.size;im=im.crop((round(w*.045),round(h*.22),round(w*.955),round(h*.83))).resize((256,96),Image.Resampling.LANCZOS);tiles.setdefault(job['theme'],[]).append((job,im));review.append((job['name'],im))
+            im=Image.open(path).convert('RGB');w,h=im.size;x0,y0,x1,y1=surface['crop'];im=im.crop((round(w*x0),round(h*y0),round(w*x1),round(h*y1))).resize((256,96),Image.Resampling.LANCZOS);tiles.setdefault(job['theme'],[]).append((job,im));review.append((job['name'],im))
         else:
             item=plants.get(job['name']) or clean['pictures'].get(job['name'])
             if not item or item.get('drop'):continue
@@ -21,7 +24,7 @@ def main():
     for theme,items in tiles.items():
         atlas=Image.new('RGB',(2048,math.ceil(len(items)/8)*128),'#888078')
         for i,(job,im)in enumerate(items):
-            x=i%8*256;y=i//8*128;atlas.paste(im,(x,y));kit['surfaces'][job['name']]=dict(theme=theme,role=job['role'],file=f'regional/art/world/{theme}-walls.jpg',rect=[x,y,256,96],size=list(atlas.size),avg=[round(v)for v in ImageStat.Stat(im).mean],width=12 if job['role']=='house'else 10)
+            x=i%8*256;y=i//8*128;atlas.paste(im,(x,y));kit['surfaces'][job['name']]=dict(theme=theme,role=job['role'],file=f'regional/art/world/{theme}-walls.jpg',rect=[x,y,256,96],size=list(atlas.size),avg=[round(v)for v in ImageStat.Stat(im).mean],source=job.get('source','Locally generated SDXL'),**{k:v for k,v in walls[job['name']].items() if k!='crop'})
         atlas.save(out/(theme+'-walls.jpg'),quality=92)
     (art/'world-kit.json').write_text(json.dumps(kit,separators=(',',':')))
     cols=6;cw=270;ch=150;sheet=Image.new('RGB',(cols*cw,math.ceil(len(review)/cols)*ch),'#666669');draw=ImageDraw.Draw(sheet)

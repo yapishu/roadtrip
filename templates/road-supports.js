@@ -7,7 +7,7 @@ export function roadSupports(roads,groundAt){
   const earth=[],concrete=[],rails=[],cells=new Map(),size=80;
   const keys=(a,b,radius)=>{const result=[];for(let y=Math.floor((Math.min(a[1],b[1])-radius)/size);y<=Math.floor((Math.max(a[1],b[1])+radius)/size);y++)for(let x=Math.floor((Math.min(a[0],b[0])-radius)/size);x<=Math.floor((Math.max(a[0],b[0])+radius)/size);x++)result.push(`${x}:${y}`);return result;};
   for(const road of roads)for(let i=1;i<road.points.length;i++){const entry={road,a:road.points[i-1],b:road.points[i]};for(const key of keys(entry.a,entry.b,road.width/2)){if(!cells.has(key))cells.set(key,[]);cells.get(key).push(entry);}}
-  const clear=(road,a,b,radius)=>{for(const entry of new Set(keys(a,b,radius).flatMap(key=>cells.get(key)||[]))){if(entry.road===road)continue;if(Math.max(entry.a[2],entry.b[2])>=Math.min(a[2],b[2])-1)continue;if(gap(a,b,entry.a,entry.b)<radius+entry.road.width/2+1)return false;}return true;};
+  const clear=(road,a,b,radius,belowOnly=false)=>{for(const entry of new Set(keys(a,b,radius).flatMap(key=>cells.get(key)||[]))){if(entry.road===road)continue;if(belowOnly?Math.max(entry.a[2],entry.b[2])>=Math.min(a[2],b[2])-1:Math.min(entry.a[2],entry.b[2])>Math.max(a[2],b[2])+1)continue;if(gap(a,b,entry.a,entry.b)<radius+entry.road.width/2+1)return false;}return true;};
   const face=(out,a,b,c,d)=>out.push([a,b,c,d]);
   for(const road of roads){
     if(road.tunnel||/footway|path|steps|cycleway|track/.test(road.kind))continue;
@@ -15,7 +15,7 @@ export function roadSupports(roads,groundAt){
     if(road.bridge){
       for(const i of [0,road.points.length-1]){
         const p=road.points[i],n=normalAt(road.points,i),a=[p[0]-n[0]*half,p[1]-n[1]*half,p[2]-.8],b=[p[0]+n[0]*half,p[1]+n[1]*half,p[2]-.8];
-        if(!clear(road,a,b,1))continue;
+        if(!clear(road,a,b,1,true))continue;
         const ga=groundAt(a[0],a[1]),gb=groundAt(b[0],b[1]);
         if(Math.min(a[2]-ga,b[2]-gb)<.8)continue;
         face(concrete,[a[0],a[1],ga-.3],[b[0],b[1],gb-.3],b,a);

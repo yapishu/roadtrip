@@ -1,9 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {roofProfile,roofPolygons,frontage,streetIndex,facadeFloors} from '../templates/building-shapes.js';
+import {roofProfile,roofPolygons,frontage,streetIndex,facadeFloors,skinLayout,observedWallFits} from '../templates/building-shapes.js';
 const building=(extra={})=>({points:[[0,0],[20,0],[20,10],[0,10],[0,0]],holes:[],base:100,height:6,roof:'gabled',roofHeight:2,...extra});
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
 const area=ring=>Math.abs(ring.reduce((n,p,i)=>{const q=ring[(i+1)%ring.length];return n+p[0]*q[1]-q[0]*p[1];},0)/2);
+test('wall skins keep their proportions and storefronts stop below tall fascia',()=>{
+  const skin={width:9,height:3},house=building({kind:'house',height:4.5,roofHeight:1.5}),profile=roofProfile(house);
+  assert.equal(skinLayout(house,profile,9,skin).count,1);
+  assert.equal(skinLayout(house,profile,20,skin),null);
+  const shop=building({kind:'shop',roof:'flat',height:4.8});
+  assert.deepEqual(skinLayout(shop,roofProfile(shop),18,skin),{count:2,base:100,top:103});
+});
+test('photo projections require measured flat walls and strong depth agreement',()=>{
+  const b=building({kind:'shop',roof:'flat',height:5,heightSource:'mapped'}),face={edge:0,rect:[0,0,120,30],source:{agreement:.98}};
+  assert.equal(observedWallFits(b,face),true);
+  for(const change of [{kind:'house'},{heightSource:'estimated'},{roof:'gabled'},{part:true},{minHeight:1}])assert.equal(observedWallFits({...b,...change},face),false);
+  assert.equal(observedWallFits(b,{...face,source:{agreement:.9}}),false);
+});
 test('hipped roofs slope down at both ends while gables retain their end peaks',()=>{
   const gable=roofProfile(building()),hip=roofProfile(building({roof:'hipped'}));
   near(gable.top([0,5]),106);near(hip.top([0,5]),104);near(hip.top([10,5]),106);

@@ -20,3 +20,9 @@ test('ground-level pavement and tunnels need no supporting bank',()=>{
  const tunnel={...road([[0,0,5],[30,0,5]]),tunnel:true};
  assert.deepEqual(roadSupports([road([[0,0,.25],[30,0,.25]]),tunnel],()=>0),{earth:[],concrete:[],rails:[]});
 });
+test('banks leave intersecting roads at the same height clear',()=>{
+ const main=road([[0,0,5],[30,0,5]]),side=road([[15,-30,5],[15,30,5]]);
+ const result=roadSupports([main,side],()=>3.3);
+ assert.equal(result.earth.length,0);
+ assert.equal(result.rails.length,0);
+});

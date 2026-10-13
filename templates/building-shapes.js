@@ -3,6 +3,20 @@ const dot=(a,b)=>a[0]*b[0]+a[1]*b[1];
 export const signedArea=ring=>ring.slice(0,-1).reduce((sum,p,i)=>sum+p[0]*ring[i+1][1]-p[1]*ring[i+1][0],0)/2;
 export const facadeFloors=(b,profile)=>Math.max(1,Math.min(70,Math.round(b.levels?b.levels-(b.minLevel||0):Math.floor((profile.eaves-b.base-(b.minHeight||0)+.35)/3.1))));
 
+export function skinLayout(b,profile,length,skin){
+  if(!skin?.height||b.referenceStyle||['office','apartment','canopy'].includes(b.kind))return null;
+  const base=b.base+(b.minHeight||0),floorHeight=(profile.eaves-base)/facadeFloors(b,profile),height=b.kind==='house'?floorHeight:Math.min(floorHeight,skin.height);
+  if(height<2.2||height>4.5)return null;
+  const count=b.kind==='house'?1:Math.max(1,Math.round(length/(skin.width*height/skin.height)));
+  const stretch=(length/count/height)/(skin.width/skin.height);
+  return stretch>=.78&&stretch<=1.25?{count,base,top:base+height}:null;
+}
+
+export function observedWallFits(b,face){
+  if(!b||b.landmark||b.referenceStyle||b.part||b.minHeight||b.heightSource!=='mapped'||b.kind==='house'||b.kind==='canopy'||roofProfile(b).rise)return false;
+  return face.edge>=0&&face.edge<b.points.length-1&&face.source?.agreement>=.95&&face.rect[3]/b.height>=3;
+}
+
 export function clipPlane(polygon,plane){
   const result=[],value=p=>plane[0]*p[0]+plane[1]*p[1]+plane[2];
   for(let i=0;i<polygon.length;i++){

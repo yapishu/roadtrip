@@ -60,6 +60,9 @@ increasing draw distance. Overpasses need solid deck undersides and supports;
 thin road strips and floating railings are visible from below. Place supports so
 they do not obstruct another mapped road. Tunnels need interior surfaces and
 portal clearance. Buildings on slopes need foundations down to ground.
+Vehicle tunnels receive interior shells. Small path underpasses retain their
+pavement without a guessed vehicle-sized vault. Check the road above them in
+motion; a short obstruction can fall between stop-based screenshot samples.
 
 Sparse birds and wildlife provide invented ambient detail. Keep encounters stable
 while chunks stream, vary them between sessions, and place animals outside roads

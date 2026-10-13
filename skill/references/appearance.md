@@ -18,6 +18,9 @@ keyed by OSM object ID and retain source URLs and height-estimate labels.
 The renderer distinguishes gabled, hipped, pyramidal, skillion, and flat roofs.
 Regional storefront artwork belongs on a street-facing ground floor. Upper
 floors and side walls use coherent window bays, while open canopies use posts.
+Wall skins retain their physical proportions. Storefront panels stop below the
+fascia; residential panels cover a compatible single frontage. Window trim and
+small entry canopies add depth to selected skins.
 Trim, glazing, masonry variation, and rooftop equipment are representative,
 not surveyed details. Nearby architecture is detailed; distant structures keep
 their mapped silhouettes. Spatial batches allow buildings outside the view to cull.
@@ -104,6 +107,13 @@ and plants into `regional/art/world/`, emits `world-kit.json`, and creates
 `world-contact.jpg`. Inspect both raw plants and the packed contact sheet: the
 wall packer crops surfaces, so the packed result matters.
 
+Only reviewed wall planes listed in `regional/art/wall-surfaces.json` enter the
+wall atlas. Each entry supplies a normalized source crop, physical width and
+height, and optional window bounds or an entry canopy. Reject roofs, sky, yards,
+strong perspective, and clipped openings. Generate full-bleed orthographic wall
+planes when a usable crop is unavailable. Keep the generator attribution with
+each asset. A successful generator response does not establish a usable wall.
+
 Reject cropped crowns, scenery baked into cutouts, pots, angled wall faces,
 floating fragments, and unsuitable scale. Put unusable job names in `art/drop.txt`
 under the regional trip, improve the job prompt, and regenerate selected names.
@@ -141,6 +151,8 @@ Mapped poles, lamps, signs, benches, hydrants, fences, railways, power lines, an
 chair lifts use cheap repeated geometry. Resample ground-following lines on steep
 terrain, use consistent elevations for wires and supports, and keep props out of
 the travel lane. Batch by material and spatial cell so off-camera objects cull.
+Power wires use distance-dependent pixel coverage, fade between 100 and 180 m,
+and disappear beyond that range so a subpixel cable cannot become a dark horizon.
 
 ## Optional observed façades
 
@@ -170,9 +182,10 @@ Accepted patches form atlases with per-face provenance. A random street photo is
 not a building texture. Unobserved walls remain regional surfaces. If maps or
 elevations change, regenerate the affected façade projections.
 
-The viewer accepts observed walls only with at least 80% depth agreement and
-three texture pixels per metre of height. It excludes canopies, elevated parts,
-and reference forms whose dimensions differ from the projected imagery.
+The viewer accepts observed walls only on measured flat-roof buildings with at
+least 95% depth agreement and three texture pixels per metre of height. Houses,
+building parts, canopies, elevated walls, and reference forms use reviewed skins
+or architectural geometry instead of uncertain photo projections.
 
 ## Landmarks
 

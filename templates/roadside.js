@@ -1,6 +1,26 @@
 // Simple forms at mapped positions: roadside furniture and off-season ski lifts.
 import * as THREE from './vendor/three.module.js';
 
+function wireMaterial(color){
+  const material=new THREE.LineBasicMaterial({color,transparent:true,depthWrite:false}),pixelScale={value:1},size=new THREE.Vector2();
+  material.onBeforeRender=(renderer,scene,camera)=>{pixelScale.value=renderer.getDrawingBufferSize(size).y*camera.projectionMatrix.elements[5]/2;};
+  material.onBeforeCompile=shader=>{
+    shader.uniforms.wirePixelScale=pixelScale;
+    shader.vertexShader='varying vec3 wireViewPosition;\n'+shader.vertexShader;
+    shader.vertexShader=shader.vertexShader.replace('#include <project_vertex>','#include <project_vertex>\nwireViewPosition=mvPosition.xyz;');
+    shader.fragmentShader='uniform float wirePixelScale; varying vec3 wireViewPosition;\n'+shader.fragmentShader;
+    shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>',`
+      float distanceToWire=length(wireViewPosition);
+      float coverage=min(1.0,0.04*wirePixelScale/max(1.0,-wireViewPosition.z));
+      diffuseColor.a*=coverage*(1.0-smoothstep(100.0,180.0,distanceToWire));
+      if(diffuseColor.a<0.015)discard;
+      #include <opaque_fragment>
+    `);
+  };
+  material.customProgramCacheKey=()=>'physical-wire-coverage';
+  return material;
+}
+
 export async function addRoadside(d,group,url,groundAt) {
   const response=await fetch(url);
   if(!response.ok)return;
@@ -89,6 +109,10 @@ export async function addRoadside(d,group,url,groundAt) {
   for(const {color,vertices}of batches.values()){
     const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.computeVertexNormals();geometry.computeBoundingSphere();if(!materials.has(color))materials.set(color,new THREE.MeshLambertMaterial({color,side:THREE.DoubleSide}));group.add(new THREE.Mesh(geometry,materials.get(color)));
   }
-  for(const {color,vertices}of wires.values()){const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.computeBoundingSphere();group.add(new THREE.LineSegments(geometry,new THREE.LineBasicMaterial({color})));}
+  const wireMaterials=new Map();
+  for(const {color,vertices}of wires.values()){
+    if(!wireMaterials.has(color))wireMaterials.set(color,wireMaterial(color));
+    const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.computeBoundingSphere();group.add(new THREE.LineSegments(geometry,wireMaterials.get(color)));
+  }
   group.userData.roadside=features.length;
 }

@@ -1,6 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {gradeTerrain,roadTriangles,minorRoadSurfaces} from '../templates/road-grade.js';
+import {gradeTerrain,roadTriangles,minorRoadSurfaces,vehicleTunnel} from '../templates/road-grade.js';
+
+test('small path underpasses do not receive vehicle-sized tunnel shells',()=>{
+  for(const kind of ['cycleway','footway','path','steps','track'])assert.equal(vehicleTunnel({kind,tunnel:true}),false);
+  assert.equal(vehicleTunnel({kind:'primary',tunnel:true}),true);
+  assert.equal(vehicleTunnel({kind:'primary',tunnel:false}),false);
+});
 
 // This samples the rendered triangle surface, not bilinear DEM interpolation.
 function height(g,a,x,y){

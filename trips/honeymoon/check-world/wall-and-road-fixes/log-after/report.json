@@ -1,0 +1,77 @@
+{
+  "frames": [
+    {
+      "km": 1.54,
+      "file": "frame-00.png"
+    },
+    {
+      "km": 1.542,
+      "file": "frame-01.png"
+    },
+    {
+      "km": 1.544,
+      "file": "frame-02.png"
+    },
+    {
+      "km": 1.546,
+      "file": "frame-03.png"
+    },
+    {
+      "km": 1.548,
+      "file": "frame-04.png"
+    },
+    {
+      "km": 1.55,
+      "file": "frame-05.png"
+    },
+    {
+      "km": 1.552,
+      "file": "frame-06.png"
+    },
+    {
+      "km": 1.554,
+      "file": "frame-07.png"
+    },
+    {
+      "km": 1.556,
+      "file": "frame-08.png"
+    },
+    {
+      "km": 1.558,
+      "file": "frame-09.png"
+    },
+    {
+      "km": 1.56,
+      "file": "frame-10.png"
+    },
+    {
+      "km": 1.562,
+      "file": "frame-11.png"
+    },
+    {
+      "km": 1.564,
+      "file": "frame-12.png"
+    },
+    {
+      "km": 1.566,
+      "file": "frame-13.png"
+    },
+    {
+      "km": 1.568,
+      "file": "frame-14.png"
+    },
+    {
+      "km": 1.57,
+      "file": "frame-15.png"
+    },
+    {
+      "km": 1.572,
+      "file": "frame-16.png"
+    },
+    {
+      "km": 1.574,
+      "file": "frame-17.png"
+    }
+  ],
+  "errors": []
+}
