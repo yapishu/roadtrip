@@ -4,6 +4,7 @@ import { addRoadside } from './roadside.js';
 import { gradeTerrain, normalAt, groundHeight, minorRoadSurfaces } from './road-grade.js';
 import { addAmbient } from './ambient.js';
 import { scheduleAmbient } from './ambient-plan.js';
+import { roadSupports } from './road-supports.js';
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const hash=s=>{let v=2166136261;for(const c of String(s))v=Math.imul(v^c.charCodeAt(0),16777619);return v>>>0;};
 export async function createRoad(canvas,opts={}) {
@@ -23,11 +24,11 @@ export async function createRoad(canvas,opts={}) {
   const locations=await fetch('data/locations.json').then(r=>r.ok?r.json():[]);
   function locate(s){s=clamp(s,0,LEN-.001);let part=segments[0];for(const segment of segments){if(segment.at>s)break;part=segment;}return {source:part.source,distance:part.start+s-part.at};}
   const worldURL=(source,file)=>(source?source+'/':'')+'world/'+file;
-  function captionAt(s){const loc=locate(s),source=sources[loc.source];if(loc.source){let nearest=source.stops[0];for(const mark of source.stops)if(Math.abs(mark.at-loc.distance)<Math.abs(nearest.at-loc.distance))nearest=mark;return Math.abs(nearest.at-loc.distance)<650&&!/· start|· return/.test(nearest.name)?nearest.name:source.name;}
+  function captionAt(s){const journeyDistance=s,loc=locate(s),source=sources[loc.source];if(loc.source){let nearest=source.stops[0];for(const mark of source.stops)if(Math.abs(mark.at-loc.distance)<Math.abs(nearest.at-loc.distance))nearest=mark;return Math.abs(nearest.at-loc.distance)<650&&!/· start|· return/.test(nearest.name)?nearest.name:(source.captions?.find(c=>loc.distance>=c.from&&loc.distance<c.to)?.name||source.name);}
     s=loc.distance;let nearest=baseIDX.stops[0];for(const stop of baseIDX.stops)if(Math.abs(stop.at-s)<Math.abs(nearest.at-s))nearest=stop;
     const radius=/Death Valley|Grand Canyon|Bryce Canyon|Mesa Verde/.test(nearest.name)?14000:/Zion|Glen Canyon|Monument Valley/.test(nearest.name)?6500:/Las Vegas|Albuquerque|Lubbock/.test(nearest.name)?10000:4000;
     if(Math.abs(nearest.at-s)<=radius)return nearest.name;let local=null,distance=4500;for(const place of locations){const delta=Math.abs(place[0]-s);if(delta<distance){distance=delta;local=place[1];}}if(local)return local;
-    const next=baseIDX.stops.find(stop=>stop.at>s)||baseIDX.stops.at(-1),previous=baseIDX.stops[Math.max(0,baseIDX.stops.indexOf(next)-1)];return previous.name.split(',')[0]+' → '+next.name.split(',')[0];
+    const next=IDX.stops.find(stop=>stop.at>journeyDistance)||IDX.stops.at(-1),previous=IDX.stops[Math.max(0,IDX.stops.indexOf(next)-1)];return previous.name.split(',')[0]+' → '+next.name.split(',')[0];
   }
   const chunks=new Map(),pending=new Map(),failures=new Map(),T={now:0},ambientSeed=opts.ambientSeed??Math.floor(Math.random()*4294967296);
   const ambientEvents=new Map();
@@ -84,7 +85,9 @@ export async function createRoad(canvas,opts={}) {
   function mesh(vertices,mat,uv){const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));if(uv)geo.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));geo.computeVertexNormals();return new THREE.Mesh(geo,mat);}
   function quad(out,a,b,c,d){out.push(...a,...c,...b,...a,...d,...c);}
   function strip(out,points,width,offset=0,lift=0){for(let i=0;i<points.length-1;i++){const a=points[i],b=points[i+1],na=normalAt(points,i),nb=normalAt(points,i+1),l=offset-width/2,r=offset+width/2;quad(out,[a[0]+na[0]*l,a[2]+lift,-a[1]-na[1]*l],[b[0]+nb[0]*l,b[2]+lift,-b[1]-nb[1]*l],[b[0]+nb[0]*r,b[2]+lift,-b[1]-nb[1]*r],[a[0]+na[0]*r,a[2]+lift,-a[1]-na[1]*r]);}}
-  function roadMeshes(d,group,groundAt){const minorSurfaces=minorRoadSurfaces(d.roads),paved=[],unpaved=[],lines=[],edges=[],tunnelWalls=[],tunnelFloor=[],rails=[],bridges=[];
+  function roadMeshes(d,group,groundAt){const minorSurfaces=minorRoadSurfaces(d.roads),paved=[],unpaved=[],lines=[],edges=[],tunnelWalls=[],tunnelFloor=[],rails=[],bridges=[],banks=[];
+    const supports=roadSupports(d.roads,groundAt);
+    for(const [faces,out]of [[supports.earth,banks],[supports.concrete,bridges],[supports.rails,rails]])for(const face of faces)quad(out,...face.map(p=>[p[0],p[2],-p[1]]));
     for(const r of d.roads){const small=/footway|path|steps|cycleway|track/.test(r.kind);
       if(minorSurfaces.has(r)){for(const polygon of minorSurfaces.get(r))for(let i=1;i<polygon.length-1;i++)for(const p of [polygon[0],polygon[i+1],polygon[i]])unpaved.push(p[0],p[2]+.13,-p[1]);}
       else strip(r.tunnel?tunnelFloor:small?unpaved:paved,r.points,r.width+(r.tunnel?1.5:0),0,.13);
@@ -109,7 +112,14 @@ export async function createRoad(canvas,opts={}) {
         }
       }
     }
-    for(const [v,m] of [[paved,asphalt],[unpaved,dirt],[lines,paint],[edges,white],[tunnelWalls,new THREE.MeshBasicMaterial({color:'#796b58',map:rocks.get('limestone'),side:THREE.DoubleSide})],[tunnelFloor,new THREE.MeshBasicMaterial({color:'#393734'})],[rails,material('#a8a49a',{side:THREE.DoubleSide})],[bridges,material('#9b998d',{side:THREE.DoubleSide})]])if(v.length){let uv;if(v===tunnelWalls){uv=[];for(let i=0;i<v.length;i+=3)uv.push((v[i]+v[i+2]+d.origin[0]-d.origin[1])/7,v[i+1]/5);}group.add(mesh(v,m,uv));}
+    for(const [v,m] of [[banks,material('#998972',{side:THREE.DoubleSide})],[paved,asphalt],[unpaved,dirt],[lines,paint],[edges,white],[tunnelWalls,new THREE.MeshBasicMaterial({color:'#796b58',map:rocks.get('limestone'),side:THREE.DoubleSide})],[tunnelFloor,new THREE.MeshBasicMaterial({color:'#393734'})],[rails,material('#a8a49a',{side:THREE.DoubleSide})],[bridges,material('#9b998d',{side:THREE.DoubleSide})]])if(v.length){let uv;if(v===tunnelWalls){uv=[];for(let i=0;i<v.length;i+=3)uv.push((v[i]+v[i+2]+d.origin[0]-d.origin[1])/7,v[i+1]/5);}group.add(mesh(v,m,uv));}
+  }
+  async function waterways(d,group,source){
+    if(!d.waterwaysFile)return;
+    const response=await fetch(worldURL(source,d.waterwaysFile));if(!response.ok)throw Error(d.waterwaysFile);
+    const {waterways}=await response.json(),roads=waterways.map(r=>({...r,kind:'path'})),surfaces=minorRoadSurfaces([...d.roads,...roads]),vertices=[];
+    for(const road of roads)for(const polygon of surfaces.get(road)||[])for(let i=1;i<polygon.length-1;i++)for(const p of [polygon[0],polygon[i+1],polygon[i]])vertices.push(p[0],p[2],-p[1]);
+    if(vertices.length)group.add(mesh(vertices,material('#719698',{side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1})));
   }
   function roofProfile(b) {
     const p=b.points.slice(0,-1);let longest=0,ux=1,uy=0;
@@ -164,7 +174,7 @@ export async function createRoad(canvas,opts={}) {
   }
   async function vegetation(d,group,source,groundAt){if(!regional)return;const response=await fetch(worldURL(source,`v${String(d.c).padStart(4,'0')}.json`));if(!response.ok)return;const data=await response.json();let theme=themeAt(sources[source].themeAt??(d.s0+d.len/2));if((d.near.min+d.near.max)/2>1750&&d.s0>900000&&d.s0<2900000)theme='redrock';
     let choices=Object.entries(regional.trees).filter(([,p])=>(p.regions||[p.theme]).includes(theme)&&regionalTextures.has(p.file));if(!choices.length)return;const batches=new Map(),dummy=new THREE.Object3D();
-    for(const t of data.trees){const [name,asset]=choices[t[4]%choices.length];let batch=batches.get(name);if(!batch){batch={asset,trees:[]};batches.set(name,batch);}batch.trees.push(t);}
+    for(const t of data.trees){let zone;for(const z of sources[source].vegetation||[])if(t[2]>=z.minElevation)zone=z;const pool=zone?Object.entries(regional.trees).filter(([name,asset])=>zone.trees.includes(name)&&regionalTextures.has(asset.file)):choices;if(!pool.length)continue;const [name,asset]=pool[t[4]%pool.length],scale=zone?.scale||1,key=name+':'+scale;let batch=batches.get(key);if(!batch){batch={asset:{...asset,height:asset.height*scale},trees:[]};batches.set(key,batch);}batch.trees.push(t);}
     for(const {asset,trees}of batches.values()){const mat=new THREE.MeshLambertMaterial({map:regionalTextures.get(asset.file),alphaTest:.6,side:THREE.DoubleSide,color:'#eeeece'}),geometry=new THREE.PlaneGeometry(1,1);geometry.translate(0,.5,0);const instances=new THREE.InstancedMesh(geometry,mat,trees.length*2);let i=0;
       for(const t of trees){const h=asset.height*t[3],w=h*asset.aspect;for(let side=0;side<2;side++){dummy.position.set(t[0],groundAt(t[0],t[1])-.2,-t[1]);dummy.rotation.set(0,t[4]/65536*Math.PI+side*Math.PI/2,0);dummy.scale.set(w,h,1);dummy.updateMatrix();instances.setMatrixAt(i++,dummy.matrix);}}instances.computeBoundingSphere();group.add(instances);
     }group.userData.trees=data.trees.length;
@@ -195,7 +205,7 @@ export async function createRoad(canvas,opts={}) {
       const groundAt=(x,y)=>{for(const {g,a}of patches){const h=groundHeight(g,a,x,y);if(Number.isFinite(h))return h;}const h=groundHeight(d.near,graded,x,y);return Number.isFinite(h)?h:elevation(d.near,graded,x,y);};
       roadMeshes(d,group,groundAt);buildingMeshes(d,group,groundAt);landmarkMeshes(d,group);lodgeDetails(d,group);regionalFacades(d,group,source);
       group.visible=false;scene.add(group);
-      await Promise.all([appearance(d,group,source),vegetation(d,group,source,groundAt),addRoadside(d,group,worldURL(source,`r${String(d.c).padStart(4,'0')}.json`),groundAt)].map(p=>p.catch(e=>console.warn(e.message))));
+      await Promise.all([waterways(d,group,source),appearance(d,group,source),vegetation(d,group,source,groundAt),addRoadside(d,group,worldURL(source,`r${String(d.c).padStart(4,'0')}.json`),groundAt)].map(p=>p.catch(e=>console.warn(e.message))));
       const animateAmbient=addAmbient(d,group,groundAt,ambientEvents.get(source)||[]);chunks.set(key,{d,group,values,source,animateAmbient});failures.delete(key);
     }catch(e){failures.set(key,Date.now());console.warn(e.message);}finally{pending.delete(key);}})();pending.set(key,work);
   }

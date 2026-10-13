@@ -69,7 +69,7 @@ def extract(region):
    if tags.get('building') and height(tags)>=28:groups['skyline']=trees[1450].query(geom,predicate='intersects')
    if not any(len(v) for v in groups.values()):continue
    lo=[p[0] for p in coords];la=[p[1] for p in coords]
-   element={'type':'way','id':o.id,'tags':tags,'geometry':[{'lon':p[0],'lat':p[1]} for p in coords], 'center':{'lon':(min(lo)+max(lo))/2,'lat':(min(la)+max(la))/2}}
+   element={'type':'way','id':o.id,'tags':tags,'nodes':[n.ref for n in o.nodes],'geometry':[{'lon':p[0],'lat':p[1]} for p in coords], 'center':{'lon':(min(lo)+max(lo))/2,'lat':(min(la)+max(la))/2}}
   elif o.is_area():
    if not (tags.get('building') or tags.get('landuse') or tags.get('natural') or tags.get('leisure') or tags.get('waterway')=='riverbank' or landmark):continue
    members=[];polys=[];all_coords=[]

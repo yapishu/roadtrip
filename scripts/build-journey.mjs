@@ -12,9 +12,9 @@ for(const directory of ['parks','detours']){
 visits.sort((a,b)=>a.start-b.start);
 let cursor=0,total=0;const segments=[],stops=[],sources={'':{...saved[''],total:main.total,stops:main.stops}};
 function add(source,start,end){if(end<=start)return;segments.push({source,start,end,at:total,length:end-start});total+=end-start;}
-for(const visit of visits){if(visit.start<cursor)throw Error('Overlapping scenic visits');add('',cursor,visit.start);const {source,route,plan}=visit;sources[source]={...saved[source],total:route.total,name:plan.name,themeAt:visit.themeAt,stops:route.stops};const at=total;add(source,0,route.total);for(const mark of route.stops.slice(1,-1))stops.push({...mark,at:at+mark.at});cursor=visit.end;}
+for(const visit of visits){if(visit.start<cursor)throw Error('Overlapping scenic visits');add('',cursor,visit.start);const {source,route,plan}=visit;sources[source]={...saved[source],total:route.total,name:plan.name,themeAt:visit.themeAt,stops:route.stops,vegetation:plan.vegetation,captions:plan.captions};const at=total;if(plan.entryStop)stops.push({name:plan.entryStop,at});add(source,0,route.total);for(const mark of route.stops.slice(1,-1))stops.push({...mark,at:at+mark.at});cursor=visit.end;}
 add('',cursor,main.total);
-for(const stop of main.stops){const part=segments.find(p=>!p.source&&stop.at>=p.start&&stop.at<=p.end);if(!part)throw Error(`Stop inside replaced route: ${stop.name}`);stops.push({...stop,at:part.at+stop.at-part.start});}
+for(const stop of main.stops){if(visits.some(v=>v.plan.omitStops?.includes(stop.name)&&stop.at>v.start&&stop.at<v.end))continue;const part=segments.find(p=>!p.source&&stop.at>=p.start&&stop.at<=p.end);if(!part)throw Error(`Stop inside replaced route: ${stop.name}`);stops.push({...stop,at:part.at+stop.at-part.start});}
 stops.sort((a,b)=>a.at-b.at);
 writeFileSync(join(trip,'journey.json'),JSON.stringify({total,segments,sources,stops}));
 console.log(`${(total/1000).toFixed(2)} km, ${visits.length} scenic drives, ${stops.length} stops`);

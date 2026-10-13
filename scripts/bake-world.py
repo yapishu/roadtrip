@@ -16,6 +16,7 @@ from pathlib import Path
 import re
 import threading
 import time
+from road_topology import physical, attach
 
 os.environ.setdefault('GDAL_DISABLE_READDIR_ON_OPEN', 'EMPTY_DIR')
 os.environ.setdefault('CPL_VSIL_CURL_ALLOWED_EXTENSIONS', '.tif')
@@ -231,7 +232,7 @@ def features(extract, origin, g, dem):
                     kind=kind, name=t.get('name'), roof=t.get('roof:shape') or ('gabled' if kind in ['house','farm'] else 'flat'),
                     roofHeight=number(t.get('roof:height')), material=t.get('building:material'),
                     roofMaterial=t.get('roof:material'), color=t.get('building:colour'), roofColor=t.get('roof:colour')))
-        if e['type']=='way' and t.get('highway') and t.get('area')!='yes':
+        if e['type']=='way' and physical(t):
             p = projected_geometry(e.get('geometry'))
             if p is None: continue
             line = LineString(p)
@@ -248,6 +249,7 @@ def features(extract, origin, g, dem):
                 kind=t['highway'], width=road_width(t), lanes=number(t.get('lanes')),
                 name=t.get('name',''), bridge=bridge, tunnel=tunnel, surface=t.get('surface'),
                 oneway=t.get('oneway') in ('yes','1')))
+            attach(roads[-1], e['geometry'], origin, e['nodes'])
         if e['type']=='node' and t.get('natural')=='tree' and 'lon' in e:
             p=np.array(PROJECT.transform(e['lon'],e['lat']))
             trees.append([*np.round(p-origin,2),round(float(sample(g,dem,p.reshape(1,2))[0]),2),t.get('leaf_type','')])

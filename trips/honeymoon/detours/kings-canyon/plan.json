@@ -1,0 +1,98 @@
+{
+  "id": "kings-canyon",
+  "name": "Kings Canyon Scenic Byway, California",
+  "region": "california",
+  "stop": 1,
+  "replace": [
+    306790.32795742975,
+    306790.32795742975
+  ],
+  "via": [
+    "Fresno",
+    "CA-180",
+    "Grant Grove",
+    "Kings Canyon",
+    "Cedar Grove",
+    "Roads End"
+  ],
+  "source": "https://www.nps.gov/seki/planyourvisit/byways.htm",
+  "anchor": [
+    -119.809625,
+    36.739094
+  ],
+  "stops": [
+    {
+      "name": "Fresno · CA-180 approach",
+      "lon": -119.809625,
+      "lat": 36.739094
+    },
+    {
+      "name": "Grant Grove",
+      "lon": -118.9647137,
+      "lat": 36.7440955,
+      "roadRef": "CA 180"
+    },
+    {
+      "name": "Kings Canyon · Junction View",
+      "lon": -118.8899333,
+      "lat": 36.8315167,
+      "roadRef": "CA 180"
+    },
+    {
+      "name": "Kings Canyon · Cedar Grove",
+      "lon": -118.6663,
+      "lat": 36.7888
+    },
+    {
+      "name": "Kings Canyon · Roads End",
+      "lon": -118.582,
+      "lat": 36.7954
+    },
+    {
+      "name": "Fresno · return",
+      "lon": -119.809625,
+      "lat": 36.739094
+    }
+  ],
+  "vegetation": [
+    {
+      "minElevation": 0,
+      "trees": [
+        "california-tree-4",
+        "california-tree-6"
+      ]
+    },
+    {
+      "minElevation": 1000,
+      "trees": [
+        "redrock-tree-4",
+        "utah-tree-3"
+      ],
+      "scale": 1.6
+    }
+  ],
+  "entryStop": "Fresno, California",
+  "avoidHighways": [
+    "track"
+  ],
+  "preferRoadRefs": [
+    "CA 180"
+  ],
+  "captions": [
+    {
+      "from": 0,
+      "to": 93589.2891866859,
+      "name": "Fresno → Kings Canyon"
+    },
+    {
+      "from": 93589.2891866859,
+      "to": 203611.02633894727,
+      "name": "Kings Canyon Scenic Byway"
+    },
+    {
+      "from": 203611.02633894727,
+      "to": 297200.31552563317,
+      "name": "Kings Canyon → Fresno"
+    }
+  ]
+}

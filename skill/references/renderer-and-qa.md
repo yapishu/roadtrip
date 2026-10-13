@@ -23,6 +23,7 @@ unsigned integer conversion to wrap mountain heights.
 | `world/cNNNN-detail-*.bin` | Optional finer patches at road cuts |
 | `world/vNNNN.json` | Vegetation placements and variation seeds |
 | `world/rNNNN.json` | Roadside objects and line geometry |
+| `world/wNNNN.json` | Optional mapped river and stream ribbons |
 | `world/aNNNN.json`, `cNNNN-walls-*.jpg` | Optional observed façade mapping and atlases |
 | `regional/art/world-kit.json`, `world/` | Regional surfaces and plant sprites |
 | `map/atlas.json`, `map/terrain.bin` | Projected route, terrain, boundaries, and stops for the map |
@@ -165,3 +166,5 @@ Restore into a separate temporary directory, compare the restored runtime files
 or checksums, and open the restored viewer. Retain a known working checkpoint
 before a large route or art change. Keep public hosting, LAN serving, and the
 location of heavy build caches explicit in the handoff.
+
+Check shared bridge and tunnel nodes with `scripts/check-road-junctions.py`. Sample both deck joins and the roads below: approach banks, abutments, and piers must leave underpasses clear. Inspect canyon road-class summaries and rendered river/road relationships as part of the scenic-route pass.

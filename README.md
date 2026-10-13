@@ -19,7 +19,7 @@ node scripts/viewer.mjs --trip trips/honeymoon --serve 8088 --host 0.0.0.0
 
 Open `http://localhost:8088/`, or use the serving computer’s address from another device on the same network. Node 18+ serves the viewer. The browser needs WebGL 2. The trip folder also works on a static web server.
 
-The drive loops by default. Move the pointer or tap to reveal the seek bar, stop picker, playback button, and speed control. The stop picker scrolls with a finger and includes Brian Head Resort before Panguitch. Scroll over the scenery to change speed; Space pauses. The map stays visible: click it or press M to expand, scroll over it to zoom, and drag to pan. Its follow button recenters on the car; Esc folds it away.
+The drive loops by default. Move the pointer or tap to reveal the seek bar, stop picker, playback button, and speed control. The stop picker scrolls with a finger. The itinerary includes Fresno, Kings Canyon, Bakersfield, Kern River Canyon, Walker Pass, and Brian Head Resort before Panguitch. Scroll over the scenery to change speed; Space pauses. The map stays visible: click it or press M to expand, scroll over it to zoom, and drag to pan. Its follow button recenters on the car; Esc folds it away.
 
 URL options include `?km=2442.611&paused=1` for a fixed position and `?speed=96.56` for the starting speed in km/h. The caption names the current place. Controls fade when idle.
 
@@ -36,7 +36,7 @@ The scene archive includes the rendered world assets and all components required
 
 Small flocks of birds circle overhead, and deer or hares occasionally appear beside rural roads. Encounters are spaced roughly 5–10 miles apart, with longer gaps when locations are unsuitable. Most are birds; four-legged animals are much rarer. These invented encounters vary between sessions and pause with the drive.
 
-Mapped roadside details include signs, lamps, utility lines, fences, railways, and off-season ski lifts. Structures have foundations and bridge decks; unmeasured dimensions and small architectural details use representative forms. `node scripts/check-viewer.mjs http://localhost:8088/` exercises finger scrolling, stop selection, the frame cap, idle rendering, and looping. `scripts/check-world.mjs` records views at named stops, scenic interiors, and selected road profiles.
+Mapped roadside details include signs, lamps, utility lines, fences, railways, picnic tables, information boards, and off-season ski lifts. Canyon rivers follow mapped centerlines. Structures have foundations, connected bridge approaches, supporting earth banks, and abutments; unmeasured dimensions and small architectural details use representative forms. `node scripts/check-viewer.mjs http://localhost:8088/` exercises finger scrolling, stop selection, the frame cap, idle rendering, and looping. `scripts/check-world.mjs` records views at named stops, scenic interiors, and selected road profiles.
 
 ## Credits and licenses
 

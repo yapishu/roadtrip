@@ -6,52 +6,107 @@ import numpy as np
 import networkx as nx
 from scipy.spatial import cKDTree
 from scipy.ndimage import gaussian_filter1d,median_filter
+from shapely.geometry import LineString,Point
+from shapely.strtree import STRtree
+
+def lower_crossing_roads(roads):
+ """Remove deck-height terrain samples from roads passing below a bridge."""
+ bridges=[r for r in roads if r['bridge']and len(r['points'])>1]
+ if not bridges:return
+ ground_nodes={}
+ for r in roads:
+  if r['bridge']or r['tunnel']:continue
+  for index,key in r['nodes']:ground_nodes.setdefault(key,[]).append((r,index))
+ def endpoint_height(road,index):
+  keys=[key for i,key in road['nodes']if i==index]
+  heights=[r['points'][i][2]for key in keys for r,i in ground_nodes[key]if r is not road]
+  return min(heights)if heights else None
+ shapes=[LineString(np.asarray(r['points'])[:,:2]).buffer(r['width']/2+1)for r in bridges];tree=STRtree(shapes);bridge_nodes=[{key for _,key in r['nodes']}for r in bridges]
+ for road in roads:
+  if road['bridge']or road['tunnel']or len(road['points'])<2:continue
+  points=np.asarray(road['points'],dtype=float);line=LineString(points[:,:2]);nodes={key for _,key in road['nodes']};along=np.r_[0,np.cumsum(np.linalg.norm(np.diff(points[:,:2],axis=0),axis=1))];changed=False
+  for j in tree.query(line,predicate='intersects'):
+   if nodes&bridge_nodes[j]:continue
+   crossing=line.intersection(shapes[j]);pieces=[crossing]if crossing.geom_type=='LineString'else list(getattr(crossing,'geoms',[]))
+   for piece in pieces:
+    if piece.geom_type!='LineString'or piece.length<1:continue
+    ends=sorted([line.project(Point(piece.coords[0])),line.project(Point(piece.coords[-1]))]);start=max(0,ends[0]-25);end=min(line.length,ends[1]+25)
+    anchors=list(np.interp([start,end],along,points[:,2]))
+    if start==0:anchors[0]=endpoint_height(road,0)
+    if end==line.length:anchors[1]=endpoint_height(road,len(points)-1)
+    if None in anchors:continue
+    mask=(along>=start)&(along<=end);expected=np.interp(along[mask],[start,end],anchors)
+    if not mask.any()or np.max(points[mask,2]-expected)<.6:continue
+    points[mask,2]=np.minimum(points[mask,2],expected);changed=True
+  if changed:road['points']=np.round(points,2).tolist()
 
 def connect_decks(roads):
- approach_roads=[r for r in roads if not r['tunnel']and r['kind']not in ['path','footway','steps','cycleway']]
- approach_tree=cKDTree([r['points'][k][:2]for r in approach_roads for k in [0,-1]])if approach_roads else None
+ """Solve structure grades on shared OSM nodes, including mid-deck ramp junctions."""
+ lower_crossing_roads(roads)
+ occurrences={}
+ for ri,road in enumerate(roads):
+  for index,key in road['nodes']:
+   occurrences.setdefault(key,[]).append((ri,index))
+ corrections={};settled={}
  for flag in ['bridge','tunnel']:
-  selected=[i for i,r in enumerate(roads)if r[flag]]
-  if not selected:continue
-  ends=np.array([roads[i]['points'][j][:2]for i in selected for j in [0,-1]])
-  links=nx.Graph();links.add_nodes_from(range(len(ends)));links.add_edges_from(cKDTree(ends).query_pairs(1.5));groups=list(nx.connected_components(links));node={i:j for j,g in enumerate(groups)for i in g};graph=nx.Graph();edges=[]
-  for j,i in enumerate(selected):
-   ps=np.array(roads[i]['points']);length=np.linalg.norm(np.diff(ps[:,:2],axis=0),axis=1).sum();u,v=node[j*2],node[j*2+1];graph.add_edge(u,v,weight=1/max(1,length));edges.append((i,u,v))
+  selected={i for i,r in enumerate(roads)if r[flag]}
+  graph=nx.Graph();sections=[]
+  for ri in selected:
+   road=roads[ri];points=np.asarray(road['points']);along=np.r_[0,np.cumsum(np.linalg.norm(np.diff(points[:,:2],axis=0),axis=1))]
+   nodes=[(index,key)for index,key in road['nodes']if index in (0,len(points)-1)or len({r for r,_ in occurrences[key]})>1]
+   for (a,u),(b,v)in zip(nodes,nodes[1:]):
+    if a==b or u==v:continue
+    weight=1/max(1,along[b]-along[a]);graph.add_edge(u,v,weight=graph.get_edge_data(u,v,{}).get('weight',0)+weight);sections.append((ri,a,b,u,v))
+  heights={}
   for component in nx.connected_components(graph):
-   boundary=[n for n in component if graph.degree(n)==1]
-   if len(boundary)<2:continue
-   heights={n:float(np.median([roads[selected[k//2]]['points'][0 if k%2==0 else -1][2]for k in groups[n]]))for n in boundary}
-   if flag=='tunnel':
-    for n in boundary:
-     portal=ends[next(iter(groups[n]))];candidates=[]
-     for index in set(j//2 for j in (approach_tree.query_ball_point(portal,2)if approach_tree else [])):
-      adjacent=approach_roads[index]
-      ap=np.array(adjacent['points'])
-      if np.linalg.norm(ap[0,:2]-portal)<2:reverse=False
-      elif np.linalg.norm(ap[-1,:2]-portal)<2:reverse=True;ap=ap[::-1].copy()
-      else:continue
-      along=np.r_[0,np.cumsum(np.linalg.norm(np.diff(ap[:,:2],axis=0),axis=1))];fit=(along>=20)&(along<=80)
-      if fit.sum()<3:continue
-      slope,intercept=np.polyfit(along[fit],ap[fit,2],1)
-      if abs(slope)>.25:continue
-      candidates.append(float(intercept));approach=along<20;end=float(np.interp(20,along,ap[:,2]));ap[approach,2]=intercept+(end-intercept)*along[approach]/20
-      adjacent['points']=np.round(ap[::-1]if reverse else ap,2).tolist()
-     if candidates:heights[n]=float(np.median(candidates))
-   interior=list(component-set(boundary));lookup={n:i for i,n in enumerate(interior)}
+   boundary=[key for key in component if graph.degree(key)==1 or key in settled]
+   if len(boundary)<2:boundary=list(set(boundary)|{key for key in component if any(not roads[ri]['bridge']and not roads[ri]['tunnel']for ri,_ in occurrences[key])})
+   if not boundary:boundary=[min(component)]
+   for key in boundary:
+    if key in settled:heights[key]=settled[key];continue
+    approaches=[]
+    for ri,index in occurrences[key]:
+     road=roads[ri]
+     if road['bridge']or road['tunnel']:continue
+     points=np.asarray(road['points']);along=np.r_[0,np.cumsum(np.linalg.norm(np.diff(points[:,:2],axis=0),axis=1))];along-=along[index]
+     if index==len(points)-1:along=-along
+     fit=(along>=20)&(along<=80)
+     if flag=='tunnel'and fit.sum()>=3:
+      slope,intercept=np.polyfit(along[fit],points[fit,2],1)
+      if abs(slope)<.2:approaches.append(float(intercept));continue
+     approaches.append(float(points[index,2]))
+    heights[key]=float(np.median(approaches or [roads[ri]['points'][index][2]for ri,index in occurrences[key]if ri in selected]))
+   interior=sorted(component-set(boundary));lookup={key:i for i,key in enumerate(interior)}
    if interior:
     matrix=np.zeros((len(interior),len(interior)));rhs=np.zeros(len(interior))
-    for n in interior:
-     row=lookup[n]
-     for other,props in graph[n].items():
+    for key in interior:
+     row=lookup[key]
+     for other,props in graph[key].items():
       weight=props['weight'];matrix[row,row]+=weight
       if other in lookup:matrix[row,lookup[other]]-=weight
       else:rhs[row]+=weight*heights[other]
     heights.update(zip(interior,np.linalg.solve(matrix,rhs)))
-   for i,u,v in edges:
-    if u not in component:continue
-    ps=np.array(roads[i]['points']);dist=np.r_[0,np.cumsum(np.linalg.norm(np.diff(ps[:,:2],axis=0),axis=1))];ps[:,2]=np.interp(dist,[0,dist[-1]],[heights[u],heights[v]]);roads[i]['points']=np.round(ps,2).tolist()
+  settled.update(heights)
+  for ri,a,b,u,v in sections:
+   if u not in heights or v not in heights:continue
+   points=np.asarray(roads[ri]['points'],dtype=float);along=np.r_[0,np.cumsum(np.linalg.norm(np.diff(points[a:b+1,:2],axis=0),axis=1))]
+   points[a:b+1,2]=np.interp(along,[0,along[-1]],[heights[u],heights[v]]);roads[ri]['points']=np.round(points,2).tolist()
+  for key,height in heights.items():
+   for ri,index in occurrences[key]:
+    if roads[ri]['bridge']or roads[ri]['tunnel']:continue
+    corrections.setdefault(ri,{})[index]=height
+ for ri,anchors in corrections.items():
+  points=np.asarray(roads[ri]['points'],dtype=float);along=np.r_[0,np.cumsum(np.linalg.norm(np.diff(points[:,:2],axis=0),axis=1))];controls={}
+  marks=sorted((along[index],height-points[index,2])for index,height in anchors.items())
+  for j,(at,delta)in enumerate(marks):
+   radius=min(200,max(30,abs(delta)/.04));left=marks[j-1][0]if j else 0;right=marks[j+1][0]if j+1<len(marks)else along[-1]
+   if at-radius>left:controls[at-radius]=0
+   if at+radius<right:controls[at+radius]=0
+   controls[at]=delta
+  controls.setdefault(0,0);controls.setdefault(along[-1],0);keys=sorted(controls)
+  points[:,2]+=np.interp(along,keys,[controls[k]for k in keys]);roads[ri]['points']=np.round(points,2).tolist()
 
-def refine(d,connect=True):
+def refine(d,connect=True,align_roads=True):
  roads=d['roads']
  if connect:connect_decks(roads)
  starts=[];ends=[];owners=[]
@@ -83,7 +138,8 @@ def refine(d,connect=True):
  for p,h in zip(route,np.interp(ss,grid,smooth)):p[3]=round(float(h),2)
  # Align the traveled road surface with its continuous, terrain-derived profile.
  route_height=np.array([p[3]for p in route]);route_xy=np.array([p[1:3]for p in route]);route_tangent=np.gradient(route_xy,axis=0);route_tangent/=np.maximum(.001,np.linalg.norm(route_tangent,axis=1))[:,None];route_tree=cKDTree(route_xy)
- for road in roads:
+ for road in roads if align_roads else []:
+  if road['bridge']or road['tunnel']:continue
   ps=np.array(road['points']);dist,near=route_tree.query(ps[:,:2]);tangent=np.gradient(ps[:,:2],axis=0);tangent/=np.maximum(.001,np.linalg.norm(tangent,axis=1))[:,None];align=abs((tangent*route_tangent[near]).sum(axis=1));match=np.array([route[i][5]==road['kind']and route[i][6]==road['name']for i in near]);select=(dist<3.8)&(align>.85)&match
   if select.any():ps[select,2]=route_height[near[select]]+.12;road['points']=np.round(ps,2).tolist()
  d['roadProfile']='Connected decks and portal approaches; aligned segments with a robust metre-spaced road profile';return d

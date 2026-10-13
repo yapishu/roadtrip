@@ -26,6 +26,8 @@ def classify(tags, node):
         if tags.get('highway') == 'traffic_signals': return 'signal'
         if tags.get('highway') in ('stop', 'give_way'): return tags['highway']
         if tags.get('amenity') == 'bench': return 'bench'
+        if tags.get('leisure') == 'picnic_table': return 'picnic_table'
+        if tags.get('tourism') == 'information' and tags.get('information') in ('board','map'): return 'information'
         if tags.get('emergency') == 'fire_hydrant': return 'hydrant'
         if tags.get('natural') in ('rock', 'stone'): return 'boulder'
         if tags.get('highway') == 'bus_stop': return 'bus_stop'
@@ -45,19 +47,20 @@ def main():
     ap.add_argument('--reuse',action='store_true')
     a=ap.parse_args();trip=a.trip.resolve();cache=trip/'.cache/roadside';cache.mkdir(parents=True,exist_ok=True)
     paths=sorted((trip/'world').glob('c????.json'))+sorted((trip/'parks').glob('*/world/c????.json'))+sorted((trip/'detours').glob('*/world/c????.json'))
-    sections=[];buffers=[];lift_buffers=[]
+    sections=[];buffers=[];lift_buffers=[];utility_buffers=[]
     for path in paths:
         d=json.loads(path.read_text());origin=np.array(d['origin']);route=np.array([p[1:3] for p in d['route']],dtype=float);line=LineString(route+origin)
         sections.append(dict(path=path,d=d,features={}))
-        buffers.append(line.buffer(180));lift_buffers.append(line.buffer(1700))
-    trees={False:STRtree(buffers),True:STRtree(lift_buffers)}
+        buffers.append(line.buffer(180));lift_buffers.append(line.buffer(1700));utility_buffers.append(line.buffer(550))
+    trees={'standard':STRtree(buffers),'lift':STRtree(lift_buffers),'utility':STRtree(utility_buffers)}
+    def family(kind):return 'lift'if kind=='chair_lift'else'utility'if kind in ('line','minor_line','pole','tower')else'standard'
     for region in a.regions.split(','):
         saved=cache/(region+'.json')
         if saved.exists() and a.reuse:
             features=json.loads(saved.read_text())
         else:
             source=next((trip/'.cache/regions').glob(region+'*.osm.pbf'))
-            processor=osmium.FileProcessor(str(source)).with_locations('flex_mem').with_filter(osmium.filter.KeyFilter('power','aerialway','highway','barrier','amenity','emergency','natural','railway'))
+            processor=osmium.FileProcessor(str(source)).with_locations('flex_mem').with_filter(osmium.filter.KeyFilter('power','aerialway','highway','barrier','amenity','emergency','natural','railway','leisure','tourism'))
             features=[]
             for element in processor:
                 if not (element.is_node() or element.is_way()): continue
@@ -70,16 +73,16 @@ def main():
                     ll=[(n.lon,n.lat)for n in element.nodes if n.location.valid()]
                     if len(ll)<2:continue
                     points=np.column_stack(PROJECT.transform(*np.array(ll).T)).tolist();geom=LineString(points)
-                tree=trees[kind=='chair_lift']
+                tree=trees[family(kind)]
                 if not len(tree.query(geom,predicate='intersects')):continue
                 features.append(dict(id=('node'if element.is_node()else'way')+str(element.id),kind=kind,points=points,tags={k:v for k,v in tags.items() if k in ('name','height','material','colour','direction','fence_type','power','aerialway')}))
             saved.write_text(json.dumps(features,separators=(',',':')))
         print(region,len(features),'mapped features',flush=True)
         for feature in features:
             points=feature['points'];geom=Point(points[0]) if len(points)==1 else LineString(points);is_lift=feature['kind']=='chair_lift'
-            for i in trees[is_lift].query(geom,predicate='intersects'):
+            for i in trees[family(feature['kind'])].query(geom,predicate='intersects'):
                 if len(points)>1 and not is_lift:
-                    clipped=geom.intersection(buffers[i]);lines=[clipped] if clipped.geom_type=='LineString' else list(getattr(clipped,'geoms',[]))
+                    clipped=geom.intersection(utility_buffers[i]if family(feature['kind'])=='utility'else buffers[i]);lines=[clipped] if clipped.geom_type=='LineString' else list(getattr(clipped,'geoms',[]))
                     for j,line in enumerate(lines):
                         if line.geom_type=='LineString' and line.length>2:
                             f={**feature,'points':list(line.coords)};sections[i]['features'][feature['id']+':'+str(j)]=f

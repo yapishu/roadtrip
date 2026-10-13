@@ -4,10 +4,10 @@ import {mkdirSync,writeFileSync} from 'node:fs';
 import {resolve,join} from 'node:path';
 const root=resolve(process.argv[2]),url=process.argv[3]||'http://127.0.0.1:8088/',out=join(root,'check-world');mkdirSync(out,{recursive:true});
 const journey=await fetch(new URL('journey.json',url)).then(r=>r.json());
-const toGlobal=s=>{const part=journey.segments.find(p=>!p.source&&s>=p.start&&s<=p.end);return part.at+s-part.start;};
+const toGlobal=s=>{const part=journey.segments.find(p=>!p.source&&s>=p.start&&s<=p.end);return part?part.at+s-part.start:null;};
 const targets=journey.stops.map(s=>({name:s.name,at:Math.max(0,s.at-70)}));
 for(const part of journey.segments)if(part.source)targets.push({name:part.source+' · canyon road',at:part.at+part.length*.42});
-for(const km of [1131,2142.77,2147.61,2154.15,2158.99,2160,3831.63])targets.push({name:'Road profile '+km,at:toGlobal(km*1000)});
+for(const km of [40.17,86.435,108.605,474.9,477.95,480.02,482.37,3246.455,1131,2142.77,2147.61,2154.15,2158.99,2160,3831.63]){const at=toGlobal(km*1000);if(at!==null)targets.push({name:'Road profile '+km,at});}
 const browser=await chromium.launch({headless:true,args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const page=await browser.newPage({viewport:{width:1280,height:720}}),errors=[],frames=[];page.on('pageerror',e=>errors.push(e.message));
 await page.goto(new URL('?world=1&paused=1&display=1',url).href);await page.waitForFunction(()=>window.__trip,{timeout:60000});

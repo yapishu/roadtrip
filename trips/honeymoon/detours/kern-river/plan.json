@@ -1,0 +1,109 @@
+{
+  "id": "kern-river",
+  "name": "Kern River Canyon → Walker Pass, California",
+  "region": "california",
+  "stop": 2,
+  "replace": [
+    482283,
+    683990.044572963
+  ],
+  "omitStops": [
+    "Mojave, California"
+  ],
+  "via": [
+    "CA-178",
+    "Kern River Canyon",
+    "Lake Isabella",
+    "Walker Pass",
+    "Ridgecrest"
+  ],
+  "source": "https://www.visitkern.com/daytrips/",
+  "anchor": [
+    -119.01893398172909,
+    35.37236686089045
+  ],
+  "endAnchor": [
+    -117.551898,
+    35.573513
+  ],
+  "stops": [
+    {
+      "name": "Bakersfield · CA-178 approach",
+      "lon": -119.01893398172909,
+      "lat": 35.37236686089045
+    },
+    {
+      "name": "Kern River Canyon",
+      "lon": -118.779069,
+      "lat": 35.460335,
+      "roadRef": "CA 178"
+    },
+    {
+      "name": "Lake Isabella · Kern River Valley",
+      "lon": -118.4675,
+      "lat": 35.6239,
+      "roadRef": "CA 178"
+    },
+    {
+      "name": "Walker Pass",
+      "lon": -118.0267399,
+      "lat": 35.6624527,
+      "roadRef": "CA 178"
+    },
+    {
+      "name": "Ridgecrest",
+      "lon": -117.6708,
+      "lat": 35.6225
+    },
+    {
+      "name": "Death Valley approach",
+      "lon": -117.551898,
+      "lat": 35.573513
+    }
+  ],
+  "vegetation": [
+    {
+      "minElevation": 0,
+      "trees": [
+        "california-tree-4",
+        "california-tree-6"
+      ]
+    },
+    {
+      "minElevation": 1550,
+      "trees": [
+        "redrock-tree-4",
+        "utah-tree-3"
+      ],
+      "scale": 1
+    }
+  ],
+  "avoidHighways": [
+    "track"
+  ],
+  "preferRoadRefs": [
+    "CA 178"
+  ],
+  "captions": [
+    {
+      "from": 0,
+      "to": 23000,
+      "name": "Bakersfield → Kern River Canyon"
+    },
+    {
+      "from": 23000,
+      "to": 67825.61631725167,
+      "name": "Kern River Canyon"
+    },
+    {
+      "from": 67825.61631725167,
+      "to": 129520.29109836371,
+      "name": "Kern River Valley → Walker Pass"
+    },
+    {
+      "from": 129520.29109836371,
+      "to": 181203.06572234977,
+      "name": "Mojave Desert → Death Valley"
+    }
+  ]
+}

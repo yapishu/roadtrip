@@ -35,6 +35,7 @@ try {
   report.idleAnimationSeconds=await page.evaluate(()=>__trip.road.T.now)-idle.time;
   assert.equal(report.idleAnimationSeconds,0,'A paused drive freezes the animation clock');
   assert.equal(report.idleDraws,0,'A paused drive performs no WebGL redraws');
+  await page.touchscreen.tap(60,400);
   await page.locator('#play').tap();
   const start=await page.evaluate(()=>({t:performance.now(),draws:__trip.road.stats().draws,pos:__trip.pos}));
   await page.waitForTimeout(2000);

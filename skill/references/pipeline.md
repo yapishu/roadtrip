@@ -102,7 +102,9 @@ driving side, centerline color, and units in both route metadata and rendering.
 
 Do not smooth away real relief to hide a bad road profile. Inspect the mechanism:
 
-- Connect bridge/tunnel way fragments before interpolating deck or portal heights.
+- Retain original OSM node IDs. Connect bridge and tunnel fragments at shared nodes, including ramps that meet the middle of a deck. Crossing coordinates alone do not establish a junction.
+- Include the roads attached to bridge endpoints beyond a narrow extraction corridor. `cache-road-nodes.py` enriches cached extracts from source PBFs; `complete-bridge-approaches.py` adds mapped connecting roads.
+- Exclude proposed, construction, and removed roads from physical geometry.
 - Match the camera to an aligned road segment, not merely the closest point at
   an interchange.
 - Refine terrain around narrow cuts where coarse pixels erase the road bench.
@@ -127,14 +129,17 @@ The name of the directory is a source identifier, not a different renderer.
 | `id`, `name`, `region` | Source identifier, display name, and PBF region name |
 | `stop` | Zero-based main-route stop index used for insertion/theme position |
 | `anchor` | Main-route entry coordinate, `[lon,lat]` |
-| `stops` | Ordered `{name,lat,lon}` points including entry and return/exit |
+| `stops` | Ordered `{name,lat,lon}` points including entry and return/exit; optional `roadRef` pins a stop to a highway reference |
 | `via`, `source` | Descriptive route labels and provenance |
 | `replace` | Optional `[start,end]` in main-route meters |
 | `endAnchor` | Optional distinct main-route exit coordinate |
+| `avoidHighways`, `preferRoadRefs` | Explicit road-class exclusions and preferred highway references |
+| `omitStops`, `entryStop` | Explicitly omitted main stops inside a replacement and an optional named entry |
+| `captions`, `vegetation` | Source-distance caption ranges and elevation-based plant choices |
 
 The graph traces mapped vehicle-road geometry. Its access policy permits seasonal
 roads for virtual touring; adjust that policy for a legal/current driving route.
-Inspect route connectivity and every snapped stop. Sparse geometry can require
+Inspect route connectivity, every snapped stop, and the generated `highways` distance summary before baking. A nearby track can be on the wrong side of a canyon. Sparse geometry can require
 interpolation when calculating chunk bounds.
 
 ```sh
@@ -144,6 +149,7 @@ interpolation when calculating chunk bounds.
 .terrain-venv/bin/python scripts/refine-road-terrain.py --trip "$TRIP/parks/$ID"
 .terrain-venv/bin/python scripts/sample-road-elevation.py --trip "$TRIP/parks/$ID"
 .terrain-venv/bin/python scripts/bake-vegetation.py --trip "$TRIP/parks/$ID"
+.terrain-venv/bin/python scripts/bake-waterways.py --trip "$TRIP/parks/$ID"
 node scripts/build-journey.mjs "$TRIP"
 .terrain-venv/bin/python scripts/reconcile-world-roads.py --trip "$TRIP"
 .terrain-venv/bin/python scripts/bake-map.py --trip "$TRIP"
@@ -166,7 +172,7 @@ camera looks toward a landmark.
 ## New-route viewer configuration
 
 Copy `skill/assets/viewer.html` and `caption.js` into the trip. Copy
-`templates/{world.js,road-grade.js,roadside.js,ambient.js,ambient-plan.js,minimap.js,minimap.css}` and `templates/vendor/`
+`templates/{world.js,road-grade.js,roadside.js,ambient.js,ambient-plan.js,road-supports.js,minimap.js,minimap.css}` and `templates/vendor/`
 alongside them, and copy the trip's `viewer.html` to `index.html`.
 
 Add `title` and a `credits` array of `{name,url}` entries to `data/index.json`.

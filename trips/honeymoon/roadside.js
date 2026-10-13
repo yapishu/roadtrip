@@ -18,7 +18,7 @@ export async function addRoadside(d,group,url,groundAt) {
   function line(a,b,color){batch(color,a,true).push(...position(a).toArray(),...position(b).toArray());}
   const above=(p,h)=>[p[0],p[1],p[2]+h];
   const offset=(p,x,y,z)=>[p[0]+x,p[1]+y,p[2]+z];
-  function across(p,angle,width,height,thick,color){const x=Math.cos(angle)*width/2,y=-Math.sin(angle)*width/2;beam(offset(p,-x,-y,height),offset(p,x,y,height),thick,color);}
+  function across(p,angle,width,height,thick,color,depth=thick){const x=Math.cos(angle)*width/2,y=-Math.sin(angle)*width/2;beam(offset(p,-x,-y,height),offset(p,x,y,height),thick,color,depth);}
   function dimension(f,defaultHeight){const raw=f.tags.height,n=parseFloat(raw);return Number.isFinite(n)?Math.max(.3,Math.min(45,n*(/ft|feet|'/.test(raw)?.3048:1))):defaultHeight;}
   function posts(points,spacing,callback){let carry=0;for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],length=Math.hypot(b[0]-a[0],b[1]-a[1]);if(length<.01)continue;for(let at=carry;at<=length;at+=spacing){const t=at/length;callback(a.map((v,k)=>v+(b[k]-v)*t),Math.atan2(b[0]-a[0],b[1]-a[1]));}carry=(carry-length)%spacing;if(carry<0)carry+=spacing;}}
   for(const f of features){
@@ -43,6 +43,16 @@ export async function addRoadside(d,group,url,groundAt) {
     }else if(kind==='bench'){
       const x=Math.cos(angle),y=-Math.sin(angle);for(const sign of [-1,1])beam(offset(p,x*sign*.6,y*sign*.6,0),offset(p,x*sign*.6,y*sign*.6,.48),.1,metal);
       across(p,angle,1.7,.5,.24,wood);across(offset(p,-Math.sin(angle)*.18,-Math.cos(angle)*.18,0),angle,1.7,.84,.24,wood);
+    }else if(kind==='picnic_table'){
+      const x=Math.cos(angle),y=-Math.sin(angle),nx=Math.sin(angle),ny=Math.cos(angle);
+      for(const sign of [-1,1]){const q=offset(p,x*sign*.6,y*sign*.6,0);beam(offset(q,-nx*.55,-ny*.55,0),offset(q,nx*.3,ny*.3,.72),.09,wood);beam(offset(q,nx*.55,ny*.55,0),offset(q,-nx*.3,-ny*.3,.72),.09,wood);}
+      across(p,angle,1.9,.77,.65,wood,.08);
+      for(const sign of [-1,1])across(offset(p,nx*.65*sign,ny*.65*sign,0),angle,1.9,.44,.25,wood,.08);
+    }else if(kind==='information'){
+      const x=Math.cos(angle)*.65,y=-Math.sin(angle)*.65;
+      for(const sign of [-1,1])beam(offset(p,x*sign,y*sign,0),offset(p,x*sign,y*sign,1.9),.12,wood);
+      across(p,angle,1.5,1.45,.09,pale,.8);
+      beam(offset(p,-x,-y,1),offset(p,x,y,1),.1,wood);
     }else if(kind==='hydrant'){
       beam(p,above(p,.75),.21,'#a86545');across(p,angle,.5,.53,.12,'#a86545');
     }else if(kind==='bin'){
