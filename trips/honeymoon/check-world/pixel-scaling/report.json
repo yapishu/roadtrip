@@ -1,0 +1,446 @@
+{
+  "results": [
+    {
+      "name": "desktop-1280x800",
+      "width": 320,
+      "height": 200,
+      "css": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 800
+      },
+      "ratio": 1,
+      "viewport": [
+        1280,
+        800
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 1,
+        "triangles": 697043,
+        "drawCalls": 83,
+        "geometries": 83,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38559.160127150244,
+            "x": 2106.9493573073482,
+            "y": 170.31810172019527,
+            "z": 598.79169604052,
+            "phase": 1.6062524198206314,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 4,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 1024000
+    },
+    {
+      "name": "desktop-1000x800",
+      "width": 334,
+      "height": 267,
+      "css": {
+        "x": -1,
+        "y": 0,
+        "width": 1002,
+        "height": 801
+      },
+      "ratio": 1,
+      "viewport": [
+        1000,
+        800
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 2,
+        "triangles": 614927,
+        "drawCalls": 71,
+        "geometries": 83,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38559.160127150244,
+            "x": 2106.9493573073482,
+            "y": 170.31810172019527,
+            "z": 598.79169604052,
+            "phase": 1.6062524198206314,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 3,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 800000
+    },
+    {
+      "name": "desktop-1366x768",
+      "width": 342,
+      "height": 192,
+      "css": {
+        "x": -1,
+        "y": 0,
+        "width": 1368,
+        "height": 768
+      },
+      "ratio": 1,
+      "viewport": [
+        1366,
+        768
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 3,
+        "triangles": 769107,
+        "drawCalls": 92,
+        "geometries": 92,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38559.160127150244,
+            "x": 2106.9493573073482,
+            "y": 170.31810172019527,
+            "z": 598.79169604052,
+            "phase": 1.6062524198206314,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 4,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 1049088
+    },
+    {
+      "name": "desktop-1001x801",
+      "width": 334,
+      "height": 267,
+      "css": {
+        "x": 0,
+        "y": 0,
+        "width": 1002,
+        "height": 801
+      },
+      "ratio": 1,
+      "viewport": [
+        1001,
+        801
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 4,
+        "triangles": 614927,
+        "drawCalls": 71,
+        "geometries": 92,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38559.160127150244,
+            "x": 2106.9493573073482,
+            "y": 170.31810172019527,
+            "z": 598.79169604052,
+            "phase": 1.6062524198206314,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 3,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 801801
+    },
+    {
+      "name": "desktop-390x844",
+      "width": 130,
+      "height": 282,
+      "css": {
+        "x": 0,
+        "y": -1,
+        "width": 390,
+        "height": 846
+      },
+      "ratio": 1,
+      "viewport": [
+        390,
+        844
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 5,
+        "triangles": 374179,
+        "drawCalls": 39,
+        "geometries": 92,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38559.160127150244,
+            "x": 2106.9493573073482,
+            "y": 170.31810172019527,
+            "z": 598.79169604052,
+            "phase": 1.6062524198206314,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 3,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 329160
+    },
+    {
+      "name": "desktop-844x390",
+      "width": 282,
+      "height": 130,
+      "css": {
+        "x": -1,
+        "y": 0,
+        "width": 846,
+        "height": 390
+      },
+      "ratio": 1,
+      "viewport": [
+        844,
+        390
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 6,
+        "triangles": 853483,
+        "drawCalls": 106,
+        "geometries": 106,
+        "textures": 6,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 38559.160127150244,
+            "x": 2106.9493573073482,
+            "y": 170.31810172019527,
+            "z": 598.79169604052,
+            "phase": 1.6062524198206314,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 3,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 329160
+    },
+    {
+      "name": "retina-1280x800",
+      "width": 320,
+      "height": 200,
+      "css": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 800
+      },
+      "ratio": 2,
+      "viewport": [
+        1280,
+        800
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 1,
+        "triangles": 697043,
+        "drawCalls": 83,
+        "geometries": 83,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 34932.727984192315,
+            "x": 121.33422687962185,
+            "y": -1897.397784820688,
+            "z": 507.03665842614816,
+            "phase": 5.633494293215342,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 8,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 4096000
+    },
+    {
+      "name": "fractional-1366x768",
+      "width": 342,
+      "height": 192,
+      "css": {
+        "x": -0.796875,
+        "y": 0,
+        "width": 1368,
+        "height": 768
+      },
+      "ratio": 1.25,
+      "viewport": [
+        1366,
+        768
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 1,
+        "triangles": 769107,
+        "drawCalls": 92,
+        "geometries": 92,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 5,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 1639680
+    },
+    {
+      "name": "double-1000x800",
+      "width": 500,
+      "height": 400,
+      "css": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 800
+      },
+      "ratio": 1,
+      "viewport": [
+        1000,
+        800
+      ],
+      "sameRoad": true,
+      "position": 816268.316,
+      "smoothing": false,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 1,
+        "triangles": 614927,
+        "drawCalls": 71,
+        "geometries": 71,
+        "textures": 5,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      },
+      "scale": 2,
+      "mismatchedDisplayPixels": 0,
+      "displayPixels": 800000
+    }
+  ],
+  "errors": [],
+  "checked": "2026-10-13T19:42:02.094736+00:00",
+  "method": "Compare every physical screenshot pixel with its source render pixel at the measured integer scale; hide overlays for the pixel comparison"
+}

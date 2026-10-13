@@ -7,6 +7,10 @@ Chunk size is a storage boundary; animation interpolates continuously between
 road samples. World coordinates are projected meters relative to each chunk's
 `origin`, with north mapped to negative Three.js Z.
 
+`pixel-viewport.js` sizes the scene against physical display pixels, including
+device pixel ratio. It uses an integer magnification and crops partial edge blocks.
+Resize the renderer's buffer and camera in place so rotation retains loaded chunks.
+
 The current DEM encoding covers -500 to 6053.5 meters. Change the encoding and
 metadata together if the route's elevations exceed that range; do not allow
 unsigned integer conversion to wrap mountain heights.
@@ -66,7 +70,7 @@ and buildings on gentle ground. Freeze ambient animation when the drive is idle.
 The starter viewer provides a seek bar, playback controls, speed control, a
 scrollable stop dialog, captions, and a map. Titles and credits come from
 `data/index.json`. URL parameters include `km`, `paused`, `speed` in km/h, `fps`,
-`w` for canvas width, and `loop=0` for a nonlooping drive.
+`scale` for an integer display-pixel scale, and `loop=0` for a nonlooping drive.
 
 The bundled pixel caption font covers Latin letters and a small punctuation set.
 Choose a suitable font or extend its glyphs for other writing systems.

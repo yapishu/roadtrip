@@ -8,7 +8,7 @@ import { roadSupports } from './road-supports.js';
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const hash=s=>{let v=2166136261;for(const c of String(s))v=Math.imul(v^c.charCodeAt(0),16777619);return v>>>0;};
 export async function createRoad(canvas,opts={}) {
-  const W=opts.width||480,H=opts.height||270;
+  let W=opts.width||480,H=opts.height||270;
   canvas.width=W;canvas.height=H;
   const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;
   const renderer=new THREE.WebGLRenderer({antialias:false,alpha:false,preserveDrawingBuffer:true});
@@ -232,7 +232,8 @@ export async function createRoad(canvas,opts={}) {
     renderer.render(scene,camera);ctx.drawImage(renderer.domElement,0,0);draws++;
   }
   const ready=s=>!!dataAt(s),placeAt=s=>({here:captionAt(s),area:''});
+  function resize(width,height){if(width===W&&height===H)return;W=width;H=height;canvas.width=W;canvas.height=H;ctx.imageSmoothingEnabled=false;renderer.setSize(W,H);camera.aspect=W/H;camera.updateProjectionMatrix();lastRender='';}
   function drawLocalMap(g,s,size){g.fillStyle='#ded5bc';g.fillRect(0,0,size,size);const ch=dataAt(s);if(!ch)return;const p=routeAt(ch.d,locate(s).distance);g.strokeStyle='#777';for(const r of ch.d.roads){g.beginPath();r.points.forEach((v,i)=>g[i?'lineTo':'moveTo'](size/2+(v[0]-p[1])/15,size/2-(v[1]-p[2])/15));g.stroke();}g.fillStyle='#b34f32';g.fillRect(size/2-2,size/2-2,4,4);}
   function mapState(s){const chunk=dataAt(s);if(!chunk)return null;const d=chunk.d,at=locate(s).distance,p=routeAt(d,at),a=routeAt(d,Math.max(0,at-3)),b=routeAt(d,Math.min(sources[chunk.source].total,at+9));return {position:[d.origin[0]+p[1],d.origin[1]+p[2]],direction:[b[1]-a[1],b[2]-a[2]],chunk};}
-  return {W,H,IDX,LEN,settleFrames:1,KITJ:{pictures:{}},T,chunks,locate,captionAt,streamAround,ready,render,placeAt,drawLocalMap,mapState,roadAt:s=>{const ch=dataAt(s),p=ch&&routeAt(ch.d,locate(s).distance);return {road:p?.[6]||'',elev:p?.[3]};},setLook:deg=>look=deg,stats:()=>({source:active?.source,draws,triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,buildings:active?.d.buildings.length||0,observedWalls:active?.group.userData.observedWalls||0,trees:active?.group.userData.trees||0,roadside:active?.group.userData.roadside||0,ambient:active?.group.userData.ambient||[],detailPatches:active?.d.details?.length||0,relief:active?[active.d.near.min,active.d.near.max]:[],failures:[...failures.keys()]}),dispose:()=>renderer.dispose()};
+  return {get W(){return W;},get H(){return H;},resize,IDX,LEN,settleFrames:1,KITJ:{pictures:{}},T,chunks,locate,captionAt,streamAround,ready,render,placeAt,drawLocalMap,mapState,roadAt:s=>{const ch=dataAt(s),p=ch&&routeAt(ch.d,locate(s).distance);return {road:p?.[6]||'',elev:p?.[3]};},setLook:deg=>look=deg,stats:()=>({source:active?.source,draws,triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,buildings:active?.d.buildings.length||0,observedWalls:active?.group.userData.observedWalls||0,trees:active?.group.userData.trees||0,roadside:active?.group.userData.roadside||0,ambient:active?.group.userData.ambient||[],detailPatches:active?.d.details?.length||0,relief:active?[active.d.near.min,active.d.near.max]:[],failures:[...failures.keys()]}),dispose:()=>renderer.dispose()};
 }

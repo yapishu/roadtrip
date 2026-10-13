@@ -23,6 +23,8 @@ The drive loops by default. Move the pointer or tap to reveal the seek bar, stop
 
 URL options include `?km=2442.611&paused=1` for a fixed position and `?speed=96.56` for the starting speed in km/h. The caption names the current place. Controls fade when idle.
 
+The scene automatically uses whole-number scaling against the display's physical pixels, keeping the chunky look through resizing and rotation. A 1280×800 display renders at 320×200 and scales by 4. Use `?scale=2` for 2× pixels. When the screen dimensions do not divide evenly, a partial pixel block is cropped at the edge.
+
 For a modest Android picture frame, start with `?fps=30`. This caps rendering at 30 frames per second while preserving the same pixel resolution, models, and driving speed. Terrain outside the camera view is culled, and a paused scene performs no WebGL redraws. Performance on the target frame needs an on-device check; reducing the cap further with `?fps=20` is available.
 
 ## Scene and tools
