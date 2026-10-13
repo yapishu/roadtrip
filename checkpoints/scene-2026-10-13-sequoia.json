@@ -1,0 +1,12 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-13-sequoia.tar.zst",
+  "bytes": 1624087930,
+  "sha256": "9d8110f250cd2fc36c9f08fd2477ff8c30c712c3995575a71baa251b71608dbc",
+  "sourceCommit": "192d30d61d01e238754479585a0481d4091f1a6a",
+  "sceneCommit": "fee1d13bd25a498f8c5922d7d5d065324aee0a9b",
+  "worldSections": 547,
+  "stops": 60,
+  "routeMetres": 4988204.372688454,
+  "contents": "Complete viewer, reviewed house wall skins and modeled trim, distance-faded wires, clear path underpasses, joined terrain patches, and the Kings Canyon\u2013Sequoia\u2013CA-198\u2013CA-65 route to Bakersfield",
+  "storage": "Separate scene archive; restore world assets with scripts/restore-scene.mjs"
+}

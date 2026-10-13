@@ -1,0 +1,134 @@
+{
+  "frames": [
+    {
+      "name": "Milpitas",
+      "at": 1.552,
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 1871521,
+        "drawCalls": 345,
+        "geometries": 345,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "GiantForest",
+      "at": 559.124,
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 2,
+        "triangles": 715478,
+        "drawCalls": 80,
+        "geometries": 80,
+        "textures": 10,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 250279.28252157482,
+            "x": 1567.2201248491217,
+            "y": 1440.4611174488143,
+            "z": 2117.321271201078,
+            "phase": 5.963279531077083,
+            "count": 3
+          },
+          {
+            "kind": "birds",
+            "s": 258633.80235010787,
+            "x": -1641.1694185018307,
+            "y": -917.0967520345189,
+            "z": 1626.6988521482485,
+            "phase": 0.8344955037673182,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "TerrainEdge",
+      "at": 581.7903279574298,
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 3,
+        "triangles": 1170119,
+        "drawCalls": 240,
+        "geometries": 240,
+        "textures": 10,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Bakersfield",
+      "at": 740.9,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 4,
+        "triangles": 1524103,
+        "drawCalls": 177,
+        "geometries": 177,
+        "textures": 10,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 7187.433954221546,
+            "x": 1202.7198788624441,
+            "y": 811.7976613103007,
+            "z": 246.65950013565168,
+            "phase": 1.182391636729107,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    }
+  ],
+  "errors": []
+}

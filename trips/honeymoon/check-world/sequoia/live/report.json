@@ -1,0 +1,125 @@
+{
+  "frames": [
+    {
+      "name": "Milpitas",
+      "at": 1.552,
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 1871521,
+        "drawCalls": 345,
+        "geometries": 345,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 8462.741907882393,
+            "x": 455.59936118704957,
+            "y": 1742.0815859089805,
+            "z": 101.63128672390746,
+            "phase": 0.6029864516631854,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "GiantForest",
+      "at": 559.124,
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 2,
+        "triangles": 715478,
+        "drawCalls": 80,
+        "geometries": 80,
+        "textures": 10,
+        "buildings": 23,
+        "observedWalls": 0,
+        "trees": 14087,
+        "roadside": 20,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          664.1,
+          2526.4
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "TerrainEdge",
+      "at": 581.7903279574298,
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 3,
+        "triangles": 1170119,
+        "drawCalls": 240,
+        "geometries": 240,
+        "textures": 10,
+        "buildings": 372,
+        "observedWalls": 0,
+        "trees": 13989,
+        "roadside": 42,
+        "ambient": [],
+        "detailPatches": 3,
+        "relief": [
+          336.3,
+          2094.7
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Bakersfield",
+      "at": 740.9,
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 4,
+        "triangles": 1524103,
+        "drawCalls": 177,
+        "geometries": 177,
+        "textures": 10,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 6280.98398761719,
+            "x": 304.0021797657837,
+            "y": 761.9062706626565,
+            "z": 222.8808558960468,
+            "phase": 6.243268899815284,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    }
+  ],
+  "errors": []
+}
