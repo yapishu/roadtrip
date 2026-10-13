@@ -34,6 +34,8 @@ For a modest Android picture frame, start with `?fps=30`. This caps rendering at
 
 The scene archive includes the rendered world assets and all components required to restore the drive. Checkpoint records live in `checkpoints/`. Source downloads and generation caches stay outside Git. Public assets carry their source metadata; build scripts retain the generation and projection steps. [Pixel Path tooling](references/pixel-path.md) describes the art pipeline and its local model setup.
 
+Small flocks of birds circle overhead, and deer or hares occasionally appear beside rural roads. Encounters are spaced roughly 5–10 miles apart, with longer gaps when locations are unsuitable. Most are birds; four-legged animals are much rarer. These invented encounters vary between sessions and pause with the drive.
+
 Mapped roadside details include signs, lamps, utility lines, fences, railways, and off-season ski lifts. Structures have foundations and bridge decks; unmeasured dimensions and small architectural details use representative forms. `node scripts/check-viewer.mjs http://localhost:8088/` exercises finger scrolling, stop selection, the frame cap, idle rendering, and looping. `scripts/check-world.mjs` records views at named stops, scenic interiors, and selected road profiles.
 
 ## Credits and licenses

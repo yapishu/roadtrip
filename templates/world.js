@@ -1,6 +1,9 @@
 // A metre-scale world: measured terrain, aerial surfaces and mapped structures.
 import * as THREE from './vendor/three.module.js';
 import { addRoadside } from './roadside.js';
+import { gradeTerrain, normalAt, groundHeight, minorRoadSurfaces } from './road-grade.js';
+import { addAmbient } from './ambient.js';
+import { scheduleAmbient } from './ambient-plan.js';
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const hash=s=>{let v=2166136261;for(const c of String(s))v=Math.imul(v^c.charCodeAt(0),16777619);return v>>>0;};
 export async function createRoad(canvas,opts={}) {
@@ -26,7 +29,9 @@ export async function createRoad(canvas,opts={}) {
     if(Math.abs(nearest.at-s)<=radius)return nearest.name;let local=null,distance=4500;for(const place of locations){const delta=Math.abs(place[0]-s);if(delta<distance){distance=delta;local=place[1];}}if(local)return local;
     const next=baseIDX.stops.find(stop=>stop.at>s)||baseIDX.stops.at(-1),previous=baseIDX.stops[Math.max(0,baseIDX.stops.indexOf(next)-1)];return previous.name.split(',')[0]+' → '+next.name.split(',')[0];
   }
-  const chunks=new Map(),pending=new Map(),failures=new Map(),T={now:0};
+  const chunks=new Map(),pending=new Map(),failures=new Map(),T={now:0},ambientSeed=opts.ambientSeed??Math.floor(Math.random()*4294967296);
+  const ambientEvents=new Map();
+  for(const event of scheduleAmbient(LEN,ambientSeed)){const {source,distance}=locate(event.at);if(!ambientEvents.has(source))ambientEvents.set(source,[]);ambientEvents.get(source).push({...event,s:distance});}
   const textureLoader=new THREE.TextureLoader();let active=null,look=0,draws=0,lastRender='';
   const regional=await fetch('regional/art/world-kit.json').then(r=>r.ok?r.json():null).catch(()=>null),regionalTextures=new Map();
   if(regional)await Promise.all([...new Set([...Object.values(regional.surfaces),...Object.values(regional.trees)].map(p=>p.file))].map(async file=>{try{const texture=await textureLoader.loadAsync(file);texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=4;regionalTextures.set(file,texture);}catch{}}));
@@ -37,16 +42,6 @@ export async function createRoad(canvas,opts={}) {
   const roadPaint=color=>material(color,{polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});
   const dirt=material('#a7987a'),paint=roadPaint('#e1d0a0'),white=roadPaint('#d7d6c9');
   function elevation(g,a,x,y){let fx=clamp((x-g.x0)/g.cell,0,g.w-1.001),fy=clamp((y-g.y0)/g.cell,0,g.h-1.001),ix=Math.floor(fx),iy=Math.floor(fy);fx-=ix;fy-=iy;const k=iy*g.w+ix;return ((a[k]*(1-fx)+a[k+1]*fx)*(1-fy)+(a[k+g.w]*(1-fx)+a[k+g.w+1]*fx)*fy)*g.scale+g.offset;}
-  function gradeTerrain(d,a,g=d.near) {
-    const out=new Uint16Array(a);
-    for(const r of d.roads){if(r.bridge||r.tunnel||/footway|path|steps|cycleway/.test(r.kind))continue;
-      const radius=r.width/2+g.cell*1.5;
-      for(let i=0;i<r.points.length-1;i++){const p=r.points[i],q=r.points[i+1],dx=q[0]-p[0],dy=q[1]-p[1],dd=dx*dx+dy*dy;if(dd<.01)continue;
-        const x0=clamp(Math.floor((Math.min(p[0],q[0])-radius-g.x0)/g.cell),0,g.w-1),x1=clamp(Math.ceil((Math.max(p[0],q[0])+radius-g.x0)/g.cell),0,g.w-1),y0=clamp(Math.floor((Math.min(p[1],q[1])-radius-g.y0)/g.cell),0,g.h-1),y1=clamp(Math.ceil((Math.max(p[1],q[1])+radius-g.y0)/g.cell),0,g.h-1);
-        for(let y=y0;y<=y1;y++)for(let x=x0;x<=x1;x++){const vx=g.x0+x*g.cell,vy=g.y0+y*g.cell,t=clamp(((vx-p[0])*dx+(vy-p[1])*dy)/dd,0,1),dist=Math.hypot(vx-p[0]-dx*t,vy-p[1]-dy*t);if(dist>radius)continue;const ceiling=p[2]+(q[2]-p[2])*t-.5+Math.max(0,dist-r.width/2)*.55,k=y*g.w+x;out[k]=Math.min(out[k],Math.round((ceiling-g.offset)/g.scale));}
-      }
-    }return out;
-  }
   function terrain(g,a,texture,cut,d,source){
     const textureBounds=g.textureBounds||g,cuts=Array.isArray(cut)?cut:cut?[cut]:[];
     const vertices=new Float32Array(g.w*g.h*3),uv=new Float32Array(g.w*g.h*2),indices=[];
@@ -88,10 +83,11 @@ export async function createRoad(canvas,opts={}) {
   }
   function mesh(vertices,mat,uv){const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));if(uv)geo.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));geo.computeVertexNormals();return new THREE.Mesh(geo,mat);}
   function quad(out,a,b,c,d){out.push(...a,...c,...b,...a,...d,...c);}
-  function normalAt(points,i){const a=points[Math.max(0,i-1)],b=points[Math.min(points.length-1,i+1)],dx=b[0]-a[0],dy=b[1]-a[1],n=Math.hypot(dx,dy)||1;return [dy/n,-dx/n];}
   function strip(out,points,width,offset=0,lift=0){for(let i=0;i<points.length-1;i++){const a=points[i],b=points[i+1],na=normalAt(points,i),nb=normalAt(points,i+1),l=offset-width/2,r=offset+width/2;quad(out,[a[0]+na[0]*l,a[2]+lift,-a[1]-na[1]*l],[b[0]+nb[0]*l,b[2]+lift,-b[1]-nb[1]*l],[b[0]+nb[0]*r,b[2]+lift,-b[1]-nb[1]*r],[a[0]+na[0]*r,a[2]+lift,-a[1]-na[1]*r]);}}
-  function roadMeshes(d,group,ground){const paved=[],unpaved=[],lines=[],edges=[],tunnelWalls=[],tunnelFloor=[],rails=[],bridges=[];
-    for(const r of d.roads){const small=/footway|path|steps|cycleway|track/.test(r.kind);strip(r.tunnel?tunnelFloor:small?unpaved:paved,r.points,r.width+(r.tunnel?1.5:0),0,.13);
+  function roadMeshes(d,group,groundAt){const minorSurfaces=minorRoadSurfaces(d.roads),paved=[],unpaved=[],lines=[],edges=[],tunnelWalls=[],tunnelFloor=[],rails=[],bridges=[];
+    for(const r of d.roads){const small=/footway|path|steps|cycleway|track/.test(r.kind);
+      if(minorSurfaces.has(r)){for(const polygon of minorSurfaces.get(r))for(let i=1;i<polygon.length-1;i++)for(const p of [polygon[0],polygon[i+1],polygon[i]])unpaved.push(p[0],p[2]+.13,-p[1]);}
+      else strip(r.tunnel?tunnelFloor:small?unpaved:paved,r.points,r.width+(r.tunnel?1.5:0),0,.13);
       if(!small&&r.width>6&&!/service|residential/.test(r.kind)){if(!r.oneway){strip(lines,r.points,.11,-.1,.19);strip(lines,r.points,.11,.1,.19);}if(r.width>8){strip(edges,r.points,.13,r.width/2-.25,.19);strip(edges,r.points,.13,-r.width/2+.25,.19);}}
       if(r.tunnel||r.bridge)for(let i=0;i<r.points.length-1;i++){const a=r.points[i],b=r.points[i+1],dx=b[0]-a[0],dy=b[1]-a[1],n=Math.hypot(dx,dy)||1,nx=dy/n,ny=-dx/n;
         if(r.tunnel){const ring=[[-1,0],[-1,2],...Array.from({length:9},(_,j)=>[-Math.cos(j*Math.PI/8),2+Math.sin(j*Math.PI/8)*3.7]),[1,0]],radius=r.width/2+.6,na=normalAt(r.points,i),nb=normalAt(r.points,i+1);
@@ -104,7 +100,7 @@ export async function createRoad(canvas,opts={}) {
       }
       if(r.bridge){let distance=0,next=16;
         for(let i=1;i<r.points.length;i++){const a=r.points[i-1],b=r.points[i],length=Math.hypot(b[0]-a[0],b[1]-a[1]);
-          for(;next<distance+length;next+=32){const t=(next-distance)/length,x=a[0]+(b[0]-a[0])*t,y=a[1]+(b[1]-a[1])*t,top=a[2]+(b[2]-a[2])*t-.8,base=elevation(d.near,ground,x,y)-.5;
+          for(;next<distance+length;next+=32){const t=(next-distance)/length,x=a[0]+(b[0]-a[0])*t,y=a[1]+(b[1]-a[1])*t,top=a[2]+(b[2]-a[2])*t-.8,base=groundAt(x,y)-.5;
             if(top-base<2||d.roads.some(other=>other!==r&&other.points.some(p=>p[2]<top-1&&Math.hypot(p[0]-x,p[1]-y)<other.width/2+5)))continue;
             // Representative piers leave the mapped roads below unobstructed.
             const half=Math.min(1.2,r.width*.1),corners=[[x-half,y-half],[x+half,y-half],[x+half,y+half],[x-half,y+half]];
@@ -122,12 +118,12 @@ export async function createRoad(canvas,opts={}) {
     const rise=/gabled|hipped/.test(b.roof)&&!b.holes.length?Math.min(b.height*.35,b.roofHeight||Math.max(.8,(max-min)*.18)):0;
     return {rise,eaves:b.base+b.height-rise,axis:v=>-uy*v[0]+ux*v[1]-center,top:v=>b.base+b.height-rise*Math.min(1,Math.abs(-uy*v[0]+ux*v[1]-center)/Math.max(.1,(max-min)/2))};
   }
-  function buildingMeshes(d,group,ground){
+  function buildingMeshes(d,group,groundAt){
     const walls=[],roofs=[],foundations=[],wallColors=[],roofColors=[],roofUV=[];
     for(const b of d.buildings){const p=b.points.slice(0,-1);if(p.length<3)continue;const profile=roofProfile(b),seed=hash(b.id),c=new THREE.Color(b.color||['#b8a68b','#c4b8a1','#ae8c75','#b6aca0','#a79c8b'][seed%5]),rc=new THREE.Color(b.roofColor||['#756b5d','#786955','#9b8f7d','#705f50'][seed%4]);const base=b.base-.25,top=profile.eaves;
       for(let i=0;i<p.length;i++){const a=p[i],z=p[(i+1)%p.length];const start=walls.length;quad(walls,[a[0],base,-a[1]],[z[0],base,-z[1]],[z[0],top,-z[1]],[a[0],top,-a[1]]);
         const length=Math.hypot(z[0]-a[0],z[1]-a[1]),parts=Math.max(1,Math.ceil(length/5));
-        for(let j=0;j<parts;j++){const u=j/parts,v=(j+1)/parts,x=a[0]+(z[0]-a[0])*u,y=a[1]+(z[1]-a[1])*u,xx=a[0]+(z[0]-a[0])*v,yy=a[1]+(z[1]-a[1])*v,low=Math.min(base,elevation(d.near,ground,x,y)-.5),end=Math.min(base,elevation(d.near,ground,xx,yy)-.5);if(low<base-.1||end<base-.1)quad(foundations,[x,low,-y],[xx,end,-yy],[xx,base,-yy],[x,base,-y]);}
+        for(let j=0;j<parts;j++){const u=j/parts,v=(j+1)/parts,x=a[0]+(z[0]-a[0])*u,y=a[1]+(z[1]-a[1])*u,xx=a[0]+(z[0]-a[0])*v,yy=a[1]+(z[1]-a[1])*v,low=Math.min(base,groundAt(x,y)-.5),end=Math.min(base,groundAt(xx,yy)-.5);if(low<base-.1||end<base-.1)quad(foundations,[x,low,-y],[xx,end,-yy],[xx,base,-yy],[x,base,-y]);}
         if(profile.rise){const aa=profile.axis(a),zz=profile.axis(z),poly=[a];if(aa*zz<0){const t=aa/(aa-zz);poly.push([a[0]+(z[0]-a[0])*t,a[1]+(z[1]-a[1])*t]);}poly.push(z);for(let j=0;j<poly.length-1;j++){const v=poly[j],w=poly[j+1];quad(walls,[v[0],top,-v[1]],[w[0],top,-w[1]],[w[0],profile.top(w),-w[1]],[v[0],profile.top(v),-v[1]]);}}
         for(let j=start;j<walls.length;j+=3)wallColors.push(c.r,c.g,c.b);
       }
@@ -166,11 +162,11 @@ export async function createRoad(canvas,opts={}) {
     }
     for(const [file,b]of batches)group.add(mesh(b.vertices,material('#ffffff',{map:regionalTextures.get(file),side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1}),b.uv));
   }
-  async function vegetation(d,group,source){if(!regional)return;const response=await fetch(worldURL(source,`v${String(d.c).padStart(4,'0')}.json`));if(!response.ok)return;const data=await response.json();let theme=themeAt(sources[source].themeAt??(d.s0+d.len/2));if((d.near.min+d.near.max)/2>1750&&d.s0>900000&&d.s0<2900000)theme='redrock';
+  async function vegetation(d,group,source,groundAt){if(!regional)return;const response=await fetch(worldURL(source,`v${String(d.c).padStart(4,'0')}.json`));if(!response.ok)return;const data=await response.json();let theme=themeAt(sources[source].themeAt??(d.s0+d.len/2));if((d.near.min+d.near.max)/2>1750&&d.s0>900000&&d.s0<2900000)theme='redrock';
     let choices=Object.entries(regional.trees).filter(([,p])=>(p.regions||[p.theme]).includes(theme)&&regionalTextures.has(p.file));if(!choices.length)return;const batches=new Map(),dummy=new THREE.Object3D();
     for(const t of data.trees){const [name,asset]=choices[t[4]%choices.length];let batch=batches.get(name);if(!batch){batch={asset,trees:[]};batches.set(name,batch);}batch.trees.push(t);}
     for(const {asset,trees}of batches.values()){const mat=new THREE.MeshLambertMaterial({map:regionalTextures.get(asset.file),alphaTest:.6,side:THREE.DoubleSide,color:'#eeeece'}),geometry=new THREE.PlaneGeometry(1,1);geometry.translate(0,.5,0);const instances=new THREE.InstancedMesh(geometry,mat,trees.length*2);let i=0;
-      for(const t of trees){const h=asset.height*t[3],w=h*asset.aspect;for(let side=0;side<2;side++){dummy.position.set(t[0],t[2]-.2,-t[1]);dummy.rotation.set(0,t[4]/65536*Math.PI+side*Math.PI/2,0);dummy.scale.set(w,h,1);dummy.updateMatrix();instances.setMatrixAt(i++,dummy.matrix);}}instances.computeBoundingSphere();group.add(instances);
+      for(const t of trees){const h=asset.height*t[3],w=h*asset.aspect;for(let side=0;side<2;side++){dummy.position.set(t[0],groundAt(t[0],t[1])-.2,-t[1]);dummy.rotation.set(0,t[4]/65536*Math.PI+side*Math.PI/2,0);dummy.scale.set(w,h,1);dummy.updateMatrix();instances.setMatrixAt(i++,dummy.matrix);}}instances.computeBoundingSphere();group.add(instances);
     }group.userData.trees=data.trees.length;
   }
   async function appearance(d,group,source) {
@@ -189,7 +185,18 @@ export async function createRoad(canvas,opts={}) {
   async function load(source,c){const key=source+':'+c;if(c<0||c>=Math.ceil(sources[source].total/10000)||chunks.has(key)||pending.has(key)||(failures.get(key)||0)>Date.now()-15000)return;
     const work=(async()=>{try{const response=await fetch(worldURL(source,`c${String(c).padStart(4,'0')}.json`));if(!response.ok)throw Error(`World chunk ${key}: ${response.status}`);const d=await response.json();
       const values=await Promise.all([d.near,d.far].map(async g=>{const [buffer,texture]=await Promise.all([fetch(worldURL(source,g.file)).then(r=>{if(!r.ok)throw Error(g.file);return r.arrayBuffer();}),textureLoader.loadAsync(worldURL(source,g.image))]);return {a:new Uint16Array(buffer),texture};}));
-      const group=new THREE.Group(),near=terrain(d.near,gradeTerrain(d,values[0].a),values[0].texture,d.details,d,source),far=terrain(d.far,values[1].a,values[1].texture,d.near,d,source);group.add(far,near);for(const g of d.details||[]){const response=await fetch(worldURL(source,g.file));if(!response.ok)throw Error(g.file);const a=new Uint16Array(await response.arrayBuffer());group.add(terrain(g,gradeTerrain(d,a,g),values[0].texture,null,d,source));}roadMeshes(d,group,values[0].a);buildingMeshes(d,group,values[0].a);landmarkMeshes(d,group);lodgeDetails(d,group);regionalFacades(d,group,source);group.visible=false;scene.add(group);await Promise.all([appearance(d,group,source),vegetation(d,group,source),addRoadside(d,group,worldURL(source,`r${String(d.c).padStart(4,'0')}.json`))].map(p=>p.catch(e=>console.warn(e.message))));chunks.set(key,{d,group,values,source});failures.delete(key);
+      const group=new THREE.Group(),graded=gradeTerrain(d.roads,values[0].a,d.near),patches=[];
+      group.add(terrain(d.far,values[1].a,values[1].texture,d.near,d,source),terrain(d.near,graded,values[0].texture,d.details,d,source));
+      for(const g of d.details||[]){
+        const response=await fetch(worldURL(source,g.file));if(!response.ok)throw Error(g.file);
+        const a=gradeTerrain(d.roads,new Uint16Array(await response.arrayBuffer()),g);patches.push({g,a});
+        group.add(terrain(g,a,values[0].texture,null,d,source));
+      }
+      const groundAt=(x,y)=>{for(const {g,a}of patches){const h=groundHeight(g,a,x,y);if(Number.isFinite(h))return h;}const h=groundHeight(d.near,graded,x,y);return Number.isFinite(h)?h:elevation(d.near,graded,x,y);};
+      roadMeshes(d,group,groundAt);buildingMeshes(d,group,groundAt);landmarkMeshes(d,group);lodgeDetails(d,group);regionalFacades(d,group,source);
+      group.visible=false;scene.add(group);
+      await Promise.all([appearance(d,group,source),vegetation(d,group,source,groundAt),addRoadside(d,group,worldURL(source,`r${String(d.c).padStart(4,'0')}.json`),groundAt)].map(p=>p.catch(e=>console.warn(e.message))));
+      const animateAmbient=addAmbient(d,group,groundAt,ambientEvents.get(source)||[]);chunks.set(key,{d,group,values,source,animateAmbient});failures.delete(key);
     }catch(e){failures.set(key,Date.now());console.warn(e.message);}finally{pending.delete(key);}})();pending.set(key,work);
   }
   function streamAround(s){const keep=new Set();for(const at of [s,s+1200,s-1200]){const loc=locate(((at%LEN)+LEN)%LEN),c=Math.floor(loc.distance/10000);for(const n of [c,c+1,c-1]){keep.add(loc.source+':'+n);load(loc.source,n);}}
@@ -211,10 +218,11 @@ export async function createRoad(canvas,opts={}) {
       if(Math.hypot(vx,vy)>12)gaze=clamp(Math.atan2(vx*dy-vy*dx,vx*dx+vy*dy)*180/Math.PI,-110,110)*(1-delta/400);
     }}
     camera.position.set(x,p[3]+1.8,-y);const angle=gaze*Math.PI/180,fx=dx*Math.cos(angle)+dy*Math.sin(angle),fy=dy*Math.cos(angle)-dx*Math.sin(angle);const slope=clamp((after[3]-before[3])/Math.max(1,after[0]-before[0]),-.5,.5);camera.lookAt(x+fx*80,p[3]+1.8+slope*80*Math.cos(angle)-1.5,-y-fy*80);
+    ch.animateAmbient(s,T.now);
     renderer.render(scene,camera);ctx.drawImage(renderer.domElement,0,0);draws++;
   }
   const ready=s=>!!dataAt(s),placeAt=s=>({here:captionAt(s),area:''});
   function drawLocalMap(g,s,size){g.fillStyle='#ded5bc';g.fillRect(0,0,size,size);const ch=dataAt(s);if(!ch)return;const p=routeAt(ch.d,locate(s).distance);g.strokeStyle='#777';for(const r of ch.d.roads){g.beginPath();r.points.forEach((v,i)=>g[i?'lineTo':'moveTo'](size/2+(v[0]-p[1])/15,size/2-(v[1]-p[2])/15));g.stroke();}g.fillStyle='#b34f32';g.fillRect(size/2-2,size/2-2,4,4);}
   function mapState(s){const chunk=dataAt(s);if(!chunk)return null;const d=chunk.d,at=locate(s).distance,p=routeAt(d,at),a=routeAt(d,Math.max(0,at-3)),b=routeAt(d,Math.min(sources[chunk.source].total,at+9));return {position:[d.origin[0]+p[1],d.origin[1]+p[2]],direction:[b[1]-a[1],b[2]-a[2]],chunk};}
-  return {W,H,IDX,LEN,settleFrames:1,KITJ:{pictures:{}},T,chunks,locate,captionAt,streamAround,ready,render,placeAt,drawLocalMap,mapState,roadAt:s=>{const ch=dataAt(s),p=ch&&routeAt(ch.d,locate(s).distance);return {road:p?.[6]||'',elev:p?.[3]};},setLook:deg=>look=deg,stats:()=>({source:active?.source,draws,triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,buildings:active?.d.buildings.length||0,observedWalls:active?.group.userData.observedWalls||0,trees:active?.group.userData.trees||0,roadside:active?.group.userData.roadside||0,detailPatches:active?.d.details?.length||0,relief:active?[active.d.near.min,active.d.near.max]:[],failures:[...failures.keys()]}),dispose:()=>renderer.dispose()};
+  return {W,H,IDX,LEN,settleFrames:1,KITJ:{pictures:{}},T,chunks,locate,captionAt,streamAround,ready,render,placeAt,drawLocalMap,mapState,roadAt:s=>{const ch=dataAt(s),p=ch&&routeAt(ch.d,locate(s).distance);return {road:p?.[6]||'',elev:p?.[3]};},setLook:deg=>look=deg,stats:()=>({source:active?.source,draws,triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,buildings:active?.d.buildings.length||0,observedWalls:active?.group.userData.observedWalls||0,trees:active?.group.userData.trees||0,roadside:active?.group.userData.roadside||0,ambient:active?.group.userData.ambient||[],detailPatches:active?.d.details?.length||0,relief:active?[active.d.near.min,active.d.near.max]:[],failures:[...failures.keys()]}),dispose:()=>renderer.dispose()};
 }

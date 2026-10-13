@@ -1,7 +1,7 @@
 // Simple forms at mapped positions: roadside furniture and off-season ski lifts.
 import * as THREE from './vendor/three.module.js';
 
-export async function addRoadside(d,group,url) {
+export async function addRoadside(d,group,url,groundAt) {
   const response=await fetch(url);
   if(!response.ok)return;
   const {features}=await response.json(),batches=new Map(),wires=new Map();
@@ -22,6 +22,7 @@ export async function addRoadside(d,group,url) {
   function dimension(f,defaultHeight){const raw=f.tags.height,n=parseFloat(raw);return Number.isFinite(n)?Math.max(.3,Math.min(45,n*(/ft|feet|'/.test(raw)?.3048:1))):defaultHeight;}
   function posts(points,spacing,callback){let carry=0;for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],length=Math.hypot(b[0]-a[0],b[1]-a[1]);if(length<.01)continue;for(let at=carry;at<=length;at+=spacing){const t=at/length;callback(a.map((v,k)=>v+(b[k]-v)*t),Math.atan2(b[0]-a[0],b[1]-a[1]));}carry=(carry-length)%spacing;if(carry<0)carry+=spacing;}}
   for(const f of features){
+    f.points=f.points.map(p=>[p[0],p[1],groundAt(p[0],p[1])]);
     const p=f.points[0],angle=f.facingRoad||0,kind=f.kind;
     if(kind==='pole'||kind==='tower'){
       const height=dimension(f,kind==='tower'?22:8.5);

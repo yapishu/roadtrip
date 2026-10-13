@@ -155,7 +155,7 @@ function frame(now) {
   if (road.ready(ahead)) pos = wrapPosition(pos + speed * dt); else speed *= 0.8;   // wait for the road ahead to load
   if (!loop && ((pos >= LEN - 1 && speed > 0) || (pos <= 0 && speed < 0))) { speed = 0; throttle = 0; }
   if (!road.ready(pos)) { road.streamAround(pos); return requestAnimationFrame(frame); }
-  road.T.now += dt;
+  if (!paused && Math.abs(speed) > .01) road.T.now += dt;
   if (now - renderedAt >= frameInterval - .5) {
     renderedAt = now - (now - renderedAt) % frameInterval;
     road.render(pos, speed); drawCaption($('location'), locationAt(pos));

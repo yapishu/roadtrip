@@ -29,9 +29,11 @@ try {
   assert.equal(report.stop.source,'detours/brian-head');assert.equal(report.stop.paused,'Play');
   assert.ok(report.stop.stops.indexOf('Brian Head Resort')<report.stop.stops.indexOf('Panguitch, Utah'));
   await page.waitForTimeout(300);
-  const idle=await page.evaluate(()=>__trip.road.stats().draws);
+  const idle=await page.evaluate(()=>({draws:__trip.road.stats().draws,time:__trip.road.T.now}));
   await page.waitForTimeout(1200);
-  report.idleDraws=await page.evaluate(()=>__trip.road.stats().draws)-idle;
+  report.idleDraws=await page.evaluate(()=>__trip.road.stats().draws)-idle.draws;
+  report.idleAnimationSeconds=await page.evaluate(()=>__trip.road.T.now)-idle.time;
+  assert.equal(report.idleAnimationSeconds,0,'A paused drive freezes the animation clock');
   assert.equal(report.idleDraws,0,'A paused drive performs no WebGL redraws');
   await page.locator('#play').tap();
   const start=await page.evaluate(()=>({t:performance.now(),draws:__trip.road.stats().draws,pos:__trip.pos}));

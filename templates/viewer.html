@@ -82,7 +82,7 @@ function frame(now) {
   const ahead = Math.max(0, Math.min(LEN - 1, pos + Math.sign(speed) * 900));
   if (road.ready(ahead)) pos = Math.max(0, Math.min(LEN - 1, pos + speed * dt)); else speed *= 0.8;   // wait for the road ahead to load
   if ((pos >= LEN - 1 && speed > 0) || (pos <= 0 && speed < 0)) { speed = 0; throttle = 0; }
-  road.T.now += dt; road.render(pos, speed);
+  if (!paused && Math.abs(speed) > .01) road.T.now += dt; road.render(pos, speed);
   if (now - hudT > 200) { hudT = now; readouts(); }
   requestAnimationFrame(frame);
 }

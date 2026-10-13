@@ -43,12 +43,22 @@ Far terrain provides ridgelines. Cut holes in the coarse mesh where detail patch
 replace it, and align boundaries so one grid does not cover or tear the other.
 Use shared normals and UVs across rendering tiles to avoid visible seams.
 
+Grade every terrain cell intersecting the road ribbon below the road surface.
+Lowering only nearby grid points lets triangles cross narrow roads between those
+points. Test the rendered triangle interpolation across the entire road width,
+including curves and grades. Sample the graded surface for vegetation, roadside
+objects, and foundations so road cuts do not leave them floating.
+
 Road paint needs a depth bias above the asphalt's own bias. If markings only
 appear immediately ahead, inspect depth fighting at grazing angles before
 increasing draw distance. Overpasses need solid deck undersides and supports;
 thin road strips and floating railings are visible from below. Place supports so
 they do not obstruct another mapped road. Tunnels need interior surfaces and
 portal clearance. Buildings on slopes need foundations down to ground.
+
+Sparse birds and wildlife provide invented ambient detail. Keep encounters stable
+while chunks stream, vary them between sessions, and place animals outside roads
+and buildings on gentle ground. Freeze ambient animation when the drive is idle.
 
 ## Controls and map
 
