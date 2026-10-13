@@ -11,9 +11,11 @@ for job in plan['jobs']:
  if job['kind']!='sprite':continue
  path=art/'raw'/(job['name']+'.png')
  if not path.exists():continue
- raw=Image.open(path).convert('RGB')
+ raw=Image.open(path).convert('RGBA' if job.get('transparent') else 'RGB')
  if job.get('baseTrim'):raw=raw.crop((0,0,raw.width,round(raw.height*(1-job['baseTrim']))))
- if job.get('background')=='magenta':
+ if job.get('transparent'):
+  rgba=np.array(raw)
+ elif job.get('background')=='magenta':
   rgba=np.array(raw.convert('RGBA'));r,g,b=rgba[:,:,:3].astype('float32').transpose(2,0,1);rgba[:,:,3]=((r<g*1.4)|(b<g*1.3)|(r<80)|(b<70)).astype('uint8')*255
  else:rgba=np.array(remove(raw,session=session).convert('RGBA'))
  mask=rgba[:,:,3]>145;components,n=label(mask);counts=np.bincount(components.ravel());counts[0]=0;largest=counts.max();mask&=counts[components]>max(4,largest*.008)
@@ -21,7 +23,9 @@ for job in plan['jobs']:
  if mask.sum()<120:flags.append('empty')
  if mask[:2].sum()>2 or mask[:,:2].sum()>2 or mask[:,-2:].sum()>2:flags.append('clipped')
  if job['name']in drops:flags.append('reviewed-exclusion')
- rgba[:,:,3]=mask.astype('uint8')*255;im=Image.fromarray(rgba);box=im.getbbox()
+ if not job.get('transparent'):rgba[:,:,3]=mask.astype('uint8')*255
+ im=Image.fromarray(rgba);box=Image.fromarray(mask.astype('uint8')*255).getbbox()
  if box:im=im.crop(box)
+ if job.get('transparent'):im.thumbnail((512,512),Image.Resampling.LANCZOS)
  im.save(out/(job['name']+'.png'));report[job['name']]=dict(drop=bool(flags),flags=flags,size=list(im.size));print(job['name'],flags or 'ready',flush=True)
 (art/'plants.json').write_text(json.dumps(report,separators=(',',':')))

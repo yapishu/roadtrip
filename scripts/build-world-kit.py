@@ -6,7 +6,7 @@ from PIL import Image,ImageDraw,ImageStat
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--trip',type=Path,required=True);args=ap.parse_args();art=args.trip/'regional/art';plan=json.loads((art/'plan.json').read_text());clean=json.loads((art/'kit.json').read_text())if(art/'kit.json').exists()else{'pictures':{}};out=art/'world';out.mkdir(exist_ok=True)
-    drops=set((art/'drop.txt').read_text().split())if(art/'drop.txt').exists()else set();kit=dict(themes=plan['themes'],surfaces={},trees={},sources={'surfaces':'Reviewed generated wall surfaces; provenance accompanies each surface','vegetation':'Locally generated SDXL vegetation'})
+    drops=set((art/'drop.txt').read_text().split())if(art/'drop.txt').exists()else set();kit=dict(themes=plan['themes'],surfaces={},trees={},sources={'surfaces':'Reviewed generated wall surfaces; provenance accompanies each surface','vegetation':'Generated vegetation; provenance accompanies each asset'})
     walls=json.loads((art/'wall-surfaces.json').read_text()) if (art/'wall-surfaces.json').exists() else {}
     plants=json.loads((art/'plants.json').read_text())if(art/'plants.json').exists()else {};tiles={};review=[]
     for job in plan['jobs']:
@@ -20,7 +20,7 @@ def main():
         else:
             item=plants.get(job['name']) or clean['pictures'].get(job['name'])
             if not item or item.get('drop'):continue
-            src=(art/'plants'if job['name']in plants else art)/(job['name']+'.png');im=Image.open(src).convert('RGBA');target=out/(job['name']+'.png');im.save(target);kit['trees'][job['name']]=dict(theme=job['theme'],regions=job.get('regions',[job['theme']]),file='regional/art/world/'+target.name,height=job['hm'],aspect=im.width/im.height);review.append((job['name'],im))
+            src=(art/'plants'if job['name']in plants else art)/(job['name']+'.png');im=Image.open(src).convert('RGBA');target=out/(job['name']+'.png');im.save(target);kit['trees'][job['name']]=dict(theme=job['theme'],regions=job.get('regions',[job['theme']]),file='regional/art/world/'+target.name,height=job['hm'],aspect=im.width/im.height,source=job.get('source','Locally generated SDXL'));review.append((job['name'],im))
     for theme,items in tiles.items():
         atlas=Image.new('RGB',(2048,math.ceil(len(items)/8)*128),'#888078')
         for i,(job,im)in enumerate(items):

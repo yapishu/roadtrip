@@ -1,0 +1,325 @@
+{
+  "frames": [
+    {
+      "name": "Heath",
+      "at": 0,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5630109338632261,
+          "sun": 1.3945227079193547,
+          "ambient": 2.129314550099355,
+          "seed": 2263734
+        },
+        "draws": 1,
+        "triangles": 556741,
+        "drawCalls": 74,
+        "geometries": 74,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "HeathNear",
+      "at": 0.12,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5612646363021783,
+          "sun": 1.3958870028889234,
+          "ambient": 2.1289871193066587,
+          "seed": 2263734
+        },
+        "draws": 2,
+        "triangles": 522165,
+        "drawCalls": 70,
+        "geometries": 74,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "HeathTurn",
+      "at": 0.22,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5598106158468454,
+          "sun": 1.3970229563696521,
+          "ambient": 2.1287144904712836,
+          "seed": 2263734
+        },
+        "draws": 3,
+        "triangles": 488907,
+        "drawCalls": 67,
+        "geometries": 74,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Marylinn",
+      "at": 0.4,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5571962851098898,
+          "sun": 1.3990654022578988,
+          "ambient": 2.1282243034581043,
+          "seed": 2263734
+        },
+        "draws": 4,
+        "triangles": 730418,
+        "drawCalls": 104,
+        "geometries": 136,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "MarylinnNorth",
+      "at": 0.7,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5528477595866984,
+          "sun": 1.4024626878228919,
+          "ambient": 2.127408954922506,
+          "seed": 2263734
+        },
+        "draws": 5,
+        "triangles": 1220028,
+        "drawCalls": 202,
+        "geometries": 253,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Milpitas",
+      "at": 1,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5485107539187104,
+          "sun": 1.4058509735010076,
+          "ambient": 2.1265957663597583,
+          "seed": 2263734
+        },
+        "draws": 6,
+        "triangles": 1095386,
+        "drawCalls": 170,
+        "geometries": 253,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Calaveras",
+      "at": 1.55,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.540592002301683,
+          "sun": 1.4120374982018102,
+          "ambient": 2.125111000431566,
+          "seed": 2263734
+        },
+        "draws": 7,
+        "triangles": 1890699,
+        "drawCalls": 348,
+        "geometries": 452,
+        "textures": 9,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "TownAvenue",
+      "at": 2,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5341469619875456,
+          "sun": 1.4170726859472302,
+          "ambient": 2.123902555372665,
+          "seed": 2263734
+        },
+        "draws": 8,
+        "triangles": 1388205,
+        "drawCalls": 220,
+        "geometries": 452,
+        "textures": 9,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "TownApproach",
+      "at": 2.8,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.522772920565981,
+          "sun": 1.4259586558078274,
+          "ambient": 2.1217699226061217,
+          "seed": 2263734
+        },
+        "draws": 9,
+        "triangles": 660004,
+        "drawCalls": 88,
+        "geometries": 452,
+        "textures": 9,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Jacklin",
+      "at": 3.4,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.5143200312819833,
+          "sun": 1.4325624755609507,
+          "ambient": 2.120185005865372,
+          "seed": 2263734
+        },
+        "draws": 10,
+        "triangles": 438749,
+        "drawCalls": 59,
+        "geometries": 452,
+        "textures": 9,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    }
+  ],
+  "errors": []
+}

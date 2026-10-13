@@ -134,6 +134,7 @@ surfaces without a horizon, buildings, objects, or directional perspective.
 
 ```sh
 .terrain-venv/bin/python scripts/bake-vegetation.py --trip "$TRIP"
+.terrain-venv/bin/python scripts/refine-city-vegetation.py --trip "$TRIP" --workers 4 --output "$TRIP/check-world/city-vegetation.json"
 .terrain-venv/bin/python scripts/bake-roadside.py --trip "$TRIP" --regions "$REGIONS"
 ```
 
@@ -146,6 +147,14 @@ route or source coverage changes.
 Vegetation placement combines aerial color/texture with mapped tree points and
 excludes roads and building interiors. It is a canopy inference, not individual
 tree identification. Keep species and heights representative of the region.
+
+Refine occupied street corridors with metre-scale aerial imagery. Coarse terrain
+atlases miss small yard and street-tree crowns. Use local foliage texture to
+distinguish planting from smooth lawns; exclude full road ribbons and building
+interiors. Keep crown position and spread separate from representative plant
+height and species. Urban tree and shrub artwork uses reviewed transparent
+cutouts; high-elevation source policies retain their forest vegetation. Spatial
+batches allow planting beyond the view to cull.
 
 Mapped poles, lamps, signs, benches, hydrants, fences, railways, power lines, and
 chair lifts use cheap repeated geometry. Resample ground-following lines on steep

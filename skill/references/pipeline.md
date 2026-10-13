@@ -175,7 +175,7 @@ camera looks toward a landmark.
 ## New-route viewer configuration
 
 Copy `skill/assets/viewer.html` and `caption.js` into the trip. Copy
-`templates/{world.js,buildings.js,building-shapes.js,road-grade.js,roadside.js,roadside-geometry.js,daylight.js,ambient.js,ambient-plan.js,road-supports.js,pixel-viewport.js,minimap.js,minimap.css}` and `templates/vendor/`
+`templates/{world.js,buildings.js,building-shapes.js,road-grade.js,roadside.js,roadside-geometry.js,daylight.js,vegetation.js,ambient.js,ambient-plan.js,road-supports.js,pixel-viewport.js,minimap.js,minimap.css}` and `templates/vendor/`
 alongside them, and copy the trip's `viewer.html` to `index.html`.
 
 Add `title` and a `credits` array of `{name,url}` entries to `data/index.json`.

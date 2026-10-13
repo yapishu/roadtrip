@@ -1,0 +1,73 @@
+{
+  "renderer": "Chromium SwiftShader software renderer, 1280x800 viewport / 320x200 buffer",
+  "reports": [
+    {
+      "name": "before",
+      "drawsPerSecond": 14.788760542129019,
+      "idleDraws": 0,
+      "idleAnimation": 0,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.8252759037704839,
+          "sun": 1.438957557041752,
+          "ambient": 2.121779025298057,
+          "seed": 3712707983
+        },
+        "draws": 1,
+        "triangles": 1220028,
+        "drawCalls": 202,
+        "geometries": 202,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "errors": []
+    },
+    {
+      "name": "after",
+      "drawsPerSecond": 12.790790630989653,
+      "idleDraws": 0,
+      "idleAnimation": 0,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.72,
+          "sun": 1.75,
+          "ambient": 2.05,
+          "seed": 1890101234
+        },
+        "draws": 1,
+        "triangles": 1234492,
+        "drawCalls": 246,
+        "geometries": 246,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "errors": []
+    }
+  ]
+}

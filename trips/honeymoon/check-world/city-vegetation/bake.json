@@ -1,0 +1,3637 @@
+{
+  "sections": [
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0005.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0006.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0008.json",
+      "plants": 64,
+      "trees": 51,
+      "shrubs": 13,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0004.json",
+      "plants": 482,
+      "trees": 407,
+      "shrubs": 75,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0003.json",
+      "plants": 2258,
+      "trees": 1905,
+      "shrubs": 353,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0009.json",
+      "plants": 608,
+      "trees": 459,
+      "shrubs": 149,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0010.json",
+      "plants": 2725,
+      "trees": 2298,
+      "shrubs": 427,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0001.json",
+      "plants": 3847,
+      "trees": 3234,
+      "shrubs": 613,
+      "tiles": 7,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0007.json",
+      "plants": 1895,
+      "trees": 1434,
+      "shrubs": 461,
+      "tiles": 8,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0013.json",
+      "plants": 1713,
+      "trees": 1298,
+      "shrubs": 415,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0014.json",
+      "plants": 70,
+      "trees": 60,
+      "shrubs": 10,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0000.json",
+      "plants": 7076,
+      "trees": 5941,
+      "shrubs": 1135,
+      "tiles": 8,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0016.json",
+      "plants": 57,
+      "trees": 47,
+      "shrubs": 10,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0012.json",
+      "plants": 1613,
+      "trees": 1248,
+      "shrubs": 365,
+      "tiles": 6,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0018.json",
+      "plants": 246,
+      "trees": 194,
+      "shrubs": 52,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0017.json",
+      "plants": 182,
+      "trees": 134,
+      "shrubs": 48,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0019.json",
+      "plants": 64,
+      "trees": 51,
+      "shrubs": 13,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0023.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0024.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0025.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0026.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0011.json",
+      "plants": 1931,
+      "trees": 1642,
+      "shrubs": 289,
+      "tiles": 9,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0015.json",
+      "plants": 495,
+      "trees": 352,
+      "shrubs": 143,
+      "tiles": 5,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0029.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0022.json",
+      "plants": 329,
+      "trees": 273,
+      "shrubs": 56,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0027.json",
+      "plants": 345,
+      "trees": 278,
+      "shrubs": 67,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0020.json",
+      "plants": 173,
+      "trees": 129,
+      "shrubs": 44,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0028.json",
+      "plants": 258,
+      "trees": 193,
+      "shrubs": 65,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0031.json",
+      "plants": 270,
+      "trees": 218,
+      "shrubs": 52,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0035.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0032.json",
+      "plants": 97,
+      "trees": 74,
+      "shrubs": 23,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0021.json",
+      "plants": 736,
+      "trees": 619,
+      "shrubs": 117,
+      "tiles": 6,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0036.json",
+      "plants": 122,
+      "trees": 91,
+      "shrubs": 31,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0034.json",
+      "plants": 188,
+      "trees": 124,
+      "shrubs": 64,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0040.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0039.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0042.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0033.json",
+      "plants": 1199,
+      "trees": 846,
+      "shrubs": 353,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0043.json",
+      "plants": 280,
+      "trees": 235,
+      "shrubs": 45,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0045.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0046.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0037.json",
+      "plants": 712,
+      "trees": 612,
+      "shrubs": 100,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0044.json",
+      "plants": 498,
+      "trees": 409,
+      "shrubs": 89,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0041.json",
+      "plants": 2388,
+      "trees": 2166,
+      "shrubs": 222,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0050.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0051.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0052.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0053.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0030.json",
+      "plants": 1702,
+      "trees": 1340,
+      "shrubs": 362,
+      "tiles": 6,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0054.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0055.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0056.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0049.json",
+      "plants": 379,
+      "trees": 321,
+      "shrubs": 58,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0058.json",
+      "plants": 12,
+      "trees": 9,
+      "shrubs": 3,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0060.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0061.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0062.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0063.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0064.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0057.json",
+      "plants": 36,
+      "trees": 21,
+      "shrubs": 15,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0066.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0067.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0068.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0069.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0070.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0038.json",
+      "plants": 788,
+      "trees": 677,
+      "shrubs": 111,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0065.json",
+      "plants": 19,
+      "trees": 13,
+      "shrubs": 6,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0073.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0074.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0075.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0076.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0077.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0078.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0079.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0080.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0081.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0082.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0072.json",
+      "plants": 181,
+      "trees": 137,
+      "shrubs": 44,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0084.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0085.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0086.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0059.json",
+      "plants": 51,
+      "trees": 31,
+      "shrubs": 20,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0088.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0089.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0090.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0091.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0047.json",
+      "plants": 521,
+      "trees": 432,
+      "shrubs": 89,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0093.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0094.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0095.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0083.json",
+      "plants": 11,
+      "trees": 8,
+      "shrubs": 3,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0071.json",
+      "plants": 274,
+      "trees": 187,
+      "shrubs": 87,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0098.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0099.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0100.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0101.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0102.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0103.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0096.json",
+      "plants": 10,
+      "trees": 5,
+      "shrubs": 5,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0087.json",
+      "plants": 192,
+      "trees": 160,
+      "shrubs": 32,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0092.json",
+      "plants": 29,
+      "trees": 20,
+      "shrubs": 9,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0106.json",
+      "plants": 37,
+      "trees": 26,
+      "shrubs": 11,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0048.json",
+      "plants": 2776,
+      "trees": 2287,
+      "shrubs": 489,
+      "tiles": 7,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0104.json",
+      "plants": 90,
+      "trees": 49,
+      "shrubs": 41,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0097.json",
+      "plants": 62,
+      "trees": 40,
+      "shrubs": 22,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0111.json",
+      "plants": 84,
+      "trees": 50,
+      "shrubs": 34,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0110.json",
+      "plants": 71,
+      "trees": 42,
+      "shrubs": 29,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0113.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0114.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0115.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0116.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0117.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0109.json",
+      "plants": 230,
+      "trees": 166,
+      "shrubs": 64,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0119.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0118.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0120.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0121.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0123.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0122.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0105.json",
+      "plants": 352,
+      "trees": 221,
+      "shrubs": 131,
+      "tiles": 5,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0125.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0126.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0128.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0127.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0130.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0129.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0131.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0132.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0134.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0133.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0135.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0136.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0137.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0138.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0139.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0140.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0141.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0112.json",
+      "plants": 21,
+      "trees": 15,
+      "shrubs": 6,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0144.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0145.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0146.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0147.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0148.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0149.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0150.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0151.json",
+      "plants": 150,
+      "trees": 125,
+      "shrubs": 25,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0143.json",
+      "plants": 20,
+      "trees": 16,
+      "shrubs": 4,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0153.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0154.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0155.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0156.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0157.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0142.json",
+      "plants": 162,
+      "trees": 137,
+      "shrubs": 25,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0159.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0160.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0161.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0162.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0163.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0164.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0165.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0166.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0167.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0168.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0169.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0170.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0171.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0172.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0173.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0174.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0175.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0176.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0177.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0178.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0179.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0180.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0181.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0182.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0183.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0184.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0158.json",
+      "plants": 56,
+      "trees": 32,
+      "shrubs": 24,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0124.json",
+      "plants": 622,
+      "trees": 490,
+      "shrubs": 132,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0187.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0107.json",
+      "plants": 702,
+      "trees": 500,
+      "shrubs": 202,
+      "tiles": 8,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0108.json",
+      "plants": 1004,
+      "trees": 649,
+      "shrubs": 355,
+      "tiles": 7,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0185.json",
+      "plants": 67,
+      "trees": 46,
+      "shrubs": 21,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0191.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0192.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0193.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0188.json",
+      "plants": 291,
+      "trees": 242,
+      "shrubs": 49,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0195.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0190.json",
+      "plants": 1600,
+      "trees": 1419,
+      "shrubs": 181,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0194.json",
+      "plants": 1021,
+      "trees": 883,
+      "shrubs": 138,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0196.json",
+      "plants": 1071,
+      "trees": 973,
+      "shrubs": 98,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0199.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0186.json",
+      "plants": 2028,
+      "trees": 1805,
+      "shrubs": 223,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0189.json",
+      "plants": 3575,
+      "trees": 3148,
+      "shrubs": 427,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0197.json",
+      "plants": 1085,
+      "trees": 985,
+      "shrubs": 100,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0203.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0202.json",
+      "plants": 66,
+      "trees": 56,
+      "shrubs": 10,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0201.json",
+      "plants": 457,
+      "trees": 354,
+      "shrubs": 103,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0206.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0200.json",
+      "plants": 520,
+      "trees": 405,
+      "shrubs": 115,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0208.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0207.json",
+      "plants": 219,
+      "trees": 203,
+      "shrubs": 16,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0198.json",
+      "plants": 479,
+      "trees": 360,
+      "shrubs": 119,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0205.json",
+      "plants": 1080,
+      "trees": 938,
+      "shrubs": 142,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0204.json",
+      "plants": 482,
+      "trees": 364,
+      "shrubs": 118,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0209.json",
+      "plants": 1581,
+      "trees": 1400,
+      "shrubs": 181,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0214.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0211.json",
+      "plants": 338,
+      "trees": 274,
+      "shrubs": 64,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0212.json",
+      "plants": 752,
+      "trees": 643,
+      "shrubs": 109,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0216.json",
+      "plants": 329,
+      "trees": 268,
+      "shrubs": 61,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0218.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0215.json",
+      "plants": 265,
+      "trees": 231,
+      "shrubs": 34,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0220.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0217.json",
+      "plants": 750,
+      "trees": 640,
+      "shrubs": 110,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0213.json",
+      "plants": 361,
+      "trees": 297,
+      "shrubs": 64,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0223.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0224.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0225.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0226.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0227.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0228.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0229.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0230.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0231.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0232.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0219.json",
+      "plants": 288,
+      "trees": 239,
+      "shrubs": 49,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0234.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0235.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0236.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0237.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0238.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0239.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0240.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0241.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0242.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0243.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0210.json",
+      "plants": 4016,
+      "trees": 3521,
+      "shrubs": 495,
+      "tiles": 5,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0245.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0246.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0222.json",
+      "plants": 70,
+      "trees": 48,
+      "shrubs": 22,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0248.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0221.json",
+      "plants": 1884,
+      "trees": 1669,
+      "shrubs": 215,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0250.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0251.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0252.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0253.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0254.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0255.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0256.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0247.json",
+      "plants": 16,
+      "trees": 11,
+      "shrubs": 5,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0258.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0259.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0260.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0152.json",
+      "plants": 656,
+      "trees": 550,
+      "shrubs": 106,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0262.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0263.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0257.json",
+      "plants": 49,
+      "trees": 37,
+      "shrubs": 12,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0249.json",
+      "plants": 79,
+      "trees": 60,
+      "shrubs": 19,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0266.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0267.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0268.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0269.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0270.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0271.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0244.json",
+      "plants": 10,
+      "trees": 7,
+      "shrubs": 3,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0264.json",
+      "plants": 42,
+      "trees": 31,
+      "shrubs": 11,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0233.json",
+      "plants": 933,
+      "trees": 732,
+      "shrubs": 201,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0275.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0276.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0277.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0278.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0279.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0280.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0281.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0282.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0283.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0265.json",
+      "plants": 12,
+      "trees": 5,
+      "shrubs": 7,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0285.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0286.json",
+      "plants": 170,
+      "trees": 140,
+      "shrubs": 30,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0261.json",
+      "plants": 549,
+      "trees": 464,
+      "shrubs": 85,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0272.json",
+      "plants": 551,
+      "trees": 472,
+      "shrubs": 79,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0289.json",
+      "plants": 239,
+      "trees": 183,
+      "shrubs": 56,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0274.json",
+      "plants": 1491,
+      "trees": 1217,
+      "shrubs": 274,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0288.json",
+      "plants": 1794,
+      "trees": 1553,
+      "shrubs": 241,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0292.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0293.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0273.json",
+      "plants": 2482,
+      "trees": 2053,
+      "shrubs": 429,
+      "tiles": 6,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0287.json",
+      "plants": 1005,
+      "trees": 902,
+      "shrubs": 103,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0291.json",
+      "plants": 249,
+      "trees": 197,
+      "shrubs": 52,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0297.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0298.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0299.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0300.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0301.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0302.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0303.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0284.json",
+      "plants": 1069,
+      "trees": 872,
+      "shrubs": 197,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0305.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0306.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0307.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0308.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0296.json",
+      "plants": 72,
+      "trees": 71,
+      "shrubs": 1,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0290.json",
+      "plants": 665,
+      "trees": 585,
+      "shrubs": 80,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0311.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0312.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0313.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0314.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0315.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0304.json",
+      "plants": 5,
+      "trees": 5,
+      "shrubs": 0,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0317.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0318.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0319.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0294.json",
+      "plants": 1262,
+      "trees": 1177,
+      "shrubs": 85,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0321.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0316.json",
+      "plants": 55,
+      "trees": 35,
+      "shrubs": 20,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0310.json",
+      "plants": 362,
+      "trees": 335,
+      "shrubs": 27,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0309.json",
+      "plants": 771,
+      "trees": 703,
+      "shrubs": 68,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0295.json",
+      "plants": 672,
+      "trees": 628,
+      "shrubs": 44,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0326.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0327.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0320.json",
+      "plants": 714,
+      "trees": 522,
+      "shrubs": 192,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0329.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0330.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0331.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0332.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0333.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0334.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0335.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0336.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0337.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0338.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0339.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0323.json",
+      "plants": 1375,
+      "trees": 1166,
+      "shrubs": 209,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0341.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0342.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0343.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0344.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0345.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0346.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0347.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0348.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0349.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0350.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0351.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0352.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0353.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0354.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0340.json",
+      "plants": 82,
+      "trees": 63,
+      "shrubs": 19,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0356.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0357.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0358.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0359.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0360.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0361.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0362.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0363.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0364.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0365.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0366.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0328.json",
+      "plants": 40,
+      "trees": 28,
+      "shrubs": 12,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0368.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0369.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0370.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0371.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0322.json",
+      "plants": 128,
+      "trees": 96,
+      "shrubs": 32,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0373.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0374.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0375.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0376.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0367.json",
+      "plants": 647,
+      "trees": 573,
+      "shrubs": 74,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0378.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0379.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0325.json",
+      "plants": 602,
+      "trees": 457,
+      "shrubs": 145,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0380.json",
+      "plants": 128,
+      "trees": 101,
+      "shrubs": 27,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0355.json",
+      "plants": 679,
+      "trees": 503,
+      "shrubs": 176,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0372.json",
+      "plants": 282,
+      "trees": 228,
+      "shrubs": 54,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0377.json",
+      "plants": 458,
+      "trees": 368,
+      "shrubs": 90,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0381.json",
+      "plants": 581,
+      "trees": 518,
+      "shrubs": 63,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0324.json",
+      "plants": 3120,
+      "trees": 2306,
+      "shrubs": 814,
+      "tiles": 7,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0387.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0386.json",
+      "plants": 51,
+      "trees": 42,
+      "shrubs": 9,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0388.json",
+      "plants": 276,
+      "trees": 241,
+      "shrubs": 35,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0385.json",
+      "plants": 1228,
+      "trees": 1169,
+      "shrubs": 59,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0391.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0392.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0393.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0394.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0395.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0396.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0397.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0398.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0399.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0400.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0401.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0402.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0382.json",
+      "plants": 1431,
+      "trees": 1261,
+      "shrubs": 170,
+      "tiles": 5,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0404.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0405.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0406.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0407.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0384.json",
+      "plants": 2631,
+      "trees": 2292,
+      "shrubs": 339,
+      "tiles": 5,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0390.json",
+      "plants": 153,
+      "trees": 137,
+      "shrubs": 16,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0410.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0411.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0412.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0413.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0403.json",
+      "plants": 765,
+      "trees": 694,
+      "shrubs": 71,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0415.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0416.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0417.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0418.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0419.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0408.json",
+      "plants": 550,
+      "trees": 506,
+      "shrubs": 44,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0421.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0422.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0409.json",
+      "plants": 554,
+      "trees": 492,
+      "shrubs": 62,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0389.json",
+      "plants": 587,
+      "trees": 491,
+      "shrubs": 96,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0420.json",
+      "plants": 291,
+      "trees": 269,
+      "shrubs": 22,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0424.json",
+      "plants": 113,
+      "trees": 106,
+      "shrubs": 7,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0427.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0428.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0429.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0383.json",
+      "plants": 1248,
+      "trees": 1128,
+      "shrubs": 120,
+      "tiles": 7,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0423.json",
+      "plants": 134,
+      "trees": 123,
+      "shrubs": 11,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/bryce/world/c0000.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/bryce/world/c0001.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/bryce/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/bryce/world/c0003.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/bryce/world/c0004.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/bryce/world/c0005.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0000.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0001.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0003.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0004.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0005.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0006.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0007.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0008.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0009.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0010.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0011.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/death-valley/world/c0012.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/glen-canyon/world/c0000.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/glen-canyon/world/c0001.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/glen-canyon/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0000.json",
+      "plants": 276,
+      "trees": 238,
+      "shrubs": 38,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0001.json",
+      "plants": 557,
+      "trees": 467,
+      "shrubs": 90,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0003.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0004.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0425.json",
+      "plants": 358,
+      "trees": 332,
+      "shrubs": 26,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0006.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0007.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0008.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0009.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/mesa-verde/world/c0000.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/mesa-verde/world/c0001.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0426.json",
+      "plants": 133,
+      "trees": 127,
+      "shrubs": 6,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/monument-valley/world/c0001.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/monument-valley/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0414.json",
+      "plants": 283,
+      "trees": 253,
+      "shrubs": 30,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/zion/world/c0001.json",
+      "plants": 339,
+      "trees": 311,
+      "shrubs": 28,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/zion/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0000.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/monument-valley/world/c0000.json",
+      "plants": 0,
+      "trees": 0,
+      "shrubs": 0,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0003.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0004.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/grand-canyon/world/c0005.json",
+      "plants": 358,
+      "trees": 266,
+      "shrubs": 92,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0006.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0007.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0008.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0009.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0431.json",
+      "plants": 729,
+      "trees": 691,
+      "shrubs": 38,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/parks/zion/world/c0000.json",
+      "plants": 935,
+      "trees": 852,
+      "shrubs": 83,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/world/c0430.json",
+      "plants": 95,
+      "trees": 83,
+      "shrubs": 12,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0001.json",
+      "plants": 1330,
+      "trees": 1137,
+      "shrubs": 193,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0003.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0004.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0005.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0006.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0007.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0008.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0009.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0010.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0011.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0012.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0013.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0010.json",
+      "plants": 289,
+      "trees": 262,
+      "shrubs": 27,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0011.json",
+      "plants": 1272,
+      "trees": 1167,
+      "shrubs": 105,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/brian-head/world/c0005.json",
+      "plants": 337,
+      "trees": 291,
+      "shrubs": 46,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0017.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0018.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0015.json",
+      "plants": 165,
+      "trees": 129,
+      "shrubs": 36,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0014.json",
+      "plants": 138,
+      "trees": 114,
+      "shrubs": 24,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0002.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0003.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0004.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0005.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0006.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0007.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0008.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0009.json",
+      "plants": 525,
+      "trees": 459,
+      "shrubs": 66,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0010.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0011.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0012.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0013.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0014.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0015.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0016.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0017.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0018.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0019.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0020.json",
+      "plants": 505,
+      "trees": 442,
+      "shrubs": 63,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0021.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0022.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0023.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0024.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0025.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0026.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0001.json",
+      "plants": 510,
+      "trees": 409,
+      "shrubs": 101,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0001.json",
+      "plants": 1549,
+      "trees": 1311,
+      "shrubs": 238,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0000.json",
+      "plants": 3625,
+      "trees": 3091,
+      "shrubs": 534,
+      "tiles": 6,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0030.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kern-river/world/c0016.json",
+      "plants": 1942,
+      "trees": 1581,
+      "shrubs": 361,
+      "tiles": 5,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0027.json",
+      "plants": 2013,
+      "trees": 1754,
+      "shrubs": 259,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0029.json",
+      "plants": 2403,
+      "trees": 1954,
+      "shrubs": 449,
+      "tiles": 3,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0032.json",
+      "plants": 175,
+      "trees": 157,
+      "shrubs": 18,
+      "tiles": 1,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0031.json",
+      "plants": 652,
+      "trees": 544,
+      "shrubs": 108,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0036.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0037.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0038.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0039.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0040.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0041.json",
+      "plants": 0,
+      "tiles": 0,
+      "changed": false
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0000.json",
+      "plants": 2158,
+      "trees": 1599,
+      "shrubs": 559,
+      "tiles": 8,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0033.json",
+      "plants": 451,
+      "trees": 371,
+      "shrubs": 80,
+      "tiles": 2,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0043.json",
+      "plants": 932,
+      "trees": 780,
+      "shrubs": 152,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0035.json",
+      "plants": 2528,
+      "trees": 2109,
+      "shrubs": 419,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0042.json",
+      "plants": 284,
+      "trees": 216,
+      "shrubs": 68,
+      "tiles": 5,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0034.json",
+      "plants": 94,
+      "trees": 47,
+      "shrubs": 47,
+      "tiles": 4,
+      "changed": true
+    },
+    {
+      "file": "/home/swps/pixel-path/vegetation-stage/detours/kings-canyon/world/c0028.json",
+      "plants": 6279,
+      "trees": 5532,
+      "shrubs": 747,
+      "tiles": 8,
+      "changed": true
+    }
+  ],
+  "errors": [],
+  "source": "USGS NAIP aerial imagery",
+  "inference": "Crown positions and sizes from color and texture; species and height are representative"
+}

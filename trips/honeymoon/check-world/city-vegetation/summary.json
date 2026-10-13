@@ -1,0 +1,28 @@
+{
+  "source": "USGS NAIP aerial imagery at one metre per pixel",
+  "placement": "Canopy positions and spread inferred from green foliage color and local texture beside occupied streets",
+  "plantForms": "Representative urban broadleaf trees and low shrubs; source vegetation policies retain mountain forest species",
+  "art": "Three transparent cutouts generated with built-in OpenAI ImageGen; per-asset prompts and provenance in regional/art/plan.json",
+  "refinedSections": 174,
+  "unchangedRoadAndBuildingSections": 547,
+  "roadOrBuildingInteriorPlacements": 0,
+  "visualChecks": {
+    "routeViews": 81,
+    "cityViews": 40,
+    "citiesCompared": 20,
+    "milpitasViews": 10,
+    "motionFrames": 30,
+    "motionSequences": 6,
+    "framesMatchCurrentPlantData": 161,
+    "runtimeErrors": 0
+  },
+  "phoneInteraction": {
+    "fingerScrollPixels": 292,
+    "selectedSource": "detours/brian-head",
+    "idleDraws": 0,
+    "idleAnimationSeconds": 0,
+    "loopPosition": 16.197274179197848
+  },
+  "performance": "Chromium SwiftShader software rendering; timings do not establish physical-phone performance",
+  "pixelStyle": "Existing adaptive low-resolution canvas with nearest-neighbor enlargement"
+}

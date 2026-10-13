@@ -45,6 +45,11 @@ Small flocks of birds circle overhead, and deer or hares occasionally appear bes
 
 Mapped roadside details include signs, lamps, utility lines, fences, railways, picnic tables, information boards, and off-season ski lifts. Canyon rivers follow mapped centerlines. Structures have foundations, connected bridge approaches, supporting earth banks, and abutments; unmeasured dimensions and small architectural details use representative forms. `node scripts/check-viewer.mjs http://localhost:8088/` exercises finger scrolling, stop selection, the frame cap, idle rendering, and looping. `scripts/check-world.mjs` records views at named stops, scenic interiors, and selected road profiles.
 
+Urban planting uses metre-scale aerial canopy patterns along occupied streets.
+Leafy trees and low shrubs have varied crown sizes; smooth lawns remain open, and
+trunks stay outside road ribbons and building interiors. Plant species and heights
+are representative. Vegetation uses spatial batches so trees outside the view cull.
+
 Town buildings retain mapped footprints, floors, roof directions, courtyards, and separate building parts. Houses have roof edges; commercial blocks have parapets and street-facing storefronts; offices use regular window bays; mapped canopies stand on open supports. Masonry, glazing, trim, and small roof equipment are representative details. Building references in `trips/honeymoon/building-references.json` distinguish documented floor counts from estimated metre heights. `scripts/refine-buildings.py --trip trips/honeymoon` refreshes building data while preserving terrain, roads, and camera profiles.
 
 Reviewed wall skins contain wall surfaces rather than whole buildings or scenery. They fit compatible frontages without stretching, with raised window trim and entry canopies on selected houses. The review manifest is `trips/honeymoon/regional/art/wall-surfaces.json`; the wall kit retains each generator's attribution. Small path underpasses do not receive vehicle-sized tunnel shells.

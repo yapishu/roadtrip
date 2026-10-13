@@ -1,0 +1,1231 @@
+{
+  "worldSections": 547,
+  "unchangedRoadAndBuildingSections": 547,
+  "refinedSections": 174,
+  "plantInstances": 136567,
+  "treeInstances": 114620,
+  "shrubInstances": 21947,
+  "roadOrBuildingInteriorPlacements": 0,
+  "invalidSizes": 0,
+  "duplicateCrowns": 0,
+  "sections": [
+    {
+      "file": "world/v0000.json",
+      "plants": 7076,
+      "trees": 5941,
+      "shrubs": 1135,
+      "tiles": 8
+    },
+    {
+      "file": "world/v0001.json",
+      "plants": 3847,
+      "trees": 3234,
+      "shrubs": 613,
+      "tiles": 7
+    },
+    {
+      "file": "world/v0003.json",
+      "plants": 2258,
+      "trees": 1905,
+      "shrubs": 353,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0004.json",
+      "plants": 482,
+      "trees": 407,
+      "shrubs": 75,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0007.json",
+      "plants": 1895,
+      "trees": 1434,
+      "shrubs": 461,
+      "tiles": 7
+    },
+    {
+      "file": "world/v0008.json",
+      "plants": 64,
+      "trees": 51,
+      "shrubs": 13,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0009.json",
+      "plants": 608,
+      "trees": 459,
+      "shrubs": 149,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0010.json",
+      "plants": 2725,
+      "trees": 2298,
+      "shrubs": 427,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0011.json",
+      "plants": 1931,
+      "trees": 1642,
+      "shrubs": 289,
+      "tiles": 8
+    },
+    {
+      "file": "world/v0012.json",
+      "plants": 1613,
+      "trees": 1248,
+      "shrubs": 365,
+      "tiles": 6
+    },
+    {
+      "file": "world/v0013.json",
+      "plants": 1713,
+      "trees": 1298,
+      "shrubs": 415,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0014.json",
+      "plants": 70,
+      "trees": 60,
+      "shrubs": 10,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0015.json",
+      "plants": 495,
+      "trees": 352,
+      "shrubs": 143,
+      "tiles": 5
+    },
+    {
+      "file": "world/v0016.json",
+      "plants": 57,
+      "trees": 47,
+      "shrubs": 10,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0017.json",
+      "plants": 182,
+      "trees": 134,
+      "shrubs": 48,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0018.json",
+      "plants": 246,
+      "trees": 194,
+      "shrubs": 52,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0019.json",
+      "plants": 64,
+      "trees": 51,
+      "shrubs": 13,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0020.json",
+      "plants": 173,
+      "trees": 129,
+      "shrubs": 44,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0021.json",
+      "plants": 736,
+      "trees": 619,
+      "shrubs": 117,
+      "tiles": 6
+    },
+    {
+      "file": "world/v0022.json",
+      "plants": 329,
+      "trees": 273,
+      "shrubs": 56,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0027.json",
+      "plants": 345,
+      "trees": 278,
+      "shrubs": 67,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0028.json",
+      "plants": 258,
+      "trees": 193,
+      "shrubs": 65,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0030.json",
+      "plants": 1702,
+      "trees": 1340,
+      "shrubs": 362,
+      "tiles": 6
+    },
+    {
+      "file": "world/v0031.json",
+      "plants": 270,
+      "trees": 218,
+      "shrubs": 52,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0032.json",
+      "plants": 97,
+      "trees": 74,
+      "shrubs": 23,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0033.json",
+      "plants": 1199,
+      "trees": 846,
+      "shrubs": 353,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0034.json",
+      "plants": 188,
+      "trees": 124,
+      "shrubs": 64,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0036.json",
+      "plants": 122,
+      "trees": 91,
+      "shrubs": 31,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0037.json",
+      "plants": 712,
+      "trees": 612,
+      "shrubs": 100,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0038.json",
+      "plants": 788,
+      "trees": 677,
+      "shrubs": 111,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0041.json",
+      "plants": 2388,
+      "trees": 2166,
+      "shrubs": 222,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0043.json",
+      "plants": 280,
+      "trees": 235,
+      "shrubs": 45,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0044.json",
+      "plants": 498,
+      "trees": 409,
+      "shrubs": 89,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0047.json",
+      "plants": 521,
+      "trees": 432,
+      "shrubs": 89,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0048.json",
+      "plants": 2776,
+      "trees": 2287,
+      "shrubs": 489,
+      "tiles": 7
+    },
+    {
+      "file": "world/v0049.json",
+      "plants": 379,
+      "trees": 321,
+      "shrubs": 58,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0057.json",
+      "plants": 36,
+      "trees": 21,
+      "shrubs": 15,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0058.json",
+      "plants": 12,
+      "trees": 9,
+      "shrubs": 3,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0059.json",
+      "plants": 51,
+      "trees": 31,
+      "shrubs": 20,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0065.json",
+      "plants": 19,
+      "trees": 13,
+      "shrubs": 6,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0071.json",
+      "plants": 274,
+      "trees": 187,
+      "shrubs": 87,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0072.json",
+      "plants": 181,
+      "trees": 137,
+      "shrubs": 44,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0083.json",
+      "plants": 11,
+      "trees": 8,
+      "shrubs": 3,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0087.json",
+      "plants": 192,
+      "trees": 160,
+      "shrubs": 32,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0092.json",
+      "plants": 29,
+      "trees": 20,
+      "shrubs": 9,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0096.json",
+      "plants": 10,
+      "trees": 5,
+      "shrubs": 5,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0097.json",
+      "plants": 62,
+      "trees": 40,
+      "shrubs": 22,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0104.json",
+      "plants": 90,
+      "trees": 49,
+      "shrubs": 41,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0105.json",
+      "plants": 352,
+      "trees": 221,
+      "shrubs": 131,
+      "tiles": 5
+    },
+    {
+      "file": "world/v0106.json",
+      "plants": 37,
+      "trees": 26,
+      "shrubs": 11,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0107.json",
+      "plants": 702,
+      "trees": 500,
+      "shrubs": 202,
+      "tiles": 7
+    },
+    {
+      "file": "world/v0108.json",
+      "plants": 1004,
+      "trees": 649,
+      "shrubs": 355,
+      "tiles": 7
+    },
+    {
+      "file": "world/v0109.json",
+      "plants": 230,
+      "trees": 166,
+      "shrubs": 64,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0110.json",
+      "plants": 71,
+      "trees": 42,
+      "shrubs": 29,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0111.json",
+      "plants": 84,
+      "trees": 50,
+      "shrubs": 34,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0112.json",
+      "plants": 21,
+      "trees": 15,
+      "shrubs": 6,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0124.json",
+      "plants": 622,
+      "trees": 490,
+      "shrubs": 132,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0142.json",
+      "plants": 162,
+      "trees": 137,
+      "shrubs": 25,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0143.json",
+      "plants": 20,
+      "trees": 16,
+      "shrubs": 4,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0151.json",
+      "plants": 150,
+      "trees": 125,
+      "shrubs": 25,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0152.json",
+      "plants": 656,
+      "trees": 550,
+      "shrubs": 106,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0158.json",
+      "plants": 56,
+      "trees": 32,
+      "shrubs": 24,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0185.json",
+      "plants": 67,
+      "trees": 46,
+      "shrubs": 21,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0186.json",
+      "plants": 2028,
+      "trees": 1805,
+      "shrubs": 223,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0188.json",
+      "plants": 291,
+      "trees": 242,
+      "shrubs": 49,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0189.json",
+      "plants": 3575,
+      "trees": 3148,
+      "shrubs": 427,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0190.json",
+      "plants": 1600,
+      "trees": 1419,
+      "shrubs": 181,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0194.json",
+      "plants": 1021,
+      "trees": 883,
+      "shrubs": 138,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0196.json",
+      "plants": 1071,
+      "trees": 973,
+      "shrubs": 98,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0197.json",
+      "plants": 1085,
+      "trees": 985,
+      "shrubs": 100,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0198.json",
+      "plants": 479,
+      "trees": 360,
+      "shrubs": 119,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0200.json",
+      "plants": 520,
+      "trees": 405,
+      "shrubs": 115,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0201.json",
+      "plants": 457,
+      "trees": 354,
+      "shrubs": 103,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0202.json",
+      "plants": 66,
+      "trees": 56,
+      "shrubs": 10,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0204.json",
+      "plants": 482,
+      "trees": 364,
+      "shrubs": 118,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0205.json",
+      "plants": 1080,
+      "trees": 938,
+      "shrubs": 142,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0207.json",
+      "plants": 219,
+      "trees": 203,
+      "shrubs": 16,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0209.json",
+      "plants": 1581,
+      "trees": 1400,
+      "shrubs": 181,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0210.json",
+      "plants": 4016,
+      "trees": 3521,
+      "shrubs": 495,
+      "tiles": 5
+    },
+    {
+      "file": "world/v0211.json",
+      "plants": 338,
+      "trees": 274,
+      "shrubs": 64,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0212.json",
+      "plants": 752,
+      "trees": 643,
+      "shrubs": 109,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0213.json",
+      "plants": 361,
+      "trees": 297,
+      "shrubs": 64,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0215.json",
+      "plants": 265,
+      "trees": 231,
+      "shrubs": 34,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0216.json",
+      "plants": 329,
+      "trees": 268,
+      "shrubs": 61,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0217.json",
+      "plants": 750,
+      "trees": 640,
+      "shrubs": 110,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0219.json",
+      "plants": 288,
+      "trees": 239,
+      "shrubs": 49,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0221.json",
+      "plants": 1884,
+      "trees": 1669,
+      "shrubs": 215,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0222.json",
+      "plants": 70,
+      "trees": 48,
+      "shrubs": 22,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0233.json",
+      "plants": 933,
+      "trees": 732,
+      "shrubs": 201,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0244.json",
+      "plants": 10,
+      "trees": 7,
+      "shrubs": 3,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0247.json",
+      "plants": 16,
+      "trees": 11,
+      "shrubs": 5,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0249.json",
+      "plants": 79,
+      "trees": 60,
+      "shrubs": 19,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0257.json",
+      "plants": 49,
+      "trees": 37,
+      "shrubs": 12,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0261.json",
+      "plants": 549,
+      "trees": 464,
+      "shrubs": 85,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0264.json",
+      "plants": 42,
+      "trees": 31,
+      "shrubs": 11,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0265.json",
+      "plants": 12,
+      "trees": 5,
+      "shrubs": 7,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0272.json",
+      "plants": 551,
+      "trees": 472,
+      "shrubs": 79,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0273.json",
+      "plants": 2482,
+      "trees": 2053,
+      "shrubs": 429,
+      "tiles": 6
+    },
+    {
+      "file": "world/v0274.json",
+      "plants": 1491,
+      "trees": 1217,
+      "shrubs": 274,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0284.json",
+      "plants": 1069,
+      "trees": 872,
+      "shrubs": 197,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0286.json",
+      "plants": 170,
+      "trees": 140,
+      "shrubs": 30,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0287.json",
+      "plants": 1005,
+      "trees": 902,
+      "shrubs": 103,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0288.json",
+      "plants": 1794,
+      "trees": 1553,
+      "shrubs": 241,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0289.json",
+      "plants": 239,
+      "trees": 183,
+      "shrubs": 56,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0290.json",
+      "plants": 665,
+      "trees": 585,
+      "shrubs": 80,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0291.json",
+      "plants": 249,
+      "trees": 197,
+      "shrubs": 52,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0294.json",
+      "plants": 1262,
+      "trees": 1177,
+      "shrubs": 85,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0295.json",
+      "plants": 672,
+      "trees": 628,
+      "shrubs": 44,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0296.json",
+      "plants": 72,
+      "trees": 71,
+      "shrubs": 1,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0304.json",
+      "plants": 5,
+      "trees": 5,
+      "shrubs": 0,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0309.json",
+      "plants": 771,
+      "trees": 703,
+      "shrubs": 68,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0310.json",
+      "plants": 362,
+      "trees": 335,
+      "shrubs": 27,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0316.json",
+      "plants": 55,
+      "trees": 35,
+      "shrubs": 20,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0320.json",
+      "plants": 714,
+      "trees": 522,
+      "shrubs": 192,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0322.json",
+      "plants": 128,
+      "trees": 96,
+      "shrubs": 32,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0323.json",
+      "plants": 1375,
+      "trees": 1166,
+      "shrubs": 209,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0324.json",
+      "plants": 3120,
+      "trees": 2306,
+      "shrubs": 814,
+      "tiles": 7
+    },
+    {
+      "file": "world/v0325.json",
+      "plants": 602,
+      "trees": 457,
+      "shrubs": 145,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0328.json",
+      "plants": 40,
+      "trees": 28,
+      "shrubs": 12,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0340.json",
+      "plants": 82,
+      "trees": 63,
+      "shrubs": 19,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0355.json",
+      "plants": 679,
+      "trees": 503,
+      "shrubs": 176,
+      "tiles": 4
+    },
+    {
+      "file": "world/v0367.json",
+      "plants": 647,
+      "trees": 573,
+      "shrubs": 74,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0372.json",
+      "plants": 282,
+      "trees": 228,
+      "shrubs": 54,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0377.json",
+      "plants": 458,
+      "trees": 368,
+      "shrubs": 90,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0380.json",
+      "plants": 128,
+      "trees": 101,
+      "shrubs": 27,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0381.json",
+      "plants": 581,
+      "trees": 518,
+      "shrubs": 63,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0382.json",
+      "plants": 1431,
+      "trees": 1261,
+      "shrubs": 170,
+      "tiles": 5
+    },
+    {
+      "file": "world/v0383.json",
+      "plants": 1248,
+      "trees": 1128,
+      "shrubs": 120,
+      "tiles": 7
+    },
+    {
+      "file": "world/v0384.json",
+      "plants": 2631,
+      "trees": 2292,
+      "shrubs": 339,
+      "tiles": 5
+    },
+    {
+      "file": "world/v0385.json",
+      "plants": 1228,
+      "trees": 1169,
+      "shrubs": 59,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0386.json",
+      "plants": 51,
+      "trees": 42,
+      "shrubs": 9,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0388.json",
+      "plants": 276,
+      "trees": 241,
+      "shrubs": 35,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0389.json",
+      "plants": 587,
+      "trees": 491,
+      "shrubs": 96,
+      "tiles": 3
+    },
+    {
+      "file": "world/v0390.json",
+      "plants": 153,
+      "trees": 137,
+      "shrubs": 16,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0403.json",
+      "plants": 765,
+      "trees": 694,
+      "shrubs": 71,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0408.json",
+      "plants": 550,
+      "trees": 506,
+      "shrubs": 44,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0409.json",
+      "plants": 554,
+      "trees": 492,
+      "shrubs": 62,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0414.json",
+      "plants": 283,
+      "trees": 253,
+      "shrubs": 30,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0420.json",
+      "plants": 291,
+      "trees": 269,
+      "shrubs": 22,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0423.json",
+      "plants": 134,
+      "trees": 123,
+      "shrubs": 11,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0424.json",
+      "plants": 113,
+      "trees": 106,
+      "shrubs": 7,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0425.json",
+      "plants": 358,
+      "trees": 332,
+      "shrubs": 26,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0426.json",
+      "plants": 133,
+      "trees": 127,
+      "shrubs": 6,
+      "tiles": 1
+    },
+    {
+      "file": "world/v0430.json",
+      "plants": 95,
+      "trees": 83,
+      "shrubs": 12,
+      "tiles": 2
+    },
+    {
+      "file": "world/v0431.json",
+      "plants": 729,
+      "trees": 691,
+      "shrubs": 38,
+      "tiles": 2
+    },
+    {
+      "file": "parks/grand-canyon/world/v0000.json",
+      "plants": 276,
+      "trees": 238,
+      "shrubs": 38,
+      "tiles": 1
+    },
+    {
+      "file": "parks/grand-canyon/world/v0001.json",
+      "plants": 557,
+      "trees": 467,
+      "shrubs": 90,
+      "tiles": 1
+    },
+    {
+      "file": "parks/grand-canyon/world/v0005.json",
+      "plants": 358,
+      "trees": 266,
+      "shrubs": 92,
+      "tiles": 1
+    },
+    {
+      "file": "parks/monument-valley/world/v0000.json",
+      "plants": 0,
+      "trees": 0,
+      "shrubs": 0,
+      "tiles": 0
+    },
+    {
+      "file": "parks/zion/world/v0000.json",
+      "plants": 935,
+      "trees": 852,
+      "shrubs": 83,
+      "tiles": 2
+    },
+    {
+      "file": "parks/zion/world/v0001.json",
+      "plants": 339,
+      "trees": 311,
+      "shrubs": 28,
+      "tiles": 1
+    },
+    {
+      "file": "detours/brian-head/world/v0001.json",
+      "plants": 1330,
+      "trees": 1137,
+      "shrubs": 193,
+      "tiles": 1
+    },
+    {
+      "file": "detours/brian-head/world/v0005.json",
+      "plants": 337,
+      "trees": 291,
+      "shrubs": 46,
+      "tiles": 2
+    },
+    {
+      "file": "detours/brian-head/world/v0010.json",
+      "plants": 289,
+      "trees": 262,
+      "shrubs": 27,
+      "tiles": 2
+    },
+    {
+      "file": "detours/brian-head/world/v0011.json",
+      "plants": 1272,
+      "trees": 1167,
+      "shrubs": 105,
+      "tiles": 2
+    },
+    {
+      "file": "detours/kern-river/world/v0000.json",
+      "plants": 3625,
+      "trees": 3091,
+      "shrubs": 534,
+      "tiles": 5
+    },
+    {
+      "file": "detours/kern-river/world/v0001.json",
+      "plants": 1549,
+      "trees": 1311,
+      "shrubs": 238,
+      "tiles": 3
+    },
+    {
+      "file": "detours/kern-river/world/v0014.json",
+      "plants": 138,
+      "trees": 114,
+      "shrubs": 24,
+      "tiles": 1
+    },
+    {
+      "file": "detours/kern-river/world/v0015.json",
+      "plants": 165,
+      "trees": 129,
+      "shrubs": 36,
+      "tiles": 2
+    },
+    {
+      "file": "detours/kern-river/world/v0016.json",
+      "plants": 1942,
+      "trees": 1581,
+      "shrubs": 361,
+      "tiles": 5
+    },
+    {
+      "file": "detours/kings-canyon/world/v0000.json",
+      "plants": 2158,
+      "trees": 1599,
+      "shrubs": 559,
+      "tiles": 8
+    },
+    {
+      "file": "detours/kings-canyon/world/v0001.json",
+      "plants": 510,
+      "trees": 409,
+      "shrubs": 101,
+      "tiles": 1
+    },
+    {
+      "file": "detours/kings-canyon/world/v0009.json",
+      "plants": 525,
+      "trees": 459,
+      "shrubs": 66,
+      "tiles": 1
+    },
+    {
+      "file": "detours/kings-canyon/world/v0020.json",
+      "plants": 505,
+      "trees": 442,
+      "shrubs": 63,
+      "tiles": 1
+    },
+    {
+      "file": "detours/kings-canyon/world/v0027.json",
+      "plants": 2013,
+      "trees": 1754,
+      "shrubs": 259,
+      "tiles": 2
+    },
+    {
+      "file": "detours/kings-canyon/world/v0028.json",
+      "plants": 6279,
+      "trees": 5532,
+      "shrubs": 747,
+      "tiles": 8
+    },
+    {
+      "file": "detours/kings-canyon/world/v0029.json",
+      "plants": 2403,
+      "trees": 1954,
+      "shrubs": 449,
+      "tiles": 3
+    },
+    {
+      "file": "detours/kings-canyon/world/v0031.json",
+      "plants": 652,
+      "trees": 544,
+      "shrubs": 108,
+      "tiles": 2
+    },
+    {
+      "file": "detours/kings-canyon/world/v0032.json",
+      "plants": 175,
+      "trees": 157,
+      "shrubs": 18,
+      "tiles": 1
+    },
+    {
+      "file": "detours/kings-canyon/world/v0033.json",
+      "plants": 451,
+      "trees": 371,
+      "shrubs": 80,
+      "tiles": 1
+    },
+    {
+      "file": "detours/kings-canyon/world/v0034.json",
+      "plants": 94,
+      "trees": 47,
+      "shrubs": 47,
+      "tiles": 4
+    },
+    {
+      "file": "detours/kings-canyon/world/v0035.json",
+      "plants": 2528,
+      "trees": 2109,
+      "shrubs": 419,
+      "tiles": 4
+    },
+    {
+      "file": "detours/kings-canyon/world/v0042.json",
+      "plants": 284,
+      "trees": 216,
+      "shrubs": 68,
+      "tiles": 5
+    },
+    {
+      "file": "detours/kings-canyon/world/v0043.json",
+      "plants": 932,
+      "trees": 780,
+      "shrubs": 152,
+      "tiles": 4
+    }
+  ]
+}

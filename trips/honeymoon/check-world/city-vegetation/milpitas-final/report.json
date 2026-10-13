@@ -1,0 +1,345 @@
+{
+  "frames": [
+    {
+      "name": "Heath",
+      "at": 0,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 1,
+        "triangles": 554617,
+        "drawCalls": 77,
+        "geometries": 77,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "HeathNear",
+      "at": 0.12,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 2,
+        "triangles": 520041,
+        "drawCalls": 73,
+        "geometries": 77,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "HeathTurn",
+      "at": 0.22,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 3,
+        "triangles": 486783,
+        "drawCalls": 70,
+        "geometries": 77,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Marylinn",
+      "at": 0.4,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 4,
+        "triangles": 732858,
+        "drawCalls": 112,
+        "geometries": 144,
+        "textures": 9,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "MarylinnNorth",
+      "at": 0.7,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 5,
+        "triangles": 1234492,
+        "drawCalls": 246,
+        "geometries": 297,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Milpitas",
+      "at": 1,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 6,
+        "triangles": 1106914,
+        "drawCalls": 211,
+        "geometries": 297,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Calaveras",
+      "at": 1.55,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 7,
+        "triangles": 1912171,
+        "drawCalls": 420,
+        "geometries": 529,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "TownAvenue",
+      "at": 2,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 8,
+        "triangles": 1398621,
+        "drawCalls": 267,
+        "geometries": 529,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "TownApproach",
+      "at": 2.8,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 9,
+        "triangles": 659756,
+        "drawCalls": 107,
+        "geometries": 529,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Jacklin",
+      "at": 3.4,
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 4053622463
+        },
+        "draws": 10,
+        "triangles": 438397,
+        "drawCalls": 70,
+        "geometries": 529,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1185 @@
+{
+  "frames": [
+    {
+      "name": "Heath",
+      "file": "Heath-0.png",
+      "pos": 20,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.35
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21202504419256352,
+          "sun": 1.954828611212676,
+          "ambient": 2.009034277757465,
+          "seed": 3911602225
+        },
+        "draws": 1,
+        "triangles": 549997,
+        "drawCalls": 125,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Heath",
+      "file": "Heath-1.png",
+      "pos": 50,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.37
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21122727099530691,
+          "sun": 1.9551502939535053,
+          "ambient": 2.008969941209299,
+          "seed": 3911602225
+        },
+        "draws": 31,
+        "triangles": 549717,
+        "drawCalls": 121,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Heath",
+      "file": "Heath-2.png",
+      "pos": 80,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.41
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21043151750086453,
+          "sun": 1.9554711622980385,
+          "ambient": 2.008905767540392,
+          "seed": 3911602225
+        },
+        "draws": 61,
+        "triangles": 515049,
+        "drawCalls": 116,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Heath",
+      "file": "Heath-3.png",
+      "pos": 110,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.53
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.2096377932527479,
+          "sun": 1.9557912123980856,
+          "ambient": 2.0088417575203827,
+          "seed": 3911602225
+        },
+        "draws": 91,
+        "triangles": 514677,
+        "drawCalls": 111,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Heath",
+      "file": "Heath-4.png",
+      "pos": 140,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.56
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20884610779447088,
+          "sun": 1.9561104404054552,
+          "ambient": 2.008777911918909,
+          "seed": 3911602225
+        },
+        "draws": 121,
+        "triangles": 514209,
+        "drawCalls": 104,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "HeathTurn",
+      "file": "HeathTurn-0.png",
+      "pos": 150,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.56
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.21055813906521936,
+          "sun": 1.9554201052156372,
+          "ambient": 2.0089159789568725,
+          "seed": 3911602225
+        },
+        "draws": 122,
+        "triangles": 514069,
+        "drawCalls": 102,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "HeathTurn",
+      "file": "HeathTurn-1.png",
+      "pos": 180,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.54
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20976409093530068,
+          "sun": 1.9557402859131852,
+          "ambient": 2.008851942817363,
+          "seed": 3911602225
+        },
+        "draws": 152,
+        "triangles": 488907,
+        "drawCalls": 96,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "HeathTurn",
+      "file": "HeathTurn-2.png",
+      "pos": 210,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.53
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.2089720800750161,
+          "sun": 1.956059645131042,
+          "ambient": 2.0087880709737918,
+          "seed": 3911602225
+        },
+        "draws": 182,
+        "triangles": 488831,
+        "drawCalls": 91,
+        "geometries": 125,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "HeathTurn",
+      "file": "HeathTurn-3.png",
+      "pos": 240,
+      "source": "",
+      "road": {
+        "road": "Heath Street",
+        "elev": 3.53
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.2081821160278775,
+          "sun": 1.956378179021017,
+          "ambient": 2.0087243641957966,
+          "seed": 3911602225
+        },
+        "draws": 212,
+        "triangles": 552721,
+        "drawCalls": 112,
+        "geometries": 143,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "HeathTurn",
+      "file": "HeathTurn-4.png",
+      "pos": 270,
+      "source": "",
+      "road": {
+        "road": "Marylinn Drive",
+        "elev": 3.78
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20739420833739763,
+          "sun": 1.9566958837349202,
+          "ambient": 2.008660823253016,
+          "seed": 3911602225
+        },
+        "draws": 242,
+        "triangles": 811214,
+        "drawCalls": 201,
+        "geometries": 248,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Marylinn",
+      "file": "Marylinn-0.png",
+      "pos": 650,
+      "source": "",
+      "road": {
+        "road": "Marylinn Drive",
+        "elev": 3.93
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20498075096159618,
+          "sun": 1.9576690520316145,
+          "ambient": 2.008466189593677,
+          "seed": 3911602225
+        },
+        "draws": 243,
+        "triangles": 770919,
+        "drawCalls": 211,
+        "geometries": 322,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Marylinn",
+      "file": "Marylinn-1.png",
+      "pos": 680,
+      "source": "",
+      "road": {
+        "road": "Marylinn Drive",
+        "elev": 4.49
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.2042013313642267,
+          "sun": 1.957983334127328,
+          "ambient": 2.0084033331745346,
+          "seed": 3911602225
+        },
+        "draws": 273,
+        "triangles": 1118189,
+        "drawCalls": 512,
+        "geometries": 624,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Marylinn",
+      "file": "Marylinn-2.png",
+      "pos": 710,
+      "source": "",
+      "road": {
+        "road": "Marylinn Drive",
+        "elev": 4.88
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20342401660118126,
+          "sun": 1.9582967674995237,
+          "ambient": 2.0083406465000953,
+          "seed": 3911602225
+        },
+        "draws": 303,
+        "triangles": 1349580,
+        "drawCalls": 647,
+        "geometries": 751,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Marylinn",
+      "file": "Marylinn-3.png",
+      "pos": 740,
+      "source": "",
+      "road": {
+        "road": "Marylinn Drive",
+        "elev": 4.83
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20264881621597242,
+          "sun": 1.958609348300011,
+          "ambient": 2.0082781303399977,
+          "seed": 3911602225
+        },
+        "draws": 333,
+        "triangles": 1350706,
+        "drawCalls": 661,
+        "geometries": 771,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Marylinn",
+      "file": "Marylinn-4.png",
+      "pos": 770,
+      "source": "",
+      "road": {
+        "road": "Marylinn Drive",
+        "elev": 4.59
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.2018757397521126,
+          "sun": 1.9589210726805997,
+          "ambient": 2.00821578546388,
+          "seed": 3911602225
+        },
+        "draws": 363,
+        "triangles": 1796020,
+        "drawCalls": 914,
+        "geometries": 1036,
+        "textures": 11,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Calaveras",
+      "file": "Calaveras-0.png",
+      "pos": 1520,
+      "source": "",
+      "road": {
+        "road": "North Abel Street",
+        "elev": 4.9
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1955284309129638,
+          "sun": 1.961480471406063,
+          "ambient": 2.0077039057187873,
+          "seed": 3911602225
+        },
+        "draws": 364,
+        "triangles": 2064122,
+        "drawCalls": 1172,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Calaveras",
+      "file": "Calaveras-1.png",
+      "pos": 1550,
+      "source": "",
+      "road": {
+        "road": "North Abel Street",
+        "elev": 5.88
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.19477560521503734,
+          "sun": 1.961784030155227,
+          "ambient": 2.0076431939689545,
+          "seed": 3911602225
+        },
+        "draws": 394,
+        "triangles": 1907059,
+        "drawCalls": 1106,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Calaveras",
+      "file": "Calaveras-2.png",
+      "pos": 1580,
+      "source": "",
+      "road": {
+        "road": "North Abel Street",
+        "elev": 7.21
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.19402500191399574,
+          "sun": 1.9620866927766145,
+          "ambient": 2.007582661444677,
+          "seed": 3911602225
+        },
+        "draws": 424,
+        "triangles": 1903001,
+        "drawCalls": 1078,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Calaveras",
+      "file": "Calaveras-3.png",
+      "pos": 1610,
+      "source": "",
+      "road": {
+        "road": "North Abel Street",
+        "elev": 8.69
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.19327663055335276,
+          "sun": 1.9623884554220352,
+          "ambient": 2.007522308915593,
+          "seed": 3911602225
+        },
+        "draws": 454,
+        "triangles": 1675233,
+        "drawCalls": 895,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Calaveras",
+      "file": "Calaveras-4.png",
+      "pos": 1640,
+      "source": "",
+      "road": {
+        "road": "North Abel Street",
+        "elev": 10.18
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.19253050067662025,
+          "sun": 1.9626893142432982,
+          "ambient": 2.0074621371513404,
+          "seed": 3911602225
+        },
+        "draws": 484,
+        "triangles": 1530016,
+        "drawCalls": 774,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "MilpitasNorth",
+      "file": "MilpitasNorth-0.png",
+      "pos": 2760,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 7.46
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.18264090628286656,
+          "sun": 1.966677053918199,
+          "ambient": 2.0066645892163604,
+          "seed": 3911602225
+        },
+        "draws": 485,
+        "triangles": 664784,
+        "drawCalls": 221,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "MilpitasNorth",
+      "file": "MilpitasNorth-1.png",
+      "pos": 2790,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 7.44
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.18192848756020785,
+          "sun": 1.9669643195321742,
+          "ambient": 2.006607136093565,
+          "seed": 3911602225
+        },
+        "draws": 515,
+        "triangles": 656400,
+        "drawCalls": 214,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "MilpitasNorth",
+      "file": "MilpitasNorth-2.png",
+      "pos": 2820,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 7.43
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1812184587948671,
+          "sun": 1.9672506214536827,
+          "ambient": 2.0065498757092635,
+          "seed": 3911602225
+        },
+        "draws": 545,
+        "triangles": 645772,
+        "drawCalls": 206,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "MilpitasNorth",
+      "file": "MilpitasNorth-3.png",
+      "pos": 2850,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 7.49
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.18051082953035658,
+          "sun": 1.9675359558345336,
+          "ambient": 2.006492808833093,
+          "seed": 3911602225
+        },
+        "draws": 575,
+        "triangles": 645480,
+        "drawCalls": 198,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "MilpitasNorth",
+      "file": "MilpitasNorth-4.png",
+      "pos": 2880,
+      "source": "",
+      "road": {
+        "road": "Jacklin Road",
+        "elev": 7.61
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.17980560931018907,
+          "sun": 1.9678203188265366,
+          "ambient": 2.0064359362346926,
+          "seed": 3911602225
+        },
+        "draws": 605,
+        "triangles": 628188,
+        "drawCalls": 190,
+        "geometries": 1412,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "CityChunkSeam",
+      "file": "CityChunkSeam-0.png",
+      "pos": 9970,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 42.05
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.12388622989309872,
+          "sun": 1.9903684556882666,
+          "ambient": 2.0019263088623465,
+          "seed": 3911602225
+        },
+        "draws": 606,
+        "triangles": 536417,
+        "drawCalls": 168,
+        "geometries": 1430,
+        "textures": 12,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "CityChunkSeam",
+      "file": "CityChunkSeam-1.png",
+      "pos": 10000,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 41.66
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.12346704271062858,
+          "sun": 1.9905374827779723,
+          "ambient": 2.0018925034444055,
+          "seed": 3911602225
+        },
+        "draws": 636,
+        "triangles": 1817616,
+        "drawCalls": 970,
+        "geometries": 2399,
+        "textures": 14,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 7078,
+        "shrubs": 613,
+        "urbanPlants": 3847,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13114.230285356642,
+            "x": -2764.7391233491744,
+            "y": -420.5527809212045,
+            "z": 60.2755834069236,
+            "phase": 5.2267812316638205,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "CityChunkSeam",
+      "file": "CityChunkSeam-2.png",
+      "pos": 10030,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 41.25
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.12305121976831346,
+          "sun": 1.9907051533192284,
+          "ambient": 2.0018589693361544,
+          "seed": 3911602225
+        },
+        "draws": 666,
+        "triangles": 1802616,
+        "drawCalls": 962,
+        "geometries": 2399,
+        "textures": 14,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 7078,
+        "shrubs": 613,
+        "urbanPlants": 3847,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13114.230285356642,
+            "x": -2764.7391233491744,
+            "y": -420.5527809212045,
+            "z": 60.2755834069236,
+            "phase": 5.2267812316638205,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "CityChunkSeam",
+      "file": "CityChunkSeam-3.png",
+      "pos": 10060,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 40.84
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.12263877060966566,
+          "sun": 1.9908714634638445,
+          "ambient": 2.001825707307231,
+          "seed": 3911602225
+        },
+        "draws": 696,
+        "triangles": 1782743,
+        "drawCalls": 950,
+        "geometries": 2399,
+        "textures": 14,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 7078,
+        "shrubs": 613,
+        "urbanPlants": 3847,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13114.230285356642,
+            "x": -2764.7391233491744,
+            "y": -420.5527809212045,
+            "z": 60.2755834069236,
+            "phase": 5.2267812316638205,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "CityChunkSeam",
+      "file": "CityChunkSeam-4.png",
+      "pos": 10090,
+      "source": "",
+      "road": {
+        "road": "",
+        "elev": 40.42
+      },
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1222297047781975,
+          "sun": 1.99103640936363,
+          "ambient": 2.001792718127274,
+          "seed": 3911602225
+        },
+        "draws": 726,
+        "triangles": 1782691,
+        "drawCalls": 946,
+        "geometries": 2399,
+        "textures": 14,
+        "buildings": 1651,
+        "observedWalls": 0,
+        "trees": 7078,
+        "shrubs": 613,
+        "urbanPlants": 3847,
+        "roadside": 105,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 13114.230285356642,
+            "x": -2764.7391233491744,
+            "y": -420.5527809212045,
+            "z": 60.2755834069236,
+            "phase": 5.2267812316638205,
+            "count": 3
+          }
+        ],
+        "detailPatches": 2,
+        "relief": [
+          0,
+          810.5
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

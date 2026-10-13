@@ -1,0 +1,1725 @@
+{
+  "frames": [
+    {
+      "name": "Milpitas, California",
+      "at": 0,
+      "angle": 0,
+      "file": "00-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 1,
+        "triangles": 554617,
+        "drawCalls": 77,
+        "geometries": 77,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 9929.008028811963,
+            "x": -2.9114684467678016,
+            "y": 3132.03524198839,
+            "z": 84.13690452251217,
+            "phase": 4.199544755369923,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Milpitas, California",
+      "at": 0,
+      "angle": 35,
+      "file": "00-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 2,
+        "triangles": 495526,
+        "drawCalls": 67,
+        "geometries": 84,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 0,
+        "trees": 7465,
+        "shrubs": 1135,
+        "urbanPlants": 7076,
+        "roadside": 56,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 9929.008028811963,
+            "x": -2.9114684467678016,
+            "y": 3132.03524198839,
+            "z": 84.13690452251217,
+            "phase": 4.199544755369923,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Stockton, California",
+      "at": 107003,
+      "angle": 0,
+      "file": "01-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2510303567415315,
+          "sun": 1.697939286516937,
+          "ambient": 2.0604121426966127,
+          "seed": 73124
+        },
+        "draws": 3,
+        "triangles": 401116,
+        "drawCalls": 77,
+        "geometries": 77,
+        "textures": 11,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 4843,
+        "shrubs": 427,
+        "urbanPlants": 2725,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 106791.27524730923,
+            "x": -541.7136871399202,
+            "y": 2968.4228987930815,
+            "z": 46.383670817819166,
+            "phase": 3.336228500016904,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Stockton, California",
+      "at": 107003,
+      "angle": 35,
+      "file": "01-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2510303567415315,
+          "sun": 1.697939286516937,
+          "ambient": 2.0604121426966127,
+          "seed": 73124
+        },
+        "draws": 4,
+        "triangles": 450742,
+        "drawCalls": 84,
+        "geometries": 101,
+        "textures": 11,
+        "buildings": 2105,
+        "observedWalls": 0,
+        "trees": 4843,
+        "shrubs": 427,
+        "urbanPlants": 2725,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 106791.27524730923,
+            "x": -541.7136871399202,
+            "y": 2968.4228987930815,
+            "z": 46.383670817819166,
+            "phase": 3.336228500016904,
+            "count": 2
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Fresno, California",
+      "at": 306790.32795742975,
+      "angle": 0,
+      "file": "02-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.5052493473298361,
+          "sun": 1.836593005108937,
+          "ambient": 2.0326813989782124,
+          "seed": 73124
+        },
+        "draws": 33,
+        "triangles": 900960,
+        "drawCalls": 263,
+        "geometries": 263,
+        "textures": 35,
+        "buildings": 1004,
+        "observedWalls": 0,
+        "trees": 2696,
+        "shrubs": 362,
+        "urbanPlants": 1702,
+        "roadside": 332,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          68.4,
+          102.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Fresno, California",
+      "at": 306790.32795742975,
+      "angle": 35,
+      "file": "02-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.5052493473298361,
+          "sun": 1.836593005108937,
+          "ambient": 2.0326813989782124,
+          "seed": 73124
+        },
+        "draws": 34,
+        "triangles": 995411,
+        "drawCalls": 272,
+        "geometries": 289,
+        "textures": 35,
+        "buildings": 1004,
+        "observedWalls": 0,
+        "trees": 2696,
+        "shrubs": 362,
+        "urbanPlants": 1702,
+        "roadside": 332,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          68.4,
+          102.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Three Rivers · CA-198",
+      "at": 595625.5058529844,
+      "angle": 0,
+      "file": "03-0.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 73124
+        },
+        "draws": 35,
+        "triangles": 894799,
+        "drawCalls": 200,
+        "geometries": 200,
+        "textures": 35,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 24584,
+        "shrubs": 747,
+        "urbanPlants": 6279,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 286421.8582319987,
+            "x": -1043.4233661426995,
+            "y": 155.56291159993444,
+            "z": 343.1077753823754,
+            "phase": 5.868494761699552,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Three Rivers · CA-198",
+      "at": 595625.5058529844,
+      "angle": 35,
+      "file": "03-35.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1,
+          "sun": 2,
+          "ambient": 2,
+          "seed": 73124
+        },
+        "draws": 36,
+        "triangles": 904146,
+        "drawCalls": 194,
+        "geometries": 217,
+        "textures": 35,
+        "buildings": 1769,
+        "observedWalls": 0,
+        "trees": 24584,
+        "shrubs": 747,
+        "urbanPlants": 6279,
+        "roadside": 158,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 286421.8582319987,
+            "x": -1043.4233661426995,
+            "y": 155.56291159993444,
+            "z": 343.1077753823754,
+            "phase": 5.868494761699552,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          207.9,
+          1659.7
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Lindsay · CA-65",
+      "at": 642399.2606492019,
+      "angle": 0,
+      "file": "04-0.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.21770645900422247,
+          "sun": 1.764587081991555,
+          "ambient": 2.047082583601689,
+          "seed": 73124
+        },
+        "draws": 37,
+        "triangles": 1157485,
+        "drawCalls": 274,
+        "geometries": 274,
+        "textures": 35,
+        "buildings": 2624,
+        "observedWalls": 0,
+        "trees": 3403,
+        "shrubs": 80,
+        "urbanPlants": 451,
+        "roadside": 310,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 340516.54409303045,
+            "x": 1631.4269084660798,
+            "y": -4335.717916658325,
+            "z": 162.13798617132008,
+            "phase": 2.479860002500171,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          95,
+          167.2
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Lindsay · CA-65",
+      "at": 642399.2606492019,
+      "angle": 35,
+      "file": "04-35.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.21770645900422247,
+          "sun": 1.764587081991555,
+          "ambient": 2.047082583601689,
+          "seed": 73124
+        },
+        "draws": 38,
+        "triangles": 1327287,
+        "drawCalls": 283,
+        "geometries": 324,
+        "textures": 35,
+        "buildings": 2624,
+        "observedWalls": 0,
+        "trees": 3403,
+        "shrubs": 80,
+        "urbanPlants": 451,
+        "roadside": 310,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 340516.54409303045,
+            "x": 1631.4269084660798,
+            "y": -4335.717916658325,
+            "z": 162.13798617132008,
+            "phase": 2.479860002500171,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          95,
+          167.2
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Porterville · CA-65",
+      "at": 660467.843859212,
+      "angle": 0,
+      "file": "05-0.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2858363423699015,
+          "sun": 1.628327315260197,
+          "ambient": 2.0743345369479607,
+          "seed": 73124
+        },
+        "draws": 39,
+        "triangles": 2174260,
+        "drawCalls": 326,
+        "geometries": 326,
+        "textures": 35,
+        "buildings": 17344,
+        "observedWalls": 0,
+        "trees": 3428,
+        "shrubs": 419,
+        "urbanPlants": 2528,
+        "roadside": 90,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 356025.87926058035,
+            "x": -94.81267592017562,
+            "y": -828.6011242417753,
+            "z": 170.16942461505533,
+            "phase": 3.2804889790649803,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          115.9,
+          348.2
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Porterville · CA-65",
+      "at": 660467.843859212,
+      "angle": 35,
+      "file": "05-35.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2858363423699015,
+          "sun": 1.628327315260197,
+          "ambient": 2.0743345369479607,
+          "seed": 73124
+        },
+        "draws": 40,
+        "triangles": 1872950,
+        "drawCalls": 253,
+        "geometries": 375,
+        "textures": 35,
+        "buildings": 17344,
+        "observedWalls": 0,
+        "trees": 3428,
+        "shrubs": 419,
+        "urbanPlants": 2528,
+        "roadside": 90,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 356025.87926058035,
+            "x": -94.81267592017562,
+            "y": -828.6011242417753,
+            "z": 170.16942461505533,
+            "phase": 3.2804889790649803,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          115.9,
+          348.2
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Bakersfield, California",
+      "at": 740887.3424990987,
+      "angle": 0,
+      "file": "06-0.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.72,
+          "sun": 1.75,
+          "ambient": 2.05,
+          "seed": 73124
+        },
+        "draws": 29,
+        "triangles": 1642248,
+        "drawCalls": 180,
+        "geometries": 180,
+        "textures": 35,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1851,
+        "shrubs": 152,
+        "urbanPlants": 932,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Bakersfield, California",
+      "at": 740887.3424990987,
+      "angle": 35,
+      "file": "06-35.png",
+      "stats": {
+        "source": "detours/kings-canyon",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.72,
+          "sun": 1.75,
+          "ambient": 2.05,
+          "seed": 73124
+        },
+        "draws": 30,
+        "triangles": 1777617,
+        "drawCalls": 218,
+        "geometries": 260,
+        "textures": 35,
+        "buildings": 33508,
+        "observedWalls": 0,
+        "trees": 1851,
+        "shrubs": 152,
+        "urbanPlants": 932,
+        "roadside": 168,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          107.5,
+          161.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Ridgecrest",
+      "at": 906143.7582149196,
+      "angle": 0,
+      "file": "07-0.png",
+      "stats": {
+        "source": "detours/kern-river",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.6646187784585003,
+          "sun": 1.395051308794464,
+          "ambient": 2.1344330424901194,
+          "seed": 73124
+        },
+        "draws": 31,
+        "triangles": 1386470,
+        "drawCalls": 294,
+        "geometries": 294,
+        "textures": 35,
+        "buildings": 13145,
+        "observedWalls": 0,
+        "trees": 1943,
+        "shrubs": 361,
+        "urbanPlants": 1942,
+        "roadside": 655,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 170563.0878914059,
+            "x": 3200.5490788809248,
+            "y": -2417.879336109301,
+            "z": 747.1411780528558,
+            "phase": 2.1870346818587647,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.6,
+          964.8
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Ridgecrest",
+      "at": 906143.7582149196,
+      "angle": 35,
+      "file": "07-35.png",
+      "stats": {
+        "source": "detours/kern-river",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.6646187784585003,
+          "sun": 1.395051308794464,
+          "ambient": 2.1344330424901194,
+          "seed": 73124
+        },
+        "draws": 32,
+        "triangles": 1749366,
+        "drawCalls": 430,
+        "geometries": 512,
+        "textures": 35,
+        "buildings": 13145,
+        "observedWalls": 0,
+        "trees": 1943,
+        "shrubs": 361,
+        "urbanPlants": 1942,
+        "roadside": 655,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 170563.0878914059,
+            "x": 3200.5490788809248,
+            "y": -2417.879336109301,
+            "z": 747.1411780528558,
+            "phase": 2.1870346818587647,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.6,
+          964.8
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Las Vegas, Nevada",
+      "at": 1437164.0372522576,
+      "angle": 0,
+      "file": "08-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.6707199136866706,
+          "sun": 1.732399969173811,
+          "ambient": 2.0535200061652374,
+          "seed": 73124
+        },
+        "draws": 5,
+        "triangles": 1712795,
+        "drawCalls": 374,
+        "geometries": 374,
+        "textures": 16,
+        "buildings": 1742,
+        "observedWalls": 8,
+        "trees": 500,
+        "shrubs": 202,
+        "urbanPlants": 702,
+        "roadside": 577,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1073806.2400717565,
+            "x": -1445.769866756653,
+            "y": 767.3658083639028,
+            "z": 670.0503460106072,
+            "phase": 1.9912715180743612,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Las Vegas, Nevada",
+      "at": 1437164.0372522576,
+      "angle": 35,
+      "file": "08-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.6707199136866706,
+          "sun": 1.732399969173811,
+          "ambient": 2.0535200061652374,
+          "seed": 73124
+        },
+        "draws": 6,
+        "triangles": 1527559,
+        "drawCalls": 241,
+        "geometries": 477,
+        "textures": 16,
+        "buildings": 1742,
+        "observedWalls": 8,
+        "trees": 500,
+        "shrubs": 202,
+        "urbanPlants": 702,
+        "roadside": 577,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1073806.2400717565,
+            "x": -1445.769866756653,
+            "y": 767.3658083639028,
+            "z": 670.0503460106072,
+            "phase": 1.9912715180743612,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Kingman, Arizona",
+      "at": 1604645.0372522576,
+      "angle": 0,
+      "file": "09-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.4918430260452433,
+          "sun": 1.4501226359021537,
+          "ambient": 2.115970567383483,
+          "seed": 73124
+        },
+        "draws": 7,
+        "triangles": 879820,
+        "drawCalls": 273,
+        "geometries": 273,
+        "textures": 17,
+        "buildings": 464,
+        "observedWalls": 0,
+        "trees": 1784,
+        "shrubs": 132,
+        "urbanPlants": 622,
+        "roadside": 269,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1247960.209648501,
+            "x": 478.9812625608593,
+            "y": 1223.8945086102326,
+            "z": 1107.3246801823698,
+            "phase": 2.721434423993055,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          943.6,
+          1322.1
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Kingman, Arizona",
+      "at": 1604645.0372522576,
+      "angle": 35,
+      "file": "09-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.4918430260452433,
+          "sun": 1.4501226359021537,
+          "ambient": 2.115970567383483,
+          "seed": 73124
+        },
+        "draws": 8,
+        "triangles": 935332,
+        "drawCalls": 274,
+        "geometries": 320,
+        "textures": 17,
+        "buildings": 464,
+        "observedWalls": 0,
+        "trees": 1784,
+        "shrubs": 132,
+        "urbanPlants": 622,
+        "roadside": 269,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1247960.209648501,
+            "x": 478.9812625608593,
+            "y": 1223.8945086102326,
+            "z": 1107.3246801823698,
+            "phase": 2.721434423993055,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          943.6,
+          1322.1
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Kanab, Utah",
+      "at": 2322118.5737477983,
+      "angle": 0,
+      "file": "10-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.6429462790747367,
+          "sun": 1.4182718438484962,
+          "ambient": 2.129272923589223,
+          "seed": 73124
+        },
+        "draws": 9,
+        "triangles": 580547,
+        "drawCalls": 125,
+        "geometries": 125,
+        "textures": 24,
+        "buildings": 763,
+        "observedWalls": 1,
+        "trees": 5503,
+        "shrubs": 223,
+        "urbanPlants": 2028,
+        "roadside": 104,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Kanab, Utah",
+      "at": 2322118.5737477983,
+      "angle": 35,
+      "file": "10-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "soft overcast",
+          "cloudCover": 0.6429462790747367,
+          "sun": 1.4182718438484962,
+          "ambient": 2.129272923589223,
+          "seed": 73124
+        },
+        "draws": 10,
+        "triangles": 1057990,
+        "drawCalls": 304,
+        "geometries": 321,
+        "textures": 24,
+        "buildings": 763,
+        "observedWalls": 1,
+        "trees": 5503,
+        "shrubs": 223,
+        "urbanPlants": 2028,
+        "roadside": 104,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Panguitch, Utah",
+      "at": 2497720.783109866,
+      "angle": 0,
+      "file": "11-0.png",
+      "stats": {
+        "source": "detours/brian-head",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3123814564829349,
+          "sun": 1.6044219487439055,
+          "ambient": 2.079115610251219,
+          "seed": 73124
+        },
+        "draws": 11,
+        "triangles": 459511,
+        "drawCalls": 100,
+        "geometries": 100,
+        "textures": 23,
+        "buildings": 1579,
+        "observedWalls": 0,
+        "trees": 2997,
+        "shrubs": 105,
+        "urbanPlants": 1272,
+        "roadside": 17,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1995.7,
+          2246
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Panguitch, Utah",
+      "at": 2497720.783109866,
+      "angle": 35,
+      "file": "11-35.png",
+      "stats": {
+        "source": "detours/brian-head",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3123814564829349,
+          "sun": 1.6044219487439055,
+          "ambient": 2.079115610251219,
+          "seed": 73124
+        },
+        "draws": 12,
+        "triangles": 438137,
+        "drawCalls": 93,
+        "geometries": 114,
+        "textures": 23,
+        "buildings": 1579,
+        "observedWalls": 0,
+        "trees": 2997,
+        "shrubs": 105,
+        "urbanPlants": 1272,
+        "roadside": 17,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1995.7,
+          2246
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Glen Canyon · Page, Arizona",
+      "at": 2945293.893201079,
+      "angle": 0,
+      "file": "12-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.100079455952223,
+          "sun": 1.999841088095554,
+          "ambient": 2.0000317823808893,
+          "seed": 73124
+        },
+        "draws": 27,
+        "triangles": 828245,
+        "drawCalls": 124,
+        "geometries": 124,
+        "textures": 34,
+        "buildings": 567,
+        "observedWalls": 0,
+        "trees": 1343,
+        "shrubs": 201,
+        "urbanPlants": 933,
+        "roadside": 122,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2331725.775330422,
+            "x": -1876.0250925065754,
+            "y": 1844.0524228822392,
+            "z": 1214.4620459578719,
+            "phase": 1.4991437666810183,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          954.5,
+          1403
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Glen Canyon · Page, Arizona",
+      "at": 2945293.893201079,
+      "angle": 35,
+      "file": "12-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.100079455952223,
+          "sun": 1.999841088095554,
+          "ambient": 2.0000317823808893,
+          "seed": 73124
+        },
+        "draws": 28,
+        "triangles": 1231863,
+        "drawCalls": 313,
+        "geometries": 372,
+        "textures": 35,
+        "buildings": 567,
+        "observedWalls": 0,
+        "trees": 1343,
+        "shrubs": 201,
+        "urbanPlants": 933,
+        "roadside": 122,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2331725.775330422,
+            "x": -1876.0250925065754,
+            "y": 1844.0524228822392,
+            "z": 1214.4620459578719,
+            "phase": 1.4991437666810183,
+            "count": 3
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          954.5,
+          1403
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Aztec, New Mexico",
+      "at": 3618372.3726884536,
+      "angle": 0,
+      "file": "13-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.47466739997406576,
+          "sun": 1.463541093770261,
+          "ambient": 2.1127501374951376,
+          "seed": 73124
+        },
+        "draws": 13,
+        "triangles": 896627,
+        "drawCalls": 184,
+        "geometries": 184,
+        "textures": 27,
+        "buildings": 870,
+        "observedWalls": 0,
+        "trees": 6393,
+        "shrubs": 85,
+        "urbanPlants": 1262,
+        "roadside": 35,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2945982.3707853877,
+            "x": -1842.482111853689,
+            "y": 76.3015515802959,
+            "z": 1749.8408794296179,
+            "phase": 5.694927115361827,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1694.1,
+          1948.7
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Aztec, New Mexico",
+      "at": 3618372.3726884536,
+      "angle": 35,
+      "file": "13-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.47466739997406576,
+          "sun": 1.463541093770261,
+          "ambient": 2.1127501374951376,
+          "seed": 73124
+        },
+        "draws": 14,
+        "triangles": 668886,
+        "drawCalls": 154,
+        "geometries": 200,
+        "textures": 27,
+        "buildings": 870,
+        "observedWalls": 0,
+        "trees": 6393,
+        "shrubs": 85,
+        "urbanPlants": 1262,
+        "roadside": 35,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2945982.3707853877,
+            "x": -1842.482111853689,
+            "y": 76.3015515802959,
+            "z": 1749.8408794296179,
+            "phase": 5.694927115361827,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1694.1,
+          1948.7
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Albuquerque, New Mexico",
+      "at": 3906346.3726884536,
+      "angle": 0,
+      "file": "14-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20943316326142836,
+          "sun": 1.882750182219898,
+          "ambient": 2.026055515062245,
+          "seed": 73124
+        },
+        "draws": 15,
+        "triangles": 1864623,
+        "drawCalls": 521,
+        "geometries": 521,
+        "textures": 28,
+        "buildings": 1525,
+        "observedWalls": 18,
+        "trees": 1990,
+        "shrubs": 209,
+        "urbanPlants": 1375,
+        "roadside": 785,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1504.4,
+          1627.5
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Albuquerque, New Mexico",
+      "at": 3906346.3726884536,
+      "angle": 35,
+      "file": "14-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.20943316326142836,
+          "sun": 1.882750182219898,
+          "ambient": 2.026055515062245,
+          "seed": 73124
+        },
+        "draws": 16,
+        "triangles": 1205944,
+        "drawCalls": 257,
+        "geometries": 549,
+        "textures": 28,
+        "buildings": 1525,
+        "observedWalls": 18,
+        "trees": 1990,
+        "shrubs": 209,
+        "urbanPlants": 1375,
+        "roadside": 785,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1504.4,
+          1627.5
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Vaughn, New Mexico",
+      "at": 4073972.3726884536,
+      "angle": 0,
+      "file": "15-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 17,
+        "triangles": 1214103,
+        "drawCalls": 233,
+        "geometries": 233,
+        "textures": 27,
+        "buildings": 78,
+        "observedWalls": 0,
+        "trees": 70,
+        "shrubs": 19,
+        "urbanPlants": 82,
+        "roadside": 17,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3400539.8806259767,
+            "x": -2643.3212565897015,
+            "y": 3655.4682190918506,
+            "z": 1882.4922978958634,
+            "phase": 4.196806087876287,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1720.4,
+          1854.5
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Vaughn, New Mexico",
+      "at": 4073972.3726884536,
+      "angle": 35,
+      "file": "15-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.3,
+          "sun": 1.6,
+          "ambient": 2.08,
+          "seed": 73124
+        },
+        "draws": 18,
+        "triangles": 1749281,
+        "drawCalls": 286,
+        "geometries": 317,
+        "textures": 27,
+        "buildings": 78,
+        "observedWalls": 0,
+        "trees": 70,
+        "shrubs": 19,
+        "urbanPlants": 82,
+        "roadside": 17,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3400539.8806259767,
+            "x": -2643.3212565897015,
+            "y": 3655.4682190918506,
+            "z": 1882.4922978958634,
+            "phase": 4.196806087876287,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1720.4,
+          1854.5
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Roswell, New Mexico",
+      "at": 4229563.372688454,
+      "angle": 0,
+      "file": "16-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.72,
+          "sun": 1.75,
+          "ambient": 2.05,
+          "seed": 73124
+        },
+        "draws": 19,
+        "triangles": 424580,
+        "drawCalls": 77,
+        "geometries": 77,
+        "textures": 28,
+        "buildings": 603,
+        "observedWalls": 22,
+        "trees": 1945,
+        "shrubs": 176,
+        "urbanPlants": 679,
+        "roadside": 178,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3557457.5022560596,
+            "x": -1118.997761988923,
+            "y": -3212.55520304536,
+            "z": 1118.9118103114713,
+            "phase": 5.364047048627498,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1066.1,
+          1108.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Roswell, New Mexico",
+      "at": 4229563.372688454,
+      "angle": 35,
+      "file": "16-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.72,
+          "sun": 1.75,
+          "ambient": 2.05,
+          "seed": 73124
+        },
+        "draws": 20,
+        "triangles": 401626,
+        "drawCalls": 70,
+        "geometries": 91,
+        "textures": 28,
+        "buildings": 603,
+        "observedWalls": 22,
+        "trees": 1945,
+        "shrubs": 176,
+        "urbanPlants": 679,
+        "roadside": 178,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3557457.5022560596,
+            "x": -1118.997761988923,
+            "y": -3212.55520304536,
+            "z": 1118.9118103114713,
+            "phase": 5.364047048627498,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1066.1,
+          1108.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Lubbock, Texas",
+      "at": 4510705.372688454,
+      "angle": 0,
+      "file": "17-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2970628041171712,
+          "sun": 1.6058743917656577,
+          "ambient": 2.0788251216468687,
+          "seed": 73124
+        },
+        "draws": 21,
+        "triangles": 756314,
+        "drawCalls": 93,
+        "geometries": 93,
+        "textures": 29,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 8089,
+        "shrubs": 120,
+        "urbanPlants": 1248,
+        "roadside": 198,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Lubbock, Texas",
+      "at": 4510705.372688454,
+      "angle": 35,
+      "file": "17-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "hazy sunshine",
+          "cloudCover": 0.2970628041171712,
+          "sun": 1.6058743917656577,
+          "ambient": 2.0788251216468687,
+          "seed": 73124
+        },
+        "draws": 22,
+        "triangles": 1266249,
+        "drawCalls": 273,
+        "geometries": 294,
+        "textures": 32,
+        "buildings": 1243,
+        "observedWalls": 7,
+        "trees": 8089,
+        "shrubs": 120,
+        "urbanPlants": 1248,
+        "roadside": 198,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Jacksboro, Texas",
+      "at": 4880580.372688454,
+      "angle": 0,
+      "file": "18-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1885831179336921,
+          "sun": 1.9642810008331888,
+          "ambient": 2.0071437998333623,
+          "seed": 73124
+        },
+        "draws": 23,
+        "triangles": 465336,
+        "drawCalls": 76,
+        "geometries": 76,
+        "textures": 32,
+        "buildings": 81,
+        "observedWalls": 0,
+        "trees": 22755,
+        "shrubs": 22,
+        "urbanPlants": 291,
+        "roadside": 16,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 4209653.249659795,
+            "x": 3287.700813567832,
+            "y": -2005.5332149084732,
+            "z": 377.0721365383803,
+            "phase": 3.6815675209332834,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          290.9,
+          382.8
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Jacksboro, Texas",
+      "at": 4880580.372688454,
+      "angle": 35,
+      "file": "18-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "clear",
+          "cloudCover": 0.1885831179336921,
+          "sun": 1.9642810008331888,
+          "ambient": 2.0071437998333623,
+          "seed": 73124
+        },
+        "draws": 24,
+        "triangles": 547424,
+        "drawCalls": 105,
+        "geometries": 123,
+        "textures": 32,
+        "buildings": 81,
+        "observedWalls": 0,
+        "trees": 22755,
+        "shrubs": 22,
+        "urbanPlants": 291,
+        "roadside": 16,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 4209653.249659795,
+            "x": 3287.700813567832,
+            "y": -2005.5332149084732,
+            "z": 377.0721365383803,
+            "phase": 3.6815675209332834,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          290.9,
+          382.8
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Denton, Texas",
+      "at": 4988204.372688454,
+      "angle": 0,
+      "file": "19-0.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.48572132340116075,
+          "sun": 1.8444672083059837,
+          "ambient": 2.031106558338803,
+          "seed": 73124
+        },
+        "draws": 25,
+        "triangles": 837382,
+        "drawCalls": 233,
+        "geometries": 233,
+        "textures": 32,
+        "buildings": 785,
+        "observedWalls": 1,
+        "trees": 4939,
+        "shrubs": 38,
+        "urbanPlants": 729,
+        "roadside": 465,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 4313015.403020296,
+            "x": 985.5173780120983,
+            "y": 404.4456168008819,
+            "z": 241.39870814950814,
+            "phase": 4.81951042381707,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          169.5,
+          238.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    },
+    {
+      "name": "Denton, Texas",
+      "at": 4988204.372688454,
+      "angle": 35,
+      "file": "19-35.png",
+      "stats": {
+        "source": "",
+        "sky": {
+          "name": "scattered clouds",
+          "cloudCover": 0.48572132340116075,
+          "sun": 1.8444672083059837,
+          "ambient": 2.031106558338803,
+          "seed": 73124
+        },
+        "draws": 26,
+        "triangles": 832151,
+        "drawCalls": 254,
+        "geometries": 273,
+        "textures": 32,
+        "buildings": 785,
+        "observedWalls": 1,
+        "trees": 4939,
+        "shrubs": 38,
+        "urbanPlants": 729,
+        "roadside": 465,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 4313015.403020296,
+            "x": 985.5173780120983,
+            "y": 404.4456168008819,
+            "z": 241.39870814950814,
+            "phase": 4.81951042381707,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          169.5,
+          238.9
+        ],
+        "failures": []
+      },
+      "w": 320,
+      "h": 200
+    }
+  ],
+  "errors": []
+}

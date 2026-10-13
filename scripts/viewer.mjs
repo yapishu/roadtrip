@@ -15,7 +15,7 @@ export function install(TRIP) {
   const page = existsSync(join(TRIP, 'viewer.html')) ? join(TRIP, 'viewer.html') : join(T, 'viewer.html');
   copyFileSync(page, join(TRIP, 'index.html')); copyFileSync(join(T, 'road.js'), join(TRIP, 'road.js')); copyFileSync(join(T, 'layout.js'), join(TRIP, 'layout.js'));
   copyFileSync(join(T, 'world.js'), join(TRIP, 'world.js'));
-  for (const file of ['minimap.js', 'minimap.css', 'roadside.js', 'roadside-geometry.js', 'daylight.js', 'road-grade.js', 'ambient.js', 'ambient-plan.js', 'road-supports.js', 'buildings.js', 'building-shapes.js', 'pixel-viewport.js']) copyFileSync(join(T, file), join(TRIP, file));
+  for (const file of ['minimap.js', 'minimap.css', 'roadside.js', 'roadside-geometry.js', 'daylight.js', 'vegetation.js', 'road-grade.js', 'ambient.js', 'ambient-plan.js', 'road-supports.js', 'buildings.js', 'building-shapes.js', 'pixel-viewport.js']) copyFileSync(join(T, file), join(TRIP, file));
   cpSync(join(T, 'vendor'), join(TRIP, 'vendor'), { recursive: true });
 }
 export function serve(TRIP, port = 0, host = '127.0.0.1') {   // a tiny static server (any other static server works too); dot-folders stay private
