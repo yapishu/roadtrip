@@ -2,6 +2,8 @@
 
 A looping, low-resolution drive from Milpitas, California to Denton, Texas, with scenic drives through the national parks along the way. The browser renders mapped roads and buildings, measured terrain, regional vegetation, and a small terrain atlas with a white sedan marking your position.
 
+To build a different route, use the reusable [Low-poly Roadtrip skill](skill/SKILL.md). It includes the geographic and art workflows, a generic viewer, an OSM extraction helper, and verification guidance.
+
 ## Run the drive
 
 The repository contains the viewer, generated art, route, and build tools. Git LFS holds image assets. The complete terrain scene is checkpointed as a separate archive; restore that archive into the checkout before running the viewer.
