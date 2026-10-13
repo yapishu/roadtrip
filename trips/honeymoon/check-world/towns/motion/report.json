@@ -1,0 +1,147 @@
+{
+  "sequences": [
+    {
+      "name": "Milpitas homes",
+      "at": 0,
+      "look": 20,
+      "frames": [
+        "Milpitas-homes-0.png",
+        "Milpitas-homes-40.png",
+        "Milpitas-homes-80.png",
+        "Milpitas-homes-120.png"
+      ],
+      "stats": {
+        "source": "",
+        "draws": 121,
+        "triangles": 441892,
+        "drawCalls": 61,
+        "geometries": 78,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 370,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Kanab main street",
+      "at": 2359870,
+      "look": 15,
+      "frames": [
+        "Kanab-main-street-0.png",
+        "Kanab-main-street-40.png",
+        "Kanab-main-street-80.png",
+        "Kanab-main-street-120.png"
+      ],
+      "stats": {
+        "source": "",
+        "draws": 242,
+        "triangles": 1453454,
+        "drawCalls": 328,
+        "geometries": 408,
+        "textures": 15,
+        "buildings": 763,
+        "observedWalls": 205,
+        "trees": 5178,
+        "roadside": 104,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Ridgecrest canopy",
+      "at": 944150,
+      "look": 25,
+      "frames": [
+        "Ridgecrest-canopy-0.png",
+        "Ridgecrest-canopy-40.png",
+        "Ridgecrest-canopy-80.png",
+        "Ridgecrest-canopy-120.png"
+      ],
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 363,
+        "triangles": 1285645,
+        "drawCalls": 331,
+        "geometries": 378,
+        "textures": 14,
+        "buildings": 13145,
+        "observedWalls": 0,
+        "trees": 925,
+        "roadside": 655,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 160439.40259098075,
+            "x": -2617.9847074765153,
+            "y": 2278.2045729826577,
+            "z": 734.0049136294554,
+            "phase": 5.755704263476857,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.6,
+          964.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Lubbock offices",
+      "at": 4549150,
+      "look": 25,
+      "frames": [
+        "Lubbock-offices-0.png",
+        "Lubbock-offices-40.png",
+        "Lubbock-offices-80.png",
+        "Lubbock-offices-120.png"
+      ],
+      "stats": {
+        "source": "",
+        "draws": 484,
+        "triangles": 944674,
+        "drawCalls": 118,
+        "geometries": 135,
+        "textures": 21,
+        "buildings": 1243,
+        "observedWalls": 114,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3835724.629043929,
+            "x": 850.0812696652404,
+            "y": 1214.2363220671323,
+            "z": 1005.0105246338304,
+            "phase": 2.479748007343695,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "metresPerSequence": 120,
+  "stepsPerSequence": 120,
+  "errors": []
+}

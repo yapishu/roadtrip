@@ -1,0 +1,119 @@
+{
+  "frames": [
+    {
+      "name": "Las Vegas",
+      "file": "Las-Vegas.png",
+      "source": "",
+      "size": [
+        320,
+        200
+      ],
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 1696671,
+        "drawCalls": 569,
+        "geometries": 569,
+        "textures": 6,
+        "buildings": 1742,
+        "observedWalls": 89,
+        "trees": 0,
+        "roadside": 577,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1073067.3341772945,
+            "x": -2003.0781164215882,
+            "y": 280.100966091994,
+            "z": 669.6196247441546,
+            "phase": 3.0519980893422822,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Kanab",
+      "file": "Kanab.png",
+      "source": "",
+      "size": [
+        320,
+        200
+      ],
+      "stats": {
+        "source": "",
+        "draws": 2,
+        "triangles": 646143,
+        "drawCalls": 134,
+        "geometries": 134,
+        "textures": 12,
+        "buildings": 763,
+        "observedWalls": 205,
+        "trees": 5178,
+        "roadside": 104,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1863011.1630746187,
+            "x": -547.4046034640633,
+            "y": -2769.123903829041,
+            "z": 1561.1842558056117,
+            "phase": 1.337422067305961,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Kern River",
+      "file": "Kern-River.png",
+      "source": "detours/kern-river",
+      "size": [
+        320,
+        200
+      ],
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 3,
+        "triangles": 697043,
+        "drawCalls": 83,
+        "geometries": 83,
+        "textures": 14,
+        "buildings": 0,
+        "observedWalls": 0,
+        "trees": 7603,
+        "roadside": 0,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 36185.538841360016,
+            "x": 542.1443601076822,
+            "y": -873.9133140054244,
+            "z": 530.1235584335908,
+            "phase": 3.7575411680092063,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          302.9,
+          1534.1
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

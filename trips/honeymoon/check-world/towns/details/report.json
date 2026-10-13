@@ -1,0 +1,190 @@
+{
+  "frames": [
+    {
+      "name": "Stockton civic",
+      "at": 106865,
+      "look": -45.91603262164982,
+      "building": "way184266423",
+      "distance": 92.26222404701726,
+      "blocks": 0,
+      "trees": 0,
+      "file": "Stockton-civic.png",
+      "stats": {
+        "source": "",
+        "draws": 2,
+        "triangles": 400021,
+        "drawCalls": 74,
+        "geometries": 104,
+        "textures": 8,
+        "buildings": 2105,
+        "observedWalls": 236,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 110243.78799566567,
+            "x": 1291.11193178703,
+            "y": 2236.1806310724533,
+            "z": 55.467379315493076,
+            "phase": 2.5971200767957936,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Las Vegas civic",
+      "at": 1475497.0102787921,
+      "look": 29.456720116874507,
+      "building": "way616651647",
+      "distance": 106.41071957307184,
+      "blocks": 0,
+      "trees": 0,
+      "file": "Las-Vegas-civic.png",
+      "stats": {
+        "source": "",
+        "draws": 4,
+        "triangles": 1303417,
+        "drawCalls": 367,
+        "geometries": 404,
+        "textures": 11,
+        "buildings": 1742,
+        "observedWalls": 89,
+        "trees": 0,
+        "roadside": 577,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1070634.663559025,
+            "x": -3596.948820417421,
+            "y": -1525.887020627777,
+            "z": 688.4669963492786,
+            "phase": 4.916459739950946,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Jacksboro courthouse",
+      "at": 4919302.345714988,
+      "look": 89.88832369957159,
+      "building": "way256700044",
+      "distance": 59.31186464892442,
+      "blocks": 0,
+      "trees": 0,
+      "file": "Jacksboro-courthouse.png",
+      "stats": {
+        "source": "",
+        "draws": 6,
+        "triangles": 859186,
+        "drawCalls": 138,
+        "geometries": 269,
+        "textures": 16,
+        "buildings": 81,
+        "observedWalls": 39,
+        "trees": 22878,
+        "roadside": 16,
+        "ambient": [
+          {
+            "kind": "deer",
+            "s": 4203259.1645623,
+            "x": -671.5896954134234,
+            "y": 1328.3548146707926,
+            "z": 322.6576527931086,
+            "phase": 0.8541749015960862,
+            "angle": 0.11634060069542096
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          290.9,
+          382.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Ridgecrest canopy",
+      "at": 944168.3155256333,
+      "look": 21.513169488988815,
+      "building": "way1530995811",
+      "distance": 68.41721352810112,
+      "blocks": 0,
+      "trees": 0,
+      "file": "Ridgecrest-canopy.png",
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 8,
+        "triangles": 1354553,
+        "drawCalls": 355,
+        "geometries": 546,
+        "textures": 15,
+        "buildings": 13145,
+        "observedWalls": 0,
+        "trees": 925,
+        "roadside": 655,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 160835.88801556767,
+            "x": -2234.660400930491,
+            "y": 2187.8393084817058,
+            "z": 735.9258425008305,
+            "phase": 1.1084626385695895,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          664.6,
+          964.8
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "Kanab canopy",
+      "at": 2358841.546774333,
+      "look": 78.59362864649859,
+      "building": "way113718335",
+      "distance": 70.37364632813438,
+      "blocks": 0,
+      "trees": 0,
+      "file": "Kanab-canopy.png",
+      "stats": {
+        "source": "",
+        "draws": 10,
+        "triangles": 1264385,
+        "drawCalls": 252,
+        "geometries": 431,
+        "textures": 22,
+        "buildings": 763,
+        "observedWalls": 205,
+        "trees": 5178,
+        "roadside": 104,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      }
+    }
+  ],
+  "errors": []
+}

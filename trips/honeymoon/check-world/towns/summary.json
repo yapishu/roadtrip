@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "ccfd823d55f6bfc98e555817d122980060909096",
+  "townViews": 32,
+  "towns": 16,
+  "routeViews": 79,
+  "detailViews": 5,
+  "movingSequences": 4,
+  "movingMetres": 480,
+  "renderPixels": [
+    320,
+    200
+  ],
+  "viewportPixels": [
+    1280,
+    800
+  ],
+  "runtimeErrors": [],
+  "unitTests": {
+    "buildingShapes": 7,
+    "buildingAttributesAndParts": 5
+  },
+  "dataAudit": "data-audit.json",
+  "touchChecks": "viewer-interactions.json",
+  "restoreChecks": "restore-audit.json",
+  "detailDescription": "Mapped building uses and parts, roof geometry, street-facing ground floors, floor-aligned windows, open canopies, and representative architectural details",
+  "referenceForms": "../../../building-references.json",
+  "measuredOrMapped": "Footprints, explicit building heights and floor counts, roof tags, part extents and clearances",
+  "representative": "Missing heights, windows, doors, cornices, supports, roof equipment, and material variation"
+}

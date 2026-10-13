@@ -1,0 +1,1469 @@
+{
+  "frames": [
+    {
+      "name": "Milpitas",
+      "look": 0,
+      "offset": -70,
+      "file": "Milpitas-0.png",
+      "pos": 0,
+      "source": {
+        "source": "",
+        "distance": 0
+      },
+      "chunk": 0,
+      "xy": [
+        -2243575.72,
+        1907652.5
+      ],
+      "stats": {
+        "source": "",
+        "draws": 1,
+        "triangles": 507169,
+        "drawCalls": 75,
+        "geometries": 75,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 370,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Milpitas",
+      "look": 35,
+      "offset": 100,
+      "file": "Milpitas-35.png",
+      "pos": 100,
+      "source": {
+        "source": "",
+        "distance": 100
+      },
+      "chunk": 0,
+      "xy": [
+        -2243587.76,
+        1907552.47
+      ],
+      "stats": {
+        "source": "",
+        "draws": 3,
+        "triangles": 449800,
+        "drawCalls": 61,
+        "geometries": 80,
+        "textures": 8,
+        "buildings": 3912,
+        "observedWalls": 370,
+        "trees": 2475,
+        "roadside": 56,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          0,
+          534.9
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Stockton",
+      "look": 0,
+      "offset": -70,
+      "file": "Stockton-0.png",
+      "pos": 106933,
+      "source": {
+        "source": "",
+        "distance": 106933
+      },
+      "chunk": 10,
+      "xy": [
+        -2175234.264,
+        1949189.978
+      ],
+      "stats": {
+        "source": "",
+        "draws": 5,
+        "triangles": 373690,
+        "drawCalls": 72,
+        "geometries": 95,
+        "textures": 8,
+        "buildings": 2105,
+        "observedWalls": 236,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 101571.88575933338,
+            "x": -1699.9228012613346,
+            "y": -1281.0629261106183,
+            "z": 54.68269462472574,
+            "phase": 0.2955712061728463,
+            "count": 3
+          },
+          {
+            "kind": "birds",
+            "s": 110473.82396792651,
+            "x": 1509.1562752621528,
+            "y": 2305.38784175937,
+            "z": 36.53076486942382,
+            "phase": 1.8098293377421157,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Stockton",
+      "look": 35,
+      "offset": 100,
+      "file": "Stockton-35.png",
+      "pos": 107103,
+      "source": {
+        "source": "",
+        "distance": 107103
+      },
+      "chunk": 10,
+      "xy": [
+        -2175118.1925155926,
+        1949234.425862786
+      ],
+      "stats": {
+        "source": "",
+        "draws": 7,
+        "triangles": 737686,
+        "drawCalls": 152,
+        "geometries": 201,
+        "textures": 8,
+        "buildings": 2105,
+        "observedWalls": 236,
+        "trees": 3553,
+        "roadside": 159,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 101571.88575933338,
+            "x": -1699.9228012613346,
+            "y": -1281.0629261106183,
+            "z": 54.68269462472574,
+            "phase": 0.2955712061728463,
+            "count": 3
+          },
+          {
+            "kind": "birds",
+            "s": 110473.82396792651,
+            "x": 1509.1562752621528,
+            "y": 2305.38784175937,
+            "z": 36.53076486942382,
+            "phase": 1.8098293377421157,
+            "count": 4
+          }
+        ],
+        "detailPatches": 1,
+        "relief": [
+          -2,
+          20.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Fresno",
+      "look": 0,
+      "offset": -70,
+      "file": "Fresno-0.png",
+      "pos": 306720.32795742975,
+      "source": {
+        "source": "",
+        "distance": 306720.32795742975
+      },
+      "chunk": 30,
+      "xy": [
+        -2084481.8902577157,
+        1784056.6219137125
+      ],
+      "stats": {
+        "source": "",
+        "draws": 9,
+        "triangles": 832316,
+        "drawCalls": 239,
+        "geometries": 267,
+        "textures": 8,
+        "buildings": 1004,
+        "observedWalls": 13,
+        "trees": 1817,
+        "roadside": 332,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          68.4,
+          102.9
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Fresno",
+      "look": 35,
+      "offset": 100,
+      "file": "Fresno-35.png",
+      "pos": 306890.32795742975,
+      "source": {
+        "source": "detours/kings-canyon",
+        "distance": 100
+      },
+      "chunk": 0,
+      "xy": [
+        -2084350.17,
+        1783950.56
+      ],
+      "stats": {
+        "source": "detours/kings-canyon",
+        "draws": 11,
+        "triangles": 1686638,
+        "drawCalls": 260,
+        "geometries": 984,
+        "textures": 11,
+        "buildings": 17549,
+        "observedWalls": 0,
+        "trees": 1926,
+        "roadside": 115,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          76.3,
+          107.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Bakersfield",
+      "look": 0,
+      "offset": -70,
+      "file": "Bakersfield-0.png",
+      "pos": 779413.3155256333,
+      "source": {
+        "source": "",
+        "distance": 482213
+      },
+      "chunk": 48,
+      "xy": [
+        -2053281.864,
+        1618437.092
+      ],
+      "stats": {
+        "source": "",
+        "draws": 13,
+        "triangles": 1268038,
+        "drawCalls": 270,
+        "geometries": 277,
+        "textures": 9,
+        "buildings": 3303,
+        "observedWalls": 309,
+        "trees": 876,
+        "roadside": 174,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          109.2,
+          254.4
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Bakersfield",
+      "look": 35,
+      "offset": 100,
+      "file": "Bakersfield-35.png",
+      "pos": 779583.3155256333,
+      "source": {
+        "source": "detours/kern-river",
+        "distance": 100
+      },
+      "chunk": 0,
+      "xy": [
+        -2053322.43,
+        1618273.01
+      ],
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 15,
+        "triangles": 1473798,
+        "drawCalls": 160,
+        "geometries": 479,
+        "textures": 11,
+        "buildings": 50786,
+        "observedWalls": 0,
+        "trees": 3627,
+        "roadside": 166,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 8050.211622911156,
+            "x": 2039.6444277321768,
+            "y": 628.2913267304341,
+            "z": 248.49178030182816,
+            "phase": 0.5839024980656312,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          111,
+          280.3
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Ridgecrest",
+      "look": 0,
+      "offset": -70,
+      "file": "Ridgecrest-0.png",
+      "pos": 944669.7312414541,
+      "source": {
+        "source": "detours/kern-river",
+        "distance": 165186.41571582085
+      },
+      "chunk": 16,
+      "xy": [
+        -1928807.6832443462,
+        1617344.4929631858
+      ],
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 17,
+        "triangles": 1314389,
+        "drawCalls": 300,
+        "geometries": 495,
+        "textures": 8,
+        "buildings": 13145,
+        "observedWalls": 0,
+        "trees": 925,
+        "roadside": 655,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          664.6,
+          964.8
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Ridgecrest",
+      "look": 35,
+      "offset": 100,
+      "file": "Ridgecrest-35.png",
+      "pos": 944839.7312414541,
+      "source": {
+        "source": "detours/kern-river",
+        "distance": 165356.41571582085
+      },
+      "chunk": 16,
+      "xy": [
+        -1928832.5480813803,
+        1617340.4760710448
+      ],
+      "stats": {
+        "source": "detours/kern-river",
+        "draws": 19,
+        "triangles": 1497510,
+        "drawCalls": 342,
+        "geometries": 920,
+        "textures": 8,
+        "buildings": 13145,
+        "observedWalls": 0,
+        "trees": 925,
+        "roadside": 655,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          664.6,
+          964.8
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Las Vegas",
+      "look": 0,
+      "offset": -70,
+      "file": "Las-Vegas-0.png",
+      "pos": 1475690.0102787921,
+      "source": {
+        "source": "",
+        "distance": 1076122.9999999998
+      },
+      "chunk": 107,
+      "xy": [
+        -1695381.4833333332,
+        1628940.0423809525
+      ],
+      "stats": {
+        "source": "",
+        "draws": 21,
+        "triangles": 1696671,
+        "drawCalls": 569,
+        "geometries": 602,
+        "textures": 11,
+        "buildings": 1742,
+        "observedWalls": 89,
+        "trees": 0,
+        "roadside": 577,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1079168.0126751645,
+            "x": 2306.0683202598943,
+            "y": 1593.545414266442,
+            "z": 605.8056724501537,
+            "phase": 1.6210096410552728,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Las Vegas",
+      "look": 35,
+      "offset": 100,
+      "file": "Las-Vegas-35.png",
+      "pos": 1475860.0102787921,
+      "source": {
+        "source": "",
+        "distance": 1076292.9999999998
+      },
+      "chunk": 107,
+      "xy": [
+        -1695288.816,
+        1628919.1579999998
+      ],
+      "stats": {
+        "source": "",
+        "draws": 23,
+        "triangles": 1287521,
+        "drawCalls": 340,
+        "geometries": 932,
+        "textures": 11,
+        "buildings": 1742,
+        "observedWalls": 89,
+        "trees": 0,
+        "roadside": 577,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1079168.0126751645,
+            "x": 2306.0683202598943,
+            "y": 1593.545414266442,
+            "z": 605.8056724501537,
+            "phase": 1.6210096410552728,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          530.7,
+          692.3
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Kingman",
+      "look": 0,
+      "offset": -70,
+      "file": "Kingman-0.png",
+      "pos": 1643171.0102787921,
+      "source": {
+        "source": "",
+        "distance": 1243603.9999999998
+      },
+      "chunk": 124,
+      "xy": [
+        -1620326.3339999998,
+        1502352.554
+      ],
+      "stats": {
+        "source": "",
+        "draws": 25,
+        "triangles": 1028278,
+        "drawCalls": 279,
+        "geometries": 330,
+        "textures": 13,
+        "buildings": 464,
+        "observedWalls": 36,
+        "trees": 1442,
+        "roadside": 269,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          943.6,
+          1322.1
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Kingman",
+      "look": 35,
+      "offset": 100,
+      "file": "Kingman-35.png",
+      "pos": 1643341.0102787921,
+      "source": {
+        "source": "",
+        "distance": 1243773.9999999998
+      },
+      "chunk": 124,
+      "xy": [
+        -1620438.5299999998,
+        1502429.148
+      ],
+      "stats": {
+        "source": "",
+        "draws": 27,
+        "triangles": 996929,
+        "drawCalls": 274,
+        "geometries": 330,
+        "textures": 13,
+        "buildings": 464,
+        "observedWalls": 36,
+        "trees": 1442,
+        "roadside": 269,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          943.6,
+          1322.1
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Kanab",
+      "look": 0,
+      "offset": -70,
+      "file": "Kanab-0.png",
+      "pos": 2360644.546774333,
+      "source": {
+        "source": "",
+        "distance": 1861908
+      },
+      "chunk": 186,
+      "xy": [
+        -1448830.9,
+        1682456.766
+      ],
+      "stats": {
+        "source": "",
+        "draws": 29,
+        "triangles": 586753,
+        "drawCalls": 113,
+        "geometries": 273,
+        "textures": 19,
+        "buildings": 763,
+        "observedWalls": 205,
+        "trees": 5178,
+        "roadside": 104,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1866130.072055879,
+            "x": -339.72279441209514,
+            "y": 294.17219999080714,
+            "z": 1570.557464000126,
+            "phase": 4.468964055296618,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Kanab",
+      "look": 35,
+      "offset": 100,
+      "file": "Kanab-35.png",
+      "pos": 2360814.546774333,
+      "source": {
+        "source": "",
+        "distance": 1862078
+      },
+      "chunk": 186,
+      "xy": [
+        -1448879.962,
+        1682569.752
+      ],
+      "stats": {
+        "source": "",
+        "draws": 31,
+        "triangles": 993307,
+        "drawCalls": 174,
+        "geometries": 379,
+        "textures": 19,
+        "buildings": 763,
+        "observedWalls": 205,
+        "trees": 5178,
+        "roadside": 104,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1866130.072055879,
+            "x": -339.72279441209514,
+            "y": 294.17219999080714,
+            "z": 1570.557464000126,
+            "phase": 4.468964055296618,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1466.8,
+          1854.1
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Panguitch",
+      "look": 0,
+      "offset": -70,
+      "file": "Panguitch-0.png",
+      "pos": 2536246.7561364006,
+      "source": {
+        "source": "detours/brian-head",
+        "distance": 111854.91498678923
+      },
+      "chunk": 11,
+      "xy": [
+        -1425908.4936021138,
+        1766501.6954968686
+      ],
+      "stats": {
+        "source": "detours/brian-head",
+        "draws": 33,
+        "triangles": 418113,
+        "drawCalls": 101,
+        "geometries": 121,
+        "textures": 18,
+        "buildings": 1579,
+        "observedWalls": 0,
+        "trees": 4785,
+        "roadside": 17,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          1995.7,
+          2246
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Panguitch",
+      "look": 35,
+      "offset": 100,
+      "file": "Panguitch-35.png",
+      "pos": 2536416.7561364006,
+      "source": {
+        "source": "",
+        "distance": 1970028
+      },
+      "chunk": 197,
+      "xy": [
+        -1425914.18,
+        1766466.348
+      ],
+      "stats": {
+        "source": "",
+        "draws": 35,
+        "triangles": 767682,
+        "drawCalls": 109,
+        "geometries": 342,
+        "textures": 23,
+        "buildings": 490,
+        "observedWalls": 149,
+        "trees": 6422,
+        "roadside": 58,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 1971002.6197375339,
+            "x": -1219.2626572168247,
+            "y": 3922.811320944719,
+            "z": 2055.395205943023,
+            "phase": 4.403354991170034,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1995.5,
+          2298.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Aztec",
+      "look": 0,
+      "offset": -70,
+      "file": "Aztec-0.png",
+      "pos": 3656898.345714988,
+      "source": {
+        "source": "",
+        "distance": 2945216.0000000005
+      },
+      "chunk": 294,
+      "xy": [
+        -1057006.8120000002,
+        1597644.0819999995
+      ],
+      "stats": {
+        "source": "",
+        "draws": 37,
+        "triangles": 891547,
+        "drawCalls": 172,
+        "geometries": 189,
+        "textures": 26,
+        "buildings": 870,
+        "observedWalls": 173,
+        "trees": 6630,
+        "roadside": 35,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2942451.1914620646,
+            "x": 259.06852510574737,
+            "y": 2506.7824913968084,
+            "z": 1764.5828376714658,
+            "phase": 1.775400889076179,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1694.1,
+          1948.7
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Aztec",
+      "look": 35,
+      "offset": 100,
+      "file": "Aztec-35.png",
+      "pos": 3657068.345714988,
+      "source": {
+        "source": "",
+        "distance": 2945386.0000000005
+      },
+      "chunk": 294,
+      "xy": [
+        -1057128.8140000005,
+        1597632.7460000003
+      ],
+      "stats": {
+        "source": "",
+        "draws": 39,
+        "triangles": 679291,
+        "drawCalls": 99,
+        "geometries": 255,
+        "textures": 26,
+        "buildings": 870,
+        "observedWalls": 173,
+        "trees": 6630,
+        "roadside": 35,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 2942451.1914620646,
+            "x": 259.06852510574737,
+            "y": 2506.7824913968084,
+            "z": 1764.5828376714658,
+            "phase": 1.775400889076179,
+            "count": 2
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1694.1,
+          1948.7
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Albuquerque",
+      "look": 0,
+      "offset": -70,
+      "file": "Albuquerque-0.png",
+      "pos": 3944872.345714988,
+      "source": {
+        "source": "",
+        "distance": 3233190.0000000005
+      },
+      "chunk": 323,
+      "xy": [
+        -961050.7999999996,
+        1390111.0799999998
+      ],
+      "stats": {
+        "source": "",
+        "draws": 41,
+        "triangles": 1796075,
+        "drawCalls": 498,
+        "geometries": 526,
+        "textures": 26,
+        "buildings": 1525,
+        "observedWalls": 137,
+        "trees": 1163,
+        "roadside": 785,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3236138.8389184116,
+            "x": -969.0581774931075,
+            "y": 373.70251628600056,
+            "z": 1572.064837996669,
+            "phase": 1.7632205146518363,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1504.4,
+          1627.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Albuquerque",
+      "look": 35,
+      "offset": 100,
+      "file": "Albuquerque-35.png",
+      "pos": 3945042.345714988,
+      "source": {
+        "source": "",
+        "distance": 3233360.0000000005
+      },
+      "chunk": 323,
+      "xy": [
+        -960960.6099999999,
+        1390195.7900000005
+      ],
+      "stats": {
+        "source": "",
+        "draws": 43,
+        "triangles": 1673887,
+        "drawCalls": 533,
+        "geometries": 737,
+        "textures": 26,
+        "buildings": 1525,
+        "observedWalls": 137,
+        "trees": 1163,
+        "roadside": 785,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3236138.8389184116,
+            "x": -969.0581774931075,
+            "y": 373.70251628600056,
+            "z": 1572.064837996669,
+            "phase": 1.7632205146518363,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1504.4,
+          1627.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Vaughn",
+      "look": 0,
+      "offset": -70,
+      "file": "Vaughn-0.png",
+      "pos": 4112498.345714988,
+      "source": {
+        "source": "",
+        "distance": 3400816.0000000005
+      },
+      "chunk": 340,
+      "xy": [
+        -837003.4879999995,
+        1322853.82
+      ],
+      "stats": {
+        "source": "",
+        "draws": 45,
+        "triangles": 1126291,
+        "drawCalls": 220,
+        "geometries": 312,
+        "textures": 26,
+        "buildings": 78,
+        "observedWalls": 3,
+        "trees": 20,
+        "roadside": 17,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3406445.6429967885,
+            "x": 1286.9269475195802,
+            "y": -35.92581078328654,
+            "z": 1841.5448765447031,
+            "phase": 3.2610242469093276,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1720.4,
+          1854.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Vaughn",
+      "look": 35,
+      "offset": 100,
+      "file": "Vaughn-35.png",
+      "pos": 4112668.345714988,
+      "source": {
+        "source": "",
+        "distance": 3400986.0000000005
+      },
+      "chunk": 340,
+      "xy": [
+        -836835.0199999996,
+        1322842.672
+      ],
+      "stats": {
+        "source": "",
+        "draws": 47,
+        "triangles": 1740143,
+        "drawCalls": 283,
+        "geometries": 325,
+        "textures": 26,
+        "buildings": 78,
+        "observedWalls": 3,
+        "trees": 20,
+        "roadside": 17,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3406445.6429967885,
+            "x": 1286.9269475195802,
+            "y": -35.92581078328654,
+            "z": 1841.5448765447031,
+            "phase": 3.2610242469093276,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1720.4,
+          1854.5
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Roswell",
+      "look": 0,
+      "offset": -70,
+      "file": "Roswell-0.png",
+      "pos": 4268089.345714988,
+      "source": {
+        "source": "",
+        "distance": 3556407.0000000005
+      },
+      "chunk": 355,
+      "xy": [
+        -786642.976,
+        1182675.4299999995
+      ],
+      "stats": {
+        "source": "",
+        "draws": 49,
+        "triangles": 422786,
+        "drawCalls": 69,
+        "geometries": 82,
+        "textures": 26,
+        "buildings": 603,
+        "observedWalls": 162,
+        "trees": 1493,
+        "roadside": 178,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3559102.923167626,
+            "x": 511.3497822849005,
+            "y": -3358.5155460805763,
+            "z": 1117.9067804951248,
+            "phase": 0.1929534013979507,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1066.1,
+          1108.9
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Roswell",
+      "look": 35,
+      "offset": 100,
+      "file": "Roswell-35.png",
+      "pos": 4268259.345714988,
+      "source": {
+        "source": "",
+        "distance": 3556577.0000000005
+      },
+      "chunk": 355,
+      "xy": [
+        -786544.2459999996,
+        1182601.548
+      ],
+      "stats": {
+        "source": "",
+        "draws": 51,
+        "triangles": 696809,
+        "drawCalls": 149,
+        "geometries": 233,
+        "textures": 26,
+        "buildings": 603,
+        "observedWalls": 162,
+        "trees": 1493,
+        "roadside": 178,
+        "ambient": [
+          {
+            "kind": "birds",
+            "s": 3559102.923167626,
+            "x": 511.3497822849005,
+            "y": -3358.5155460805763,
+            "z": 1117.9067804951248,
+            "phase": 0.1929534013979507,
+            "count": 4
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          1066.1,
+          1108.9
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Lubbock",
+      "look": 0,
+      "offset": -70,
+      "file": "Lubbock-0.png",
+      "pos": 4549231.345714988,
+      "source": {
+        "source": "",
+        "distance": 3837549.0000000005
+      },
+      "chunk": 383,
+      "xy": [
+        -538726.392,
+        1185315.2219999996
+      ],
+      "stats": {
+        "source": "",
+        "draws": 53,
+        "triangles": 763315,
+        "drawCalls": 92,
+        "geometries": 261,
+        "textures": 31,
+        "buildings": 1243,
+        "observedWalls": 114,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Lubbock",
+      "look": 35,
+      "offset": 100,
+      "file": "Lubbock-35.png",
+      "pos": 4549401.345714988,
+      "source": {
+        "source": "",
+        "distance": 3837719.0000000005
+      },
+      "chunk": 383,
+      "xy": [
+        -538625.0639999995,
+        1185244.4679999999
+      ],
+      "stats": {
+        "source": "",
+        "draws": 55,
+        "triangles": 736880,
+        "drawCalls": 108,
+        "geometries": 395,
+        "textures": 31,
+        "buildings": 1243,
+        "observedWalls": 114,
+        "trees": 7626,
+        "roadside": 198,
+        "ambient": [],
+        "detailPatches": 1,
+        "relief": [
+          950.3,
+          1004.3
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Jacksboro",
+      "look": 0,
+      "offset": -70,
+      "file": "Jacksboro-0.png",
+      "pos": 4919106.345714988,
+      "source": {
+        "source": "",
+        "distance": 4207424
+      },
+      "chunk": 420,
+      "xy": [
+        -199858.256,
+        1130035.498
+      ],
+      "stats": {
+        "source": "",
+        "draws": 57,
+        "triangles": 552594,
+        "drawCalls": 73,
+        "geometries": 110,
+        "textures": 31,
+        "buildings": 81,
+        "observedWalls": 39,
+        "trees": 22878,
+        "roadside": 16,
+        "ambient": [
+          {
+            "kind": "deer",
+            "s": 4201738.568934856,
+            "x": -2042.7613777129584,
+            "y": 1971.2413116575797,
+            "z": 316.9841100790851,
+            "phase": 0.7205950486361763,
+            "angle": 0.11991992817804997
+          },
+          {
+            "kind": "birds",
+            "s": 4210673.509584526,
+            "x": 3844.7258433512784,
+            "y": -2854.779689998869,
+            "z": 380.0774641842229,
+            "phase": 4.755013193522828,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          290.9,
+          382.8
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Jacksboro",
+      "look": 35,
+      "offset": 100,
+      "file": "Jacksboro-35.png",
+      "pos": 4919276.345714988,
+      "source": {
+        "source": "",
+        "distance": 4207594
+      },
+      "chunk": 420,
+      "xy": [
+        -199826.91636942665,
+        1129922.0317834395
+      ],
+      "stats": {
+        "source": "",
+        "draws": 59,
+        "triangles": 1357868,
+        "drawCalls": 215,
+        "geometries": 355,
+        "textures": 31,
+        "buildings": 81,
+        "observedWalls": 39,
+        "trees": 22878,
+        "roadside": 16,
+        "ambient": [
+          {
+            "kind": "deer",
+            "s": 4201738.568934856,
+            "x": -2042.7613777129584,
+            "y": 1971.2413116575797,
+            "z": 316.9841100790851,
+            "phase": 0.7205950486361763,
+            "angle": 0.11991992817804997
+          },
+          {
+            "kind": "birds",
+            "s": 4210673.509584526,
+            "x": 3844.7258433512784,
+            "y": -2854.779689998869,
+            "z": 380.0774641842229,
+            "phase": 4.755013193522828,
+            "count": 3
+          }
+        ],
+        "detailPatches": 0,
+        "relief": [
+          290.9,
+          382.8
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Denton",
+      "look": 0,
+      "offset": -70,
+      "file": "Denton-0.png",
+      "pos": 5026730.345714988,
+      "source": {
+        "source": "",
+        "distance": 4315048
+      },
+      "chunk": 431,
+      "xy": [
+        -103874.562,
+        1132166.114
+      ],
+      "stats": {
+        "source": "",
+        "draws": 61,
+        "triangles": 335088,
+        "drawCalls": 54,
+        "geometries": 84,
+        "textures": 31,
+        "buildings": 785,
+        "observedWalls": 78,
+        "trees": 4917,
+        "roadside": 465,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          169.5,
+          238.9
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    },
+    {
+      "name": "Denton",
+      "look": 35,
+      "offset": 100,
+      "file": "Denton-35.png",
+      "pos": 5026799.345714988,
+      "source": {
+        "source": "",
+        "distance": 4315117
+      },
+      "chunk": 431,
+      "xy": [
+        -103912.77,
+        1132140.25
+      ],
+      "stats": {
+        "source": "",
+        "draws": 63,
+        "triangles": 130874,
+        "drawCalls": 24,
+        "geometries": 85,
+        "textures": 31,
+        "buildings": 785,
+        "observedWalls": 78,
+        "trees": 4917,
+        "roadside": 465,
+        "ambient": [],
+        "detailPatches": 0,
+        "relief": [
+          169.5,
+          238.9
+        ],
+        "failures": []
+      },
+      "size": [
+        320,
+        200
+      ]
+    }
+  ],
+  "errors": []
+}

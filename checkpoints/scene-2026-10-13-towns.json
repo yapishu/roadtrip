@@ -1,0 +1,12 @@
+{
+  "archive": "scoggin-roadtrip-2026-10-13-towns.tar.zst",
+  "bytes": 1546858955,
+  "sha256": "20f0acafcaf0e1dc76e01058c3730fcb4fb21390b9e06aedb8bc12480f38c9ec",
+  "sourceCommit": "ccfd823d55f6bfc98e555817d122980060909096",
+  "sceneCommit": "5092f57d03c4a35fa0d5ab5bc6138c140a864ab8",
+  "worldSections": 533,
+  "stops": 55,
+  "routeMetres": 5026800.345714988,
+  "contents": "Complete viewer, art, terrain, roads, scenic drives, mapped building uses and parts, roof forms, open canopies, architectural details, and reference civic forms",
+  "storage": "Separate scene archive; restore world assets with scripts/restore-scene.mjs"
+}
