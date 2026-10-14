@@ -1,0 +1,7 @@
+screen0 lcd off!
+screen0 lcd on!
+5
+I/FrameNative(20519): fps=47.7 km=938.900 draws=80 triangles=117431
+I/FrameNative(20519): fps=47.0 km=939.168 draws=83 triangles=122235
+I/FrameNative(20519): fps=50.3 km=939.437 draws=71 triangles=114972
+I/FrameNative(20519): fps=51.8 km=939.705 draws=74 triangles=90904

@@ -1,0 +1,19 @@
+# Track source and selected evidence; keep this frame's workspace local.
+/*
+!/.gitignore
+!/README.md
+!/VERIFICATION.md
+!/*.py
+!/*.mjs
+!/package.json
+!/package-lock.json
+!/start-ssh.sh
+!/native/
+!/android/
+!/tests/
+!/evidence/
+/android/*
+!/android/AndroidManifest.xml
+!/android/src/
+!/android/res/
+/tests/__pycache__/

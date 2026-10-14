@@ -32,6 +32,10 @@ The scene automatically uses whole-number scaling against the display's physical
 
 For a modest Android picture frame, start with `?fps=30`. This caps rendering at 30 frames per second while preserving the same pixel resolution, models, and driving speed. Terrain outside the camera view is culled, and a paused scene performs no WebGL redraws. Performance on the target frame needs an on-device check; reducing the cap further with `?fps=20` is available.
 
+## Android picture frame
+
+The [native frame player](frame-player/README.md) renders the trip offline with GLES 2 on Android 4.4 and later. It provides the floating terrain map, touch-revealed stop picker and seekbar, pixel captions, saved playback position, and automatic startup. The configured frame dims to brightness 1 at 11 PM, powers its LCD off at midnight while playback continues, and wakes at brightness 5 at 6:30 AM Central. Source, scene export, APK build, installation tools and device verification live in `frame-player/`; generated scenes and signing material stay local.
+
 ## Scene and tools
 
 - `trips/honeymoon/` contains the runnable scene, route, regional art, terrain, and park drives.

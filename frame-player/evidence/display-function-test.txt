@@ -1,0 +1,8 @@
+Display off
+screen0 lcd off!
+Display on, brightness 5
+5
+5
+1791952422177 SSH:
+1791984298325 SSH: Display on, brightness 5
+1791984299277 SSH: Display on, brightness 5

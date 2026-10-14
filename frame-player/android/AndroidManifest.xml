@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="in.scogg.frame" android:versionCode="1" android:versionName="1.0">
+ <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19"/>
+ <uses-permission android:name="android.permission.INTERNET"/>
+ <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+ <uses-permission android:name="android.permission.WAKE_LOCK"/>
+ <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+ <application android:label="Frame Art" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:allowBackup="false">
+  <activity android:name=".Home" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+  </activity>
+  <activity android:name=".NativeArt" android:exported="false" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="orientation|screenSize|keyboardHidden"/>
+  <service android:name=".Keeper" android:exported="false"/>
+  <receiver android:name=".Boot" android:exported="true"><intent-filter><action android:name="android.intent.action.BOOT_COMPLETED"/></intent-filter></receiver>
+ </application>
+</manifest>

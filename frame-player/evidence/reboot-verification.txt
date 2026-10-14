@@ -1,0 +1,10 @@
+I/FrameNative(  658): Native GLES2 initialized
+I/FrameNative(  658): Showing detours_kern-river_0000
+I/FrameNative(  658): fps=0.1 km=744.936 draws=161 triangles=255728
+I/FrameNative(  658): fps=24.8 km=745.178 draws=155 triangles=209681
+I/FrameNative(  658): fps=27.8 km=745.446 draws=147 triangles=261008
+I/FrameNative(  658): fps=26.7 km=745.715 draws=141 triangles=225246
+I/FrameNative(  658): fps=29.6 km=745.983 draws=145 triangles=219128
+I/FrameNative(  658): fps=28.7 km=746.252 draws=130 triangles=205857
+98.76 149.15
+90
