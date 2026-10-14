@@ -1,0 +1,47 @@
+BEFORE
+Wed Oct 14 13:45:18 CDT 2026
+screen0 lcd on!
+10
+10
+    mResumedActivity: ActivityRecord{426253c8 u0 in.scogg.frame/.NativeArt t16}
+EXPECT 23:59 brightness=1
+Thu Oct 15 23:59:18 CDT 2026
+screen0 lcd on!
+1
+1
+    mResumedActivity: ActivityRecord{426253c8 u0 in.scogg.frame/.NativeArt t16}
+EXPECT 00:01 brightness=0
+Thu Oct 15 00:01:18 CDT 2026
+screen0 lcd off!
+1
+1
+    mResumedActivity: ActivityRecord{426253c8 u0 in.scogg.frame/.NativeArt t16}
+EXPECT 06:29 brightness=0
+Thu Oct 15 06:29:18 CDT 2026
+screen0 lcd off!
+1
+1
+    mResumedActivity: ActivityRecord{426253c8 u0 in.scogg.frame/.NativeArt t16}
+EXPECT 06:30 brightness=5
+Thu Oct 15 06:30:18 CDT 2026
+screen0 lcd on!
+5
+5
+    mResumedActivity: ActivityRecord{426253c8 u0 in.scogg.frame/.NativeArt t16}
+EXPECT 09:00 brightness=10
+Thu Oct 15 09:00:18 CDT 2026
+screen0 lcd on!
+10
+10
+    mResumedActivity: ActivityRecord{426253c8 u0 in.scogg.frame/.NativeArt t16}
+RESTORED
+Wed Oct 14 13:47:21 CDT 2026
+screen0 lcd on!
+10
+10
+    mResumedActivity: ActivityRecord{426253c8 u0 in.scogg.frame/.NativeArt t16}
+1
+America/Chicago
+--------- beginning of /dev/log/system
+--------- beginning of /dev/log/main
+I/FrameNative(17054): fps=39.5 km=1453.549 draws=134 triangles=179761

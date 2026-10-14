@@ -35,6 +35,7 @@ names = [
     "RootAdb",
     "NativeArt",
     "Brightness",
+    "Solar",
     "LocalMap",
     "PixelCaption",
 ]

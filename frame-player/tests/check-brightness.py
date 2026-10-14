@@ -17,6 +17,7 @@ subprocess.run(
         "-d",
         classes,
         root / "android/src/in/scogg/frame/Brightness.java",
+        root / "android/src/in/scogg/frame/Solar.java",
         root / "android/src/in/scogg/frame/RootAdb.java",
         root / "tests/BrightnessCheck.java",
     ],

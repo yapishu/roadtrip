@@ -7,8 +7,8 @@ Device: Dragon Touch Classic15 Pro, Allwinner A33 / Mali-400 MP, Android 4.4.2, 
 - Playback crosses the main-route 10 km chunk boundary and renders the Grand Canyon and largest Kern River scene chunks.
 - All 507 chunks, 1,064 textures and the itinerary are installed locally and SHA-256 verified (1,572 files, approximately 3.5 GiB).
 - The host scene server is stopped; rendering reads local files directly.
-- Android brightness and the display driver's `lcdbl` both read 5 during the day. The fixed America/Chicago schedule selects 5 at 06:30, 1 at 23:00 and LCD power off at midnight. Boundary checks cover 00:00, 06:29, 06:30, 22:59, 23:00 and 23:59.
-- The production display-control method runs on the frame through a standalone test harness: it reports `Display off`, the driver reads `screen0 lcd off!`, and restoring brightness 5 reports `Display on, brightness 5`. The LCD power control is independent of Android sleep; native scene positions continue advancing while it is off.
+- Android brightness and the display driver's `lcdbl` both read 10 during the day. Solar reference checks agree with US Naval Observatory Austin sunrise/sunset times within four minutes for summer, winter, October and both daylight-saving transition dates. Schedule tests cover 2026–2028, including leap day and Central DST while the host default timezone is Tokyo, plus both brightness ramps and all overnight boundaries.
+- The running app is tested with simulated Central clock times: 23:59 selects 1; 00:01 and 06:29 read `screen0 lcd off!`; 06:30 powers on at 5; 09:00 selects 10. Each state is checked after 18 seconds. The same native activity remains foreground throughout. Real time and automatic network time are restored afterward; the device timezone is America/Chicago. See [the device transcript](evidence/solar-schedule.txt).
 - The service verifies LCD power and brightness every 15 seconds and records transitions in `files/player.log`.
 - The playback screenshot contains the place caption and no credit line. Credits are in Settings.
 - The three requested SSH public keys match the installed authorized_keys file. Root SSH uses the ginza_bot_ed25519 key for validation.
@@ -25,4 +25,4 @@ Build commands: `python3 build.py` and `python3 build.py --app-only --install`.
 - Bottom captions draw the source caption module's pixel glyphs without antialiasing. The APK packages the source terrain atlas, route, boundaries and elevation grid locally.
 - Selecting Kingman from the location list loads the correct scene and updates the caption and car marker. Playback is restored to its pre-test area afterward.
 
-- After forcing LCD power off during the daytime, the running service restores `screen0 lcd on!` and brightness 5 within the 18-second observation window. The same app process continues rendering at 47–52 FPS and advances from 938.900 to 939.705 km. Physical darkness is not visually confirmed; the user was not watching the test.
+- After the schedule test, the native player renders at 39.5 FPS with Android and driver brightness both at 10. Display power is verified through the driver; physical darkness is not visually confirmed.

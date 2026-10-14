@@ -4,21 +4,33 @@ import android.content.SharedPreferences;
 import android.provider.Settings;
 import java.io.*;
 import java.util.Calendar;
-import java.util.TimeZone;
 
 final class Brightness {
-  static int target(int minute, int daytime) {
+  static final int DEFAULT_DAYTIME = 10;
+  static int target(int minute, int daytime, int sunrise, int sunset) {
     if (minute < 6 * 60 + 30)
       return 0;
-    return minute >= 23 * 60 ? 1 : daytime;
+    if (minute >= 23 * 60)
+      return 1;
+    daytime = Math.max(1, Math.min(255, daytime));
+    int dim = Math.max(1, daytime / 2);
+    double morning = (minute - sunrise) / (double)(9 * 60 - sunrise);
+    double evening = (sunset - minute) / 60.0;
+    double daylight = Math.max(0, Math.min(1, Math.min(morning, evening)));
+    return dim + (int)Math.round((daytime - dim) * daylight);
+  }
+  static int targetAt(long time, int daytime) {
+    Calendar clock = Calendar.getInstance(Solar.ZONE);
+    clock.setTimeInMillis(time);
+    int[] sun = Solar.times(clock);
+    return target(clock.get(Calendar.HOUR_OF_DAY) * 60 +
+                      clock.get(Calendar.MINUTE),
+                  daytime, sun[0], sun[1]);
   }
   static int currentTarget(Context c) {
     SharedPreferences prefs = c.getSharedPreferences("player", 0);
-    Calendar clock =
-        Calendar.getInstance(TimeZone.getTimeZone("America/Chicago"));
-    return target(clock.get(Calendar.HOUR_OF_DAY) * 60 +
-                      clock.get(Calendar.MINUTE),
-                  prefs.getInt("dayBrightness", 5));
+    return targetAt(System.currentTimeMillis(),
+                    prefs.getInt("dayBrightness", DEFAULT_DAYTIME));
   }
   static String read(String path) throws IOException {
     BufferedReader reader = new BufferedReader(new FileReader(path));

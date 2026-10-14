@@ -39,12 +39,16 @@ public class Home extends Activity {
       public void run() { startActivity(new Intent(Settings.ACTION_SETTINGS)); }
     });
     TextView label = new TextView(this);
-    label.setText("Daytime brightness · display off midnight–6:30 AM Central");
+    label.setText("Daytime peak · Austin sunrise/sunset\n"
+                  + "Full brightness at 9 AM · half brightness after sunset\n"
+                  + "Brightness 1 at 11 PM · off midnight–6:30 AM Central");
     layout.addView(label);
     SeekBar brightness = new SeekBar(this);
     brightness.setMax(254);
     brightness.setProgress(
-        getSharedPreferences("player", 0).getInt("dayBrightness", 5) - 1);
+        getSharedPreferences("player", 0)
+            .getInt("dayBrightness", Brightness.DEFAULT_DAYTIME) -
+        1);
     brightness.setOnSeekBarChangeListener(
         new SeekBar.OnSeekBarChangeListener() {
           public void onStartTrackingTouch(SeekBar s) {
