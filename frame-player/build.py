@@ -10,7 +10,6 @@ p.add_argument(
     type=pathlib.Path,
     default=ROOT.parent / "trips/honeymoon",
 )
-p.add_argument("--scene", type=pathlib.Path, default=ROOT / "scene")
 p.add_argument("--workers", type=int, default=4)
 p.add_argument("--app-only", action="store_true")
 p.add_argument("--install", action="store_true")
@@ -22,7 +21,6 @@ if a.app_only:
         ["python3", "build-native.py"],
         env={
             **os.environ,
-            "SCENE_DIR": str(a.scene.resolve()),
             "SOURCE_DIR": str(a.source.resolve()),
         },
         check=True,
@@ -35,23 +33,55 @@ if a.app_only:
 env = {
     **os.environ,
     "SOURCE_DIR": str(a.source.resolve()),
-    "SCENE_DIR": str(a.scene.resolve()),
 }
+trip = a.source.resolve()
+journey = json.loads((trip / "journey.json").read_text())
+worlds = {trip / segment["source"] / "world" for segment in journey["segments"]}
+required = {trip / "world.js", trip / "map/atlas.json", trip / "map/terrain.bin"}
+for segment in journey["segments"]:
+    world = trip / segment["source"] / "world"
+    for chunk in range(
+        int(segment["start"] / 10000), int((segment["end"] - 0.001) / 10000) + 1
+    ):
+        file = world / f"c{chunk:04d}.json"
+        if not file.is_file():
+            raise SystemExit(
+                f"Missing local scene asset: {file}. Restore the scene archive into {trip} before building."
+            )
+        data = json.loads(file.read_text())
+        for grid in [data["near"], data["far"], *data.get("details", [])]:
+            required.add(world / grid["file"])
+            if grid.get("image"):
+                required.add(world / grid["image"])
+        if data.get("waterwaysFile"):
+            required.add(world / data["waterwaysFile"])
+for file in sorted(required):
+    if not file.is_file():
+        raise SystemExit(
+            f"Missing local scene asset: {file}. Restore the scene archive into {trip} before building."
+        )
 subprocess.run(["node", "build.mjs"], env=env, check=True)
 digest = hashlib.sha256()
-inputs = [
+inputs = {
     ROOT / "export-native.mjs",
     ROOT / "build.mjs",
     ROOT / "package-lock.json",
-    *sorted(a.source.glob("*.js")),
-    *sorted(f for f in a.scene.rglob("*") if f.is_file()),
-]
-for f in inputs:
-    digest.update(
-        str(f.relative_to(a.scene) if f.is_relative_to(a.scene) else f.name).encode()
-        + b"\0"
+    *trip.glob("*.js"),
+    *trip.glob("*.json"),
+}
+for directory in [
+    *worlds,
+    *(trip / name for name in ["data", "regional", "materials", "map"]),
+]:
+    inputs.update(file for file in directory.rglob("*") if file.is_file())
+for file in sorted(inputs):
+    name = (
+        "trip/" + file.relative_to(trip).as_posix()
+        if file.is_relative_to(trip)
+        else "compiler/" + file.name
     )
-    with f.open("rb") as stream:
+    digest.update(name.encode() + b"\0")
+    with file.open("rb") as stream:
         for block in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(block)
 key = digest.hexdigest()

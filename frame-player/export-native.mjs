@@ -1,14 +1,16 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {gzipSync} from 'node:zlib';
 import crypto from 'node:crypto';
 import * as THREE from 'three';
 import {createCanvas,loadImage} from '@napi-rs/canvas';
 
-const root=path.resolve(process.env.SCENE_DIR||'scene'),out=path.resolve(process.env.NATIVE_SCENE_DIR||'native-scene');
+const root=path.resolve(process.env.SOURCE_DIR||fileURLToPath(new URL('../trips/honeymoon/',import.meta.url))),out=path.resolve(process.env.NATIVE_SCENE_DIR||'native-scene');
 await fs.mkdir(out,{recursive:true});await fs.mkdir(out+'/textures',{recursive:true});await fs.mkdir(out+'/chunks',{recursive:true});
 const grids=new Map();
 globalThis.document={createElement:()=>createCanvas(1,1)};
+// Scene requests resolve through local file I/O.
 globalThis.fetch=async url=>{
  const rel=String(url),file=path.join(root,rel);
  try{

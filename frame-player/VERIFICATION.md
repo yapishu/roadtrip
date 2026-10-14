@@ -13,7 +13,7 @@ Device: Dragon Touch Classic15 Pro, Allwinner A33 / Mali-400 MP, Android 4.4.2, 
 - The playback screenshot contains the place caption and no credit line. Credits are in Settings.
 - The three requested SSH public keys match the installed authorized_keys file. Root SSH uses the ginza_bot_ed25519 key for validation.
 
-The complete native asset cache is reusable after preparing the current source generator; recompiling the opening chunk produces an identical SHA-256 hash.
+The opening chunk compiles directly from `trips/honeymoon/` to SHA-256 `34b93d7211b6b4b971bc3c7bdc51b8470f0336faa5b931893ce826f66e50ad3d`, identical to the installed chunk. A network-system-call trace of the export records no network calls. The APK also builds from the repository trip, and missing local world assets fail with restore instructions before export.
 
 Build commands: `python3 build.py` and `python3 build.py --app-only --install`.
 

@@ -20,13 +20,13 @@ This reads `../trips/honeymoon`, compiles the native scene, builds the APK, and 
 
 For changes limited to the Android UI or C++ renderer, use `python3 build.py --app-only --install` to update just the APK.
 
-For another source checkout or complete local scene dataset:
+For another complete trip checkout:
 
 ```sh
-python3 build.py --source /path/to/trip --scene /path/to/trip --install --host 10.10.8.52
+python3 build.py --source /path/to/trip --install --host 10.10.8.52
 ```
 
-The default `scene/` directory is the local scene snapshot. A fresh checkout can restore the complete trip archive with the repository's `scripts/restore-scene.mjs`, then pass `--scene ../trips/honeymoon`. Changes to JavaScript in the original checkout flow into the build. Changes to generated route data or imagery must also be supplied through `--scene`; the build does not silently download a changing website. `fetch-scene.py` obtains a source snapshot from the configured site.
+The trip directory is the single source for scene code, route data, terrain, imagery, the map and captions. The default is the repository's `trips/honeymoon/`. A fresh checkout restores its world assets with the repository's `scripts/restore-scene.mjs` before building. Missing assets fail the build with their local path. Scene export reads local files and does not download data. The Android player reads its installed local bundle and APK assets.
 
 The build requires Node with `npm ci`, Python 3, JDK 17 (set `JAVA_HOME` or place it at `tooling/jdk`), Android build tools 34, the Android 34 platform jar, and NDK r25c. `build-native.py` uses the toolchains under `tooling/`; `JAVA_HOME` and `ANDROID_NDK_HOME` select other Java/NDK installations. The APK includes ARMv7 and ARM64 libraries, requires Android 4.4 or later, and is signed with `android/frame.keystore`. Keep that keystore to install subsequent updates over the same app. Its password is read from the ignored `android/keystore-password` file, or from the file selected by `FRAME_KEYSTORE_PASSWORD_FILE`. Signing keys, password files and device trust files stay local.
 
