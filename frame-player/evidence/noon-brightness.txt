@@ -1,0 +1,9 @@
+Wed Oct 14 15:25:17 CDT 2026
+screen0 lcd on!
+20
+20
+    mResumedActivity: ActivityRecord{426516b0 u0 in.scogg.frame/.NativeArt t19}
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="playing" value="true" />
+</map>

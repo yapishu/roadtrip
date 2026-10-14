@@ -14,10 +14,11 @@ final class Brightness {
       return 1;
     daytime = Math.max(1, Math.min(255, daytime));
     int dim = Math.max(1, daytime / 2);
+    int peak = minute >= 12 * 60 ? Math.min(255, daytime * 2) : daytime;
     double morning = (minute - sunrise) / (double)(9 * 60 - sunrise);
     double evening = (sunset - minute) / 60.0;
     double daylight = Math.max(0, Math.min(1, Math.min(morning, evening)));
-    return dim + (int)Math.round((daytime - dim) * daylight);
+    return dim + (int)Math.round((peak - dim) * daylight);
   }
   static int targetAt(long time, int daytime) {
     Calendar clock = Calendar.getInstance(Solar.ZONE);

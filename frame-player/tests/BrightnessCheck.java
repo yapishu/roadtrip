@@ -38,8 +38,10 @@ public class BrightnessCheck {
                                    {495, 8},
                                    {539, 10},
                                    {540, 10},
-                                   {1080, 10},
-                                   {1110, 8},
+                                   {719, 10},
+                                   {720, 20},
+                                   {1080, 20},
+                                   {1110, 13},
                                    {1140, 5},
                                    {1379, 5},
                                    {1380, 1},
@@ -58,13 +60,22 @@ public class BrightnessCheck {
         throw new AssertionError("Austin solar range");
       for (int peak : new int[] {1, 10, 255}) {
         equal(Brightness.target(540, peak, sun[0], sun[1]), peak, "9 AM peak");
+        equal(Brightness.target(719, peak, sun[0], sun[1]), peak,
+              "before noon");
+        equal(Brightness.target(720, peak, sun[0], sun[1]),
+              Math.min(255, peak * 2), "noon peak");
         equal(Brightness.target(sun[1], peak, sun[0], sun[1]),
               Math.max(1, peak / 2), "sunset");
         equal(Brightness.target(389, peak, sun[0], sun[1]), 0, "asleep");
         equal(Brightness.target(1380, peak, sun[0], sun[1]), 1, "11 PM");
       }
-      for (int[] pair :
-           new int[][] {{0, 0}, {389, 0}, {390, 5}, {540, 10}, {1380, 1}}) {
+      for (int[] pair : new int[][] {{0, 0},
+                                     {389, 0},
+                                     {390, 5},
+                                     {540, 10},
+                                     {719, 10},
+                                     {720, 20},
+                                     {1380, 1}}) {
         c.set(Calendar.HOUR_OF_DAY, pair[0] / 60);
         c.set(Calendar.MINUTE, pair[0] % 60);
         equal(Brightness.targetAt(c.getTimeInMillis(), 10), pair[1],

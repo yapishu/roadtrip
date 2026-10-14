@@ -7,7 +7,7 @@ Device: Dragon Touch Classic15 Pro, Allwinner A33 / Mali-400 MP, Android 4.4.2, 
 - Playback crosses the main-route 10 km chunk boundary and renders the Grand Canyon and largest Kern River scene chunks.
 - All 507 chunks, 1,064 textures and the itinerary are installed locally and SHA-256 verified (1,572 files, approximately 3.5 GiB).
 - The host scene server is stopped; rendering reads local files directly.
-- Android brightness and the display driver's `lcdbl` both read 10 during the day. Solar reference checks agree with US Naval Observatory Austin sunrise/sunset times within four minutes for summer, winter, October and both daylight-saving transition dates. Schedule tests cover 2026–2028, including leap day and Central DST while the host default timezone is Tokyo, plus both brightness ramps and all overnight boundaries.
+- Android brightness and the display driver's `lcdbl` both read 20 after noon; playback is active. See [the noon brightness check](evidence/noon-brightness.txt). Solar reference checks agree with US Naval Observatory Austin sunrise/sunset times within four minutes for summer, winter, October and both daylight-saving transition dates. Schedule tests cover 2026–2028, including leap day and Central DST while the host default timezone is Tokyo, plus both brightness ramps, the 11:59 → 12:00 step from 10 to 20, the 255 brightness limit and all overnight boundaries.
 - The running app is tested with simulated Central clock times: 23:59 selects 1; 00:01 and 06:29 read `screen0 lcd off!`; 06:30 powers on at 5; 09:00 selects 10. Each state is checked after 18 seconds. The same native activity remains foreground throughout. Real time and automatic network time are restored afterward; the device timezone is America/Chicago. See [the device transcript](evidence/solar-schedule.txt).
 - The service verifies LCD power and brightness every 15 seconds and records transitions in `files/player.log`.
 - The playback screenshot contains the place caption and no credit line. Credits are in Settings.
@@ -25,4 +25,4 @@ Build commands: `python3 build.py` and `python3 build.py --app-only --install`.
 - Bottom captions draw the source caption module's pixel glyphs without antialiasing. The APK packages the source terrain atlas, route, boundaries and elevation grid locally.
 - Selecting Kingman from the location list loads the correct scene and updates the caption and car marker. Playback is restored to its pre-test area afterward.
 
-- After the schedule test, the native player renders at 39.5 FPS with Android and driver brightness both at 10. Display power is verified through the driver; physical darkness is not visually confirmed.
+- Display power is verified through the driver; physical darkness is not visually confirmed.
