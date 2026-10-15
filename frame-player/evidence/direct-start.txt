@@ -1,0 +1,50 @@
+Home action and menu/back navigation
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+Activity: in.scogg.frame/.NativeArt
+ThisTime: 0
+TotalTime: 0
+Complete
+    mResumedActivity: ActivityRecord{41a49cb0 u0 in.scogg.frame/.NativeArt t6}
+    mResumedActivity: ActivityRecord{41bbd6d8 u0 in.scogg.frame/.Home t6}
+    mResumedActivity: ActivityRecord{41a49cb0 u0 in.scogg.frame/.NativeArt t6}
+
+
+Automatic boot recovery
+Automatic boot recovery after 12.5 seconds
+1
+22.84 49.24
+    mResumedActivity: ActivityRecord{41b81560 u0 in.scogg.frame/.NativeArt t1}
+
+All 17 optional packages remain disabled; 33 total disabled
+Thu Jan  1 18:00:12 CST 1970
+America/Chicago
+1
+1
+com.android.inputmethod.latin/.LatinIME
+screen0 lcd on!
+5
+5
+
+
+Boot activity and renderer events
+I/am_create_activity(  470): [0,1102583136,1,in.scogg.frame/.NativeArt,android.intent.action.MAIN,NULL,NULL,268435456]
+--------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+I/FrameNative(  659): Native GLES2 initialized
+I/FrameNative(  659): Showing main_0156
+I/FrameNative(  659): fps=37.4 km=2023.075 draws=89 triangles=102887
+
+
+Settled clock and playback
+Wed Oct 14 19:41:56 CDT 2026
+52.62 81.73
+1
+screen0 lcd on!
+5
+    mResumedActivity: ActivityRecord{41b81560 u0 in.scogg.frame/.NativeArt t1}
+--------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+I/FrameNative(  659): fps=48.5 km=2023.343 draws=85 triangles=103342
+I/FrameNative(  659): fps=50.2 km=2023.611 draws=81 triangles=102410

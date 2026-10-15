@@ -1,23 +1,14 @@
 package in.scogg.frame;
 import android.app.*;
 import android.content.*;
-import android.net.Uri;
 import android.os.*;
 import android.provider.Settings;
 import android.view.*;
 import android.widget.*;
 
 public class Home extends Activity {
-  Handler handler = new Handler();
-  Runnable launch = new Runnable() {
-    public void run() { art(); }
-  };
   public void onCreate(Bundle b) {
     super.onCreate(b);
-    getSharedPreferences("player", 0)
-        .edit()
-        .putBoolean("playing", false)
-        .apply();
     startService(new Intent(this, Keeper.class));
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     LinearLayout layout = new LinearLayout(this);
@@ -51,9 +42,7 @@ public class Home extends Activity {
         1);
     brightness.setOnSeekBarChangeListener(
         new SeekBar.OnSeekBarChangeListener() {
-          public void onStartTrackingTouch(SeekBar s) {
-            handler.removeCallbacks(launch);
-          }
+          public void onStartTrackingTouch(SeekBar s) {}
           public void onStopTrackingTouch(SeekBar s) {}
           public void onProgressChanged(SeekBar s, int p, boolean user) {
             if (user) {
@@ -73,34 +62,21 @@ public class Home extends Activity {
     credits.setTextSize(10);
     layout.addView(credits);
     setContentView(layout);
-    if (!getIntent().getBooleanExtra("maintenance", false))
-      handler.postDelayed(launch, 5000);
   }
   void button(LinearLayout parent, String text, final Runnable action) {
     Button b = new Button(this);
     b.setText(text);
     b.setOnClickListener(new View.OnClickListener() {
-      public void onClick(View v) {
-        handler.removeCallbacks(launch);
-        action.run();
-      }
+      public void onClick(View v) { action.run(); }
     });
     parent.addView(b);
   }
   void art() { startActivity(new Intent(this, NativeArt.class)); }
-  protected void onNewIntent(Intent intent) {
-    super.onNewIntent(intent);
-    setIntent(intent);
-    handler.removeCallbacks(launch);
+  public void onResume() {
+    super.onResume();
     getSharedPreferences("player", 0)
         .edit()
         .putBoolean("playing", false)
         .apply();
-    if (!intent.getBooleanExtra("maintenance", false))
-      handler.postDelayed(launch, 5000);
-  }
-  public void onPause() {
-    super.onPause();
-    handler.removeCallbacks(launch);
   }
 }

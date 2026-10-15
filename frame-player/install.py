@@ -33,7 +33,7 @@ def install_apk():
     with (ROOT / "android/frame-native.apk").open("rb") as f:
         remote("cat > /data/local/tmp/frame-native.apk", stdin=f)
     remote(
-        "pm install -r /data/local/tmp/frame-native.apk && am force-stop in.scogg.frame && am start -n in.scogg.frame/.Home"
+        "pm install -r /data/local/tmp/frame-native.apk && am force-stop in.scogg.frame && am start -n in.scogg.frame/.NativeArt"
     )
 
 

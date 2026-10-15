@@ -91,8 +91,7 @@ public class NativeArt extends Activity implements GLSurfaceView.Renderer {
     settings.setText("Settings");
     settings.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
-        startActivity(new Intent(NativeArt.this, Home.class)
-                          .putExtra("maintenance", true));
+        startActivity(new Intent(NativeArt.this, Home.class));
       }
     });
     controls.addView(settings);
@@ -366,9 +365,7 @@ public class NativeArt extends Activity implements GLSurfaceView.Renderer {
     if (view != null)
       view.onPause();
   }
-  public void onBackPressed() {
-    startActivity(new Intent(this, Home.class).putExtra("maintenance", true));
-  }
+  public void onBackPressed() { startActivity(new Intent(this, Home.class)); }
   public void onWindowFocusChanged(boolean focus) {
     super.onWindowFocusChanged(focus);
     if (focus)

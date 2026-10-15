@@ -29,15 +29,13 @@ public class Keeper extends Service {
     super.onCreate();
     Brightness.apply(this);
     heartbeat = SystemClock.elapsedRealtime();
-    Notification n =
-        new Notification.Builder(this)
-            .setContentTitle("Frame Art")
-            .setContentText("Road player and SSH are running")
-            .setSmallIcon(android.R.drawable.ic_media_play)
-            .setContentIntent(PendingIntent.getActivity(
-                this, 0,
-                new Intent(this, Home.class).putExtra("maintenance", true), 0))
-            .build();
+    Notification n = new Notification.Builder(this)
+                         .setContentTitle("Frame Art")
+                         .setContentText("Road player and SSH are running")
+                         .setSmallIcon(android.R.drawable.ic_media_play)
+                         .setContentIntent(PendingIntent.getActivity(
+                             this, 0, new Intent(this, Home.class), 0))
+                         .build();
     startForeground(1, n);
     wake = ((PowerManager)getSystemService(POWER_SERVICE))
                .newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "FrameArt");
