@@ -51,7 +51,21 @@ Dropbear uses public-key authentication. The authorized keys are `id_ed25519.pub
 
 The installation changes app/data storage and reversible Android settings. Keep firmware backups and their verification manifest outside the repository. Bootloader, boot, recovery and system partitions are not modified.
 
-The vendor photo launcher, its update/watchdog components, diagnostic apps and unused browsers are disabled through Package Manager. Android Settings stays enabled. To restore the photo launcher through SSH:
+The vendor photo launcher, its update/watchdog components, diagnostic apps and unused browsers are disabled through Package Manager. Optional stock packages are also disabled:
+
+| Purpose | Packages |
+| --- | --- |
+| Browser and search | `com.android.browser`, `com.android.quicksearchbox` |
+| Music and equalizer | `com.android.music`, `com.android.musicfx` |
+| File browser, clock, speech recorder, spare keyboard | `com.softwinner.explore`, `com.android.deskclock`, `com.android.speechrecorder`, `com.android.inputmethod.pinyin` |
+| Animated wallpapers | `com.android.wallpaper.holospiral`, `com.android.galaxy4`, `com.android.noisefield`, `com.android.phasebeam`, `com.android.magicsmoke`, `com.android.musicvis`, `com.android.wallpaper` |
+| Screensavers | `com.android.dreams.basic`, `com.android.dreams.phototable` |
+
+APKs and app data remain intact. Android Settings, the active Latin keyboard, image/file pickers, storage/download/contact providers, account services, networking, security and hardware services stay enabled. The frame uses SystemUI's static wallpaper; the disabled clock has no enabled alarms. These changes prevent optional apps from running; they do not reclaim APK storage.
+
+To re-enable these 17 optional packages, run `sh /data/local/frame/debloat-restore.sh` over SSH. The same script is tracked as [debloat-restore.sh](debloat-restore.sh). It leaves the vendor updater, factory tools and photo launcher disabled. The package-state snapshot is in `/data/local/frame/debloat-before/` on the frame.
+
+To restore the photo launcher through SSH:
 
 ```sh
 pm enable com.waophoto.smartframe

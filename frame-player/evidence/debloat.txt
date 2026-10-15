@@ -1,0 +1,53 @@
+Optional packages disabled: 17
+Total disabled packages: 33
+APKs, app data, firmware and system partitions retained.
+Automatic reboot recovery: SSH and NativeArt available at approximately 30 seconds uptime.
+Post-boot: Central timezone, automatic time enabled, Wi-Fi enabled, LatinIME selected, LCD on at scheduled evening brightness 5.
+No am_crash/am_anr events or AndroidRuntime errors in the post-boot check.
+
+Packages:
+com.android.quicksearchbox
+com.android.browser
+com.android.music
+com.android.musicfx
+com.softwinner.explore
+com.android.deskclock
+com.android.speechrecorder
+com.android.wallpaper.holospiral
+com.android.galaxy4
+com.android.noisefield
+com.android.phasebeam
+com.android.magicsmoke
+com.android.musicvis
+com.android.wallpaper
+com.android.dreams.basic
+com.android.dreams.phototable
+com.android.inputmethod.pinyin
+
+Settings and player check after reboot:
+Starting: Intent { act=android.settings.SETTINGS }
+Status: ok
+Activity: com.android.settings/.Settings
+ThisTime: 1087
+TotalTime: 1087
+Complete
+    mResumedActivity: ActivityRecord{41ed4d50 u0 com.android.settings/.Settings t2}
+Starting: Intent { act=android.settings.WIFI_SETTINGS }
+Status: ok
+Activity: com.android.settings/.Settings$WifiSettingsActivity
+ThisTime: 698
+TotalTime: 698
+Complete
+    mResumedActivity: ActivityRecord{41a72fd0 u0 com.android.settings/.Settings$WifiSettingsActivity t3}
+Starting: Intent { cmp=in.scogg.frame/.Home }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+Activity: com.android.settings/.Settings$WifiSettingsActivity
+ThisTime: 0
+TotalTime: 0
+Complete
+    mResumedActivity: ActivityRecord{41d06390 u0 in.scogg.frame/.NativeArt t1}
+--------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+I/FrameNative(  686): Native GLES2 initialized
+I/FrameNative(  686): Showing main_0156

@@ -26,3 +26,5 @@ Build commands: `python3 build.py` and `python3 build.py --app-only --install`.
 - Selecting Kingman from the location list loads the correct scene and updates the caption and car marker. Playback is restored to its pre-test area afterward.
 
 - Display power is verified through the driver; physical darkness is not visually confirmed.
+
+- The optional-package cleanup disables 17 packages (33 total disabled) without removing APKs or app data. After reboot, Wi-Fi, SSH and native playback return automatically at approximately 30 seconds uptime; all 17 packages remain disabled. Android Settings and Wi-Fi Settings launch successfully, and the player resumes afterward. The post-boot check records no `am_crash`, `am_anr` or AndroidRuntime errors. See [the cleanup transcript](evidence/debloat.txt); [debloat-restore.sh](debloat-restore.sh) re-enables the optional packages.
