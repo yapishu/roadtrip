@@ -19,6 +19,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #define STBI_ONLY_JPEG
 #define STBI_ONLY_PNG
+#include "itinerary.h"
 #include "json.hpp"
 #include "meshoptimizer/meshoptimizer.h"
 #include "stb_image.h"
@@ -275,33 +276,9 @@ static void release(Chunk &c) {
       }
     }
 }
-struct Segment {
-  std::string source;
-  double at, start, end, length;
-};
 static std::vector<Segment> segments;
 static json journey;
 static double total = 1, position = 0;
-static const Segment &locate(double at) {
-  size_t lo = 0, hi = segments.size();
-  while (lo + 1 < hi) {
-    size_t mid = (lo + hi) / 2;
-    if (segments[mid].at <= at)
-      lo = mid;
-    else
-      hi = mid;
-  }
-  return segments[lo];
-}
-static std::string chunkId(double at) {
-  const auto &s = locate(at);
-  int c = (int)((s.start + at - s.at) / 10000);
-  std::string name = s.source.empty() ? "main" : s.source;
-  std::replace(name.begin(), name.end(), '/', '_');
-  char end[30];
-  snprintf(end, sizeof(end), "_%04d", c);
-  return name + end;
-}
 static std::mutex mutex;
 static std::unique_ptr<Chunk> result, active, next;
 static bool busy = false;
@@ -464,7 +441,7 @@ extern "C" JNIEXPORT void JNICALL Java_in_scogg_frame_NativeArt_init(
     glBindBuffer(GL_ARRAY_BUFFER, quad);
     glBufferData(GL_ARRAY_BUFFER, sizeof(q), q, GL_STATIC_DRAW);
     last = reportAt = Clock::now();
-    request(chunkId(position));
+    request(chunkId(segments, position));
     log("Native GLES2 initialized");
   } catch (const std::exception &e) {
     error = e.what();
@@ -524,7 +501,7 @@ extern "C" JNIEXPORT void JNICALL Java_in_scogg_frame_NativeArt_frame(JNIEnv *,
       next = std::move(result);
     }
   }
-  auto id = chunkId(position);
+  auto id = chunkId(segments, position);
   if (next && next->id == id) {
     if (active)
       release(*active);
@@ -537,7 +514,7 @@ extern "C" JNIEXPORT void JNICALL Java_in_scogg_frame_NativeArt_frame(JNIEnv *,
   }
   if (!paused) {
     double candidate = fmod(position + dt * 96.56 / 3.6, total);
-    auto cid = chunkId(candidate);
+    auto cid = chunkId(segments, candidate);
     if (cid == active->id)
       position = candidate;
     else if (next && next->id == cid) {
@@ -545,9 +522,10 @@ extern "C" JNIEXPORT void JNICALL Java_in_scogg_frame_NativeArt_frame(JNIEnv *,
       active = std::move(next);
       position = candidate;
       log("Showing " + cid);
-    }
+    } else
+      request(cid);
   }
-  const auto &segment = locate(position);
+  const auto &segment = locate(segments, position);
   double local = segment.start + position - segment.at;
   Route p = routeAt(*active, local),
         before = routeAt(*active, std::max(0.0, local - 3)),
@@ -643,7 +621,12 @@ extern "C" JNIEXPORT void JNICALL Java_in_scogg_frame_NativeArt_frame(JNIEnv *,
     glDisableVertexAttribArray(1);
     glVertexAttribPointer(2, 4, GL_UNSIGNED_BYTE, GL_TRUE, 20, (void *)8);
     glVertexAttribPointer(3, 2, GL_FLOAT, GL_FALSE, 20, (void *)12);
-    int count = distance > 500 ? m.lod2 : distance > 200 ? m.lod1 : m.ni;
+    // Surface layers need complete topology: dropping small paint/asphalt
+    // triangles creates holes, including in 512 m batches beside the camera.
+    int count = mat.offset != 0  ? m.ni
+                : distance > 500 ? m.lod2
+                : distance > 200 ? m.lod1
+                                 : m.ni;
     glDrawElements(mat.lines ? GL_LINES : GL_TRIANGLES, count,
                    GL_UNSIGNED_SHORT, nullptr);
     draws++;
@@ -668,9 +651,10 @@ extern "C" JNIEXPORT void JNICALL Java_in_scogg_frame_NativeArt_frame(JNIEnv *,
              fps, position / 1000, draws, triangles);
     log(report);
   }
-  auto future = chunkId(fmod(position + 700, total));
-  if (future != active->id && (!next || next->id != future))
-    request(future);
+  auto future = nextChunk(segments, position);
+  if (future.distance <= 700 && future.id != active->id &&
+      (!next || next->id != future.id))
+    request(future.id);
 }
 extern "C" JNIEXPORT jdouble JNICALL
 Java_in_scogg_frame_NativeArt_position(JNIEnv *, jclass) {

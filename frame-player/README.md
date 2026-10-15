@@ -34,11 +34,19 @@ The build requires Node with `npm ci`, Python 3, JDK 17 (set `JAVA_HOME` or plac
 
 Outputs are `android/frame-native.apk`, the directory recorded in `bundle-path.txt`, and its `manifest.json`. The APK includes the original offline terrain atlas and caption glyphs. The APK and scene asset directory are separate so a route update does not require installing a multi-gigabyte APK. The app reads assets from its external-files `native/` directory, `/sdcard/Android/data/in.scogg.frame/files/native` on this frame. The SSH installer is specific to this rooted frame; the renderer itself does not require root.
 
-The native adapter supports the current scene geometry and materials. Lighting is baked, the sky is a gradient, and ambient-object motion and scenic camera turns are not reproduced. Captions follow itinerary stops. Changes to those runtime features require changes to the native renderer; this is not a general JavaScript-to-C++ compiler. Unsupported source shapes and material types fail the build.
+The native adapter supports the current scene geometry and materials. Streaming prefetches the next chunk in itinerary order within 700 meters of its boundary, including short detour joins and the end-to-start loop. Playback requests a missing chunk at the crossing and resumes when it loads. Road paint and other depth-biased surface layers retain their complete geometry at every distance. Lighting is baked, the sky is a gradient, and ambient-object motion and scenic camera turns are not reproduced. Captions follow itinerary stops. Changes to those runtime features require changes to the native renderer; this is not a general JavaScript-to-C++ compiler. Unsupported source shapes and material types fail the build.
 
 ## Verification
 
 Run the schedule boundary checks with `python3 tests/check-brightness.py`. `VERIFICATION.md` records device rendering, touch controls, restart and display-power checks; selected captures are in `evidence/`. `tests/DisplayCheck.java` exercises the production display-control method on the rooted frame and restores the brightness supplied as its argument.
+
+Run `python3 tests/check-playback.py` to check chunk selection and prefetch across every itinerary interval, short source joins and the loop. It requires a host C++17 compiler. To check exported surface detail on a representative chunk:
+
+```sh
+node build.mjs
+NATIVE_SCENE_DIR=tmp/surface-check node --expose-gc export-native.mjs main_0196
+python3 tests/check-surface-detail.py tmp/surface-check/chunks/main_0196.frm.gz
+```
 
 ## SSH and recovery
 

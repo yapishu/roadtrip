@@ -1,0 +1,23 @@
+Native frame playback checks; Android 4.4.2 / Allwinner A33 / Mali-400
+
+End-to-start loop: seek 4988.180 km
+Position after 16 seconds: 0.010 km
+I/FrameNative( 4162): Native GLES2 initialized
+I/FrameNative( 4162): Showing main_0431
+I/FrameNative( 4162): fps=21.5 km=4988.204 draws=249 triangles=155414
+I/FrameNative( 4162): Showing main_0000
+
+Panguitch: seek 2497.500 km
+Moving position samples: 2497.500 -> 2498.376 km
+I/FrameNative( 4299): Native GLES2 initialized
+I/FrameNative( 4299): Showing detours_brian-head_0011
+I/FrameNative( 4299): fps=2.5 km=2497.522 draws=119 triangles=99689
+I/FrameNative( 4299): Showing main_0196
+I/FrameNative( 4299): fps=40.4 km=2497.790 draws=94 triangles=154491
+I/FrameNative( 4299): Showing main_0197
+I/FrameNative( 4299): fps=40.2 km=2498.035 draws=64 triangles=83832
+I/FrameNative( 4299): fps=40.0 km=2498.304 draws=145 triangles=171817
+
+Host checks: all 514 itinerary intervals, the 72 m Panguitch entry, short segments and the loop pass.
+Fresh main_0196 export: all 103 surface meshes retain 23,541 triangles at every detail level.
+APK SHA-256: da8dddc2b37f5c79bb1d64ad17de6a5efebad9907c85f6e12f323c03eca168c5

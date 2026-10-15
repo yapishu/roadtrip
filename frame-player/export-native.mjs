@@ -106,8 +106,9 @@ for(const [jobIndex,job]of selected.entries()){
  for(const b of buckets.values()){
   if(b.vertices.length>65535)throw Error('Batch exceeds 16-bit vertex indices: '+job.id);
   const center=b.min.map((v,i)=>(v+b.max[i])/2),radius=Math.hypot(...b.max.map((v,i)=>(v-b.min[i])/2));
+  // Preserve the topology of depth-biased surface layers, including narrow road paint.
   let lod1=b.indices.length,lod2=b.indices.length;
-  if(materialList[b.mi].range<45000&&!materialList[b.mi].lines){const faces=[];for(let i=0;i<b.indices.length;i+=3){const ids=b.indices.slice(i,i+3),[a,c,d]=ids.map(k=>b.vertices[k]),u=c.slice(0,3).map((x,k)=>x-a[k]),v=d.slice(0,3).map((x,k)=>x-a[k]);const area=Math.hypot(u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0])/2;faces.push({ids,area});}faces.sort((a,b)=>b.area-a.area);b.indices=faces.flatMap(f=>f.ids);lod1=faces.filter(f=>f.area>=1).length*3;lod2=faces.filter(f=>f.area>=8).length*3;}
+  if(materialList[b.mi].range<45000&&!materialList[b.mi].lines&&!materialList[b.mi].offset){const faces=[];for(let i=0;i<b.indices.length;i+=3){const ids=b.indices.slice(i,i+3),[a,c,d]=ids.map(k=>b.vertices[k]),u=c.slice(0,3).map((x,k)=>x-a[k]),v=d.slice(0,3).map((x,k)=>x-a[k]);const area=Math.hypot(u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0])/2;faces.push({ids,area});}faces.sort((a,b)=>b.area-a.area);b.indices=faces.flatMap(f=>f.ids);lod1=faces.filter(f=>f.area>=1).length*3;lod2=faces.filter(f=>f.area>=8).length*3;}
   const scales=b.max.map((v,i)=>Math.max(.000001,(v-b.min[i])/65535));
   pieces.push(u32([b.mi,b.vertices.length,b.indices.length,lod1,lod2]),f32([...center,radius,...b.min,...scales]));
   const bytes=Buffer.alloc(b.vertices.length*20);
